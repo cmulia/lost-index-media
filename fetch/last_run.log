@@ -1,0 +1,2 @@
+FAIL _test/fetch_test.png https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/H96566k.jpg/600px-H96566k.jpg
+ok=0 fail=1
