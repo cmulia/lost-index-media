@@ -1,0 +1,26 @@
+[
+  {
+    "n": 1,
+    "generation_id": "9rSFWC8cJoCHRWwG3Vkl",
+    "duration": 88.72,
+    "chosen": false
+  },
+  {
+    "n": 2,
+    "generation_id": "3b2GkB19WHi4enn1az3H",
+    "duration": 91.04,
+    "chosen": false
+  },
+  {
+    "n": 3,
+    "generation_id": "riosvSr5pwbthBN3WLil",
+    "duration": 89.12,
+    "chosen": false
+  },
+  {
+    "n": 4,
+    "generation_id": "K71b13KvxdqLo8IzzYjV",
+    "duration": 89.52,
+    "chosen": true
+  }
+]

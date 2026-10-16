@@ -2,3 +2,4 @@ pipeline/_scratch/
 __pycache__/
 *.pre.wav
 episodes/*/preview/
+episodes/*/audio/*.wav
