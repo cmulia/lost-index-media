@@ -1,0 +1,50 @@
+{
+ "bpm": 72,
+ "root": "C3",
+ "progression": [
+  [
+   0,
+   4,
+   7,
+   14
+  ],
+  [
+   2,
+   5,
+   9,
+   12
+  ],
+  [
+   -3,
+   0,
+   4,
+   7
+  ],
+  [
+   -7,
+   -3,
+   0,
+   4
+  ]
+ ],
+ "bars_per_chord": 1,
+ "layers": {
+  "pad": 0.45,
+  "keys": 0.6,
+  "bass": 0.3,
+  "tick": 0.45,
+  "arp": 0.15
+ },
+ "keys_hits": [
+  0,
+  1.5,
+  3
+ ],
+ "felt": 0.8,
+ "tick_div": 2,
+ "arp_in": 40,
+ "texture": "room",
+ "texture_gain": 0.5,
+ "swell_beat": 10,
+ "level": 0.19
+}

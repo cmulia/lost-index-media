@@ -59,3 +59,13 @@ DATE_SIZE = 58
 CAPTION_SIZE = 37
 CAPTION_LEADING = 1.42
 BIG_SIZE = 168
+
+
+SERIF_SUBS = {"ƒ": "f", "→": "–", "≈": "~", "½": "1/2"}
+
+
+def serif_safe(s):
+    """Instrument Serif lacks a few glyphs; swap in close equivalents."""
+    for k, v in SERIF_SUBS.items():
+        s = s.replace(k, v)
+    return s

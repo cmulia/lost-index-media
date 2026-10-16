@@ -81,6 +81,8 @@ def make_audio(ep, script, timing):
         level = 0.24
     else:
         spec = json.load(open(os.path.join(ep, "music.json")))
+        if "swell_beat" in spec:
+            spec["swell_at"] = timing["beats"][spec["swell_beat"]]["start"]
         music = MU.compose(spec, dur, seed=int(script["file_no"]))
         AU.write_wav(os.path.join(ep, "audio", "score_composed.wav"), music)
         level = spec.get("level", 0.20)

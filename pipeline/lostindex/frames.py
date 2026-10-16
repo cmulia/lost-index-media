@@ -191,7 +191,7 @@ def draw_date(d, x, y, date_label, date, pal, alpha):
     if date_label:
         d.text((x, y + 20), date_label, font=f, fill=rgba(pal["grey"], alpha))
         cx = x + f.getlength(date_label) + 22
-    d.text((cx, y), date, font=fd, fill=rgba(pal["ink"], alpha))
+    d.text((cx, y), S.serif_safe(date), font=fd, fill=rgba(pal["ink"], alpha))
     return y + S.DATE_SIZE + 6
 
 
@@ -222,6 +222,7 @@ def caption_height(text, width, size=S.CAPTION_SIZE):
 def draw_big(d, x, y, width, text, pal, alpha, rise=0.0, align="left", max_lines=2, size=S.BIG_SIZE):
     if not text:
         return y
+    text = S.serif_safe(text)
     f, lines = fit_big(text, width, max_lines=max_lines, size=size)
     lh = int(f.size * 1.0)
     yy = y + rise
@@ -296,7 +297,8 @@ class Timeline:
     def _asset_key(self, b):
         v = b.get("visual") or {}
         if v.get("type") == "photo":
-            return "photo:" + v["asset"] + ":" + str(bool(b.get("dark")))
+            return "photo:%s:%s:%s:%s:%s" % (v["asset"], bool(b.get("dark")), v.get("focus"), v.get("zoom_from"),
+                                              v.get("layout"))
         if v.get("type") == "diagram":
             return "diagram:" + v.get("name", str(b["i"]))
         return None
@@ -366,7 +368,7 @@ def render_beat(tl, b, t, img=None):
         if panel_dark:
             sh, pad = shadow(box[2] - box[0], box[3] - box[1], dark)
             frame.paste((0, 0, 0, 255), (box[0] - pad, box[1] - pad), sh.point(lambda v: int(v * a_plate)))
-        pimg = Image.new("RGBA", (box[2] - box[0], box[3] - box[1]), rgba(ppal["panel"] if panel_dark else pal["bg"], 1.0))
+        pimg = Image.new("RGBA", (box[2] - box[0], box[3] - box[1]), rgba(ppal["panel"] if panel_dark else ppal["bg"], 1.0))
         if fn:
             fn(pimg, ImageDraw.Draw(pimg), run_p, t - b["run_start"], ppal, b)
         if a_plate < 1:

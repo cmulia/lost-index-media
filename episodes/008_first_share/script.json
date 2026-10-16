@@ -1,406 +1,435 @@
 {
-  "file_no": "008",
-  "slug": "first_share",
-  "title": "The Oldest Share",
-  "series_label": "file no. 008",
-  "voice_direction": "Lily: calm, velvety newsreader, unhurried; a faint smile on 'isn't really a share', clipped and dry on 'Mace. Pepper. Nutmeg.', slow and quiet on the last line.",
-  "narration": "The oldest share in the world was found in two thousand and ten. [pause] And it isn't really a share. It's a receipt, dated the ninth of September, sixteen-oh-six. Four years earlier, the Dutch East India Company's charter said anyone in the land could buy a share. In Amsterdam, over eleven hundred people did. Even a merchant's maid. In Enkhuizen, town messenger Pieter Harmensz put in a hundred and fifty guilders, about a year's pay, in instalments. When he paid the last one, he got this printed slip. The first dividends, from sixteen-ten, came mostly in spice. Mace. Pepper. Nutmeg. Clerks logged his payouts on the paper until sixteen-fifty. But the slip wasn't the share. A VOC share was a line in the company's ledger. To sell, you visited the company's office, where a bookkeeper moved the line to the buyer. By sixteen-eleven, Amsterdam had built a grand exchange for the trading. After Pieter died, it went into the town archive, where history student Ruben Schalk found it on his first day. It was unveiled on the ninth of September, twenty-ten: four hundred and four years to the day. Today, European law requires exchange-traded shares to be held as book entries. We've gone back to the ledger. [pause] The paper was only ever the receipt.",
-  "beats": [
-    {
-      "text": "The oldest share in the world was found in two thousand and ten. [pause] And it isn't really a share. ",
-      "caption": "the oldest share in the world was found in 2010. and it isn't really a share.",
-      "big": "isn't a share.",
-      "visual": {
-        "type": "photo",
-        "asset": "voc_brand_iron"
-      },
-      "label": "voc mark · branding iron, 1700s",
-      "sublabel": "rijksmuseum · cc0",
-      "date_label": null,
-      "date": null,
-      "sfx": "low room tone, a single soft thud, then a paper rustle",
-      "dark": true
-    },
-    {
-      "text": "It's a receipt, dated the ninth of September, sixteen-oh-six. ",
-      "caption": "it's a receipt, dated 9 september 1606.",
-      "big": "a receipt.",
-      "visual": {
-        "type": "photo",
-        "asset": "voc_share_1606"
-      },
-      "label": "voc receipt · enkhuizen chamber",
-      "sublabel": "westfries archief · wikimedia",
-      "date_label": "dated",
-      "date": "9 september 1606",
-      "sfx": "paper unfolding",
-      "dark": false
-    },
-    {
-      "text": "Four years earlier, the Dutch East India Company's charter said anyone in the land could buy a share. ",
-      "caption": "four years earlier, the dutch east india company's charter said anyone in the land could buy a share.",
-      "big": "anyone.",
-      "visual": {
-        "type": "photo",
-        "asset": "voc_founding_print"
-      },
-      "label": "founding of the voc · imagined, print c. 1865–70",
-      "sublabel": "rijksmuseum · wikimedia",
-      "date_label": "charter",
-      "date": "march 1602",
-      "sfx": "heavy door creak, distant crowd",
-      "dark": false
-    },
-    {
-      "text": "In Amsterdam, over eleven hundred people did. Even a merchant's maid. ",
-      "caption": "in amsterdam, over 1,100 people did. even a merchant's maid.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "voc_ledger_1602"
-      },
-      "label": "amsterdam subscription ledger · 1602",
-      "sublabel": "e. bomppard · cc by-sa 4.0",
-      "date_label": "closed",
-      "date": "31 august 1602",
-      "sfx": "quill scratching, page turn",
-      "dark": false
-    },
-    {
-      "text": "In Enkhuizen, town messenger Pieter Harmensz put in a hundred and fifty guilders, about a year's pay, in instalments. ",
-      "caption": "in enkhuizen, town messenger pieter harmensz put in 150 guilders, about a year's pay, in instalments.",
-      "big": "ƒ150",
-      "visual": {
-        "type": "photo",
-        "asset": "blaeu_enkhuizen_1652"
-      },
-      "label": "enkhuizen · blaeu, 1652",
-      "sublabel": "wikimedia · public domain",
-      "date_label": null,
-      "date": null,
-      "sfx": "harbour gulls, coins counted onto a table",
-      "dark": false
-    },
-    {
-      "text": "When he paid the last one, he got this printed slip. ",
-      "caption": "when he paid the last one, he got this printed slip.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "voc_share_1606"
-      },
-      "label": "voc receipt · pieter harmensz",
-      "sublabel": "westfries archief · wikimedia",
-      "date_label": "last instalment",
-      "date": "9 september 1606",
-      "sfx": "ink pen scratch, stamp press",
-      "dark": false
-    },
-    {
-      "text": "The first dividends, from sixteen-ten, came mostly in spice. ",
-      "caption": "the first dividends, from 1610, came mostly in spice.",
-      "big": "in spice.",
-      "visual": {
-        "type": "photo",
-        "asset": "vroom_return_1599"
-      },
-      "label": "ships home from the east indies · 1599",
-      "sublabel": "h. c. vroom · rijksmuseum · wikimedia",
-      "date_label": null,
-      "date": null,
-      "sfx": "creaking timber, waves against a hull",
-      "dark": false
-    },
-    {
-      "text": "Mace. Pepper. Nutmeg. ",
-      "caption": "mace. pepper. nutmeg.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "mace_nutmeg"
-      },
-      "label": "nutmeg with its red mace",
-      "sublabel": "h. zell · cc by-sa 3.0",
-      "date_label": null,
-      "date": null,
-      "sfx": "three soft dry rattles, like spice poured into a scale pan",
-      "dark": false
-    },
-    {
-      "text": "Clerks logged his payouts on the paper until sixteen-fifty. ",
-      "caption": "clerks logged his payouts on the paper until 1650.",
-      "big": null,
-      "visual": {
-        "type": "diagram",
-        "idea": "Thin horizontal timeline on aged-paper texture: tick at 1606 labelled 'paid in full', a run of small hand-inked ticks between 1610 and 1650 labelled only 'payouts noted' (no amounts), ending at 1650. Mono labels, label 'schematic'."
-      },
-      "label": "schematic",
-      "sublabel": null,
-      "date_label": "noted",
-      "date": "1610 → 1650",
-      "sfx": "pen ticks, one per entry",
-      "dark": false
-    },
-    {
-      "text": "But the slip wasn't the share. A VOC share was a line in the company's ledger. ",
-      "caption": "but the slip wasn't the share. a voc share was a line in the company's ledger.",
-      "big": "a line.",
-      "visual": {
-        "type": "diagram",
-        "idea": "Drawn ledger page (capital book) with ruled columns 'name · account · guilders'; three anonymous rows in faded ink, one row highlighted in ochre. Caption tag 'the share = this line'. No real names except 'p. harmensz · ƒ150' optional; mark 'schematic'."
-      },
-      "label": "schematic · capital book",
-      "sublabel": null,
-      "date_label": null,
-      "date": null,
-      "sfx": "page turn, low hum",
-      "dark": true
-    },
-    {
-      "text": "To sell, you visited the company's office, where a bookkeeper moved the line to the buyer. ",
-      "caption": "to sell, you visited the company's office, where a bookkeeper moved the line to the buyer.",
-      "big": null,
-      "visual": {
-        "type": "diagram",
-        "idea": "Simple animated diagram: two ledger accounts side by side, 'seller' and 'buyer'; a share line slides from the seller column to the buyer column, with a small quill icon and two tick marks for 'approved by two directors'. Label 'schematic'."
-      },
-      "label": "schematic · a transfer, c. 1602–1612",
-      "sublabel": null,
-      "date_label": null,
-      "date": null,
-      "sfx": "quill stroke, ledger slam shut",
-      "dark": false
-    },
-    {
-      "text": "By sixteen-eleven, Amsterdam had built a grand exchange for the trading. ",
-      "caption": "by 1611, amsterdam had built a grand exchange for the trading.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "berckheyde_exchange"
-      },
-      "label": "the amsterdam exchange · c. 1670–90",
-      "sublabel": "job berckheyde · amsterdam museum · wikimedia",
-      "date_label": "completed",
-      "date": "1611",
-      "sfx": "crowded trading hall murmur under stone arcades",
-      "dark": false
-    },
-    {
-      "text": "After Pieter died, it went into the town archive, where history student Ruben Schalk found it on his first day. ",
-      "caption": "after pieter died, it went into the town archive, where history student ruben schalk found it on his first day.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "voc_share_1606"
-      },
-      "label": "enkhuizen city archive · westfries archief, hoorn",
-      "sublabel": "westfries archief · wikimedia",
-      "date_label": "found",
-      "date": "2010",
-      "sfx": "archive box lid, a page lifted",
-      "dark": false
-    },
-    {
-      "text": "It was unveiled on the ninth of September, twenty-ten: four hundred and four years to the day. ",
-      "caption": "it was unveiled on 9 september 2010: 404 years to the day.",
-      "big": "to the day.",
-      "visual": {
-        "type": "type_only"
-      },
-      "label": null,
-      "sublabel": null,
-      "date_label": "unveiled",
-      "date": "9 september 2010",
-      "sfx": "soft camera shutter, single bell",
-      "dark": false
-    },
-    {
-      "text": "Today, European law requires exchange-traded shares to be held as book entries. ",
-      "caption": "today, european law requires exchange-traded shares to be held as book entries.",
-      "big": null,
-      "visual": {
-        "type": "diagram",
-        "idea": "Minimal timeline 1602 → today: at left a drawn ledger line ('1602 · a line in the capital book'), a long thin rule, at right the same line rendered as a monospaced digital record ('2025 · book entry'). Same highlight colour on both ends. Label 'schematic'."
-      },
-      "label": "eu csdr · since 1 january 2025",
-      "sublabel": "schematic",
-      "date_label": null,
-      "date": null,
-      "sfx": "soft keyboard click fading into a quill stroke",
-      "dark": false
-    },
-    {
-      "text": "We've gone back to the ledger. [pause] The paper was only ever the receipt.",
-      "caption": "we've gone back to the ledger. the paper was only ever the receipt.",
-      "big": "the receipt.",
-      "visual": {
-        "type": "photo",
-        "asset": "voc_share_1606"
-      },
-      "label": "voc receipt · 1606",
-      "sublabel": "westfries archief · wikimedia",
-      "date_label": null,
-      "date": null,
-      "sfx": "room tone drops out; one low sustained note",
-      "dark": true
-    }
-  ],
-  "music_mood": "Sparse late-Renaissance chamber feel: solo harpsichord or lute ostinato over a soft low string drone, about 72 bpm, ticking clock-like pulse that thins out to a single sustained note for the ending.",
-  "assets": [
-    {
-      "key": "voc_share_1606",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/VOC_aandeel_9_september_1606.jpg/1600px-VOC_aandeel_9_september_1606.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:VOC_aandeel_9_september_1606.jpg",
-      "author": "Vereenigde Oostindische Compagnie, Enkhuizen chamber (scan via Westfries Archief; uploaded by Jan Arkesteijn, 2011)",
-      "date": "9 September 1606",
-      "license": "Public domain (PD-old; Public Domain Mark 1.0)",
-      "shows": "The receipt for Pieter Harmensz's 150-guilder VOC stake, Enkhuizen chamber: printed form completed by hand (original 1826 × 1329 px)",
-      "changes": "cropped, slow push into handwriting; re-used on four beats"
-    },
-    {
-      "key": "voc_ledger_1602",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/VOC-Capital-Subscribtion.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:VOC-Capital-Subscribtion.jpg",
-      "author": "Eric Bomppard (photo); document: VOC Amsterdam chamber",
-      "date": "August 1602 (document); uploaded 12 February 2023",
-      "license": "CC BY-SA 4.0",
-      "shows": "First page of the Amsterdam chamber's capital subscription ledger, with directors' entries at the foot (original 768 × 971 px, so used small)",
-      "changes": "cropped, slow pan down the page, light grade"
-    },
-    {
-      "key": "voc_founding_print",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Oprichting_van_de_VOC,_1602_Oprigting_der_Vereenigde_Oostindische_Compagnie,_1602_(titel_op_object),_BI-1997-1407B-8.jpg/1600px-Oprichting_van_de_VOC,_1602_Oprigting_der_Vereenigde_Oostindische_Compagnie,_1602_(titel_op_object),_BI-1997-1407B-8.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Oprichting_van_de_VOC,_1602_Oprigting_der_Vereenigde_Oostindische_Compagnie,_1602_(titel_op_object),_BI-1997-1407B-8.jpg",
-      "author": "Johann Heinrich Maria Hubert Rennefeld, after Thomas Simon Cool (Rijksmuseum BI-1997-1407B-8)",
-      "date": "1865–1870",
-      "license": "Public domain (Rijksmuseum lists it as public domain)",
-      "shows": "19th-century steel engraving imagining the founding of the VOC in 1602; not a contemporary image, labelled 'imagined' on screen",
-      "changes": "cropped to vertical, slow push"
-    },
-    {
-      "key": "vroom_return_1599",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/De_terugkomst_in_Amsterdam_van_de_tweede_expeditie_naar_Oost-Indi%C3%AB,_Hendrik_Cornelisz_Vroom,_1599,_Rijksmuseum_SK-A-2858.jpg/1600px-De_terugkomst_in_Amsterdam_van_de_tweede_expeditie_naar_Oost-Indi%C3%AB,_Hendrik_Cornelisz_Vroom,_1599,_Rijksmuseum_SK-A-2858.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:De_terugkomst_in_Amsterdam_van_de_tweede_expeditie_naar_Oost-Indi%C3%AB,_Hendrik_Cornelisz_Vroom,_1599,_Rijksmuseum_SK-A-2858.jpg",
-      "author": "Hendrik Cornelisz Vroom (Rijksmuseum SK-A-2858)",
-      "date": "1599",
-      "license": "Public domain (PD-old-100; Public Domain Mark 1.0)",
-      "shows": "The return to Amsterdam of the second Dutch expedition to the East Indies, 19 July 1599 (pre-VOC spice voyage; original 7658 × 3530 px)",
-      "changes": "cropped to vertical detail of ships, slow pan right"
-    },
-    {
-      "key": "mace_nutmeg",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Myristica_fragans_002.jpg/1600px-Myristica_fragans_002.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Myristica_fragans_002.jpg",
-      "author": "H. Zell",
-      "date": "14 February 2010",
-      "license": "CC BY-SA 3.0 (or GFDL 1.2+)",
-      "shows": "Nutmeg (Myristica fragrans) with its red aril, the spice mace (original 1931 × 1449 px)",
-      "changes": "cropped, slow push"
-    },
-    {
-      "key": "blaeu_enkhuizen_1652",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Blaeu_1652_-_Enkhuizen.jpg/1280px-Blaeu_1652_-_Enkhuizen.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Blaeu_1652_-_Enkhuizen.jpg",
-      "author": "Joan Blaeu (Toonneel der Steden)",
-      "date": "1652",
-      "license": "Public domain (PD-old)",
-      "shows": "Bird's-eye city map of Enkhuizen, where Pieter Harmensz lived and worked",
-      "changes": "cropped, slow push towards the harbour; 1280px thumb (original size not confirmed)"
-    },
-    {
-      "key": "berckheyde_exchange",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/SA_3025-De_binnenplaats_van_de_Beurs_van_Hendrick_de_Keyser.jpg/1280px-SA_3025-De_binnenplaats_van_de_Beurs_van_Hendrick_de_Keyser.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:SA_3025-De_binnenplaats_van_de_Beurs_van_Hendrick_de_Keyser.jpg",
-      "author": "Job Adriaensz. Berckheyde (Amsterdam Museum SA 3025)",
-      "date": "c. 1670–1690",
-      "license": "Public domain (PD-old-100; Public Domain Mark 1.0)",
-      "shows": "The courtyard of Hendrick de Keyser's exchange (Beurs) in Amsterdam, crowded with traders",
-      "changes": "cropped to vertical, slow push; 1280px thumb"
-    },
-    {
-      "key": "de_witte_exchange",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Emanuel_de_Witte_-_De_binnenplaats_van_de_beurs_te_Amsterdam.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Emanuel_de_Witte_-_De_binnenplaats_van_de_beurs_te_Amsterdam.jpg",
-      "author": "Emanuel de Witte (Museum Boijmans Van Beuningen)",
-      "date": "1653",
-      "license": "Public domain (PD-old-100; PD-Art)",
-      "shows": "The courtyard of the Amsterdam exchange; alternate plate for the 1611 beat (original 1000 × 1051 px)",
-      "changes": "alternate only; cropped, slow push if used"
-    },
-    {
-      "key": "voc_brand_iron",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Brandmerk_VOC,_NG-1987-14-1.jpg/1280px-Brandmerk_VOC,_NG-1987-14-1.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Brandmerk_VOC,_NG-1987-14-1.jpg",
-      "author": "Anonymous maker, Netherlands (Rijksmuseum NG-1987-14-1)",
-      "date": "1700–1800",
-      "license": "CC0 1.0",
-      "shows": "Iron branding tool with the VOC monogram (18th century, later than the story; used as a mood opener)",
-      "changes": "cropped, darkened, slow push; 1280px thumb (original size not confirmed)"
-    }
-  ],
-  "tiktok_caption": "The world's oldest share isn't a share 📜 It's a receipt from 1606, and the real share was a line in a ledger.\nfile no. 008 · Images: Westfries Archief, Rijksmuseum, Amsterdam Museum, Joan Blaeu (public domain), E. Bomppard & H. Zell (CC BY-SA) via Wikimedia Commons · Narration: ElevenLabs\n#history #stockmarket #voc #dutchhistory #archives",
-  "instagram_caption": "In 2010, a history student working in the archive at Hoorn picked up a printed form from 1606. It turned out to be the oldest known share in the world. Except it isn't quite a share.\n\nIn March 1602, the charter of the Dutch East India Company, the VOC, said that anyone living in the land could buy in. In Amsterdam alone, 1,143 people did, among them a merchant's maid with 100 guilders.\n\nIn Enkhuizen, the town messenger Pieter Harmensz put in 150 guilders, about a year's pay, in instalments. When he paid the last one, on 9 September 1606, he was given a printed receipt, filled in by hand. The first dividends, from 1610, came mostly in spice: mace, pepper, nutmeg. Clerks noted his payouts on the paper until 1650.\n\nThe paper never proved he owned anything, though. A VOC share was a line in the company's capital book, and selling one meant a trip to the East India House, where a bookkeeper moved it from one account to another.\n\nAfter his death, the receipt went into the town archive. It was unveiled on 9 September 2010, 404 years to the day. Today, European law requires exchange-traded shares to be held as book entries. Back to the ledger.\n\nfile no. 008\n\n—\nImages: VOC receipt of 9 September 1606, Westfries Archief (public domain). Amsterdam subscription ledger, 1602, photo by Eric Bomppard (CC BY-SA 4.0). Founding of the VOC, imagined in a print by J. H. Rennefeld after T. S. Cool, c. 1865–70, Rijksmuseum (public domain). Hendrik Cornelisz Vroom, return of the second East Indies expedition, 1599, Rijksmuseum (public domain). Nutmeg and mace, photo by H. Zell (CC BY-SA 3.0). Enkhuizen by Joan Blaeu, 1652 (public domain). Job Berckheyde, the Amsterdam exchange, Amsterdam Museum (public domain). VOC branding iron, Rijksmuseum (CC0). All via Wikimedia Commons. Ledger, transfer and timeline graphics are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects synthesised for this video.\n\n#history #stockmarket #voc #dutchhistory #archives",
-  "facts": [
-    {
-      "claim": "The Enkhuizen-chamber VOC document dated 9 September 1606 is called the world's oldest share; technically it is a receipt for the last instalment of Pieter Harmensz's 150-guilder investment",
-      "source": "Westfries Archief, 'The world's oldest share' / 'Het oudste aandeel'; Guinness World Records, 'Oldest share certificate'",
-      "url": "https://westfriesarchief.nl/historie/thema-s/geld-en-handel/the-oldest-share"
-    },
-    {
-      "claim": "Found in 2010 by Utrecht University history student Ruben Schalk while researching his MA thesis, in the Enkhuizen city archive held at the Westfries Archief in Hoorn",
-      "source": "Westfries Archief; Guinness World Records; Schalk, 'Financing the Dutch Golden Age: the credit market of Enkhuizen, 1580–1700' (MA, Utrecht 2010)",
-      "url": "https://www.guinnessworldrecords.com/world-records/oldest-share-certificate"
-    },
-    {
-      "claim": "He found it by accident on his first day in the archive and noticed it because it was a printed form (printing was expensive) with details added by hand",
-      "source": "Bloomberg report, 2010, as summarised in press coverage (Business Standard, 'Rembrandt of shares', 18 Sep 2010)",
-      "url": "https://www.business-standard.com/article/beyond-business/rembrandt-of-shares-110091800025_1.html"
-    },
-    {
-      "claim": "It was made public on 9 September 2010 in the Westerkerk, Enkhuizen (404 years to the day after its date)",
-      "source": "R. Schalk, 'Leven, werk en financiën van Pieter Harmensz, de eigenaar van het oudste aandeel ter wereld' (2011); Westfries Archief",
-      "url": "https://www.researchgate.net/publication/284715333_Leven_werk_en_financien_van_Pieter_Harmensz_de_eigenaar_van_het_oudste_aandeel_ter_wereld"
-    },
-    {
-      "claim": "Pieter Harmensz was a town messenger (stadsbode) of Enkhuizen; his fixed wage was 125 guilders a year c. 1590, with colleagues earning about 200 by c. 1600 (so 150 guilders ≈ a year's pay)",
-      "source": "Westfries Archief, 'Het oudste aandeel'; Schalk 2011",
-      "url": "https://www.westfriesarchief.nl/verhalen/het-oudste-aandeel/"
-    },
-    {
-      "claim": "Dividend payments were noted on the document up to 1650; after his death it ended up in the Enkhuizen city archive",
-      "source": "Westfries Archief, 'Het oudste aandeel' / 'Oudste aandeel ter wereld'",
-      "url": "https://www.westfriesarchief.nl/schatkist/oudste-aandeel-ter-wereld/"
-    },
-    {
-      "claim": "The VOC charter of March 1602, article 10: all residents of these lands may buy shares in this Company",
-      "source": "Lodewijk Petram, The World's First Stock Exchange (Columbia UP, 2014); 'The world's first IPO'",
-      "url": "https://www.worldsfirststockexchange.com/2020/10/15/the-worlds-first-ipo/"
-    },
-    {
-      "claim": "Amsterdam subscription closed 31 August 1602 with 1,143 investors; held at the house of director Dirck van Os, whose maid Neeltgen Cornelis subscribed 100 guilders",
-      "source": "Petram, 'The world's first IPO'; Petram, PhD thesis (UvA 2011)",
-      "url": "https://www.worldsfirststockexchange.com/2020/10/15/the-worlds-first-ipo/"
-    },
-    {
-      "claim": "From 1610 the VOC paid a series of dividends mostly in kind: mace (75% of nominal), pepper (50%), and nutmeg (30%, declared March 1612); only small cash portions",
-      "source": "Gelderblom, de Jong & Jonker, 'The VOC insurance contract of 1613' (Yale/UU working paper; European Review of Economic History 24:2)",
-      "url": "https://economics.yale.edu/sites/default/files/gelderblom_de_jong_and_jonker_on_voc_insurance_february_2014.pdf"
-    },
-    {
-      "claim": "The VOC issued no bearer shares; ownership was a positive balance in the capital book, and transfers required buyer and seller at the East India House, where the bookkeeper moved the share after two directors approved",
-      "source": "Petram, PhD thesis 'The world's first stock exchange: how the Amsterdam market for Dutch East India Company shares became a modern securities market, 1602–1700' (UvA 2011)",
-      "url": "https://pure.uva.nl/ws/files/1427401/85966_05.pdf"
-    },
-    {
-      "claim": "Hendrick de Keyser's exchange building on the Rokin, Amsterdam, was completed in 1611; VOC shares were traded there",
-      "source": "Beursgeschiedenis.nl (Exchange History), 'The exchange of Hendrick de Keyser'",
-      "url": "https://www.beursgeschiedenis.nl/en/moment/the-exchange-of-hendrick-de-keyser/"
-    },
-    {
-      "claim": "EU CSDR Article 3: securities admitted to trading or traded on trading venues must be in book-entry form; applies to all such transferable securities from 1 January 2025",
-      "source": "ESMA Interactive Single Rulebook, CSDR Art. 3; Banque de France",
-      "url": "https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/csdr/article-3-book-entry-form-0"
-    }
-  ]
+ "file_no": "008",
+ "slug": "first_share",
+ "title": "The Oldest Share",
+ "series_label": "file no. 008",
+ "voice_direction": "Lily: calm, velvety newsreader, unhurried; a faint smile on 'isn't really a share', clipped and dry on 'Mace. Pepper. Nutmeg.', slow and quiet on the last line.",
+ "narration": "The oldest share in the world was found in two thousand and ten. [pause] And it isn't really a share. It's a receipt, dated the ninth of September, sixteen-oh-six. Four years earlier, the Dutch East India Company's charter said anyone in the land could buy a share. In Amsterdam, over eleven hundred people did. Even a merchant's maid. In Enkhuizen, town messenger Pieter Harmensz put in a hundred and fifty guilders, about a year's pay, in instalments. When he paid the last one, he got this printed slip. The first dividends, from sixteen-ten, came mostly in spice. Mace. Pepper. Nutmeg. Clerks logged his payouts on the paper until sixteen-fifty. But the slip wasn't the share. A VOC share was a line in the company's ledger. To sell, you visited the company's office, where a bookkeeper moved the line to the buyer. By sixteen-eleven, Amsterdam had built a grand exchange for the trading. After Pieter died, it went into the town archive, where history student Ruben Schalk found it on his first day. It was unveiled on the ninth of September, twenty-ten: four hundred and four years to the day. Today, European law requires exchange-traded shares to be held as book entries. We've gone back to the ledger. [pause] The paper was only ever the receipt.",
+ "beats": [
+  {
+   "text": "The oldest share in the world was found in two thousand and ten. [pause] And it isn't really a share. ",
+   "caption": "The oldest known share in the world was found in two thousand and ten. [pause] And it isn't really a share. ",
+   "big": "isn't a share.",
+   "visual": {
+    "type": "photo",
+    "asset": "voc_brand_iron"
+   },
+   "label": "voc mark · branding iron, 1700s",
+   "sublabel": "rijksmuseum · cc0",
+   "date_label": null,
+   "date": null,
+   "sfx": "low room tone, a single soft thud, then a paper rustle",
+   "dark": true
+  },
+  {
+   "text": "It's a receipt, dated the ninth of September, sixteen-oh-six. ",
+   "caption": "it's a receipt, dated 9 september 1606.",
+   "big": "a receipt.",
+   "visual": {
+    "type": "photo",
+    "asset": "voc_share_front"
+   },
+   "label": "voc receipt · enkhuizen chamber",
+   "sublabel": "westfries archief · wikimedia",
+   "date_label": "dated",
+   "date": "9 september 1606",
+   "sfx": "paper unfolding",
+   "dark": false
+  },
+  {
+   "text": "Four years earlier, the Dutch East India Company's charter said anyone in the land could buy a share. ",
+   "caption": "four years earlier, the dutch east india company's charter said anyone in the land could buy a share.",
+   "big": "anyone.",
+   "visual": {
+    "type": "photo",
+    "asset": "voc_founding_print_crop"
+   },
+   "label": "founding of the voc · imagined, print c. 1865–70",
+   "sublabel": "rijksmuseum · wikimedia",
+   "date_label": "charter",
+   "date": "march 1602",
+   "sfx": "heavy door creak, distant crowd",
+   "dark": false
+  },
+  {
+   "text": "In Amsterdam, over eleven hundred people did. Even a merchant's maid. ",
+   "caption": "in amsterdam, over 1,100 people did. even a merchant's maid.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "voc_ledger_1602"
+   },
+   "label": "amsterdam subscription ledger · 1602",
+   "sublabel": "e. bomppard · cc by-sa 4.0",
+   "date_label": "closed",
+   "date": "31 august 1602",
+   "sfx": "quill scratching, page turn",
+   "dark": false
+  },
+  {
+   "text": "In Enkhuizen, town messenger Pieter Harmensz put in a hundred and fifty guilders, about a year's pay, in instalments. ",
+   "caption": "in enkhuizen, town messenger pieter harmensz put in 150 guilders, about a year's pay, in instalments.",
+   "big": "ƒ150",
+   "visual": {
+    "type": "photo",
+    "asset": "blaeu_enkhuizen_1652"
+   },
+   "label": "enkhuizen · blaeu, 1652",
+   "sublabel": "wikimedia · public domain",
+   "date_label": null,
+   "date": null,
+   "sfx": "harbour gulls, coins counted onto a table",
+   "dark": false
+  },
+  {
+   "text": "When he paid the last one, he got this printed slip. ",
+   "caption": "when he paid the last one, he got this printed slip.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "voc_share_front",
+    "focus": [
+     0.5,
+     0.62
+    ],
+    "zoom_from": 1.25,
+    "zoom_to": 1.35
+   },
+   "label": "voc receipt · pieter harmensz",
+   "sublabel": "westfries archief · wikimedia",
+   "date_label": "last instalment",
+   "date": "9 september 1606",
+   "sfx": "ink pen scratch, stamp press",
+   "dark": false
+  },
+  {
+   "text": "The first dividends, from sixteen-ten, came mostly in spice. ",
+   "caption": "the first dividends, from 1610, came mostly in spice.",
+   "big": "in spice.",
+   "visual": {
+    "type": "photo",
+    "asset": "vroom_return_1599"
+   },
+   "label": "ships home from the east indies · 1599",
+   "sublabel": "h. c. vroom · rijksmuseum · wikimedia",
+   "date_label": null,
+   "date": null,
+   "sfx": "creaking timber, waves against a hull",
+   "dark": false
+  },
+  {
+   "text": "Mace. Pepper. Nutmeg. ",
+   "caption": "mace. pepper. nutmeg.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "mace_nutmeg"
+   },
+   "label": "nutmeg with its red mace",
+   "sublabel": "h. zell · cc by-sa 3.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "three soft dry rattles, like spice poured into a scale pan",
+   "dark": false
+  },
+  {
+   "text": "Clerks logged his payouts on the paper until sixteen-fifty. ",
+   "caption": "clerks logged his payouts on the paper until 1650.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "payouts",
+    "panel": "light",
+    "height": 600
+   },
+   "label": "schematic",
+   "sublabel": null,
+   "date_label": "noted",
+   "date": "1610 → 1650",
+   "sfx": "pen ticks, one per entry",
+   "dark": false
+  },
+  {
+   "text": "But the slip wasn't the share. A VOC share was a line in the company's ledger. ",
+   "caption": "but the slip wasn't the share. a voc share was a line in the company's ledger.",
+   "big": "a line.",
+   "visual": {
+    "type": "diagram",
+    "name": "ledger",
+    "panel": "light",
+    "height": 820
+   },
+   "label": "schematic · capital book",
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "page turn, low hum",
+   "dark": true
+  },
+  {
+   "text": "To sell, you visited the company's office, where a bookkeeper moved the line to the buyer. ",
+   "caption": "to sell, you visited the company's office, where a bookkeeper moved the line to the buyer.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "transfer",
+    "panel": "light",
+    "height": 760
+   },
+   "label": "schematic · a transfer, c. 1602–1612",
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "quill stroke, ledger slam shut",
+   "dark": false
+  },
+  {
+   "text": "By sixteen-eleven, Amsterdam had built a grand exchange for the trading. ",
+   "caption": "by 1611, amsterdam had built a grand exchange for the trading.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "berckheyde_exchange"
+   },
+   "label": "the amsterdam exchange · c. 1670–90",
+   "sublabel": "job berckheyde · amsterdam museum · wikimedia",
+   "date_label": "completed",
+   "date": "1611",
+   "sfx": "crowded trading hall murmur under stone arcades",
+   "dark": false
+  },
+  {
+   "text": "After Pieter died, it went into the town archive, where history student Ruben Schalk found it on his first day. ",
+   "caption": "after pieter died, it went into the town archive, where history student ruben schalk found it on his first day.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "voc_share_back"
+   },
+   "label": "enkhuizen city archive · westfries archief, hoorn",
+   "sublabel": "westfries archief · wikimedia",
+   "date_label": "found",
+   "date": "2010",
+   "sfx": "archive box lid, a page lifted",
+   "dark": false
+  },
+  {
+   "text": "It was unveiled on the ninth of September, twenty-ten: four hundred and four years to the day. ",
+   "caption": "it was unveiled on 9 september 2010: 404 years to the day.",
+   "big": "to the day.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "unveiled",
+   "date": "9 september 2010",
+   "sfx": "soft camera shutter, single bell",
+   "dark": false
+  },
+  {
+   "text": "Today, European law requires exchange-traded shares to be held as book entries. ",
+   "caption": "today, european law requires exchange-traded shares to be held as book entries.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "book_entry",
+    "panel": "light",
+    "height": 520
+   },
+   "label": "eu csdr · since 1 january 2025",
+   "sublabel": "schematic",
+   "date_label": null,
+   "date": null,
+   "sfx": "soft keyboard click fading into a quill stroke",
+   "dark": false
+  },
+  {
+   "text": "We've gone back to the ledger. [pause] The paper was only ever the receipt.",
+   "caption": "we've gone back to the ledger. the paper was only ever the receipt.",
+   "big": "the receipt.",
+   "visual": {
+    "type": "photo",
+    "asset": "voc_share_front"
+   },
+   "label": "voc receipt · 1606",
+   "sublabel": "westfries archief · wikimedia",
+   "date_label": null,
+   "date": null,
+   "sfx": "room tone drops out; one low sustained note",
+   "dark": true
+  }
+ ],
+ "music_mood": "Sparse late-Renaissance chamber feel: solo harpsichord or lute ostinato over a soft low string drone, about 72 bpm, ticking clock-like pulse that thins out to a single sustained note for the ending.",
+ "assets": [
+  {
+   "key": "voc_share_1606",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/VOC_aandeel_9_september_1606.jpg/1600px-VOC_aandeel_9_september_1606.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VOC_aandeel_9_september_1606.jpg",
+   "author": "Vereenigde Oostindische Compagnie, Enkhuizen chamber (scan via Westfries Archief; uploaded by Jan Arkesteijn, 2011)",
+   "date": "9 September 1606",
+   "license": "Public domain (PD-old; Public Domain Mark 1.0)",
+   "shows": "The receipt for Pieter Harmensz's 150-guilder VOC stake, Enkhuizen chamber: printed form completed by hand (original 1826 × 1329 px)",
+   "changes": "cropped, slow push into handwriting; re-used on four beats"
+  },
+  {
+   "key": "voc_ledger_1602",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/VOC-Capital-Subscribtion.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VOC-Capital-Subscribtion.jpg",
+   "author": "Eric Bomppard (photo); document: VOC Amsterdam chamber",
+   "date": "August 1602 (document); uploaded 12 February 2023",
+   "license": "CC BY-SA 4.0",
+   "shows": "First page of the Amsterdam chamber's capital subscription ledger, with directors' entries at the foot (original 768 × 971 px, so used small)",
+   "changes": "cropped, slow pan down the page, light grade"
+  },
+  {
+   "key": "voc_founding_print",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Oprichting_van_de_VOC,_1602_Oprigting_der_Vereenigde_Oostindische_Compagnie,_1602_(titel_op_object),_BI-1997-1407B-8.jpg/1600px-Oprichting_van_de_VOC,_1602_Oprigting_der_Vereenigde_Oostindische_Compagnie,_1602_(titel_op_object),_BI-1997-1407B-8.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Oprichting_van_de_VOC,_1602_Oprigting_der_Vereenigde_Oostindische_Compagnie,_1602_(titel_op_object),_BI-1997-1407B-8.jpg",
+   "author": "Johann Heinrich Maria Hubert Rennefeld, after Thomas Simon Cool (Rijksmuseum BI-1997-1407B-8)",
+   "date": "1865–1870",
+   "license": "Public domain (Rijksmuseum lists it as public domain)",
+   "shows": "19th-century steel engraving imagining the founding of the VOC in 1602; not a contemporary image, labelled 'imagined' on screen",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "vroom_return_1599",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/De_terugkomst_in_Amsterdam_van_de_tweede_expeditie_naar_Oost-Indi%C3%AB,_Hendrik_Cornelisz_Vroom,_1599,_Rijksmuseum_SK-A-2858.jpg/1600px-De_terugkomst_in_Amsterdam_van_de_tweede_expeditie_naar_Oost-Indi%C3%AB,_Hendrik_Cornelisz_Vroom,_1599,_Rijksmuseum_SK-A-2858.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:De_terugkomst_in_Amsterdam_van_de_tweede_expeditie_naar_Oost-Indi%C3%AB,_Hendrik_Cornelisz_Vroom,_1599,_Rijksmuseum_SK-A-2858.jpg",
+   "author": "Hendrik Cornelisz Vroom (Rijksmuseum SK-A-2858)",
+   "date": "1599",
+   "license": "Public domain (PD-old-100; Public Domain Mark 1.0)",
+   "shows": "The return to Amsterdam of the second Dutch expedition to the East Indies, 19 July 1599 (pre-VOC spice voyage; original 7658 × 3530 px)",
+   "changes": "cropped to vertical detail of ships, slow pan right"
+  },
+  {
+   "key": "mace_nutmeg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Myristica_fragans_002.jpg/1600px-Myristica_fragans_002.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Myristica_fragans_002.jpg",
+   "author": "H. Zell",
+   "date": "14 February 2010",
+   "license": "CC BY-SA 3.0 (or GFDL 1.2+)",
+   "shows": "Nutmeg (Myristica fragrans) with its red aril, the spice mace (original 1931 × 1449 px)",
+   "changes": "cropped, slow push"
+  },
+  {
+   "key": "blaeu_enkhuizen_1652",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Blaeu_1652_-_Enkhuizen.jpg/1280px-Blaeu_1652_-_Enkhuizen.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Blaeu_1652_-_Enkhuizen.jpg",
+   "author": "Joan Blaeu (Toonneel der Steden)",
+   "date": "1652",
+   "license": "Public domain (PD-old)",
+   "shows": "Bird's-eye city map of Enkhuizen, where Pieter Harmensz lived and worked",
+   "changes": "cropped, slow push towards the harbour; 1280px thumb (original size not confirmed)"
+  },
+  {
+   "key": "berckheyde_exchange",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/SA_3025-De_binnenplaats_van_de_Beurs_van_Hendrick_de_Keyser.jpg/1280px-SA_3025-De_binnenplaats_van_de_Beurs_van_Hendrick_de_Keyser.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SA_3025-De_binnenplaats_van_de_Beurs_van_Hendrick_de_Keyser.jpg",
+   "author": "Job Adriaensz. Berckheyde (Amsterdam Museum SA 3025)",
+   "date": "c. 1670–1690",
+   "license": "Public domain (PD-old-100; Public Domain Mark 1.0)",
+   "shows": "The courtyard of Hendrick de Keyser's exchange (Beurs) in Amsterdam, crowded with traders",
+   "changes": "cropped to vertical, slow push; 1280px thumb"
+  },
+  {
+   "key": "de_witte_exchange",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Emanuel_de_Witte_-_De_binnenplaats_van_de_beurs_te_Amsterdam.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Emanuel_de_Witte_-_De_binnenplaats_van_de_beurs_te_Amsterdam.jpg",
+   "author": "Emanuel de Witte (Museum Boijmans Van Beuningen)",
+   "date": "1653",
+   "license": "Public domain (PD-old-100; PD-Art)",
+   "shows": "The courtyard of the Amsterdam exchange; alternate plate for the 1611 beat (original 1000 × 1051 px)",
+   "changes": "alternate only; cropped, slow push if used"
+  },
+  {
+   "key": "voc_brand_iron",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Brandmerk_VOC,_NG-1987-14-1.jpg/1280px-Brandmerk_VOC,_NG-1987-14-1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Brandmerk_VOC,_NG-1987-14-1.jpg",
+   "author": "Anonymous maker, Netherlands (Rijksmuseum NG-1987-14-1)",
+   "date": "1700–1800",
+   "license": "CC0 1.0",
+   "shows": "Iron branding tool with the VOC monogram (18th century, later than the story; used as a mood opener)",
+   "changes": "cropped, darkened, slow push; 1280px thumb (original size not confirmed)"
+  },
+  {
+   "key": "voc_share_front",
+   "derived_from": "voc_share_1606",
+   "changes": "front side cropped from the two-sided scan"
+  },
+  {
+   "key": "voc_share_back",
+   "derived_from": "voc_share_1606",
+   "changes": "back side cropped from the two-sided scan"
+  },
+  {
+   "key": "voc_founding_print_crop",
+   "derived_from": "voc_founding_print",
+   "changes": "print cropped from its mount"
+  }
+ ],
+ "tiktok_caption": "The world's oldest known share isn't a share 📜 It's a receipt from 1606, and the real share was a line in a ledger.\nfile no. 008 · Images: Westfries Archief, Rijksmuseum, Amsterdam Museum, Joan Blaeu (public domain), E. Bomppard & H. Zell (CC BY-SA) via Wikimedia Commons · Narration: ElevenLabs\n#history #stockmarket #voc #dutchhistory #archives",
+ "instagram_caption": "In 2010, a history student working in the archive at Hoorn picked up a printed form from 1606. It turned out to be the oldest known share in the world. Except it isn't quite a share.\n\nIn March 1602, the charter of the Dutch East India Company, the VOC, said that anyone living in the land could buy in. In Amsterdam alone, 1,143 people did, among them a merchant's maid with 100 guilders.\n\nIn Enkhuizen, the town messenger Pieter Harmensz put in 150 guilders, about a year's pay, in instalments. When he paid the last one, on 9 September 1606, he was given a printed receipt, filled in by hand. The first dividends, from 1610, came mostly in spice: mace, pepper, nutmeg. Clerks noted his payouts on the paper until 1650.\n\nThe paper never proved he owned anything, though. A VOC share was a line in the company's capital book, and selling one meant a trip to the East India House, where a bookkeeper moved it from one account to another.\n\nAfter his death, the receipt went into the town archive. It was unveiled on 9 September 2010, 404 years to the day. Today, European law requires exchange-traded shares to be held as book entries. Back to the ledger.\n\nfile no. 008\n\n—\nImages: VOC receipt of 9 September 1606, Westfries Archief (public domain). Amsterdam subscription ledger, 1602, photo by Eric Bomppard (CC BY-SA 4.0). Founding of the VOC, imagined in a print by J. H. Rennefeld after T. S. Cool, c. 1865–70, Rijksmuseum (public domain). Hendrik Cornelisz Vroom, return of the second East Indies expedition, 1599, Rijksmuseum (public domain). Nutmeg and mace, photo by H. Zell (CC BY-SA 3.0). Enkhuizen by Joan Blaeu, 1652 (public domain). Job Berckheyde, the Amsterdam exchange, Amsterdam Museum (public domain). VOC branding iron, Rijksmuseum (CC0). All via Wikimedia Commons. Ledger, transfer and timeline graphics are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video.\n\n#history #stockmarket #voc #dutchhistory #archives",
+ "facts": [
+  {
+   "claim": "The Enkhuizen-chamber VOC document dated 9 September 1606 is called the world's oldest share; technically it is a receipt for the last instalment of Pieter Harmensz's 150-guilder investment",
+   "source": "Westfries Archief, 'The world's oldest share' / 'Het oudste aandeel'; Guinness World Records, 'Oldest share certificate'",
+   "url": "https://westfriesarchief.nl/historie/thema-s/geld-en-handel/the-oldest-share"
+  },
+  {
+   "claim": "Found in 2010 by Utrecht University history student Ruben Schalk while researching his MA thesis, in the Enkhuizen city archive held at the Westfries Archief in Hoorn",
+   "source": "Westfries Archief; Guinness World Records; Schalk, 'Financing the Dutch Golden Age: the credit market of Enkhuizen, 1580–1700' (MA, Utrecht 2010)",
+   "url": "https://www.guinnessworldrecords.com/world-records/oldest-share-certificate"
+  },
+  {
+   "claim": "He found it by accident on his first day in the archive and noticed it because it was a printed form (printing was expensive) with details added by hand",
+   "source": "Bloomberg report, 2010, as summarised in press coverage (Business Standard, 'Rembrandt of shares', 18 Sep 2010)",
+   "url": "https://www.business-standard.com/article/beyond-business/rembrandt-of-shares-110091800025_1.html"
+  },
+  {
+   "claim": "It was made public on 9 September 2010 in the Westerkerk, Enkhuizen (404 years to the day after its date)",
+   "source": "R. Schalk, 'Leven, werk en financiën van Pieter Harmensz, de eigenaar van het oudste aandeel ter wereld' (2011); Westfries Archief",
+   "url": "https://www.researchgate.net/publication/284715333_Leven_werk_en_financien_van_Pieter_Harmensz_de_eigenaar_van_het_oudste_aandeel_ter_wereld"
+  },
+  {
+   "claim": "Pieter Harmensz was a town messenger (stadsbode) of Enkhuizen; his fixed wage was 125 guilders a year c. 1590, with colleagues earning about 200 by c. 1600 (so 150 guilders ≈ a year's pay)",
+   "source": "Westfries Archief, 'Het oudste aandeel'; Schalk 2011",
+   "url": "https://www.westfriesarchief.nl/verhalen/het-oudste-aandeel/"
+  },
+  {
+   "claim": "Dividend payments were noted on the document up to 1650; after his death it ended up in the Enkhuizen city archive",
+   "source": "Westfries Archief, 'Het oudste aandeel' / 'Oudste aandeel ter wereld'",
+   "url": "https://www.westfriesarchief.nl/schatkist/oudste-aandeel-ter-wereld/"
+  },
+  {
+   "claim": "The VOC charter of March 1602, article 10: all residents of these lands may buy shares in this Company",
+   "source": "Lodewijk Petram, The World's First Stock Exchange (Columbia UP, 2014); 'The world's first IPO'",
+   "url": "https://www.worldsfirststockexchange.com/2020/10/15/the-worlds-first-ipo/"
+  },
+  {
+   "claim": "Amsterdam subscription closed 31 August 1602 with 1,143 investors; held at the house of director Dirck van Os, whose maid Neeltgen Cornelis subscribed 100 guilders",
+   "source": "Petram, 'The world's first IPO'; Petram, PhD thesis (UvA 2011)",
+   "url": "https://www.worldsfirststockexchange.com/2020/10/15/the-worlds-first-ipo/"
+  },
+  {
+   "claim": "From 1610 the VOC paid a series of dividends mostly in kind: mace (75% of nominal), pepper (50%), and nutmeg (30%, declared March 1612); only small cash portions",
+   "source": "Gelderblom, de Jong & Jonker, 'The VOC insurance contract of 1613' (Yale/UU working paper; European Review of Economic History 24:2)",
+   "url": "https://economics.yale.edu/sites/default/files/gelderblom_de_jong_and_jonker_on_voc_insurance_february_2014.pdf"
+  },
+  {
+   "claim": "The VOC issued no bearer shares; ownership was a positive balance in the capital book, and transfers required buyer and seller at the East India House, where the bookkeeper moved the share after two directors approved",
+   "source": "Petram, PhD thesis 'The world's first stock exchange: how the Amsterdam market for Dutch East India Company shares became a modern securities market, 1602–1700' (UvA 2011)",
+   "url": "https://pure.uva.nl/ws/files/1427401/85966_05.pdf"
+  },
+  {
+   "claim": "Hendrick de Keyser's exchange building on the Rokin, Amsterdam, was completed in 1611; VOC shares were traded there",
+   "source": "Beursgeschiedenis.nl (Exchange History), 'The exchange of Hendrick de Keyser'",
+   "url": "https://www.beursgeschiedenis.nl/en/moment/the-exchange-of-hendrick-de-keyser/"
+  },
+  {
+   "claim": "EU CSDR Article 3: securities admitted to trading or traded on trading venues must be in book-entry form; applies to all such transferable securities from 1 January 2025",
+   "source": "ESMA Interactive Single Rulebook, CSDR Art. 3; Banque de France",
+   "url": "https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/csdr/article-3-book-entry-form-0"
+  }
+ ]
 }

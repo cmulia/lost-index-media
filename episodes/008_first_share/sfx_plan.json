@@ -1,0 +1,56 @@
+[
+ {
+  "beat": 0,
+  "prompt": "a single soft thud then paper rustle",
+  "gain": 0.33,
+  "file": "audio/sfx/b00.mp3"
+ },
+ {
+  "beat": 1,
+  "prompt": "old brittle paper unfolding",
+  "gain": 0.4,
+  "file": "audio/sfx/b01.mp3"
+ },
+ {
+  "beat": 3,
+  "prompt": "quill pen scratching on parchment, then a page turn",
+  "gain": 0.35,
+  "file": "audio/sfx/b03.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "harbour seagulls and old coins counted onto a wooden table",
+  "gain": 0.33,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "creaking wooden ship timbers and waves against the hull",
+  "gain": 0.33,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 7,
+  "prompt": "dry spice seeds poured into a brass scale pan",
+  "gain": 0.33,
+  "file": "audio/sfx/b07.mp3"
+ },
+ {
+  "beat": 11,
+  "prompt": "crowded 17th century trading hall murmur under stone arcades",
+  "gain": 0.28,
+  "file": "audio/sfx/b11.mp3"
+ },
+ {
+  "beat": 13,
+  "prompt": "old camera shutter click, then a single soft bell",
+  "gain": 0.33,
+  "file": "audio/sfx/b13.mp3"
+ },
+ {
+  "beat": 14,
+  "prompt": "soft keyboard clicks fading into a single quill stroke",
+  "gain": 0.28,
+  "file": "audio/sfx/b14.mp3"
+ }
+]

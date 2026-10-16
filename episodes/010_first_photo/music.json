@@ -1,0 +1,51 @@
+{
+ "bpm": 60,
+ "root": "D2",
+ "progression": [
+  [
+   0,
+   7,
+   12,
+   16
+  ],
+  [
+   -2,
+   5,
+   10,
+   14
+  ],
+  [
+   -5,
+   2,
+   7,
+   10
+  ],
+  [
+   -7,
+   0,
+   5,
+   9
+  ]
+ ],
+ "bars_per_chord": 1,
+ "layers": {
+  "pad": 0.7,
+  "keys": 0.45,
+  "bass": 0.35,
+  "bell": 0.3
+ },
+ "pad_oct": 1,
+ "keys_hits": [
+  0,
+  2
+ ],
+ "felt": 0.9,
+ "bell_beats": [
+  0
+ ],
+ "texture": "air",
+ "texture_gain": 1.2,
+ "reverb": 3.6,
+ "swell_beat": 6,
+ "level": 0.2
+}

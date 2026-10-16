@@ -17,7 +17,7 @@ In 1988 the page sat in a Navy museum, labelled 1945. Today it is at the Smithso
 file no. 009
 
 —
-Images: logbook page, U.S. Navy / Naval History and Heritage Command NH 96566-KN (public domain); Commodore Grace M. Hopper, 1984, James S. Davis, U.S. Navy (public domain); Thomas Edison, c. 1878, Levin C. Handy, Brady-Handy Collection, Library of Congress (public domain); National Museum of American History, Carol M. Highsmith, Library of Congress (public domain); Harvard Mark I, the Mark II's predecessor, Wikimedia Commons (public domain); Zuse Z4 relay, Denis Apel, CC BY-SA 3.0. The relay schematic and museum-label graphic were drawn for this video. Narration voiced with ElevenLabs. Sound effects synthesised for this video.
+Images: logbook page, U.S. Navy / Naval History and Heritage Command NH 96566-KN (public domain); Commodore Grace M. Hopper, 1984, James S. Davis, U.S. Navy (public domain); Thomas Edison, c. 1878, Levin C. Handy, Brady-Handy Collection, Library of Congress (public domain); National Museum of American History, Carol M. Highsmith, Library of Congress (public domain); Harvard Mark I, the Mark II's predecessor, Wikimedia Commons (public domain); Zuse Z4 relay, Denis Apel, CC BY-SA 3.0. The relay schematic and museum-label graphic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video.
 
 #computerhistory #gracehopper #techhistory #debugging #history
 

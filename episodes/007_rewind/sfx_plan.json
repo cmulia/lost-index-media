@@ -1,0 +1,56 @@
+[
+ {
+  "beat": 1,
+  "prompt": "VCR tape eject clunk, mechanical",
+  "gain": 0.45,
+  "file": "audio/sfx/b01.mp3"
+ },
+ {
+  "beat": 2,
+  "prompt": "VHS tape rewinding squeal, then a tape pushed into a VCR with a mechanical whirr",
+  "gain": 0.42,
+  "file": "audio/sfx/b02.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "shop door bell chime with faint store ambience",
+  "gain": 0.33,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "VHS rewind squeal ending in a clunk stop",
+  "gain": 0.38,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 7,
+  "prompt": "paper envelope sliding across a desk, then a rubber stamp thunk",
+  "gain": 0.4,
+  "file": "audio/sfx/b07.mp3"
+ },
+ {
+  "beat": 9,
+  "prompt": "tape stop effect, pitch wobbling down to a halt",
+  "gain": 0.35,
+  "file": "audio/sfx/b09.mp3"
+ },
+ {
+  "beat": 10,
+  "prompt": "soft digital click and a buffering blip",
+  "gain": 0.28,
+  "file": "audio/sfx/b10.mp3"
+ },
+ {
+  "beat": 11,
+  "prompt": "fluorescent light hum, then a metal shop shutter rattling down",
+  "gain": 0.4,
+  "file": "audio/sfx/b11.mp3"
+ },
+ {
+  "beat": 14,
+  "prompt": "VCR power off click, tape hiss fading out",
+  "gain": 0.33,
+  "file": "audio/sfx/b14.mp3"
+ }
+]

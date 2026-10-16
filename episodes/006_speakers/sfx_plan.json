@@ -1,0 +1,56 @@
+[
+ {
+  "beat": 0,
+  "prompt": "four soft subtle UI clicks, evenly spaced",
+  "gain": 0.28,
+  "file": "audio/sfx/b00.mp3"
+ },
+ {
+  "beat": 2,
+  "prompt": "vinyl record needle drop and warm record crackle",
+  "gain": 0.45,
+  "file": "audio/sfx/b02.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "one big hollow resonant boom inside a huge metal horn, short reverb tail",
+  "gain": 0.4,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "a single clean soft tone blooming gently out of silence",
+  "gain": 0.32,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 9,
+  "prompt": "1920s big band brass phrase heard through a small boxy old radio speaker, lo-fi",
+  "gain": 0.33,
+  "file": "audio/sfx/b09.mp3"
+ },
+ {
+  "beat": 11,
+  "prompt": "a soft single synth tone swooshing smoothly from left to right",
+  "gain": 0.28,
+  "file": "audio/sfx/b11.mp3"
+ },
+ {
+  "beat": 12,
+  "prompt": "cassette tape inserted into a portable player, play button press clunk, then soft tape hiss",
+  "gain": 0.45,
+  "file": "audio/sfx/b12.mp3"
+ },
+ {
+  "beat": 13,
+  "prompt": "click wheel ticks on an mp3 player, then a soft wireless connection chime",
+  "gain": 0.3,
+  "file": "audio/sfx/b13.mp3"
+ },
+ {
+  "beat": 15,
+  "prompt": "one last vinyl crackle, then the needle lifts off",
+  "gain": 0.35,
+  "file": "audio/sfx/b15.mp3"
+ }
+]

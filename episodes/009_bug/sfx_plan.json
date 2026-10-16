@@ -1,0 +1,56 @@
+[
+ {
+  "beat": 0,
+  "prompt": "faint moth wings fluttering",
+  "gain": 0.28,
+  "file": "audio/sfx/b00.mp3"
+ },
+ {
+  "beat": 3,
+  "prompt": "electromechanical relays clattering in rhythm, close up",
+  "gain": 0.38,
+  "file": "audio/sfx/b03.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "clattering relays stop, one relay clicks twice and sticks",
+  "gain": 0.4,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "adhesive tape peeled off a roll and pressed onto paper",
+  "gain": 0.33,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 7,
+  "prompt": "pencil writing on paper",
+  "gain": 0.28,
+  "file": "audio/sfx/b07.mp3"
+ },
+ {
+  "beat": 9,
+  "prompt": "dip pen nib scratching on paper with faint phonograph crackle",
+  "gain": 0.28,
+  "file": "audio/sfx/b09.mp3"
+ },
+ {
+  "beat": 10,
+  "prompt": "a single typewriter key strike",
+  "gain": 0.35,
+  "file": "audio/sfx/b10.mp3"
+ },
+ {
+  "beat": 13,
+  "prompt": "typewriter keys strike then a carriage return bell",
+  "gain": 0.33,
+  "file": "audio/sfx/b13.mp3"
+ },
+ {
+  "beat": 15,
+  "prompt": "a final relay click, then silence",
+  "gain": 0.33,
+  "file": "audio/sfx/b15.mp3"
+ }
+]

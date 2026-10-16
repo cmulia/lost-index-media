@@ -17,7 +17,7 @@ Then everything around the speaker changed: stereo (Alan Blumlein's patent, file
 file no. 006
 
 —
-Images via Wikimedia Commons: Thomas Edison with his phonograph, c. 1878 (Brady-Handy Collection, Library of Congress, public domain); Magnavox horn at Idora Park, 1922 (Electrical Record, public domain); Kellogg and Rice with their cone speaker (Popular Radio, Aug 1925, public domain); Rice–Kellogg loudspeaker (Journal of the A.I.E.E., Sept 1925, public domain); Sony Walkman TPS-L2 by Binarysequence (CC BY-SA 4.0). The speaker cutaway, Siemens coil and stereo diagrams are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects synthesised for this video.
+Images via Wikimedia Commons: Thomas Edison with his phonograph, c. 1878 (Brady-Handy Collection, Library of Congress, public domain); Magnavox horn at Idora Park, 1922 (Electrical Record, public domain); Kellogg and Rice with their cone speaker (Popular Radio, Aug 1925, public domain); Rice–Kellogg loudspeaker (Journal of the A.I.E.E., Sept 1925, public domain); Sony Walkman TPS-L2 by Binarysequence (CC BY-SA 4.0). The speaker cutaway, Siemens coil and stereo diagrams are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video.
 
 #speakers #audiohistory #walkman #inventions #history
 

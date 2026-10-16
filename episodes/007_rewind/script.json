@@ -1,405 +1,413 @@
 {
-  "file_no": "007",
-  "slug": "rewind",
-  "title": "Be Kind, Rewind",
-  "series_label": "file no. 007",
-  "voice_direction": "Kurt: dry, candid, unhurried; let the numbers land, a half-smile on 'passed', 'be kind, rewind' and the final 'on Netflix', no big sell.",
-  "narration": "In two thousand, Netflix's founders say they flew to Dallas and offered to sell their company to Blockbuster. For fifty million dollars. [pause] Blockbuster passed. Why so easy? Rewind. [pause] Nineteen seventy-six: JVC puts the first VHS recorder on sale in Japan. Sony's Betamax got there first. But early Betamax tapes held one hour. VHS held two. Enough for a movie. And VHS won. In October nineteen eighty-five, the first Blockbuster opened in Dallas. By two thousand four, there were about nine thousand. [wryly] Friday nights came in plastic cases, with a sticker on the tape: be kind, rewind. Then came the DVD. Thin, light, and cheap to mail. In nineteen ninety-eight, Netflix opened for business: movies by mail. Which brings us back to Dallas. Netflix was losing money fast. Reed Hastings named the price. His co-founder, Marc Randolph, later wrote that Blockbuster's CEO, John Antioco, was struggling not to laugh. Antioco remembers it differently. He says there were never serious talks to buy Netflix. Either way, no deal. In two thousand seven, Netflix started streaming. [pause] In September two thousand ten, Blockbuster filed for bankruptcy. Netflix mailed its last DVD in twenty twenty-three. But in Bend, Oregon, one Blockbuster is still open. And in twenty twenty-one, a documentary about it found a home. [pause] On Netflix.",
-  "beats": [
-    {
-      "text": "In two thousand, Netflix's founders say they flew to Dallas and offered to sell their company to Blockbuster. For fifty million dollars. ",
-      "caption": "in 2000, netflix's founders say they flew to dallas and offered to sell their company to blockbuster. for $50 million.",
-      "big": "fifty million.",
-      "visual": {
-        "type": "photo",
-        "asset": "renaissance_tower"
-      },
-      "label": "renaissance tower, dallas · blockbuster hq",
-      "sublabel": "photo: andreas praefcke · cc by 3.0",
-      "date_label": "dallas",
-      "date": "2000",
-      "sfx": "jet engine fading, then a quiet office elevator ding",
-      "dark": false
-    },
-    {
-      "text": "[pause] Blockbuster passed. ",
-      "caption": "blockbuster passed.",
-      "big": "passed.",
-      "visual": {
-        "type": "type_only"
-      },
-      "label": null,
-      "sublabel": null,
-      "date_label": null,
-      "date": null,
-      "sfx": "vcr eject clunk",
-      "dark": true
-    },
-    {
-      "text": "Why so easy? Rewind. [pause] Nineteen seventy-six: JVC puts the first VHS recorder on sale in Japan. ",
-      "caption": "why so easy? rewind. 1976: jvc puts the first vhs recorder on sale in japan.",
-      "big": "rewind.",
-      "visual": {
-        "type": "photo",
-        "asset": "jvc_hr3300"
-      },
-      "label": "jvc hr-3300u · the us model of the first vhs recorder",
-      "sublabel": "photo: groink · cc by-sa 3.0",
-      "date_label": "on sale",
-      "date": "31 october 1976",
-      "sfx": "rewind squeal, then a vhs tape inserted, mechanical whirr",
-      "dark": false
-    },
-    {
-      "text": "Sony's Betamax got there first. But early Betamax tapes held one hour. VHS held two. Enough for a movie. And VHS won. ",
-      "caption": "sony's betamax got there first. but early betamax tapes held one hour. vhs held two. enough for a movie. and vhs won.",
-      "big": "two hours.",
-      "visual": {
-        "type": "photo",
-        "asset": "vhs_vs_betamax"
-      },
-      "label": "betamax (top) · vhs (bottom)",
-      "sublabel": "photo: inbalitimur · cc by-sa 2.0",
-      "date_label": "betamax",
-      "date": "1975",
-      "sfx": "two plastic cassettes set down on a table",
-      "dark": false
-    },
-    {
-      "text": "In October nineteen eighty-five, the first Blockbuster opened in Dallas. ",
-      "caption": "in october 1985, the first blockbuster opened in dallas.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "blockbuster_addison"
-      },
-      "label": "a blockbuster store · addison, illinois · 2009",
-      "sublabel": "photo: joe+jeanette archie · cc by 2.0",
-      "date_label": "first store",
-      "date": "october 1985",
-      "sfx": "shop door chime, faint store muzak",
-      "dark": false
-    },
-    {
-      "text": "By two thousand four, there were about nine thousand. ",
-      "caption": "by 2004, there were about 9,000.",
-      "big": "nine thousand.",
-      "visual": {
-        "type": "diagram",
-        "idea": "Original store-count graphic, mono type on paper background: three labelled points only, no invented intermediate values. Left: '1 store · dallas · 1985'. Peak: 'about 9,000 stores · 2004' (Blockbuster's widely reported peak, 9,094). The line rises left to the peak; the right-hand fall is left dashed and unlabelled here and is completed as a small optional overlay on beat 14 (the Bend photo) with '1 store · bend, oregon · 2019 onwards'. Footnote: 'schematic · only sourced years plotted'."
-      },
-      "label": "blockbuster stores",
-      "sublabel": "graphic: lost_index",
-      "date_label": "peak",
-      "date": "2004",
-      "sfx": "soft ticking counter rising",
-      "dark": false
-    },
-    {
-      "text": "[wryly] Friday nights came in plastic cases, with a sticker on the tape: be kind, rewind. ",
-      "caption": "friday nights came in plastic cases, with a sticker on the tape: be kind, rewind.",
-      "big": "be kind, rewind.",
-      "visual": {
-        "type": "photo",
-        "asset": "vhs_cassette"
-      },
-      "label": "vhs cassette",
-      "sublabel": "photo: groink · cc by-sa 3.0",
-      "date_label": null,
-      "date": null,
-      "sfx": "rewind squeal ending in a clunk",
-      "dark": false
-    },
-    {
-      "text": "Then came the DVD. Thin, light, and cheap to mail. In nineteen ninety-eight, Netflix opened for business: movies by mail. ",
-      "caption": "then came the dvd. thin, light, and cheap to mail. in 1998, netflix opened for business: movies by mail.",
-      "big": "by mail.",
-      "visual": {
-        "type": "diagram",
-        "idea": "Original flat illustration: a plain silver 12 cm disc slides into a plain red-and-white paper mailer (no logo, no wordmark, no real address), which gets a round postmark reading '1998'. Thin line art on paper background; one red accent colour only."
-      },
-      "label": "dvd by mail",
-      "sublabel": "illustration: lost_index",
-      "date_label": "opened",
-      "date": "14 april 1998",
-      "sfx": "paper envelope sliding, rubber-stamp thunk",
-      "dark": false
-    },
-    {
-      "text": "Which brings us back to Dallas. Netflix was losing money fast. Reed Hastings named the price. His co-founder, Marc Randolph, later wrote that Blockbuster's CEO, John Antioco, was struggling not to laugh. ",
-      "caption": "back to dallas. netflix was losing money fast. reed hastings named the price. his co-founder, marc randolph, later wrote that blockbuster's ceo, john antioco, was \"struggling not to laugh.\"",
-      "big": "not to laugh.",
-      "visual": {
-        "type": "photo",
-        "asset": "renaissance_tower"
-      },
-      "label": "renaissance tower, dallas",
-      "sublabel": "photo: andreas praefcke · cc by 3.0",
-      "date_label": "the meeting",
-      "date": "2000",
-      "sfx": "low room tone, a single clock tick",
-      "dark": true
-    },
-    {
-      "text": "Antioco remembers it differently. He says there were never serious talks to buy Netflix. ",
-      "caption": "antioco remembers it differently. he says there were never serious talks to buy netflix.",
-      "big": "disputed.",
-      "visual": {
-        "type": "type_only"
-      },
-      "label": null,
-      "sublabel": null,
-      "date_label": null,
-      "date": null,
-      "sfx": "tape-stop wobble",
-      "dark": true
-    },
-    {
-      "text": "Either way, no deal. In two thousand seven, Netflix started streaming. ",
-      "caption": "either way, no deal. in 2007, netflix started streaming.",
-      "big": null,
-      "visual": {
-        "type": "diagram",
-        "idea": "Original graphic: the silver disc from beat 8 flattens and stretches into a generic horizontal video progress bar with a simple play triangle that fills left to right. Not Netflix's interface, no logos."
-      },
-      "label": "streaming",
-      "sublabel": "graphic: lost_index",
-      "date_label": "watch now",
-      "date": "16 january 2007",
-      "sfx": "soft digital click, buffering blip",
-      "dark": false
-    },
-    {
-      "text": "[pause] In September two thousand ten, Blockbuster filed for bankruptcy. ",
-      "caption": "in september 2010, blockbuster filed for bankruptcy.",
-      "big": "bankrupt.",
-      "visual": {
-        "type": "photo",
-        "asset": "closing_sale"
-      },
-      "label": "store closing sale · rockville, maryland · 2012",
-      "sublabel": "photo: ben schumin · cc by-sa 2.0",
-      "date_label": "chapter 11",
-      "date": "23 september 2010",
-      "sfx": "fluorescent light hum, shutter rattling down",
-      "dark": true
-    },
-    {
-      "text": "Netflix mailed its last DVD in twenty twenty-three. ",
-      "caption": "netflix mailed its last dvd in 2023.",
-      "big": null,
-      "visual": {
-        "type": "diagram",
-        "idea": "Callback to the beat 8 illustration: the same plain red-and-white mailer, now empty, flaps closed; postmark reads 'september 2023'. No logo."
-      },
-      "label": "the last mailer",
-      "sublabel": "illustration: lost_index",
-      "date_label": "last dvds",
-      "date": "september 2023",
-      "sfx": "envelope flap sealed, a single postmark thunk",
-      "dark": false
-    },
-    {
-      "text": "But in Bend, Oregon, one Blockbuster is still open. ",
-      "caption": "but in bend, oregon, one blockbuster is still open.",
-      "big": "still open.",
-      "visual": {
-        "type": "photo",
-        "asset": "bend_exterior"
-      },
-      "label": "the last blockbuster · bend, oregon · 2018",
-      "sublabel": "photo: coasterlover1994 · cc by-sa 4.0",
-      "date_label": "last one on earth",
-      "date": "since march 2019",
-      "sfx": "shop door chime, same as beat 5",
-      "dark": false
-    },
-    {
-      "text": "And in twenty twenty-one, a documentary about it found a home. [pause] On Netflix.",
-      "caption": "and in 2021, a documentary about it found a home. on netflix.",
-      "big": "on netflix.",
-      "visual": {
-        "type": "photo",
-        "asset": "bend_interior"
-      },
-      "label": "inside the last blockbuster · 2018",
-      "sublabel": "photo: coasterlover1994 · cc by-sa 4.0",
-      "date_label": "streaming from",
-      "date": "15 march 2021",
-      "sfx": "vcr power-off click, tape hiss fades out",
-      "dark": true
-    }
-  ],
-  "music_mood": "Lo-fi, slightly warped VHS-era synth pad and soft Rhodes, ~78 bpm, gentle tape wow-and-flutter; thins out to a single pad for the dark beats and resolves on a quiet major chord at the end.",
-  "assets": [
-    {
-      "key": "renaissance_tower",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Dallas_Renaissance_Tower_1.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Dallas_Renaissance_Tower_1.jpg",
-      "author": "Andreas Praefcke",
-      "date": "October 2009",
-      "license": "CC BY 3.0 (dual-licensed with GFDL)",
-      "shows": "Renaissance Tower, 1201 Elm Street, Dallas: Blockbuster's headquarters at the time of the 2000 meeting (photo taken 2009). Original is 740 x 1986 px, used as-is (no 1600px thumb).",
-      "changes": "cropped to 9:16, slow tilt up, darkened for the second (dark) use"
-    },
-    {
-      "key": "jvc_hr3300",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/JVC-HR-3300U.jpg/1600px-JVC-HR-3300U.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:JVC-HR-3300U.jpg",
-      "author": "Groink",
-      "date": "8 October 2012",
-      "license": "CC BY-SA 3.0",
-      "shows": "JVC HR-3300U, the US release (1977) of the first VHS recorder (HR-3300, on sale in Japan 31 Oct 1976). Original 4290 x 2592 px.",
-      "changes": "cropped, slow push"
-    },
-    {
-      "key": "vhs_vs_betamax",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/VHS_vs_Betamax_size.jpg/1600px-VHS_vs_Betamax_size.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:VHS_vs_Betamax_size.jpg",
-      "author": "inBaliTimur (Flickr: 'Ya, saya inBaliTimur'); retouched by Ubcule",
-      "date": "30 December 2016 (Flickr)",
-      "license": "CC BY-SA 2.0",
-      "shows": "Betamax cassette (top) above a VHS cassette (bottom) for size comparison. Current version 2296 x 2428 px.",
-      "changes": "cropped, slow push"
-    },
-    {
-      "key": "blockbuster_addison",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Blockbuster_Video,_Addison_Illinois,_April_2009.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Blockbuster_Video,_Addison_Illinois,_April_2009.jpg",
-      "author": "Joe+Jeanette Archie (Flickr: jarchie)",
-      "date": "3 April 2009",
-      "license": "CC BY 2.0",
-      "shows": "A Blockbuster Video storefront in Addison, Illinois (not the first store). Original 1440 x 809 px, used as-is.",
-      "changes": "cropped (sign kept off-centre so the logo is not the hero), slow push"
-    },
-    {
-      "key": "vhs_cassette",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/VHS-cassette.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:VHS-cassette.jpg",
-      "author": "Groink",
-      "date": "16 October 2012",
-      "license": "CC BY-SA 3.0",
-      "shows": "Top-down view of a VHS cassette. Original only 768 x 512 px: use small on a card, not full-bleed.",
-      "changes": "cropped, slight rotation, small card on dark background"
-    },
-    {
-      "key": "closing_sale",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Blockbuster_Video_closing_sale_-02-_(9719273896).jpg/1600px-Blockbuster_Video_closing_sale_-02-_(9719273896).jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Blockbuster_Video_closing_sale_-02-_(9719273896).jpg",
-      "author": "Ben Schumin (Flickr: SchuminWeb)",
-      "date": "4 March 2012",
-      "license": "CC BY-SA 2.0",
-      "shows": "Store-closing sale at a Blockbuster Video in Rockville, Maryland (2012, after the 2010 bankruptcy). Original 3264 x 2448 px.",
-      "changes": "cropped, slow push, desaturated"
-    },
-    {
-      "key": "bend_exterior",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Exterior_of_last_Blockbuster_Video.jpg/1600px-Exterior_of_last_Blockbuster_Video.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Exterior_of_last_Blockbuster_Video.jpg",
-      "author": "Coasterlover1994",
-      "date": "August 2018 (uploaded 5 December 2018)",
-      "license": "CC BY-SA 4.0",
-      "shows": "Exterior of the Blockbuster at 211 NE Revere Ave, Bend, Oregon. Original 4032 x 1960 px.",
-      "changes": "cropped to 9:16, slow push"
-    },
-    {
-      "key": "bend_interior",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Interior_of_last_Blockbuster_Video.jpg/1600px-Interior_of_last_Blockbuster_Video.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Interior_of_last_Blockbuster_Video.jpg",
-      "author": "Coasterlover1994",
-      "date": "August 2018",
-      "license": "CC BY-SA 4.0",
-      "shows": "Interior (shelves of DVDs) of the Bend, Oregon Blockbuster. Original 4032 x 1960 px.",
-      "changes": "cropped to 9:16, slow lateral pan"
-    }
-  ],
-  "tiktok_caption": "Netflix's founders say they offered to sell to Blockbuster for $50 million. Blockbuster passed 📼\nfile no. 007 · Images: Wikimedia Commons (CC BY / CC BY-SA): Andreas Praefcke, Groink, inBaliTimur, Joe+Jeanette Archie, Ben Schumin, Coasterlover1994 · Narration: ElevenLabs\n#blockbuster #netflix #vhs #90snostalgia #history",
-  "instagram_caption": "In 2000, Netflix's founders say they flew to Dallas with an offer: Blockbuster could buy their company for $50 million. Blockbuster passed.\n\nWhy so easy? Rewind. In 1976 JVC put the first VHS recorder on sale. Sony's Betamax got there first, but early Beta tapes held one hour and VHS held two. VHS won. In October 1985 the first Blockbuster opened in Dallas. By 2004 there were about 9,000.\n\nThen came the DVD: thin, light, cheap to mail. Netflix opened for business in April 1998. At the Dallas meeting, Marc Randolph later wrote, Blockbuster's CEO John Antioco was \"struggling not to laugh.\" Antioco remembers it differently and says there were never serious talks.\n\nEither way, no deal. Netflix started streaming in January 2007. Blockbuster filed for bankruptcy in September 2010. Netflix mailed its last DVD in 2023.\n\nOne Blockbuster is still open, in Bend, Oregon. In 2021 a documentary about it found a home: on Netflix.\n\nfile no. 007\n\n—\nImages (Wikimedia Commons): Renaissance Tower, Dallas, by Andreas Praefcke (CC BY 3.0); JVC HR-3300U and VHS cassette by Groink (CC BY-SA 3.0); VHS vs Betamax by inBaliTimur (CC BY-SA 2.0); Blockbuster, Addison IL, by Joe+Jeanette Archie (CC BY 2.0); closing sale, Rockville MD, by Ben Schumin (CC BY-SA 2.0); the last Blockbuster, Bend OR, by Coasterlover1994 (CC BY-SA 4.0). Store-count chart and mailer illustrations drawn for this video. Narration voiced with ElevenLabs. Not affiliated with Netflix or Blockbuster.\n\n#blockbuster #netflix #vhs #moviehistory #nostalgia",
-  "facts": [
-    {
-      "claim": "In 2000 Netflix's founders (Reed Hastings, Marc Randolph, with CFO Barry McCarthy) met Blockbuster in Dallas and proposed Blockbuster buy Netflix for $50 million; Blockbuster declined. Hastings dates it early 2000; reports of Randolph's book say September 2000, so the script says only '2000'.",
-      "source": "Reed Hastings & Erin Meyer, No Rules Rules (2020), excerpt (Penguin sample; Marketplace, 8 Sep 2020); Marc Randolph, That Will Never Work (2019), via Inc. and The Independent/Yahoo",
-      "url": "https://cdn.penguin.co.uk/dam-assets/books/9780753560969/9780753560969-sample.pdf"
-    },
-    {
-      "claim": "Randolph wrote that Antioco was \"struggling not to laugh\" (Randolph's recollection, not independently confirmed).",
-      "source": "Marc Randolph, That Will Never Work (2019), quoted by Inc. and The Independent (via Yahoo News)",
-      "url": "https://www.inc.com/minda-zetlin/netflix-blockbuster-meeting-marc-randolph-reed-hastings-john-antioco.html"
-    },
-    {
-      "claim": "Netflix was losing money fast in 2000 (Randolph: on track to lose at least $50M that year; they needed a buyout 'fast').",
-      "source": "Randolph book as excerpted by Built In; InsideHook summary of the Vanity Fair excerpt (18/19 Sep 2019)",
-      "url": "https://builtin.com/corporate-innovation/netflix-blockbuster-buyout"
-    },
-    {
-      "claim": "Antioco disputes the account: says he was not part of a meeting where a purchase was seriously discussed / there were no serious talks to buy Netflix.",
-      "source": "Newsweek fact check 'Did Blockbuster Turn Down Chance to Buy Netflix for $50 Million'; Next TV, 'Blockbuster's Famous Netflix 2002 Rebuff? That Didn't Happen, Says Video Chain's Former CEO'",
-      "url": "https://www.newsweek.com/fact-check-did-blockbuster-turn-down-chance-buy-netflix-50-million-1575557"
-    },
-    {
-      "claim": "Blockbuster HQ was in Renaissance Tower, Dallas, at the time (Hastings: '27th floor of the Renaissance Tower').",
-      "source": "Hastings, No Rules Rules excerpt; Blockbuster moved HQ to Renaissance Tower in 1996 (Wikipedia, Blockbuster (retailer))",
-      "url": "https://cdn.penguin.co.uk/dam-assets/books/9780753560969/9780753560969-sample.pdf"
-    },
-    {
-      "claim": "JVC HR-3300, the first VHS recorder, went on sale in Japan on 31 October 1976 (announced 9 Sep 1976); US HR-3300U followed in 1977.",
-      "source": "Science Museum Group collection, 'JVC HR-3300 VHS Video Recorder'; Wikipedia, JVC HR-3300",
-      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8457690/"
-    },
-    {
-      "claim": "Sony's Beta came first (1975); early Beta recorded about one hour, VHS two hours.",
-      "source": "IEEE ETHW, 'Milestones: Development of VHS, a World Standard for Home Video Recording, 1976'",
-      "url": "https://ethw.org/Milestones:Development_of_VHS,_a_World_Standard_for_Home_Video_Recording,_1976"
-    },
-    {
-      "claim": "First Blockbuster opened in Dallas in October 1985 (History.com/Wikipedia: 19 Oct; Dallas Morning News: 21 Oct). Script says 'October 1985'.",
-      "source": "HISTORY.com, This Day in History, 19 October; Dallas Morning News (4 Dec 2013)",
-      "url": "https://www.history.com/this-day-in-history/october-19/first-blockbuster-store-opens"
-    },
-    {
-      "claim": "About 9,000 stores at the 2004 peak (Wikipedia: 9,094 stores, 84,300 employees).",
-      "source": "Wikipedia, Blockbuster (retailer); Bend Bulletin on The Last Blockbuster ('about 9,000 stores at its peak')",
-      "url": "https://en.wikipedia.org/wiki/Blockbuster_(retailer)"
-    },
-    {
-      "claim": "Netflix opened for business on 14 April 1998 with 925 DVD titles (pay-per-rental; subscription from September 1999).",
-      "source": "Encyclopedia.com, 'Netflix, Inc.'; Wikipedia, Timeline of Netflix",
-      "url": "https://www.encyclopedia.com/books/politics-and-business-magazines/netflix-inc"
-    },
-    {
-      "claim": "DVD launched in the US in March 1997 (Japan, Nov 1996). Not spoken as a date; supports 'then came the DVD'.",
-      "source": "Sound & Vision, 'Flashback 1997: The First DVD Players Arrive'; Wikipedia, DVD",
-      "url": "https://www.soundandvision.com/content/flashback-1997-first-dvd-players-arrive"
-    },
-    {
-      "claim": "Netflix introduced streaming ('Watch Now') on 16 January 2007.",
-      "source": "Netflix press release, 16 Jan 2007",
-      "url": "https://about.netflix.com/en/news/netflix-offers-subscribers-the-option-of-instantly-watching-movies-on-their"
-    },
-    {
-      "claim": "Blockbuster filed for Chapter 11 on 23 September 2010.",
-      "source": "Blockbuster Inc. Form 10-Q (SEC); Bloomberg, 23 Sep 2010",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001085734/000119312510258743/d10q.htm"
-    },
-    {
-      "claim": "Netflix's DVD-by-mail service ended in September 2023.",
-      "source": "AP, 'Netflix's DVD-by-mail service bows out as its red-and-white envelopes make their final trip' (via Boston.com, 28 Sep 2023)",
-      "url": "https://www.boston.com/culture/movies/2023/09/28/netflixs-dvd-by-mail-service-bows-out-as-its-red-and-white-envelopes-make-their-final-trip/"
-    },
-    {
-      "claim": "The Bend, Oregon store (211 NE Revere Ave) became the last Blockbuster on Earth when the Perth, Australia store closed (31 March 2019); last in the US since the Alaska stores closed in July 2018.",
-      "source": "AP via WLOS, 'Oregon now has last Blockbuster store in the world'; KOMO News",
-      "url": "https://wlos.com/news/offbeat/bend-oregon-now-has-last-blockbuster-store-in-world"
-    },
-    {
-      "claim": "The Bend store is still open (2026 travel guides, Tripadvisor reviews Aug 2026; 2024 closure rumour denied).",
-      "source": "KOIN, 'The last Blockbuster in Bend isn't closing, despite internet rumors'; Visit Central Oregon",
-      "url": "https://www.koin.com/news/oregon/last-blockbuster-bend-not-closing-despite-internet-rumors/"
-    },
-    {
-      "claim": "Documentary The Last Blockbuster began streaming on Netflix (US) on 15 March 2021.",
-      "source": "What's on Netflix; Bend Bulletin, 'In ironic twist, Blockbuster movie comes to Netflix'",
-      "url": "https://www.whats-on-netflix.com/news/the-last-blockbuster-making-svod-debut-on-netflix-in-march-2021/"
-    }
-  ]
+ "file_no": "007",
+ "slug": "rewind",
+ "title": "Be Kind, Rewind",
+ "series_label": "file no. 007",
+ "voice_direction": "Kurt: dry, candid, unhurried; let the numbers land, a half-smile on 'passed', 'be kind, rewind' and the final 'on Netflix', no big sell.",
+ "narration": "In two thousand, Netflix's founders say they flew to Dallas and offered to sell their company to Blockbuster. For fifty million dollars. [pause] Blockbuster passed. Why so easy? Rewind. [pause] Nineteen seventy-six: JVC puts the first VHS recorder on sale in Japan. Sony's Betamax got there first. But early Betamax tapes held one hour. VHS held two. Enough for a movie. And VHS won. In October nineteen eighty-five, the first Blockbuster opened in Dallas. By two thousand four, there were about nine thousand. [wryly] Friday nights came in plastic cases, with a sticker on the tape: be kind, rewind. Then came the DVD. Thin, light, and cheap to mail. In nineteen ninety-eight, Netflix opened for business: movies by mail. Which brings us back to Dallas. Netflix was losing money fast. Reed Hastings named the price. His co-founder, Marc Randolph, later wrote that Blockbuster's CEO, John Antioco, was struggling not to laugh. Antioco remembers it differently. He says there were never serious talks to buy Netflix. Either way, no deal. In two thousand seven, Netflix started streaming. [pause] In September two thousand ten, Blockbuster filed for bankruptcy. Netflix mailed its last DVD in twenty twenty-three. But in Bend, Oregon, one Blockbuster is still open. And in twenty twenty-one, a documentary about it found a home. [pause] On Netflix.",
+ "beats": [
+  {
+   "text": "In two thousand, Netflix's founders say they flew to Dallas and offered to sell their company to Blockbuster. For fifty million dollars. ",
+   "caption": "in 2000, netflix's founders say they flew to dallas and offered to sell their company to blockbuster. for $50 million.",
+   "big": "fifty million.",
+   "visual": {
+    "type": "photo",
+    "asset": "renaissance_tower"
+   },
+   "label": "renaissance tower, dallas · blockbuster hq",
+   "sublabel": "photo: andreas praefcke · cc by 3.0",
+   "date_label": "dallas",
+   "date": "2000",
+   "sfx": "jet engine fading, then a quiet office elevator ding",
+   "dark": false
+  },
+  {
+   "text": "[pause] Blockbuster passed. ",
+   "caption": "blockbuster passed.",
+   "big": "passed.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "vcr eject clunk",
+   "dark": true
+  },
+  {
+   "text": "Why so easy? Rewind. [pause] Nineteen seventy-six: JVC puts the first VHS recorder on sale in Japan. ",
+   "caption": "why so easy? rewind. 1976: jvc puts the first vhs recorder on sale in japan.",
+   "big": "rewind.",
+   "visual": {
+    "type": "photo",
+    "asset": "jvc_hr3300"
+   },
+   "label": "jvc hr-3300u · the us model of the first vhs recorder",
+   "sublabel": "photo: groink · cc by-sa 3.0",
+   "date_label": "on sale",
+   "date": "31 october 1976",
+   "sfx": "rewind squeal, then a vhs tape inserted, mechanical whirr",
+   "dark": false
+  },
+  {
+   "text": "Sony's Betamax got there first. But early Betamax tapes held one hour. VHS held two. Enough for a movie. And VHS won. ",
+   "caption": "sony's betamax got there first. but early betamax tapes held one hour. vhs held two. enough for a movie. and vhs won.",
+   "big": "two hours.",
+   "visual": {
+    "type": "photo",
+    "asset": "vhs_vs_betamax"
+   },
+   "label": "betamax (top) · vhs (bottom)",
+   "sublabel": "photo: inbalitimur · cc by-sa 2.0",
+   "date_label": "betamax",
+   "date": "1975",
+   "sfx": "two plastic cassettes set down on a table",
+   "dark": false
+  },
+  {
+   "text": "In October nineteen eighty-five, the first Blockbuster opened in Dallas. ",
+   "caption": "in october 1985, the first blockbuster opened in dallas.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "blockbuster_addison"
+   },
+   "label": "a blockbuster store · addison, illinois · 2009",
+   "sublabel": "photo: joe+jeanette archie · cc by 2.0",
+   "date_label": "first store",
+   "date": "october 1985",
+   "sfx": "shop door chime, faint store muzak",
+   "dark": false
+  },
+  {
+   "text": "By two thousand four, there were about nine thousand. ",
+   "caption": "by 2004, there were about 9,000.",
+   "big": "nine thousand.",
+   "visual": {
+    "type": "diagram",
+    "name": "stores",
+    "panel": "light",
+    "height": 700
+   },
+   "label": "blockbuster stores",
+   "sublabel": "graphic: lost_index",
+   "date_label": "peak",
+   "date": "2004",
+   "sfx": "soft ticking counter rising",
+   "dark": false
+  },
+  {
+   "text": "[wryly] Friday nights came in plastic cases, with a sticker on the tape: be kind, rewind. ",
+   "caption": "friday nights came in plastic cases, with a sticker on the tape: be kind, rewind.",
+   "big": "be kind, rewind.",
+   "visual": {
+    "type": "photo",
+    "asset": "vhs_cassette"
+   },
+   "label": "vhs cassette",
+   "sublabel": "photo: groink · cc by-sa 3.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "rewind squeal ending in a clunk",
+   "dark": false
+  },
+  {
+   "text": "Then came the DVD. Thin, light, and cheap to mail. In nineteen ninety-eight, Netflix opened for business: movies by mail. ",
+   "caption": "then came the dvd. thin, light, and cheap to mail. in 1998, netflix opened for business: movies by mail.",
+   "big": "by mail.",
+   "visual": {
+    "type": "diagram",
+    "name": "mailer_1998",
+    "panel": "light",
+    "height": 760
+   },
+   "label": "dvd by mail",
+   "sublabel": "illustration: lost_index",
+   "date_label": "opened",
+   "date": "14 april 1998",
+   "sfx": "paper envelope sliding, rubber-stamp thunk",
+   "dark": false
+  },
+  {
+   "text": "Which brings us back to Dallas. Netflix was losing money fast. Reed Hastings named the price. His co-founder, Marc Randolph, later wrote that Blockbuster's CEO, John Antioco, was struggling not to laugh. ",
+   "caption": "back to dallas. netflix was losing money fast. reed hastings named the price. his co-founder, marc randolph, later wrote that blockbuster's ceo, john antioco, was \"struggling not to laugh.\"",
+   "big": "not to laugh.",
+   "visual": {
+    "type": "photo",
+    "asset": "renaissance_tower"
+   },
+   "label": "renaissance tower, dallas",
+   "sublabel": "photo: andreas praefcke · cc by 3.0",
+   "date_label": "the meeting",
+   "date": "2000",
+   "sfx": "low room tone, a single clock tick",
+   "dark": true
+  },
+  {
+   "text": "Antioco remembers it differently. He says there were never serious talks to buy Netflix. ",
+   "caption": "antioco remembers it differently. he says there were never serious talks to buy netflix.",
+   "big": "disputed.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "tape-stop wobble",
+   "dark": true
+  },
+  {
+   "text": "Either way, no deal. In two thousand seven, Netflix started streaming. ",
+   "caption": "either way, no deal. in 2007, netflix started streaming.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "stream",
+    "panel": "light",
+    "height": 640
+   },
+   "label": "streaming",
+   "sublabel": "graphic: lost_index",
+   "date_label": "watch now",
+   "date": "16 january 2007",
+   "sfx": "soft digital click, buffering blip",
+   "dark": false
+  },
+  {
+   "text": "[pause] In September two thousand ten, Blockbuster filed for bankruptcy. ",
+   "caption": "in september 2010, blockbuster filed for bankruptcy.",
+   "big": "bankrupt.",
+   "visual": {
+    "type": "photo",
+    "asset": "closing_sale"
+   },
+   "label": "store closing sale · rockville, maryland · 2012",
+   "sublabel": "photo: ben schumin · cc by-sa 2.0",
+   "date_label": "chapter 11",
+   "date": "23 september 2010",
+   "sfx": "fluorescent light hum, shutter rattling down",
+   "dark": true
+  },
+  {
+   "text": "Netflix mailed its last DVD in twenty twenty-three. ",
+   "caption": "netflix mailed its last dvd in 2023.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "mailer_2023",
+    "panel": "light",
+    "height": 760
+   },
+   "label": "the last mailer",
+   "sublabel": "illustration: lost_index",
+   "date_label": "last dvds",
+   "date": "september 2023",
+   "sfx": "envelope flap sealed, a single postmark thunk",
+   "dark": false
+  },
+  {
+   "text": "But in Bend, Oregon, one Blockbuster is still open. ",
+   "caption": "but in bend, oregon, one blockbuster is still open.",
+   "big": "still open.",
+   "visual": {
+    "type": "photo",
+    "asset": "bend_exterior"
+   },
+   "label": "the last blockbuster · bend, oregon · 2018",
+   "sublabel": "photo: coasterlover1994 · cc by-sa 4.0",
+   "date_label": "last one on earth",
+   "date": "since march 2019",
+   "sfx": "shop door chime, same as beat 5",
+   "dark": false
+  },
+  {
+   "text": "And in twenty twenty-one, a documentary about it found a home. [pause] On Netflix.",
+   "caption": "and in 2021, a documentary about it found a home. on netflix.",
+   "big": "on netflix.",
+   "visual": {
+    "type": "photo",
+    "asset": "bend_interior"
+   },
+   "label": "inside the last blockbuster · 2018",
+   "sublabel": "photo: coasterlover1994 · cc by-sa 4.0",
+   "date_label": "streaming from",
+   "date": "15 march 2021",
+   "sfx": "vcr power-off click, tape hiss fades out",
+   "dark": true
+  }
+ ],
+ "music_mood": "Lo-fi, slightly warped VHS-era synth pad and soft Rhodes, ~78 bpm, gentle tape wow-and-flutter; thins out to a single pad for the dark beats and resolves on a quiet major chord at the end.",
+ "assets": [
+  {
+   "key": "renaissance_tower",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Dallas_Renaissance_Tower_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Dallas_Renaissance_Tower_1.jpg",
+   "author": "Andreas Praefcke",
+   "date": "October 2009",
+   "license": "CC BY 3.0 (dual-licensed with GFDL)",
+   "shows": "Renaissance Tower, 1201 Elm Street, Dallas: Blockbuster's headquarters at the time of the 2000 meeting (photo taken 2009). Original is 740 x 1986 px, used as-is (no 1600px thumb).",
+   "changes": "cropped to 9:16, slow tilt up, darkened for the second (dark) use"
+  },
+  {
+   "key": "jvc_hr3300",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/JVC-HR-3300U.jpg/1600px-JVC-HR-3300U.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:JVC-HR-3300U.jpg",
+   "author": "Groink",
+   "date": "8 October 2012",
+   "license": "CC BY-SA 3.0",
+   "shows": "JVC HR-3300U, the US release (1977) of the first VHS recorder (HR-3300, on sale in Japan 31 Oct 1976). Original 4290 x 2592 px.",
+   "changes": "cropped, slow push"
+  },
+  {
+   "key": "vhs_vs_betamax",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/VHS_vs_Betamax_size.jpg/1600px-VHS_vs_Betamax_size.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VHS_vs_Betamax_size.jpg",
+   "author": "inBaliTimur (Flickr: 'Ya, saya inBaliTimur'); retouched by Ubcule",
+   "date": "30 December 2016 (Flickr)",
+   "license": "CC BY-SA 2.0",
+   "shows": "Betamax cassette (top) above a VHS cassette (bottom) for size comparison. Current version 2296 x 2428 px.",
+   "changes": "cropped, slow push"
+  },
+  {
+   "key": "blockbuster_addison",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Blockbuster_Video,_Addison_Illinois,_April_2009.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Blockbuster_Video,_Addison_Illinois,_April_2009.jpg",
+   "author": "Joe+Jeanette Archie (Flickr: jarchie)",
+   "date": "3 April 2009",
+   "license": "CC BY 2.0",
+   "shows": "A Blockbuster Video storefront in Addison, Illinois (not the first store). Original 1440 x 809 px, used as-is.",
+   "changes": "cropped (sign kept off-centre so the logo is not the hero), slow push"
+  },
+  {
+   "key": "vhs_cassette",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/VHS-cassette.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:VHS-cassette.jpg",
+   "author": "Groink",
+   "date": "16 October 2012",
+   "license": "CC BY-SA 3.0",
+   "shows": "Top-down view of a VHS cassette. Original only 768 x 512 px: use small on a card, not full-bleed.",
+   "changes": "cropped, slight rotation, small card on dark background"
+  },
+  {
+   "key": "closing_sale",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Blockbuster_Video_closing_sale_-02-_(9719273896).jpg/1600px-Blockbuster_Video_closing_sale_-02-_(9719273896).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Blockbuster_Video_closing_sale_-02-_(9719273896).jpg",
+   "author": "Ben Schumin (Flickr: SchuminWeb)",
+   "date": "4 March 2012",
+   "license": "CC BY-SA 2.0",
+   "shows": "Store-closing sale at a Blockbuster Video in Rockville, Maryland (2012, after the 2010 bankruptcy). Original 3264 x 2448 px.",
+   "changes": "cropped, slow push, desaturated"
+  },
+  {
+   "key": "bend_exterior",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Exterior_of_last_Blockbuster_Video.jpg/1600px-Exterior_of_last_Blockbuster_Video.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Exterior_of_last_Blockbuster_Video.jpg",
+   "author": "Coasterlover1994",
+   "date": "August 2018 (uploaded 5 December 2018)",
+   "license": "CC BY-SA 4.0",
+   "shows": "Exterior of the Blockbuster at 211 NE Revere Ave, Bend, Oregon. Original 4032 x 1960 px.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "bend_interior",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Interior_of_last_Blockbuster_Video.jpg/1600px-Interior_of_last_Blockbuster_Video.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Interior_of_last_Blockbuster_Video.jpg",
+   "author": "Coasterlover1994",
+   "date": "August 2018",
+   "license": "CC BY-SA 4.0",
+   "shows": "Interior (shelves of DVDs) of the Bend, Oregon Blockbuster. Original 4032 x 1960 px.",
+   "changes": "cropped to 9:16, slow lateral pan"
+  }
+ ],
+ "tiktok_caption": "Netflix's founders say they offered to sell to Blockbuster for $50 million. Blockbuster passed 📼\nfile no. 007 · Images: Wikimedia Commons (CC BY / CC BY-SA): Andreas Praefcke, Groink, inBaliTimur, Joe+Jeanette Archie, Ben Schumin, Coasterlover1994 · Narration: ElevenLabs\n#blockbuster #netflix #vhs #90snostalgia #history",
+ "instagram_caption": "In 2000, Netflix's founders say they flew to Dallas with an offer: Blockbuster could buy their company for $50 million. Blockbuster passed.\n\nWhy so easy? Rewind. In 1976 JVC put the first VHS recorder on sale. Sony's Betamax got there first, but early Beta tapes held one hour and VHS held two. VHS won. In October 1985 the first Blockbuster opened in Dallas. By 2004 there were about 9,000.\n\nThen came the DVD: thin, light, cheap to mail. Netflix opened for business in April 1998. At the Dallas meeting, Marc Randolph later wrote, Blockbuster's CEO John Antioco was \"struggling not to laugh.\" Antioco remembers it differently and says there were never serious talks.\n\nEither way, no deal. Netflix started streaming in January 2007. Blockbuster filed for bankruptcy in September 2010. Netflix mailed its last DVD in 2023.\n\nOne Blockbuster is still open, in Bend, Oregon. In 2021 a documentary about it found a home: on Netflix.\n\nfile no. 007\n\n—\nImages (Wikimedia Commons): Renaissance Tower, Dallas, by Andreas Praefcke (CC BY 3.0); JVC HR-3300U and VHS cassette by Groink (CC BY-SA 3.0); VHS vs Betamax by inBaliTimur (CC BY-SA 2.0); Blockbuster, Addison IL, by Joe+Jeanette Archie (CC BY 2.0); closing sale, Rockville MD, by Ben Schumin (CC BY-SA 2.0); the last Blockbuster, Bend OR, by Coasterlover1994 (CC BY-SA 4.0). Store-count chart and mailer illustrations drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video. Not affiliated with Netflix or Blockbuster.\n\n#blockbuster #netflix #vhs #moviehistory #nostalgia",
+ "facts": [
+  {
+   "claim": "In 2000 Netflix's founders (Reed Hastings, Marc Randolph, with CFO Barry McCarthy) met Blockbuster in Dallas and proposed Blockbuster buy Netflix for $50 million; Blockbuster declined. Hastings dates it early 2000; reports of Randolph's book say September 2000, so the script says only '2000'.",
+   "source": "Reed Hastings & Erin Meyer, No Rules Rules (2020), excerpt (Penguin sample; Marketplace, 8 Sep 2020); Marc Randolph, That Will Never Work (2019), via Inc. and The Independent/Yahoo",
+   "url": "https://cdn.penguin.co.uk/dam-assets/books/9780753560969/9780753560969-sample.pdf"
+  },
+  {
+   "claim": "Randolph wrote that Antioco was \"struggling not to laugh\" (Randolph's recollection, not independently confirmed).",
+   "source": "Marc Randolph, That Will Never Work (2019), quoted by Inc. and The Independent (via Yahoo News)",
+   "url": "https://www.inc.com/minda-zetlin/netflix-blockbuster-meeting-marc-randolph-reed-hastings-john-antioco.html"
+  },
+  {
+   "claim": "Netflix was losing money fast in 2000 (Randolph: on track to lose at least $50M that year; they needed a buyout 'fast').",
+   "source": "Randolph book as excerpted by Built In; InsideHook summary of the Vanity Fair excerpt (18/19 Sep 2019)",
+   "url": "https://builtin.com/corporate-innovation/netflix-blockbuster-buyout"
+  },
+  {
+   "claim": "Antioco disputes the account: says he was not part of a meeting where a purchase was seriously discussed / there were no serious talks to buy Netflix.",
+   "source": "Newsweek fact check 'Did Blockbuster Turn Down Chance to Buy Netflix for $50 Million'; Next TV, 'Blockbuster's Famous Netflix 2002 Rebuff? That Didn't Happen, Says Video Chain's Former CEO'",
+   "url": "https://www.newsweek.com/fact-check-did-blockbuster-turn-down-chance-buy-netflix-50-million-1575557"
+  },
+  {
+   "claim": "Blockbuster HQ was in Renaissance Tower, Dallas, at the time (Hastings: '27th floor of the Renaissance Tower').",
+   "source": "Hastings, No Rules Rules excerpt; Blockbuster moved HQ to Renaissance Tower in 1996 (Wikipedia, Blockbuster (retailer))",
+   "url": "https://cdn.penguin.co.uk/dam-assets/books/9780753560969/9780753560969-sample.pdf"
+  },
+  {
+   "claim": "JVC HR-3300, the first VHS recorder, went on sale in Japan on 31 October 1976 (announced 9 Sep 1976); US HR-3300U followed in 1977.",
+   "source": "Science Museum Group collection, 'JVC HR-3300 VHS Video Recorder'; Wikipedia, JVC HR-3300",
+   "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8457690/"
+  },
+  {
+   "claim": "Sony's Beta came first (1975); early Beta recorded about one hour, VHS two hours.",
+   "source": "IEEE ETHW, 'Milestones: Development of VHS, a World Standard for Home Video Recording, 1976'",
+   "url": "https://ethw.org/Milestones:Development_of_VHS,_a_World_Standard_for_Home_Video_Recording,_1976"
+  },
+  {
+   "claim": "First Blockbuster opened in Dallas in October 1985 (History.com/Wikipedia: 19 Oct; Dallas Morning News: 21 Oct). Script says 'October 1985'.",
+   "source": "HISTORY.com, This Day in History, 19 October; Dallas Morning News (4 Dec 2013)",
+   "url": "https://www.history.com/this-day-in-history/october-19/first-blockbuster-store-opens"
+  },
+  {
+   "claim": "About 9,000 stores at the 2004 peak (Wikipedia: 9,094 stores, 84,300 employees).",
+   "source": "Wikipedia, Blockbuster (retailer); Bend Bulletin on The Last Blockbuster ('about 9,000 stores at its peak')",
+   "url": "https://en.wikipedia.org/wiki/Blockbuster_(retailer)"
+  },
+  {
+   "claim": "Netflix opened for business on 14 April 1998 with 925 DVD titles (pay-per-rental; subscription from September 1999).",
+   "source": "Encyclopedia.com, 'Netflix, Inc.'; Wikipedia, Timeline of Netflix",
+   "url": "https://www.encyclopedia.com/books/politics-and-business-magazines/netflix-inc"
+  },
+  {
+   "claim": "DVD launched in the US in March 1997 (Japan, Nov 1996). Not spoken as a date; supports 'then came the DVD'.",
+   "source": "Sound & Vision, 'Flashback 1997: The First DVD Players Arrive'; Wikipedia, DVD",
+   "url": "https://www.soundandvision.com/content/flashback-1997-first-dvd-players-arrive"
+  },
+  {
+   "claim": "Netflix introduced streaming ('Watch Now') on 16 January 2007.",
+   "source": "Netflix press release, 16 Jan 2007",
+   "url": "https://about.netflix.com/en/news/netflix-offers-subscribers-the-option-of-instantly-watching-movies-on-their"
+  },
+  {
+   "claim": "Blockbuster filed for Chapter 11 on 23 September 2010.",
+   "source": "Blockbuster Inc. Form 10-Q (SEC); Bloomberg, 23 Sep 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001085734/000119312510258743/d10q.htm"
+  },
+  {
+   "claim": "Netflix's DVD-by-mail service ended in September 2023.",
+   "source": "AP, 'Netflix's DVD-by-mail service bows out as its red-and-white envelopes make their final trip' (via Boston.com, 28 Sep 2023)",
+   "url": "https://www.boston.com/culture/movies/2023/09/28/netflixs-dvd-by-mail-service-bows-out-as-its-red-and-white-envelopes-make-their-final-trip/"
+  },
+  {
+   "claim": "The Bend, Oregon store (211 NE Revere Ave) became the last Blockbuster on Earth when the Perth, Australia store closed (31 March 2019); last in the US since the Alaska stores closed in July 2018.",
+   "source": "AP via WLOS, 'Oregon now has last Blockbuster store in the world'; KOMO News",
+   "url": "https://wlos.com/news/offbeat/bend-oregon-now-has-last-blockbuster-store-in-world"
+  },
+  {
+   "claim": "The Bend store is still open (2026 travel guides, Tripadvisor reviews Aug 2026; 2024 closure rumour denied).",
+   "source": "KOIN, 'The last Blockbuster in Bend isn't closing, despite internet rumors'; Visit Central Oregon",
+   "url": "https://www.koin.com/news/oregon/last-blockbuster-bend-not-closing-despite-internet-rumors/"
+  },
+  {
+   "claim": "Documentary The Last Blockbuster began streaming on Netflix (US) on 15 March 2021.",
+   "source": "What's on Netflix; Bend Bulletin, 'In ironic twist, Blockbuster movie comes to Netflix'",
+   "url": "https://www.whats-on-netflix.com/news/the-last-blockbuster-making-svod-debut-on-netflix-in-march-2021/"
+  }
+ ]
 }

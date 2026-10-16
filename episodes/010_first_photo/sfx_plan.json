@@ -1,0 +1,62 @@
+[
+ {
+  "beat": 0,
+  "prompt": "low film projector hum fading in",
+  "gain": 0.28,
+  "file": "audio/sfx/b00.mp3"
+ },
+ {
+  "beat": 1,
+  "prompt": "desert wind with a distant freight train rumble",
+  "gain": 0.28,
+  "file": "audio/sfx/b01.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "rocket engine ignition roar building up, 1940s rocket launch",
+  "gain": 0.5,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 5,
+  "prompt": "vintage 35mm film camera mechanism clattering",
+  "gain": 0.28,
+  "file": "audio/sfx/b05.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "rocket roar thinning into near silence, faint high altitude wind",
+  "gain": 0.33,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 7,
+  "prompt": "falling whistle then a heavy impact thud and debris in the desert",
+  "gain": 0.5,
+  "file": "audio/sfx/b07.mp3"
+ },
+ {
+  "beat": 8,
+  "prompt": "a single small metallic clink in silence",
+  "gain": 0.33,
+  "file": "audio/sfx/b08.mp3"
+ },
+ {
+  "beat": 9,
+  "prompt": "muffled distant cheering over desert wind",
+  "gain": 0.28,
+  "file": "audio/sfx/b09.mp3"
+ },
+ {
+  "beat": 13,
+  "prompt": "distant low rumble and a far-off air raid siren",
+  "gain": 0.28,
+  "file": "audio/sfx/b13.mp3"
+ },
+ {
+  "beat": 14,
+  "prompt": "film running out of a projector reel, flapping, then silence",
+  "gain": 0.33,
+  "file": "audio/sfx/b14.mp3"
+ }
+]

@@ -1,0 +1,50 @@
+{
+ "bpm": 78,
+ "root": "A2",
+ "progression": [
+  [
+   0,
+   3,
+   7,
+   10,
+   14
+  ],
+  [
+   -4,
+   0,
+   3,
+   7
+  ],
+  [
+   -7,
+   -3,
+   0,
+   5
+  ],
+  [
+   -2,
+   2,
+   5,
+   9
+  ]
+ ],
+ "bars_per_chord": 1,
+ "layers": {
+  "pad": 0.65,
+  "keys": 0.5,
+  "bass": 0.4,
+  "pulse": 0.22,
+  "arp": 0.15
+ },
+ "keys_hits": [
+  0,
+  2.5
+ ],
+ "felt": 0.3,
+ "pad_bright": 1.0,
+ "texture": "tape",
+ "texture_gain": 1.0,
+ "lowpass": 6500,
+ "swell_beat": 13,
+ "level": 0.21
+}

@@ -1,384 +1,398 @@
 {
-  "file_no": "006",
-  "slug": "speakers",
-  "title": "The Speaker That Never Changed",
-  "series_label": "file no. 006",
-  "voice_direction": "Warm, unhurried British storyteller; quiet wonder on the 1925 reveal, a small wry smile on 'the idea wasn't new', and a soft, slowing landing on the last line.",
-  "narration": "Your phone. Your earbuds. Your car. A stadium. [pause] Most of their speakers still run on an idea from nineteen twenty-five. Before that, louder meant a bigger horn. Early phonographs used no electricity at all: a needle, a diaphragm, a horn. By nineteen twenty-two, a park in California had one thirty-five feet long. Then, at General Electric, Chester Rice and Edward Kellogg tried something plainer. A coil of wire. A magnet. A paper cone. [pause] No horn at all. The odd part? The idea wasn't new. Ernst Siemens had described a coil moving in a magnet's field in eighteen seventy-four. Rice and Kellogg worked out how to make a simple cone sound right, and built an amplifier strong enough to drive it. In nineteen twenty-six, RCA sold it as the Radiola one-oh-four, amplifier built in. Then everything around it changed. In nineteen thirty-one, Alan Blumlein filed a patent for sound in two channels, left and right. Stereo. In nineteen seventy-nine, Sony's Walkman put music in your ears, on the move. Then the iPod. Then the wires vanished. But open almost any of them up. [pause] A coil. A magnet. A cone, pushing air. [softly] The music changed completely. The speaker, hardly at all.",
-  "beats": [
-    {
-      "text": "Your phone. Your earbuds. Your car. A stadium. [pause] ",
-      "caption": "your phone. your earbuds. your car. a stadium.",
-      "big": null,
-      "visual": {
-        "type": "diagram",
-        "idea": "Four quick cuts of flat line icons drawn in our style (phone, single earbud, car door, stadium speaker stack), each with a small glowing dot where its speaker sits. Original drawing, no brand shapes."
-      },
-      "label": null,
-      "sublabel": null,
-      "date_label": null,
-      "date": null,
-      "sfx": "four soft clicks, one per icon",
-      "dark": true
-    },
-    {
-      "text": "Most of their speakers still run on an idea from nineteen twenty-five. ",
-      "caption": "most of their speakers still run on an idea from 1925.",
-      "big": "1925.",
-      "visual": {
-        "type": "type_only"
-      },
-      "label": null,
-      "sublabel": null,
-      "date_label": null,
-      "date": null,
-      "sfx": "low warm thump",
-      "dark": true
-    },
-    {
-      "text": "Before that, louder meant a bigger horn. ",
-      "caption": "before that, louder meant a bigger horn.",
-      "big": "bigger.",
-      "visual": {
-        "type": "photo",
-        "asset": "edison_phonograph_1878"
-      },
-      "label": "edison with his phonograph · 1878",
-      "sublabel": "brady-handy collection, library of congress · wikimedia",
-      "date_label": null,
-      "date": null,
-      "sfx": "needle drop and crackle",
-      "dark": false
-    },
-    {
-      "text": "Early phonographs used no electricity at all: a needle, a diaphragm, a horn. ",
-      "caption": "early phonographs used no electricity at all: a needle, a diaphragm, a horn.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "edison_phonograph_1878"
-      },
-      "label": "acoustic era",
-      "sublabel": "brady-handy collection, library of congress · wikimedia",
-      "date_label": null,
-      "date": null,
-      "sfx": "hand-crank ratchet under the crackle",
-      "dark": false
-    },
-    {
-      "text": "By nineteen twenty-two, a park in California had one thirty-five feet long. ",
-      "caption": "by 1922, a park in california had one 35 feet long.",
-      "big": "35 feet.",
-      "visual": {
-        "type": "photo",
-        "asset": "idora_horn_1922"
-      },
-      "label": "magnavox horn · idora park, 1922",
-      "sublabel": "electrical record · wikimedia",
-      "date_label": "photographed",
-      "date": "1922",
-      "sfx": "big hollow resonant boom",
-      "dark": false
-    },
-    {
-      "text": "Then, at General Electric, Chester Rice and Edward Kellogg tried something plainer. ",
-      "caption": "then, at general electric, chester rice and edward kellogg tried something plainer.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "kellogg_rice_1925"
-      },
-      "label": "kellogg and rice · general electric",
-      "sublabel": "popular radio, aug 1925 · wikimedia",
-      "date_label": null,
-      "date": null,
-      "sfx": "lab room tone, relay click",
-      "dark": false
-    },
-    {
-      "text": "A coil of wire. A magnet. A paper cone. [pause] No horn at all. ",
-      "caption": "a coil of wire. a magnet. a paper cone. no horn at all.",
-      "big": "no horn.",
-      "visual": {
-        "type": "photo",
-        "asset": "rice_kellogg_speaker_1"
-      },
-      "label": "rice–kellogg speaker · 1925",
-      "sublabel": "journal of the a.i.e.e. · wikimedia",
-      "date_label": "published",
-      "date": "september 1925",
-      "sfx": "a single clean tone blooming out of silence",
-      "dark": false
-    },
-    {
-      "text": "The odd part? The idea wasn't new. Ernst Siemens had described a coil moving in a magnet's field in eighteen seventy-four. ",
-      "caption": "the odd part? the idea wasn't new. ernst siemens described a coil moving in a magnet's field in 1874.",
-      "big": "not new.",
-      "visual": {
-        "type": "diagram",
-        "idea": "Minimal patent-style line drawing in our style: a ring of wire sitting in the gap of a round magnet, with a double-headed arrow showing it can slide back and forth along its axis. Labelled 'schematic · after siemens, 1874'. Do not imitate the real patent sheet."
-      },
-      "label": "a coil in a magnet's field",
-      "sublabel": "schematic · drawn for this video",
-      "date_label": "patent",
-      "date": "1874",
-      "sfx": "faint telegraph ticks",
-      "dark": true
-    },
-    {
-      "text": "Rice and Kellogg worked out how to make a simple cone sound right, and built an amplifier strong enough to drive it. ",
-      "caption": "they worked out how to make a simple cone sound right, and built an amplifier strong enough to drive it.",
-      "big": null,
-      "visual": {
-        "type": "photo",
-        "asset": "kellogg_rice_1925"
-      },
-      "label": "kellogg and rice · 1925",
-      "sublabel": "popular radio · wikimedia",
-      "date_label": null,
-      "date": null,
-      "sfx": "valve amp hum swelling up",
-      "dark": false
-    },
-    {
-      "text": "In nineteen twenty-six, RCA sold it as the Radiola one-oh-four, amplifier built in. ",
-      "caption": "in 1926, rca sold it as the radiola 104, amplifier built in.",
-      "big": "for sale.",
-      "visual": {
-        "type": "photo",
-        "asset": "rice_kellogg_speaker_2"
-      },
-      "label": "rice–kellogg cone speaker · 1925",
-      "sublabel": "journal of the a.i.e.e. · wikimedia",
-      "date_label": "on sale",
-      "date": "1926",
-      "sfx": "big-band brass through a boxy old speaker",
-      "dark": false
-    },
-    {
-      "text": "Then everything around it changed. ",
-      "caption": "then everything around it changed.",
-      "big": null,
-      "visual": {
-        "type": "type_only"
-      },
-      "label": null,
-      "sublabel": null,
-      "date_label": null,
-      "date": null,
-      "sfx": "tape-speed whoosh forward",
-      "dark": true
-    },
-    {
-      "text": "In nineteen thirty-one, Alan Blumlein filed a patent for sound in two channels, left and right. Stereo. ",
-      "caption": "in 1931, alan blumlein filed a patent for sound in two channels, left and right. stereo.",
-      "big": "stereo.",
-      "visual": {
-        "type": "diagram",
-        "idea": "Top-down line drawing: two speaker icons at upper left and upper right, a small listener's head between them below, with one sound source drifting smoothly from the left speaker to the right. Labelled 'two channels · schematic'."
-      },
-      "label": "british patent 394,325",
-      "sublabel": "schematic · drawn for this video",
-      "date_label": "filed",
-      "date": "14 december 1931",
-      "sfx": "a single tone panning left to right",
-      "dark": false
-    },
-    {
-      "text": "In nineteen seventy-nine, Sony's Walkman put music in your ears, on the move. ",
-      "caption": "in 1979, sony's walkman put music in your ears, on the move.",
-      "big": "on the move.",
-      "visual": {
-        "type": "photo",
-        "asset": "walkman_tps_l2"
-      },
-      "label": "sony walkman tps-l2 · 1979",
-      "sublabel": "binarysequence · cc by-sa 4.0 · wikimedia",
-      "date_label": "on sale",
-      "date": "1 july 1979",
-      "sfx": "cassette clunk, play button, tape hiss",
-      "dark": false
-    },
-    {
-      "text": "Then the iPod. Then the wires vanished. ",
-      "caption": "then the ipod. then the wires vanished.",
-      "big": null,
-      "visual": {
-        "type": "type_only"
-      },
-      "label": null,
-      "sublabel": null,
-      "date_label": "introduced",
-      "date": "23 october 2001",
-      "sfx": "click-wheel ticks, then a soft wireless chime",
-      "dark": false
-    },
-    {
-      "text": "But open almost any of them up. [pause] A coil. A magnet. A cone, pushing air. ",
-      "caption": "but open almost any of them up. a coil. a magnet. a cone, pushing air.",
-      "big": "the same.",
-      "visual": {
-        "type": "diagram",
-        "idea": "Original cutaway of a moving-coil driver, drawn in thin cream lines on dark: basket, paper cone, surround, spider, voice coil (highlighted), and the ring magnet with its pole piece. Animate the coil and cone pulsing in and out with small air-pressure arcs in front. Labels: 'coil', 'magnet', 'cone'. Then morph the same three shapes down into a phone microspeaker and an earbud driver. Labelled 'schematic · not to scale'."
-      },
-      "label": "moving-coil speaker",
-      "sublabel": "schematic · drawn for this video",
-      "date_label": null,
-      "date": null,
-      "sfx": "the music thins to a single pulsing low note",
-      "dark": true
-    },
-    {
-      "text": "[softly] The music changed completely. The speaker, hardly at all.",
-      "caption": "the music changed completely. the speaker, hardly at all.",
-      "big": "hardly at all.",
-      "visual": {
-        "type": "photo",
-        "asset": "rice_kellogg_speaker_1"
-      },
-      "label": "rice–kellogg speaker · 1925",
-      "sublabel": "journal of the a.i.e.e. · wikimedia",
-      "date_label": null,
-      "date": null,
-      "sfx": "one last needle crackle, then silence",
-      "dark": true
-    }
-  ],
-  "music_mood": "Sparse, warm and curious: felt piano and a soft upright bass at about 80 bpm, with a faint vinyl-crackle bed early on that gives way to clean modern synth pads after the Walkman beat. Drops to a single low pulse on the cutaway, then silence.",
-  "assets": [
-    {
-      "key": "edison_phonograph_1878",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edison_and_phonograph_edit2.jpg/1600px-Edison_and_phonograph_edit2.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Edison_and_phonograph_edit2.jpg",
-      "author": "Brady-Handy studio (Commons credits Levin C. Handy; LoC record credits Mathew Brady); dust removal by Commons user Arad",
-      "date": "probably 18 April 1878 (Washington, D.C.)",
-      "license": "Public domain (19th-century photograph, Library of Congress Brady-Handy Collection, no known restrictions)",
-      "shows": "Thomas Edison seated with his tinfoil phonograph. Original 2,640 × 3,327 px.",
-      "changes": "cropped to 9:16, slow push in, gentle grade"
-    },
-    {
-      "key": "idora_horn_1922",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Large_horn_loudspeaker.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Large_horn_loudspeaker.jpg",
-      "author": "Unknown (published in Electrical Record, 1922); uploaded by Chetvorno",
-      "date": "July 1922",
-      "license": "Public domain in the US (published 1922)",
-      "shows": "The Magnavox spruce horn, about 35 ft long, at Idora Park, Oakland, California. Original 1,004 × 751 px (landscape, small: use as a framed plate, no heavy zoom).",
-      "changes": "placed as framed plate on paper texture, slow pan along the horn"
-    },
-    {
-      "key": "kellogg_rice_1925",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Edward_Kellogg_%26_Chester_Rice_with_cone_speaker_1925.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Edward_Kellogg_%26_Chester_Rice_with_cone_speaker_1925.jpg",
-      "author": "Uncredited photograph (General Electric), published with W. T. Meenam, 'A new type of hornless loudspeaker', Popular Radio vol. 8 no. 2",
-      "date": "August 1925",
-      "license": "Public domain in the US (published 1925; Commons tag PD-1923, effectively PD-US-expired)",
-      "shows": "Edward Kellogg and Chester Rice at General Electric, Schenectady, with their first electrodynamic cone loudspeaker. Original 935 × 603 px.",
-      "changes": "framed plate, slow push; second use cropped tighter on the speaker"
-    },
-    {
-      "key": "rice_kellogg_speaker_1",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Rice_Kellogg_loudspeaker_1.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Rice_Kellogg_loudspeaker_1.jpg",
-      "author": "C. W. Rice and E. W. Kellogg, 'Notes on the development of a new type of hornless loud speaker', Journal of the A.I.E.E. vol. 44 no. 9",
-      "date": "September 1925",
-      "license": "Public domain in the US (PD-US-not renewed per Commons; also published before 1931)",
-      "shows": "The Rice–Kellogg moving-coil cone speaker with the magnet drawn back so the voice coil shows. Original 672 × 706 px.",
-      "changes": "framed plate, slow push toward the voice coil"
-    },
-    {
-      "key": "rice_kellogg_speaker_2",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Rice_Kellogg_loudspeaker_2.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Rice_Kellogg_loudspeaker_2.jpg",
-      "author": "C. W. Rice and E. W. Kellogg, Journal of the A.I.E.E. vol. 44 no. 9",
-      "date": "September 1925",
-      "license": "Public domain in the US (published 1925). Commons licence tag not read directly: confirm on the file page",
-      "shows": "Rice–Kellogg cone speaker, 1925 (Commons notes it may be the commercial version sold with the Radiola). Original 941 × 600 px.",
-      "changes": "framed plate, slow pan"
-    },
-    {
-      "key": "walkman_tps_l2",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Original_Sony_Walkman_TPS-L2.JPG",
-      "page": "https://commons.wikimedia.org/wiki/File:Original_Sony_Walkman_TPS-L2.JPG",
-      "author": "Binarysequence",
-      "date": "2015",
-      "license": "CC BY-SA 4.0",
-      "shows": "An original Sony Walkman TPS-L2 (1979). Original 1,581 × 2,510 px, portrait.",
-      "changes": "cropped to 9:16, slow push, gentle grade"
-    },
-    {
-      "key": "walkman_tekniska",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Walkman_TPS-L2.jpg",
-      "page": "https://commons.wikimedia.org/wiki/File:Walkman_TPS-L2.jpg",
-      "author": "Anna Gerdén / Tekniska museet",
-      "date": "6 November 2006",
-      "license": "CC BY-SA 3.0",
-      "shows": "Sony Walkman TPS-L2 in the Tekniska museet (Swedish National Museum of Science and Technology) collection. Original 1,300 × 865 px. Backup plate for the Walkman beat.",
-      "changes": "backup only: cropped, slow push"
-    }
-  ],
-  "tiktok_caption": "The speaker in your phone is a 1925 idea 🔊 Before it, louder just meant a bigger horn.\nfile no. 006 · Images: Library of Congress, Journal of the A.I.E.E., Popular Radio (public domain); Binarysequence (CC BY-SA 4.0) via Wikimedia Commons · Narration: ElevenLabs\n#history #audio #speakers #inventions #walkman",
-  "instagram_caption": "Before 1925, if you wanted sound to be louder, you needed a bigger horn. Early phonographs used no electricity at all: a needle, a diaphragm, a horn. By 1922 a park in California had a horn 35 feet long.\n\nThen, at General Electric in Schenectady, Chester Rice and Edward Kellogg tried something plainer: a coil of wire, a magnet and a paper cone. No horn at all.\n\nThe odd part is that the idea wasn't new. Ernst Siemens had described a coil moving in a magnet's field in 1874. What Rice and Kellogg worked out was how to make a simple cone sound right, and an amplifier strong enough to drive it. RCA sold it in 1926 as the Radiola 104, amplifier built in.\n\nThen everything around the speaker changed: stereo (Alan Blumlein's patent, filed 14 December 1931), the Walkman (1 July 1979), the iPod (2001), wireless earbuds. Open almost any of them up and you'll find the same three things: a coil, a magnet, a cone pushing air.\n\nfile no. 006\n\n—\nImages via Wikimedia Commons: Thomas Edison with his phonograph, c. 1878 (Brady-Handy Collection, Library of Congress, public domain); Magnavox horn at Idora Park, 1922 (Electrical Record, public domain); Kellogg and Rice with their cone speaker (Popular Radio, Aug 1925, public domain); Rice–Kellogg loudspeaker (Journal of the A.I.E.E., Sept 1925, public domain); Sony Walkman TPS-L2 by Binarysequence (CC BY-SA 4.0). Speaker cutaway, Siemens coil and stereo diagrams are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects synthesised for this video.\n\n#speakers #audiohistory #walkman #inventions #history",
-  "facts": [
-    {
-      "claim": "The moving-coil (electrodynamic) driver is the most common type of loudspeaker driver; invented in its modern form by Kellogg and Rice in 1925",
-      "source": "Wikipedia, 'Electrodynamic speaker driver' and 'Loudspeaker' (read via search, not fetched)",
-      "url": "https://en.wikipedia.org/wiki/Electrodynamic_speaker_driver"
-    },
-    {
-      "claim": "Today's most widely used speakers keep the basic shape and parameters Rice and Kellogg described; magnets and materials changed",
-      "source": "US patent 4,327,257 background section (via search)",
-      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4327257"
-    },
-    {
-      "claim": "Acoustic phonographs and gramophones played back with no electricity: stylus, diaphragm, horn",
-      "source": "Library of Congress, 'History of the Cylinder Phonograph' (well established; not re-fetched this session)",
-      "url": "https://www.loc.gov/collections/edison-company-motion-pictures-and-sound-recordings/articles-and-essays/history-of-edison-sound-recordings/history-of-the-cylinder-phonograph/"
-    },
-    {
-      "claim": "Edison photographed with his tinfoil phonograph, Washington, 18 April 1878",
-      "source": "Library of Congress, Brady-Handy Collection record",
-      "url": "https://www.loc.gov/item/2017894536"
-    },
-    {
-      "claim": "1922: a Magnavox horn about 35 ft long, spruce, 12 ft square mouth, at Idora Park, California",
-      "source": "Commons file description citing Electrical Record, 1922",
-      "url": "https://commons.wikimedia.org/wiki/File:Large_horn_loudspeaker.jpg"
-    },
-    {
-      "claim": "Chester W. Rice and Edward W. Kellogg, General Electric, Schenectady: hornless moving-coil cone loudspeaker; paper presented at the AIEE Spring Convention, St. Louis, 13–17 April 1925, published Journal of the A.I.E.E. vol. 44 no. 9, Sept 1925",
-      "source": "AES historical pages (Rice-Kellogg); ARSCList citation of the paper footnote; IEEE Xplore (DOI 10.1109/JAIEE.1925.6534260)",
-      "url": "https://www.aes-media.org/historical/html/recording.technology.history/rice-kellogg.html"
-    },
-    {
-      "claim": "Ernst W. Siemens was the first to describe the moving-coil transducer: a circular coil in a magnetic field, free to move axially (US patent 149,797, 1874)",
-      "source": "AES, Loudspeaker History",
-      "url": "https://www.aes-media.org/historical/html/recording.technology.history/loudspeaker.html"
-    },
-    {
-      "claim": "The Rice–Kellogg work included an amplifier design that boosted the power delivered to the loudspeaker",
-      "source": "AES, Loudspeaker History",
-      "url": "https://www.aes-media.org/historical/html/recording.technology.history/loudspeaker.html"
-    },
-    {
-      "claim": "RCA Radiola Loudspeaker 104 went on sale in 1926: a dynamic (field-coil) speaker with an integrated power amplifier and mains supply",
-      "source": "Radiomuseum.org RCA 104 entry; Commons description of the 1925 Kellogg–Rice photo",
-      "url": "https://www.radiomuseum.org/r/rca_104.html"
-    },
-    {
-      "claim": "Alan Blumlein's British patent 394,325 (two-channel 'binaural' sound, i.e. stereo): applied for 14 December 1931, accepted 14 June 1933, filed by EMI",
-      "source": "Wikipedia 'United Kingdom patent 394325'; antiquarian listing of the printed patent (application no. 34,657/31)",
-      "url": "https://en.wikipedia.org/wiki/United_Kingdom_patent_394325"
-    },
-    {
-      "claim": "Sony Walkman TPS-L2 went on sale in Japan on 1 July 1979 (¥33,000)",
-      "source": "South China Morning Post / AFP, Walkman 40th anniversary; Walkman Archive",
-      "url": "https://scmp.com/lifestyle/entertainment/article/3022404/sony-walkman-40-fans-nostalgic-first-portable-music-player"
-    },
-    {
-      "claim": "Apple introduced the iPod on 23 October 2001: '1,000 songs in your pocket'",
-      "source": "Apple Newsroom press release, 'Apple Presents iPod'",
-      "url": "https://www.apple.com/newsroom/2001/10/23Apple-Presents-iPod/"
-    }
-  ]
+ "file_no": "006",
+ "slug": "speakers",
+ "title": "The Speaker That Never Changed",
+ "series_label": "file no. 006",
+ "voice_direction": "Warm, unhurried British storyteller; quiet wonder on the 1925 reveal, a small wry smile on 'the idea wasn't new', and a soft, slowing landing on the last line.",
+ "narration": "Your phone. Your earbuds. Your car. A stadium. [pause] Most of their speakers still run on an idea from nineteen twenty-five. Before that, louder meant a bigger horn. Early phonographs used no electricity at all: a needle, a diaphragm, a horn. By nineteen twenty-two, a park in California had one thirty-five feet long. Then, at General Electric, Chester Rice and Edward Kellogg tried something plainer. A coil of wire. A magnet. A paper cone. [pause] No horn at all. The odd part? The idea wasn't new. Ernst Siemens had described a coil moving in a magnet's field in eighteen seventy-four. Rice and Kellogg worked out how to make a simple cone sound right, and built an amplifier strong enough to drive it. In nineteen twenty-six, RCA sold it as the Radiola one-oh-four, amplifier built in. Then everything around it changed. In nineteen thirty-one, Alan Blumlein filed a patent for sound in two channels, left and right. Stereo. In nineteen seventy-nine, Sony's Walkman put music in your ears, on the move. Then the iPod. Then the wires vanished. But open almost any of them up. [pause] A coil. A magnet. A cone, pushing air. [softly] The music changed completely. The speaker, hardly at all.",
+ "beats": [
+  {
+   "text": "Your phone. Your earbuds. Your car. A stadium. [pause] ",
+   "caption": "your phone. your earbuds. your car. a stadium.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "icons",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "four soft clicks, one per icon",
+   "dark": true
+  },
+  {
+   "text": "Most of their speakers still run on an idea from nineteen twenty-five. ",
+   "caption": "most of their speakers still run on an idea from 1925.",
+   "big": "1925.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "low warm thump",
+   "dark": true
+  },
+  {
+   "text": "Before that, louder meant a bigger horn. ",
+   "caption": "before that, louder meant a bigger horn.",
+   "big": "bigger.",
+   "visual": {
+    "type": "photo",
+    "asset": "edison_phonograph_1878"
+   },
+   "label": "edison with his phonograph · 1878",
+   "sublabel": "brady-handy collection, library of congress · wikimedia",
+   "date_label": null,
+   "date": null,
+   "sfx": "needle drop and crackle",
+   "dark": false
+  },
+  {
+   "text": "Early phonographs used no electricity at all: a needle, a diaphragm, a horn. ",
+   "caption": "early phonographs used no electricity at all: a needle, a diaphragm, a horn.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "edison_phonograph_1878",
+    "focus": [
+     0.32,
+     0.4
+    ],
+    "zoom_from": 1.35,
+    "zoom_to": 1.5
+   },
+   "label": "acoustic era",
+   "sublabel": "brady-handy collection, library of congress · wikimedia",
+   "date_label": null,
+   "date": null,
+   "sfx": "hand-crank ratchet under the crackle",
+   "dark": false
+  },
+  {
+   "text": "By nineteen twenty-two, a park in California had one thirty-five feet long. ",
+   "caption": "by 1922, a park in california had one 35 feet long.",
+   "big": "35 feet.",
+   "visual": {
+    "type": "photo",
+    "asset": "idora_horn_1922"
+   },
+   "label": "magnavox horn · idora park, 1922",
+   "sublabel": "electrical record · wikimedia",
+   "date_label": "photographed",
+   "date": "1922",
+   "sfx": "big hollow resonant boom",
+   "dark": false
+  },
+  {
+   "text": "Then, at General Electric, Chester Rice and Edward Kellogg tried something plainer. ",
+   "caption": "then, at general electric, chester rice and edward kellogg tried something plainer.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "kellogg_rice_1925"
+   },
+   "label": "kellogg and rice · general electric",
+   "sublabel": "popular radio, aug 1925 · wikimedia",
+   "date_label": null,
+   "date": null,
+   "sfx": "lab room tone, relay click",
+   "dark": false
+  },
+  {
+   "text": "A coil of wire. A magnet. A paper cone. [pause] No horn at all. ",
+   "caption": "a coil of wire. a magnet. a paper cone. no horn at all.",
+   "big": "no horn.",
+   "visual": {
+    "type": "photo",
+    "asset": "rice_kellogg_speaker_1"
+   },
+   "label": "rice–kellogg speaker · 1925",
+   "sublabel": "journal of the a.i.e.e. · wikimedia",
+   "date_label": "published",
+   "date": "september 1925",
+   "sfx": "a single clean tone blooming out of silence",
+   "dark": false
+  },
+  {
+   "text": "The odd part? The idea wasn't new. Ernst Siemens had described a coil moving in a magnet's field in eighteen seventy-four. ",
+   "caption": "the odd part? the idea wasn't new. ernst siemens described a coil moving in a magnet's field in 1874.",
+   "big": "not new.",
+   "visual": {
+    "type": "diagram",
+    "name": "siemens",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "a coil in a magnet's field",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "patent",
+   "date": "1874",
+   "sfx": "faint telegraph ticks",
+   "dark": true
+  },
+  {
+   "text": "Rice and Kellogg worked out how to make a simple cone sound right, and built an amplifier strong enough to drive it. ",
+   "caption": "they worked out how to make a simple cone sound right, and built an amplifier strong enough to drive it.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "kellogg_rice_1925"
+   },
+   "label": "kellogg and rice · 1925",
+   "sublabel": "popular radio · wikimedia",
+   "date_label": null,
+   "date": null,
+   "sfx": "valve amp hum swelling up",
+   "dark": false
+  },
+  {
+   "text": "In nineteen twenty-six, RCA sold it as the Radiola one-oh-four, amplifier built in. ",
+   "caption": "in 1926, rca sold it as the radiola 104, amplifier built in.",
+   "big": "for sale.",
+   "visual": {
+    "type": "photo",
+    "asset": "rice_kellogg_speaker_2"
+   },
+   "label": "rice–kellogg cone speaker · 1925",
+   "sublabel": "journal of the a.i.e.e. · wikimedia",
+   "date_label": "on sale",
+   "date": "1926",
+   "sfx": "big-band brass through a boxy old speaker",
+   "dark": false
+  },
+  {
+   "text": "Then everything around it changed. ",
+   "caption": "then everything around it changed.",
+   "big": null,
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "tape-speed whoosh forward",
+   "dark": true
+  },
+  {
+   "text": "In nineteen thirty-one, Alan Blumlein filed a patent for sound in two channels, left and right. Stereo. ",
+   "caption": "in 1931, alan blumlein filed a patent for sound in two channels, left and right. stereo.",
+   "big": "stereo.",
+   "visual": {
+    "type": "diagram",
+    "name": "stereo",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "british patent 394,325",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "filed",
+   "date": "14 december 1931",
+   "sfx": "a single tone panning left to right",
+   "dark": false
+  },
+  {
+   "text": "In nineteen seventy-nine, Sony's Walkman put music in your ears, on the move. ",
+   "caption": "in 1979, sony's walkman put music in your ears, on the move.",
+   "big": "on the move.",
+   "visual": {
+    "type": "photo",
+    "asset": "walkman_tps_l2"
+   },
+   "label": "sony walkman tps-l2 · 1979",
+   "sublabel": "binarysequence · cc by-sa 4.0 · wikimedia",
+   "date_label": "on sale",
+   "date": "1 july 1979",
+   "sfx": "cassette clunk, play button, tape hiss",
+   "dark": false
+  },
+  {
+   "text": "Then the iPod. Then the wires vanished. ",
+   "caption": "then the ipod. then the wires vanished.",
+   "big": "the ipod.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "introduced",
+   "date": "23 october 2001",
+   "sfx": "click-wheel ticks, then a soft wireless chime",
+   "dark": false
+  },
+  {
+   "text": "But open almost any of them up. [pause] A coil. A magnet. A cone, pushing air. ",
+   "caption": "but open almost any of them up. a coil. a magnet. a cone, pushing air.",
+   "big": "the same.",
+   "visual": {
+    "type": "diagram",
+    "name": "cutaway",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "moving-coil speaker",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "the music thins to a single pulsing low note",
+   "dark": true
+  },
+  {
+   "text": "[softly] The music changed completely. The speaker, hardly at all.",
+   "caption": "the music changed completely. the speaker, hardly at all.",
+   "big": "hardly at all.",
+   "visual": {
+    "type": "photo",
+    "asset": "rice_kellogg_speaker_1"
+   },
+   "label": "rice–kellogg speaker · 1925",
+   "sublabel": "journal of the a.i.e.e. · wikimedia",
+   "date_label": null,
+   "date": null,
+   "sfx": "one last needle crackle, then silence",
+   "dark": true
+  }
+ ],
+ "music_mood": "Sparse, warm and curious: felt piano and a soft upright bass at about 80 bpm, with a faint vinyl-crackle bed early on that gives way to clean modern synth pads after the Walkman beat. Drops to a single low pulse on the cutaway, then silence.",
+ "assets": [
+  {
+   "key": "edison_phonograph_1878",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edison_and_phonograph_edit2.jpg/1600px-Edison_and_phonograph_edit2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Edison_and_phonograph_edit2.jpg",
+   "author": "Brady-Handy studio (Commons credits Levin C. Handy; LoC record credits Mathew Brady); dust removal by Commons user Arad",
+   "date": "probably 18 April 1878 (Washington, D.C.)",
+   "license": "Public domain (19th-century photograph, Library of Congress Brady-Handy Collection, no known restrictions)",
+   "shows": "Thomas Edison seated with his tinfoil phonograph. Original 2,640 × 3,327 px.",
+   "changes": "cropped to 9:16, slow push in, gentle grade"
+  },
+  {
+   "key": "idora_horn_1922",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Large_horn_loudspeaker.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Large_horn_loudspeaker.jpg",
+   "author": "Unknown (published in Electrical Record, 1922); uploaded by Chetvorno",
+   "date": "July 1922",
+   "license": "Public domain in the US (published 1922)",
+   "shows": "The Magnavox spruce horn, about 35 ft long, at Idora Park, Oakland, California. Original 1,004 × 751 px (landscape, small: use as a framed plate, no heavy zoom).",
+   "changes": "placed as framed plate on paper texture, slow pan along the horn"
+  },
+  {
+   "key": "kellogg_rice_1925",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Edward_Kellogg_%26_Chester_Rice_with_cone_speaker_1925.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Edward_Kellogg_%26_Chester_Rice_with_cone_speaker_1925.jpg",
+   "author": "Uncredited photograph (General Electric), published with W. T. Meenam, 'A new type of hornless loudspeaker', Popular Radio vol. 8 no. 2",
+   "date": "August 1925",
+   "license": "Public domain in the US (published 1925; Commons tag PD-1923, effectively PD-US-expired)",
+   "shows": "Edward Kellogg and Chester Rice at General Electric, Schenectady, with their first electrodynamic cone loudspeaker. Original 935 × 603 px.",
+   "changes": "framed plate, slow push; second use cropped tighter on the speaker"
+  },
+  {
+   "key": "rice_kellogg_speaker_1",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Rice_Kellogg_loudspeaker_1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rice_Kellogg_loudspeaker_1.jpg",
+   "author": "C. W. Rice and E. W. Kellogg, 'Notes on the development of a new type of hornless loud speaker', Journal of the A.I.E.E. vol. 44 no. 9",
+   "date": "September 1925",
+   "license": "Public domain in the US (PD-US-not renewed per Commons; also published before 1931)",
+   "shows": "The Rice–Kellogg moving-coil cone speaker with the magnet drawn back so the voice coil shows. Original 672 × 706 px.",
+   "changes": "framed plate, slow push toward the voice coil"
+  },
+  {
+   "key": "rice_kellogg_speaker_2",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Rice_Kellogg_loudspeaker_2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rice_Kellogg_loudspeaker_2.jpg",
+   "author": "C. W. Rice and E. W. Kellogg, Journal of the A.I.E.E. vol. 44 no. 9",
+   "date": "September 1925",
+   "license": "Public domain in the US (published 1925). Commons licence tag not read directly: confirm on the file page",
+   "shows": "Rice–Kellogg cone speaker, 1925 (Commons notes it may be the commercial version sold with the Radiola). Original 941 × 600 px.",
+   "changes": "framed plate, slow pan"
+  },
+  {
+   "key": "walkman_tps_l2",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Original_Sony_Walkman_TPS-L2.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Original_Sony_Walkman_TPS-L2.JPG",
+   "author": "Binarysequence",
+   "date": "2015",
+   "license": "CC BY-SA 4.0",
+   "shows": "An original Sony Walkman TPS-L2 (1979). Original 1,581 × 2,510 px, portrait.",
+   "changes": "cropped to 9:16, slow push, gentle grade"
+  },
+  {
+   "key": "walkman_tekniska",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Walkman_TPS-L2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Walkman_TPS-L2.jpg",
+   "author": "Anna Gerdén / Tekniska museet",
+   "date": "6 November 2006",
+   "license": "CC BY-SA 3.0",
+   "shows": "Sony Walkman TPS-L2 in the Tekniska museet (Swedish National Museum of Science and Technology) collection. Original 1,300 × 865 px. Backup plate for the Walkman beat.",
+   "changes": "backup only: cropped, slow push"
+  }
+ ],
+ "tiktok_caption": "The speaker in your phone is a 1925 idea 🔊 Before it, louder just meant a bigger horn.\nfile no. 006 · Images: Library of Congress, Journal of the A.I.E.E., Popular Radio (public domain); Binarysequence (CC BY-SA 4.0) via Wikimedia Commons · Narration: ElevenLabs\n#history #audio #speakers #inventions #walkman",
+ "instagram_caption": "Before 1925, if you wanted sound to be louder, you needed a bigger horn. Early phonographs used no electricity at all: a needle, a diaphragm, a horn. By 1922 a park in California had a horn 35 feet long.\n\nThen, at General Electric in Schenectady, Chester Rice and Edward Kellogg tried something plainer: a coil of wire, a magnet and a paper cone. No horn at all.\n\nThe odd part is that the idea wasn't new. Ernst Siemens had described a coil moving in a magnet's field in 1874. What Rice and Kellogg worked out was how to make a simple cone sound right, and an amplifier strong enough to drive it. RCA sold it in 1926 as the Radiola 104, amplifier built in.\n\nThen everything around the speaker changed: stereo (Alan Blumlein's patent, filed 14 December 1931), the Walkman (1 July 1979), the iPod (2001), wireless earbuds. Open almost any of them up and you'll find the same three things: a coil, a magnet, a cone pushing air.\n\nfile no. 006\n\n—\nImages via Wikimedia Commons: Thomas Edison with his phonograph, c. 1878 (Brady-Handy Collection, Library of Congress, public domain); Magnavox horn at Idora Park, 1922 (Electrical Record, public domain); Kellogg and Rice with their cone speaker (Popular Radio, Aug 1925, public domain); Rice–Kellogg loudspeaker (Journal of the A.I.E.E., Sept 1925, public domain); Sony Walkman TPS-L2 by Binarysequence (CC BY-SA 4.0). Speaker cutaway, Siemens coil and stereo diagrams are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video.\n\n#speakers #audiohistory #walkman #inventions #history",
+ "facts": [
+  {
+   "claim": "The moving-coil (electrodynamic) driver is the most common type of loudspeaker driver; invented in its modern form by Kellogg and Rice in 1925",
+   "source": "Wikipedia, 'Electrodynamic speaker driver' and 'Loudspeaker' (read via search, not fetched)",
+   "url": "https://en.wikipedia.org/wiki/Electrodynamic_speaker_driver"
+  },
+  {
+   "claim": "Today's most widely used speakers keep the basic shape and parameters Rice and Kellogg described; magnets and materials changed",
+   "source": "US patent 4,327,257 background section (via search)",
+   "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4327257"
+  },
+  {
+   "claim": "Acoustic phonographs and gramophones played back with no electricity: stylus, diaphragm, horn",
+   "source": "Library of Congress, 'History of the Cylinder Phonograph' (well established; not re-fetched this session)",
+   "url": "https://www.loc.gov/collections/edison-company-motion-pictures-and-sound-recordings/articles-and-essays/history-of-edison-sound-recordings/history-of-the-cylinder-phonograph/"
+  },
+  {
+   "claim": "Edison photographed with his tinfoil phonograph, Washington, 18 April 1878",
+   "source": "Library of Congress, Brady-Handy Collection record",
+   "url": "https://www.loc.gov/item/2017894536"
+  },
+  {
+   "claim": "1922: a Magnavox horn about 35 ft long, spruce, 12 ft square mouth, at Idora Park, California",
+   "source": "Commons file description citing Electrical Record, 1922",
+   "url": "https://commons.wikimedia.org/wiki/File:Large_horn_loudspeaker.jpg"
+  },
+  {
+   "claim": "Chester W. Rice and Edward W. Kellogg, General Electric, Schenectady: hornless moving-coil cone loudspeaker; paper presented at the AIEE Spring Convention, St. Louis, 13–17 April 1925, published Journal of the A.I.E.E. vol. 44 no. 9, Sept 1925",
+   "source": "AES historical pages (Rice-Kellogg); ARSCList citation of the paper footnote; IEEE Xplore (DOI 10.1109/JAIEE.1925.6534260)",
+   "url": "https://www.aes-media.org/historical/html/recording.technology.history/rice-kellogg.html"
+  },
+  {
+   "claim": "Ernst W. Siemens was the first to describe the moving-coil transducer: a circular coil in a magnetic field, free to move axially (US patent 149,797, 1874)",
+   "source": "AES, Loudspeaker History",
+   "url": "https://www.aes-media.org/historical/html/recording.technology.history/loudspeaker.html"
+  },
+  {
+   "claim": "The Rice–Kellogg work included an amplifier design that boosted the power delivered to the loudspeaker",
+   "source": "AES, Loudspeaker History",
+   "url": "https://www.aes-media.org/historical/html/recording.technology.history/loudspeaker.html"
+  },
+  {
+   "claim": "RCA Radiola Loudspeaker 104 went on sale in 1926: a dynamic (field-coil) speaker with an integrated power amplifier and mains supply",
+   "source": "Radiomuseum.org RCA 104 entry; Commons description of the 1925 Kellogg–Rice photo",
+   "url": "https://www.radiomuseum.org/r/rca_104.html"
+  },
+  {
+   "claim": "Alan Blumlein's British patent 394,325 (two-channel 'binaural' sound, i.e. stereo): applied for 14 December 1931, accepted 14 June 1933, filed by EMI",
+   "source": "Wikipedia 'United Kingdom patent 394325'; antiquarian listing of the printed patent (application no. 34,657/31)",
+   "url": "https://en.wikipedia.org/wiki/United_Kingdom_patent_394325"
+  },
+  {
+   "claim": "Sony Walkman TPS-L2 went on sale in Japan on 1 July 1979 (¥33,000)",
+   "source": "South China Morning Post / AFP, Walkman 40th anniversary; Walkman Archive",
+   "url": "https://scmp.com/lifestyle/entertainment/article/3022404/sony-walkman-40-fans-nostalgic-first-portable-music-player"
+  },
+  {
+   "claim": "Apple introduced the iPod on 23 October 2001: '1,000 songs in your pocket'",
+   "source": "Apple Newsroom press release, 'Apple Presents iPod'",
+   "url": "https://www.apple.com/newsroom/2001/10/23Apple-Presents-iPod/"
+  }
+ ]
 }

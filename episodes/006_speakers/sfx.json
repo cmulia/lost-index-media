@@ -1,0 +1,56 @@
+[
+ {
+  "beat": 0,
+  "file": "audio/sfx/b00.mp3",
+  "offset": 0.0,
+  "gain": 0.28
+ },
+ {
+  "beat": 2,
+  "file": "audio/sfx/b02.mp3",
+  "offset": 0.0,
+  "gain": 0.45
+ },
+ {
+  "beat": 4,
+  "file": "audio/sfx/b04.mp3",
+  "offset": 0.0,
+  "gain": 0.4
+ },
+ {
+  "beat": 6,
+  "file": "audio/sfx/b06.mp3",
+  "offset": 0.0,
+  "gain": 0.32
+ },
+ {
+  "beat": 9,
+  "file": "audio/sfx/b09.mp3",
+  "offset": 0.0,
+  "gain": 0.33
+ },
+ {
+  "beat": 11,
+  "file": "audio/sfx/b11.mp3",
+  "offset": 0.0,
+  "gain": 0.28
+ },
+ {
+  "beat": 12,
+  "file": "audio/sfx/b12.mp3",
+  "offset": 0.0,
+  "gain": 0.45
+ },
+ {
+  "beat": 13,
+  "file": "audio/sfx/b13.mp3",
+  "offset": 0.0,
+  "gain": 0.3
+ },
+ {
+  "beat": 15,
+  "file": "audio/sfx/b15.mp3",
+  "offset": 0.0,
+  "gain": 0.35
+ }
+]

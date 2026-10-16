@@ -1,0 +1,48 @@
+{
+ "bpm": 80,
+ "root": "F3",
+ "progression": [
+  [
+   0,
+   4,
+   7,
+   11
+  ],
+  [
+   -3,
+   0,
+   4,
+   7
+  ],
+  [
+   2,
+   5,
+   9,
+   12
+  ],
+  [
+   -5,
+   2,
+   5,
+   9
+  ]
+ ],
+ "bars_per_chord": 1,
+ "layers": {
+  "pad": 0.4,
+  "keys": 0.65,
+  "bass": 0.45,
+  "arp": 0.18
+ },
+ "keys_hits": [
+  0,
+  1.5,
+  2.5
+ ],
+ "felt": 0.7,
+ "arp_in": 38,
+ "texture": "vinyl",
+ "texture_gain": 0.9,
+ "swell_beat": 14,
+ "level": 0.2
+}

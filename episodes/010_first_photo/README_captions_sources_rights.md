@@ -23,13 +23,13 @@ Less than two years earlier, the same kind of rocket had been falling on London.
 file no. 010
 
 —
-Images: US Army / White Sands Missile Range / Applied Physics Laboratory (first photo from space, 24 Oct 1946); US Army and US Navy / NRL (V-2s at White Sands); White Sands Missile Range / NRL (V-2 no. 21 view, 7 Mar 1947); NASA; Imperial War Museums HU 88803 (V-2 damage, London, 1945). Public domain via Wikimedia Commons. The altitude scale and film-strip counter are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects synthesised for this video.
+Images: US Army / White Sands Missile Range / Applied Physics Laboratory (first photo from space, 24 Oct 1946); US Army and US Navy / NRL (V-2s at White Sands); White Sands Missile Range / NRL (V-2 no. 21 view, 7 Mar 1947); NASA; Imperial War Museums HU 88803 (V-2 damage, London, 1945). Public domain via Wikimedia Commons. The altitude scale and film-strip counter are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video.
 
 #spacehistory #v2rocket #earthfromspace #whitesands #photohistory
 
 ## TikTok caption
 
-The first photo of Earth from space was taken in 1946, by a movie camera inside a captured Nazi missile 🚀
+The first photo of Earth from space was taken in 1946, by a movie camera inside a captured German missile 🚀
 
 file no. 010 · Images: US Army / White Sands Missile Range / APL, US Navy / NRL, NASA, IWM (public domain) · Narration: ElevenLabs
 
