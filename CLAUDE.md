@@ -68,9 +68,13 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
     - TikTok `lost_index` channel `6ad19d37778b240e2f23725b`: `tiktok_caption`, video asset, schedulingType automatic.
     - Instagram `lost_index_ig` channel `6ad1b705778b240e2f250120`: `instagram_caption`, video asset,
       metadata.instagram {type: "reel", shouldShareToFeed: true}.
-    - mode `customScheduled`, dueAt **18:00 Australia/Sydney** on the next free day (one video per day).
-      The free Buffer plan allows 10 scheduled posts = 5 days × 2 channels, so schedule the new episode for the day
-      after the last scheduled one, and only if fewer than 10 posts are scheduled.
+    - YouTube `Lost Index` channel `6ad1beaa778b240e2f2551bf` (Shorts): `instagram_caption` with `#shorts` as the
+      first hashtag, video asset, metadata.youtube {title: "<tiktok hook, ≤ 70 chars> #shorts", categoryId: "27",
+      privacy: "public", madeForKids: false, notifySubscribers: false, embeddable: true, license: "youtube",
+      isAiGenerated: false}.
+    - mode `customScheduled`, dueAt **18:00 Australia/Sydney** on the next free day (one video per day, all three
+      channels at the same time). Keep about 5 days queued: schedule the new episode for the day after the last
+      scheduled one, and skip if 5 or more days are already queued.
     - isAiGenerated stays false (narration is credited in the caption), matching earlier posts.
 
 ## Style
