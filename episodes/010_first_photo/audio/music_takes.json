@@ -1,0 +1,30 @@
+[
+  {
+    "n": 1,
+    "generation_id": "p5g4CawRCHDy7HsMWMi6",
+    "duration": 89.04,
+    "chosen": true,
+    "status": "completed"
+  },
+  {
+    "n": 2,
+    "generation_id": "UcM723ONnuthA6wh0wgG",
+    "duration": null,
+    "chosen": false,
+    "status": "failed: Insufficient funds"
+  },
+  {
+    "n": 3,
+    "generation_id": "9Q1KwpWEUbqJgaBkjzDu",
+    "duration": null,
+    "chosen": false,
+    "status": "failed: Insufficient funds"
+  },
+  {
+    "n": 4,
+    "generation_id": "2lE7tLNG9d7Fvm1sPwAx",
+    "duration": null,
+    "chosen": false,
+    "status": "failed: Insufficient funds"
+  }
+]

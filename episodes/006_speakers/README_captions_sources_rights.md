@@ -17,7 +17,7 @@ Then everything around the speaker changed: stereo (Alan Blumlein's patent, file
 file no. 006
 
 —
-Images via Wikimedia Commons: Thomas Edison with his phonograph, c. 1878 (Brady-Handy Collection, Library of Congress, public domain); Magnavox horn at Idora Park, 1922 (Electrical Record, public domain); Kellogg and Rice with their cone speaker (Popular Radio, Aug 1925, public domain); Rice–Kellogg loudspeaker (Journal of the A.I.E.E., Sept 1925, public domain); Sony Walkman TPS-L2 by Binarysequence (CC BY-SA 4.0). The speaker cutaway, Siemens coil and stereo diagrams are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video.
+Images via Wikimedia Commons: Thomas Edison with his phonograph, c. 1878 (Brady-Handy Collection, Library of Congress, public domain); Magnavox horn at Idora Park, 1922 (Electrical Record, public domain); Kellogg and Rice with their cone speaker (Popular Radio, Aug 1925, public domain); Rice–Kellogg loudspeaker (Journal of the A.I.E.E., Sept 1925, public domain); Sony Walkman TPS-L2 by Binarysequence (CC BY-SA 4.0). The speaker cutaway, Siemens coil and stereo diagrams are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
 
 #speakers #audiohistory #walkman #inventions #history
 
@@ -87,3 +87,5 @@ Other assets:
 - **Narration:** ElevenLabs "George", eleven_v4. The script has sparse `[pause]` and `[softly]` tags.
 - **Sound effects:** to be synthesised for this video, following the per-beat `sfx` notes.
 - **Fonts:** IBM Plex Mono and Instrument Serif (SIL Open Font License).
+
+- **Score:** ElevenLabs Music (eleven_music_v2_5, instrumental), generated through Chris's connected ElevenLabs account; see audio/music_takes.json. Commercial rights depend on the ElevenLabs plan.

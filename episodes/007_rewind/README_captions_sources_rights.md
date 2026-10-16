@@ -116,3 +116,5 @@ Other assets:
 - **Narration:** ElevenLabs "Kurt", eleven_v4, with sparse [pause] / [wryly] tags. Not generated yet. Commercial rights depend on the account's ElevenLabs plan.
 - **Sound effects and music:** to be synthesised or sourced royalty-free. Suggested cues are listed per beat in `script.json`.
 - **Fonts:** IBM Plex Mono and Instrument Serif (SIL Open Font License).
+
+- **Score:** ElevenLabs Music (eleven_music_v2_5, instrumental), generated through Chris's connected ElevenLabs account; see audio/music_takes.json. Commercial rights depend on the ElevenLabs plan.

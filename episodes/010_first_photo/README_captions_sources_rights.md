@@ -23,7 +23,7 @@ Less than two years earlier, the same kind of rocket had been falling on London.
 file no. 010
 
 —
-Images: US Army / White Sands Missile Range / Applied Physics Laboratory (first photo from space, 24 Oct 1946); US Army and US Navy / NRL (V-2s at White Sands); White Sands Missile Range / NRL (V-2 no. 21 view, 7 Mar 1947); NASA; Imperial War Museums HU 88803 (V-2 damage, London, 1945). Public domain via Wikimedia Commons. The altitude scale and film-strip counter are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Score composed for this video.
+Images: US Army / White Sands Missile Range / Applied Physics Laboratory (first photo from space, 24 Oct 1946); US Army and US Navy / NRL (V-2s at White Sands); White Sands Missile Range / NRL (V-2 no. 21 view, 7 Mar 1947); NASA; Imperial War Museums HU 88803 (V-2 damage, London, 1945). Public domain via Wikimedia Commons. The altitude scale and film-strip counter are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
 
 #spacehistory #v2rocket #earthfromspace #whitesands #photohistory
 
@@ -113,3 +113,5 @@ Upload URLs below were derived, not copied from the file pages (see the network 
 - **Narration:** ElevenLabs "Mark Vale" (voice to be confirmed in the account), eleven_v4. The audio tags used are `[pause]` ×2 and `[quietly]` ×1.
 - **Sound effects:** synthesise them for this video, as in file no. 005.
 - **Fonts:** IBM Plex Mono and Instrument Serif (SIL Open Font License).
+
+- **Score:** ElevenLabs Music (eleven_music_v2_5, instrumental), generated through Chris's connected ElevenLabs account; see audio/music_takes.json. Commercial rights depend on the ElevenLabs plan.
