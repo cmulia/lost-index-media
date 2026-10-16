@@ -42,7 +42,8 @@
   {
    "start": 45.046,
    "end": 49.683,
-   "speech_end": 49.363
+   "speech_end": 49.363,
+   "big_time": 48.699
   },
   {
    "start": 49.683,
@@ -53,7 +54,8 @@
   {
    "start": 53.994,
    "end": 60.43,
-   "speech_end": 60.165
+   "speech_end": 60.165,
+   "big_time": 59.515
   },
   {
    "start": 60.43,
@@ -69,7 +71,8 @@
   {
    "start": 73.727,
    "end": 76.525,
-   "speech_end": 76.205
+   "speech_end": 76.205,
+   "big_time": 73.727
   },
   {
    "start": 76.525,
