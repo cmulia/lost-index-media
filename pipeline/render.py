@@ -107,7 +107,8 @@ def render_video(ep, script, timing, mix_path, workers=4):
     times = [i / S.FPS for i in range(nframes)]
     cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{S.W}x{S.H}",
            "-r", str(S.FPS), "-i", "-", "-i", mix_path, "-map", "0:v", "-map", "1:a",
-           "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
+           "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "4500k", "-bufsize", "9000k",
+           "-pix_fmt", "yuv420p",
            "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", "-shortest", out]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
