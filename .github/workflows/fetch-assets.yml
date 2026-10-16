@@ -1,0 +1,42 @@
+# Downloads public-domain / openly licensed source images listed in fetch/*.txt
+# into the repo, so the render pipeline (which can't reach archive hosts) can use them.
+# Each line: <destination path in repo> <url>   (lines starting with # are ignored)
+name: fetch-assets
+on:
+  push:
+    paths: ["fetch/*.txt"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download listed files
+        run: |
+          set -u
+          ok=0; fail=0
+          : > fetch/last_run.log
+          for list in fetch/*.txt; do
+            while read -r dest url; do
+              [ -z "${dest:-}" ] && continue
+              case "$dest" in \#*) continue;; esac
+              [ -s "$dest" ] && continue
+              mkdir -p "$(dirname "$dest")"
+              if curl -sSfL --retry 3 --retry-delay 5 -A "lost-index-media-fetcher/1.0 (https://github.com/cmulia/lost-index-media)" -o "$dest" "$url"; then
+                echo "ok   $dest" >> fetch/last_run.log; ok=$((ok+1))
+              else
+                echo "FAIL $dest $url" >> fetch/last_run.log; rm -f "$dest"; fail=$((fail+1))
+              fi
+              sleep 1
+            done < "$list"
+          done
+          echo "ok=$ok fail=$fail" | tee -a fetch/last_run.log
+      - name: Commit
+        run: |
+          git config user.name "lost-index-fetcher"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Fetch source assets [skip ci]"
+          git push
