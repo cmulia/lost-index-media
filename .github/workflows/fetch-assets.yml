@@ -24,10 +24,19 @@ jobs:
               case "$dest" in \#*) continue;; esac
               [ -s "$dest" ] && continue
               mkdir -p "$(dirname "$dest")"
-              if curl -sSfL --retry 3 --retry-delay 5 -A "lost-index-media-fetcher/1.0 (https://github.com/cmulia/lost-index-media)" -o "$dest" "$url"; then
+              UA="lost-index-media-fetcher/1.0 (https://github.com/cmulia/lost-index-media; asset fetch for attribution-credited videos)"
+              code=$(curl -sSL --retry 3 --retry-delay 5 -A "$UA" -o "$dest" -w "%{http_code}" "$url" || echo 000)
+              if [ "$code" != "200" ]; then
+                # Wikimedia thumb sizes are restricted; fall back to the original file
+                orig=$(echo "$url" | sed -E 's#/thumb/(.*)/[0-9]+px-[^/]+$#/\1#')
+                if [ "$orig" != "$url" ]; then
+                  code=$(curl -sSL --retry 3 --retry-delay 5 -A "$UA" -o "$dest" -w "%{http_code}" "$orig" || echo 000)
+                fi
+              fi
+              if [ "$code" = "200" ] && [ -s "$dest" ]; then
                 echo "ok   $dest" >> fetch/last_run.log; ok=$((ok+1))
               else
-                echo "FAIL $dest $url" >> fetch/last_run.log; rm -f "$dest"; fail=$((fail+1))
+                echo "FAIL $code $dest $url" >> fetch/last_run.log; rm -f "$dest"; fail=$((fail+1))
               fi
               sleep 1
             done < "$list"
