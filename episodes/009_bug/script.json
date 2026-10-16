@@ -1,0 +1,363 @@
+{
+  "file_no": "009",
+  "slug": "bug",
+  "title": "The First Actual Bug",
+  "series_label": "file no. 009",
+  "voice_direction": "Calm, intimate museum-guide delivery at an unhurried pace; let 'Actual.' land slowly after a beat, a small smile on 'It was a joke', and a soft, settled final line.",
+  "narration": "There is a moth in the Smithsonian, famous as the first computer bug. [pause] It wasn't the first bug. And the people who found it knew that. September ninth, nineteen forty-seven. Harvard University. The Mark Two, a calculating machine built for the U.S. Navy, ran on thousands of relays: little metal switches, clicking open and shut. At three forty-five that afternoon, the team found something in Panel F, Relay number seventy. A moth, caught between the contacts. They taped it into the logbook and wrote one line. \"First actual case of bug being found.\" [pause] Read it again. Actual. Engineers had called glitches \"bugs\" for decades. In eighteen seventy-eight, Thomas Edison wrote of \"bugs,\" \"as such little faults and difficulties are called.\" So the note was never a discovery. [amused] It was a joke. Someone finally found a literal one. Grace Hopper, who worked on the Mark Two, told the story for years and made it famous. But the Smithsonian says the logbook probably wasn't hers, and no one knows for sure whose handwriting that is. In nineteen eighty-eight, it sat in a Navy museum, labeled with the wrong year. Today it's at the Smithsonian, moth still taped to the page. The most famous bug in history, [pause] and the punchline to a joke that was already old.",
+  "beats": [
+    {
+      "text": "There is a moth in the Smithsonian, famous as the first computer bug. ",
+      "caption": "there is a moth in the smithsonian, famous as the first computer bug.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "bug_log"
+      },
+      "label": "mark ii logbook · 1947",
+      "sublabel": "us navy · nhhc",
+      "date_label": null,
+      "date": null,
+      "sfx": "faint wing flutter over room tone",
+      "dark": false
+    },
+    {
+      "text": "[pause] It wasn't the first bug. And the people who found it knew that. ",
+      "caption": "it wasn't the first bug. and the people who found it knew that.",
+      "big": "it wasn't.",
+      "visual": {
+        "type": "type_only"
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": null,
+      "date": null,
+      "sfx": "low soft thump",
+      "dark": true
+    },
+    {
+      "text": "September ninth, nineteen forty-seven. Harvard University. ",
+      "caption": "september 9, 1947. harvard university.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "mark_i"
+      },
+      "label": "harvard mark i · the mark ii's predecessor",
+      "sublabel": "wikimedia commons · public domain",
+      "date_label": "logged",
+      "date": "9 september 1947",
+      "sfx": "distant relays clattering",
+      "dark": false
+    },
+    {
+      "text": "The Mark Two, a calculating machine built for the U.S. Navy, ran on thousands of relays: little metal switches, clicking open and shut. ",
+      "caption": "the mark ii, a calculating machine built for the u.s. navy, ran on thousands of relays: little metal switches, clicking open and shut.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "relay_z4"
+      },
+      "label": "a 1940s computer relay · zuse z4",
+      "sublabel": "denis apel · cc by-sa 3.0",
+      "date_label": null,
+      "date": null,
+      "sfx": "relays clattering in rhythm, close-miked",
+      "dark": false
+    },
+    {
+      "text": "At three forty-five that afternoon, the team found something in Panel F, Relay number seventy. ",
+      "caption": "at 15:45 that afternoon, the team found something in panel f, relay #70.",
+      "big": null,
+      "visual": {
+        "type": "diagram",
+        "idea": "Clean line schematic of an electromechanical relay: coil, hinged armature and a pair of contact points, drawn in thin off-white lines on dark paper. A small moth silhouette is wedged between the two contacts so they cannot close. Typed tag: 'panel f · relay #70'. Corner note: 'schematic · not to scale'. Animate: armature tries to close twice, stops against the moth."
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": "logged",
+      "date": "15:45",
+      "sfx": "clatter stops; one relay clicks twice and sticks",
+      "dark": false
+    },
+    {
+      "text": "A moth, caught between the contacts. ",
+      "caption": "a moth, caught between the contacts.",
+      "big": "a moth.",
+      "visual": {
+        "type": "photo",
+        "asset": "bug_log"
+      },
+      "label": "relay #70 · panel f",
+      "sublabel": "us navy · nhhc",
+      "date_label": null,
+      "date": null,
+      "sfx": "moth wings fluttering, then still",
+      "dark": true
+    },
+    {
+      "text": "They taped it into the logbook and wrote one line. ",
+      "caption": "they taped it into the logbook and wrote one line.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "bug_log"
+      },
+      "label": "mark ii logbook · 9 september 1947",
+      "sublabel": "us navy · nhhc",
+      "date_label": null,
+      "date": null,
+      "sfx": "tape peeled and pressed down",
+      "dark": false
+    },
+    {
+      "text": "\"First actual case of bug being found.\" ",
+      "caption": "\"first actual case of bug being found.\"",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "bug_log"
+      },
+      "label": "logbook entry, 15:45",
+      "sublabel": "us navy · nhhc",
+      "date_label": null,
+      "date": null,
+      "sfx": "pencil scratching on paper",
+      "dark": false
+    },
+    {
+      "text": "[pause] Read it again. Actual. ",
+      "caption": "read it again. actual.",
+      "big": "actual.",
+      "visual": {
+        "type": "type_only"
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": null,
+      "date": null,
+      "sfx": null,
+      "dark": true
+    },
+    {
+      "text": "Engineers had called glitches \"bugs\" for decades. In eighteen seventy-eight, Thomas Edison wrote of \"bugs,\" \"as such little faults and difficulties are called.\" ",
+      "caption": "engineers had called glitches \"bugs\" for decades. in 1878, thomas edison wrote of \"bugs,\" \"as such little faults and difficulties are called.\"",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "edison_1878"
+      },
+      "label": "thomas edison · c. 1878",
+      "sublabel": "brady-handy coll. · library of congress",
+      "date_label": "wrote",
+      "date": "1878",
+      "sfx": "dip-pen nib on paper, phonograph crackle under",
+      "dark": false
+    },
+    {
+      "text": "So the note was never a discovery. [amused] It was a joke. Someone finally found a literal one. ",
+      "caption": "so the note was never a discovery. it was a joke. someone finally found a literal one.",
+      "big": "a joke.",
+      "visual": {
+        "type": "type_only"
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": null,
+      "date": null,
+      "sfx": "single soft typewriter key",
+      "dark": false
+    },
+    {
+      "text": "Grace Hopper, who worked on the Mark Two, told the story for years and made it famous. ",
+      "caption": "grace hopper, who worked on the mark ii, told the story for years and made it famous.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "hopper_1984"
+      },
+      "label": "grace hopper · 1984",
+      "sublabel": "us navy · james s. davis",
+      "date_label": null,
+      "date": null,
+      "sfx": "faint lecture-hall applause, far away",
+      "dark": false
+    },
+    {
+      "text": "But the Smithsonian says the logbook probably wasn't hers, and no one knows for sure whose handwriting that is. ",
+      "caption": "but the smithsonian says the logbook probably wasn't hers, and no one knows for sure whose handwriting that is.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "bug_log"
+      },
+      "label": "handwriting · unattributed",
+      "sublabel": "us navy · nhhc",
+      "date_label": null,
+      "date": null,
+      "sfx": "page turn",
+      "dark": false
+    },
+    {
+      "text": "In nineteen eighty-eight, it sat in a Navy museum, labeled with the wrong year. ",
+      "caption": "in 1988, it sat in a navy museum, labeled with the wrong year.",
+      "big": null,
+      "visual": {
+        "type": "diagram",
+        "idea": "Typed museum-style caption card on cream stock: 'first computer \"bug\" · 9 september 1945'. A thin red line strikes through '1945' and '1947' is typed beside it. Small corner tag: 'reconstruction · not the original card'."
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": "displayed",
+      "date": "1988",
+      "sfx": "typewriter strike, then carriage return",
+      "dark": false
+    },
+    {
+      "text": "Today it's at the Smithsonian, moth still taped to the page. ",
+      "caption": "today it's at the smithsonian, moth still taped to the page.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "nmah_aerial"
+      },
+      "label": "national museum of american history",
+      "sublabel": "carol m. highsmith · loc",
+      "date_label": null,
+      "date": null,
+      "sfx": "quiet museum room tone",
+      "dark": false
+    },
+    {
+      "text": "The most famous bug in history, [pause] and the punchline to a joke that was already old.",
+      "caption": "the most famous bug in history, and the punchline to a joke that was already old.",
+      "big": "already old.",
+      "visual": {
+        "type": "type_only"
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": null,
+      "date": null,
+      "sfx": "last relay click, then silence",
+      "dark": true
+    }
+  ],
+  "music_mood": "Sparse felt piano over soft clockwork ticks and a warm low pad, about 72 bpm; curious and lightly wry, lifting a little on the joke, then thinning to one sustained note under the last line.",
+  "assets": [
+    {
+      "key": "bug_log",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/First_Computer_Bug%2C_1947.jpg/1600px-First_Computer_Bug%2C_1947.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:First_Computer_Bug,_1947.jpg",
+      "author": "U.S. Navy; Naval History and Heritage Command photo NH 96566-KN (courtesy of the Naval Surface Warfare Center, Dahlgren, VA, 1988)",
+      "date": "logbook page 9 September 1947; photograph c. 1988",
+      "license": "Public domain (work of a U.S. Navy sailor/employee, PD-USGov-Military-Navy; also tagged Public Domain Mark 1.0)",
+      "shows": "Harvard Mark II logbook page with the moth taped beside the 15:45 entry 'Relay #70 Panel F (moth) in relay. First actual case of bug being found.' Original 2,889 x 2,285 px.",
+      "changes": "cropped (full page; moth macro; handwriting line), slow push, gentle grade"
+    },
+    {
+      "key": "mark_i",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Harvard_Mark_I.jpg/1600px-Harvard_Mark_I.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Harvard_Mark_I.jpg",
+      "author": "Commons uploader Waldyrious (own work)",
+      "date": "4 February 2007 (EXIF)",
+      "license": "Public domain (released by the copyright holder)",
+      "shows": "The Harvard Mark I (IBM ASCC, 1944), the Mark II's predecessor, on display at Harvard. NOT the Mark II; labelled as such on screen. Original 2,816 x 2,112 px.",
+      "changes": "cropped to vertical, slow lateral pan"
+    },
+    {
+      "key": "relay_z4",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Elektromagnetischesrelais_zuse_1940_denis_apel_cc.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Elektromagnetischesrelais_zuse_1940_denis_apel_cc.jpg",
+      "author": "Denis Apel",
+      "date": "13 February 2011",
+      "license": "CC BY-SA 3.0",
+      "shows": "Electromagnetic relay from the Zuse Z4 (1940s), an illustrative relay of the era, not from the Mark II. Original size not confirmed, so the original-file URL is given.",
+      "changes": "cropped, slow push"
+    },
+    {
+      "key": "edison_1878",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Edison_and_phonograph_edit1.jpg/1600px-Edison_and_phonograph_edit1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Edison_and_phonograph_edit1.jpg",
+      "author": "Levin C. Handy (Brady-Handy Photograph Collection, Library of Congress cwpbh.04044)",
+      "date": "c. 1877, probably 18 April 1878 (per Commons description)",
+      "license": "Public domain (copyright expired; LoC: Brady-Handy photographs are PD in the US)",
+      "shows": "Thomas Edison seated with his tinfoil phonograph, Brady studio, Washington. Original 2,640 x 3,327 px.",
+      "changes": "cropped, slow push, gentle grade"
+    },
+    {
+      "key": "hopper_1984",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg/1600px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg",
+      "author": "James S. Davis, U.S. Navy (DN-SC-84-05971; NHHC NH 96919-KN)",
+      "date": "20 January 1984",
+      "license": "Public domain (work of a U.S. Navy sailor/employee, PD-USGov-Military-Navy)",
+      "shows": "Official portrait of Commodore Grace M. Hopper in uniform with cap. Original 2,400 x 3,000 px.",
+      "changes": "cropped, slow push"
+    },
+    {
+      "key": "nmah_aerial",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Aerial_view_of_National_Museum_of_American_History.jpg/1600px-Aerial_view_of_National_Museum_of_American_History.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_National_Museum_of_American_History.jpg",
+      "author": "Carol M. Highsmith (Carol M. Highsmith Archive, Library of Congress highsm.04970)",
+      "date": "5 May 2008",
+      "license": "Public domain (Highsmith dedicated her archive to the public domain; LoC: no known restrictions)",
+      "shows": "Aerial view of the Smithsonian's National Museum of American History on the National Mall. Original 6,697 x 3,984 px.",
+      "changes": "cropped to vertical, slow descending push"
+    }
+  ],
+  "tiktok_caption": "The \"first computer bug\" was a real moth, and the note taped beside it was a joke 📓 Read the word \"actual\" again.\nfile no. 009 · Images: U.S. Navy/NHHC, Library of Congress (public domain), Denis Apel (CC BY-SA 3.0) · Narration: ElevenLabs\n#computerhistory #gracehopper #techhistory #history #debugging",
+  "instagram_caption": "On 9 September 1947, at 15:45, the team testing Harvard's Mark II found something in Panel F, Relay #70: a moth, caught between the contacts.\n\nThey taped it into the logbook and wrote one line: \"First actual case of bug being found.\"\n\nThe key word is \"actual\". Engineers had called glitches \"bugs\" for decades. In 1878 Thomas Edison wrote of \"bugs\", \"as such little faults and difficulties are called\". The note wasn't naming anything new. It was a joke: someone had finally found a literal one.\n\nGrace Hopper, who worked on the Mark II, told the story for years and made it famous. The Smithsonian says the logbook was probably not hers, and no one knows for sure whose handwriting it is.\n\nIn 1988 the page sat in a Navy museum, labelled 1945. Today it is at the Smithsonian's National Museum of American History, with the moth still taped down.\n\nfile no. 009\n\n—\nImages: logbook page, U.S. Navy / Naval History and Heritage Command NH 96566-KN (public domain); Commodore Grace M. Hopper, 1984, James S. Davis, U.S. Navy (public domain); Thomas Edison, c. 1878, Levin C. Handy, Brady-Handy Collection, Library of Congress (public domain); National Museum of American History, Carol M. Highsmith, Library of Congress (public domain); Harvard Mark I, the Mark II's predecessor, Wikimedia Commons (public domain); Zuse Z4 relay, Denis Apel, CC BY-SA 3.0. The relay schematic and museum-label graphic were drawn for this video. Narration voiced with ElevenLabs. Sound effects synthesised for this video.\n\n#computerhistory #gracehopper #techhistory #debugging #history",
+  "facts": [
+    {
+      "claim": "On 9 September 1947 a moth was found in Relay #70, Panel F, of the Harvard Mark II (Aiken Relay Calculator) while it was being tested at Harvard",
+      "source": "Naval History and Heritage Command photo NH 96566-KN caption (NHHC Online Library, mirrored at ibiblio HyperWar); Computer History Museum, This Day in History, 9 September; Wikimedia Commons file description",
+      "url": "https://ibiblio.org/hyperwar/OnlineLibrary/photos/images/h96000/h96566kc.htm"
+    },
+    {
+      "claim": "Log entry reads '1545 Relay #70 Panel F (moth) in relay. First actual case of bug being found.'",
+      "source": "Jargon File 'bug' entry, citing Annals of the History of Computing vol. 3 no. 3 (July 1981) pp. 285-286; legible in NHHC photo NH 96566-KN",
+      "url": "http://www.catb.org/jargon/html/B/bug.html"
+    },
+    {
+      "claim": "Engineers taped the insect into the logbook and labeled it 'first actual case of bug being found'; the logbook, with moth, is in the National Museum of American History (object 1994.0191.01)",
+      "source": "Smithsonian NMAH, 'Log Book With Computer Bug'",
+      "url": "https://americanhistory.si.edu/collections/object/nmah_334663"
+    },
+    {
+      "claim": "The logbook was probably not Grace Hopper's; she and the Mark II team helped popularise 'bug'/'debug'",
+      "source": "Smithsonian NMAH, 'Log Book With Computer Bug'",
+      "url": "https://americanhistory.si.edu/collections/object/nmah_334663"
+    },
+    {
+      "claim": "Hopper made the incident famous in her many public lectures",
+      "source": "Computer History Museum, This Day in History, 9 September",
+      "url": "https://www.computerhistory.org/tdih/september/9/"
+    },
+    {
+      "claim": "Who wrote the line is not settled (handwriting not Hopper's; sometimes attributed to operator William 'Bill' Burke, unconfirmed)",
+      "source": "Britannica, 'September 9: The First Literal Computer Bug'; Wikipedia 'Bug (engineering)'",
+      "url": "https://www.britannica.com/today-in-history/September-9-The-First-Literal-Computer-Bug"
+    },
+    {
+      "claim": "Edison, 1878 letter to Theodore Puskas: 'Bugs' - as such little faults and difficulties are called",
+      "source": "Edison to Puskas, 13 Nov 1878, Edison Papers, cited in T. P. Hughes, American Genesis (1989) p. 75; IEEE Spectrum 'Did You Know? Edison Coined the Term Bug'",
+      "url": "https://spectrum.ieee.org/did-you-know-edison-coined-the-term-bug"
+    },
+    {
+      "claim": "'Bug' was engineering slang long before 1947, which is why the log says 'actual'",
+      "source": "JSTOR Daily, 'The Bug in the Computer Bug Story' (Matthew Wills); Jargon File 'bug'",
+      "url": "https://daily.jstor.org/the-bug-in-the-computer-bug-story/"
+    },
+    {
+      "claim": "Mark II: electromechanical relay machine built under Howard Aiken at Harvard, financed by the US Navy, completed 1947, later delivered to Dahlgren",
+      "source": "Wikipedia 'Harvard Mark II' (summary of Annals of the Computation Laboratory vol. 24, 1949)",
+      "url": "https://en.wikipedia.org/wiki/Harvard_Mark_II"
+    },
+    {
+      "claim": "In 1988 the log, moth still taped, was in the Naval Surface Warfare Center Computer Museum, Dahlgren, which dated it 9 September 1945 in error",
+      "source": "NHHC NH 96566-KN caption (photo courtesy NSWC Dahlgren, 1988); Wikimedia Commons file description",
+      "url": "https://commons.wikimedia.org/wiki/File:First_Computer_Bug,_1947.jpg"
+    }
+  ]
+}

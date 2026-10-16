@@ -1,0 +1,12 @@
+episodes/009_bug/assets/bug_log.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/First_Computer_Bug%2C_1947.jpg/1600px-First_Computer_Bug%2C_1947.jpg
+episodes/009_bug/assets/_pages/bug_log.html https://commons.wikimedia.org/wiki/File:First_Computer_Bug,_1947.jpg?action=raw
+episodes/009_bug/assets/mark_i.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Harvard_Mark_I.jpg/1600px-Harvard_Mark_I.jpg
+episodes/009_bug/assets/_pages/mark_i.html https://commons.wikimedia.org/wiki/File:Harvard_Mark_I.jpg?action=raw
+episodes/009_bug/assets/relay_z4.jpg https://upload.wikimedia.org/wikipedia/commons/8/87/Elektromagnetischesrelais_zuse_1940_denis_apel_cc.jpg
+episodes/009_bug/assets/_pages/relay_z4.html https://commons.wikimedia.org/wiki/File:Elektromagnetischesrelais_zuse_1940_denis_apel_cc.jpg?action=raw
+episodes/009_bug/assets/edison_1878.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Edison_and_phonograph_edit1.jpg/1600px-Edison_and_phonograph_edit1.jpg
+episodes/009_bug/assets/_pages/edison_1878.html https://commons.wikimedia.org/wiki/File:Edison_and_phonograph_edit1.jpg?action=raw
+episodes/009_bug/assets/hopper_1984.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg/1600px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg
+episodes/009_bug/assets/_pages/hopper_1984.html https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg?action=raw
+episodes/009_bug/assets/nmah_aerial.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Aerial_view_of_National_Museum_of_American_History.jpg/1600px-Aerial_view_of_National_Museum_of_American_History.jpg
+episodes/009_bug/assets/_pages/nmah_aerial.html https://commons.wikimedia.org/wiki/File:Aerial_view_of_National_Museum_of_American_History.jpg?action=raw

@@ -1,0 +1,8 @@
+{"file_no":"999","slug":"test","series_label":"file no. 999",
+ "beats":[
+ {"text":"On 14 February 1990, Voyager 1 was six billion kilometres from home.","big":"14 february 1990","visual":{"type":"type_only"},"label":null},
+ {"text":"It launched in 1977.","visual":{"type":"photo","asset":"rocket"},"label":"voyager 1 · launch","sublabel":"titan/centaur · nasa","date_label":"launched","date":"5 sep 1977","big":"voyager 1."},
+ {"text":"the hubble space telescope had cost about $1.5 billion,","visual":{"type":"photo","asset":"hubble"},"label":"sts-31 · hubble deployment","sublabel":"discovery · nasa","date_label":"deployed","date":"25 april 1990"},
+ {"text":"It was risky.","big":"risky.","dark":true,"visual":{"type":"diagram","name":"demo"},"label":"the sun · simulated view","sublabel":"drawn for this video"},
+ {"text":"and sitting in that beam, by pure chance.","dark":true,"visual":{"type":"photo","asset":"rocket","layout":"fullbleed"},"big":"is earth.","label":"pale blue dot · revisited","sublabel":"nasa/jpl-caltech · 2020"}
+ ]}

@@ -1,0 +1,403 @@
+{
+  "file_no": "010",
+  "slug": "first_photo",
+  "title": "The First Photo From Space",
+  "series_label": "file no. 010",
+  "voice_direction": "Mark Vale: deep, calm, unhurried American storyteller. Quiet wonder through the climb, a breath before 'it survived', and the last line almost under the breath, no flourish.",
+  "narration": "The first photograph of Earth from space was taken in nineteen forty-six, by a movie camera mounted inside a captured German missile. After the war, the U.S. Army shipped trainloads of V-2 parts to the New Mexico desert. Scientists swapped the warheads for instruments, and fired the rockets straight up. Until then, the highest photo ever taken came from a balloon, less than fourteen miles up. On the twenty-fourth of October, V-2 number thirteen carried a thirty-five millimeter movie camera. It took one frame every second and a half. The rocket climbed about sixty-five miles, [pause] just past the line we now call the edge of space. Then it fell. It hit the desert so hard the camera was destroyed. But the film was inside a steel cassette. [pause] It survived. One young soldier on the recovery team remembered the scientists jumping up and down like kids. The frames showed the planet, set against the blackness of space. The engineer behind the camera, Clyde Holliday, later wrote that this was how our Earth would look to visitors from another planet. No astronaut. No satellite. Two years earlier, rockets like this one were falling on London. [quietly] The first picture of home from space was taken by a weapon.",
+  "beats": [
+    {
+      "text": "The first photograph of Earth from space was taken in nineteen forty-six, by a movie camera mounted inside a captured German missile. ",
+      "caption": "the first photograph of earth from space was taken in 1946, by a movie camera inside a captured german missile.",
+      "big": "1946.",
+      "visual": {
+        "type": "photo",
+        "asset": "first_photo_alt"
+      },
+      "label": "first photo from space · v-2 no. 13",
+      "sublabel": "us army · wsmr / apl",
+      "date_label": null,
+      "date": null,
+      "sfx": "low film-projector hum fading in",
+      "dark": true
+    },
+    {
+      "text": "After the war, the U.S. Army shipped trainloads of V-2 parts to the New Mexico desert. ",
+      "caption": "after the war, the u.s. army shipped trainloads of v-2 parts to the new mexico desert.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "v2_in_white_sands"
+      },
+      "label": "v-2 · white sands",
+      "sublabel": "nasa",
+      "date_label": null,
+      "date": null,
+      "sfx": "distant freight train rumble under desert wind",
+      "dark": false
+    },
+    {
+      "text": "Scientists swapped the warheads for instruments, and fired the rockets straight up. ",
+      "caption": "scientists swapped the warheads for instruments, and fired the rockets straight up.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "v2_on_pad"
+      },
+      "label": "v-2 sounding rocket · white sands",
+      "sublabel": "us navy · nrl",
+      "date_label": "photographed",
+      "date": "1946",
+      "sfx": "metal clank, wrench ratchet",
+      "dark": false
+    },
+    {
+      "text": "Until then, the highest photo ever taken came from a balloon, less than fourteen miles up. ",
+      "caption": "until then, the highest photo ever taken came from a balloon, less than 14 miles up.",
+      "big": null,
+      "visual": {
+        "type": "diagram",
+        "idea": "Vertical altitude scale, part 1. Thin mono axis from 0 km at the bottom to 110 km at the top (miles in brackets). Only a short bar rises from 0 to 22 km, tagged 'explorer ii balloon · 1935 · 13.7 mi / 22 km' with a small balloon glyph. Everything above is empty dark sky. Typewriter tick labels every 20 km. Label the graphic 'schematic · to scale'."
+      },
+      "label": "explorer ii balloon · 1935",
+      "sublabel": "drawn for this video",
+      "date_label": null,
+      "date": null,
+      "sfx": "soft wind, rope creak",
+      "dark": false
+    },
+    {
+      "text": "On the twenty-fourth of October, V-2 number thirteen carried a thirty-five millimeter movie camera. ",
+      "caption": "on 24 october, v-2 no. 13 carried a 35 mm movie camera.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "v2_launch"
+      },
+      "label": "a v-2 launch · white sands",
+      "sublabel": "us army via nasa",
+      "date_label": "launched",
+      "date": "24 october 1946",
+      "sfx": "rocket ignition roar building",
+      "dark": false
+    },
+    {
+      "text": "It took one frame every second and a half. ",
+      "caption": "it took one frame every second and a half.",
+      "big": null,
+      "visual": {
+        "type": "diagram",
+        "idea": "A vertical 35 mm film strip scrolling upward, sprocket holes on both edges, frames blank grey. A mono frame counter in the corner ticks 001, 002, 003… exactly every 1.5 s of screen time, with the line '1 frame / 1.5 s'. Do not put real V-2 frames in the strip; it is a schematic."
+      },
+      "label": "1 frame / 1.5 s",
+      "sublabel": "drawn for this video",
+      "date_label": null,
+      "date": null,
+      "sfx": "film camera clatter, ticking once per beat",
+      "dark": false
+    },
+    {
+      "text": "The rocket climbed about sixty-five miles, [pause] just past the line we now call the edge of space. ",
+      "caption": "the rocket climbed about 65 miles, just past the line we now call the edge of space.",
+      "big": "the edge.",
+      "visual": {
+        "type": "diagram",
+        "idea": "Vertical altitude scale, part 2 (same axis as beat 4). A bright line rises from 0 to about 105 km (65 mi) and stops with a small apogee tick 'v-2 no. 13 · ~105 km'. A dashed horizontal line at 100 km labelled 'kármán line · 100 km (a later convention)'. The 22 km balloon bar stays visible as a ghost for scale. The gap between 100 and 105 km is highlighted. Label 'schematic · to scale'."
+      },
+      "label": "apogee ≈ 105 km · 65 mi",
+      "sublabel": "drawn for this video",
+      "date_label": null,
+      "date": null,
+      "sfx": "roar thinning to near silence, faint wind",
+      "dark": true
+    },
+    {
+      "text": "Then it fell. It hit the desert so hard the camera was destroyed. ",
+      "caption": "then it fell. it hit the desert so hard the camera was destroyed.",
+      "big": null,
+      "visual": {
+        "type": "type_only"
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": null,
+      "date": null,
+      "sfx": "falling whistle, then a heavy impact thud and debris",
+      "dark": true
+    },
+    {
+      "text": "But the film was inside a steel cassette. [pause] It survived. ",
+      "caption": "but the film was inside a steel cassette. it survived.",
+      "big": "it survived.",
+      "visual": {
+        "type": "type_only"
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": null,
+      "date": null,
+      "sfx": "a single metallic clink in silence",
+      "dark": true
+    },
+    {
+      "text": "One young soldier on the recovery team remembered the scientists jumping up and down like kids. ",
+      "caption": "one young soldier on the recovery team remembered the scientists “jumping up and down like kids.”",
+      "big": null,
+      "visual": {
+        "type": "type_only"
+      },
+      "label": "fred rulli, then 19 · recovery team",
+      "sublabel": "air & space, 2006",
+      "date_label": null,
+      "date": null,
+      "sfx": "muffled distant cheering over desert wind",
+      "dark": false
+    },
+    {
+      "text": "The frames showed the planet, set against the blackness of space. ",
+      "caption": "the frames showed the planet, set against the blackness of space.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "first_photo"
+      },
+      "label": "frame from v-2 no. 13 · ~65 mi up",
+      "sublabel": "us army · wsmr / apl",
+      "date_label": "taken",
+      "date": "24 october 1946",
+      "sfx": "projector whir, film flutter",
+      "dark": false
+    },
+    {
+      "text": "The engineer behind the camera, Clyde Holliday, later wrote that this was how our Earth would look to visitors from another planet. ",
+      "caption": "the engineer behind the camera, clyde holliday, later wrote that this was how “our earth would look to visitors from another planet.”",
+      "big": "visitors.",
+      "visual": {
+        "type": "photo",
+        "asset": "v2_1947"
+      },
+      "label": "later v-2 view · ~101 mi up",
+      "sublabel": "wsmr / nrl",
+      "date_label": "taken",
+      "date": "7 march 1947",
+      "sfx": "slow low swell",
+      "dark": false
+    },
+    {
+      "text": "No astronaut. No satellite. ",
+      "caption": "no astronaut. no satellite.",
+      "big": null,
+      "visual": {
+        "type": "type_only"
+      },
+      "label": null,
+      "sublabel": null,
+      "date_label": null,
+      "date": null,
+      "sfx": null,
+      "dark": true
+    },
+    {
+      "text": "Two years earlier, rockets like this one were falling on London. ",
+      "caption": "two years earlier, rockets like this one were falling on london.",
+      "big": null,
+      "visual": {
+        "type": "photo",
+        "asset": "london_damage"
+      },
+      "label": "v-2 damage · london",
+      "sublabel": "iwm hu 88803",
+      "date_label": "photographed",
+      "date": "27 march 1945",
+      "sfx": "distant low rumble, far-off siren",
+      "dark": true
+    },
+    {
+      "text": "[quietly] The first picture of home from space was taken by a weapon.",
+      "caption": "the first picture of home from space was taken by a weapon.",
+      "big": "a weapon.",
+      "visual": {
+        "type": "photo",
+        "asset": "first_photo"
+      },
+      "label": "first photo from space · v-2 no. 13",
+      "sublabel": "us army · wsmr / apl",
+      "date_label": null,
+      "date": null,
+      "sfx": "film runs out, flutter, then silence",
+      "dark": true
+    }
+  ],
+  "music_mood": "Sparse, slow (about 60 bpm). Low analog drone and soft felt piano. Faint tape hiss and a filmic tick under the camera beats. Swells gently at 'the edge', drops to near silence for the impact, and thins to one sustained low note under the final line.",
+  "assets": [
+    {
+      "key": "first_photo",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/First_photo_from_space.jpg/1600px-First_photo_from_space.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:First_photo_from_space.jpg",
+      "author": "U.S. Army (White Sands Missile Range / Applied Physics Laboratory)",
+      "date": "24 October 1946",
+      "license": "Public domain (PD-USGov-Military-Army, work of a U.S. Army soldier/employee)",
+      "shows": "Grainy black-and-white frame of Earth's surface and horizon from about 65 mi (105 km), V-2 flight no. 13, White Sands. Original 2048x1619.",
+      "changes": "cropped to 9:16, slow push, gentle grade"
+    },
+    {
+      "key": "first_photo_alt",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/First_photograph_of_Earth_from_space_24_October_1946.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:First_photograph_of_Earth_from_space_24_October_1946.jpg",
+      "author": "White Sands Missile Range / Applied Physics Laboratory",
+      "date": "24 October 1946",
+      "license": "Public domain (Public Domain Mark 1.0; U.S. government work)",
+      "shows": "A second scan of a frame from the same 24 Oct 1946 V-2 flight, 105 km. Original 1440x1138 (uploaded Feb 2021).",
+      "changes": "cropped, slow push"
+    },
+    {
+      "key": "v2_in_white_sands",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/V2_in_White_Sands.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:V2_in_White_Sands.jpg",
+      "author": "Unknown (source: NASA)",
+      "date": "undated (Commons date 2004 is the upload date)",
+      "license": "Public domain (U.S. federal government work, PD-USGov-NASA)",
+      "shows": "A V-2 rocket at White Sands. Exact date and flight unknown, so labelled generically.",
+      "changes": "cropped, slow push"
+    },
+    {
+      "key": "v2_on_pad",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/V-2_White_Sands.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:V-2_White_Sands.jpg",
+      "author": "U.S. Navy (Naval Research Laboratory news release)",
+      "date": "1946",
+      "license": "Public domain (PD-USGov-Military-Navy)",
+      "shows": "A V-2 sounding rocket at White Sands, 1946. Low resolution (372x495): use small inside a frame or with grain, not full-bleed.",
+      "changes": "cropped, framed small, slow push"
+    },
+    {
+      "key": "v2_launch",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/US_V-2_launch.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:US_V-2_launch.jpg",
+      "author": "U.S. Army (source: NASA)",
+      "date": "1946-1952",
+      "license": "Public domain (PD-USGov-Military-Army)",
+      "shows": "A V-2 launch from White Sands. It is not identified as flight no. 13, so the label says 'a v-2 launch'. Low resolution (434x567).",
+      "changes": "cropped, framed small, slow push"
+    },
+    {
+      "key": "v2_1947",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/V-2-_image_from_space_1947.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:V-2-_image_from_space_1947.jpg",
+      "author": "White Sands Missile Range / Naval Research Laboratory",
+      "date": "7 March 1947",
+      "license": "Public domain (Public Domain Mark 1.0; U.S. government work)",
+      "shows": "Photo from V-2 no. 21 at about 101 mi; dark area upper left is the Gulf of California. Low resolution (428x550).",
+      "changes": "cropped, framed small, slow push"
+    },
+    {
+      "key": "london_damage",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Damage_Caused_by_V2_Rocket_Attacks_in_Britain,_1945_HU88803.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Damage_Caused_by_V2_Rocket_Attacks_in_Britain,_1945_HU88803.jpg",
+      "author": "Imperial War Museums (HU 88803), photographer not named",
+      "date": "27 March 1945",
+      "license": "UNCONFIRMED: Commons hosts it as a UK Crown-copyright-expired photo; the licence tag itself was not seen. IWM offers its own copies under an IWM Non-Commercial Licence. Check before use.",
+      "shows": "Ruined flats at Hughes Mansions, Vallance Road, East London, after a V-2 hit on 27 March 1945. Resolution not checked.",
+      "changes": "cropped, slow push, darkened"
+    },
+    {
+      "key": "backfire_launch_spare",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/The_V2_Rocket_BU11149.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:The_V2_Rocket_BU11149.jpg",
+      "author": "No 5 Army Film & Photographic Unit, Sgt Morris (IWM BU 11149)",
+      "date": "10 October 1945",
+      "license": "Commons: public domain (Crown copyright expired, AFPU photo). IWM: Non-Commercial Licence on its copies. Check before use.",
+      "shows": "SPARE for beat 14 if london_damage is rejected: a German V-2 launched by the British at Cuxhaven (Operation Backfire). Not White Sands; label as such.",
+      "changes": "cropped, slow push"
+    },
+    {
+      "key": "nasa_early_rockets_spare",
+      "url": "https://images-assets.nasa.gov/image/9131496/9131496~orig.jpg",
+      "page": "https://images.nasa.gov/details-9131496",
+      "author": "NASA (U.S. Army photo)",
+      "date": "1946 (NASA's 1946-01-01 is a placeholder)",
+      "license": "Public domain (NASA)",
+      "shows": "SPARE for beat 5: V-2 in flight at White Sands, 1946 ('Early Rockets'). The URL follows the NASA pattern but was NOT opened.",
+      "changes": "cropped, slow push"
+    }
+  ],
+  "tiktok_caption": "The first photo of Earth from space was taken in 1946, by a movie camera inside a captured Nazi missile 🚀\nfile no. 010 · Images: US Army / White Sands Missile Range / APL, US Navy / NRL, NASA, IWM (public domain) · Narration: ElevenLabs\n#spacehistory #v2rocket #whitesands #earthfromspace #history",
+  "instagram_caption": "On 24 October 1946, a V-2 rocket rose straight up from White Sands, New Mexico.\n\nIt was a German missile, assembled after the war from captured parts. Where the warhead used to be, engineers had put instruments and a 35 mm movie camera. The camera took one frame every second and a half.\n\nThe rocket reached about 65 miles (105 km), just past the 100 km line we now call the edge of space. The highest photo before that came from a balloon, 13.7 miles up.\n\nThen it fell. The camera was smashed in the desert. The film, sealed in a steel cassette, was fine. Fred Rulli, a 19-year-old soldier on the recovery team, remembered the scientists “jumping up and down like kids.”\n\nIn 1950, Clyde Holliday, the APL engineer behind the camera, wrote in National Geographic that the pictures showed “how our Earth would look to visitors from another planet coming in on a space ship.”\n\nLess than two years earlier, the same kind of rocket had been falling on London.\n\nfile no. 010\n\n—\nImages: US Army / White Sands Missile Range / Applied Physics Laboratory (first photo from space, 24 Oct 1946); US Army and US Navy / NRL (V-2s at White Sands); White Sands Missile Range / NRL (V-2 no. 21 view, 7 Mar 1947); NASA; Imperial War Museums HU 88803 (V-2 damage, London, 1945). Public domain via Wikimedia Commons. The altitude scale and film-strip counter are schematics drawn for this video. Narration voiced with ElevenLabs. Sound effects synthesised for this video.\n\n#spacehistory #v2rocket #earthfromspace #whitesands #photohistory",
+  "facts": [
+    {
+      "claim": "First photograph of Earth from space: 24 Oct 1946, V-2 no. 13, White Sands, New Mexico",
+      "source": "Wikipedia 'V-2 No. 13'; Commons file page (US Army/WSMR); Air & Space (Smithsonian), 'The First Photo From Space', Tony Reichhardt, 2006",
+      "url": "https://en.wikipedia.org/wiki/V-2_No._13"
+    },
+    {
+      "claim": "U.S. V-2s were built from captured German parts; about 300 rail cars of components reached Las Cruces, NM from July 1945; GE reassembled them; first U.S. launch 16 Apr 1946",
+      "source": "WSMR Museum; Air & Space 'The First Launch of a V-2 Rocket From America'",
+      "url": "https://www.airspacemag.com/daily-planet/first-v2-rocket-launch-america-was-75-years-ago-today-180977520/"
+    },
+    {
+      "claim": "Instruments and cameras rode in the V-2's warhead / nose section; rockets were fired straight up and fell back minutes later",
+      "source": "Air & Space 2006; Wikipedia 'V-2 sounding rocket'",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+    },
+    {
+      "claim": "Before 1946 the highest photos came from the Explorer II balloon, 13.7 miles, 1935",
+      "source": "Air & Space 2006; NASA Science",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+    },
+    {
+      "claim": "Camera was a 35 mm motion-picture camera (DeVry), developed/adapted by Clyde Holliday of Johns Hopkins APL",
+      "source": "Air & Space 2006; Smithsonian Smart News (2016)",
+      "url": "https://www.smithsonianmag.com/smart-news/70-years-ago-today-nazi-rockets-and-american-scientists-took-first-photo-earth-space-180960890/"
+    },
+    {
+      "claim": "One frame about every 1.5 seconds",
+      "source": "Commons file description; Holliday (1950) cited in arXiv:1602.02333 as 0.67 Hz",
+      "url": "https://arxiv.org/pdf/1602.02333"
+    },
+    {
+      "claim": "Peak altitude about 65 mi (105 km)",
+      "source": "Wikipedia 'V-2 No. 13'; Commons file pages; Air & Space ('65 miles'). Note: Holliday 1950 is cited as ~100 km",
+      "url": "https://commons.wikimedia.org/wiki/File:First_photo_from_space.jpg"
+    },
+    {
+      "claim": "Kármán line at 100 km is the FAI convention for the edge of space (a later definition)",
+      "source": "Wikipedia 'Kármán line'",
+      "url": "https://en.wikipedia.org/wiki/K%C3%A1rm%C3%A1n_line"
+    },
+    {
+      "claim": "Camera smashed on impact; film, protected in a steel cassette, unharmed",
+      "source": "Air & Space 2006",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+    },
+    {
+      "claim": "Fred Rulli, a 19-year-old enlisted man on the recovery team: 'They were ecstatic, they were jumping up and down like kids.'",
+      "source": "Air & Space 2006 (wording as repeated by Smithsonian and Ynet; original page not opened)",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+    },
+    {
+      "claim": "The V-2 pictures showed the planet set against the blackness of space",
+      "source": "Air & Space 2006",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+    },
+    {
+      "claim": "Holliday, National Geographic, 1950: the photos showed 'how our Earth would look to visitors from another planet coming in on a space ship'",
+      "source": "Air & Space 2006; ru.wikipedia (quotes the original English)",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+    },
+    {
+      "claim": "Later photo: V-2 no. 21, 7 March 1947, about 101 miles",
+      "source": "Commons file page; NASA image article 'First Pictures of Earth From 100 Miles in Space, 1947'",
+      "url": "https://www.nasa.gov/image-article/first-pictures-of-earth-from-100-miles-space-1947/"
+    },
+    {
+      "claim": "V-2s hit London from 8 Sept 1944 (Chiswick) to March 1945, two years before the flight",
+      "source": "IWM 'V-Weapons'; This Day in Aviation",
+      "url": "https://www.iwm.org.uk/history/second-world-war/bombing/v-weapons"
+    },
+    {
+      "claim": "More than 1,000 Earth pictures came back from V-2s between 1946 and 1950, from up to 100 miles (Instagram caption only)",
+      "source": "Air & Space 2006",
+      "url": "https://www.smithsonianmag.com/air-space-magazine/the-first-photo-from-space-13721411/"
+    }
+  ]
+}

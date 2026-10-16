@@ -1,0 +1,37 @@
+{
+ "narration_duration": 20.035918,
+ "lead_in": 0.6,
+ "beats": [
+  {
+   "start": 0.0,
+   "end": 7.569,
+   "speech_end": 7.569,
+   "big_time": 1.521
+  },
+  {
+   "start": 7.569,
+   "end": 9.706,
+   "speech_end": 9.706,
+   "big_time": 7.89
+  },
+  {
+   "start": 9.706,
+   "end": 14.965,
+   "speech_end": 14.965
+  },
+  {
+   "start": 14.965,
+   "end": 16.527,
+   "speech_end": 16.527,
+   "big_time": 15.806
+  },
+  {
+   "start": 16.527,
+   "end": 20.886,
+   "speech_end": 20.636,
+   "big_time": 17.143
+  }
+ ],
+ "end_card_start": 20.886,
+ "duration": 23.886
+}

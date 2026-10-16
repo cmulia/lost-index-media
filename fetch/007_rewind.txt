@@ -1,0 +1,16 @@
+episodes/007_rewind/assets/renaissance_tower.jpg https://upload.wikimedia.org/wikipedia/commons/5/50/Dallas_Renaissance_Tower_1.jpg
+episodes/007_rewind/assets/_pages/renaissance_tower.html https://commons.wikimedia.org/wiki/File:Dallas_Renaissance_Tower_1.jpg?action=raw
+episodes/007_rewind/assets/jvc_hr3300.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/JVC-HR-3300U.jpg/1600px-JVC-HR-3300U.jpg
+episodes/007_rewind/assets/_pages/jvc_hr3300.html https://commons.wikimedia.org/wiki/File:JVC-HR-3300U.jpg?action=raw
+episodes/007_rewind/assets/vhs_vs_betamax.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/VHS_vs_Betamax_size.jpg/1600px-VHS_vs_Betamax_size.jpg
+episodes/007_rewind/assets/_pages/vhs_vs_betamax.html https://commons.wikimedia.org/wiki/File:VHS_vs_Betamax_size.jpg?action=raw
+episodes/007_rewind/assets/blockbuster_addison.jpg https://upload.wikimedia.org/wikipedia/commons/7/7b/Blockbuster_Video,_Addison_Illinois,_April_2009.jpg
+episodes/007_rewind/assets/_pages/blockbuster_addison.html https://commons.wikimedia.org/wiki/File:Blockbuster_Video,_Addison_Illinois,_April_2009.jpg?action=raw
+episodes/007_rewind/assets/vhs_cassette.jpg https://upload.wikimedia.org/wikipedia/commons/6/67/VHS-cassette.jpg
+episodes/007_rewind/assets/_pages/vhs_cassette.html https://commons.wikimedia.org/wiki/File:VHS-cassette.jpg?action=raw
+episodes/007_rewind/assets/closing_sale.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Blockbuster_Video_closing_sale_-02-_(9719273896).jpg/1600px-Blockbuster_Video_closing_sale_-02-_(9719273896).jpg
+episodes/007_rewind/assets/_pages/closing_sale.html https://commons.wikimedia.org/wiki/File:Blockbuster_Video_closing_sale_-02-_(9719273896).jpg?action=raw
+episodes/007_rewind/assets/bend_exterior.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Exterior_of_last_Blockbuster_Video.jpg/1600px-Exterior_of_last_Blockbuster_Video.jpg
+episodes/007_rewind/assets/_pages/bend_exterior.html https://commons.wikimedia.org/wiki/File:Exterior_of_last_Blockbuster_Video.jpg?action=raw
+episodes/007_rewind/assets/bend_interior.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Interior_of_last_Blockbuster_Video.jpg/1600px-Interior_of_last_Blockbuster_Video.jpg
+episodes/007_rewind/assets/_pages/bend_interior.html https://commons.wikimedia.org/wiki/File:Interior_of_last_Blockbuster_Video.jpg?action=raw

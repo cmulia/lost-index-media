@@ -1,0 +1,14 @@
+episodes/006_speakers/assets/edison_phonograph_1878.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edison_and_phonograph_edit2.jpg/1600px-Edison_and_phonograph_edit2.jpg
+episodes/006_speakers/assets/_pages/edison_phonograph_1878.html https://commons.wikimedia.org/wiki/File:Edison_and_phonograph_edit2.jpg?action=raw
+episodes/006_speakers/assets/idora_horn_1922.jpg https://upload.wikimedia.org/wikipedia/commons/f/f8/Large_horn_loudspeaker.jpg
+episodes/006_speakers/assets/_pages/idora_horn_1922.html https://commons.wikimedia.org/wiki/File:Large_horn_loudspeaker.jpg?action=raw
+episodes/006_speakers/assets/kellogg_rice_1925.jpg https://upload.wikimedia.org/wikipedia/commons/e/e3/Edward_Kellogg_%26_Chester_Rice_with_cone_speaker_1925.jpg
+episodes/006_speakers/assets/_pages/kellogg_rice_1925.html https://commons.wikimedia.org/wiki/File:Edward_Kellogg_%26_Chester_Rice_with_cone_speaker_1925.jpg?action=raw
+episodes/006_speakers/assets/rice_kellogg_speaker_1.jpg https://upload.wikimedia.org/wikipedia/commons/5/5e/Rice_Kellogg_loudspeaker_1.jpg
+episodes/006_speakers/assets/_pages/rice_kellogg_speaker_1.html https://commons.wikimedia.org/wiki/File:Rice_Kellogg_loudspeaker_1.jpg?action=raw
+episodes/006_speakers/assets/rice_kellogg_speaker_2.jpg https://upload.wikimedia.org/wikipedia/commons/9/91/Rice_Kellogg_loudspeaker_2.jpg
+episodes/006_speakers/assets/_pages/rice_kellogg_speaker_2.html https://commons.wikimedia.org/wiki/File:Rice_Kellogg_loudspeaker_2.jpg?action=raw
+episodes/006_speakers/assets/walkman_tps_l2.jpg https://upload.wikimedia.org/wikipedia/commons/4/4e/Original_Sony_Walkman_TPS-L2.JPG
+episodes/006_speakers/assets/_pages/walkman_tps_l2.html https://commons.wikimedia.org/wiki/File:Original_Sony_Walkman_TPS-L2.JPG?action=raw
+episodes/006_speakers/assets/walkman_tekniska.jpg https://upload.wikimedia.org/wikipedia/commons/9/94/Walkman_TPS-L2.jpg
+episodes/006_speakers/assets/_pages/walkman_tekniska.html https://commons.wikimedia.org/wiki/File:Walkman_TPS-L2.jpg?action=raw
