@@ -33,6 +33,36 @@ def rms(x):
     return float(np.sqrt(np.mean(x ** 2)) + 1e-12)
 
 
+def carry_score(m, duration, drop_db=12.0, xfade=3.0, min_tail=2.0):
+    """Generated scores often fade out early. If the track goes quiet more than `min_tail`
+    seconds before the video ends, loop back over an earlier loud stretch of the same track
+    with equal-power crossfades so the bed carries to the end card, then fade out."""
+    win = SR
+    nwin = m.shape[0] // win
+    if nwin < 20:
+        return m
+    lev = np.array([20 * np.log10(rms(m[i * win:(i + 1) * win]) + 1e-9) for i in range(nwin)])
+    ref = np.median(lev[: int(nwin * 0.6)])
+    loud = np.where(lev > ref - drop_db)[0]
+    if not len(loud):
+        return m
+    t_end = (loud[-1] + 1)
+    if duration - t_end <= min_tail:
+        return m
+    a = max(5, t_end - 40)
+    seg = m[a * SR:t_end * SR]
+    out = m[:t_end * SR].copy()
+    xf = int(xfade * SR)
+    ramp = np.linspace(0, np.pi / 2, xf)[:, None]
+    while out.shape[0] < int((duration + 1) * SR):
+        head = out[-xf:] * np.cos(ramp) + seg[:xf] * np.sin(ramp)
+        out = np.concatenate([out[:-xf], head, seg[xf:]])
+    out = out[: int((duration + 1) * SR)]
+    f = int(3.5 * SR)
+    out[-f:] *= np.linspace(1, 0, f)[:, None] ** 1.5
+    return out
+
+
 def mix(narration_path, music, sfx, duration, lead_in, out_path, music_level=0.20, duck_depth=0.55,
         end_card_start=None):
     n = int(duration * SR)

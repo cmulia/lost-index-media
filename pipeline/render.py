@@ -77,7 +77,7 @@ def make_audio(ep, script, timing):
     dur = timing["duration"]
     music_files = sorted(glob.glob(os.path.join(ep, "audio", "music.*")))
     if music_files:
-        music = AU.decode(music_files[0])
+        music = AU.carry_score(AU.decode(music_files[0]), dur)
         mj = os.path.join(ep, "music.json")
         level = json.load(open(mj)).get("file_level", 0.20) if os.path.exists(mj) else 0.20
     else:
@@ -135,6 +135,7 @@ def main():
     ap.add_argument("--stills", default=None)
     ap.add_argument("--audio-only", action="store_true")
     ap.add_argument("--keep-timing", action="store_true")
+    ap.add_argument("--remux", action="store_true", help="rebuild audio only and swap it into the existing render")
     ap.add_argument("--workers", type=int, default=4)
     a = ap.parse_args()
     ep = a.ep.rstrip("/")
@@ -150,6 +151,16 @@ def main():
     I, TP = AU.measure(mix)
     print(f"mix: {I:.1f} LUFS, {TP:.1f} dBTP, duration {timing['duration']:.1f}s")
     if a.audio_only:
+        return
+    if a.remux:
+        # keep the rendered frames, swap in the new mix
+        out = os.path.join(ep, "render", f"lost_index_{script['file_no']}_{script['slug']}.mp4")
+        tmp = out + ".remux.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-i", mix, "-map", "0:v", "-map", "1:a",
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart",
+                        "-shortest", tmp], check=True)
+        os.replace(tmp, out)
+        print("remuxed", out)
         return
     out = render_video(ep, script, timing, mix, a.workers)
     contact_sheet(out, os.path.join(ep, "render", "contact_sheet.png"))
