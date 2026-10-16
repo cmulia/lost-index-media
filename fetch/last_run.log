@@ -1,3 +1,4 @@
-FAIL 404 _test/a_thumb.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/H96566k.jpg/1280px-H96566k.jpg
-FAIL 404 _test/b_orig.jpg https://upload.wikimedia.org/wikipedia/commons/8/8a/H96566k.jpg
-ok=0 fail=2
+ok   _test/c_filepath.jpg
+FAIL 404 _test/d_direct.jpg https://upload.wikimedia.org/wikipedia/commons/8/8a/H96566k.jpg
+FAIL 404 _test/e_orig.jpg https://upload.wikimedia.org/wikipedia/commons/f/ff/First_Computer_Bug,_1945.jpg
+ok=1 fail=2
