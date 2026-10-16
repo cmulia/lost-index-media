@@ -78,7 +78,8 @@ def make_audio(ep, script, timing):
     music_files = sorted(glob.glob(os.path.join(ep, "audio", "music.*")))
     if music_files:
         music = AU.decode(music_files[0])
-        level = 0.24
+        mj = os.path.join(ep, "music.json")
+        level = json.load(open(mj)).get("file_level", 0.20) if os.path.exists(mj) else 0.20
     else:
         spec = json.load(open(os.path.join(ep, "music.json")))
         if "swell_beat" in spec:

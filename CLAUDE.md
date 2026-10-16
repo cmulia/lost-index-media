@@ -49,15 +49,21 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
 5. **Sound effects**: 8–10 per episode in `sfx_plan.json` ({beat, prompt, gain, file}); generate with
    `creative_generate_in_flow` node_type `sfx`, model `eleven_text_to_sound_v2` (one flow per episode, default takes,
    never re-call to retry), download one take each, write `sfx.json`. Gains 0.28–0.5.
-6. **Score**: `music.json` (bpm, root, progression, layers, texture, `swell_beat`). If the full ElevenLabs connector
-   (music) is connected, generate a ~95 s instrumental bed instead and save it as `audio/music.mp3` — render.py
-   uses it automatically.
+6. **Score**: use the full ElevenLabs connector (`mcp__ElevenLabs_Full__*`): add a `music` node, model
+   `eleven_music_v2_5`, model_parameters `{"duration_seconds": <video length rounded up>, "instrumental": true,
+   "lyrics_type": "instrumental"}`, a 1–3 sentence sound-only prompt (genre, mood, instruments, tempo, how it evolves),
+   run with default takes, save the take closest in length as `audio/music.mp3` (render.py uses it automatically;
+   optional `"file_level"` in music.json, default 0.20). Render once first without music to learn the exact length.
+   Fallback if that connector is missing: `music.json` spec for the built-in composer (bpm, root, progression, layers,
+   texture, `swell_beat`).
 7. **Diagrams**: write `diagrams.py` for beats with `"visual": {"type":"diagram","name":...,"panel":"dark|light","height":N}`.
    Label every drawing "schematic" / "illustration · drawn for this video".
 8. **QC**: `python3 pipeline/render.py episodes/NNN_slug --stills ...` (one still per beat), look at them, fix,
    then full render (≈5 min). Check the contact sheet and that the mix reads ≈ −16 LUFS / −2 dBTP.
-9. **Publish files**: commit the episode (videos are < 100 MB) and push to `main`. Public video URL:
-   `https://raw.githubusercontent.com/cmulia/lost-index-media/main/episodes/NNN_slug/render/lost_index_NNN_slug.mp4`
+9. **Publish files**: commit the episode (videos must stay < 100 MB; render.py caps video at 4.5 Mb/s) and push to
+   `main`. Use a commit-pinned public URL for Buffer (raw.githubusercontent caches a 404 on `main` paths for minutes):
+   `https://raw.githubusercontent.com/cmulia/lost-index-media/<full commit sha>/episodes/NNN_slug/render/lost_index_NNN_slug.mp4`
+   and check it returns HTTP 200 with the right content-length before scheduling.
 10. **Schedule in Buffer** (organization "My organization" `6ad19c77eb2d5b90ec4ac866`):
     - TikTok `lost_index` channel `6ad19d37778b240e2f23725b`: `tiktok_caption`, video asset, schedulingType automatic.
     - Instagram `lost_index_ig` channel `6ad1b705778b240e2f250120`: `instagram_caption`, video asset,
