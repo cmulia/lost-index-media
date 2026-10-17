@@ -1,91 +1,91 @@
 {
  "narration_duration": 85.159184,
- "lead_in": 0.6,
+ "lead_in": 0.15,
  "beats": [
   {
    "start": 0.0,
-   "end": 10.424,
-   "speech_end": 10.104,
-   "big_time": 2.026
+   "end": 9.974,
+   "speech_end": 9.654,
+   "big_time": 1.576
   },
   {
-   "start": 10.424,
-   "end": 15.052,
-   "speech_end": 14.732
+   "start": 9.974,
+   "end": 14.602,
+   "speech_end": 14.282
   },
   {
-   "start": 15.052,
-   "end": 21.584,
-   "speech_end": 21.264
+   "start": 14.602,
+   "end": 21.134,
+   "speech_end": 20.814
   },
   {
-   "start": 21.584,
-   "end": 29.042,
-   "speech_end": 28.722
+   "start": 21.134,
+   "end": 28.592,
+   "speech_end": 28.272
   },
   {
-   "start": 29.042,
-   "end": 36.6,
-   "speech_end": 36.28
+   "start": 28.592,
+   "end": 36.15,
+   "speech_end": 35.83
   },
   {
-   "start": 36.6,
-   "end": 39.618,
-   "speech_end": 39.449
+   "start": 36.15,
+   "end": 39.168,
+   "speech_end": 38.999
   },
   {
-   "start": 39.618,
-   "end": 45.046,
-   "speech_end": 44.883,
-   "big_time": 39.618
+   "start": 39.168,
+   "end": 44.596,
+   "speech_end": 44.433,
+   "big_time": 39.168
   },
   {
-   "start": 45.046,
-   "end": 49.683,
-   "speech_end": 49.363,
-   "big_time": 48.699
+   "start": 44.596,
+   "end": 49.233,
+   "speech_end": 48.913,
+   "big_time": 48.249
   },
   {
-   "start": 49.683,
-   "end": 53.994,
-   "speech_end": 53.793,
-   "big_time": 52.88
+   "start": 49.233,
+   "end": 53.544,
+   "speech_end": 53.343,
+   "big_time": 52.43
   },
   {
-   "start": 53.994,
-   "end": 60.43,
-   "speech_end": 60.165,
-   "big_time": 59.515
+   "start": 53.544,
+   "end": 59.98,
+   "speech_end": 59.715,
+   "big_time": 59.065
   },
   {
-   "start": 60.43,
-   "end": 65.347,
-   "speech_end": 65.027
+   "start": 59.98,
+   "end": 64.897,
+   "speech_end": 64.578
   },
   {
-   "start": 65.347,
-   "end": 73.727,
-   "speech_end": 73.407,
-   "big_time": 71.623
+   "start": 64.897,
+   "end": 73.278,
+   "speech_end": 72.958,
+   "big_time": 71.173
   },
   {
-   "start": 73.727,
-   "end": 76.525,
-   "speech_end": 76.205,
-   "big_time": 73.727
+   "start": 73.278,
+   "end": 76.075,
+   "speech_end": 75.755,
+   "big_time": 73.278
   },
   {
-   "start": 76.525,
-   "end": 81.242,
-   "speech_end": 80.922
+   "start": 76.075,
+   "end": 80.792,
+   "speech_end": 80.472
   },
   {
-   "start": 81.242,
-   "end": 86.009,
-   "speech_end": 85.43,
-   "big_time": 83.584
+   "start": 80.792,
+   "end": 85.559,
+   "speech_end": 84.98,
+   "big_time": 83.134
   }
  ],
- "end_card_start": 86.009,
- "duration": 89.009
+ "end_card_start": 85.559,
+ "duration": 87.559
 }
