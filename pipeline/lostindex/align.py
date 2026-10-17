@@ -43,7 +43,7 @@ def weight(text):
     return max(w, 1)
 
 
-def align(script, narration_path, lead_in=0.6, end_card=3.0):
+def align(script, narration_path, lead_in=0.15, end_card=2.0):
     dur = audio_duration(narration_path)
     sil = silences(narration_path)
     speech_start = sil[0][1] if sil and sil[0][0] < 0.05 else 0.0

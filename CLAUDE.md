@@ -1,7 +1,7 @@
 # @lost_index media repo
 
 This repo makes and schedules the @lost_index mini-documentaries (TikTok `lost_index`, Instagram `lost_index_ig`).
-Each video is "file no. NNN": an ~85–95 s vertical (1080×1920, 30 fps) true story with a quiet twist,
+Each video is "file no. NNN": a 45–60 s vertical (1080×1920, 30 fps) true story with a quiet twist,
 real archival images, original diagrams, ElevenLabs narration + sound effects, and a score.
 
 ## Layout
@@ -25,11 +25,14 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
 ## Making one episode (what the daily scheduled task does)
 
 1. **Topic.** Rotate categories in this order and pick the first unchecked item of the next category in
-   `episodes/BACKLOG.md`: sound → screens & media → money & markets → tech → space. Check it off when scheduled.
+   `episodes/BACKLOG.md`: sound → screens & media → money & markets → tech → space. Sound stories perform best:
+   when a sound item fits, prefer one with something to *hear* (and let the SFX carry it). Check it off when scheduled.
    Next file number = highest existing `episodes/NNN_*` + 1.
 2. **Research + script** (use a subagent; WebSearch budget is 200 calls per turn shared by all agents).
    Follow `episodes/BRIEF.md`. Every claim needs a reliable source; cut what can't be verified; hedge disputed
-   stories ("say", "remembers it differently"). Narration 185–215 words, numbers spelled out. 13–16 beats.
+   stories ("say", "remembers it differently"). Narration 120–140 words (45–60 s), numbers spelled out, 8–11 beats.
+   Hook: the first sentence states the surprising claim in under 3 s; beat 0 has the strongest image and a `big`
+   headline (the renderer shows beat 0 fully on frame one — no fade-in). Captions end with a short question (👇).
    Concatenated beat texts must equal the narration exactly.
 3. **Images.** Wikimedia Commons / NASA, public domain or CC0/CC BY/CC BY-SA only. This environment cannot
    reach those hosts, so write `fetch/NNN_slug.txt` with `episodes/NNN_slug/assets/<key>.jpg <upload.wikimedia.org url>`
@@ -72,8 +75,8 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
       first hashtag, video asset, metadata.youtube {title: "<tiktok hook, ≤ 70 chars> #shorts", categoryId: "27",
       privacy: "public", madeForKids: false, notifySubscribers: false, embeddable: true, license: "youtube",
       isAiGenerated: false}.
-    - mode `customScheduled`, dueAt **18:00 Australia/Sydney** on the next free day (one video per day, all three
-      channels at the same time). Keep about 5 days queued: schedule the new episode for the day after the last
+    - mode `customScheduled`, dueAt **10:00 Australia/Sydney** (= evening in the US) on the next free day: one video
+      per day, the same video on all three channels at the same time. Never schedule two different videos for the same day. Keep about 5 days queued: schedule the new episode for the day after the last
       scheduled one, and skip if 5 or more days are already queued.
     - isAiGenerated stays false (narration is credited in the caption), matching earlier posts.
 

@@ -328,11 +328,12 @@ def render_beat(tl, b, t, img=None):
     ov = Image.new("RGBA", (S.W, S.H), (0, 0, 0, 0))
     d = ImageDraw.Draw(ov)
 
-    a_el = ease(lt / EL_FADE)
+    hook = b["i"] == 0          # first beat: everything on screen from frame one
+    a_el = 1.0 if hook else ease(lt / EL_FADE)
     run_p = (t - b["run_start"]) / max(0.5, (b["run_end"] - b["run_start"]))
     run_p = max(0.0, min(1.0, run_p))
     same_as_prev = b["run_start"] < b["start"] - 1e-6
-    a_plate = 1.0 if same_as_prev else ease(lt / EL_FADE)
+    a_plate = 1.0 if (same_as_prev or hook) else ease(lt / EL_FADE)
 
     text_x, text_w = S.MARGIN, S.CONTENT_W
     y = S.CONTENT_TOP
@@ -381,8 +382,8 @@ def render_beat(tl, b, t, img=None):
     nchars = int(len(caption) * min(1.0, max(0.0, (lt - 0.08) / spoken)))
     big = b.get("big")
     big_t = b.get("big_time", b["start"]) - b["start"]
-    a_big = ease((lt - big_t) / BIG_FADE)
-    rise = (1 - ease_out((lt - big_t) / 0.6)) * 16
+    a_big = 1.0 if hook else ease((lt - big_t) / BIG_FADE)
+    rise = 0.0 if hook else (1 - ease_out((lt - big_t) / 0.6)) * 16
 
     if layout == "fullbleed":
         dpal = S.DARK

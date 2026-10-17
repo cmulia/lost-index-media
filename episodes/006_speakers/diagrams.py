@@ -13,7 +13,7 @@ def icons(c, p, t, pal, beat):
     cells = [(W * 0.27, H * 0.30), (W * 0.73, H * 0.30), (W * 0.27, H * 0.72), (W * 0.73, H * 0.72)]
     names = ["phone", "earbuds", "car", "stadium"]
     for i, (cx, cy) in enumerate(cells):
-        a = seg(t, 0.15 + i * 0.85, 0.35)
+        a = 1.0 if i == 0 else seg(t, 0.15 + i * 0.85, 0.35)   # phone on frame one (hook)
         if a <= 0:
             continue
         s = 1.0
