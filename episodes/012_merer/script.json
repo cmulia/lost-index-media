@@ -1,0 +1,306 @@
+{
+ "file_no": "012",
+ "slug": "merer",
+ "title": "The Pyramid Builder's Logbook",
+ "series_label": "file no. 012",
+ "voice_direction": "Measured, warm documentary storyteller with a quiet sense of wonder; crisp, confident hook; unhurried through the logbook details; a level, careful tone on the slaves question; the last line dry and soft, with a small pause before 'the paperwork'.",
+ "narration": "The oldest written papyrus is a pyramid builder's logbook. Found in two thousand thirteen, at an old harbour on the Red Sea. Its author, an inspector named Merer, ran a crew of boatmen for King Khufu. Their cargo: white limestone from Tura, sailed down the Nile to Giza, probably for the Great Pyramid's outer casing. Two or three round trips every ten days, logged in half-day steps: where they sailed, what they carried, where they slept. [pause] Other pages tracked food and supplies for his men. The old story says slaves built the pyramids. This diary can't settle that. But a workers' town and tombs at Giza point one way: organised crews, fed by the state. Probably not slaves. Not exactly volunteers, either. The king left the pyramid. [pause] The crew left the paperwork.",
+ "beats": [
+  {
+   "text": "The oldest written papyrus is a pyramid builder's logbook. ",
+   "caption": "the oldest written papyrus is a pyramid builder's logbook.",
+   "big": "oldest papyrus.",
+   "visual": {
+    "type": "photo",
+    "asset": "frith_giza",
+    "zoom_from": 1.0,
+    "zoom_to": 1.08
+   },
+   "label": "the pyramids of giza · c. 1857",
+   "sublabel": "francis frith · lacma · public domain",
+   "date_label": null,
+   "date": null,
+   "sfx": "desert wind, then a single dry papyrus rustle",
+   "dark": false
+  },
+  {
+   "text": "Found in two thousand thirteen, at an old harbour on the Red Sea. ",
+   "caption": "found in 2013, at an old harbour on the red sea.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "egypt_map",
+    "panel": "light",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "found",
+   "date": "2013",
+   "sfx": "small waves lapping on a shore, gulls far off",
+   "dark": false
+  },
+  {
+   "text": "Its author, an inspector named Merer, ran a crew of boatmen for King Khufu. ",
+   "caption": "its author, an inspector named merer, ran a crew of boatmen for king khufu.",
+   "big": "inspector merer.",
+   "visual": {
+    "type": "photo",
+    "asset": "boat_model",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "model rowing boat · c. 1980 bc",
+   "sublabel": "tomb of meketre · the met · cc0",
+   "date_label": "c.",
+   "date": "2560 bc",
+   "sfx": "oars dipping in rhythm, water dripping off the blades",
+   "dark": false
+  },
+  {
+   "text": "Their cargo: white limestone from Tura, sailed down the Nile to Giza, ",
+   "caption": "their cargo: white limestone from tura, sailed down the nile to giza,",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "khufu_ship",
+    "zoom_from": 1.05,
+    "zoom_to": 1.15
+   },
+   "label": "khufu's ship · buried beside the great pyramid",
+   "sublabel": "berthold werner · cc by-sa 3.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "hull creaking, ropes tightening, heavy stone set down on deck",
+   "dark": false
+  },
+  {
+   "text": "probably for the Great Pyramid's outer casing. ",
+   "caption": "probably for the great pyramid's outer casing.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "kheops",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "the great pyramid of khufu · giza",
+   "sublabel": "nina aldin thune · cc by-sa",
+   "date_label": null,
+   "date": null,
+   "sfx": "chisel tapping on limestone, a block scraping into place",
+   "dark": false
+  },
+  {
+   "text": "Two or three round trips every ten days, logged in half-day steps: where they sailed, what they carried, where they slept. ",
+   "caption": "2 or 3 round trips every 10 days, logged in half-day steps: where they sailed, what they carried, where they slept.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "logbook_days",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "reed pen scratching on papyrus over steady oar strokes",
+   "dark": false
+  },
+  {
+   "text": "[pause] Other pages tracked food and supplies for his men. ",
+   "caption": "other pages tracked food and supplies for his men.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "granary_scribes",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "model granary with scribes · c. 1980 bc",
+   "sublabel": "tomb of meketre · the met · cc0",
+   "date_label": null,
+   "date": null,
+   "sfx": "grain poured into a basket, papyrus unrolled",
+   "dark": false
+  },
+  {
+   "text": "The old story says slaves built the pyramids. This diary can't settle that. ",
+   "caption": "the old story says slaves built the pyramids. this diary can't settle that.",
+   "big": "slaves?",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "low wind over sand, one deep drum hit",
+   "dark": true
+  },
+  {
+   "text": "But a workers' town and tombs at Giza point one way: organised crews, fed by the state. Probably not slaves. Not exactly volunteers, either. ",
+   "caption": "but a workers' town and tombs at giza point one way: organised crews, fed by the state. probably not slaves. not exactly volunteers, either.",
+   "big": "fed crews.",
+   "visual": {
+    "type": "photo",
+    "asset": "bakery_model",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "model bakery and brewery · c. 1980 bc",
+   "sublabel": "tomb of meketre · the met · cc0",
+   "date_label": null,
+   "date": null,
+   "sfx": "bread dough slapped on a board, a crackling oven fire",
+   "dark": false
+  },
+  {
+   "text": "The king left the pyramid. [pause] The crew left the paperwork.",
+   "caption": "the king left the pyramid. the crew left the paperwork.",
+   "big": "the paperwork.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "papyrus rolled shut, tied with string; wind fades to silence",
+   "dark": true
+  }
+ ],
+ "music_mood": "Sparse hand-drum pulse and plucked oud-like strings over a low desert drone, about 76 bpm, with the slow swing of oars; patient and curious, a reed flute joins on the logbook, the texture thins to drone alone on the slaves question, then one warm sustained chord under the final line.",
+ "assets": [
+  {
+   "key": "frith_giza",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Francis_Frith_-_Pyramids_Of_El-Geezeh_%28From_The_Southwest%29_-_Google_Art_Project.jpg/1600px-Francis_Frith_-_Pyramids_Of_El-Geezeh_%28From_The_Southwest%29_-_Google_Art_Project.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Francis_Frith_-_Pyramids_Of_El-Geezeh_(From_The_Southwest)_-_Google_Art_Project.jpg",
+   "author": "Francis Frith (1822-1898); albumen print, Los Angeles County Museum of Art, via Google Art Project",
+   "date": "c. 1857",
+   "license": "Public domain (author died 1898; PD-Art / PD-old)",
+   "shows": "The pyramids of Giza seen from the south-west, albumen print from Frith's Egypt series. Original 4,869 x 3,813 px.",
+   "changes": "cropped to vertical, slow push, gentle grade"
+  },
+  {
+   "key": "boat_model",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Travelling_Boat_being_Rowed_MET_DT525.jpg/1600px-Travelling_Boat_being_Rowed_MET_DT525.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Travelling_Boat_being_Rowed_MET_DT525.jpg",
+   "author": "The Metropolitan Museum of Art (accession 20.3.1; Rogers Fund and Edward S. Harkness Gift, 1920)",
+   "date": "object: Middle Kingdom, Dynasty 12, early reign of Amenemhat I (c. 1981-1975 BC); photograph: MET",
+   "license": "CC0 1.0 (Met Open Access)",
+   "shows": "Wooden model of a travelling boat with rowers, from the tomb of Meketre, Thebes (TT 280). About 600 years later than Merer; used as an illustration of an Egyptian rowed boat, labelled with its date.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "khufu_ship",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Gizeh_Sonnenbarke_BW_2.jpg/1600px-Gizeh_Sonnenbarke_BW_2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Gizeh_Sonnenbarke_BW_2.jpg",
+   "author": "Berthold Werner",
+   "date": "3 November 2010",
+   "license": "CC BY-SA 3.0 (multi-licensed: GFDL 1.2+, CC BY-SA 3.0/2.5/2.0/1.0; we use CC BY-SA 3.0)",
+   "shows": "The reassembled Khufu ship (found 1954 in a pit beside the Great Pyramid), in the Giza boat museum. Khufu's own ship, not one of Merer's cargo boats; labelled as such.",
+   "changes": "cropped to vertical, slow lateral pan"
+  },
+  {
+   "key": "kheops",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg",
+   "author": "Nina Aldin Thune",
+   "date": "March 2005",
+   "license": "CC BY-SA (version to confirm from _pages wikitext; credit 'Nina Aldin Thune' near the image)",
+   "shows": "The Great Pyramid of Khufu with people at its base for scale. Original 1,581 x 971 px, so the original-file URL is given.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "granary_scribes",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Model_of_a_Granary_with_Scribes_MET_DP351558.jpg/1600px-Model_of_a_Granary_with_Scribes_MET_DP351558.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Model_of_a_Granary_with_Scribes_MET_DP351558.jpg",
+   "author": "The Metropolitan Museum of Art (accession 20.3.11)",
+   "date": "object: Middle Kingdom, Dynasty 12, early reign of Amenemhat I (c. 1981-1975 BC)",
+   "license": "CC0 1.0 (Met Open Access)",
+   "shows": "Wooden model of a granary with scribes recording grain, from the tomb of Meketre, Thebes. Later than Merer; illustrates Egyptian ration bookkeeping.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "bakery_model",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Model_Bakery_and_Brewery_from_the_Tomb_of_Meketre_MET_20.3.12_EGDP014031.jpg/1600px-Model_Bakery_and_Brewery_from_the_Tomb_of_Meketre_MET_20.3.12_EGDP014031.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Model_Bakery_and_Brewery_from_the_Tomb_of_Meketre_MET_20.3.12_EGDP014031.jpg",
+   "author": "The Metropolitan Museum of Art (accession 20.3.12)",
+   "date": "object: Middle Kingdom, Dynasty 12, early reign of Amenemhat I (c. 1981-1975 BC)",
+   "license": "CC0 1.0 (Met Open Access)",
+   "shows": "Wooden model of a bakery and brewery with workers, from the tomb of Meketre, Thebes. Later than Merer; illustrates bread-and-beer rations.",
+   "changes": "cropped to vertical, slow push"
+  }
+ ],
+ "tiktok_caption": "The oldest written papyrus ever found is a work log from the Great Pyramid 📜\n\nWould you have kept a work diary? 👇\n\nfile no. 012 · Images: Francis Frith/LACMA (public domain), The Met (CC0), Berthold Werner, Nina Aldin Thune (CC BY-SA) · Narration, sound & music: ElevenLabs\n\n#ancientegypt #greatpyramid #egyptianarchitecture #architecturehistory #history",
+ "instagram_caption": "In 2013, archaeologists led by Pierre Tallet found rolls of papyrus at Wadi al-Jarf, an ancient harbour on Egypt's Red Sea coast. They are the oldest inscribed papyri yet found, from near the end of King Khufu's reign, about 2560 BC.\n\nSeveral belong to an inspector named Merer, who ran a crew of boatmen. His logbook follows them loading white limestone at the Tura quarries and sailing it down the Nile to Giza, most likely for the Great Pyramid's smooth outer casing.\n\nHe wrote it all down in half-day steps: two or three round trips every ten days, where they sailed, what they carried, where they spent the night. He reported to Ankhhaf, the king's half-brother. Other sheets account for food and supplies for his men.\n\nThe diary alone can't tell us whether these men were free. But the workers' town and the builders' tombs excavated at Giza point the same way: organised, rotating crews, fed by the state. Probably not the slaves of legend, though not exactly volunteers either.\n\nThe king left the pyramid. The crew left the paperwork.\n\nWould you have kept a work diary? 👇\n\nfile no. 012\n\n—\nImages: Pyramids of El-Geezeh, c. 1857, Francis Frith, Los Angeles County Museum of Art (public domain); model rowing boat, model granary with scribes and model bakery and brewery from the tomb of Meketre, The Metropolitan Museum of Art (CC0); Khufu ship, Berthold Werner (CC BY-SA 3.0); Great Pyramid, Nina Aldin Thune (CC BY-SA). All via Wikimedia Commons. The map and logbook schematic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#ancientegypt #greatpyramid #egyptianarchitecture #architecturehistory #egyptology",
+ "youtube_title": "Diary of Merer: the Great Pyramid's logbook (c. 2560 BC)",
+ "facts": [
+  {
+   "claim": "The Wadi al-Jarf papyri, including Merer's logbook, are the oldest inscribed papyri yet found (older blank rolls exist, so the script says 'written')",
+   "source": "Guinness World Records, 'Oldest papyrus'; Egyptian Ministry of Antiquities via Times of Israel (July 2016); Smithsonian Magazine, A. Stille, 'The World's Oldest Papyrus and What It Can Tell Us About the Great Pyramids' (2015)",
+   "url": "https://www.guinnessworldrecords.com/world-records/711805-oldest-papyrus"
+  },
+  {
+   "claim": "Found in 2013 at Wadi al-Jarf, an ancient harbour on the Red Sea coast, by the mission of Pierre Tallet and Gregory Marouard (with Sayed Mahfouz); the first batch on 24 March 2013 near storage gallery G2",
+   "source": "Times of Israel (July 2016, ministry statement); National Geographic, Red Sea Scrolls excerpt (Tallet & Lehner, The Red Sea Scrolls, Thames & Hudson 2021)",
+   "url": "https://www.timesofisrael.com/oldest-egyptian-writing-on-papyrus-displayed-for-first-time/"
+  },
+  {
+   "claim": "The author identifies himself as Inspector Merer; he led a team shipping limestone from Tura to Giza",
+   "source": "Smithsonian Magazine (2015); Guinness World Records",
+   "url": "https://www.smithsonianmag.com/history/ancient-egypt-shipping-mining-farming-economy-pyramids-180956619/"
+  },
+  {
+   "claim": "Dated to 'the year after the 13th cattle count' of Khufu, i.e. year 26 or 27, near the end of his reign, c. 2560 BC",
+   "source": "Times of Israel / Egyptian ministry (2016); Smithsonian Magazine (c. 2560 BCE, last known year of Khufu); Guinness ('last years of Khufu's reign, probably around 2570 BCE')",
+   "url": "https://www.timesofisrael.com/oldest-egyptian-writing-on-papyrus-displayed-for-first-time/"
+  },
+  {
+   "claim": "Limestone from Tura sailed down the Nile to Giza, probably for the Great Pyramid's outer casing",
+   "source": "Smithsonian Magazine (2015: 'the builders finishing the pyramid's outer casing'); Tallet as summarised in Wikipedia 'Diary of Merer' / 'Ankhhaf' ('Tallet believes the operations refer to the delivery of the Tura limestone used for the casing')",
+   "url": "https://www.smithsonianmag.com/history/ancient-egypt-shipping-mining-farming-economy-pyramids-180956619/"
+  },
+  {
+   "claim": "Two or three round trips between Tura and Giza per ten-day Egyptian week (flood season)",
+   "source": "Wikipedia 'Diary of Merer', summarising Tallet, Les papyrus de la mer Rouge I (2017)",
+   "url": "https://en.wikipedia.org/wiki/Diary_of_Merer"
+  },
+  {
+   "claim": "Merer reported to Ankhhaf, Khufu's half-brother, who ran the harbour centre Ro-She Khufu",
+   "source": "Smithsonian Magazine (2015); Wikipedia 'Ankhhaf' citing Tallet",
+   "url": "https://en.wikipedia.org/wiki/Ankhhaf"
+  },
+  {
+   "claim": "Merer logged his time in half-day increments: sailing, loading stone, and where the crew spent the night",
+   "source": "Smithsonian Magazine (2015); log entries as translated in Wikipedia 'Diary of Merer' (paraphrased, not quoted, in the script)",
+   "url": "https://www.smithsonianmag.com/history/ancient-egypt-shipping-mining-farming-economy-pyramids-180956619/"
+  },
+  {
+   "claim": "Separate sheets account for food and other supplies for the crew",
+   "source": "Wikipedia 'Diary of Merer' (summary of Tallet); Tallet & Marouard 2014 (Near Eastern Archaeology) cited in Belmonte/Magli arXiv 2411.08061 for food delivered to a team of workers",
+   "url": "https://arxiv.org/abs/2411.08061"
+  },
+  {
+   "claim": "The slave-built pyramid is a popular myth; tombs of pyramid builders beside the pyramids (announced 2010 by Zahi Hawass) are taken as evidence the builders were not slaves",
+   "source": "AP via NBC News, 'Egypt discovers workers' tombs near pyramids' (Jan 2010); CBC (Jan 2010)",
+   "url": "https://www.nbcnews.com/id/wbna34794254"
+  },
+  {
+   "claim": "Mark Lehner's excavation of the workers' town (Heit el-Ghurab) since 1988 found bakeries, granaries and cattle bones; rotating crews passed through during periods of obligatory labour (hence 'not exactly volunteers')",
+   "source": "AERA, 'Dr. Mark Lehner'; Syracuse University News, Lehner Phanstiel lecture (Nov 2024); RAWI, 'Feeding the Forces'",
+   "url": "https://news.syr.edu/2024/11/20/egyptologist-shares-findings-of-everyday-life-of-the-pyramid-builders-during-phanstiel-lecture/"
+  },
+  {
+   "claim": "The papyri were shown to the public for the first time at the Egyptian Museum, Cairo, in July 2016",
+   "source": "Times of Israel (July 2016); Mada Masr, 'Egypt's oldest papyrus on display, details construction of Great Pyramid'",
+   "url": "https://www.madamasr.com/en/?p=210185"
+  }
+ ],
+ "diagram_notes": {
+  "egypt_map": "Schematic map of northern Egypt on cream paper: the Nile running north into the Delta; Giza on the west bank (small pyramid glyph, 'akhet-khufu · giza'); the Tura quarries just upstream on the east bank ('tura · limestone'); a dashed boat route Tura -> Giza drawn on as the beat plays; to the east the Gulf of Suez / Red Sea with Wadi al-Jarf marked by a pulsing dot ('wadi al-jarf · papyri found 2013'). Labelled 'schematic · drawn for this video · not to scale'.",
+  "logbook_days": "Dark panel: a strip of ten day-columns ('day 1' ... 'day 10', one Egyptian ten-day week), each split into two half-day cells (am / pm), filling in one by one with small icons: load stone at tura, sail downriver, overnight at she-khufu (moon), arrive akhet-khufu (pyramid), sail back upriver. Ink-brown strokes on papyrus-coloured cells. Labelled 'illustration · drawn for this video · not a transcription of the papyrus'."
+ }
+}

@@ -1,0 +1,12 @@
+episodes/012_merer/assets/frith_giza.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Francis_Frith_-_Pyramids_Of_El-Geezeh_%28From_The_Southwest%29_-_Google_Art_Project.jpg/1600px-Francis_Frith_-_Pyramids_Of_El-Geezeh_%28From_The_Southwest%29_-_Google_Art_Project.jpg
+episodes/012_merer/assets/_pages/frith_giza.html https://commons.wikimedia.org/wiki/File:Francis_Frith_-_Pyramids_Of_El-Geezeh_(From_The_Southwest)_-_Google_Art_Project.jpg?action=raw
+episodes/012_merer/assets/boat_model.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Travelling_Boat_being_Rowed_MET_DT525.jpg/1600px-Travelling_Boat_being_Rowed_MET_DT525.jpg
+episodes/012_merer/assets/_pages/boat_model.html https://commons.wikimedia.org/wiki/File:Travelling_Boat_being_Rowed_MET_DT525.jpg?action=raw
+episodes/012_merer/assets/khufu_ship.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Gizeh_Sonnenbarke_BW_2.jpg/1600px-Gizeh_Sonnenbarke_BW_2.jpg
+episodes/012_merer/assets/_pages/khufu_ship.html https://commons.wikimedia.org/wiki/File:Gizeh_Sonnenbarke_BW_2.jpg?action=raw
+episodes/012_merer/assets/kheops.jpg https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg
+episodes/012_merer/assets/_pages/kheops.html https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg?action=raw
+episodes/012_merer/assets/granary_scribes.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Model_of_a_Granary_with_Scribes_MET_DP351558.jpg/1600px-Model_of_a_Granary_with_Scribes_MET_DP351558.jpg
+episodes/012_merer/assets/_pages/granary_scribes.html https://commons.wikimedia.org/wiki/File:Model_of_a_Granary_with_Scribes_MET_DP351558.jpg?action=raw
+episodes/012_merer/assets/bakery_model.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Model_Bakery_and_Brewery_from_the_Tomb_of_Meketre_MET_20.3.12_EGDP014031.jpg/1600px-Model_Bakery_and_Brewery_from_the_Tomb_of_Meketre_MET_20.3.12_EGDP014031.jpg
+episodes/012_merer/assets/_pages/bakery_model.html https://commons.wikimedia.org/wiki/File:Model_Bakery_and_Brewery_from_the_Tomb_of_Meketre_MET_20.3.12_EGDP014031.jpg?action=raw
