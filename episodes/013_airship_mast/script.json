@@ -1,0 +1,338 @@
+{
+ "file_no": "013",
+ "slug": "airship_mast",
+ "title": "The Airship Dock in the Sky",
+ "series_label": "file no. 013",
+ "voice_direction": "Steady, curious broadcaster at an unhurried pace (suggest Daniel or Mark Vale); a dry smile on 'Some say that was the point', let 'wind' land alone after the pause, a touch of tension on the rope tearing free, then warm and settled on the last line.",
+ "narration": "The Empire State Building's spire was built for airships. In nineteen twenty-nine, Al Smith announced a mooring mast for zeppelins. Passengers would walk down a gangplank, nearly a quarter mile up. [wry] It also out-climbed the Chrysler Building. Some say that was the point. [pause] One problem: wind. Updrafts hit the walls, and a ship tied by its nose can tip on end. In September nineteen thirty-one, a small airship touched the mast for about three minutes. A blimp tried to pick up mail. The rope tore free. The only delivery, reports say, was a bundle of newspapers. But the mast found another job. That December, NBC began experimental television broadcasts there. Today, New York stations still broadcast from the top. It was built to catch airships. [pause] It ended up sending voices into the air.",
+ "beats": [
+  {
+   "text": "The Empire State Building's spire was built for airships. ",
+   "caption": "the empire state building's spire was built for airships.",
+   "big": "built for airships.",
+   "visual": {
+    "type": "photo",
+    "asset": "airship_1930",
+    "zoom_from": 1.0,
+    "zoom_to": 1.08
+   },
+   "label": "airship los angeles passes the unfinished tower · 1930",
+   "sublabel": "nationaal archief / spaarnestad",
+   "date_label": null,
+   "date": null,
+   "sfx": "high wind at altitude, distant airship engines droning in",
+   "dark": false
+  },
+  {
+   "text": "In nineteen twenty-nine, Al Smith announced a mooring mast for zeppelins. ",
+   "caption": "in 1929, al smith announced a mooring mast for zeppelins.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "al_smith"
+   },
+   "label": "alfred e. smith · former governor of new york",
+   "sublabel": "harris & ewing · library of congress",
+   "date_label": "announced",
+   "date": "december 1929",
+   "sfx": "newsroom typewriters and a flashbulb pop",
+   "dark": false
+  },
+  {
+   "text": "Passengers would walk down a gangplank, nearly a quarter mile up. ",
+   "caption": "passengers would walk down a gangplank, nearly a quarter mile up.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "icarus",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "a worker on the mast · 1930",
+   "sublabel": "lewis hine · the met (cc0)",
+   "date_label": null,
+   "date": null,
+   "sfx": "gusting wind, steel cables creaking",
+   "dark": false
+  },
+  {
+   "text": "[wry] It also out-climbed the Chrysler Building. Some say that was the point. ",
+   "caption": "it also out-climbed the chrysler building. some say that was the point.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "mast_height",
+    "panel": "light",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "distant rivet-gun bursts, then a soft ratchet",
+   "dark": false
+  },
+  {
+   "text": "[pause] One problem: wind. Updrafts hit the walls, and a ship tied by its nose can tip on end. ",
+   "caption": "one problem: wind. updrafts hit the walls, and a ship tied by its nose can tip on end.",
+   "big": "wind.",
+   "visual": {
+    "type": "photo",
+    "asset": "la_upright",
+    "zoom_from": 1.0,
+    "zoom_to": 1.06
+   },
+   "label": "uss los angeles · lakehurst mast · 1927",
+   "sublabel": "u.s. navy · nhhc nh 84568",
+   "date_label": "tipped",
+   "date": "25 august 1927",
+   "sfx": "wind gust rising to a howl, mooring cable straining",
+   "dark": true
+  },
+  {
+   "text": "In September nineteen thirty-one, a small airship touched the mast for about three minutes. ",
+   "caption": "in september 1931, a small airship touched the mast for about three minutes.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "mast_approach",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "reported",
+   "date": "september 1931",
+   "sfx": "small airship engine droning close, wind buffeting",
+   "dark": false
+  },
+  {
+   "text": "A blimp tried to pick up mail. The rope tore free. ",
+   "caption": "a blimp tried to pick up mail. the rope tore free.",
+   "big": "tore free.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "reported",
+   "date": "30 september 1931",
+   "sfx": "rope whipping in wind, then a snap",
+   "dark": true
+  },
+  {
+   "text": "The only delivery, reports say, was a bundle of newspapers. ",
+   "caption": "the only delivery, reports say, was a bundle of newspapers.",
+   "big": "newspapers.",
+   "visual": {
+    "type": "photo",
+    "asset": "esb_1931",
+    "zoom_from": 1.0,
+    "zoom_to": 1.08
+   },
+   "label": "empire state building · 1931",
+   "sublabel": "library of congress",
+   "date_label": null,
+   "date": null,
+   "sfx": "bundle of newspapers thumps down, pages fluttering in wind",
+   "dark": false
+  },
+  {
+   "text": "But the mast found another job. That December, NBC began experimental television broadcasts there. ",
+   "caption": "but the mast found another job. that december, nbc began experimental television broadcasts there.",
+   "big": "another job.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "first tv test",
+   "date": "22 december 1931",
+   "sfx": "radio static sweeping, locking onto a test tone",
+   "dark": true
+  },
+  {
+   "text": "Today, New York stations still broadcast from the top. ",
+   "caption": "today, new york stations still broadcast from the top.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "mast_today",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "the mast today, under its tv antenna",
+   "sublabel": "m.p. tillema · cc by-sa 3.0",
+   "date_label": "tv antenna added",
+   "date": "1950",
+   "sfx": "low transmitter hum, faint overlapping radio voices",
+   "dark": false
+  },
+  {
+   "text": "It was built to catch airships. [pause] It ended up sending voices into the air.",
+   "caption": "it was built to catch airships. it ended up sending voices into the air.",
+   "big": "into the air.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "wind fades; one last radio crackle, then silence",
+   "dark": true
+  }
+ ],
+ "music_mood": "Art-deco 1930s feel: muted brass and soft upright bass over a gentle swing brush groove, about 84 bpm, airy and optimistic at first; thins to a wind-like pad and a lone muted trumpet when the wind arrives, then warms with a faint radio-valve shimmer and settles on one sustained chord under the last line.",
+ "assets": [
+  {
+   "key": "airship_1930",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_%286943970242%29.jpg/1600px-Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_%286943970242%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_(6943970242).jpg",
+   "author": "Unknown press photographer; Nationaal Archief (Dutch National Archives), Spaarnestad Photo collection, via Flickr Commons",
+   "date": "29 October 1930 (per Commons description)",
+   "license": "No known copyright restrictions (Flickr Commons, Nationaal Archief; Commons licence review 2016). Confirm the tag in _pages/airship_1930.html before use.",
+   "shows": "The US Navy airship ZR-3 Los Angeles (built as LZ 126) flying near the Empire State Building while it was still under construction, with some blimps. A flyby, not a docking. NOT the Met's 1930 'docked' composite.",
+   "changes": "cropped to vertical, slow push, gentle grade"
+  },
+  {
+   "key": "al_smith",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/AlfredSmith.jpg/1600px-AlfredSmith.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:AlfredSmith.jpg",
+   "author": "Harris & Ewing (Harris & Ewing Collection, Library of Congress hec.21487)",
+   "date": "c. 1920s-1930s",
+   "license": "Public domain (Harris & Ewing Collection, Library of Congress: no known restrictions)",
+   "shows": "Portrait of Alfred E. Smith, former governor of New York and president of Empire State, Inc. Original 7,630 x 9,352 px.",
+   "changes": "cropped, slow push"
+  },
+  {
+   "key": "icarus",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Icarus%2C_Empire_State_Building_MET_DP106525.jpg/1600px-Icarus%2C_Empire_State_Building_MET_DP106525.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Icarus,_Empire_State_Building_MET_DP106525.jpg",
+   "author": "Lewis W. Hine (The Metropolitan Museum of Art 1987.1100.486, Ford Motor Company Collection, Gift of Ford Motor Company and John C. Waddell, 1987)",
+   "date": "1930",
+   "license": "CC0 1.0 (Met Open Access); Hine died 1940",
+   "shows": "'Icarus, Empire State Building': an ironworker on cables at the top of the rising tower, Manhattan far below. Gelatin silver print.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "la_upright",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/ZR3_USS_Los_Angeles_upright.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:ZR3_USS_Los_Angeles_upright.jpg",
+   "author": "U.S. Navy (U.S. Naval Historical Center photo NH 84568)",
+   "date": "25 August 1927",
+   "license": "Public domain (U.S. Navy, PD-USGov-Military-Navy)",
+   "shows": "USS Los Angeles (ZR-3) standing nearly vertical at the high mooring mast, NAS Lakehurst, New Jersey, after a gust lifted her tail into colder air. Original only 599 x 745 px, so the original-file URL is given; shown as a framed plate.",
+   "changes": "framed plate, slight push, gentle grade"
+  },
+  {
+   "key": "esb_1931",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Empire_State_Building_exterior.jpg/1600px-Empire_State_Building_exterior.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Empire_State_Building_exterior.jpg",
+   "author": "Unknown photographer (Library of Congress Prints & Photographs, item 96508627; possibly Irving Underhill)",
+   "date": "c. 18 May 1931 (per Commons)",
+   "license": "Public domain (Commons: 'This work is from the Library of Congress'). Confirm the US PD tag in _pages/esb_1931.html before use.",
+   "shows": "Exterior of the newly finished Empire State Building with its mooring mast, 1931.",
+   "changes": "cropped to vertical, slow upward push to the mast"
+  },
+  {
+   "key": "mast_today",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mast_Empire_State_Building.JPG/1600px-Mast_Empire_State_Building.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Mast_Empire_State_Building.JPG",
+   "author": "M.P. Tillema (own work)",
+   "date": "19 June 2006",
+   "license": "CC BY-SA 3.0 (also GFDL 1.2+ and CC BY 2.5; used under CC BY-SA 3.0)",
+   "shows": "The Empire State Building's mast with the broadcast antenna above it, 2006.",
+   "changes": "cropped to vertical, slow push upward"
+  },
+  {
+   "key": "la_tipping_spare",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USS_Los_Angeles_%28ZR-3%29_NH_84569.jpg/1600px-USS_Los_Angeles_%28ZR-3%29_NH_84569.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:USS_Los_Angeles_(ZR-3)_NH_84569.jpg",
+   "author": "U.S. Navy (Naval History and Heritage Command NH 84569)",
+   "date": "25 August 1927",
+   "license": "Public domain (U.S. Navy)",
+   "shows": "SPARE. Same Lakehurst mast incident, the ship beginning to come back down from the vertical (per Commons). Possibly a larger scan than la_upright; use instead if it reads better.",
+   "changes": "none yet"
+  },
+  {
+   "key": "workman_spare",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg/1600px-Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg",
+   "author": "Lewis W. Hine (National Archives 518290, Works Progress Administration records)",
+   "date": "c. 1930-1931",
+   "license": "Public domain (NARA, US federal record)",
+   "shows": "SPARE. Hine photo of a workman on the Empire State Building's steel frame.",
+   "changes": "none yet"
+  }
+ ],
+ "tiktok_caption": "The top of the Empire State Building was built as a dock for airships 🎈 The only airship to touch it stayed about three minutes.\n\nWould you have walked that gangplank? 👇\n\nfile no. 013 · Images: U.S. Navy/NHHC, Library of Congress, Nationaal Archief, Lewis Hine/The Met (public domain/CC0), M.P. Tillema (CC BY-SA 3.0) · Narration, sound & music: ElevenLabs\n\n#empirestatebuilding #newyorkhistory #airship #history #nyc",
+ "instagram_caption": "In December 1929, Al Smith, the former New York governor fronting the Empire State Building, announced that its top would be a mooring mast for airships. Passengers would step off a zeppelin and down a gangplank, nearly a quarter of a mile above Fifth Avenue.\n\nThe mast added about two hundred feet and lifted the tower to 1,250 feet, comfortably above the Chrysler Building's 1,046. Some historians think the height was the real point.\n\nThen there was the wind. Updrafts race up the walls of a tall building, and an airship tied only by its nose has no ground crew to hold its tail. In 1927 a gust stood the Navy airship Los Angeles almost on end at a mast in New Jersey.\n\nIn September 1931 a small, privately owned airship touched the mast for about three minutes in strong wind, the New York Times reported. On 30 September the Goodyear blimp Columbia tried to collect two bags of mail; after a dozen passes, the rope tore out of a worker's hands. The only delivery, reports say, was a bundle of newspapers lowered on a rope.\n\nBut the mast found another job. On 22 December 1931 NBC began experimental television broadcasts from the building. A TV antenna went up on top in 1950, and New York radio and TV stations still broadcast from it today.\n\nWould you have walked that gangplank? 👇\n\nfile no. 013\n\n—\nImages: USS Los Angeles passing the unfinished tower, 1930, Nationaal Archief / Spaarnestad (no known copyright restrictions); Alfred E. Smith, Harris & Ewing, Library of Congress (public domain); \"Icarus, Empire State Building\", 1930, Lewis W. Hine, The Metropolitan Museum of Art (CC0); USS Los Angeles at the Lakehurst mast, 25 August 1927, U.S. Navy / NHHC NH 84568 (public domain); Empire State Building, 1931, Library of Congress (public domain); the mast today, M.P. Tillema, CC BY-SA 3.0. The mast and airship schematics were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#empirestatebuilding #newyorkhistory #airship #nyc #history",
+ "youtube_title": "Empire State Building history: the airship dock (1931)",
+ "facts": [
+  {
+   "claim": "In December 1929 (11 December), Al Smith announced the Empire State Building would carry a mooring mast for dirigibles, raising its planned height to 1,250 feet",
+   "source": "Smithsonian Air & Space, 'Docking on the Empire State Building'; American Heritage, 'A Chase Up Into the Sky' (Oct 1968, vol. 19 no. 6)",
+   "url": "https://www.smithsonianmag.com/air-space-magazine/docking-on-the-empire-state-building-12525534/"
+  },
+  {
+   "claim": "The plan: airships would moor at the mast and passengers would go down a gangplank to the building (reported in the New York Times, 1929)",
+   "source": "Smithsonian Air & Space (citing NYT); Museum of the City of New York blog, 'Doomed Dirigible Dock'",
+   "url": "https://blog.mcny.org/2011/07/27/doomed-dirigible-dock/"
+  },
+  {
+   "claim": "The mast put the Empire State Building (1,250 ft) above the Chrysler Building (1,046 ft with its secretly built spire); the height race is widely seen as a motive, though Smith publicly denied rivalry",
+   "source": "American Heritage, 'A Chase Up Into the Sky' (1968); Britannica, 'Empire State Building'",
+   "url": "https://www.americanheritage.com/chase-sky"
+  },
+  {
+   "claim": "Hugo Eckener (Graf Zeppelin) called the scheme impractical: airship landings needed dozens of ground crew and plenty of rope, and a ship moored at the mast would be held only by its nose, with no ground lines; winds and updrafts at the top made holding position hard",
+   "source": "Smithsonian Air & Space, 'Docking on the Empire State Building'",
+   "url": "https://www.smithsonianmag.com/air-space-magazine/docking-on-the-empire-state-building-12525534/"
+  },
+  {
+   "claim": "25 August 1927: a gust lifted the tail of USS Los Angeles moored at the Lakehurst high mast to a near-vertical position; minor damage, but it showed the risks of high mooring masts",
+   "source": "Naval Historical Center photo captions NH 84566-84568 (Online Library of Selected Images)",
+   "url": "https://ibiblio.org/hyperwar/OnlineLibrary/photos/images/h84000/h84568c.htm"
+  },
+  {
+   "claim": "In September 1931 a privately owned dirigible made contact with the mast for about three minutes in a strong (about 40 mph) wind; the NYT named the pilot and reported traffic below tied up",
+   "source": "Smithsonian Air & Space (citing the New York Times, 1931); History.com, '10 Surprising Facts About the Empire State Building' ('tethered itself to the spire for a few minutes'). Some sources instead name the Navy blimp J-4, so the narration says only 'a small airship'",
+   "url": "https://www.smithsonianmag.com/air-space-magazine/docking-on-the-empire-state-building-12525534/"
+  },
+  {
+   "claim": "30 September 1931: the Goodyear-Zeppelin blimp Columbia tried to pick up two bags of mail from the mast for the liner President Harding; after a dozen passes its rope reached one man (Andrew Kelly) and tore out of his grasp",
+   "source": "Library of Congress, New York World-Telegram & Sun photo caption, 'Blimp takes mail from Empire State Building - almost'",
+   "url": "https://www.loc.gov/item/2019632904/"
+  },
+  {
+   "claim": "A blimp lowered a bundle of newspapers (reportedly the Evening Journal) to the mast on a rope; the only 'delivery' the mast ever handled. Hedged in narration ('reports say') because accounts differ on date and sequence",
+   "source": "History.com; Museum of the City of New York blog 'Doomed Dirigible Dock'; Smithsonian Air & Space",
+   "url": "https://www.history.com/articles/10-surprising-facts-about-the-empire-state-building"
+  },
+  {
+   "claim": "No airship ever moored there to board or unload passengers; the mast was soon used for broadcasting",
+   "source": "Smithsonian Air & Space; Wikipedia 'Mooring mast'",
+   "url": "https://en.wikipedia.org/wiki/Mooring_mast"
+  },
+  {
+   "claim": "NBC (with RCA, which leased the 85th floor) began experimental television transmissions from the first Empire State antenna on 22 December 1931 (W2XF vision, W2XK sound)",
+   "source": "Broadcast Engineering (1967), 'Broadcast Antennas on the Empire State Building', reprinted at tech-notes.tv / lnl.com; Telos Alliance blog 'The Empire State Building: Where It All Began'",
+   "url": "https://www.lnl.com/catalog/esbantennas.htm"
+  },
+  {
+   "claim": "A 222-foot television antenna mast was added in 1950, bringing the total height to 1,472 ft (1,454 ft after the 1985 replacement)",
+   "source": "Britannica, 'Empire State Building'",
+   "url": "https://www.britannica.com/topic/Empire-State-Building"
+  },
+  {
+   "claim": "New York FM and TV stations still transmit from the Empire State Building's master antennas (Radio World reports 15 FMs on the master FM antenna plus TV stations including WABC-TV and WPIX)",
+   "source": "Radio World, 'Empire State Building Climbers Force NYC FM and TV Stations to Backup Antennas'",
+   "url": "https://www.radioworld.com/news-and-business/headlines/empire-state-building-climbers-force-nyc-fm-and-tv-stations-to-backup-sites"
+  }
+ ],
+ "diagram_notes": {
+  "mast_height": "Light panel, side-elevation silhouette of the Empire State Building: roof of the 86th-floor observatory (~1,050 ft) marked, then the ~200 ft mooring mast in a contrasting ink with the 102nd-floor platform near its tip and '1,250 ft' at the top. Beside it, a Chrysler Building silhouette to the same scale topping out at '1,046 ft'; a thin dashed line from the Chrysler tip across to the ESB shows the mast is what clears it. Small airship outline sketched nose-in at the tip. Label 'schematic · drawn for this video · heights approximate'.",
+  "mast_approach": "Dark panel: the mast tip in close-up, a small airship nosing in on a line, curved updraft arrows rising up the tower walls and buffeting the tail, a stopwatch tick to '≈ 3 min'. Label 'illustration · drawn for this video'."
+ }
+}

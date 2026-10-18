@@ -1,0 +1,16 @@
+episodes/013_airship_mast/assets/airship_1930.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_%286943970242%29.jpg/1600px-Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_%286943970242%29.jpg
+episodes/013_airship_mast/assets/_pages/airship_1930.html https://commons.wikimedia.org/wiki/File:Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_(6943970242).jpg?action=raw
+episodes/013_airship_mast/assets/al_smith.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/AlfredSmith.jpg/1600px-AlfredSmith.jpg
+episodes/013_airship_mast/assets/_pages/al_smith.html https://commons.wikimedia.org/wiki/File:AlfredSmith.jpg?action=raw
+episodes/013_airship_mast/assets/icarus.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Icarus%2C_Empire_State_Building_MET_DP106525.jpg/1600px-Icarus%2C_Empire_State_Building_MET_DP106525.jpg
+episodes/013_airship_mast/assets/_pages/icarus.html https://commons.wikimedia.org/wiki/File:Icarus,_Empire_State_Building_MET_DP106525.jpg?action=raw
+episodes/013_airship_mast/assets/la_upright.jpg https://upload.wikimedia.org/wikipedia/commons/a/ad/ZR3_USS_Los_Angeles_upright.jpg
+episodes/013_airship_mast/assets/_pages/la_upright.html https://commons.wikimedia.org/wiki/File:ZR3_USS_Los_Angeles_upright.jpg?action=raw
+episodes/013_airship_mast/assets/esb_1931.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Empire_State_Building_exterior.jpg/1600px-Empire_State_Building_exterior.jpg
+episodes/013_airship_mast/assets/_pages/esb_1931.html https://commons.wikimedia.org/wiki/File:Empire_State_Building_exterior.jpg?action=raw
+episodes/013_airship_mast/assets/mast_today.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mast_Empire_State_Building.JPG/1600px-Mast_Empire_State_Building.JPG
+episodes/013_airship_mast/assets/_pages/mast_today.html https://commons.wikimedia.org/wiki/File:Mast_Empire_State_Building.JPG?action=raw
+episodes/013_airship_mast/assets/la_tipping_spare.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/USS_Los_Angeles_%28ZR-3%29_NH_84569.jpg/1600px-USS_Los_Angeles_%28ZR-3%29_NH_84569.jpg
+episodes/013_airship_mast/assets/_pages/la_tipping_spare.html https://commons.wikimedia.org/wiki/File:USS_Los_Angeles_(ZR-3)_NH_84569.jpg?action=raw
+episodes/013_airship_mast/assets/workman_spare.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg/1600px-Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg
+episodes/013_airship_mast/assets/_pages/workman_spare.html https://commons.wikimedia.org/wiki/File:Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg?action=raw
