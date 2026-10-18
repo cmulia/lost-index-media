@@ -1,0 +1,56 @@
+[
+ {
+  "beat": 0,
+  "prompt": "high wind at altitude with a distant airship engine droning in",
+  "gain": 0.36,
+  "file": "audio/sfx/b00.mp3"
+ },
+ {
+  "beat": 1,
+  "prompt": "1920s newsroom typewriters clacking, then a camera flashbulb pop",
+  "gain": 0.3,
+  "file": "audio/sfx/b01.mp3"
+ },
+ {
+  "beat": 3,
+  "prompt": "distant rivet gun bursts on a high steel construction site, then a soft ratchet",
+  "gain": 0.3,
+  "file": "audio/sfx/b03.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "wind gust rising to a howl, heavy mooring cable creaking and straining",
+  "gain": 0.45,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 5,
+  "prompt": "small propeller airship engine droning close by, wind buffeting",
+  "gain": 0.36,
+  "file": "audio/sfx/b05.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "rope whipping in strong wind, then a sharp snap",
+  "gain": 0.45,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 7,
+  "prompt": "bundle of newspapers thumps down, pages fluttering in wind",
+  "gain": 0.36,
+  "file": "audio/sfx/b07.mp3"
+ },
+ {
+  "beat": 8,
+  "prompt": "old radio static sweeping, then locking onto a steady test tone",
+  "gain": 0.3,
+  "file": "audio/sfx/b08.mp3"
+ },
+ {
+  "beat": 10,
+  "prompt": "wind fading away, one last soft radio crackle, then silence",
+  "gain": 0.3,
+  "file": "audio/sfx/b10.mp3"
+ }
+]

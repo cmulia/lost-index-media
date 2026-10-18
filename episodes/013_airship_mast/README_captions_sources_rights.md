@@ -1,6 +1,6 @@
 # @lost_index, file no. 013: The Airship Dock in the Sky (1929–1931)
 
-About 50 s at a calm pace · 1080×1920 · 133 words · 11 beats. Not rendered yet. This file holds the captions, the fact check and the asset rights for the script in `script.json`. YouTube title: "Empire State Building history: the airship dock (1931)".
+About 50 s at a calm pace · 1080×1920 · 133 words · 11 beats. Not rendered yet: the Daniel narration takes failed (ElevenLabs workspace out of credits, 2026-10-18), so narration, sound effects and score still have to be generated. This file holds the captions, the fact check and the asset rights for the script in `script.json`. YouTube title: "Empire State Building history: the airship dock (1931)".
 
 ## Instagram caption (draft, not posted)
 
@@ -19,7 +19,7 @@ Would you have walked that gangplank? 👇
 file no. 013
 
 —
-Images: USS Los Angeles passing the unfinished tower, 1930, Nationaal Archief / Spaarnestad (no known copyright restrictions); Alfred E. Smith, Harris & Ewing, Library of Congress (public domain); "Icarus, Empire State Building", 1930, Lewis W. Hine, The Metropolitan Museum of Art (CC0); USS Los Angeles at the Lakehurst mast, 25 August 1927, U.S. Navy / NHHC NH 84568 (public domain); Empire State Building, 1931, Library of Congress (public domain); the mast today, M.P. Tillema, CC BY-SA 3.0. The mast and airship schematics were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
+Images: the Empire State Building's mast, 2006, M.P. Tillema, CC BY-SA 3.0 (creativecommons.org/licenses/by-sa/3.0), cropped; Alfred E. Smith, Harris & Ewing, Library of Congress (public domain); "Icarus, Empire State Building", 1930, Lewis W. Hine, The Metropolitan Museum of Art (CC0); USS Los Angeles at the Lakehurst mast, 25 August 1927, U.S. Navy / NHHC NH 84568 (public domain). The mast and airship schematics were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
 
 #empirestatebuilding #newyorkhistory #airship #nyc #history
 
@@ -29,7 +29,7 @@ The top of the Empire State Building was built as a dock for airships 🎈 The o
 
 Would you have walked that gangplank? 👇
 
-file no. 013 · Images: U.S. Navy/NHHC, Library of Congress, Nationaal Archief, Lewis Hine/The Met (public domain/CC0), M.P. Tillema (CC BY-SA 3.0) · Narration, sound & music: ElevenLabs
+file no. 013 · Images: U.S. Navy/NHHC, Library of Congress, Lewis Hine/The Met (public domain/CC0), M.P. Tillema (CC BY-SA 3.0) · Narration, sound & music: ElevenLabs
 
 #empirestatebuilding #newyorkhistory #airship #history #nyc
 
@@ -63,32 +63,36 @@ file no. 013 · Images: U.S. Navy/NHHC, Library of Congress, Nationaal Archief, 
 
 ## Asset rights
 
-- **airship_1930**: [Zeppelin bij Empire State Building in aanbouw … (6943970242).jpg](https://commons.wikimedia.org/wiki/File:Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_(6943970242).jpg). USS Los Angeles (ZR-3, built as LZ 126) flying past the unfinished tower, with some blimps, 29 October 1930. Author: unknown press photographer; Nationaal Archief, Spaarnestad Photo, via Flickr Commons. Licence: no known copyright restrictions (Commons licence review 2016). Changes: cropped to vertical, slow push, gentle grade.
-- **al_smith**: [AlfredSmith.jpg](https://commons.wikimedia.org/wiki/File:AlfredSmith.jpg). Portrait of Alfred E. Smith, c. 1920s–30s. Author: Harris & Ewing (LoC hec.21487). Licence: public domain (Harris & Ewing Collection, no known restrictions). Original 7,630 × 9,352 px. Changes: cropped, slow push.
-- **icarus**: [Icarus, Empire State Building MET DP106525.jpg](https://commons.wikimedia.org/wiki/File:Icarus,_Empire_State_Building_MET_DP106525.jpg). Ironworker on cables at the top of the rising tower, 1930. Author: Lewis W. Hine (The Met 1987.1100.486). Licence: CC0 1.0 (Met Open Access). Changes: cropped to vertical, slow push.
-- **la_upright**: [ZR3 USS Los Angeles upright.jpg](https://commons.wikimedia.org/wiki/File:ZR3_USS_Los_Angeles_upright.jpg). USS Los Angeles nearly vertical at the Lakehurst high mast, 25 August 1927. Author: U.S. Navy (NHC NH 84568). Licence: public domain (PD-USGov-Military-Navy). Original only 599 × 745 px, so the original-file URL is used and it is shown as a framed plate. Changes: framed plate, slight push.
-- **esb_1931**: [Empire State Building exterior.jpg](https://commons.wikimedia.org/wiki/File:Empire_State_Building_exterior.jpg). The finished building with its mast, c. 18 May 1931. Author: unknown (LoC item 96508627; possibly Irving Underhill). Licence: public domain per Commons ("from the Library of Congress"). Changes: cropped to vertical, slow upward push.
-- **mast_today**: [Mast Empire State Building.JPG](https://commons.wikimedia.org/wiki/File:Mast_Empire_State_Building.JPG). The mast with the broadcast antenna above it, 19 June 2006. Author: M.P. Tillema (own work). Licence: CC BY-SA 3.0 (also GFDL 1.2+ / CC BY 2.5). Changes: cropped to vertical, slow push.
-- **la_tipping_spare** (not in the script): [USS Los Angeles (ZR-3) NH 84569.jpg](https://commons.wikimedia.org/wiki/File:USS_Los_Angeles_(ZR-3)_NH_84569.jpg). Same 1927 incident, ship coming back down. U.S. Navy, public domain. Swap in for `la_upright` if it is a larger, clearer scan.
-- **workman_spare** (not in the script): [Photograph of a Workman on the Framework of the Empire State Building - NARA - 518290.jpg](https://commons.wikimedia.org/wiki/File:Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg). Lewis Hine, NARA, public domain.
+Licence templates confirmed from the Commons wikitext in `assets/_pages/*.html` (fetched 2026-10).
+
+**Used in the video:**
+- **mast_spire** (beat 0) and **mast_today** (beat 9): [Mast Empire State Building.JPG](https://commons.wikimedia.org/wiki/File:Mast_Empire_State_Building.JPG). The mast with the broadcast antenna above it, 19 June 2006. Author: M.P. Tillema (own work). Wikitext: `{{Self|GFDL|Cc-by-sa-3.0-migrated|Cc-by-2.5}}`, used under CC BY-SA 3.0. `mast_spire.jpg` is our PIL crop (1200 × 1200, box 385,0,1585,1200 of the 1920 × 1440 file). Changes: cropped, slow push, gentle grade.
+- **al_smith** (beat 1): [AlfredSmith.jpg](https://commons.wikimedia.org/wiki/File:AlfredSmith.jpg). Portrait of Alfred E. Smith, not dated (c. 1920s–30s). Author: Harris & Ewing (LoC hec.21487). Wikitext: `{{PD-Harris-Ewing}}`. Changes: framed plate, slow push.
+- **icarus** (beat 2): [Icarus, Empire State Building MET DP106525.jpg](https://commons.wikimedia.org/wiki/File:Icarus,_Empire_State_Building_MET_DP106525.jpg). Ironworker on a cable high on the rising tower, 1930. Author: Lewis W. Hine (The Met 1987.1100.486). Wikitext: `{{Cc-zero}}`. Changes: framed plate, slow push.
+- **la_upright** (beat 4): [ZR3 USS Los Angeles upright.jpg](https://commons.wikimedia.org/wiki/File:ZR3_USS_Los_Angeles_upright.jpg). USS Los Angeles nearly vertical at the Lakehurst high mast, 25 August 1927. Author: U.S. Navy (NHC NH 84568). Wikitext: `{{PD-USGov-Military-Navy}}`. Only 599 × 745 px. Changes: full-bleed crop, darkened (brightness 0.6) so the captions read, slight push. We chose it over la_tipping_spare because both scans are the same size and this is the near-vertical, iconic frame (a German Wikipedia featured picture).
+
+**Fetched but not used:**
+- **airship_1930**: [Zeppelin bij Empire State Building in aanbouw … (6943970242).jpg](https://commons.wikimedia.org/wiki/File:Zeppelin_bij_Empire_State_Building_in_aanbouw_-_Zeppelin_near_the_Empire_State_Building_under_construction_(6943970242).jpg). **Dropped.** The wikitext carries only `{{Flickr-no known copyright restrictions}}` (FlickreviewR pass, 2016) and no PD or CC0 template, so it does not meet the PD / CC0 / CC BY / CC BY-SA rule. Beat 0 now uses `mast_spire`.
+- **esb_1931**: [Empire State Building exterior.jpg](https://commons.wikimedia.org/wiki/File:Empire_State_Building_exterior.jpg). **Dropped.** The wikitext carries only `{{Library of Congress-no known copyright restrictions}}` (author unknown, c. 18 May 1931) and no PD template. Beat 7 ("newspapers.") is now a type-only beat.
+- **la_tipping_spare**: [USS Los Angeles (ZR-3) NH 84569.jpg](https://commons.wikimedia.org/wiki/File:USS_Los_Angeles_(ZR-3)_NH_84569.jpg). `{{PD-USGov-Military-Navy}}`, 595 × 741 px. Not used (see la_upright).
+- **workman_spare**: [Photograph of a Workman on the Framework of the Empire State Building - NARA - 518290.jpg](https://commons.wikimedia.org/wiki/File:Photograph_of_a_Workman_on_the_Framework_of_the_Empire_State_Building_-_NARA_-_518290.jpg). Lewis Hine, NARA. `{{PD-USGov}}` + `{{NARA-cooperation}}`. Not used.
 
 Labelling on screen:
-- **airship_1930:** a real 1930 flyby press photo, labelled "airship los angeles passes the unfinished tower · 1930". It is not the Met's composite of an airship "docked" at the mast, and the script never calls it a docking.
-- **la_upright:** labelled with place and year ("lakehurst mast · 1927") so it is not mistaken for the Empire State mast.
-- **icarus:** Hine's 1930 construction photo; labelled "a worker on the mast · 1930".
+- **mast_spire** (hook): "the mooring mast · 2006". It is a modern photo of the real spire. No airship image is shown at the Empire State Building, because the only fetched one (airship_1930) failed the licence check.
+- **la_upright:** "uss los angeles · lakehurst · 1927", so it is not mistaken for the Empire State mast.
+- **icarus:** "atop the rising tower · 1930". It was previously "a worker on the mast", which was wrong: Hine shot it in 1930, before the mast was finished.
 
 Attribution:
-- **mast_today:** CC BY-SA 3.0 needs credit to "M.P. Tillema" and a licence link (in the IG credits). Our crop is an adaptation, so it stays under CC BY-SA 3.0.
-- **airship_1930:** Nationaal Archief / Spaarnestad credit given as a courtesy.
+- **mast_spire / mast_today:** CC BY-SA 3.0 needs credit to "M.P. Tillema", a licence link and a note of changes. The IG/YouTube credits give all three ("CC BY-SA 3.0 (creativecommons.org/licenses/by-sa/3.0), cropped"). Our crops are adaptations, so they stay under CC BY-SA 3.0.
 - **Everything else:** public domain or CC0. U.S. Navy imagery must not imply endorsement.
 
 Upload URLs:
 - **How they were made:** the upload.wikimedia.org URLs were built from the MediaWiki md5 path scheme (`/x/xy/Filename`) for each file's Commons name; the fetch workflow rewrites them to `Special:FilePath/<name>?width=1600`, so only the file names need to be exact. They could not be test-loaded from this session.
-- **Unconfirmed sizes:** airship_1930, esb_1931, mast_today and the spares use 1600 px thumb URLs without a confirmed original width; the workflow falls back to the original if the thumb fails.
+- **Sizes as fetched:** mast_today 1920 × 1440, al_smith 1920 × 2353, icarus 1920 × 1506, la_upright 599 × 745.
 
 Other assets:
 - **Height schematic (`mast_height`):** ESB roof at the 86th floor, ~200 ft mast with the 102nd-floor platform, 1,250 ft tip, Chrysler 1,046 ft to scale; labelled "schematic · drawn for this video · heights approximate".
-- **Approach illustration (`mast_approach`):** small airship nosing in, updraft arrows, "≈ 3 min"; labelled "illustration · drawn for this video".
-- **Narration:** ElevenLabs, eleven_v4 (voice to be chosen; Daniel or Mark Vale suggested). Commercial rights depend on the account's ElevenLabs plan.
-- **Sound effects and score:** to be generated with ElevenLabs for this video.
+- **Approach illustration (`mast_approach`):** small airship nosing in on a line, updraft arrows curling up the walls to its tail, a stopwatch sweeping to "≈ 3 min of contact, reported"; labelled "illustration · drawn for this video".
+- **Narration:** ElevenLabs, eleven_v4, voice Daniel (`onwK4e9ZLuTAKqWW03F9`), flow 8ktSN1Nl36MBjWCbnmwq. All 4 takes failed on 2026-10-18 (quota: 0 of 40,000 credits left; see `audio/takes.json`). Commercial rights depend on the account's ElevenLabs plan.
+- **Sound effects and score:** to be generated with ElevenLabs. `sfx_plan.json` lists 9 effects. `music.json` holds the ElevenLabs music prompt plus a built-in composer fallback.
 - **Fonts:** IBM Plex Mono and Instrument Serif (SIL Open Font License).

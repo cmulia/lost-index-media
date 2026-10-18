@@ -1,0 +1,60 @@
+{
+ "file_level": 0.2,
+ "_note": "file_level applies to audio/music.mp3 (ElevenLabs eleven_music_v2_5 score, not generated yet: workspace out of credits on 2026-10-18). The rest is the built-in composer fallback used when no audio/music.* exists.",
+ "elevenlabs_prompt": "Art-deco 1930s jazz underscore at about 84 bpm: muted trumpet, soft upright bass and a gentle brushed swing groove, airy and optimistic. About a third of the way in it thins to a wind-like pad under a lone muted trumpet, then warms with a faint shimmering vintage-radio tone and settles on one long sustained chord for the last ten seconds.",
+ "bpm": 84,
+ "root": "F2",
+ "progression": [
+  [
+   0,
+   4,
+   9,
+   14
+  ],
+  [
+   2,
+   5,
+   9,
+   12
+  ],
+  [
+   -3,
+   4,
+   7,
+   12
+  ],
+  [
+   -5,
+   2,
+   5,
+   11
+  ]
+ ],
+ "bars_per_chord": 1,
+ "layers": {
+  "pad": 0.45,
+  "keys": 0.5,
+  "bass": 0.4,
+  "tick": 0.28,
+  "bell": 0.18
+ },
+ "pad_oct": 1,
+ "pad_bright": 0.75,
+ "keys_hits": [
+  0,
+  1.5,
+  2.5
+ ],
+ "felt": 0.75,
+ "tick_div": 2,
+ "perc_in": 1,
+ "perc_out": 17,
+ "bell_beats": [
+  0
+ ],
+ "texture": "air",
+ "texture_gain": 0.9,
+ "reverb": 3.0,
+ "swell_beat": 8,
+ "level": 0.19
+}
