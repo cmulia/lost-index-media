@@ -1,0 +1,12 @@
+{
+ "flow_id": "xprNQIPfATlDjXNCT7ij",
+ "voice": "Jade TOXPlnYC7z5SQSV2Zgc5",
+ "model": "eleven_v4",
+ "status": "all 4 takes FAILED: 'This request exceeds your quota of 40000. You have 0 credits remaining, while 818 credits are required for this request.' Not regenerated; no narration.mp3 yet.",
+ "takes": [
+  {"n": 1, "session_id": "Iu5MiL8eFeGxJ8XcjG4J", "generation_id": "5lZO5sp0z3YhniBm7dNu", "duration": null, "chosen": false, "status": "failed: quota"},
+  {"n": 2, "session_id": "9jvbeoYUrGP2koNCSf8b", "generation_id": "JuYtKlcuWVr1bFoYddb4", "duration": null, "chosen": false, "status": "failed: quota"},
+  {"n": 3, "session_id": "NmupP9yNlAY7RIJEwWA0", "generation_id": "1WYke5R4QeXZZeZJuk07", "duration": null, "chosen": false, "status": "failed: quota"},
+  {"n": 4, "session_id": "D7Yu3NIv38lRTn3jt12m", "generation_id": "beJwbPxElvl3t1keLmDv", "duration": null, "chosen": false, "status": "failed: quota"}
+ ]
+}

@@ -3,7 +3,7 @@
  "slug": "wyckoff",
  "title": "The Oldest House in New York City",
  "series_label": "file no. 015",
- "voice_direction": "Calm, warm American storyteller (e.g. Kurt or Jade), unhurried; plain and confident on the hook, a small lift of curiosity on 'But that name?', a dry half-smile on 'The borough historian objected.', and a soft, settled final line with a beat before 'named for a man'.",
+ "voice_direction": "Jade (ElevenLabs voice TOXPlnYC7z5SQSV2Zgc5, calm elegant American), unhurried; plain and confident on the hook, a small lift of curiosity on 'But that name?', a dry half-smile on 'The borough historian objected.', and a soft, settled final line with a beat before 'named for a man'.",
  "narration": "The oldest house in New York City is a Brooklyn farmhouse. Its oldest room is dated to around sixteen fifty-two, when New York was still Dutch. It's named for Pieter Claesen, who came over as an indentured servant and couldn't read or write. He ran a farm for Governor Peter Stuyvesant, and became a wealthy magistrate. His family kept the house until nineteen oh one. [pause] But that name? He didn't have it. Claesen just meant son of Claes. He became Wyckoff only after the English took over. In nineteen sixty-five, it became the city's first official landmark. At the hearing, the highways department wanted it moved, for a road. [pause] The borough historian objected. It's still there, in a small park, off a busy avenue. [softly] New York's oldest house, [pause] named for a man who had to choose his own name.",
  "beats": [
   {
@@ -16,7 +16,7 @@
     "zoom_from": 1.0,
     "zoom_to": 1.08
    },
-   "label": "wyckoff house · east flatbush, brooklyn",
+   "label": "wyckoff house · brooklyn",
    "sublabel": "andre carrotflower · cc by-sa 4.0",
    "date_label": null,
    "date": null,
@@ -34,7 +34,7 @@
     "zoom_to": 1.14
    },
    "label": "the oldest section",
-   "sublabel": "wikimedia commons",
+   "sublabel": "gateras · public domain",
    "date_label": "oldest room",
    "date": "c. 1652",
    "sfx": "old wooden floorboards creaking under slow footsteps",
@@ -48,14 +48,14 @@
     "type": "photo",
     "asset": "new_netherland_map",
     "focus": [
-     0.45,
-     0.55
+     0.42,
+     0.3
     ],
-    "zoom_from": 1.4,
-    "zoom_to": 1.55
+    "zoom_from": 1.45,
+    "zoom_to": 1.6
    },
-   "label": "new netherland · jansson-visscher map",
-   "sublabel": "c. 1650 · public domain",
+   "label": "new netherland map",
+   "sublabel": "n. visscher · public domain",
    "date_label": "arrived",
    "date": "1630s",
    "sfx": "ship timbers groaning, gulls far off",
@@ -67,14 +67,18 @@
    "big": null,
    "visual": {
     "type": "photo",
-    "asset": "habs_1934",
-    "zoom_from": 1.0,
-    "zoom_to": 1.07
+    "asset": "new_netherland_map",
+    "focus": [
+     0.66,
+     0.93
+    ],
+    "zoom_from": 1.72,
+    "zoom_to": 1.84
    },
-   "label": "the house in 1934 · habs survey",
-   "sublabel": "e. p. macfarland · library of congress",
-   "date_label": null,
-   "date": null,
+   "label": "nieuw amsterdam · map inset",
+   "sublabel": "public domain",
+   "date_label": "farm superintendent",
+   "date": "1655",
    "sfx": "a wooden door latch lifting, hens and a cart far off",
    "dark": false
   },
@@ -84,12 +88,16 @@
    "big": null,
    "visual": {
     "type": "photo",
-    "asset": "habs_drawing",
-    "zoom_from": 1.1,
-    "zoom_to": 1.2
+    "asset": "habs_plan",
+    "focus": [
+     0.5,
+     0.62
+    ],
+    "zoom_from": 1.0,
+    "zoom_to": 1.08
    },
-   "label": "measured drawing · habs, 1934",
-   "sublabel": "library of congress · public domain",
+   "label": "habs plan · 1934",
+   "sublabel": "f. kayser · library of congress",
    "date_label": "in the family until",
    "date": "1901",
    "sfx": "pages of an old ledger turning",
@@ -136,7 +144,7 @@
     "zoom_from": 1.0,
     "zoom_to": 1.08
    },
-   "label": "landmark lp-0001 · nyc landmarks preservation commission",
+   "label": "lp-0001 · nyc landmarks",
    "sublabel": "photo: gateras · public domain",
    "date_label": "designated",
    "date": "14 october 1965",
@@ -170,7 +178,7 @@
     "zoom_from": 1.12,
     "zoom_to": 1.0
    },
-   "label": "5816 clarendon road · brooklyn",
+   "label": "5816 clarendon road",
    "sublabel": "andre carrotflower · cc by-sa 4.0",
    "date_label": null,
    "date": null,
@@ -202,8 +210,8 @@
    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Wyckoff_House%2C_East_Flatbush%2C_Brooklyn_-_20200908_-_02.jpg/1600px-Wyckoff_House%2C_East_Flatbush%2C_Brooklyn_-_20200908_-_02.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Wyckoff_House,_East_Flatbush,_Brooklyn_-_20200908_-_02.jpg",
    "author": "Andre Carrotflower (Commons user, own work)",
-   "date": "8 September 2020 (from file name)",
-   "license": "CC BY-SA 4.0 (per search-indexed Commons page; CONFIRM template in _pages/house_2020.html)",
+   "date": "8 September 2020",
+   "license": "CC BY-SA 4.0 ({{self|cc-by-sa-4.0}}, confirmed in _pages/house_2020.html)",
    "shows": "The Wyckoff House at 5816 Clarendon Road, East Flatbush, Brooklyn: low shingled Dutch farmhouse with deep sweeping eaves, in its small park. Commons description dates the house to 'about 1655'.",
    "changes": "cropped to vertical, slow push; reused zoomed-out on the last beat"
   },
@@ -211,65 +219,56 @@
    "key": "oldest_room",
    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/OriginalWyckoffHouse1652.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:OriginalWyckoffHouse1652.jpg",
-   "author": "UNCONFIRMED (probably Commons user Гатерас / Gateras, who uploaded the companion 1740-addition photo); confirm in _pages",
-   "date": "c. 2010 (unconfirmed)",
-   "license": "UNCONFIRMED: check _pages/oldest_room.html; drop the beat image (use house_2020 crop) if not PD/CC",
-   "shows": "The small original section of the house (the part traditionally dated to c. 1652). 900 x 675 px original, so the original-file URL is given.",
+   "author": "Гатерас (Gateras), Commons user, own work",
+   "date": "2008",
+   "license": "Public domain ({{PD-self}}: 'It is entirely my own work, use it at will. I release all rights.'; confirmed in _pages/oldest_room.html)",
+   "shows": "Low weathered-board wing of the Wyckoff House beside the later shingled block. Commons description says only 'Wyckoff House, New York City.'; the identification as the original c. 1652 section comes from the uploader's file name (OriginalWyckoffHouse1652.jpg). 900 x 675 px.",
    "changes": "cropped to vertical, slow push"
   },
   {
    "key": "new_netherland_map",
    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Jansson-Visscher_map.jpg/1600px-Jansson-Visscher_map.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Jansson-Visscher_map.jpg",
-   "author": "Joannes Janssonius / Nicolaes Visscher (Jansson-Visscher map series)",
-   "date": "first published c. 1650 (this copy later, recoloured)",
-   "license": "Public domain (published before 1 January 1931; PD-old)",
-   "shows": "'Novi Belgii Novaeque Angliae' map of New Netherland and New England, with the inset view of New Amsterdam.",
-   "changes": "cropped (Long Island / New Amsterdam area), slow pan"
+   "author": "Nicolaes (Nicolaus) Visscher; this later edition 'nunc apud Petr. Schenk Iun.' (Library of Congress g3715.ct000001)",
+   "date": "first published 1650; this recoloured edition later (it shows Pennsylvania and 'Niew Iorck', so after 1681)",
+   "license": "Public domain ({{PD-old-100-1923}}, confirmed in _pages/new_netherland_map.html)",
+   "shows": "'Novi Belgii Novaeque Angliae nec non partis Virginiae tabula' map of New Netherland and New England, with the inset view 'Nieuw Amsterdam op 't Eylant Manhattans'.",
+   "changes": "beat 2: crop on the upper Hudson / Nova Belgica area, slow push; beat 3: crop on the lower right (cartouche and New Amsterdam inset), slow push"
   },
   {
-   "key": "habs_1934",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Peter_Wyckoff_House%2C_5902_Canarsie_Lane%2C_Brooklyn%2C_Kings_County%2C_NY_HABS_NY%2C24-BROK%2C32-1.tif/lossy-page1-1600px-Peter_Wyckoff_House%2C_5902_Canarsie_Lane%2C_Brooklyn%2C_Kings_County%2C_NY_HABS_NY%2C24-BROK%2C32-1.tif.jpg",
-   "page": "https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-1.tif",
-   "author": "E. P. MacFarland, Historic American Buildings Survey (Library of Congress HABS NY,24-BROK,32-1; survey HABS NY-4-28)",
-   "date": "8 May 1934",
-   "license": "Public domain (HABS, work of the U.S. federal government; LoC: no known restrictions)",
-   "shows": "Exterior of the Wyckoff House in 1934, before restoration. HABS catalogues it as 'Peter Wyckoff House, 5902 Canarsie Lane' (old street name; LoC record gives NRHP 67000013, the Pieter Claesen Wyckoff House).",
-   "changes": "TIFF rendered to JPEG thumb; cropped to vertical, gentle grade"
-  },
-  {
-   "key": "habs_drawing",
-   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Peter_Wyckoff_House%2C_5902_Canarsie_Lane%2C_Brooklyn%2C_Kings_County%2C_NY_HABS_NY%2C24-BROK%2C32-_%28sheet_1_of_9%29.tif/lossy-page1-1600px-Peter_Wyckoff_House%2C_5902_Canarsie_Lane%2C_Brooklyn%2C_Kings_County%2C_NY_HABS_NY%2C24-BROK%2C32-_%28sheet_1_of_9%29.tif.jpg",
-   "page": "https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-_(sheet_1_of_9).tif",
-   "author": "Historic American Buildings Survey (Library of Congress HABS NY,24-BROK,32-, sheet 1 of 9)",
-   "date": "1934",
-   "license": "Public domain (HABS, work of the U.S. federal government)",
-   "shows": "HABS measured drawing sheet of the house (plan/elevation; exact content of sheet 1 not confirmed: if sheet 2 is the better elevation, swap in the spare).",
-   "changes": "TIFF rendered to JPEG thumb; cropped, slow push"
+   "key": "habs_plan",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Peter_Wyckoff_House%2C_5902_Canarsie_Lane%2C_Brooklyn%2C_Kings_County%2C_NY_HABS_NY%2C24-BROK%2C32-_%28sheet_2_of_9%29.tif/lossy-page1-1600px-Peter_Wyckoff_House%2C_5902_Canarsie_Lane%2C_Brooklyn%2C_Kings_County%2C_NY_HABS_NY%2C24-BROK%2C32-_%28sheet_2_of_9%29.tif.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-_(sheet_2_of_9).tif",
+   "author": "Historic American Buildings Survey; drawn by Fred Kayser ('Fred Kayser del.' on the sheet); Library of Congress HABS NY,24-BROK,32- (sheet 2 of 9), survey HABS NY-4-28",
+   "date": "7 June 1934 (title block)",
+   "license": "Public domain ({{PD-USGov-NPS}}, work of the U.S. federal government; LoC: no known restrictions; confirmed in _pages/habs_drawing_b_spare.html)",
+   "shows": "HABS measured drawing, 'First Floor Plan' of the Wyckoff House (kitchen, servants' dining room, bedrooms, dining and living rooms), with the title block 'Wyckoff House, 5902 Canarsie Lane, Brooklyn, New York'.",
+   "derived_from": "habs_drawing_b_spare.jpg (sheet 2 of 9, fetched 1920 x 1565 px)",
+   "changes": "cropped with PIL to box (182, 300, 1862, 1412) = 1680 x 1112 px (plan + title block, sheet margins removed); slow push"
   },
   {
    "key": "addition_1740",
    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/WyckoffHouse1740Addition.JPG",
    "page": "https://commons.wikimedia.org/wiki/File:WyckoffHouse1740Addition.JPG",
    "author": "Гатерас (Gateras), Commons user, own work",
-   "date": "uploaded October 2010",
-   "license": "Public domain (released worldwide by the copyright holder; CONFIRM in _pages)",
-   "shows": "The larger part of the house that the uploader dates to 1740 (later enlargement by the family). Size unconfirmed, so the original-file URL is given.",
+   "date": "2008",
+   "license": "Public domain ({{PD-self}}, confirmed in _pages/addition_1740.html)",
+   "shows": "The main shingled block of the house; the uploader's description: 'Wyckoff House, part of the house built in 1740.' Labelled on screen only as the landmark.",
    "changes": "cropped to vertical, slow lateral pan"
   },
   {
    "key": "house_2020_b",
    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Wyckoff_House%2C_East_Flatbush%2C_Brooklyn_-_20200908_-_01.jpg/1600px-Wyckoff_House%2C_East_Flatbush%2C_Brooklyn_-_20200908_-_01.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Wyckoff_House,_East_Flatbush,_Brooklyn_-_20200908_-_01.jpg",
-   "author": "Andre Carrotflower (Commons user, own work; CONFIRM)",
-   "date": "8 September 2020 (from file name)",
-   "license": "CC BY-SA 4.0 (expected, same series as house_2020; CONFIRM in _pages)",
-   "shows": "Second 2020 view of the Wyckoff House and its park setting.",
+   "author": "Andre Carrotflower (Commons user, own work)",
+   "date": "8 September 2020",
+   "license": "CC BY-SA 4.0 ({{self|cc-by-sa-4.0}}, confirmed in _pages/house_2020_b.html)",
+   "shows": "The Wyckoff House from the park, with the commercial strip behind the fence (2020).",
    "changes": "cropped to vertical, slow pull-back"
   }
  ],
- "tiktok_caption": "The oldest house in New York City is a Dutch farmhouse in Brooklyn 🏚️ And the name on it came later.\n\nWhat's the oldest building in your town? 👇\n\nfile no. 015 · Images: Andre Carrotflower (CC BY-SA 4.0), HABS/Library of Congress, Wikimedia Commons (public domain) · Narration, sound & music: ElevenLabs\n\n#nyc #brooklyn #history #oldbuildings #newyorkhistory",
- "instagram_caption": "The oldest house in New York City is a farmhouse in Brooklyn: the Wyckoff House, on Clarendon Road in East Flatbush. Its oldest room is dated to around 1652, when New York was still New Netherland.\n\nIt is named for Pieter Claesen, who came over in the 1630s as an indentured servant and could not read or write. He later ran a farm for Peter Stuyvesant, the Dutch governor, and became a wealthy magistrate. His family kept the house until 1901.\n\nBut he wasn't born a Wyckoff. \"Claesen\" just meant \"son of Claes\". After the English took over New Netherland in 1664, families needed surnames they could pass down, and Pieter chose Wyckoff.\n\nIn 1965 the house became Landmark No. 1 of New York City's new Landmarks Preservation Commission. At the hearing, a representative of the highways department asked for it to be moved to extend Ditmas Avenue. The borough historian objected.\n\nIt's still there, in a small park off a busy Brooklyn avenue: New York's oldest house, named for a man who had to choose his own name.\n\nWhat's the oldest building in your town? 👇\n\nfile no. 015\n\n—\nImages: Wyckoff House, 2020, Andre Carrotflower, CC BY-SA 4.0 (Wikimedia Commons); the house in 1934 and a measured drawing, Historic American Buildings Survey, E. P. MacFarland, Library of Congress (public domain); Jansson-Visscher map of New Netherland, c. 1650 (public domain); later additions to the house, Gateras, Wikimedia Commons (public domain); the original section, Wikimedia Commons. The name timeline and road schematic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#nyc #brooklyn #newyorkhistory #oldbuildings #history",
+ "tiktok_caption": "The oldest house in New York City is a Dutch farmhouse in Brooklyn 🏚️ And the name on it came later.\n\nWhat's the oldest building in your town? 👇\n\nfile no. 015 · Images: Andre Carrotflower (CC BY-SA 4.0), Gateras, HABS/Library of Congress, Visscher map (public domain) · Narration, sound & music: ElevenLabs\n\n#nyc #brooklyn #history #oldbuildings #newyorkhistory",
+ "instagram_caption": "The oldest house in New York City is a farmhouse in Brooklyn: the Wyckoff House, on Clarendon Road in East Flatbush. Its oldest room is dated to around 1652, when New York was still New Netherland.\n\nIt is named for Pieter Claesen, who came over in the 1630s as an indentured servant and could not read or write. He later ran a farm for Peter Stuyvesant, the Dutch governor, and became a wealthy magistrate. His family kept the house until 1901.\n\nBut he wasn't born a Wyckoff. \"Claesen\" just meant \"son of Claes\". After the English took over New Netherland in 1664, families needed surnames they could pass down, and Pieter chose Wyckoff.\n\nIn 1965 the house became Landmark No. 1 of New York City's new Landmarks Preservation Commission. At the hearing, a representative of the highways department asked for it to be moved to extend Ditmas Avenue. The borough historian objected.\n\nIt's still there, in a small park off a busy Brooklyn avenue: New York's oldest house, named for a man who had to choose his own name.\n\nWhat's the oldest building in your town? 👇\n\nfile no. 015\n\n—\nImages: Wyckoff House, 2020, Andre Carrotflower, CC BY-SA 4.0 (Wikimedia Commons); the original section and a later addition, 2008, Гатерас (Gateras), Wikimedia Commons (public domain); map of New Netherland with a view of New Amsterdam, Nicolaes Visscher, first published 1650, later edition, Library of Congress (public domain); first-floor plan, 1934, Historic American Buildings Survey, drawn by Fred Kayser, Library of Congress (public domain). The name timeline and road schematic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#nyc #brooklyn #newyorkhistory #oldbuildings #history",
  "youtube_title": "The oldest house in New York City (1652, Brooklyn)",
  "facts": [
   {

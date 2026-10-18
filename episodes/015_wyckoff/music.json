@@ -1,0 +1,63 @@
+{
+ "file_level": 0.2,
+ "_note": "file_level applies to audio/music.mp3 (ElevenLabs score) when present; the keys below are the built-in composer fallback used while no audio/music.* exists.",
+ "bpm": 70,
+ "root": "D3",
+ "progression": [
+  [
+   0,
+   3,
+   7,
+   14
+  ],
+  [
+   -2,
+   2,
+   5,
+   10
+  ],
+  [
+   -4,
+   0,
+   3,
+   8
+  ],
+  [
+   -5,
+   -2,
+   2,
+   7
+  ]
+ ],
+ "bars_per_chord": 2,
+ "layers": {
+  "pad": 0.38,
+  "keys": 0.42,
+  "bass": 0.28,
+  "arp": 0.3,
+  "tick": 0.28
+ },
+ "arp_pattern": [
+  0,
+  2,
+  1,
+  3,
+  2,
+  1
+ ],
+ "arp_div": 2,
+ "arp_in": 0.5,
+ "arp_oct": 1,
+ "keys_hits": [
+  0,
+  2.5
+ ],
+ "felt": 0.85,
+ "tick_div": 2,
+ "perc_in": 30,
+ "texture": "room",
+ "texture_gain": 0.4,
+ "swell_beat": 7,
+ "level": 0.19,
+ "arp_out": 999
+}

@@ -1,0 +1,62 @@
+[
+ {
+  "beat": 0,
+  "prompt": "soft wind through wooden shingles, one slow old floorboard creak",
+  "gain": 0.3,
+  "file": "audio/sfx/b00.mp3"
+ },
+ {
+  "beat": 2,
+  "prompt": "wooden ship timbers groaning at sea, gulls far off",
+  "gain": 0.32,
+  "file": "audio/sfx/b02.mp3"
+ },
+ {
+  "beat": 3,
+  "prompt": "hens clucking and a horse-drawn cart on a dirt track, far off",
+  "gain": 0.3,
+  "file": "audio/sfx/b03.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "pages of an old paper ledger turning slowly",
+  "gain": 0.3,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 5,
+  "prompt": "a single low soft thump in a quiet room",
+  "gain": 0.4,
+  "file": "audio/sfx/b05.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "quill pen scratching a signature on paper",
+  "gain": 0.3,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 7,
+  "prompt": "a rubber stamp pressed firmly onto paper",
+  "gain": 0.4,
+  "file": "audio/sfx/b07.mp3"
+ },
+ {
+  "beat": 8,
+  "prompt": "distant city traffic, then a single wooden gavel tap",
+  "gain": 0.34,
+  "file": "audio/sfx/b08.mp3"
+ },
+ {
+  "beat": 9,
+  "prompt": "city traffic hum and a bus passing, birds in park trees",
+  "gain": 0.3,
+  "file": "audio/sfx/b09.mp3"
+ },
+ {
+  "beat": 10,
+  "prompt": "an old wooden door latch closing, then soft wind",
+  "gain": 0.3,
+  "file": "audio/sfx/b10.mp3"
+ }
+]

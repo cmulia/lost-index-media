@@ -1,6 +1,6 @@
 # @lost_index, file no. 015: The Oldest House in New York City (c. 1652)
 
-About 50 s at a calm pace · 1080×1920 · 139 words · 11 beats. Not rendered yet. This file holds the captions, the fact check and the asset rights for the script in `script.json`.
+About 50 s at a calm pace · 1080×1920 · 139 words · 11 beats. Not rendered yet: the ElevenLabs narration run (voice Jade) failed on account quota (0 credits), so there is no narration, SFX or score yet. This file holds the captions, the fact check and the asset rights for the script in `script.json`.
 
 YouTube title: **The oldest house in New York City (1652, Brooklyn)** (50 chars; target searches "oldest house in new york city", "old buildings in new york").
 
@@ -21,7 +21,7 @@ What's the oldest building in your town? 👇
 file no. 015
 
 —
-Images: Wyckoff House, 2020, Andre Carrotflower, CC BY-SA 4.0 (Wikimedia Commons); the house in 1934 and a measured drawing, Historic American Buildings Survey, E. P. MacFarland, Library of Congress (public domain); Jansson-Visscher map of New Netherland, c. 1650 (public domain); later additions to the house, Gateras, Wikimedia Commons (public domain); the original section, Wikimedia Commons. The name timeline and road schematic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
+Images: Wyckoff House, 2020, Andre Carrotflower, CC BY-SA 4.0 (Wikimedia Commons); the original section and a later addition, 2008, Гатерас (Gateras), Wikimedia Commons (public domain); map of New Netherland with a view of New Amsterdam, Nicolaes Visscher, first published 1650, later edition, Library of Congress (public domain); first-floor plan, 1934, Historic American Buildings Survey, drawn by Fred Kayser, Library of Congress (public domain). The name timeline and road schematic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
 
 #nyc #brooklyn #newyorkhistory #oldbuildings #history
 
@@ -31,7 +31,7 @@ The oldest house in New York City is a Dutch farmhouse in Brooklyn 🏚️ And t
 
 What's the oldest building in your town? 👇
 
-file no. 015 · Images: Andre Carrotflower (CC BY-SA 4.0), HABS/Library of Congress, Wikimedia Commons (public domain) · Narration, sound & music: ElevenLabs
+file no. 015 · Images: Andre Carrotflower (CC BY-SA 4.0), Gateras, HABS/Library of Congress, Visscher map (public domain) · Narration, sound & music: ElevenLabs
 
 #nyc #brooklyn #history #oldbuildings #newyorkhistory
 
@@ -69,32 +69,30 @@ file no. 015 · Images: Andre Carrotflower (CC BY-SA 4.0), HABS/Library of Congr
 
 ## Asset rights
 
-**Read this first:** no Commons file page could be opened in this session. File names come from search-indexed Commons category and file pages, and the upload URLs were built from the MediaWiki md5 path scheme. The fetch workflow rewrites them to `Special:FilePath`, so only the file **name** has to be right. **Confirm every licence template in `assets/_pages/*.html` before rendering.**
+All licence templates below were read from the fetched Commons wikitext in `assets/_pages/*.html`. `habs_1934` and `habs_1934_b_spare` (the 1934 HABS photos) failed to fetch (404, wrong file names) and are not used; beat 3 now uses the map's New Amsterdam inset instead.
 
-- **house_2020** (hero, beats 0 and 10): [Wyckoff House, East Flatbush, Brooklyn - 20200908 - 02.jpg](https://commons.wikimedia.org/wiki/File:Wyckoff_House,_East_Flatbush,_Brooklyn_-_20200908_-_02.jpg). The house at 5816 Clarendon Road in its park. Author: Andre Carrotflower (own work). Date: 8 Sep 2020. Licence: **expected CC BY-SA 4.0, to confirm**. Changes: cropped to vertical, slow push and pull.
-- **oldest_room** (beat 1): [OriginalWyckoffHouse1652.jpg](https://commons.wikimedia.org/wiki/File:OriginalWyckoffHouse1652.jpg). The small original section, 900×675 px, so the original URL is given. **Author and licence unconfirmed**; it is probably by Гатерас, like the 1740 photo. If it is not PD/CC, use a crop of house_2020 or habs_1934 on the oldest wing.
-- **new_netherland_map** (beat 2): [Jansson-Visscher map.jpg](https://commons.wikimedia.org/wiki/File:Jansson-Visscher_map.jpg). Novi Belgii Novaeque Angliae, first published c. 1650; this copy is a later recolouring. Licence: public domain (published before 1931). Changes: cropped to the New Amsterdam / Long Island area, slow pan.
-- **habs_1934** (beat 3): [Peter Wyckoff House, 5902 Canarsie Lane, Brooklyn, Kings County, NY HABS NY,24-BROK,32-1.tif](https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-1.tif). Author: E. P. MacFarland, HABS. Date: 8 May 1934. Licence: public domain (US federal government work). Changes: TIFF rendered to JPEG, cropped, gentle grade.
-- **habs_drawing** (beat 4): […HABS NY,24-BROK,32- (sheet 1 of 9).tif](https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-_(sheet_1_of_9).tif). HABS measured drawing, 1934. Public domain. **Which sheet shows the best elevation is unconfirmed**; sheet 2 is fetched as a spare, and sheets 0–9 exist.
-- **addition_1740** (beat 7): [WyckoffHouse1740Addition.JPG](https://commons.wikimedia.org/wiki/File:WyckoffHouse1740Addition.JPG). The part of the house the uploader dates to 1740. Author: Гатерас (Gateras), own work, uploaded Oct 2010. Licence: public domain (released by the copyright holder). Labelled on screen only as the landmark, not as "1740".
-- **house_2020_b** (beat 9): [Wyckoff House, East Flatbush, Brooklyn - 20200908 - 01.jpg](https://commons.wikimedia.org/wiki/File:Wyckoff_House,_East_Flatbush,_Brooklyn_-_20200908_-_01.jpg). Author: Andre Carrotflower. Date: 2020. Licence: **expected CC BY-SA 4.0, to confirm**.
+| Key (beats) | File | Author | Date | Licence (template) | Changes |
+|---|---|---|---|---|---|
+| **house_2020** (0, 10) | [Wyckoff House, East Flatbush, Brooklyn - 20200908 - 02.jpg](https://commons.wikimedia.org/wiki/File:Wyckoff_House,_East_Flatbush,_Brooklyn_-_20200908_-_02.jpg) | Andre Carrotflower (own work) | 8 Sep 2020 | **CC BY-SA 4.0** (`{{self\|cc-by-sa-4.0}}`) | cropped to plate, slow push / pull-back |
+| **oldest_room** (1) | [OriginalWyckoffHouse1652.jpg](https://commons.wikimedia.org/wiki/File:OriginalWyckoffHouse1652.jpg) | Гатерас (Gateras), own work | 2008 | **Public domain** (`{{PD-self}}`, "use it at will. I release all rights.") | cropped to plate, slow push |
+| **new_netherland_map** (2, 3) | [Jansson-Visscher map.jpg](https://commons.wikimedia.org/wiki/File:Jansson-Visscher_map.jpg) | Nicolaes Visscher; this edition "nunc apud Petr. Schenk Iun." (LoC g3715.ct000001) | first published 1650; this recoloured edition is later (it shows Pennsylvania and "Niew Iorck", so after 1681) | **Public domain** (`{{PD-old-100-1923}}`) | beat 2: crop on the upper Hudson / Nova Belgica; beat 3: crop on the cartouche and the "Nieuw Amsterdam" inset |
+| **habs_plan** (4) | derived from [HABS NY,24-BROK,32- (sheet 2 of 9)](https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-_(sheet_2_of_9).tif) (`habs_drawing_b_spare.jpg`) | Historic American Buildings Survey; drawn by Fred Kayser ("Fred Kayser del.") | 7 Jun 1934 (title block) | **Public domain** (`{{PD-USGov-NPS}}`; LoC: no known restrictions) | PIL crop (182, 300, 1862, 1412) → 1680×1112: first-floor plan + "Wyckoff House" title block; slow push |
+| **addition_1740** (7) | [WyckoffHouse1740Addition.JPG](https://commons.wikimedia.org/wiki/File:WyckoffHouse1740Addition.JPG) | Гатерас (Gateras), own work | 2008 | **Public domain** (`{{PD-self}}`) | cropped to plate, slow push. Labelled on screen only as the landmark, not as "1740" |
+| **house_2020_b** (9) | [Wyckoff House, East Flatbush, Brooklyn - 20200908 - 01.jpg](https://commons.wikimedia.org/wiki/File:Wyckoff_House,_East_Flatbush,_Brooklyn_-_20200908_-_01.jpg) | Andre Carrotflower (own work) | 8 Sep 2020 | **CC BY-SA 4.0** (`{{self\|cc-by-sa-4.0}}`) | cropped to plate, slow pull-back |
 
-The HABS name and date:
-- **Name:** HABS and the Library of Congress catalogue this house as "Peter Wyckoff House, 5902 Canarsie Lane" (the old street name). The LoC record gives NRHP 67000013, which is the Pieter Claesen Wyckoff House, and Commons files it under Category:Wyckoff House. On screen it is labelled "the house in 1934 · habs survey".
-- **Date:** the LoC record's "1784" construction date reflects the 1934 survey's view, so it is not used.
+Notes:
+- **oldest_room:** the Commons description says only "Wyckoff House, New York City." The identification as the original c. 1652 section comes from the uploader's file name. The photo shows the low weathered-board wing beside the later shingled block. On screen it is "the oldest section".
+- **The map:** it is a later edition of the 1650 map, so it is not dated "c. 1650" on screen. The tag reads "n. visscher · public domain".
+- **HABS name and date:** HABS and the Library of Congress catalogue the house as "Peter Wyckoff House, 5902 Canarsie Lane" (the old street name; NRHP 67000013 = the Pieter Claesen Wyckoff House). The LoC "1784 initial construction" date reflects the 1934 survey's view and is not used.
+- **Beat 3 date tag "farm superintendent 1655":** from LPC LP-0001 ("for a time in 1655 was a superintendent on Peter Stuyvesant's farm").
+- **Attribution:** the CC BY-SA 4.0 photos need credit to "Andre Carrotflower" plus the licence. That credit is on screen (tag sublabel) and in both captions. Our crops are adaptations and stay CC BY-SA 4.0. HABS/LoC imagery must not imply endorsement.
 
-Attribution:
-- **Andre Carrotflower photos:** CC BY-SA 4.0 needs credit to "Andre Carrotflower" and a licence link, which is in the IG credits. Our crops are adaptations, so they stay CC BY-SA 4.0.
-- **Everything else:** expected to be public domain. HABS/LoC imagery must not imply endorsement.
-
-Spare files (fetched with a `_spare` suffix):
-- **habs_1934_b_spare:** the second 1934 HABS photo (…32-2.tif).
-- **habs_drawing_b_spare:** HABS sheet 2 of 9.
-- **house_2007_spare:** [Wyckoff-house.jpg](https://commons.wikimedia.org/wiki/File:Wyckoff-house.jpg), by Dmadeo, 2007; licence to confirm.
+Spares (fetched, not used): **habs_drawing** (HABS sheet 1 of 9: cellar plan + strap-hinge detail, Fred Kayser, 7 Jun 1934, `{{PD-USGov-NPS}}`), **habs_drawing_b_spare** (sheet 2, the source of habs_plan), **house_2007_spare** ([Wyckoff-house.jpg](https://commons.wikimedia.org/wiki/File:Wyckoff-house.jpg), Dmadeo, 3 Dec 2007, `{{self|GFDL|cc-by-sa-all}}`, usable with credit under CC BY-SA).
 
 Other assets:
-- **Name timeline (`name_timeline`):** an original graphic, "schematic · drawn for this video".
+- **Name timeline (`name_timeline`):** an original graphic, "schematic · not to scale · drawn for this video".
 - **Road-request schematic (`move_request`):** an original graphic, "schematic · not to scale · drawn for this video".
-- **Narration:** ElevenLabs, model eleven_v4. The voice is to be chosen; an American voice suits a New York story (Kurt or Jade). Commercial rights depend on the account's ElevenLabs plan.
-- **Sound effects and score:** to be generated with ElevenLabs for this video.
+- **Narration:** ElevenLabs, model eleven_v4, voice Jade (TOXPlnYC7z5SQSV2Zgc5, calm elegant American). Flow xprNQIPfATlDjXNCT7ij; the first run failed on quota, see `audio/takes.json`. Commercial rights depend on the account's ElevenLabs plan.
+- **Sound effects:** planned in `sfx_plan.json` (ElevenLabs eleven_text_to_sound_v2), not generated yet.
+- **Score:** ElevenLabs eleven_music_v2_5, planned; `music.json` holds the built-in composer fallback. If the fallback is used, change "Music: ElevenLabs" in the captions.
 - **Fonts:** IBM Plex Mono and Instrument Serif (SIL Open Font License).
