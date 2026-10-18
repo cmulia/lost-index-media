@@ -1,0 +1,20 @@
+{
+ "file_level": 0.20,
+ "_note": "file_level applies to audio/music.mp3 (ElevenLabs score, not generated yet: workspace out of credits). The rest is the built-in composer fallback used when no audio/music.* exists.",
+ "bpm": 76,
+ "root": "D2",
+ "progression": [[0, 7, 12, 15], [-2, 5, 10, 15], [-4, 3, 8, 15], [-2, 5, 10, 14]],
+ "bars_per_chord": 2,
+ "layers": {"pad": 0.6, "bass": 0.35, "keys": 0.3, "pulse": 0.28, "tick": 0.18},
+ "pad_oct": 1,
+ "pad_bright": 0.6,
+ "keys_hits": [0, 2.5],
+ "felt": 0.9,
+ "pulse_every": 2,
+ "tick_div": 2,
+ "perc_out": 30,
+ "texture": "air",
+ "texture_gain": 1.0,
+ "swell_beat": 9,
+ "level": 0.19
+}

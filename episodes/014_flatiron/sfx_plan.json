@@ -1,0 +1,62 @@
+[
+ {
+  "beat": 0,
+  "prompt": "a sharp gust of cold wind whipping past a city corner, heavy cloth skirts flapping hard",
+  "gain": 0.42,
+  "file": "audio/sfx/b00.mp3"
+ },
+ {
+  "beat": 1,
+  "prompt": "distant riveting hammers on a steel frame and a hissing steam crane, early 1900s construction site",
+  "gain": 0.3,
+  "file": "audio/sfx/b01.mp3"
+ },
+ {
+  "beat": 2,
+  "prompt": "horse-drawn carriages and hooves on cobblestones, busy 1900s city street bustle",
+  "gain": 0.32,
+  "file": "audio/sfx/b02.mp3"
+ },
+ {
+  "beat": 3,
+  "prompt": "wind rising and whistling around the sharp stone corner of a tall building",
+  "gain": 0.42,
+  "file": "audio/sfx/b03.mp3"
+ },
+ {
+  "beat": 4,
+  "prompt": "a strong gust of wind splitting and swirling at a street corner, dry leaves skittering across pavement",
+  "gain": 0.5,
+  "file": "audio/sfx/b04.mp3"
+ },
+ {
+  "beat": 5,
+  "prompt": "hand-cranked silent film projector clattering under a howling wind",
+  "gain": 0.4,
+  "file": "audio/sfx/b05.mp3"
+ },
+ {
+  "beat": 6,
+  "prompt": "a policeman's whistle, two sharp blasts, with a small crowd murmuring on a street",
+  "gain": 0.36,
+  "file": "audio/sfx/b06.mp3"
+ },
+ {
+  "beat": 7,
+  "prompt": "footsteps of several men scattering on a pavement, a police whistle fading into the distance",
+  "gain": 0.32,
+  "file": "audio/sfx/b07.mp3"
+ },
+ {
+  "beat": 8,
+  "prompt": "a low soft thump, then the wind dies away to silence",
+  "gain": 0.4,
+  "file": "audio/sfx/b08.mp3"
+ },
+ {
+  "beat": 10,
+  "prompt": "one last soft gust of wind, then a quiet evening city street at dusk",
+  "gain": 0.3,
+  "file": "audio/sfx/b10.mp3"
+ }
+]

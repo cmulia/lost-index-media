@@ -1,0 +1,17 @@
+{
+ "file_level": 0.20,
+ "elevenlabs_prompt": "Slow, stately orchestral elegy in A minor at about 66 bpm: soft felt piano and warm low strings in a large reverberant hall. Around a quarter of the way in, a low brass swell rises and holds, then the strings lift gently and warmly for a while before thinning to a single sustained cello note and soft wind for the last ten seconds.",
+ "bpm": 66,
+ "root": "A2",
+ "progression": [[0, 3, 7, 12], [-4, 0, 3, 8], [3, 7, 10, 15], [-2, 2, 5, 10]],
+ "bars_per_chord": 1,
+ "layers": {"pad": 0.6, "keys": 0.5, "bass": 0.35},
+ "keys_hits": [0, 2],
+ "felt": 0.85,
+ "pad_bright": 0.7,
+ "texture": "room",
+ "texture_gain": 0.8,
+ "reverb": 3.4,
+ "swell_beat": 4,
+ "level": 0.19
+}

@@ -16,8 +16,8 @@
     "zoom_from": 1.0,
     "zoom_to": 1.08
    },
-   "label": "the pyramids of giza · c. 1857",
-   "sublabel": "francis frith · lacma · public domain",
+   "label": "pyramids of giza · c. 1857",
+   "sublabel": "francis frith · public domain",
    "date_label": null,
    "date": null,
    "sfx": "desert wind, then a single dry papyrus rustle",
@@ -50,9 +50,9 @@
     "zoom_from": 1.0,
     "zoom_to": 1.1
    },
-   "label": "model rowing boat · c. 1980 bc",
-   "sublabel": "tomb of meketre · the met · cc0",
-   "date_label": "c.",
+   "label": "model boat · c. 1980 bc",
+   "sublabel": "meketre tomb · the met · cc0",
+   "date_label": "merer · c.",
    "date": "2560 bc",
    "sfx": "oars dipping in rhythm, water dripping off the blades",
    "dark": false
@@ -64,10 +64,13 @@
    "visual": {
     "type": "photo",
     "asset": "khufu_ship",
-    "zoom_from": 1.05,
-    "zoom_to": 1.15
+    "layout": "wide",
+    "max_height": 760,
+    "focus": [0.5, 0.42],
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
    },
-   "label": "khufu's ship · buried beside the great pyramid",
+   "label": "khufu's own ship · giza",
    "sublabel": "berthold werner · cc by-sa 3.0",
    "date_label": null,
    "date": null,
@@ -84,8 +87,8 @@
     "zoom_from": 1.0,
     "zoom_to": 1.1
    },
-   "label": "the great pyramid of khufu · giza",
-   "sublabel": "nina aldin thune · cc by-sa",
+   "label": "the great pyramid · giza",
+   "sublabel": "nina aldin thune · cc by 2.5",
    "date_label": null,
    "date": null,
    "sfx": "chisel tapping on limestone, a block scraping into place",
@@ -118,8 +121,8 @@
     "zoom_from": 1.0,
     "zoom_to": 1.1
    },
-   "label": "model granary with scribes · c. 1980 bc",
-   "sublabel": "tomb of meketre · the met · cc0",
+   "label": "model granary · c. 1980 bc",
+   "sublabel": "meketre tomb · the met · cc0",
    "date_label": null,
    "date": null,
    "sfx": "grain poured into a basket, papyrus unrolled",
@@ -149,8 +152,8 @@
     "zoom_from": 1.0,
     "zoom_to": 1.1
    },
-   "label": "model bakery and brewery · c. 1980 bc",
-   "sublabel": "tomb of meketre · the met · cc0",
+   "label": "model bakery · c. 1980 bc",
+   "sublabel": "meketre tomb · the met · cc0",
    "date_label": null,
    "date": null,
    "sfx": "bread dough slapped on a board, a crackling oven fire",
@@ -199,7 +202,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Gizeh_Sonnenbarke_BW_2.jpg",
    "author": "Berthold Werner",
    "date": "3 November 2010",
-   "license": "CC BY-SA 3.0 (multi-licensed: GFDL 1.2+, CC BY-SA 3.0/2.5/2.0/1.0; we use CC BY-SA 3.0)",
+   "license": "CC BY-SA 3.0 (multi-licensed: GFDL, CC BY-SA 3.0/2.5/2.0/1.0; we use CC BY-SA 3.0). Confirmed from _pages/khufu_ship.html wikitext: {{self|GFDL|cc-by-sa-3.0,2.5,2.0,1.0}}",
    "shows": "The reassembled Khufu ship (found 1954 in a pit beside the Great Pyramid), in the Giza boat museum. Khufu's own ship, not one of Merer's cargo boats; labelled as such.",
    "changes": "cropped to vertical, slow lateral pan"
   },
@@ -207,9 +210,9 @@
    "key": "kheops",
    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg",
-   "author": "Nina Aldin Thune",
+   "author": "Nina Aldin Thune (Commons/no.wikipedia user \"Nina\"; credit name per her permission template User:Nina-no/Ninabilde)",
    "date": "March 2005",
-   "license": "CC BY-SA (version to confirm from _pages wikitext; credit 'Nina Aldin Thune' near the image)",
+   "license": "CC BY 2.5 (dual-licensed with GFDL, migration=relicense; we use CC BY 2.5). Confirmed from _pages/kheops.html wikitext: {{GFDL-user-no|Nina|migration=relicense}} {{cc-by-2.5}}",
    "shows": "The Great Pyramid of Khufu with people at its base for scale. Original 1,581 x 971 px, so the original-file URL is given.",
    "changes": "cropped to vertical, slow push"
   },
@@ -234,8 +237,8 @@
    "changes": "cropped to vertical, slow push"
   }
  ],
- "tiktok_caption": "The oldest written papyrus ever found is a work log from the Great Pyramid 📜\n\nWould you have kept a work diary? 👇\n\nfile no. 012 · Images: Francis Frith/LACMA (public domain), The Met (CC0), Berthold Werner, Nina Aldin Thune (CC BY-SA) · Narration, sound & music: ElevenLabs\n\n#ancientegypt #greatpyramid #egyptianarchitecture #architecturehistory #history",
- "instagram_caption": "In 2013, archaeologists led by Pierre Tallet found rolls of papyrus at Wadi al-Jarf, an ancient harbour on Egypt's Red Sea coast. They are the oldest inscribed papyri yet found, from near the end of King Khufu's reign, about 2560 BC.\n\nSeveral belong to an inspector named Merer, who ran a crew of boatmen. His logbook follows them loading white limestone at the Tura quarries and sailing it down the Nile to Giza, most likely for the Great Pyramid's smooth outer casing.\n\nHe wrote it all down in half-day steps: two or three round trips every ten days, where they sailed, what they carried, where they spent the night. He reported to Ankhhaf, the king's half-brother. Other sheets account for food and supplies for his men.\n\nThe diary alone can't tell us whether these men were free. But the workers' town and the builders' tombs excavated at Giza point the same way: organised, rotating crews, fed by the state. Probably not the slaves of legend, though not exactly volunteers either.\n\nThe king left the pyramid. The crew left the paperwork.\n\nWould you have kept a work diary? 👇\n\nfile no. 012\n\n—\nImages: Pyramids of El-Geezeh, c. 1857, Francis Frith, Los Angeles County Museum of Art (public domain); model rowing boat, model granary with scribes and model bakery and brewery from the tomb of Meketre, The Metropolitan Museum of Art (CC0); Khufu ship, Berthold Werner (CC BY-SA 3.0); Great Pyramid, Nina Aldin Thune (CC BY-SA). All via Wikimedia Commons. The map and logbook schematic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#ancientegypt #greatpyramid #egyptianarchitecture #architecturehistory #egyptology",
+ "tiktok_caption": "The oldest written papyrus ever found is a work log from the Great Pyramid 📜\n\nWould you have kept a work diary? 👇\n\nfile no. 012 · Images: Francis Frith/LACMA (public domain), The Met (CC0), Berthold Werner (CC BY-SA 3.0), Nina Aldin Thune (CC BY 2.5) · Narration, sound & music: ElevenLabs\n\n#ancientegypt #greatpyramid #egyptianarchitecture #architecturehistory #history",
+ "instagram_caption": "In 2013, archaeologists led by Pierre Tallet found rolls of papyrus at Wadi al-Jarf, an ancient harbour on Egypt's Red Sea coast. They are the oldest inscribed papyri yet found, from near the end of King Khufu's reign, about 2560 BC.\n\nSeveral belong to an inspector named Merer, who ran a crew of boatmen. His logbook follows them loading white limestone at the Tura quarries and sailing it down the Nile to Giza, most likely for the Great Pyramid's smooth outer casing.\n\nHe wrote it all down in half-day steps: two or three round trips every ten days, where they sailed, what they carried, where they spent the night. He reported to Ankhhaf, the king's half-brother. Other sheets account for food and supplies for his men.\n\nThe diary alone can't tell us whether these men were free. But the workers' town and the builders' tombs excavated at Giza point the same way: organised, rotating crews, fed by the state. Probably not the slaves of legend, though not exactly volunteers either.\n\nThe king left the pyramid. The crew left the paperwork.\n\nWould you have kept a work diary? 👇\n\nfile no. 012\n\n—\nImages: Pyramids of El-Geezeh, c. 1857, Francis Frith, Los Angeles County Museum of Art (public domain); model rowing boat, model granary with scribes and model bakery and brewery from the tomb of Meketre, The Metropolitan Museum of Art (CC0); Khufu ship, Berthold Werner (CC BY-SA 3.0); Great Pyramid, Nina Aldin Thune (CC BY 2.5). All via Wikimedia Commons. The map and logbook schematic were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#ancientegypt #greatpyramid #egyptianarchitecture #architecturehistory #egyptology",
  "youtube_title": "Diary of Merer: the Great Pyramid's logbook (c. 2560 BC)",
  "facts": [
   {

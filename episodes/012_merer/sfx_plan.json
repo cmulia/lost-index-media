@@ -1,0 +1,11 @@
+[
+ {"beat": 0, "prompt": "dry desert wind over sand, then a single soft rustle of old papyrus", "gain": 0.3, "file": "audio/sfx/b00.mp3"},
+ {"beat": 1, "prompt": "small waves lapping on a sandy shore, distant gulls, calm", "gain": 0.3, "file": "audio/sfx/b01.mp3"},
+ {"beat": 2, "prompt": "wooden oars dipping into a river in slow rhythm, water dripping off the blades", "gain": 0.36, "file": "audio/sfx/b02.mp3"},
+ {"beat": 3, "prompt": "wooden boat hull creaking, ropes tightening, a heavy stone block set down on a wooden deck", "gain": 0.38, "file": "audio/sfx/b03.mp3"},
+ {"beat": 5, "prompt": "reed pen scratching on papyrus, faint steady oar strokes in the background", "gain": 0.3, "file": "audio/sfx/b05.mp3"},
+ {"beat": 6, "prompt": "dry grain poured into a woven basket, then papyrus unrolled", "gain": 0.32, "file": "audio/sfx/b06.mp3"},
+ {"beat": 7, "prompt": "low wind over sand, then one deep frame drum hit", "gain": 0.42, "file": "audio/sfx/b07.mp3"},
+ {"beat": 8, "prompt": "bread dough slapped on a wooden board, a small wood fire crackling in a clay oven", "gain": 0.3, "file": "audio/sfx/b08.mp3"},
+ {"beat": 9, "prompt": "a papyrus scroll rolled shut and tied with string, wind fading to silence", "gain": 0.33, "file": "audio/sfx/b09.mp3"}
+]

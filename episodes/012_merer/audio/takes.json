@@ -1,0 +1,6 @@
+[
+ {"n": 1, "generation_id": "eQEjEiRDvBMPRfHvC80t", "duration": null, "chosen": false, "status": "failed: quota exceeded (0 of 40000 credits left, 780 needed)"},
+ {"n": 2, "generation_id": "KMpDEUPZpmdlplQwdNKs", "duration": null, "chosen": false, "status": "failed: quota exceeded (0 of 40000 credits left, 780 needed)"},
+ {"n": 3, "generation_id": "ENPpEiPbh1aPYXUn22Ce", "duration": null, "chosen": false, "status": "failed: quota exceeded (0 of 40000 credits left, 780 needed)"},
+ {"n": 4, "generation_id": "UoW4VHTru2lzYLaGllkm", "duration": null, "chosen": false, "status": "failed: quota exceeded (0 of 40000 credits left, 780 needed)"}
+]

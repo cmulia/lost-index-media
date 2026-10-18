@@ -1,0 +1,11 @@
+[
+ {"beat": 0, "prompt": "vast echoing marble train station hall, distant footsteps and crowd murmur, a faint departure announcement far away", "gain": 0.34, "file": "audio/sfx/b00.mp3"},
+ {"beat": 2, "prompt": "steam locomotive bell ringing and a long steam hiss far below, muffled city street noise", "gain": 0.3, "file": "audio/sfx/b02.mp3"},
+ {"beat": 3, "prompt": "small crowd of protesters chanting on a city sidewalk, cars passing", "gain": 0.3, "file": "audio/sfx/b03.mp3"},
+ {"beat": 4, "prompt": "jackhammers, then heavy stone blocks crashing down, rubble settling and dust", "gain": 0.45, "file": "audio/sfx/b04.mp3"},
+ {"beat": 5, "prompt": "old printing press rumbling, then a single newspaper page turned", "gain": 0.3, "file": "audio/sfx/b05.mp3"},
+ {"beat": 6, "prompt": "fountain pen signing paper, then a single wooden gavel tap", "gain": 0.38, "file": "audio/sfx/b06.mp3"},
+ {"beat": 7, "prompt": "busy train station concourse crowd murmur, a soft station clock chime", "gain": 0.28, "file": "audio/sfx/b07.mp3"},
+ {"beat": 8, "prompt": "dump truck bed tipping, stone rubble sliding into wet mud, marsh birds calling", "gain": 0.4, "file": "audio/sfx/b08.mp3"},
+ {"beat": 10, "prompt": "wind through marsh reeds, a far-off train horn across the marsh, fading to silence", "gain": 0.38, "file": "audio/sfx/b10.mp3"}
+]

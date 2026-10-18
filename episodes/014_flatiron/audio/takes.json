@@ -1,0 +1,39 @@
+{
+ "flow_id": "jGhkZrCAx1IGy1EDa75t",
+ "voice": "Kurt 42MPlPHxazRyNGWpSUyy",
+ "model": "eleven_v4",
+ "takes": [
+  {
+   "n": 1,
+   "session_id": "HzLIjecp3AsDfRUGGiDh",
+   "generation_id": "PWxP2DotxY3KP1hhO5KU",
+   "duration": null,
+   "chosen": false,
+   "status": "failed: quota exceeded (0 credits remaining, 878 required)"
+  },
+  {
+   "n": 2,
+   "session_id": "eB6QpNfB6upbDRKoEayC",
+   "generation_id": "iAgJ6WAWIn6iX8AsJkq8",
+   "duration": null,
+   "chosen": false,
+   "status": "failed: quota exceeded (0 credits remaining, 878 required)"
+  },
+  {
+   "n": 3,
+   "session_id": "f046pBUkpjdByvKiLcKt",
+   "generation_id": "ETwopFEXbvZzbb28ixyh",
+   "duration": null,
+   "chosen": false,
+   "status": "failed: quota exceeded (0 credits remaining, 878 required)"
+  },
+  {
+   "n": 4,
+   "session_id": "1Ft6HEKsR8FFpkiCMlbP",
+   "generation_id": "TYoHYDJIixoUjyM0WXWM",
+   "duration": null,
+   "chosen": false,
+   "status": "failed: quota exceeded (0 credits remaining, 878 required)"
+  }
+ ]
+}

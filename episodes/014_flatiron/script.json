@@ -13,8 +13,15 @@
    "visual": {
     "type": "photo",
     "asset": "stieglitz_1903",
+    "layout": "portrait",
+    "width": 500,
+    "max_height": 990,
     "zoom_from": 1.0,
-    "zoom_to": 1.08
+    "zoom_to": 1.06,
+    "focus": [
+     0.5,
+     0.45
+    ]
    },
    "label": "the flatiron · alfred stieglitz · 1903",
    "sublabel": "public domain",
@@ -30,11 +37,12 @@
    "visual": {
     "type": "photo",
     "asset": "construction_1902",
+    "layout": "wide",
     "zoom_from": 1.0,
-    "zoom_to": 1.06
+    "zoom_to": 1.05
    },
    "label": "under construction · 1901–02",
-   "sublabel": "new york times photo · library of congress",
+   "sublabel": "nyt archive · loc",
    "date_label": "completed",
    "date": "1902",
    "sfx": "riveting hammers and a steam crane, distant",
@@ -43,13 +51,22 @@
   {
    "text": "Officially, it was the Fuller Building. Everyone called it the Flatiron. ",
    "caption": "officially, it was the fuller building. everyone called it the flatiron.",
-   "big": "the flatiron.",
+   "big": "flatiron.",
    "visual": {
     "type": "photo",
-    "asset": "street_1902"
+    "asset": "postcard_trams",
+    "layout": "portrait",
+    "width": 470,
+    "max_height": 720,
+    "zoom_from": 1.0,
+    "zoom_to": 1.05,
+    "focus": [
+     0.5,
+     0.4
+    ]
    },
-   "label": "madison square · biograph film still · 1902",
-   "sublabel": "american mutoscope & biograph · public domain",
+   "label": "flatiron postcard · after 1902",
+   "sublabel": "public domain",
    "date_label": null,
    "date": null,
    "sfx": "horse carriages and hooves on cobbles, street bustle c. 1902",
@@ -62,13 +79,20 @@
    "visual": {
     "type": "photo",
     "asset": "prow_detroit",
+    "layout": "portrait",
+    "width": 470,
+    "max_height": 640,
     "zoom_from": 1.05,
-    "zoom_to": 1.15
+    "zoom_to": 1.15,
+    "focus": [
+     0.38,
+     0.42
+    ]
    },
-   "label": "the prow at 23rd street",
-   "sublabel": "detroit publishing co. · library of congress",
-   "date_label": null,
-   "date": null,
+   "label": "the prow · 23rd street",
+   "sublabel": "detroit publishing co. · loc",
+   "date_label": "photographed",
+   "date": "c. 1905–15",
    "sfx": "wind rising, whistling around a stone corner",
    "dark": false
   },
@@ -109,10 +133,17 @@
    "big": null,
    "visual": {
     "type": "photo",
-    "asset": "postcard_trams"
+    "asset": "chicago_trib_spare",
+    "layout": "wide",
+    "zoom_from": 1.08,
+    "zoom_to": 1.14,
+    "focus": [
+     0.48,
+     0.42
+    ]
    },
-   "label": "flatiron postcard · early 1900s",
-   "sublabel": "wikimedia commons",
+   "label": "the corner · october 1903",
+   "sublabel": "chicago daily news",
    "date_label": "wrote",
    "date": "1904",
    "sfx": "a policeman's whistle, two sharp blasts, crowd murmur",
@@ -171,9 +202,13 @@
     "type": "photo",
     "asset": "steichen_1904",
     "zoom_from": 1.0,
-    "zoom_to": 1.06
+    "zoom_to": 1.06,
+    "focus": [
+     0.45,
+     0.5
+    ]
    },
-   "label": "the flatiron at dusk · edward steichen · 1904",
+   "label": "the flatiron · edward steichen · 1904",
    "sublabel": "public domain",
    "date_label": null,
    "date": null,
@@ -187,11 +222,11 @@
    "key": "stieglitz_1903",
    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg/1600px-Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg",
-   "author": "Alfred Stieglitz (1864–1946); scan via Google Arts & Culture",
-   "date": "1903 (negative); photogravure published in Camera Work",
-   "license": "Public domain (published before 1931 / PD-old; confirm template in _pages wikitext)",
-   "shows": "The Flatiron, Stieglitz's photogravure of the Flatiron Building seen through a snow-covered tree in Madison Square. Tall vertical original, about 2,666 x 5,292 px (per search snippet).",
-   "changes": "cropped to 9:16, slow push, gentle grade"
+   "author": "Alfred Stieglitz (1864–1946); J. Paul Getty Museum print, scan via Google Art Project",
+   "date": "1903 (photogravure)",
+   "license": "Public domain ({{PD-Art|PD-old-auto-1923|deathyear=1946}} on Commons)",
+   "shows": "The Flatiron, Stieglitz's photogravure of the Flatiron Building seen through a snow-covered tree in Madison Square. File as fetched: 1920 x 3811 px.",
+   "changes": "shown as a tall portrait plate (almost uncropped), slow push, archival grade"
   },
   {
    "key": "construction_1902",
@@ -199,49 +234,49 @@
    "page": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_Construction,_New_York_Times_-_Library_of_Congress,_1901-1902_crop.JPG",
    "author": "New York Times photo archive, credited to the Library of Congress",
    "date": "1901–1902",
-   "license": "Public domain in the US (published before 1931; confirm template)",
-   "shows": "The Flatiron Building's steel frame under construction (cropped from a construction series). Size not confirmed, so the original-file URL is given.",
-   "changes": "cropped to vertical, slow push"
+   "license": "Public domain ({{PD-US}} on Commons)",
+   "shows": "Three stages of the Flatiron Building going up, from steel frame to finished building (Commons crop of a construction series). File as fetched: 520 x 371 px.",
+   "changes": "shown whole as a wide plate, slow push"
   },
   {
    "key": "street_1902",
    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv/1280px--Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv",
-   "author": "American Mutoscope and Biograph Company",
-   "date": "filmed 8 October 1902 (Commons lists 1903)",
-   "license": "Public domain (PD-US-expired)",
-   "shows": "Still frame from a Biograph panorama looking south from Madison Square to the new Fuller (Flatiron) Building, with street traffic. VIDEO FILE: the fetch should return the Commons poster-frame JPEG; check the file type, or extract a frame with ffmpeg if it arrives as video.",
-   "changes": "single frame extracted, cropped to vertical, slow push"
+   "author": "American Mutoscope & Biograph Co. (camera Robert K. Bonine); © 4 June 1903, H32387",
+   "date": "filmed 8 October 1902",
+   "license": "Public domain ({{PD-US-expired}} on Commons)",
+   "shows": "Commons poster frame of the Biograph 'Panorama of Flatiron Building'. Fetched JPEG is a real image but only 250 x 187 px and a blurred close-up of the facade.",
+   "changes": "NOT USED: too small for a plate; beat 2 uses postcard_trams instead"
   },
   {
    "key": "prow_detroit",
    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flat-iron_4a12277v.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Flat-iron_4a12277v.jpg",
-   "author": "Detroit Publishing Co. (Library of Congress, Prints & Photographs, digital ID det 4a12277) — UNCONFIRMED, check _pages",
-   "date": "c. 1902–1905 (unconfirmed)",
-   "license": "Public domain (PD-Detroit / no known restrictions) — confirm template",
-   "shows": "Early view of the Flatiron Building and its narrow north prow at 23rd Street (file seen only in a Commons category listing; contents to confirm on fetch).",
-   "changes": "cropped to vertical on the prow, slow push"
+   "author": "Detroit Publishing Co., publisher (Library of Congress, LC-D4-18111, digital ID det.4a12277)",
+   "date": "between 1905 and 1915",
+   "license": "Public domain ({{PD-Detroit}} on Commons; LoC: no known restrictions on publication)",
+   "shows": "'Flat-iron [i.e. Flatiron Building] corner after snow storm, New York': looking down Fifth Avenue from Madison Square to the narrow north end (prow) of the Flatiron. File as fetched: 757 x 947 px.",
+   "changes": "portrait plate, framed and pushed in on the prow"
   },
   {
    "key": "postcard_trams",
    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/FlatIronBuildingPostcardTramsEarlyCentury.JPG",
    "page": "https://commons.wikimedia.org/wiki/File:FlatIronBuildingPostcardTramsEarlyCentury.JPG",
-   "author": "Unknown publisher (early-1900s postcard) — UNCONFIRMED, check _pages",
-   "date": "early 1900s (unconfirmed)",
-   "license": "Unconfirmed: expected PD (pre-1931 US publication); DROP if the wikitext tag is not PD/CC",
-   "shows": "Early-20th-century postcard of the Flatiron Building with streetcars at the corner.",
-   "changes": "cropped, slow lateral pan"
+   "author": "Unknown publisher (postcard 'N.Y. 337 · Flat Iron Building, New York'); Commons gives no author or source",
+   "date": "after 1902 (undated; Commons: looks pre-WWI)",
+   "license": "Public domain ({{PD-US}} on Commons)",
+   "shows": "Coloured early-1900s postcard of the Flatiron Building with streetcars and crowds; printed title 'FLAT IRON BUILDING, NEW YORK'. File as fetched: 259 x 428 px (small, shown at portrait-plate size).",
+   "changes": "portrait plate, slow push; used in beat 2"
   },
   {
    "key": "steichen_1904",
    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Steichen_flatiron.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Steichen_flatiron.jpg",
    "author": "Edward Steichen (1879–1973)",
-   "date": "1904 (published in Camera Work, 1906)",
-   "license": "Public domain in the US (published before 1931) — confirm template; the Met shows an ARS notice on a 1909 print, so use only if Commons tags it PD-US",
-   "shows": "The Flatiron at dusk, Madison Square, with carriage and silhouetted trees; blue-green tonal print. Size not confirmed, so the original-file URL is given.",
-   "changes": "cropped to vertical, slow push, dark grade"
+   "date": "1904",
+   "license": "Public domain in the US ({{PD-old-auto-expired|deathyear=1973}} on Commons, i.e. published before 1931); Commons source field is 'unknown'",
+   "shows": "The Flatiron at dusk, Madison Square, with carriage and silhouetted trees; blue-green tonal print. File as fetched: 1500 x 1901 px.",
+   "changes": "full-bleed on the dark closing beat, slow push, vertical shading"
   },
   {
    "key": "stieglitz_met_spare",
@@ -249,23 +284,23 @@
    "page": "https://commons.wikimedia.org/wiki/File:The_Flat-iron_MET_DT244585.jpg",
    "author": "Alfred Stieglitz; The Metropolitan Museum of Art 58.577.37 (Open Access)",
    "date": "1903 (photogravure)",
-   "license": "Public domain; Met Open Access CC0",
+   "license": "Public domain; Met Open Access, {{Cc-zero}} on Commons",
    "shows": "Spare: the Met's scan of Stieglitz's The Flat-iron photogravure. Fallback for stieglitz_1903.",
-   "changes": "spare, not used unless the hero file fails"
+   "changes": "spare, not used (the Getty scan of the same photogravure is used in beat 0)"
   },
   {
    "key": "chicago_trib_spare",
    "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Flatiron_Building_New_York_City_1903_Chicago_Trib.jpg",
    "page": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_New_York_City_1903_Chicago_Trib.jpg",
-   "author": "Unconfirmed (Chicago Tribune, 1903, per file name)",
-   "date": "1903 (per file name)",
-   "license": "Unconfirmed — check _pages before use",
-   "shows": "Spare: a 1903 view of the Flatiron Building, contents not confirmed.",
-   "changes": "spare, not used"
+   "author": "Chicago Daily News, Inc., photographer (Chicago Daily News negatives collection, Chicago History Museum, DN-0001198B); via Library of Congress",
+   "date": "October 1903",
+   "license": "Public domain ({{PD-US}} on Commons)",
+   "shows": "The Flatiron Building from the north in October 1903 (during Rev. John A. Dowie's visit to New York): horse-drawn carriages, pedestrians and a street cleaner at the corner. File as fetched: 635 x 457 px, greyscale. (The Commons file name says 'Chicago Trib' but the record is Chicago Daily News.)",
+   "changes": "wide plate, slow push; used in beat 6"
   }
  ],
- "tiktok_caption": "This building was blamed for lifting skirts, and for a famous bit of slang 🌬️ The wind was real. The slang is another story.\n\nWould you have said \"23 skidoo\"? 👇\n\nfile no. 014 · Images: Alfred Stieglitz, Edward Steichen, Biograph, NYT/Library of Congress, Detroit Publishing Co. (public domain) · Narration, sound & music: ElevenLabs\n\n#flatironbuilding #newyorkhistory #nyc #architecture #history",
- "instagram_caption": "The Flatiron Building was finished in 1902 on a wedge of land where Broadway crosses Fifth Avenue at 23rd Street. Officially it was the Fuller Building. Everyone called it the Flatiron.\n\nIts prow is only about six and a half feet wide. When a north wind hit that point, it split around the building and whipped down to the sidewalk, and the corner got a reputation as the windiest in the city.\n\nIn October 1903 a Biograph cameraman filmed people at the foot of the Flatiron clutching their hats and skirts. An English visitor, Philip Burne-Jones, wrote in 1904 that loafers gathered on the curb to watch women's skirts blow about, and that police moved them on.\n\nThat, the story goes, is where \"23 skidoo\" comes from: police shooing men off 23rd Street.\n\nEtymologists aren't so sure. \"Twenty-three\", meaning clear out, was already slang in 1899, three years before the building opened, and \"skidoo\" turns up in 1901. The wind was real. The slang just got there first.\n\nWould you have said \"23 skidoo\"? 👇\n\nfile no. 014\n\n—\nImages: The Flatiron, 1903, Alfred Stieglitz (public domain); The Flatiron, 1904, Edward Steichen (public domain); Flatiron Building under construction, 1901–02, New York Times photo archive / Library of Congress (public domain); Madison Square film still, 1902, American Mutoscope & Biograph (public domain); the Flatiron prow, Detroit Publishing Co. / Library of Congress (public domain); early-1900s Flatiron postcard, via Wikimedia Commons (public domain). The wind schematic and slang timeline were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#flatironbuilding #newyorkhistory #nyc #architecture #history",
+ "tiktok_caption": "This building was blamed for lifting skirts, and for a famous bit of slang 🌬️ The wind was real. The slang is another story.\n\nWould you have said \"23 skidoo\"? 👇\n\nfile no. 014 · Images: Alfred Stieglitz, Edward Steichen, NYT/Library of Congress, Chicago Daily News, Detroit Publishing Co., early-1900s postcard (public domain) · Narration, sound & music: ElevenLabs\n\n#flatironbuilding #newyorkhistory #nyc #architecture #history",
+ "instagram_caption": "The Flatiron Building was finished in 1902 on a wedge of land where Broadway crosses Fifth Avenue at 23rd Street. Officially it was the Fuller Building. Everyone called it the Flatiron.\n\nIts prow is only about six and a half feet wide. When a north wind hit that point, it split around the building and whipped down to the sidewalk, and the corner got a reputation as the windiest in the city.\n\nIn October 1903 a Biograph cameraman filmed people at the foot of the Flatiron clutching their hats and skirts. An English visitor, Philip Burne-Jones, wrote in 1904 that loafers gathered on the curb to watch women's skirts blow about, and that police moved them on.\n\nThat, the story goes, is where \"23 skidoo\" comes from: police shooing men off 23rd Street.\n\nEtymologists aren't so sure. \"Twenty-three\", meaning clear out, was already slang in 1899, three years before the building opened, and \"skidoo\" turns up in 1901. The wind was real. The slang just got there first.\n\nWould you have said \"23 skidoo\"? 👇\n\nfile no. 014\n\n—\nImages: The Flatiron, 1903, Alfred Stieglitz (public domain); The Flatiron, 1904, Edward Steichen (public domain); Flatiron Building under construction, 1901–02, New York Times photo archive / Library of Congress (public domain); the corner in October 1903, Chicago Daily News / Library of Congress (public domain); the Flatiron prow after a snowstorm, c. 1905–15, Detroit Publishing Co. / Library of Congress (public domain); early-1900s Flatiron postcard, publisher unknown, via Wikimedia Commons (public domain). The wind schematic and slang timeline were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#flatironbuilding #newyorkhistory #nyc #architecture #history",
  "youtube_title": "History of the Flatiron Building (1902) and \"23 skidoo\"",
  "facts": [
   {

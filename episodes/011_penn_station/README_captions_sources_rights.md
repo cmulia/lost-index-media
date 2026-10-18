@@ -19,7 +19,7 @@ Which lost building do you wish your city had saved? 👇
 file no. 011
 
 —
-Images: Pennsylvania Station waiting room, main concourse and Seventh Avenue facade, 1962, Historic American Buildings Survey (Cervin Robinson), Library of Congress (public domain); aerial view, 1910s, Detroit Publishing Co., Library of Congress (public domain); Grand Central Terminal, 1944, U.S. Office of War Information (public domain); Secaucus and the Meadowlands, 2014, Famartin, CC BY-SA 3.0; "Night" by Adolph Weinman at the Brooklyn Museum, Zeete, CC BY-SA 3.0. The timeline graphic was drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
+Images: Pennsylvania Station waiting room, main concourse and Seventh Avenue facade, 1962, Historic American Buildings Survey (Cervin Robinson), Library of Congress (public domain); aerial view, 1910s, Detroit Publishing Co., Library of Congress (public domain); Grand Central Terminal, 1944, U.S. Office of War Information (public domain); Secaucus and the Meadowlands, 2014, Famartin, CC BY-SA 3.0; "Night" by Adolph Weinman at the Brooklyn Museum, 2017, Zeete, CC BY-SA 4.0. The timeline graphic was drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.
 
 #pennstation #newyorkhistory #architecture #historicpreservation #nyc
 
@@ -29,7 +29,7 @@ New York protects its landmarks because it lost this one 🏛️ Pennsylvania St
 
 Which lost building do you wish your city had saved? 👇
 
-file no. 011 · Images: HABS/Library of Congress, Detroit Publishing Co., U.S. OWI (public domain), Famartin, Zeete (CC BY-SA 3.0) · Narration, sound & music: ElevenLabs
+file no. 011 · Images: HABS/Library of Congress, Detroit Publishing Co., U.S. OWI (public domain), Famartin (CC BY-SA 3.0), Zeete (CC BY-SA 4.0) · Narration, sound & music: ElevenLabs
 
 #pennstation #newyorkhistory #architecture #historicpreservation #nyc
 
@@ -68,12 +68,14 @@ How losing Penn Station (1963) created NYC's landmarks law (58 chars; add " #sho
 
 - **waiting_room**: [Penn Station interior.jpg](https://commons.wikimedia.org/wiki/File:Penn_Station_interior.jpg). General waiting room, looking from the northwest. Author: Cervin Robinson for HABS (NY,31-NEYO,78--6), Library of Congress. Date: 10 May 1962. Licence: public domain (HABS / U.S. National Park Service; PD-USGov). Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Penn_Station_interior.jpg/1600px-Penn_Station_interior.jpg`. Changes: cropped to vertical (full room; vault and columns), slow push, gentle grade.
 - **aerial_1910s**: [Pennsylvania Station aerial view, 1910s.jpg](https://commons.wikimedia.org/wiki/File:Pennsylvania_Station_aerial_view,_1910s.jpg). Aerial from the northeast. Author: Detroit Publishing Co., Library of Congress. Date: c. 1910–1920. Licence: public domain (pre-1929; LoC no known restrictions). Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Pennsylvania_Station_aerial_view%2C_1910s.jpg/1600px-Pennsylvania_Station_aerial_view%2C_1910s.jpg`. Changes: cropped to vertical, slow push.
-- **concourse_1962**: [NYP LOC2.jpg](https://commons.wikimedia.org/wiki/File:NYP_LOC2.jpg). Main concourse interior. Author: HABS, Library of Congress (photographer per HABS record, probably Cervin Robinson; confirm in _pages). Date: 24 April 1962. Licence: public domain (HABS). Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/NYP_LOC2.jpg/1600px-NYP_LOC2.jpg`. Changes: cropped to vertical, slow push.
+- **concourse_1962**: [NYP LOC2.jpg](https://commons.wikimedia.org/wiki/File:NYP_LOC2.jpg). Main concourse interior. Author: Cervin Robinson for HABS (NY,31-NEYO,78--8), Library of Congress (confirmed: `{{creator:Cervin Robinson}}` in the Commons wikitext). Date: 24 April 1962. Licence: public domain (`{{HABS}}`, checked). Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/NYP_LOC2.jpg/1600px-NYP_LOC2.jpg`. Changes: cropped to vertical, slow push.
 - **facade_1962**: [NYP LOC3.jpg](https://commons.wikimedia.org/wiki/File:NYP_LOC3.jpg). East (Seventh Avenue) facade. Author: Cervin Robinson for HABS (NY,31-NEYO,78--2). Date: 8 May 1962. Licence: public domain (HABS). Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/NYP_LOC3.jpg/1600px-NYP_LOC3.jpg`. Changes: cropped to vertical, slow push.
 - **grand_central_1944**: [The New York Grand Central Terminal.jpg](https://commons.wikimedia.org/wiki/File:The_New_York_Grand_Central_Terminal.jpg). South side of Grand Central with the New York Central (Helmsley) Building behind. Author: U.S. Office of War Information (no individual named; Commons cites MCNY). Date: 1944. Licence: public domain (FSA/OWI federal work). Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/The_New_York_Grand_Central_Terminal.jpg/1600px-The_New_York_Grand_Central_Terminal.jpg`. Changes: cropped to vertical, slow push.
 - **meadowlands_aerial**: [2014-05-07 16 23 15 View of New York City, Secaucus, ….JPG](https://commons.wikimedia.org/wiki/File:2014-05-07_16_23_15_View_of_New_York_City,_Secaucus,_New_Jersey,_the_Hackensack_River,_the_New_Jersey_Turnpike_Western_Spur_and_New_Jersey_Route_3_from_an_airplane_heading_for_Newark_Liberty_International_Airport.JPG). Secaucus, the Hackensack River and the Meadowlands from the air, Manhattan on the horizon. Illustrative only, not the landfill site. Author: Famartin (own work). Date: 7 May 2014. Licence: CC BY-SA 3.0. 3,264 × 2,448 px. Direct URL: original file (long filename; the workflow requests width=1600). Changes: cropped to vertical, slow push, darker grade.
-- **night_statue**: [Night, from Pennsylvania Station, by Weinman, at Brooklyn Museum, NY.jpg](https://commons.wikimedia.org/wiki/File:Night,_from_Pennsylvania_Station,_by_Weinman,_at_Brooklyn_Museum,_NY.jpg). Weinman's "Night" clock figure (c. 1910) in the Brooklyn Museum sculpture garden. 2,496 × 3,744 px. **Author and licence NOT confirmed**: probably Commons user Zeete, CC BY-SA 3.0 (same naming pattern as the Ringwood eagle file, which is Zeete, CC BY-SA 3.0). Confirm in `_pages/night_statue.html` and fix the on-screen sublabel and both captions if different. The sculpture itself (published 1910) is public domain. Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Night%2C_from_Pennsylvania_Station%2C_by_Weinman%2C_at_Brooklyn_Museum%2C_NY.jpg/1600px-Night%2C_from_Pennsylvania_Station%2C_by_Weinman%2C_at_Brooklyn_Museum%2C_NY.jpg`. Changes: cropped, slow push.
+- **night_statue**: [Night, from Pennsylvania Station, by Weinman, at Brooklyn Museum, NY.jpg](https://commons.wikimedia.org/wiki/File:Night,_from_Pennsylvania_Station,_by_Weinman,_at_Brooklyn_Museum,_NY.jpg). Weinman's "Night" clock figure (c. 1910) at the Brooklyn Museum (Commons: "on an outside wall"; the museum lists the Steinberg Family Sculpture Garden). 2,496 × 3,744 px. Author: Zeete (own work, Wiki Loves Monuments 2017). Photo date: 8 June 2017. Licence: **CC BY-SA 4.0** (`{{self|cc-by-sa-4.0}}`, checked in `_pages/night_statue.html`; not 3.0 as first assumed; sublabel and both captions updated). The sculpture itself (published 1910) is public domain. Direct URL: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Night%2C_from_Pennsylvania_Station%2C_by_Weinman%2C_at_Brooklyn_Museum%2C_NY.jpg/1600px-Night%2C_from_Pennsylvania_Station%2C_by_Weinman%2C_at_Brooklyn_Museum%2C_NY.jpg`. Changes: cropped, slow push.
 - **eagle_ringwood_spare** (not in beats): [Penn Station Eagle by Weinman, at Ringwood, NJ, on left.jpg](https://commons.wikimedia.org/wiki/File:Penn_Station_Eagle_by_Weinman,_at_Ringwood,_NJ,_on_left.jpg). One of Weinman's granite station eagles at Ringwood State Park. Author: Zeete. Date: 23 October 2010. Licence: CC BY-SA 3.0. 907 × 907 px (original URL). Fallback if night_statue fails its licence check (beat 9 text would need rewording).
+
+Licence check (Commons wikitext in `assets/_pages/`, read for every asset): waiting_room `{{PD-USGov-Interior-HABS}}`; concourse_1962 and facade_1962 `{{HABS}}`; aerial_1910s `{{PD-Detroit}}`; grand_central_1944 `{{PD-USGov-FSA}}`; meadowlands_aerial `{{self|cc-by-sa-3.0}}` (Famartin); night_statue `{{self|cc-by-sa-4.0}}` (Zeete); eagle_ringwood_spare `{{self|cc-by-sa-3.0}}` (Zeete, unused). All acceptable.
 
 Labelling on screen:
 - **Meadowlands aerial:** labelled with its 2014 date; it shows the marshes, not the landfill.
@@ -81,7 +83,7 @@ Labelling on screen:
 - **HABS photos:** all taken in spring 1962, the last full documentation before demolition.
 
 Attribution:
-- **CC BY-SA 3.0 (Famartin, Zeete):** credit plus licence link in the IG credits; our crops are adaptations under the same licence.
+- **CC BY-SA (Famartin 3.0, Zeete 4.0):** credit plus licence in the IG and TikTok credits; our crops are adaptations under the same licences.
 - **Everything else:** public domain (HABS / LoC / OWI / Detroit Publishing).
 
 Upload URLs:
@@ -96,6 +98,6 @@ Spare files seen but not used:
 
 Other assets:
 - **Timeline graphic (1910 → 1962 → 1963 → 1965 → 1978):** original graphic drawn for this video, labelled "schematic · drawn for this video".
-- **Narration:** ElevenLabs, model eleven_v4 (voice to be chosen). Commercial rights depend on the account's ElevenLabs plan.
+- **Narration:** ElevenLabs, model eleven_v4, voice Mark Vale (`PXMcl9zGUnc9w7DofLWk`). The first run (flow `SwEtskfjoRB9ESIEvBaQ`) failed on all four takes for lack of credits, so it still has to be generated. Commercial rights depend on the account's ElevenLabs plan.
 - **Sound effects, score:** to be generated with ElevenLabs for this video.
 - **Fonts:** IBM Plex Mono and Instrument Serif (SIL Open Font License).
