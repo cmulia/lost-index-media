@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "Agent",
+      "Skill",
+      "mcp__Buffer",
+      "mcp__ElevenLabs",
+      "mcp__ElevenLabs_Full",
+      "mcp__Github",
+      "mcp__claude-code-remote"
+    ]
+  }
+}
