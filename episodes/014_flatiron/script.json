@@ -1,0 +1,326 @@
+{
+ "file_no": "014",
+ "slug": "flatiron",
+ "title": "The Windiest Corner in New York",
+ "series_label": "file no. 014",
+ "voice_direction": "Wry, unhurried American storyteller (Kurt). Land the hook plainly, a small smile on 'Everyone called it the Flatiron' and on 'twenty-three skidoo'; slow down for 'Etymologists aren't so sure', and give the last line a dry, settled finish.",
+ "narration": "This building was blamed for lifting skirts. The Flatiron Building, finished in nineteen-oh-two where Broadway crosses Fifth Avenue. Officially, it was the Fuller Building. Everyone called it the Flatiron. At Twenty-third Street, its prow is about six and a half feet wide. When a north wind hit that point, it split and whipped down to the street. In October nineteen-oh-three, a film camera caught it: people on the corner, clutching their hats and skirts. An English visitor wrote that loafers gathered on the curb to watch, and police moved them on. That, the story goes, is where \"twenty-three skidoo\" comes from: police shooing men off Twenty-third Street. [pause] Etymologists aren't so sure. \"Twenty-three,\" meaning \"clear out,\" was already slang in eighteen ninety-nine, three years before the building opened. The wind was real. [pause] The slang just got there first.",
+ "beats": [
+  {
+   "text": "This building was blamed for lifting skirts. ",
+   "caption": "this building was blamed for lifting skirts.",
+   "big": "lifting skirts.",
+   "visual": {
+    "type": "photo",
+    "asset": "stieglitz_1903",
+    "zoom_from": 1.0,
+    "zoom_to": 1.08
+   },
+   "label": "the flatiron · alfred stieglitz · 1903",
+   "sublabel": "public domain",
+   "date_label": null,
+   "date": null,
+   "sfx": "a sharp gust of wind whipping past, fabric flapping",
+   "dark": false
+  },
+  {
+   "text": "The Flatiron Building, finished in nineteen-oh-two where Broadway crosses Fifth Avenue. ",
+   "caption": "the flatiron building, finished in 1902 where broadway crosses fifth avenue.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "construction_1902",
+    "zoom_from": 1.0,
+    "zoom_to": 1.06
+   },
+   "label": "under construction · 1901–02",
+   "sublabel": "new york times photo · library of congress",
+   "date_label": "completed",
+   "date": "1902",
+   "sfx": "riveting hammers and a steam crane, distant",
+   "dark": false
+  },
+  {
+   "text": "Officially, it was the Fuller Building. Everyone called it the Flatiron. ",
+   "caption": "officially, it was the fuller building. everyone called it the flatiron.",
+   "big": "the flatiron.",
+   "visual": {
+    "type": "photo",
+    "asset": "street_1902"
+   },
+   "label": "madison square · biograph film still · 1902",
+   "sublabel": "american mutoscope & biograph · public domain",
+   "date_label": null,
+   "date": null,
+   "sfx": "horse carriages and hooves on cobbles, street bustle c. 1902",
+   "dark": false
+  },
+  {
+   "text": "At Twenty-third Street, its prow is about six and a half feet wide. ",
+   "caption": "at 23rd street, its prow is about 6.5 feet wide.",
+   "big": "6.5 feet.",
+   "visual": {
+    "type": "photo",
+    "asset": "prow_detroit",
+    "zoom_from": 1.05,
+    "zoom_to": 1.15
+   },
+   "label": "the prow at 23rd street",
+   "sublabel": "detroit publishing co. · library of congress",
+   "date_label": null,
+   "date": null,
+   "sfx": "wind rising, whistling around a stone corner",
+   "dark": false
+  },
+  {
+   "text": "When a north wind hit that point, it split and whipped down to the street. ",
+   "caption": "when a north wind hit that point, it split and whipped down to the street.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "wind_wedge",
+    "panel": "light",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "strong gust splitting and swirling, leaves skittering on pavement",
+   "dark": false
+  },
+  {
+   "text": "In October nineteen-oh-three, a film camera caught it: people on the corner, clutching their hats and skirts. ",
+   "caption": "in october 1903, a film camera caught it: people on the corner, clutching their hats and skirts.",
+   "big": "hats. skirts.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "filmed",
+   "date": "october 1903",
+   "sfx": "hand-cranked film projector clatter under howling wind",
+   "dark": true
+  },
+  {
+   "text": "An English visitor wrote that loafers gathered on the curb to watch, and police moved them on. ",
+   "caption": "an english visitor wrote that loafers gathered on the curb to watch, and police moved them on.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "postcard_trams"
+   },
+   "label": "flatiron postcard · early 1900s",
+   "sublabel": "wikimedia commons",
+   "date_label": "wrote",
+   "date": "1904",
+   "sfx": "a policeman's whistle, two sharp blasts, crowd murmur",
+   "dark": false
+  },
+  {
+   "text": "That, the story goes, is where \"twenty-three skidoo\" comes from: police shooing men off Twenty-third Street. ",
+   "caption": "that, the story goes, is where \"23 skidoo\" comes from: police shooing men off 23rd street.",
+   "big": "23 skidoo.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "footsteps scattering, a whistle fading away",
+   "dark": false
+  },
+  {
+   "text": "[pause] Etymologists aren't so sure. ",
+   "caption": "etymologists aren't so sure.",
+   "big": "not so sure.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "low soft thump, wind drops away",
+   "dark": true
+  },
+  {
+   "text": "\"Twenty-three,\" meaning \"clear out,\" was already slang in eighteen ninety-nine, three years before the building opened. ",
+   "caption": "\"twenty-three,\" meaning \"clear out,\" was already slang in 1899, three years before the building opened.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "skidoo_timeline",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "in print",
+   "date": "1899",
+   "sfx": "newspaper press thumping, then a page turn",
+   "dark": false
+  },
+  {
+   "text": "The wind was real. [pause] The slang just got there first.",
+   "caption": "the wind was real. the slang just got there first.",
+   "big": "got there first.",
+   "visual": {
+    "type": "photo",
+    "asset": "steichen_1904",
+    "zoom_from": 1.0,
+    "zoom_to": 1.06
+   },
+   "label": "the flatiron at dusk · edward steichen · 1904",
+   "sublabel": "public domain",
+   "date_label": null,
+   "date": null,
+   "sfx": "one last soft gust, then quiet evening street tone",
+   "dark": true
+  }
+ ],
+ "music_mood": "Light ragtime-tinged felt piano and soft pizzicato strings around 84 bpm, playful and breezy with a brushed snare; it drops to a low sustained pad on the turn ('aren't so sure'), then returns as a sparse, wistful piano figure under the final line.",
+ "assets": [
+  {
+   "key": "stieglitz_1903",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg/1600px-Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg",
+   "author": "Alfred Stieglitz (1864–1946); scan via Google Arts & Culture",
+   "date": "1903 (negative); photogravure published in Camera Work",
+   "license": "Public domain (published before 1931 / PD-old; confirm template in _pages wikitext)",
+   "shows": "The Flatiron, Stieglitz's photogravure of the Flatiron Building seen through a snow-covered tree in Madison Square. Tall vertical original, about 2,666 x 5,292 px (per search snippet).",
+   "changes": "cropped to 9:16, slow push, gentle grade"
+  },
+  {
+   "key": "construction_1902",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flatiron_Building_Construction%2C_New_York_Times_-_Library_of_Congress%2C_1901-1902_crop.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_Construction,_New_York_Times_-_Library_of_Congress,_1901-1902_crop.JPG",
+   "author": "New York Times photo archive, credited to the Library of Congress",
+   "date": "1901–1902",
+   "license": "Public domain in the US (published before 1931; confirm template)",
+   "shows": "The Flatiron Building's steel frame under construction (cropped from a construction series). Size not confirmed, so the original-file URL is given.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "street_1902",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv/1280px--Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv",
+   "author": "American Mutoscope and Biograph Company",
+   "date": "filmed 8 October 1902 (Commons lists 1903)",
+   "license": "Public domain (PD-US-expired)",
+   "shows": "Still frame from a Biograph panorama looking south from Madison Square to the new Fuller (Flatiron) Building, with street traffic. VIDEO FILE: the fetch should return the Commons poster-frame JPEG; check the file type, or extract a frame with ffmpeg if it arrives as video.",
+   "changes": "single frame extracted, cropped to vertical, slow push"
+  },
+  {
+   "key": "prow_detroit",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flat-iron_4a12277v.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flat-iron_4a12277v.jpg",
+   "author": "Detroit Publishing Co. (Library of Congress, Prints & Photographs, digital ID det 4a12277) — UNCONFIRMED, check _pages",
+   "date": "c. 1902–1905 (unconfirmed)",
+   "license": "Public domain (PD-Detroit / no known restrictions) — confirm template",
+   "shows": "Early view of the Flatiron Building and its narrow north prow at 23rd Street (file seen only in a Commons category listing; contents to confirm on fetch).",
+   "changes": "cropped to vertical on the prow, slow push"
+  },
+  {
+   "key": "postcard_trams",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/FlatIronBuildingPostcardTramsEarlyCentury.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:FlatIronBuildingPostcardTramsEarlyCentury.JPG",
+   "author": "Unknown publisher (early-1900s postcard) — UNCONFIRMED, check _pages",
+   "date": "early 1900s (unconfirmed)",
+   "license": "Unconfirmed: expected PD (pre-1931 US publication); DROP if the wikitext tag is not PD/CC",
+   "shows": "Early-20th-century postcard of the Flatiron Building with streetcars at the corner.",
+   "changes": "cropped, slow lateral pan"
+  },
+  {
+   "key": "steichen_1904",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Steichen_flatiron.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Steichen_flatiron.jpg",
+   "author": "Edward Steichen (1879–1973)",
+   "date": "1904 (published in Camera Work, 1906)",
+   "license": "Public domain in the US (published before 1931) — confirm template; the Met shows an ARS notice on a 1909 print, so use only if Commons tags it PD-US",
+   "shows": "The Flatiron at dusk, Madison Square, with carriage and silhouetted trees; blue-green tonal print. Size not confirmed, so the original-file URL is given.",
+   "changes": "cropped to vertical, slow push, dark grade"
+  },
+  {
+   "key": "stieglitz_met_spare",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Flat-iron_MET_DT244585.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Flat-iron_MET_DT244585.jpg",
+   "author": "Alfred Stieglitz; The Metropolitan Museum of Art 58.577.37 (Open Access)",
+   "date": "1903 (photogravure)",
+   "license": "Public domain; Met Open Access CC0",
+   "shows": "Spare: the Met's scan of Stieglitz's The Flat-iron photogravure. Fallback for stieglitz_1903.",
+   "changes": "spare, not used unless the hero file fails"
+  },
+  {
+   "key": "chicago_trib_spare",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Flatiron_Building_New_York_City_1903_Chicago_Trib.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_New_York_City_1903_Chicago_Trib.jpg",
+   "author": "Unconfirmed (Chicago Tribune, 1903, per file name)",
+   "date": "1903 (per file name)",
+   "license": "Unconfirmed — check _pages before use",
+   "shows": "Spare: a 1903 view of the Flatiron Building, contents not confirmed.",
+   "changes": "spare, not used"
+  }
+ ],
+ "tiktok_caption": "This building was blamed for lifting skirts, and for a famous bit of slang 🌬️ The wind was real. The slang is another story.\n\nWould you have said \"23 skidoo\"? 👇\n\nfile no. 014 · Images: Alfred Stieglitz, Edward Steichen, Biograph, NYT/Library of Congress, Detroit Publishing Co. (public domain) · Narration, sound & music: ElevenLabs\n\n#flatironbuilding #newyorkhistory #nyc #architecture #history",
+ "instagram_caption": "The Flatiron Building was finished in 1902 on a wedge of land where Broadway crosses Fifth Avenue at 23rd Street. Officially it was the Fuller Building. Everyone called it the Flatiron.\n\nIts prow is only about six and a half feet wide. When a north wind hit that point, it split around the building and whipped down to the sidewalk, and the corner got a reputation as the windiest in the city.\n\nIn October 1903 a Biograph cameraman filmed people at the foot of the Flatiron clutching their hats and skirts. An English visitor, Philip Burne-Jones, wrote in 1904 that loafers gathered on the curb to watch women's skirts blow about, and that police moved them on.\n\nThat, the story goes, is where \"23 skidoo\" comes from: police shooing men off 23rd Street.\n\nEtymologists aren't so sure. \"Twenty-three\", meaning clear out, was already slang in 1899, three years before the building opened, and \"skidoo\" turns up in 1901. The wind was real. The slang just got there first.\n\nWould you have said \"23 skidoo\"? 👇\n\nfile no. 014\n\n—\nImages: The Flatiron, 1903, Alfred Stieglitz (public domain); The Flatiron, 1904, Edward Steichen (public domain); Flatiron Building under construction, 1901–02, New York Times photo archive / Library of Congress (public domain); Madison Square film still, 1902, American Mutoscope & Biograph (public domain); the Flatiron prow, Detroit Publishing Co. / Library of Congress (public domain); early-1900s Flatiron postcard, via Wikimedia Commons (public domain). The wind schematic and slang timeline were drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#flatironbuilding #newyorkhistory #nyc #architecture #history",
+ "youtube_title": "History of the Flatiron Building (1902) and \"23 skidoo\"",
+ "facts": [
+  {
+   "claim": "The Flatiron (Fuller) Building, designed by D. H. Burnham & Co. and built by the George A. Fuller Co., was completed in 1902 (opened 1 October 1902) at Broadway, Fifth Avenue and 23rd Street; NYC landmark 20 September 1966 (LP-0219)",
+   "source": "NYC Landmarks Preservation Commission designation (LP-0219, 1966) via NYC LPC photo collection record; Wikipedia 'Flatiron Building'; Britannica 'Flatiron Building'",
+   "url": "https://nyclandmarks.lunaimaging.com/luna/servlet/detail/NYClandmarks~2~2~415~24475:Flatiron-Building"
+  },
+  {
+   "claim": "Its official name was the Fuller Building; the triangular plot was already called the 'flatiron' before construction (Chicago Daily Tribune, 27 May 1901: 'the new flatiron building to be erected at the junction of Broadway, Twenty-third Street, and Fifth avenue')",
+   "source": "Barry Popik, 'Flatiron District (Flatiron Building)', quoting Chicago Daily Tribune 27 May 1901 p. 5; History.com 'Flatiron Building'",
+   "url": "https://barrypopik.com/blog/flatiron_district_flatiron_building"
+  },
+  {
+   "claim": "The prow at the narrow north end is about 6.5 feet (2 m) wide",
+   "source": "Britannica 'Flatiron Building'; Wikipedia 'Flatiron Building'",
+   "url": "https://www.britannica.com/print/article/1518845"
+  },
+  {
+   "claim": "Wind from the north split around the building; downdrafts made the corner notoriously gusty",
+   "source": "Wikipedia 'Flatiron Building' (wind section); Library of Congress catalogue note for 'At the Foot of the Flatiron' (corner said by historians to be the windiest in the city)",
+   "url": "https://en.wikipedia.org/wiki/Flatiron_Building"
+  },
+  {
+   "claim": "In October 1903 Biograph cameraman A. E. Weed filmed pedestrians at the Flatiron's north corner on a very windy day, holding onto hats and skirts (copyright 2 November 1903; shot c. 26 October 1903)",
+   "source": "Library of Congress, 'At the foot of the Flatiron' (Paper Print Collection, item 00694378); Silent Era PSFL entry",
+   "url": "https://www.loc.gov/item/00694378"
+  },
+  {
+   "claim": "Philip Burne-Jones (Dollars and Democracy, D. Appleton, New York, 1904) described loafers gathering on the curb at the corner to watch women's skirts blow about, and police 'moving on' anyone loitering there",
+   "source": "Columbia University Libraries record for Dollars and Democracy (1904); passage as reproduced by Edwardian Promenade and Rockwell Center (paraphrased in narration, not quoted)",
+   "url": "https://dlc.library.columbia.edu/durst/cul:3tx95x69x5"
+  },
+  {
+   "claim": "The popular story says '23 skidoo' came from police shooing men away from the 23rd Street corner",
+   "source": "Library of Congress catalogue note for 'At the Foot of the Flatiron'; Museum of the City of New York ('some say')",
+   "url": "https://www.loc.gov/item/00694378"
+  },
+  {
+   "claim": "The origin of '23 skidoo' is uncertain; 'twenty-three' as slang for leaving is in print by March 1899 (Morning Herald, Kentucky, 17 March 1899; George Ade 1899), 'skidoo' by 1901, and '23 skidoo' as a catchphrase from 1906, so the Flatiron cannot be the source of 'twenty-three'",
+   "source": "Barry Popik, 'Twenty-Three Skidoo (23rd Street myth)'; Wikipedia '23 skidoo' (citing the 1899 Morning Herald); Michelle Nevius, 'Postcard Thursday: Twenty-Three Skidoo'; FlatironNoMad Partnership 'origins are murky'",
+   "url": "https://barrypopik.com/blog/twenty_three_skidoo_myth"
+  },
+  {
+   "claim": "Alfred Stieglitz photographed the new Flatiron in a snowstorm in 1903 and published it as a photogravure in Camera Work",
+   "source": "Art Institute of Chicago, 'The Flatiron, 1903'; National Gallery of Art, 'The Flatiron' (key set); The Met 58.577.37",
+   "url": "https://www.artic.edu/artworks/66315/the-flatiron"
+  },
+  {
+   "claim": "Edward Steichen photographed the Flatiron at dusk in 1904 (The Met 33.43.43 and 33.43.39, Alfred Stieglitz Collection; which Met URL is which print is unconfirmed)",
+   "source": "The Metropolitan Museum of Art, 'The Flatiron' (Steichen, 1904)",
+   "url": "https://www.metmuseum.org/art/collection/search/267838"
+  }
+ ],
+ "diagram_notes": {
+  "wind_wedge": "Plan view (north at top) of the triangular Flatiron block: Fifth Avenue on the left and Broadway on the right converging to the narrow prow at 23rd Street, 22nd Street along the base, Madison Square to the north. Mark the prow width '≈ 6.5 ft'. Animate north-wind arrows hitting the prow, splitting down both façades, plus a curling downdraft arrow at the 23rd Street corner and a few tiny pedestrian dots. Label 'schematic · drawn for this video · not to scale'.",
+  "skidoo_timeline": "Dark-panel timeline: 1899 'twenty-three' (slang for 'clear out') in print → 1901 'skidoo' → Oct 1902 Flatiron opens → 1906 '23 skidoo' catches on. Highlight the 1899 marker sitting before the building. Label 'illustration · drawn for this video'."
+ }
+}

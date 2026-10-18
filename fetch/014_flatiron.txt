@@ -1,0 +1,16 @@
+episodes/014_flatiron/assets/stieglitz_1903.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg/1600px-Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg
+episodes/014_flatiron/assets/_pages/stieglitz_1903.html https://commons.wikimedia.org/wiki/File:Alfred_Stieglitz_-_The_Flatiron_Building_-_Google_Art_Project.jpg?action=raw
+episodes/014_flatiron/assets/construction_1902.jpg https://upload.wikimedia.org/wikipedia/commons/4/47/Flatiron_Building_Construction%2C_New_York_Times_-_Library_of_Congress%2C_1901-1902_crop.JPG
+episodes/014_flatiron/assets/_pages/construction_1902.html https://commons.wikimedia.org/wiki/File:Flatiron_Building_Construction,_New_York_Times_-_Library_of_Congress,_1901-1902_crop.JPG?action=raw
+episodes/014_flatiron/assets/street_1902.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv/1280px--Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv.jpg
+episodes/014_flatiron/assets/_pages/street_1902.html https://commons.wikimedia.org/wiki/File:Flatiron_Building_and_Street_Scene_October_8th_1902_New_York_City.ogv?action=raw
+episodes/014_flatiron/assets/prow_detroit.jpg https://upload.wikimedia.org/wikipedia/commons/f/ff/Flat-iron_4a12277v.jpg
+episodes/014_flatiron/assets/_pages/prow_detroit.html https://commons.wikimedia.org/wiki/File:Flat-iron_4a12277v.jpg?action=raw
+episodes/014_flatiron/assets/postcard_trams.jpg https://upload.wikimedia.org/wikipedia/commons/c/c6/FlatIronBuildingPostcardTramsEarlyCentury.JPG
+episodes/014_flatiron/assets/_pages/postcard_trams.html https://commons.wikimedia.org/wiki/File:FlatIronBuildingPostcardTramsEarlyCentury.JPG?action=raw
+episodes/014_flatiron/assets/steichen_1904.jpg https://upload.wikimedia.org/wikipedia/commons/f/f7/Steichen_flatiron.jpg
+episodes/014_flatiron/assets/_pages/steichen_1904.html https://commons.wikimedia.org/wiki/File:Steichen_flatiron.jpg?action=raw
+episodes/014_flatiron/assets/stieglitz_met_spare.jpg https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Flat-iron_MET_DT244585.jpg
+episodes/014_flatiron/assets/_pages/stieglitz_met_spare.html https://commons.wikimedia.org/wiki/File:The_Flat-iron_MET_DT244585.jpg?action=raw
+episodes/014_flatiron/assets/chicago_trib_spare.jpg https://upload.wikimedia.org/wikipedia/commons/5/58/Flatiron_Building_New_York_City_1903_Chicago_Trib.jpg
+episodes/014_flatiron/assets/_pages/chicago_trib_spare.html https://commons.wikimedia.org/wiki/File:Flatiron_Building_New_York_City_1903_Chicago_Trib.jpg?action=raw
