@@ -1,0 +1,346 @@
+{
+ "file_no": "011",
+ "slug": "penn_station",
+ "title": "The Station That Saved New York's Landmarks",
+ "series_label": "file no. 011",
+ "voice_direction": "Measured, warm documentary delivery with a hint of gravity; let the hook land plainly, slow down and lower for the Times quote, a small dry beat on 'It didn't help', and a hushed, settled last line after the pause.",
+ "narration": "New York saves its landmarks because of the one it lost. Pennsylvania Station, nineteen ten. A waiting room inspired by the baths of ancient Rome. In the sixties, the railroad agreed to replace it with Madison Square Garden. Architects picketed outside. It didn't help. On October twenty-eighth, nineteen sixty-three, the wrecking began. The New York Times wrote: [pause] \"We will probably be judged not by the monuments we build but by those we have destroyed.\" Within two years, New York had a Landmarks Law. In nineteen seventy-eight, the Supreme Court upheld it, protecting Grand Central. And the old station? Much of it, statues included, went to a landfill in the New Jersey Meadowlands. One statue, called Night, was pulled back out. It stands in Brooklyn now. The rest, as far as anyone knows, is still out there. [pause] Under the marsh.",
+ "beats": [
+  {
+   "text": "New York saves its landmarks because of the one it lost. ",
+   "caption": "new york saves its landmarks because of the one it lost.",
+   "big": "the one it lost.",
+   "visual": {
+    "type": "photo",
+    "asset": "waiting_room",
+    "zoom_from": 1.0,
+    "zoom_to": 1.08
+   },
+   "label": "pennsylvania station · waiting room · 1962",
+   "sublabel": "cervin robinson · habs · loc",
+   "date_label": null,
+   "date": null,
+   "sfx": "vast echoing station hall: footsteps, murmur, a distant departure call",
+   "dark": false
+  },
+  {
+   "text": "Pennsylvania Station, nineteen ten. A waiting room inspired by the baths of ancient Rome. ",
+   "caption": "pennsylvania station, 1910. a waiting room inspired by the baths of ancient rome.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "waiting_room",
+    "focus": [
+     0.5,
+     0.35
+    ],
+    "zoom_from": 1.35,
+    "zoom_to": 1.48
+   },
+   "label": "waiting room · 150 ft ceiling",
+   "sublabel": "cervin robinson · habs · loc",
+   "date_label": "opened",
+   "date": "1910",
+   "sfx": "long reverberant hall tone, a single heel-step echoing",
+   "dark": false
+  },
+  {
+   "text": "In the sixties, the railroad agreed to replace it with Madison Square Garden. ",
+   "caption": "in the 1960s, the railroad agreed to replace it with madison square garden.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "aerial_1910s",
+    "zoom_from": 1.05,
+    "zoom_to": 1.15
+   },
+   "label": "pennsylvania station from above · 1910s",
+   "sublabel": "detroit publishing co. · loc",
+   "date_label": null,
+   "date": null,
+   "sfx": "steam locomotive bell and hiss, far below street noise",
+   "dark": false
+  },
+  {
+   "text": "Architects picketed outside. It didn't help. ",
+   "caption": "architects picketed outside. it didn't help.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "facade_1962",
+    "zoom_from": 1.0,
+    "zoom_to": 1.07
+   },
+   "label": "seventh avenue colonnade · may 1962",
+   "sublabel": "cervin robinson · habs · loc",
+   "date_label": "picket",
+   "date": "2 august 1962",
+   "sfx": "small crowd chanting on a sidewalk, traffic passing",
+   "dark": false
+  },
+  {
+   "text": "On October twenty-eighth, nineteen sixty-three, the wrecking began. ",
+   "caption": "on october 28, 1963, the wrecking began.",
+   "big": "torn down.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "demolition began",
+   "date": "28 october 1963",
+   "sfx": "jackhammers, then heavy stone crashing down and settling dust",
+   "dark": true
+  },
+  {
+   "text": "The New York Times wrote: [pause] \"We will probably be judged not by the monuments we build but by those we have destroyed.\" ",
+   "caption": "the new york times wrote: \"we will probably be judged not by the monuments we build but by those we have destroyed.\"",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "concourse_1962",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "main concourse · april 1962",
+   "sublabel": "habs · library of congress",
+   "date_label": "editorial",
+   "date": "30 october 1963",
+   "sfx": "newspaper press rumble, then one page turned",
+   "dark": false
+  },
+  {
+   "text": "Within two years, New York had a Landmarks Law. ",
+   "caption": "within two years, new york had a landmarks law.",
+   "big": "landmarks law.",
+   "visual": {
+    "type": "diagram",
+    "name": "landmarks_timeline",
+    "panel": "light",
+    "height": 760
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": "signed",
+   "date": "19 april 1965",
+   "sfx": "pen signing paper, then a single gavel tap",
+   "dark": false
+  },
+  {
+   "text": "In nineteen seventy-eight, the Supreme Court upheld it, protecting Grand Central. ",
+   "caption": "in 1978, the supreme court upheld it, protecting grand central.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "grand_central_1944",
+    "zoom_from": 1.0,
+    "zoom_to": 1.08
+   },
+   "label": "grand central terminal · 1944",
+   "sublabel": "office of war information · public domain",
+   "date_label": "penn central v. new york city",
+   "date": "26 june 1978",
+   "sfx": "grand central concourse murmur, a station clock chime",
+   "dark": false
+  },
+  {
+   "text": "And the old station? Much of it, statues included, went to a landfill in the New Jersey Meadowlands. ",
+   "caption": "and the old station? much of it, statues included, went to a landfill in the new jersey meadowlands.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "meadowlands_aerial",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "secaucus & the meadowlands, with manhattan beyond · 2014",
+   "sublabel": "famartin · cc by-sa 3.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "dump truck bed tipping, stone sliding into mud, marsh birds",
+   "dark": true
+  },
+  {
+   "text": "One statue, called Night, was pulled back out. It stands in Brooklyn now. ",
+   "caption": "one statue, called night, was pulled back out. it stands in brooklyn now.",
+   "big": "night.",
+   "visual": {
+    "type": "photo",
+    "asset": "night_statue",
+    "zoom_from": 1.0,
+    "zoom_to": 1.1
+   },
+   "label": "\"night\" · adolph weinman · c. 1910 · brooklyn museum",
+   "sublabel": "zeete · cc by-sa 3.0 (confirm)",
+   "date_label": null,
+   "date": null,
+   "sfx": "quiet garden: wind, distant city, a sparrow",
+   "dark": false
+  },
+  {
+   "text": "The rest, as far as anyone knows, is still out there. [pause] Under the marsh.",
+   "caption": "the rest, as far as anyone knows, is still out there. under the marsh.",
+   "big": "under the marsh.",
+   "visual": {
+    "type": "type_only"
+   },
+   "label": null,
+   "sublabel": null,
+   "date_label": null,
+   "date": null,
+   "sfx": "wind over reeds, a far-off train horn crossing the marsh, then silence",
+   "dark": true
+  }
+ ],
+ "music_mood": "Slow, stately strings and a soft felt piano in a minor key, about 66 bpm, with a distant reverberant hall ambience; a low brass swell under the demolition and the Times quote, lifting gently for the Landmarks Law and Grand Central, then thinning to a single held cello note and wind for the marsh ending.",
+ "assets": [
+  {
+   "key": "waiting_room",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Penn_Station_interior.jpg/1600px-Penn_Station_interior.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Penn_Station_interior.jpg",
+   "author": "Cervin Robinson for the Historic American Buildings Survey (HABS NY,31-NEYO,78--6), Library of Congress",
+   "date": "10 May 1962",
+   "license": "Public domain (HABS, U.S. National Park Service documentation; PD-USGov per Commons)",
+   "shows": "The general waiting room of the original Pennsylvania Station, looking from the northwest: coffered vaults, columns, thermal windows. Taken 17 months before demolition began. Original size not confirmed (1600px thumb; workflow falls back to original).",
+   "changes": "cropped to vertical (full room; upper vault and columns), slow push, gentle grade"
+  },
+  {
+   "key": "aerial_1910s",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Pennsylvania_Station_aerial_view%2C_1910s.jpg/1600px-Pennsylvania_Station_aerial_view%2C_1910s.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Pennsylvania_Station_aerial_view,_1910s.jpg",
+   "author": "Detroit Publishing Co. (Library of Congress, Prints & Photographs, Detroit Publishing Company collection)",
+   "date": "c. 1910-1920",
+   "license": "Public domain (published before 1929; LoC: no known restrictions)",
+   "shows": "Aerial view of Pennsylvania Station from the northeast, showing the whole two-block building.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "concourse_1962",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/NYP_LOC2.jpg/1600px-NYP_LOC2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:NYP_LOC2.jpg",
+   "author": "Historic American Buildings Survey (photographer per HABS record, probably Cervin Robinson), Library of Congress",
+   "date": "24 April 1962",
+   "license": "Public domain (HABS, U.S. National Park Service documentation)",
+   "shows": "Main concourse interior: the glass-and-steel train concourse of the original station.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "facade_1962",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/NYP_LOC3.jpg/1600px-NYP_LOC3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:NYP_LOC3.jpg",
+   "author": "Cervin Robinson for the Historic American Buildings Survey (HABS NY,31-NEYO,78--2), Library of Congress",
+   "date": "8 May 1962",
+   "license": "Public domain (HABS, U.S. National Park Service documentation)",
+   "shows": "East (Seventh Avenue) facade with its Doric colonnade, the side where the 1962 picket took place.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "grand_central_1944",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/The_New_York_Grand_Central_Terminal.jpg/1600px-The_New_York_Grand_Central_Terminal.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:The_New_York_Grand_Central_Terminal.jpg",
+   "author": "U.S. Office of War Information (individual photographer not named; Commons cites the Museum of the City of New York)",
+   "date": "1944",
+   "license": "Public domain (work of an FSA/OWI federal employee, PD-USGov)",
+   "shows": "Exterior of Grand Central Terminal from the south, with the New York Central (Helmsley) Building behind.",
+   "changes": "cropped to vertical, slow push"
+  },
+  {
+   "key": "meadowlands_aerial",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/2014-05-07_16_23_15_View_of_New_York_City%2C_Secaucus%2C_New_Jersey%2C_the_Hackensack_River%2C_the_New_Jersey_Turnpike_Western_Spur_and_New_Jersey_Route_3_from_an_airplane_heading_for_Newark_Liberty_International_Airport.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:2014-05-07_16_23_15_View_of_New_York_City,_Secaucus,_New_Jersey,_the_Hackensack_River,_the_New_Jersey_Turnpike_Western_Spur_and_New_Jersey_Route_3_from_an_airplane_heading_for_Newark_Liberty_International_Airport.JPG",
+   "author": "Famartin (own work)",
+   "date": "7 May 2014",
+   "license": "CC BY-SA 3.0",
+   "shows": "Aerial view over Secaucus, the Hackensack River and the Meadowlands marshes, with Manhattan on the horizon. Illustrative of the Meadowlands; not the specific landfill site. Original 3,264 x 2,448 px (original-file URL given because the filename is too long for a standard thumb name; the workflow requests width=1600).",
+   "changes": "cropped to vertical, slow push, darker grade"
+  },
+  {
+   "key": "night_statue",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Night%2C_from_Pennsylvania_Station%2C_by_Weinman%2C_at_Brooklyn_Museum%2C_NY.jpg/1600px-Night%2C_from_Pennsylvania_Station%2C_by_Weinman%2C_at_Brooklyn_Museum%2C_NY.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Night,_from_Pennsylvania_Station,_by_Weinman,_at_Brooklyn_Museum,_NY.jpg",
+   "author": "UNCONFIRMED: probably Commons user Zeete (same naming pattern as the Ringwood eagle file); confirm from _pages wikitext",
+   "date": "photo date to confirm; sculpture c. 1910 (Adolph A. Weinman)",
+   "license": "UNCONFIRMED: probably CC BY-SA 3.0; sculpture itself public domain (published 1910). Confirm licence template in _pages before use",
+   "shows": "Weinman's 'Night' clock figure from Pennsylvania Station, in the Brooklyn Museum's sculpture garden (accession 66.250.1). Original 2,496 x 3,744 px.",
+   "changes": "cropped, slow push"
+  },
+  {
+   "key": "eagle_ringwood_spare",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Penn_Station_Eagle_by_Weinman%2C_at_Ringwood%2C_NJ%2C_on_left.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Penn_Station_Eagle_by_Weinman,_at_Ringwood,_NJ,_on_left.jpg",
+   "author": "Zeete (own work)",
+   "date": "23 October 2010",
+   "license": "CC BY-SA 3.0",
+   "shows": "SPARE (not in beats): one of Weinman's granite Penn Station eagles at the Ringwood State Park entrance, New Jersey. Original 907 x 907 px. Fallback for beat 9 if night_statue's licence does not check out (narration would then need a rewrite).",
+   "changes": "none yet"
+  }
+ ],
+ "tiktok_caption": "New York protects its landmarks because it lost this one 🏛️ Pennsylvania Station, torn down in 1963.\n\nWhich lost building do you wish your city had saved? 👇\n\nfile no. 011 · Images: HABS/Library of Congress, Detroit Publishing Co., U.S. OWI (public domain), Famartin, Zeete (CC BY-SA 3.0) · Narration, sound & music: ElevenLabs\n\n#pennstation #newyorkhistory #architecture #historicpreservation #nyc",
+ "instagram_caption": "Pennsylvania Station opened in 1910. Designed by McKim, Mead & White, its waiting room was inspired by the Baths of Caracalla in Rome, under a ceiling 150 feet high.\n\nIn the early 1960s the railroad agreed to tear it down so a new Madison Square Garden could be built on the site. On 2 August 1962 architects, Philip Johnson among them, picketed outside. It didn't help. Demolition began on 28 October 1963.\n\nTwo days later The New York Times wrote: \"we will probably be judged not by the monuments we build but by those we have destroyed.\"\n\nOn 19 April 1965 Mayor Robert F. Wagner signed New York City's Landmarks Law and created the Landmarks Preservation Commission. In 1978 the U.S. Supreme Court upheld that law in Penn Central v. New York City, and a tower was kept off Grand Central Terminal.\n\nAnd the old station? The Brooklyn Museum says Adolph Weinman's facade sculptures were carted to a landfill in the New Jersey Meadowlands along with the rest of the rubble. One figure, \"Night\", was retrieved and now stands in the museum's sculpture garden. How much of the rest still lies in the marsh, nobody can say for sure.\n\nWhich lost building do you wish your city had saved? 👇\n\nfile no. 011\n\n—\nImages: Pennsylvania Station waiting room, main concourse and Seventh Avenue facade, 1962, Historic American Buildings Survey (Cervin Robinson), Library of Congress (public domain); aerial view, 1910s, Detroit Publishing Co., Library of Congress (public domain); Grand Central Terminal, 1944, U.S. Office of War Information (public domain); Secaucus and the Meadowlands, 2014, Famartin, CC BY-SA 3.0; \"Night\" by Adolph Weinman at the Brooklyn Museum, Zeete, CC BY-SA 3.0. The timeline graphic was drawn for this video. Narration voiced with ElevenLabs. Sound effects: ElevenLabs. Music: ElevenLabs.\n\n#pennstation #newyorkhistory #architecture #historicpreservation #nyc",
+ "youtube_title": "How losing Penn Station (1963) created NYC's landmarks law",
+ "facts": [
+  {
+   "claim": "The original Pennsylvania Station, designed by McKim, Mead & White, opened in 1910",
+   "source": "Brooklyn Museum, 'Remembering Penn Station' (BKM Tech blog, 8 Sep 2010); Wikimedia Commons category description",
+   "url": "https://www.brooklynmuseum.org/community/blogosphere/2010/09/08/remembering-penn-station/"
+  },
+  {
+   "claim": "Its waiting room, with a 150-foot ceiling, was inspired by the Roman Baths of Caracalla (and the Basilica of Constantine)",
+   "source": "Brooklyn Museum, 'Remembering Penn Station'",
+   "url": "https://www.brooklynmuseum.org/community/blogosphere/2010/09/08/remembering-penn-station/"
+  },
+  {
+   "claim": "The above-ground station was demolished so Madison Square Garden / Pennsylvania Plaza could be built on the site",
+   "source": "NYU / New-York Historical Society, Alexander Hatos Photograph Collection finding aid (chronology); NYC City Planning Commission report on Penn Station / MSG",
+   "url": "https://findingaids.library.nyu.edu/nyhs/pr048_alexander_hatos/all"
+  },
+  {
+   "claim": "On 2 August 1962 architects (Action Group for Better Architecture in New York), including Philip Johnson, picketed outside Penn Station",
+   "source": "Landmark West!, 'The History of Preserving History: Penn Station Rally 50 Years Later'; AIA New York (Oculus)",
+   "url": "https://landmarkwest.org/the-history-of-preserving-history-penn-station-rally-50-years-later"
+  },
+  {
+   "claim": "Demolition began on 28 October 1963",
+   "source": "Landmark West!; NYU/N-YHS Hatos finding aid ('demolition ... commences in October 1963')",
+   "url": "https://landmarkwest.org/the-history-of-preserving-history-penn-station-rally-50-years-later"
+  },
+  {
+   "claim": "NYT editorial 'Farewell to Penn Station', 30 Oct 1963, p. 38: 'we will probably be judged not by the monuments we build but by those we have destroyed'",
+   "source": "The New York Times, 30 October 1963 (ProQuest Historical Newspapers), as quoted consistently by Commonweal, History News Network and others. Original not opened in this session",
+   "url": "https://www.nytimes.com/1963/10/30/archives/farewell-to-penn-station.html"
+  },
+  {
+   "claim": "Mayor Robert F. Wagner signed the Landmarks Law, creating the Landmarks Preservation Commission, on 19 April 1965",
+   "source": "NYC Landmarks Preservation Commission, 'About LPC'",
+   "url": "https://www.nyc.gov/site/lpc/about/about-lpc.page"
+  },
+  {
+   "claim": "The Landmarks Law was a response to the public outcry over the loss of Pennsylvania Station",
+   "source": "New York City Council Res. 0922-2005; NYC LPC 50th-anniversary materials",
+   "url": "https://legistar.council.nyc.gov/LegislationDetail.aspx?GUID=4535FC0D-4DCB-44A1-B197-939916C49EEC&ID=444009"
+  },
+  {
+   "claim": "Penn Central Transportation Co. v. New York City, 438 U.S. 104, decided 26 June 1978 (6-3), upheld the Landmarks Law as applied to Grand Central, after the LPC refused an office tower above the terminal",
+   "source": "U.S. Supreme Court opinion (Cornell LII)",
+   "url": "https://www.law.cornell.edu/supremecourt/text/438/104"
+  },
+  {
+   "claim": "Weinman's facade sculptures were carted to a landfill in the New Jersey Meadowlands along with the rest of the rubble",
+   "source": "Brooklyn Museum, 'Remembering Penn Station'",
+   "url": "https://www.brooklynmuseum.org/community/blogosphere/2010/09/08/remembering-penn-station/"
+  },
+  {
+   "claim": "Weinman's 'Night' clock figure (c. 1910) was retrieved from landfill in the New Jersey Meadowlands and is in the Brooklyn Museum (66.250.1), displayed in the Steinberg Family Sculpture Garden",
+   "source": "Brooklyn Museum object record 90654",
+   "url": "https://www.brooklynmuseum.org/objects/90654"
+  },
+  {
+   "claim": "Penn Station debris went to the Meadowlands, focused on a truck yard at the edge of Secaucus; remains recovered there, but it is hard to say for sure what came from the station",
+   "source": "Center for Land Use Interpretation, 'Penn Station Burial Grounds'",
+   "url": "https://clui.org/projects/meadowlands/points-interest-meadowlands/penn-station-burial-grounds"
+  }
+ ],
+ "diagram_notes": {
+  "landmarks_timeline": "Vertical typewriter timeline on a light panel: 1910 opened · 2 Aug 1962 architects picket · 28 Oct 1963 demolition begins · 30 Oct 1963 NYT editorial · 19 Apr 1965 Landmarks Law signed (highlighted, grows in as the line is spoken) · 26 Jun 1978 Supreme Court upholds it, Grand Central protected (faint, appears last). A broken column icon at 1963. Labelled 'schematic · drawn for this video'."
+ }
+}
