@@ -52,3 +52,13 @@ category whose turn it is, research it properly (angles below are leads, not fac
 - [ ] the Wow! signal (1977)
 - [ ] Laika and Sputnik 2
 - [ ] the first photo of the far side of the Moon (Luna 3, 1959)
+
+## architecture & cities (picked from YouTube search keywords, Oct 2026 — makes 011–015)
+- [ ] 011 · Penn Station's demolition (1963) created NYC's landmarks law (1965) — "nyc historic landmark restoration"
+- [ ] 012 · the Diary of Merer: the oldest papyrus is a Great Pyramid logbook — "egyptian architecture history"
+- [ ] 013 · the Empire State Building's airship mooring mast (1931) — "empire state building history"
+- [ ] 014 · the Flatiron Building's winds and "23 skidoo" (1902) — "history of the flatiron building"
+- [ ] 015 · the Wyckoff House, NYC's oldest house — "oldest house in new york city"
+- [ ] the first skyscraper debate: Chicago's Home Insurance Building (1885) — "chicago architecture history"
+- [ ] the von Neumann architecture and the "First Draft" (1945) — "history of computer architecture"
+- [ ] Central Park was built on Seneca Village (1857) — "history of new york city"
