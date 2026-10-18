@@ -72,9 +72,11 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
     - Instagram `lost_index_ig` channel `6ad1b705778b240e2f250120`: `instagram_caption`, video asset,
       metadata.instagram {type: "reel", shouldShareToFeed: true}.
     - YouTube `Lost Index` channel `6ad1beaa778b240e2f2551bf` (Shorts): `instagram_caption` with `#shorts` as the
-      first hashtag, video asset, metadata.youtube {title: "<tiktok hook, ≤ 70 chars> #shorts", categoryId: "27",
-      privacy: "public", madeForKids: false, notifySubscribers: false, embeddable: true, license: "youtube",
-      isAiGenerated: false}.
+      first hashtag, video asset, metadata.youtube {title: "<search-friendly title, ≤ 70 chars> #shorts", categoryId: "27",
+      privacy: "public", madeForKids: false, notifySubscribers: true, embeddable: true, license: "youtube",
+      isAiGenerated: false}. YouTube is the strongest channel and Shorts are found through search, so the title
+      names the subject plainly with a year or key noun people would type ("The first photo of Earth from space
+      (1946, V-2 rocket)", "Why Blockbuster turned down Netflix for $50 million"), not a teaser.
     - mode `customScheduled`, dueAt **10:00 Australia/Sydney** (= evening in the US) on the next free day: one video
       per day, the same video on all three channels at the same time. Never schedule two different videos for the same day. Keep about 5 days queued: schedule the new episode for the day after the last
       scheduled one, and skip if 5 or more days are already queued.
