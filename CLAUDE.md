@@ -61,8 +61,13 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
    texture, `swell_beat`).
 7. **Diagrams**: write `diagrams.py` for beats with `"visual": {"type":"diagram","name":...,"panel":"dark|light","height":N}`.
    Label every drawing "schematic" / "illustration · drawn for this video".
-8. **QC**: `python3 pipeline/render.py episodes/NNN_slug --stills ...` (one still per beat), look at them, fix,
-   then full render (≈5 min). Check the contact sheet and that the mix reads ≈ −16 LUFS / −2 dBTP.
+8. **QC**: first `pip install pocketsphinx` (its English model is inside the wheel; HuggingFace/Whisper model hosts are
+   blocked here). `pipeline/lostindex/align.py` force-aligns the script to the narration word by word, so beats start on
+   their first spoken word and captions type in sync with the voice. After any render, `timing.json` must say
+   `"aligned": "pocketsphinx"`; if it doesn't (stderr says why), fix the words it couldn't align before publishing —
+   the fallback timing drifts by seconds. Then `python3 pipeline/render.py episodes/NNN_slug --stills ...` (one still
+   per beat), look at them, fix, then full render (≈5 min). Check the contact sheet and that the mix reads ≈ −16 LUFS / −2 dBTP.
+   Never run git commands (pull/rebase/autostash) while a render is writing its mp4.
 9. **Publish files**: commit the episode (videos must stay < 100 MB; render.py caps video at 4.5 Mb/s) and push to
    `main`. Use a commit-pinned public URL for Buffer (raw.githubusercontent caches a 404 on `main` paths for minutes):
    `https://raw.githubusercontent.com/cmulia/lost-index-media/<full commit sha>/episodes/NNN_slug/render/lost_index_NNN_slug.mp4`

@@ -12,6 +12,7 @@ from functools import lru_cache
 import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
 
+from . import align as AL
 from . import style as S
 
 XFADE = 0.24          # crossfade between beats (s)
@@ -378,8 +379,11 @@ def render_beat(tl, b, t, img=None):
 
     # text blocks
     caption = b.get("caption") or ""
-    spoken = max(0.6, b.get("speech_end", b["end"]) - b["start"] - 0.05)
-    nchars = int(len(caption) * min(1.0, max(0.0, (lt - 0.08) / spoken)))
+    if b.get("progress"):   # word-synced: type along with the aligned narration
+        nchars = int(round(len(caption) * AL.progress_at(b["progress"], t)))
+    else:
+        spoken = max(0.6, b.get("speech_end", b["end"]) - b["start"] - 0.05)
+        nchars = int(len(caption) * min(1.0, max(0.0, (lt - 0.08) / spoken)))
     big = b.get("big")
     big_t = b.get("big_time", b["start"]) - b["start"]
     a_big = 1.0 if hook else ease((lt - big_t) / BIG_FADE)
