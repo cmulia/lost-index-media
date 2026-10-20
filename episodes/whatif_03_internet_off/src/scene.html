@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: IM; src: url(fonts/InterDisplay-Medium.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+:root { --paper: #f3f1ea; --ink: #121212; --y: #ffd21c; --red: #e5484d; --dark: #0e1014; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--paper); }
+.mono { font-family: PM; letter-spacing: 2px; }
+.mask { overflow: hidden; display: block; }
+.hl { background: var(--y); color: var(--ink); padding: 0 .12em; }
+/* grid dots */
+#grid { inset: 0; background-image: radial-gradient(circle, rgba(0,0,0,.13) 1.6px, transparent 1.8px); background-size: 40px 40px; }
+#grain { inset: -60px; opacity: .07; mix-blend-mode: multiply; pointer-events: none; }
+/* header */
+#hdr { left: 56px; right: 56px; top: 64px; height: 40px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); }
+#hdr .clk { font-family: PM; }
+/* title */
+#title { left: 64px; right: 40px; top: 470px; color: var(--ink); }
+#title .k { font-family: PM; font-size: 40px; letter-spacing: 6px; margin-bottom: 26px; }
+#title .l { font-family: IK; font-size: 122px; line-height: 1.0; letter-spacing: -4px; white-space: nowrap; }
+#title .l span { display: inline-block; }
+/* windows */
+.win { position: absolute; background: #fff; border-radius: 18px; box-shadow: 0 0 0 4px var(--ink), 0 22px 40px rgba(0,0,0,.18); overflow: hidden; transform-origin: 50% 50%; }
+.win .bar { height: 64px; background: var(--y); display: flex; align-items: center; padding: 0 22px; gap: 12px; border-bottom: 4px solid var(--ink); }
+.win .bar i { width: 18px; height: 18px; border-radius: 50%; border: 3px solid var(--ink); display: inline-block; }
+.win .bar b { font-family: PM; font-weight: normal; font-size: 26px; letter-spacing: 3px; margin-left: 14px; color: var(--ink); }
+.win .body { position: absolute; left: 0; right: 0; top: 64px; bottom: 0; }
+.off .bar { background: #d8d5cc; }
+.nonet { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: #f1efe9; font-family: PM; font-size: 30px; letter-spacing: 2px; color: #555; opacity: 0; }
+.nonet .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--red); }
+.nonet .retry { font-family: IB; font-size: 30px; color: var(--ink); border: 4px solid var(--ink); border-radius: 12px; padding: 8px 22px; letter-spacing: 0; display: flex; gap: 12px; align-items: center; }
+.spin { width: 28px; height: 28px; border-radius: 50%; border: 5px solid #bbb; border-top-color: var(--ink); }
+#cursor { left: 0; top: 0; width: 60px; height: 90px; z-index: 50; }
+/* caption */
+.cap { position: absolute; left: 60px; right: 60px; text-align: center; }
+.cap span { font-family: IX; font-size: 62px; line-height: 1.3; background: var(--y); color: var(--ink); padding: 2px 16px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+/* counters */
+#cnt { left: 64px; right: 64px; top: 400px; }
+#cnt .head { font-family: PM; font-size: 34px; letter-spacing: 3px; color: var(--ink); height: 50px; }
+.row { margin-top: 70px; border-top: 4px solid var(--ink); padding-top: 26px; }
+.row .num { font-family: IK; font-size: 108px; line-height: 1; letter-spacing: -4px; color: var(--ink); white-space: nowrap; }
+.row .lab { font-family: IS; font-size: 46px; color: var(--ink); margin-top: 12px; }
+.row .src { font-family: PR; font-size: 22px; letter-spacing: 1px; color: #666; margin-top: 10px; }
+/* split */
+#split { inset: 0; }
+#splitL { left: 0; top: 0; bottom: 0; width: 1080px; background: var(--paper); overflow: hidden; }
+#splitR { top: 0; bottom: 0; right: 0; width: 0; background: var(--dark); overflow: hidden; }
+#splitLine { top: 0; bottom: 0; width: 6px; background: var(--y); }
+.term { position: absolute; width: 380px; height: 600px; border-radius: 46px; background: #2a2c31; box-shadow: 0 0 0 5px var(--ink), 0 26px 40px rgba(0,0,0,.25); }
+.term .scr { position: absolute; left: 40px; right: 40px; top: 50px; height: 200px; border-radius: 14px; background: #cfe3c9; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: PM; font-size: 34px; color: #213; }
+.term .keys { position: absolute; left: 40px; right: 40px; top: 290px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.term .keys div { height: 56px; border-radius: 12px; background: #45484f; }
+.board { position: absolute; width: 470px; background: #15171c; border-radius: 12px; padding: 22px; box-shadow: 0 0 0 4px #2e323a; }
+.board .h { font-family: PM; font-size: 24px; color: var(--y); letter-spacing: 3px; margin-bottom: 14px; }
+.board .r { display: flex; gap: 8px; margin: 10px 0; }
+.flap { width: 38px; height: 54px; background: #24272e; border-radius: 5px; color: #f2f2f2; font-family: PM; font-size: 34px; display: flex; align-items: center; justify-content: center; position: relative; }
+.flap::after { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 2px; background: #111; }
+.sl { font-family: PM; font-size: 40px; letter-spacing: 2px; }
+/* dark map scene */
+#dark { inset: 0; background: var(--dark); }
+#mapwrap { left: 40px; top: 620px; width: 1000px; height: 560px; }
+#twist { left: 64px; right: 64px; top: 300px; color: #fff; }
+#twist .k { font-family: PM; font-size: 38px; letter-spacing: 3px; color: #cfcfcf; height: 56px; }
+#twist .big { font-family: IK; font-size: 118px; line-height: 1.02; letter-spacing: -3px; margin-top: 10px; }
+#twist .big .hl2 { background: var(--y); color: var(--ink); padding: 0 .1em; }
+#mapcap { left: 64px; right: 64px; top: 1260px; color: #fff; }
+#mapcap .n { font-family: IK; font-size: 170px; line-height: 1; letter-spacing: -5px; color: var(--y); }
+#mapcap .t { font-family: IS; font-size: 50px; line-height: 1.18; margin-top: 10px; }
+#maplab { left: 64px; top: 1200px; font-family: PR; font-size: 22px; letter-spacing: 2px; color: #8a8f99; }
+#xsec { left: 0; right: 0; top: 0; bottom: 0; }
+/* outages */
+#news { inset: 0; background: #0b0b0c; }
+.card { position: absolute; left: 60px; width: 960px; background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 4px #000; }
+.card .bar { height: 60px; background: var(--y); display: flex; align-items: center; padding: 0 22px; gap: 12px; }
+.card .bar i { width: 18px; height: 18px; border-radius: 50%; border: 3px solid var(--ink); }
+.card .in { padding: 40px 50px 50px; }
+.card .date { display: inline-block; font-family: PM; font-size: 30px; letter-spacing: 3px; background: var(--ink); color: var(--y); padding: 6px 14px; }
+.card h2 { margin: 26px 0 0; font-family: IK; font-size: 72px; line-height: 1.04; letter-spacing: -2px; color: var(--ink); }
+.card h2 .w { display: inline-block; }
+.card p { margin: 22px 0 0; font-family: IM; font-size: 38px; line-height: 1.3; color: #444; }
+.card .src { font-family: PR; font-size: 21px; color: #888; margin-top: 20px; letter-spacing: 1px; }
+/* notifications */
+#back { inset: 0; }
+#bclock { left: 0; right: 0; top: 230px; text-align: center; font-family: PM; font-size: 170px; color: var(--ink); }
+#bline { left: 0; right: 0; top: 440px; text-align: center; }
+#bline span { font-family: IK; font-size: 110px; letter-spacing: -3px; background: var(--y); padding: 0 20px; }
+.note { position: absolute; left: 90px; width: 900px; height: 132px; background: #fff; border-radius: 30px; box-shadow: 0 0 0 4px var(--ink), 0 12px 24px rgba(0,0,0,.12); display: flex; align-items: center; gap: 26px; padding: 0 30px; }
+.note .ic { width: 78px; height: 78px; border-radius: 20px; flex: none; display: flex; align-items: center; justify-content: center; font-family: IK; font-size: 40px; color: #fff; border: 4px solid var(--ink); }
+.note .tx { font-family: IS; font-size: 36px; color: var(--ink); line-height: 1.15; }
+.note .tx small { display: block; font-family: PR; font-size: 22px; color: #777; letter-spacing: 1px; }
+/* end */
+#end { inset: 0; }
+#end .k { position: absolute; left: 64px; top: 640px; font-family: PM; font-size: 46px; letter-spacing: 4px; color: var(--ink); }
+#end .big { position: absolute; left: 64px; right: 40px; top: 730px; font-family: IK; font-size: 160px; line-height: .98; letter-spacing: -5px; color: var(--ink); }
+#end .foot { position: absolute; left: 64px; right: 64px; top: 1200px; font-family: PR; font-size: 28px; line-height: 1.5; letter-spacing: 1px; color: #555; }
+#glitch { inset: 0; pointer-events: none; }
+#glitch div { position: absolute; left: 0; right: 0; background: var(--ink); mix-blend-mode: difference; }
+#flash { inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="grid" class="a"></div>
+
+  <!-- S1 title -->
+  <div id="title" class="a">
+    <div class="k mask"><span id="t0" style="display:inline-block">WHAT IF</span></div>
+    <div class="mask"><div class="l"><span id="t1">THE INTERNET</span></div></div>
+    <div class="mask"><div class="l"><span id="t2"><span id="t2hl" class="hl">SWITCHED OFF</span></span></div></div>
+    <div class="mask"><div class="l"><span id="t3">FOR 1 HOUR?</span></div></div>
+  </div>
+
+  <svg id="wifi" class="a" style="left:290px;top:1080px" width="500" height="520" viewBox="-250 -330 500 520">
+    <path id="wf3" d="M-220 -110 A 300 300 0 0 1 220 -110" fill="none" stroke="#121212" stroke-width="44" stroke-linecap="round"/>
+    <path id="wf2" d="M-145 -30 A 200 200 0 0 1 145 -30" fill="none" stroke="#121212" stroke-width="44" stroke-linecap="round"/>
+    <path id="wf1" d="M-72 50 A 100 100 0 0 1 72 50" fill="none" stroke="#121212" stroke-width="44" stroke-linecap="round"/>
+    <circle id="wf0" cx="0" cy="130" r="30" fill="#121212"/>
+    <line id="wfx" x1="-200" y1="-230" x2="200" y2="170" stroke="#e5484d" stroke-width="40" stroke-linecap="round"/>
+  </svg>
+  <!-- S2 windows -->
+  <div id="s2" class="a" style="inset:0">
+    <div id="bigclock" class="a mono" style="left:0;right:0;top:250px;text-align:center;font-size:150px;color:var(--ink)">11:59:57</div>
+    <div id="w1" class="win" style="left:70px;top:560px;width:640px;height:500px">
+      <div class="bar"><i></i><i></i><i></i><b>maps</b></div>
+      <div class="body"><svg width="640" height="436" viewBox="0 0 640 436">
+        <rect width="640" height="436" fill="#eef0e6"/>
+        <path d="M-10 120 C 160 140, 260 60, 420 110 S 600 190, 660 160" stroke="#fff" stroke-width="30" fill="none"/>
+        <path d="M120 -10 C 140 140, 90 260, 180 450" stroke="#fff" stroke-width="26" fill="none"/>
+        <path d="M-10 330 C 200 300, 380 380, 660 300" stroke="#fff" stroke-width="22" fill="none"/>
+        <path d="M470 -10 L 430 450" stroke="#fff" stroke-width="20" fill="none"/>
+        <rect x="230" y="170" width="140" height="90" fill="#cfe3c9"/><rect x="500" y="230" width="110" height="70" fill="#cfe3c9"/>
+        <path id="route" d="M150 400 C 160 300, 240 250, 330 230 S 440 140, 520 95" stroke="#2f7ae5" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="14 12"/>
+        <g transform="translate(520,95)"><path d="M0 0 C -30 -40, -30 -70, 0 -70 C 30 -70, 30 -40, 0 0 Z" fill="#e5484d" stroke="#121212" stroke-width="5"/><circle cx="0" cy="-48" r="10" fill="#fff"/></g>
+      </svg></div>
+      <div class="nonet"><div class="dot"></div><div>NO CONNECTION</div></div>
+    </div>
+    <div id="w2" class="win" style="left:400px;top:800px;width:610px;height:500px">
+      <div class="bar"><i></i><i></i><i></i><b>messages</b></div>
+      <div class="body" style="padding:30px">
+        <div style="font-family:IM;font-size:30px;background:#e9e7e0;border-radius:24px;padding:16px 22px;width:340px">lunch at 12?</div>
+        <div style="font-family:IM;font-size:30px;background:#ffd21c;border-radius:24px;padding:16px 22px;width:300px;margin:22px 0 0 230px">omw 🏃</div>
+        <div style="font-family:IM;font-size:30px;background:#e9e7e0;border-radius:24px;padding:16px 22px;width:400px;margin-top:22px">bring the charger pls</div>
+        <div id="typingdots" style="font-family:IK;font-size:44px;background:#ffd21c;border-radius:24px;padding:0 22px;width:130px;margin:22px 0 0 400px;letter-spacing:6px">···</div>
+      </div>
+      <div class="nonet"><div class="dot"></div><div>NOT DELIVERED</div></div>
+    </div>
+    <div id="w3" class="win" style="left:110px;top:1150px;width:700px;height:470px">
+      <div class="bar"><i></i><i></i><i></i><b>checkout</b></div>
+      <div class="body" style="padding:36px 40px">
+        <div style="display:flex;justify-content:space-between;font-family:IS;font-size:38px"><span>1 × flat white</span><span>$4.50</span></div>
+        <div style="height:4px;background:#121212;margin:26px 0"></div>
+        <div style="display:flex;justify-content:space-between;font-family:IK;font-size:46px"><span>TOTAL</span><span>$4.50</span></div>
+        <div id="paybtn" style="margin-top:44px;height:110px;border-radius:20px;background:#121212;color:#ffd21c;font-family:IK;font-size:46px;display:flex;align-items:center;justify-content:center">PAY NOW</div>
+      </div>
+      <div class="nonet"><div class="dot"></div><div>PAYMENT FAILED</div><div class="retry"><div class="spin" id="spin"></div>RETRY</div></div>
+    </div>
+    <div id="cap2" class="cap" style="top:1700px"><span>12:00. Everything goes offline.</span></div>
+  </div>
+
+  <!-- S3 counters -->
+  <div id="cnt" class="a">
+    <div class="head" id="cnthead"></div>
+    <div class="row" id="r1"><div class="num" id="n1">0</div><div class="lab" id="l1"></div><div class="src" id="s1"></div></div>
+    <div class="row" id="r2"><div class="num" id="n2">0</div><div class="lab" id="l2"></div><div class="src" id="s2src"></div></div>
+    <div class="row" id="r3"><div class="lab" style="font-family:IK;font-size:74px;line-height:1.1;margin-top:0"><span class="hl">Maps, chats, card machines</span><br>all go quiet.</div></div>
+  </div>
+
+  <!-- S4 split -->
+  <div id="split" class="a">
+    <div id="splitL" class="a">
+      <div class="term" id="term" style="left:150px;top:640px"><div class="scr" id="tscr">CONNECTING…</div><div class="keys"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+      <div class="a sl" style="left:64px;top:420px;color:var(--ink)" id="slL">From card machines</div>
+    </div>
+    <div id="splitR" class="a">
+      <div style="position:absolute;right:0;top:0;bottom:0;width:1080px">
+        <div class="board" id="board" style="left:560px;top:700px"><div class="h">DEPARTURES</div></div>
+        <div class="a sl" style="left:600px;top:1500px;color:#fff;white-space:nowrap" id="slR">to flight boards.</div>
+      </div>
+    </div>
+    <div id="splitLine" class="a"></div>
+  </div>
+
+  <!-- S5 dark: the twist -->
+  <div id="dark" class="a">
+    <div id="twist" class="a">
+      <div class="k" id="twk"></div>
+      <div class="big" id="twbig">The internet <span class="hl2">isn’t in the sky.</span></div>
+    </div>
+    <svg id="mapwrap" class="a" viewBox="0 0 1000 560"></svg>
+    <div id="maplab" class="a">SCHEMATIC · A FEW OF THE WORLD’S CABLES</div>
+    <div id="mapcap" class="a"><div class="n" id="mcn">≈99%</div><div class="t" id="mct">of data between continents travels through cables on the seabed.</div></div>
+    <svg id="xsec" class="a" viewBox="0 0 1080 1920"></svg>
+  </div>
+
+  <!-- S6 outages -->
+  <div id="news" class="a">
+    <div class="a mono" id="newsk" style="left:64px;top:250px;font-size:38px;color:#fff;letter-spacing:3px"></div>
+    <div class="card" id="c1" style="top:360px"><div class="bar"><i></i><i></i><i></i></div><div class="in">
+      <span class="date">4 OCT 2021</span>
+      <h2 id="h1"></h2><p id="p1"></p><div class="src" id="src1"></div></div></div>
+    <div class="card" id="c2" style="top:1060px"><div class="bar"><i></i><i></i><i></i></div><div class="in">
+      <span class="date">19 JUL 2024</span>
+      <h2 id="h2"></h2><p id="p2"></p><div class="src" id="src2"></div></div></div>
+  </div>
+
+  <!-- S7 back online -->
+  <div id="back" class="a">
+    <div id="bclock" class="a">13:00:00</div>
+    <div id="bline" class="a"><span>Back online.</span></div>
+    <div id="notes"></div>
+  </div>
+
+  <!-- S8 end -->
+  <div id="end" class="a">
+    <div class="k" id="ek"></div>
+    <div class="big"><div class="mask"><div id="eb1">The cables</div></div><div class="mask"><div id="eb2"><span class="hl">are real.</span></div></div></div>
+    <div class="foot" id="efoot"></div>
+  </div>
+
+  <div id="hdr" class="a"><span id="hdrL">WHAT IF NO. 03</span><span class="clk" id="hdrR">@LOST_INDEX</span></div>
+  <svg id="cursor" class="a" viewBox="0 0 12 18" shape-rendering="crispEdges"></svg>
+  <div id="glitch" class="a"></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+  <div id="flash" class="a"></div>
+</div>
+
+<script src="node_modules/d3-array/dist/d3-array.min.js"></script>
+<script src="node_modules/d3-geo/dist/d3-geo.min.js"></script>
+<script src="node_modules/topojson-client/dist/topojson-client.min.js"></script>
+<script>
+// ---------------- facts (edit after fact-check) ----------------
+const F = {
+  emailsPerHour: 16e9, emailsLabel: 'emails sent & received', emailsSrc: 'ESTIMATE · RADICATI 2026 FORECAST, ≈392 BILLION A DAY',
+  row2: 30e6, row2Label: 'Visa card payments', row2Src: 'AVERAGE · VISA FY2025, 257.5 BILLION TRANSACTIONS',
+  cableShare: '≈99%', cableText: 'of the data crossing oceans travels through cables on the seabed.',
+  cables: '≈570', hose: 'Most are about as thick as a garden hose.',
+  fbH: 'Facebook, Instagram and WhatsApp vanish.', fbP: 'For about six hours. A routine maintenance command accidentally cut Meta’s data centres off from the internet.', fbS: 'SOURCE: META ENGINEERING, 5 OCT 2021',
+  csH: 'One faulty update crashes ≈8.5 million Windows PCs.', csP: 'Banks, hospitals and airports scramble. More than 4,000 flights are cancelled that day.', csS: 'SOURCES: MICROSOFT · CROWDSTRIKE · CIRIUM',
+};
+
+// ---------------- helpers ----------------
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = {
+  out: (k) => 1 - Math.pow(1 - k, 3), in: (k) => k * k * k, io: (k) => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2,
+  expo: (k) => k === 1 ? 1 : 1 - Math.pow(2, -10 * k), expoIn: (k) => k === 0 ? 0 : Math.pow(2, 10 * k - 10),
+  back: (k) => { const c = 1.70158, c3 = c + 1; return 1 + c3 * Math.pow(k - 1, 3) + c * Math.pow(k - 1, 2); },
+  spring: (k) => 1 - Math.exp(-7 * k) * Math.cos(11 * k),
+};
+const hash = (n) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+function show(el, on) { el.style.display = on ? '' : 'none'; }
+function typed(str, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0) * cps, 0, str.length)); return str.slice(0, n) + ((t - t0) > 0 && n < str.length && Math.floor(t * 4) % 2 === 0 ? '▍' : (n < str.length && t >= t0 ? '▍' : '')); }
+const fmt = (n) => Math.round(n).toLocaleString('en-US');
+
+// grain
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height);
+  let s = 7; for (let i = 0; i < im.data.length; i += 4) { s = (s * 16807) % 2147483647; const v = (s % 255); im.data[i] = im.data[i + 1] = im.data[i + 2] = v; im.data[i + 3] = 255; }
+  g.putImageData(im, 0, 0); }
+// pixel cursor
+{ const rows = ['B','BB','BWB','BWWB','BWWWB','BWWWWB','BWWWWWB','BWWWWWWB','BWWWWWWWB','BWWWWWWWWB','BWWWWWBBBBB','BWWBWWB','BWB BWWB','BB  BWWB','B    BWWB','     BWWB','      BB'];
+  let h = ''; rows.forEach((r, y) => [...r].forEach((ch, x) => { if (ch !== ' ') h += `<rect x="${x}" y="${y}" width="1" height="1" fill="${ch === 'B' ? '#000' : '#fff'}"/>`; }));
+  $('#cursor').innerHTML = h; }
+// flight board
+const FLIGHTS = [['SYD', '08:40'], ['LHR', '09:05'], ['NRT', '09:30'], ['JFK', '10:15'], ['SIN', '10:50']];
+const board = $('#board');
+FLIGHTS.forEach(([c]) => { const r = document.createElement('div'); r.className = 'r'; for (let i = 0; i < 10; i++) { const f = document.createElement('div'); f.className = 'flap'; r.appendChild(f); } board.appendChild(r); });
+const FL_CH = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:';
+// notifications
+const NOTES = [
+  ['M', '#e5484d', 'Mum', 'are you ok?? call me'],
+  ['@', '#2f7ae5', '47 new emails', 'and counting'],
+  ['$', '#121212', 'Bank', 'Payment of $4.50 failed. Try again?'],
+  ['G', '#3cc46a', 'Group chat (128)', 'did everyone’s internet just die'],
+  ['✈', '#7a5cd6', 'Airline', 'Your flight is delayed'],
+  ['', '#ffd21c', 'Bucket Hat Guy', 'what did I miss 👀'],
+  ['◎', '#ff8a3c', 'Maps', 'Rerouting… rerouting…'],
+  ['▶', '#e5484d', 'Video', 'Still buffering'],
+  ['@', '#2f7ae5', '1,284 new emails', 'and counting'],
+  ['☁', '#2fb59a', 'Backup', 'Sync resumed'],
+];
+const notesEl = $('#notes');
+NOTES.forEach(([ic, col, a, b], i) => {
+  const n = document.createElement('div'); n.className = 'note';
+  const icon = ic ? `<div class="ic" style="background:${col}">${ic}</div>` : `<div class="ic" style="background:#cfe8ff;padding:0"><svg viewBox="0 0 10 10" width="62" height="62" shape-rendering="crispEdges">
+     <rect x="2" y="1" width="6" height="2" fill="#ffd21c"/><rect x="1" y="3" width="8" height="1" fill="#ffd21c"/><rect x="3" y="4" width="4" height="2" fill="#f1c7a5"/><rect x="3" y="4" width="4" height="1" fill="#111"/>
+     <rect x="2" y="6" width="6" height="1" fill="#e23b3b"/><rect x="2" y="7" width="6" height="1" fill="#fff"/><rect x="2" y="8" width="6" height="1" fill="#e23b3b"/></svg></div>`;
+  n.innerHTML = `${icon}<div class="tx">${a}<small>${b}</small></div>`;
+  notesEl.appendChild(n);
+});
+
+// ---------------- world map (dots) + cables ----------------
+const map = $('#mapwrap');
+const proj = d3.geoNaturalEarth1().scale(190).translate([500, 300]).rotate([-150, 0]);
+const pathGen = d3.geoPath(proj);
+let cablePaths = [];
+fetch('node_modules/world-atlas/land-110m.json').then(r => r.json()).then(topo => {
+  const land = topojson.feature(topo, topo.objects.land);
+  let dots = '';
+  for (let y = 20; y < 560; y += 13) for (let x = 6; x < 1000; x += 13) {
+    const ll = proj.invert([x, y]); if (!ll) continue;
+    if (d3.geoContains(land, ll)) dots += `<circle cx="${x}" cy="${y}" r="3.6"/>`;
+  }
+  const CABLES = [
+    [[-74, 40.5], [-50, 45], [-20, 50], [-5.5, 50.1]],
+    [[-76, 36.8], [-40, 40], [-3, 43.4]],
+    [[-118.4, 33.9], [-160, 33], [165, 33], [140, 34.5]],
+    [[-124, 45], [-170, 48], [155, 43], [141.5, 38]],
+    [[151.3, -33.9], [178, -18], [-158, 21.3], [-122.5, 37.5]],
+    [[103.8, 1.3], [108, -12], [115.7, -31.9]],
+    [[115.7, -31.9], [125, -36], [140, -40], [151.3, -33.9]],
+    [[5.4, 43.3], [15, 37], [29.9, 31.6], [32.5, 29.9], [38, 20], [43.4, 12.6], [55, 14], [72.8, 19], [80, 6], [95, 6], [103.8, 1.3], [114.2, 22.3]],
+    [[-38.5, -3.7], [-25, 15], [-9.2, 38.7]],
+    [[-9.2, 38.7], [-18, 20], [-17.4, 14.7], [-5, 4], [3.4, 6.2], [8, -5], [12, -20], [18.4, -33.9]],
+    [[-80.1, 26], [-60, 12], [-38.5, -3.7]],
+    [[114.2, 22.3], [125, 25], [139.8, 35]],
+    [[72.8, 19], [55, 0], [39.7, -4]],
+    [[151.3, -33.9], [165, -38], [174.8, -41.3]],
+    [[103.8, 1.3], [120, 5], [135, 10], [150, 15], [-158, 21.3]],
+  ];
+  let cs = '';
+  CABLES.forEach((c, i) => { const d = pathGen({ type: 'LineString', coordinates: c }); cs += `<path class="cable" d="${d}" stroke="#ffd21c" stroke-width="4.5" fill="none" stroke-linecap="round"/>`; });
+  map.innerHTML = `<defs><filter id="glow"><feGaussianBlur stdDeviation="3"/></filter></defs><g fill="#3a404b">${dots}</g><g id="cglow" filter="url(#glow)" opacity=".8">${cs}</g><g id="cmain">${cs}</g><g id="pulses"></g>`;
+  // landing points
+  cablePaths = [...map.querySelectorAll('#cmain path')];
+  const glowPaths = [...map.querySelectorAll('#cglow path')];
+  cablePaths.forEach((p, i) => { const L = p.getTotalLength(); p.dataset.len = L; glowPaths[i].dataset.len = L; p.style.strokeDasharray = L; glowPaths[i].style.strokeDasharray = L; });
+  let pl = ''; cablePaths.forEach(() => pl += '<circle r="7" fill="#fff"/>'); map.querySelector('#pulses').innerHTML = pl;
+  window.ready = true;
+});
+// cross-section diagram
+$('#xsec').innerHTML = `
+  <g id="xs" transform="translate(540,1050)">
+    <circle r="250" fill="#1d2129" stroke="#e9e9e9" stroke-width="6"/>
+    <circle r="190" fill="#3a3f48"/>
+    <g id="wires"></g>
+    <circle r="120" fill="#c6793a"/>
+    <circle r="95" fill="#9aa3ad"/>
+    <circle r="60" fill="#0e1014"/>
+    <g id="fibres"></g>
+  </g>
+  <g id="xslab" font-family="PR" font-size="30" fill="#fff" letter-spacing="1">
+    <g data-k="0"><line x1="540" y1="1050" x2="900" y2="760" stroke="#ffd21c" stroke-width="4"/><circle cx="540" cy="1050" r="8" fill="#ffd21c"/><text x="760" y="740">glass fibres</text></g>
+    <g data-k="1"><line x1="620" y1="1100" x2="900" y2="1380" stroke="#ffd21c" stroke-width="4"/><circle cx="620" cy="1100" r="8" fill="#ffd21c"/><text x="780" y="1420">copper (power)</text></g>
+    <g data-k="2"><line x1="400" y1="1180" x2="180" y2="1420" stroke="#ffd21c" stroke-width="4"/><circle cx="400" cy="1180" r="8" fill="#ffd21c"/><text x="70" y="1460">steel wires</text></g>
+    <g data-k="3"><line x1="330" y1="900" x2="160" y2="740" stroke="#ffd21c" stroke-width="4"/><circle cx="330" cy="900" r="8" fill="#ffd21c"/><text x="60" y="720">plastic jacket</text></g>
+  </g>
+  <text id="xshose" x="540" y="1600" text-anchor="middle" font-family="IK" font-size="62" fill="#fff"></text>
+  <text id="xsnote" x="540" y="1660" text-anchor="middle" font-family="PR" font-size="22" fill="#8a8f99" letter-spacing="2">SCHEMATIC · NOT TO SCALE · DRAWN FOR THIS VIDEO</text>`;
+{ let w = ''; for (let i = 0; i < 28; i++) { const a = i / 28 * Math.PI * 2; w += `<circle cx="${Math.cos(a) * 155}" cy="${Math.sin(a) * 155}" r="17" fill="#c9ced6" stroke="#1d2129" stroke-width="3"/>`; } $('#wires').innerHTML = w;
+  let f = ''; const cols = ['#ffd21c', '#2f7ae5', '#e5484d', '#3cc46a', '#ff8a3c', '#fff', '#7a5cd6', '#2fb59a']; for (let i = 0; i < 8; i++) { const a = i / 8 * Math.PI * 2; f += `<circle cx="${Math.cos(a) * 30}" cy="${Math.sin(a) * 30}" r="11" fill="${cols[i]}"/>`; } f += '<circle r="10" fill="#fff"/>'; $('#fibres').innerHTML = f; }
+
+// ---------------- timeline ----------------
+const T = { s1: [0, 4.6], s2: [4.6, 10.6], s3: [10.6, 17.0], s4: [17.0, 23.0], s5: [23.0, 33.4], s6: [33.4, 41.0], s7: [41.0, 46.6], s8: [46.6, 50.0] };
+const OUT = 7.5;
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+
+function cursorAt(x, y, sc = 1) { const c = $('#cursor'); c.style.display = ''; c.style.transform = `translate(${x}px,${y}px) scale(${sc})`; }
+function bez(p0, p1, p2, p3, k) { const u = 1 - k; return [u*u*u*p0[0] + 3*u*u*k*p1[0] + 3*u*k*k*p2[0] + k*k*k*p3[0], u*u*u*p0[1] + 3*u*u*k*p1[1] + 3*u*k*k*p2[1] + k*k*k*p3[1]]; }
+
+function S1(t) {
+  const lvl = Math.floor(t * 3) % 4;
+  ['#wf1', '#wf2', '#wf3'].forEach((id, i) => { $(id).style.stroke = t < 2.6 ? (i < lvl ? '#121212' : '#d6d2c6') : '#d6d2c6'; });
+  $('#wf0').style.fill = t < 2.6 ? '#121212' : '#d6d2c6';
+  const xk = E.back(P(t, 2.6, 3.0)); const L = 566;
+  $('#wfx').style.strokeDasharray = L; $('#wfx').style.strokeDashoffset = L * (1 - clamp(xk));
+  const wo = E.expoIn(P(t, 3.95, 4.5)); $('#wifi').style.transform = `translateY(${wo * 900}px) rotate(${wo * 20}deg)`;
+  const lines = ['#t0', '#t1', '#t2', '#t3'];
+  lines.forEach((s, i) => {
+    const out = E.expoIn(P(t, 3.9 + i * 0.07, 4.45 + i * 0.07));
+    const drift = (i % 2 ? 1 : -1) * (Math.sin(t * 1.3 + i) * 4 + 4) + 6;
+    $(s).style.transform = `translate(${drift}px, ${out * -130}%)`;
+  });
+  const hk = E.expo(P(t, 0.0, 0.01));
+  $('#t2hl').style.boxShadow = `inset 0 0 0 0 transparent`;
+  $('#t2hl').style.background = `linear-gradient(90deg, var(--y) ${Math.min(100, 100 * (0.999 + 0 * hk))}%, transparent 0)`;
+  $('#t3').style.color = Math.floor(t * 2.2) % 2 === 0 ? 'var(--ink)' : 'var(--ink)';
+}
+
+function S2(t) {
+  // clock 11:59:57 -> 12:00:00 at OUT
+  const secs = Math.floor(t - 4.5);
+  const base = 11 * 3600 + 59 * 60 + 57 + clamp(secs, 0, 99);
+  const hh = Math.floor(base / 3600), mm = Math.floor(base / 60) % 60, ss = base % 60;
+  $('#bigclock').textContent = `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}`;
+  $('#bigclock').style.color = t >= OUT ? 'var(--red)' : 'var(--ink)';
+  const ci = E.expo(P(t, 4.6, 5.1)); $('#bigclock').style.transform = `translateY(${(1 - ci) * -60}px)`; $('#bigclock').style.opacity = ci;
+  ['#w1', '#w2', '#w3'].forEach((s, i) => {
+    const t0 = 4.8 + i * 0.28;
+    const k = E.back(P(t, t0, t0 + 0.55));
+    const ex = E.expoIn(P(t, 10.05 + i * 0.08, 10.55 + i * 0.08));
+    const el = $(s);
+    el.style.transform = `translateY(${(1 - k) * 120 + ex * 1400}px) scale(${lerp(.6, 1, k)}) rotate(${(1 - k) * (i - 1) * 6 + ex * (i - 1) * 14 + (t >= OUT && t < OUT + .35 ? (hash(Math.floor(t * 30) + i) - .5) * 4 : 0)}deg)`;
+    el.style.opacity = P(t, t0, t0 + 0.12);
+    const off = t >= OUT;
+    el.classList.toggle('off', off);
+    el.querySelector('.nonet').style.opacity = off ? E.out(P(t, OUT + 0.15, OUT + 0.45)) : 0;
+  });
+  $('#route').style.strokeDashoffset = -t * 60;
+  $('#typingdots').style.opacity = 0.4 + 0.6 * Math.abs(Math.sin(t * 5));
+  $('#spin').style.transform = `rotate(${t * 720}deg)`;
+  $('#paybtn').style.transform = t > 6.55 && t < 6.75 ? 'scale(.94)' : 'scale(1)';
+  // cursor path
+  let p;
+  if (t < 5.6) p = [1100, 1500];
+  else if (t < 6.55) p = bez([1100, 1500], [900, 1700], [700, 1500], [470, 1335], E.io(P(t, 5.6, 6.55)));
+  else if (t < 8.6) p = [470 + Math.sin(t * 3) * 3, 1335];
+  else if (t < 9.2) p = bez([470, 1335], [520, 1400], [420, 1500], [410, 1478], E.io(P(t, 8.6, 9.2)));
+  else p = [410 + Math.sin(t * 2) * 4, 1478];
+  const ex = E.expoIn(P(t, 10.1, 10.5));
+  cursorAt(p[0], p[1] + ex * 900, (t > 6.5 && t < 6.7) || (t > 9.2 && t < 9.4) ? .85 : 1);
+  // caption
+  const ck = E.expo(P(t, 8.0, 8.5)), co = E.expoIn(P(t, 10.0, 10.4));
+  $('#cap2').style.opacity = ck * (1 - co); $('#cap2').style.transform = `translateY(${(1 - ck) * 60 - co * 40}px)`;
+  // glitch
+  const gl = $('#glitch');
+  if (t >= OUT && t < OUT + 0.4) {
+    const f = Math.floor(t * 30); let h = '';
+    for (let i = 0; i < 6; i++) { const y = hash(f * 7 + i) * 1920, hh = 10 + hash(f * 3 + i) * 90; h += `<div style="top:${y}px;height:${hh}px;transform:translateX(${(hash(f + i * 9) - .5) * 160}px)"></div>`; }
+    gl.innerHTML = h; $('#stage').style.transform = `translate(${(hash(f) - .5) * 30}px, ${(hash(f + 1) - .5) * 20}px)`;
+  } else { gl.innerHTML = ''; $('#stage').style.transform = ''; }
+}
+
+function S3(t) {
+  const t0 = T.s3[0];
+  $('#cnthead').textContent = typed('IN ONE HOUR OFFLINE:', t, t0 + 0.1, 30);
+  const rows = [['#r1', t0 + 0.6], ['#r2', t0 + 2.3], ['#r3', t0 + 4.0]];
+  const hasR2 = F.row2 > 0;
+  rows.forEach(([s, a], i) => {
+    const el = $(s);
+    if (i === 1 && !hasR2) { el.style.display = 'none'; return; }
+    el.style.display = '';
+    const k = E.expo(P(t, a, a + 0.6)), ex = E.expoIn(P(t, T.s3[1] - 0.5 + i * 0.05, T.s3[1] - 0.05 + i * 0.05));
+    el.style.transform = `translateX(${(1 - k) * 200 - ex * 1200}px)`; el.style.opacity = k;
+    el.style.borderTopColor = 'var(--ink)';
+  });
+  const k1 = E.out(P(t, t0 + 0.7, t0 + 2.2));
+  $('#n1').textContent = '≈' + fmt(F.emailsPerHour * k1);
+  $('#l1').textContent = F.emailsLabel; $('#s1').textContent = F.emailsSrc;
+  if (hasR2) { const k2 = E.out(P(t, t0 + 2.4, t0 + 3.8)); $('#n2').textContent = '≈' + fmt(F.row2 * k2); $('#l2').textContent = F.row2Label; $('#s2src').textContent = F.row2Src; }
+  $('#cnt').style.top = hasR2 ? '380px' : '470px';
+}
+
+function S4(t) {
+  const t0 = T.s4[0];
+  const w = 1080 * E.io(P(t, t0 + 0.3, t0 + 1.1)) * 0.5;
+  const full = E.io(P(t, T.s4[1] - 0.7, T.s4[1]));
+  const rw = lerp(w, 1080, full);
+  $('#splitR').style.width = rw + 'px';
+  $('#splitLine').style.left = (1080 - rw - 3) + 'px';
+  $('#splitLine').style.opacity = full > .98 ? 0 : 1;
+  $('#splitL').style.opacity = 1;
+  const li = E.back(P(t, t0 + 0.1, t0 + 0.7));
+  $('#term').style.transform = `translateY(${(1 - li) * 300}px) rotate(${-4 + Math.sin(t * 1.4) * 1.5}deg)`;
+  $('#slL').style.transform = `translateY(${(1 - E.expo(P(t, t0 + 0.3, t0 + 0.9))) * 80}px)`; $('#slL').style.opacity = P(t, t0 + 0.3, t0 + 0.6);
+  const dec = t > t0 + 1.8;
+  $('#tscr').innerHTML = dec ? '<div style="font-family:IK;font-size:52px;color:#e5484d">DECLINED</div><div style="font-size:24px;margin-top:6px">NO NETWORK</div>' : 'CONNECTING' + '.'.repeat(1 + Math.floor(t * 3) % 3);
+  $('#tscr').style.background = dec ? '#f7d4d4' : '#cfe3c9';
+  // board flaps
+  const rows = board.querySelectorAll('.r');
+  FLIGHTS.forEach(([c, tm], ri) => {
+    const target = (c + ' ' + 'DELAYED').padEnd(10, ' ').slice(0, 10);
+    const start = (c + ' ' + tm).padEnd(10, ' ').slice(0, 10);
+    rows[ri].querySelectorAll('.flap').forEach((f, ci) => {
+      const tf = t0 + 2.2 + ri * 0.18 + ci * 0.06;
+      let ch;
+      if (t < tf) ch = start[ci];
+      else if (t < tf + 0.5 && ci >= 4) ch = FL_CH[Math.floor(hash(ri * 31 + ci * 7 + Math.floor(t * 20)) * FL_CH.length)];
+      else ch = target[ci];
+      f.textContent = ch === ' ' ? '' : ch;
+      f.style.color = t >= tf + 0.5 && ci >= 4 ? '#ff6b6b' : '#f2f2f2';
+    });
+  });
+  const bi = E.back(P(t, t0 + 0.6, t0 + 1.2));
+  $('#board').style.transform = `translateY(${(1 - bi) * -300}px)`;
+  $('#slR').style.opacity = P(t, t0 + 0.9, t0 + 1.2); $('#slR').style.transform = `translateY(${(1 - E.expo(P(t, t0 + 0.9, t0 + 1.5))) * 80}px)`;
+}
+
+function S5(t) {
+  const t0 = T.s5[0];
+  $('#twk').textContent = typed("HERE'S THE THING:", t, t0 + 0.15, 22);
+  const bi = E.expo(P(t, t0 + 1.1, t0 + 1.7));
+  const up = E.io(P(t, t0 + 2.6, t0 + 3.3));
+  $('#twbig').style.opacity = bi; $('#twbig').style.transform = `translateY(${(1 - bi) * 80}px)`;
+  $('#twist').style.transform = `translateY(${-up * 120}px) scale(${lerp(1, .74, up)})`; $('#twist').style.transformOrigin = '0 0';
+  // map
+  const mi = E.out(P(t, t0 + 2.9, t0 + 3.6));
+  const xs = P(t, t0 + 7.0, t0 + 7.6);
+  map.style.opacity = mi * (1 - E.io(xs));
+  map.style.transform = `scale(${lerp(1.1, 1.0, mi) + (t - t0) * 0.006})`;
+  $('#maplab').style.opacity = mi * (1 - xs) * 0.9;
+  cablePaths.forEach((p, i) => {
+    const L = +p.dataset.len, a = t0 + 3.3 + i * 0.16, k = E.io(P(t, a, a + 1.5));
+    p.style.strokeDashoffset = L * (1 - k);
+    const g = map.querySelectorAll('#cglow path')[i]; g.style.strokeDashoffset = L * (1 - k);
+    const c = map.querySelectorAll('#pulses circle')[i];
+    if (k >= 1) { const ph = ((t * 0.35 + i * 0.37) % 1); const pt = p.getPointAtLength(ph * L); c.setAttribute('cx', pt.x); c.setAttribute('cy', pt.y); c.style.opacity = 1; }
+    else { const pt = p.getPointAtLength(k * L); c.setAttribute('cx', pt.x); c.setAttribute('cy', pt.y); c.style.opacity = k > 0 && k < 1 ? 1 : 0; }
+  });
+  // caption: 99% then 600 cables
+  const ci = E.expo(P(t, t0 + 4.0, t0 + 4.6));
+  const swap = t >= t0 + 5.9;
+  $('#mcn').textContent = swap ? F.cables : F.cableShare;
+  $('#mct').textContent = swap ? 'cables in service, end to end.' : F.cableText;
+  const sk = swap ? E.expo(P(t, t0 + 5.9, t0 + 6.3)) : 1;
+  $('#mapcap').style.opacity = ci * (1 - xs);
+  $('#mapcap').style.transform = `translateY(${(1 - ci) * 80 + (1 - sk) * 40}px)`;
+  // cross-section
+  const xk = E.back(P(t, t0 + 7.3, t0 + 8.0));
+  const xo = E.expoIn(P(t, T.s5[1] - 0.4, T.s5[1]));
+  $('#xsec').style.opacity = P(t, t0 + 7.2, t0 + 7.5) * (1 - xo);
+  $('#xs').setAttribute('transform', `translate(540,1050) scale(${lerp(.2, 1, xk)}) rotate(${(t - t0) * 6})`);
+  $('#xslab').querySelectorAll('g').forEach((g, i) => { const k = E.out(P(t, t0 + 8.0 + i * 0.25, t0 + 8.4 + i * 0.25)); g.style.opacity = k; });
+  $('#xshose').textContent = typed(F.hose, t, t0 + 8.2, 30).replace('▍', '');
+  $('#xsnote').style.opacity = P(t, t0 + 8.4, t0 + 8.8);
+  $('#twist').style.opacity = 1 - E.io(xs);
+}
+
+function S6(t) {
+  const t0 = T.s6[0];
+  $('#newsk').textContent = typed('IT HAS HAPPENED. A LITTLE.', t, t0 + 0.1, 28);
+  const cards = [['#c1', '#h1', '#p1', '#src1', F.fbH, F.fbP, F.fbS, t0 + 0.6], ['#c2', '#h2', '#p2', '#src2', F.csH, F.csP, F.csS, t0 + 3.9]];
+  cards.forEach(([c, h, p, s, H, Pp, S, a], i) => {
+    const k = E.back(P(t, a, a + 0.6)), ex = E.expoIn(P(t, T.s6[1] - 0.45, T.s6[1]));
+    $(c).style.transform = `translateY(${(1 - k) * 700 - ex * 2000}px) rotate(${(1 - k) * (i ? 4 : -4)}deg)`; $(c).style.opacity = P(t, a, a + 0.1);
+    const words = H.split(' ');
+    $(h).innerHTML = words.map((w, j) => { const wk = E.expo(P(t, a + 0.4 + j * 0.07, a + 0.75 + j * 0.07)); return `<span class="w" style="opacity:${wk};transform:translateY(${(1 - wk) * 30}px)">${w}</span>`; }).join(' ');
+    $(p).style.opacity = E.out(P(t, a + 1.2, a + 1.6)); $(p).textContent = Pp;
+    $(s).style.opacity = P(t, a + 1.6, a + 2.0); $(s).textContent = S;
+  });
+}
+
+function S7(t) {
+  const t0 = T.s7[0];
+  const ci = E.expo(P(t, t0, t0 + 0.4));
+  $('#bclock').style.transform = `translateY(${(1 - ci) * -100}px)`; $('#bclock').style.opacity = ci;
+  const bl = E.back(P(t, t0 + 0.35, t0 + 0.85));
+  $('#bline').style.transform = `scale(${bl})`;
+  const notes = notesEl.children;
+  for (let i = 0; i < notes.length; i++) {
+    const a = t0 + 1.0 + i * 0.32;
+    const k = E.spring(P(t, a, a + 0.9));
+    const stackY = 700 + (notes.length - 1 - i) * 0 ;
+    // each new one lands at 700, older ones get pushed down
+    const after = Math.max(0, Math.min(notes.length, Math.floor((t - t0 - 1.0) / 0.32) + 1) - 1 - i);
+    const y = 690 + after * 150 * 1 - (1 - k) * 260;
+    notes[i].style.transform = `translateY(${y}px) scale(${lerp(.85, 1, clamp(k))})`;
+    notes[i].style.opacity = t >= a ? clamp(P(t, a, a + 0.12)) * (y > 1800 ? 0 : 1) : 0;
+    notes[i].style.zIndex = 10 + i;
+  }
+  const ex = E.expoIn(P(t, T.s7[1] - 0.4, T.s7[1]));
+  $('#back').style.transform = `translateY(${-ex * 300}px)`; $('#back').style.opacity = 1 - ex;
+}
+
+function S8(t) {
+  const t0 = T.s8[0];
+  $('#ek').textContent = typed('THIS IS FICTION.', t, t0 + 0.1, 24);
+  const k1 = E.expo(P(t, t0 + 0.8, t0 + 1.3)), k2 = E.expo(P(t, t0 + 1.0, t0 + 1.5));
+  $('#eb1').style.transform = `translateY(${(1 - k1) * 110}%)`; $('#eb2').style.transform = `translateY(${(1 - k2) * 110}%)`;
+  $('#efoot').style.opacity = P(t, t0 + 1.8, t0 + 2.2);
+  $('#efoot').innerHTML = 'Every message you send still crosses the sea floor.<br>what if no. 03 · @lost_index';
+  $('#stage').style.opacity = 1 - P(t, 49.6, 50.0);
+}
+
+window.renderAt = function (t) {
+  show($('#title'), inS(t, 's1')); show($('#wifi'), inS(t, 's1')); show($('#s2'), inS(t, 's2')); show($('#cnt'), inS(t, 's3'));
+  show($('#split'), inS(t, 's4')); show($('#dark'), inS(t, 's5')); show($('#news'), inS(t, 's6'));
+  show($('#back'), inS(t, 's7')); show($('#end'), t >= T.s8[0]);
+  $('#cursor').style.display = 'none';
+  $('#grid').style.opacity = inS(t, 's5') || inS(t, 's6') ? 0 : 1;
+  const darkHdr = inS(t, 's5') || inS(t, 's6') || (inS(t, 's4') && false);
+  $('#hdr').style.color = darkHdr ? '#e9e9e9' : 'var(--ink)';
+  $('#hdrR').textContent = t >= T.s2[0] && t < T.s7[0] ? (t >= OUT ? 'OFFLINE ●' : 'ONLINE ●') : (t >= T.s7[0] && t < T.s8[0] ? 'ONLINE ●' : '@LOST_INDEX');
+  $('#hdrR').style.color = $('#hdrR').textContent.startsWith('OFF') ? 'var(--red)' : $('#hdrR').textContent.startsWith('ON') ? '#2a9d55' : '';
+  if (inS(t, 's1')) S1(t);
+  if (inS(t, 's2')) S2(t); else { $('#glitch').innerHTML = ''; $('#stage').style.transform = ''; }
+  if (inS(t, 's3')) S3(t);
+  if (inS(t, 's4')) S4(t);
+  if (inS(t, 's5')) S5(t);
+  if (inS(t, 's6')) S6(t);
+  if (inS(t, 's7')) S7(t);
+  if (t >= T.s8[0]) S8(t); else $('#stage').style.opacity = 1;
+  // grain jitter
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  $('#grain').style.opacity = inS(t, 's5') || inS(t, 's6') ? .05 : .07;
+  $('#grain').style.mixBlendMode = inS(t, 's5') || inS(t, 's6') ? 'screen' : 'multiply';
+  // flash on outage + back online
+  $('#flash').style.opacity = (t >= OUT && t < OUT + 0.12 ? 0.8 : 0) + (t >= T.s7[0] && t < T.s7[0] + 0.15 ? 0.6 * (1 - (t - T.s7[0]) / 0.15) : 0);
+};
+</script>
+</body>
+</html>
