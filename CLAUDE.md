@@ -82,9 +82,16 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
       isAiGenerated: false}. YouTube is the strongest channel and Shorts are found through search, so the title
       names the subject plainly with a year or key noun people would type ("The first photo of Earth from space
       (1946, V-2 rocket)", "Why Blockbuster turned down Netflix for $50 million"), not a teaser.
-    - mode `customScheduled`, dueAt **10:00 Australia/Sydney** (= evening in the US) on the next free day: one video
-      per day, the same video on all three channels at the same time. Never schedule two different videos for the same day. Keep about 5 days queued: schedule the new episode for the day after the last
-      scheduled one, and skip if 5 or more days are already queued.
+    - mode `customScheduled` on the next free day, timed to the **US Eastern evening peak** (all three platforms'
+      2026 best-time studies put Shorts/Reels/TikTok engagement at 18:00–23:00 audience-local time):
+      YouTube + Instagram at **19:00 US Eastern**, TikTok at **21:00 US Eastern** (TikTok's evening window peaks later).
+      In Sydney time that is YouTube/Instagram **10:00** and TikTok **12:00** until 1 Nov 2026 (EDT), then **11:00** and
+      **13:00** from 2 Nov 2026 (EST) until US clocks change again on 8 Mar 2027 (back to 10:00/12:00). Always write dueAt
+      with the Sydney offset (+11:00 in AEDT). One video per day; never schedule two different videos for the same day.
+      Keep about 5 days queued: schedule the new episode for the day after the last scheduled one, and skip if 5 or
+      more days are already queued. Timing is a test (set 21 Oct 2026, based on <1 week of data where content, not
+      time, explained the differences): after 2–4 weeks, check each platform's audience-location/active-hours
+      analytics and compare TikTok 12:00 vs earlier 10:00 posts before changing it again.
     - isAiGenerated stays false (narration is credited in the caption), matching earlier posts.
 
 ## Style
