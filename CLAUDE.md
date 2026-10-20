@@ -92,7 +92,10 @@ pipeline/render.py              renderer (python3 pipeline/render.py episodes/NN
       more days are already queued. Timing is a test (set 21 Oct 2026, based on <1 week of data where content, not
       time, explained the differences): after 2–4 weeks, check each platform's audience-location/active-hours
       analytics and compare TikTok 12:00 vs earlier 10:00 posts before changing it again.
-    - isAiGenerated stays false (narration is credited in the caption), matching earlier posts.
+    - Captions never name the tools used to make the video (no "ElevenLabs", "Higgsfield", "Kling", "GPT Image",
+      no "narration voiced with…" lines). Keep sources, image credits/licences and "drawn for this video" notes.
+    - isAiGenerated: false when the visuals are archival/drawn (history files), true when the visuals themselves are
+      AI-generated (e.g. Higgsfield images/clips), so the platform's own AI label stays accurate.
 
 ## Style
 
