@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: IM; src: url(fonts/InterDisplay-Medium.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+:root { --paper: #f5f0e4; --ink: #141414; --cobalt: #2443e6; --tomato: #ff4a2e; --mint: #20c497; --lilac: #a98bff; --pink: #ff86b8; --sun: #ffcb2b; --tang: #ff8a3c; --clay: #b9774c; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--paper); }
+#grain { inset: -60px; opacity: .08; mix-blend-mode: multiply; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); z-index: 40; }
+.chip { display: inline-block; font-family: PM; font-size: 30px; letter-spacing: 3px; padding: 10px 18px; border-radius: 10px; }
+.blk { display: inline-block; padding: 0 .14em; border-radius: .08em; }
+.mask { overflow: hidden; }
+.card { position: absolute; border-radius: 22px; overflow: hidden; box-shadow: 0 0 0 6px var(--ink), 16px 18px 0 0 var(--ink); background: #fff; }
+.card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cut { position: absolute; }
+/* title */
+#title { left: 60px; right: 40px; top: 300px; }
+#title .k { font-family: PM; font-size: 40px; letter-spacing: 6px; margin-bottom: 18px; color: var(--ink); }
+#title .l { font-family: IK; font-size: 118px; line-height: 1.08; letter-spacing: -3px; color: var(--ink); white-space: nowrap; }
+#title .l > span { display: inline-block; }
+/* globe */
+#globe { left: 0; top: 0; width: 1080px; height: 1920px; }
+.cap { position: absolute; left: 60px; right: 60px; text-align: center; }
+.cap span { font-family: IX; font-size: 58px; line-height: 1.34; padding: 2px 16px; box-decoration-break: clone; -webkit-box-decoration-break: clone; border-radius: 10px; }
+/* descent */
+#desc { inset: 0; overflow: hidden; }
+#strata { left: 0; top: 0; width: 1080px; }
+.layer { position: absolute; left: 0; width: 1080px; }
+#shaft { left: 390px; width: 300px; top: 0; height: 1920px; background: rgba(20,20,20,.88); }
+#lines { inset: 0; }
+.hud { position: absolute; font-family: PM; color: #fff; text-shadow: none; }
+.hud .lab { font-size: 24px; letter-spacing: 4px; opacity: .9; }
+.hud .val { font-family: IK; font-size: 76px; letter-spacing: -1px; line-height: 1; margin-top: 6px; }
+.hudbox { position: absolute; background: var(--ink); color: #fff; border-radius: 18px; padding: 18px 24px; }
+#lname { left: 60px; right: 60px; top: 1420px; }
+#lname .n { font-family: IK; font-size: 110px; line-height: .95; letter-spacing: -3px; }
+#lname .d { font-family: IS; font-size: 44px; margin-top: 14px; line-height: 1.2; }
+/* kola */
+#kola { inset: 0; background: var(--cobalt); }
+#kk { left: 60px; top: 220px; font-family: PM; font-size: 36px; letter-spacing: 4px; color: #fff; }
+#kn { left: 60px; top: 1210px; font-family: IK; font-size: 170px; letter-spacing: -5px; color: var(--sun); line-height: 1; }
+#kt { left: 60px; right: 60px; top: 1400px; font-family: IS; font-size: 44px; color: #fff; line-height: 1.25; }
+#kbar { left: 60px; width: 960px; top: 1560px; height: 70px; border-radius: 35px; background: #fff; box-shadow: 0 0 0 5px var(--ink); overflow: hidden; }
+#kfill { left: 0; top: 0; bottom: 0; background: var(--tomato); }
+#kbl { left: 60px; right: 60px; top: 1650px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; color: #fff; letter-spacing: 2px; }
+#ktip { left: 60px; top: 1700px; font-family: IX; font-size: 46px; color: var(--sun); }
+/* end */
+#end { inset: 0; background: var(--paper); }
+#end .k { position: absolute; left: 64px; top: 560px; font-family: PM; font-size: 44px; letter-spacing: 4px; color: var(--ink); }
+#end .big { position: absolute; left: 64px; right: 50px; top: 650px; font-family: IK; font-size: 104px; line-height: 1.04; letter-spacing: -3px; color: var(--ink); }
+#end .foot { position: absolute; left: 64px; right: 64px; top: 1330px; font-family: PR; font-size: 28px; line-height: 1.5; letter-spacing: 1px; color: #555; }
+#flash { inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 title -->
+  <div id="s1" class="a" style="inset:0">
+    <svg class="a" style="left:0;top:1180px" width="1080" height="740" viewBox="0 0 1080 740" id="s1earth">
+      <circle cx="540" cy="900" r="760" fill="#b9774c"/><circle cx="540" cy="900" r="700" fill="#ff8a3c"/>
+      <circle cx="540" cy="900" r="430" fill="#ff4a2e"/><circle cx="540" cy="900" r="230" fill="#ffcb2b"/>
+      <circle cx="540" cy="900" r="770" fill="none" stroke="#20c497" stroke-width="30"/>
+      <rect x="500" y="100" width="80" height="700" fill="#141414"/>
+    </svg>
+    <div id="title" class="a">
+      <div class="k">WHAT IF</div>
+      <div class="mask"><div class="l"><span id="ta">YOU <span class="blk" style="background:var(--pink)">JUMPED</span></span></div></div>
+      <div class="mask"><div class="l"><span id="tb">INTO A <span class="blk" style="background:var(--cobalt);color:#fff">TUNNEL</span></span></div></div>
+      <div class="mask"><div class="l"><span id="tc">THROUGH THE</span></div></div>
+      <div class="mask"><div class="l"><span id="td"><span class="blk" style="background:var(--mint)">EARTH?</span></span></div></div>
+    </div>
+    <img id="d1" class="cut" src="img/diver.png" style="left:640px;top:880px;width:420px">
+  </div>
+
+  <!-- S2 Sydney + globe -->
+  <div id="s2" class="a" style="inset:0">
+    <div class="card" id="syd" style="left:120px;top:250px;width:840px;height:1120px"><img id="sydimg" src="img/sydney/f001.jpg"></div>
+    <div class="a chip" id="sydchip" style="left:150px;top:1290px;background:var(--tomato);color:#fff">SYDNEY, AUSTRALIA · 10:00 AM</div>
+    <svg id="globe" class="a" viewBox="0 0 1080 1920">
+      <g id="gl" transform="translate(540,1000)">
+        <circle r="390" fill="#20c497" stroke="#141414" stroke-width="6"/>
+        <circle r="372" fill="#b9774c"/><circle r="355" fill="#ff8a3c"/><circle r="194" fill="#ff4a2e"/><circle r="75" fill="#ffcb2b"/>
+        <circle r="6" fill="#141414"/>
+        <line id="gline" x1="0" y1="-390" x2="0" y2="390" stroke="#141414" stroke-width="10" stroke-dasharray="26 18"/>
+        <circle cx="0" cy="-390" r="20" fill="#ff86b8" stroke="#141414" stroke-width="6"/>
+        <circle id="gend" cx="0" cy="390" r="20" fill="#2443e6" stroke="#141414" stroke-width="6"/>
+      </g>
+      <g id="glab" font-family="PM" font-size="30" letter-spacing="3">
+        <text id="gl1" x="580" y="590" fill="#141414">SYDNEY</text>
+        <text id="gl2" x="580" y="1440" fill="#141414">THE OTHER SIDE</text>
+      </g>
+      <g id="gdist"><rect x="610" y="935" width="400" height="130" rx="16" fill="#141414"/><text id="gdt" x="810" y="1022" text-anchor="middle" font-family="IK" font-size="72" fill="#ffcb2b">0 km</text></g>
+    </svg>
+    <div class="cap" id="cap2" style="top:1560px"></div>
+  </div>
+
+  <!-- S3 countdown + jump -->
+  <div id="s3" class="a" style="inset:0;background:var(--cobalt)">
+    <svg class="a" style="left:0;top:1400px" width="1080" height="520"><rect x="0" y="120" width="1080" height="400" fill="#20c497"/><rect x="0" y="120" width="1080" height="26" fill="#141414"/><ellipse cx="540" cy="150" rx="230" ry="60" fill="#141414"/></svg>
+    <div class="a" id="cd" style="left:0;right:0;top:560px;text-align:center;font-family:IK;font-size:330px;line-height:1;letter-spacing:-8px"></div>
+    <img id="d3" class="cut" src="img/diver.png" style="left:330px;top:900px;width:420px">
+    <div class="a chip" id="rules" style="left:60px;top:250px;background:#fff;color:var(--ink)">RULES: NO AIR · NO WALLS · NO SPIN</div>
+  </div>
+
+  <!-- S4 descent -->
+  <div id="desc" class="a">
+    <div id="strata" class="a"></div>
+    <div id="shaft" class="a"></div>
+    <svg id="lines" class="a" viewBox="0 0 1080 1920"></svg>
+    <img id="d4" class="cut" src="img/diver.png" style="left:330px;top:620px;width:420px;z-index:5">
+    <div class="hudbox" id="hT" style="left:60px;top:150px"><div class="hud" style="position:static"><div class="lab">TIME</div><div class="val" id="vT">00:00</div></div></div>
+    <div class="hudbox" id="hD" style="left:60px;top:330px"><div class="hud" style="position:static"><div class="lab">DEPTH</div><div class="val" id="vD">0 km</div></div></div>
+    <div class="hudbox" id="hS" style="right:60px;top:150px;text-align:right"><div class="hud" style="position:static"><div class="lab">SPEED</div><div class="val" id="vS">0 km/h</div></div></div>
+    <div id="lname" class="a"><div class="n" id="ln"></div><div class="d" id="ld"></div></div>
+  </div>
+
+  <!-- S5 splash -->
+  <div id="s5" class="a" style="inset:0;background:var(--pink)">
+    <div class="card" id="atl" style="left:120px;top:250px;width:840px;height:1120px"><img id="atlimg" src="img/atlantic/f001.jpg"></div>
+    <div class="a chip" id="atlchip" style="left:150px;top:1290px;background:var(--cobalt);color:#fff">38 MIN LATER · NORTH ATLANTIC</div>
+    <div class="cap" id="cap5" style="top:1500px"></div>
+  </div>
+
+  <!-- S6 kola -->
+  <div id="kola" class="a">
+    <div id="kk" class="a"></div>
+    <div class="card" id="kc" style="left:200px;top:300px;width:680px;height:880px"><img id="kolaimg" src="img/kola/f001.jpg"></div>
+    <img id="guy" class="cut" src="img/guy.png" style="left:700px;top:150px;width:300px">
+    <div id="kn" class="a">0 m</div>
+    <div id="kt" class="a"></div>
+    <div id="kbar" class="a"><div id="kfill" class="a"></div></div>
+    <div id="kbl" class="a"><span>SURFACE</span><span>CENTRE · 6,371 KM</span></div>
+    <div id="ktip" class="a"></div>
+  </div>
+
+  <!-- S7 end -->
+  <div id="end" class="a">
+    <div class="k" id="ek"></div>
+    <div class="big"><div class="mask"><div id="e1">Air and Earth’s spin</div></div><div class="mask"><div id="e2">would stop you</div></div><div class="mask"><div id="e3"><span class="blk" style="background:var(--tomato);color:#fff">long before</span></div></div><div class="mask"><div id="e4"><span class="blk" style="background:var(--sun)">the core.</span></div></div></div>
+    <div class="foot" id="efoot"></div>
+    <img id="dend" class="cut" src="img/float.png" style="left:620px;top:1420px;width:400px">
+  </div>
+
+  <div id="hdr" class="a"><span>WHAT IF NO. 04</span><span id="hdrR">@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+  <div id="flash" class="a"></div>
+</div>
+<script>
+const TAB = [[0.0, 0.0, 0], [0.1604, 0.5, 349], [0.3208, 1.8, 686], [0.4812, 4.1, 1023], [0.6417, 7.3, 1363], [0.8021, 11.4, 1705], [0.9625, 16.4, 2045], [1.1229, 22.3, 2386], [1.2833, 29.1, 2726], [1.4437, 36.9, 3067], [1.6041, 45.6, 3409], [1.7645, 55.1, 3750], [1.925, 65.6, 4091], [2.0854, 77.0, 4433], [2.2458, 89.3, 4774], [2.4062, 102.5, 5116], [2.5666, 116.7, 5458], [2.727, 131.7, 5801], [2.8874, 147.7, 6143], [3.0479, 164.6, 6486], [3.2083, 182.3, 6828], [3.3687, 201.1, 7171], [3.5291, 220.7, 7515], [3.6895, 241.2, 7858], [3.8499, 262.7, 8202], [4.0103, 285.1, 8546], [4.1707, 308.4, 8890], [4.3312, 332.6, 9235], [4.4916, 357.8, 9580], [4.652, 383.9, 9925], [4.8124, 410.9, 10271], [4.9728, 438.8, 10616], [5.1332, 467.6, 10962], [5.2936, 497.4, 11308], [5.454, 528.1, 11655], [5.6145, 559.7, 12002], [5.7749, 592.2, 12348], [5.9353, 625.7, 12695], [6.0957, 660.1, 13042], [6.2561, 695.5, 13389], [6.4165, 731.7, 13736], [6.5769, 768.9, 14083], [6.7374, 807.0, 14430], [6.8978, 846.1, 14776], [7.0582, 886.0, 15122], [7.2186, 926.9, 15468], [7.379, 968.7, 15814], [7.5394, 1011.5, 16159], [7.6998, 1055.2, 16505], [7.8602, 1099.7, 16850], [8.0207, 1145.3, 17195], [8.1811, 1191.7, 17540], [8.3415, 1239.0, 17884], [8.5019, 1287.3, 18229], [8.6623, 1336.5, 18573], [8.8227, 1386.6, 18918], [8.9831, 1437.7, 19262], [9.1436, 1489.6, 19607], [9.304, 1542.5, 19951], [9.4644, 1596.3, 20295], [9.6248, 1651.0, 20639], [9.7852, 1706.7, 20984], [9.9456, 1763.2, 21329], [10.106, 1820.7, 21674], [10.2664, 1879.1, 22019], [10.4269, 1938.4, 22365], [10.5873, 1998.7, 22711], [10.7477, 2059.9, 23058], [10.9081, 2122.0, 23405], [11.0685, 2185.0, 23754], [11.2289, 2249.0, 24103], [11.3893, 2313.9, 24453], [11.5497, 2379.8, 24805], [11.7102, 2446.6, 25158], [11.8706, 2514.3, 25513], [12.031, 2583.0, 25870], [12.1914, 2652.6, 26229], [12.3518, 2723.2, 26590], [12.5122, 2794.8, 26954], [12.6726, 2867.4, 27322], [12.8331, 2940.9, 27691], [12.9935, 3015.4, 28054], [13.1539, 3090.9, 28412], [13.3143, 3167.3, 28764], [13.4747, 3244.7, 29109], [13.6351, 3323.0, 29448], [13.7955, 3402.1, 29780], [13.9559, 3482.2, 30105], [14.1164, 3563.1, 30423], [14.2768, 3644.9, 30734], [14.4372, 3727.4, 31036], [14.5976, 3810.8, 31331], [14.758, 3895.0, 31618], [14.9184, 3979.9, 31897], [15.0788, 4065.5, 32167], [15.2393, 4151.9, 32429], [15.3997, 4238.9, 32682], [15.5601, 4326.6, 32926], [15.7205, 4414.9, 33160], [15.8809, 4503.9, 33386], [16.0413, 4593.5, 33602], [16.2017, 4683.6, 33809], [16.3621, 4774.2, 34006], [16.5226, 4865.4, 34193], [16.683, 4957.1, 34371], [16.8434, 5049.2, 34539], [17.0038, 5141.7, 34697], [17.1642, 5234.7, 34845], [17.3246, 5328.0, 34981], [17.485, 5421.8, 35106], [17.6454, 5515.8, 35220], [17.8059, 5610.0, 35322], [17.9663, 5704.6, 35412], [18.1267, 5799.4, 35490], [18.2871, 5894.4, 35556], [18.4475, 5989.5, 35610], [18.6079, 6084.8, 35653], [18.7683, 6180.1, 35683], [18.9288, 6275.6, 35701], [19.0892, 6371.0, 35707]]; // [min, depth km, speed km/h] surface -> centre (PREM)
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); }, spring: k => 1 - Math.exp(-6*k)*Math.cos(10*k) };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = s % 255; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+// ---- story time / depth / speed (PREM table) ----
+function atMin(m) { // m in [0, 19.09]
+  for (let i = 1; i < TAB.length; i++) if (TAB[i][0] >= m) { const k = (m - TAB[i-1][0]) / (TAB[i][0] - TAB[i-1][0] || 1); return [lerp(TAB[i-1][1], TAB[i][1], k), lerp(TAB[i-1][2], TAB[i][2], k)]; }
+  return [6371, TAB[TAB.length-1][2]];
+}
+function minAtDepth(d) { for (let i = 1; i < TAB.length; i++) if (TAB[i][1] >= d) { const k = (d - TAB[i-1][1]) / (TAB[i][1] - TAB[i-1][1] || 1); return lerp(TAB[i-1][0], TAB[i][0], k); } return TAB[TAB.length-1][0]; }
+const TC = TAB[TAB.length-1][0];
+// screen windows per layer (seconds) and depth bounds
+const SEG = [ [13.0, 15.4, 0, 35], [15.4, 19.6, 35, 2890], [19.6, 22.8, 2890, 5150], [22.8, 25.6, 5150, 6371] ];
+function storyMinAt(t) { // descent
+  for (const [a, b, d0, d1] of SEG) if (t < b) { const m0 = minAtDepth(d0), m1 = d1 >= 6371 ? TC : minAtDepth(d1); return lerp(m0, m1, P(t, a, b)); }
+  return TC;
+}
+// visual y of a depth (px in strata), nonlinear
+const VY = [[0, 0], [35, 1300], [2890, 4600], [5150, 7700], [6371, 9900]];
+function vy(d) { for (let i = 1; i < VY.length; i++) if (d <= VY[i][0]) return lerp(VY[i-1][1], VY[i][1], (d - VY[i-1][0]) / (VY[i][0] - VY[i-1][0])); return VY[VY.length-1][1]; }
+// build strata
+{ const L = [['#2443e6', -2000, 0], ['#b9774c', 0, vy(35)], ['#ff8a3c', vy(35), vy(2890)], ['#ff4a2e', vy(2890), vy(5150)], ['#ffcb2b', vy(5150), vy(6371) + 2000]];
+  let h = ''; L.forEach(([c, y0, y1]) => h += `<div class="layer" style="top:${y0 + 2000}px;height:${y1 - y0}px;background:${c}"></div>`);
+  // wavy boundaries
+  const wave = (y, col) => { let d = `M0 ${y}`; for (let x = 0; x <= 1080; x += 60) d += ` Q ${x + 30} ${y + (x / 60 % 2 ? 26 : -26)} ${x + 60} ${y}`; return `<svg class="layer" style="top:${2000 + y - 40}px;height:80px" viewBox="0 ${y - 40} 1080 80"><path d="${d} L1080 ${y+40} L0 ${y+40} Z" fill="${col}"/></svg>`; };
+  h += wave(vy(35), '#ff8a3c') + wave(vy(2890), '#ff4a2e') + wave(vy(5150), '#ffcb2b');
+  // speckles for texture
+  for (let i = 0; i < 260; i++) { const y = hash(i) * (vy(6371) + 1800) - 1800; const x = hash(i + 99) * 1080; const r = 6 + hash(i + 7) * 22; h += `<div style="position:absolute;left:${x}px;top:${y + 2000}px;width:${r}px;height:${r}px;border-radius:50%;background:rgba(20,20,20,.12)"></div>`; }
+  // grass at surface
+  h += `<div class="layer" style="top:${2000 - 60}px;height:60px;background:#20c497;border-bottom:8px solid #141414"></div>`;
+  $('#strata').innerHTML = h; }
+const LNAMES = [
+  [13.2, 15.3, 'CRUST', 'Solid rock. About 30–35 km thick under continents.', 'var(--paper)', 'var(--ink)'],
+  [15.6, 19.5, 'MANTLE', 'Hot, slowly flowing rock. Down to 2,900 km.', 'var(--ink)', '#fff'],
+  [19.8, 22.7, 'OUTER CORE', 'Liquid iron and nickel. Down to 5,150 km.', 'var(--ink)', '#fff'],
+  [23.0, 25.5, 'INNER CORE', 'About 5,200–6,000 °C. Roughly as hot as the Sun’s surface.', 'var(--ink)', '#fff'],
+  [25.7, 28.0, 'THE CENTRE', 'Weightless. 19 minutes in, ≈36,000 km/h.', 'var(--ink)', '#fff'],
+];
+const fmtT = m => { const s = Math.round(m * 60); return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`; };
+
+// ---- timeline ----
+const T = { s1: [0, 4.5], s2: [4.5, 10.0], s3: [10.0, 13.0], s4: [13.0, 31.6], s5: [31.6, 36.6], s6: [36.6, 44.6], s7: [44.6, 50.0] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+
+function S1(t) {
+  ['#ta', '#tb', '#tc', '#td'].forEach((s, i) => {
+    const ex = E.expoIn(P(t, 3.9 + i * .06, 4.4 + i * .06));
+    $(s).style.transform = `translate(${Math.sin(t * 1.4 + i * 1.7) * 6}px, ${-ex * 130}%)`;
+  });
+  const bob = Math.sin(t * 2.2) * 18;
+  const dive = E.expoIn(P(t, 3.7, 4.45));
+  $('#d1').style.transform = `translate(${-dive * 300}px, ${bob + dive * 900}px) rotate(${28 + Math.sin(t * 1.3) * 6 + dive * 10}deg)`;
+  $('#s1earth').style.transform = `translateY(${Math.sin(t * .8) * 8 + dive * 200}px)`;
+}
+
+function S2(t) {
+  const t0 = T.s2[0];
+  frameSeq($('#sydimg'), 'sydney', t, t0);
+  const ci = E.back(P(t, t0, t0 + 0.6));
+  const shrink = E.io(P(t, t0 + 2.4, t0 + 3.1));
+  $('#syd').style.transform = `translate(${(1 - ci) * 900 - shrink * 70}px, ${-shrink * 40}px) rotate(${lerp(-3, -6, shrink)}deg) scale(${lerp(1, .36, shrink)})`;
+  $('#syd').style.transformOrigin = '0 0';
+  $('#sydchip').style.opacity = P(t, t0 + 0.5, t0 + 0.7) * (1 - P(t, t0 + 2.3, t0 + 2.5));
+  $('#sydchip').style.transform = `translateY(${(1 - E.expo(P(t, t0 + 0.5, t0 + 1))) * 40}px)`;
+  const gi = E.back(P(t, t0 + 2.7, t0 + 3.3));
+  $('#gl').setAttribute('transform', `translate(540,1000) scale(${gi})`);
+  const lk = E.io(P(t, t0 + 3.2, t0 + 4.4));
+  const L = 780; $('#gline').style.strokeDasharray = `26 18`; $('#gline').setAttribute('y2', -390 + 780 * lk);
+  $('#gend').style.opacity = lk > .98 ? 1 : 0;
+  $('#glab').style.opacity = P(t, t0 + 3.0, t0 + 3.3);
+  $('#gl2').style.opacity = lk > .9 ? 1 : 0;
+  $('#gdist').style.opacity = P(t, t0 + 3.2, t0 + 3.4);
+  $('#gdt').textContent = fmt(12742 * lk) + ' km';
+  $('#globe').style.opacity = gi > 0 ? 1 : 0;
+  const c = t >= t0 + 3.3 ? 'Straight down. 12,742 km to the other side.' : '';
+  $('#cap2').innerHTML = c ? `<span style="background:var(--sun)">${c}</span>` : '';
+  $('#cap2').style.opacity = E.expo(P(t, t0 + 3.3, t0 + 3.7));
+  const ex = E.expoIn(P(t, T.s2[1] - .45, T.s2[1]));
+  $('#s2').style.transform = `translateY(${-ex * 1920}px)`;
+}
+
+function S3(t) {
+  const t0 = T.s3[0];
+  const seq = [['3', 'var(--pink)'], ['2', 'var(--sun)'], ['1', 'var(--mint)'], ['JUMP!', 'var(--tomato)']];
+  const idx = Math.min(3, Math.floor((t - t0) / 0.55));
+  const lk = P(t, t0 + idx * .55, t0 + idx * .55 + .3);
+  const [txt, col] = seq[idx];
+  $('#cd').innerHTML = `<span class="blk" style="background:${col};color:var(--ink);font-size:${idx === 3 ? 230 : 330}px">${txt}</span>`;
+  $('#cd').style.transform = `scale(${E.back(lk)}) rotate(${(idx % 2 ? -1 : 1) * 4}deg)`;
+  $('#cd').style.opacity = 1 - P(t, t0 + 2.5, t0 + 2.7);
+  $('#rules').style.transform = `translateX(${(1 - E.expo(P(t, t0, t0 + .5))) * -900}px)`;
+  // diver: crouch bob, jump up at 2.2, dive into hole
+  let y = 900 + Math.sin(t * 6) * 10, r = -10, x = 330;
+  if (t > t0 + 2.15) { const k = P(t, t0 + 2.15, t0 + 2.45); y = 900 - E.out(k) * 260; r = lerp(-10, 120, k); }
+  if (t > t0 + 2.45) { const k = E.expoIn(P(t, t0 + 2.45, t0 + 3.0)); y = 640 + k * 1100; r = 118; x = 330 + k * 0; }
+  $('#d3').style.transform = `translate(${x - 330}px, ${y - 900}px) rotate(${r}deg)`;
+}
+
+function S4(t) {
+  const t0 = T.s4[0];
+  let depth, speed, mins, rising = false;
+  if (t < 25.6) { mins = storyMinAt(t); [depth, speed] = atMin(mins); }
+  else if (t < 28.0) { mins = TC + (t - 25.6) * 0.15; depth = 6371; speed = TAB[TAB.length - 1][2]; }
+  else { // rise: mirror of the fall, compressed 28.0 -> 31.3
+    rising = true; const k = E.io(P(t, 28.0, 31.3)); const m = TC * (1 - k); [depth, speed] = atMin(m); mins = 2 * TC - m;
+  }
+  const camY = vy(depth) + 2000 - 820;
+  $('#strata').style.transform = `translateY(${-camY}px)`;
+  $('#shaft').style.opacity = 1;
+  $('#vT').textContent = fmtT(mins);
+  $('#vD').textContent = rising ? fmt(depth) + ' km' : fmt(depth) + ' km';
+  $('#vS').textContent = fmt(speed) + ' km/h';
+  $('#hD').querySelector('.lab').textContent = rising ? 'DEPTH (CLIMBING)' : 'DEPTH';
+  // diver
+  const atC = t >= 25.6 && t < 28.0;
+  $('#d4').src = atC ? 'img/float.png' : 'img/diver.png';
+  const wob = Math.sin(t * 9) * (atC ? 0 : 4);
+  const rot = atC ? Math.sin(t * 1.5) * 25 : (rising ? 28 + 180 : 28) + wob * .5;
+  const fy = atC ? Math.sin(t * 2) * 30 : 0;
+  $('#d4').style.transform = `translateY(${fy}px) rotate(${rot}deg) scale(${atC ? 1.1 : 1})`;
+  // speed lines
+  const sp = speed / 36000; let h = '';
+  for (let i = 0; i < 26; i++) {
+    const x = 400 + hash(i) * 280, len = 60 + sp * 360, ph = (t * (0.4 + sp * 3.2) + hash(i + 5)) % 1;
+    const y = rising ? 1920 - ph * 2400 : ph * 2400 - 400;
+    h += `<line x1="${x}" y1="${y}" x2="${x}" y2="${y + (rising ? len : -len)}" stroke="rgba(255,255,255,${.25 + sp * .5})" stroke-width="5" stroke-linecap="round"/>`;
+  }
+  $('#lines').innerHTML = atC ? '' : h;
+  // layer names
+  const L = LNAMES.find(l => t >= l[0] && t < l[1]);
+  if (L && !rising) {
+    const k = E.expo(P(t, L[0], L[0] + .45)), o = 1 - P(t, L[1] - .25, L[1]);
+    $('#ln').innerHTML = `<span class="blk" style="background:${L[4]};color:${L[5]}">${L[2]}</span>`;
+    $('#ld').innerHTML = `<span class="blk" style="background:${L[4]};color:${L[5]};font-size:42px;line-height:1.5;box-decoration-break:clone;-webkit-box-decoration-break:clone">${L[3]}</span>`;
+    $('#lname').style.opacity = o; $('#lname').style.transform = `translateX(${(1 - k) * -700}px)`;
+  } else if (rising) {
+    const k = E.expo(P(t, 28.2, 28.7)), o = 1 - P(t, 31.0, 31.4);
+    $('#ln').innerHTML = `<span class="blk" style="background:var(--mint);color:var(--ink)">AND UP…</span>`;
+    $('#ld').innerHTML = `<span class="blk" style="background:var(--ink);color:#fff;font-size:42px;line-height:1.5">You slow down all the way to the far side.</span>`;
+    $('#lname').style.opacity = o; $('#lname').style.transform = `translateX(${(1 - k) * 700}px)`;
+  } else $('#lname').style.opacity = 0;
+  const hk = E.back(P(t, t0, t0 + .5));
+  ['#hT', '#hD', '#hS'].forEach((s, i) => $(s).style.transform = `scale(${E.back(P(t, t0 + i * .12, t0 + .5 + i * .12))})`);
+  $('#flash').style.opacity = (t >= 25.6 && t < 25.8 ? (1 - (t - 25.6) / .2) * .8 : 0);
+  const ex = E.expoIn(P(t, 31.2, 31.6)); $('#desc').style.transform = `translateY(${-ex * 1920}px)`;
+}
+
+function S5(t) {
+  const t0 = T.s5[0];
+  frameSeq($('#atlimg'), 'atlantic', t, t0);
+  const ci = E.back(P(t, t0, t0 + .6));
+  $('#atl').style.transform = `translateY(${(1 - ci) * 1400}px) rotate(${lerp(10, 3, ci) + Math.sin(t) * .6}deg)`;
+  $('#atlchip').style.opacity = P(t, t0 + .5, t0 + .7); $('#atlchip').style.transform = `translateY(${(1 - E.expo(P(t, t0 + .5, t0 + 1))) * 40}px)`;
+  const caps = [[t0 + 1.0, t0 + 3.0, '≈480 km southwest of the Azores.', 'var(--sun)'], [t0 + 3.0, T.s5[1], 'Then you fall back in. Forever.', 'var(--mint)']];
+  const c = caps.find(c => t >= c[0] && t < c[1]);
+  $('#cap5').innerHTML = c ? `<span style="background:${c[3]}">${c[2]}</span>` : '';
+  $('#cap5').style.opacity = c ? E.expo(P(t, c[0], c[0] + .3)) : 0;
+  const ex = E.expoIn(P(t, T.s5[1] - .4, T.s5[1])); $('#s5').style.transform = `translateX(${-ex * 1080}px)`;
+}
+
+function S6(t) {
+  const t0 = T.s6[0];
+  frameSeq($('#kolaimg'), 'kola', t, t0);
+  const si = E.expo(P(t, t0, t0 + .5)); $('#kola').style.transform = `translateX(${(1 - si) * 1080}px)`;
+  $('#kk').textContent = typed('BACK TO REALITY. THE DEEPEST HOLE EVER DUG:', t, t0 + .3, 34);
+  const ci = E.back(P(t, t0 + .6, t0 + 1.2));
+  $('#kc').style.transform = `scale(${ci}) rotate(${-4 + Math.sin(t * .9) * .8}deg)`;
+  const gi = E.spring(P(t, t0 + 1.6, t0 + 2.6));
+  $('#guy').style.transform = `translateY(${(1 - gi) * -400}px) rotate(${8 + Math.sin(t * 2) * 3}deg)`; $('#guy').style.opacity = P(t, t0 + 1.6, t0 + 1.7);
+  const nk = E.out(P(t, t0 + 1.4, t0 + 2.8));
+  $('#kn').textContent = fmt(12262 * nk) + ' m'; $('#kn').style.opacity = P(t, t0 + 1.3, t0 + 1.5);
+  $('#kt').innerHTML = t > t0 + 2.6 ? 'Kola Superdeep Borehole, Russia, 1989.<br>They stopped when the rock hit ≈180 °C.' : '';
+  $('#kt').style.opacity = E.out(P(t, t0 + 2.6, t0 + 3.0));
+  const bk = E.io(P(t, t0 + 4.0, t0 + 5.0));
+  $('#kbar').style.opacity = P(t, t0 + 3.8, t0 + 4.0); $('#kbl').style.opacity = P(t, t0 + 3.8, t0 + 4.0);
+  $('#kfill').style.width = (bk * 0.0019 * 960 + bk * 6) + 'px';
+  $('#ktip').innerHTML = t > t0 + 5.0 ? `That’s about <span class="blk" style="background:var(--sun);color:var(--ink)">0.2%</span> of the way to the centre.` : '';
+  $('#ktip').style.opacity = E.out(P(t, t0 + 5.0, t0 + 5.4)); $('#ktip').style.color = '#fff';
+  const ex = E.expoIn(P(t, T.s6[1] - .4, T.s6[1])); $('#kola').style.opacity = 1 - ex;
+}
+
+function S7(t) {
+  const t0 = T.s7[0];
+  $('#ek').textContent = typed('THIS IS FICTION.', t, t0 + .1, 24);
+  ['#e1', '#e2', '#e3', '#e4'].forEach((s, i) => { const k = E.expo(P(t, t0 + .8 + i * .14, t0 + 1.3 + i * .14)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').innerHTML = 'Idealised: no air, no friction, tunnel through the centre.<br>Times and speeds: our calculation (PREM Earth model; Klotz, 2015).<br><br>what if no. 04 · @lost_index';
+  $('#efoot').style.opacity = P(t, t0 + 1.8, t0 + 2.2);
+  const dk = E.spring(P(t, t0 + 1.2, t0 + 2.4));
+  $('#dend').style.transform = `translateY(${(1 - dk) * 600 + Math.sin(t * 2) * 14}px) rotate(${Math.sin(t * 1.2) * 10}deg)`;
+  $('#stage').style.opacity = 1 - P(t, 49.6, 50.0);
+}
+
+window.renderAt = function (t) {
+  show('#s1', inS(t, 's1')); show('#s2', inS(t, 's2')); show('#s3', inS(t, 's3')); show('#desc', inS(t, 's4'));
+  show('#s5', inS(t, 's5')); show('#kola', inS(t, 's6')); show('#end', t >= T.s7[0]);
+  const darkHdr = inS(t, 's3') || inS(t, 's6');
+  $('#hdr').style.color = darkHdr ? '#fff' : 'var(--ink)';
+  $('#hdr').style.opacity = inS(t, 's4') ? 0 : 1;
+  if (inS(t, 's1')) S1(t);
+  if (inS(t, 's2')) S2(t);
+  if (inS(t, 's3')) S3(t);
+  if (inS(t, 's4')) S4(t); else $('#flash').style.opacity = 0;
+  if (inS(t, 's5')) S5(t);
+  if (inS(t, 's6')) S6(t);
+  if (t >= T.s7[0]) S7(t); else $('#stage').style.opacity = 1;
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
