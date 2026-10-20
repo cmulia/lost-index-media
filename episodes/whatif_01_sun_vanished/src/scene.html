@@ -1,0 +1,797 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url(InstrumentSerif-Regular.ttf); }
+@font-face { font-family: ISI; src: url(InstrumentSerif-Italic.ttf); }
+html, body { margin: 0; padding: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+canvas { position: absolute; left: 0; top: 0; }
+#ov { position: absolute; inset: 0; pointer-events: none; color: #fff; }
+.hud { position: absolute; left: 0; top: 470px; width: 1080px; height: 520px; box-sizing: border-box; padding: 120px 0 0 44px; background: radial-gradient(closest-side at 28% 50%, rgba(0,0,0,.24), rgba(0,0,0,0)); text-shadow: 0 2px 10px rgba(0,0,0,.45), 0 0 2px rgba(0,0,0,.4); }
+.blk { margin-bottom: 52px; }
+.lab { font-family: IS; font-size: 33px; letter-spacing: 9px; text-transform: uppercase; opacity: .92; }
+.val { font-family: IS; font-size: 96px; line-height: 1.02; margin-top: 4px; }
+.sub { font-family: IS; font-size: 27px; letter-spacing: 5px; text-transform: uppercase; opacity: .95; margin-top: 4px; }
+#subt { position: absolute; left: 60px; right: 60px; top: 1060px; text-align: center; font-family: ISI; font-size: 60px; line-height: 1.12;
+  text-shadow: 0 2px 14px rgba(0,0,0,.6), 0 0 3px rgba(0,0,0,.5); }
+#end { position: absolute; left: 80px; right: 80px; top: 560px; text-align: center; font-family: ISI; color: #fff;
+  text-shadow: 0 2px 16px rgba(0,0,0,.55), 0 0 3px rgba(0,0,0,.45); }
+#end .a { font-size: 64px; }
+#end .b { font-size: 66px; line-height: 1.12; margin-top: 40px; }
+#end .b span { font-family: IS; }
+#tag { position: absolute; left: 0; right: 0; bottom: 120px; text-align: center; font-family: IS; font-size: 30px; letter-spacing: 8px; opacity: .85;
+  text-shadow: 0 2px 8px rgba(0,0,0,.5); }
+#fade { position: absolute; inset: 0; background: #000; opacity: 0; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+.red { color: #ffb3a6; }
+</style>
+</head>
+<body>
+<div id="ov">
+  <div class="hud" id="hud"></div>
+  <div id="subt"></div>
+  <div id="dim" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%, rgba(5,10,25,.55), rgba(5,10,25,.15));opacity:0"></div>
+  <div id="end"></div>
+  <div id="tag"></div>
+  <div id="note" style="position:absolute;left:0;right:0;bottom:70px;text-align:center;font-family:IS;font-size:26px;letter-spacing:6px;text-transform:uppercase;opacity:0;color:#cfd8e8">Illustration · not to scale</div>
+  <div id="flash"></div>
+  <div id="fade"></div>
+</div>
+<script type="importmap">{ "imports": { "three": "./node_modules/three/build/three.module.js" } }</script>
+<script type="module">
+import * as THREE from 'three';
+
+const W = 1080, H = 1920;
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(W, H);
+renderer.setPixelRatio(1);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.insertBefore(renderer.domElement, document.body.firstChild);
+
+// ---------- helpers ----------
+let seed = 12345;
+const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+const R = (a, b) => a + (b - a) * rnd();
+const pick = (arr) => arr[Math.floor(rnd() * arr.length)];
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const smooth = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+const mats = {};
+const M = (c, opts = {}) => {
+  const key = c + JSON.stringify(opts);
+  if (!mats[key]) mats[key] = new THREE.MeshLambertMaterial({ color: c, flatShading: true, ...opts });
+  return mats[key];
+};
+function mesh(geo, mat, x = 0, y = 0, z = 0, shadow = true) {
+  const m = new THREE.Mesh(geo, mat);
+  m.position.set(x, y, z);
+  m.castShadow = shadow; m.receiveShadow = false;
+  return m;
+}
+function radialTex(stops, size = 256) {
+  const c = document.createElement('canvas'); c.width = c.height = size;
+  const g = c.getContext('2d');
+  const gr = g.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+  stops.forEach(([o, col]) => gr.addColorStop(o, col));
+  g.fillStyle = gr; g.fillRect(0, 0, size, size);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function stripeTex(a, b, n = 8, vertical = false) {
+  const c = document.createElement('canvas'); c.width = c.height = 64;
+  const g = c.getContext('2d');
+  for (let i = 0; i < n; i++) { g.fillStyle = i % 2 ? b : a; vertical ? g.fillRect(i * 64 / n, 0, 64 / n, 64) : g.fillRect(0, i * 64 / n, 64, 64 / n); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.magFilter = THREE.NearestFilter; return t;
+}
+
+// ================= BEACH SCENE =================
+const beach = new THREE.Scene();
+beach.fog = new THREE.Fog(0xcfe6f5, 120, 900);
+
+// sky dome
+const skyU = { top: { value: new THREE.Color(0x3d8fd6) }, hor: { value: new THREE.Color(0xcfe9f7) } };
+const sky = new THREE.Mesh(new THREE.SphereGeometry(1500, 32, 16), new THREE.ShaderMaterial({
+  uniforms: skyU, side: THREE.BackSide, depthWrite: false, fog: false,
+  vertexShader: `varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+  fragmentShader: `uniform vec3 top; uniform vec3 hor; varying vec3 vP;
+    void main(){ float h = clamp(vP.y, 0., 1.); vec3 c = mix(hor, top, pow(h, .55)); gl_FragColor = vec4(c,1.);
+    #include <colorspace_fragment>
+    }`
+}));
+beach.add(sky);
+
+// stars
+const starGeo = new THREE.BufferGeometry();
+{
+  const p = [];
+  for (let i = 0; i < 2600; i++) {
+    const u = rnd() * 2 - 1, th = rnd() * Math.PI * 2;
+    let y = Math.abs(u) * 0.98 + 0.02; const r = Math.sqrt(1 - y * y);
+    p.push(Math.cos(th) * r * 1200, y * 1200, Math.sin(th) * r * 1200);
+  }
+  starGeo.setAttribute('position', new THREE.Float32BufferAttribute(p, 3));
+}
+const starMat = new THREE.PointsMaterial({ color: 0xffffff, size: 2.6, sizeAttenuation: false, transparent: true, opacity: 0, fog: false, depthWrite: false });
+const stars = new THREE.Points(starGeo, starMat); beach.add(stars);
+const starGeo2 = new THREE.BufferGeometry();
+{
+  const p = [];
+  for (let i = 0; i < 500; i++) {
+    const u = rnd(), th = rnd() * Math.PI * 2; let y = u * 0.95 + 0.05; const r = Math.sqrt(1 - y * y);
+    p.push(Math.cos(th) * r * 1200, y * 1200, Math.sin(th) * r * 1200);
+  }
+  starGeo2.setAttribute('position', new THREE.Float32BufferAttribute(p, 3));
+}
+const starMat2 = new THREE.PointsMaterial({ color: 0xdfe8ff, size: 4.2, sizeAttenuation: false, transparent: true, opacity: 0, fog: false, depthWrite: false });
+const stars2 = new THREE.Points(starGeo2, starMat2); beach.add(stars2);
+
+// lights
+const hemi = new THREE.HemisphereLight(0xcfe8ff, 0xd9c08f, 1.5); beach.add(hemi);
+const amb = new THREE.AmbientLight(0x6f86b8, 0); beach.add(amb);
+const SUN_DIR = new THREE.Vector3(0.22, 0.86, -0.46).normalize();
+const sunL = new THREE.DirectionalLight(0xfff1d6, 2.6);
+sunL.position.copy(SUN_DIR).multiplyScalar(120); sunL.target.position.set(0, 0, 10);
+sunL.castShadow = true; sunL.shadow.mapSize.set(2048, 2048);
+Object.assign(sunL.shadow.camera, { left: -60, right: 60, top: 60, bottom: -60, near: 1, far: 300 });
+sunL.shadow.bias = -0.0006;
+beach.add(sunL, sunL.target);
+const pls = [];
+for (let i = 0; i < 6; i++) { const l = new THREE.PointLight(0xffffff, 0, 14, 1.6); beach.add(l); pls.push(l); }
+
+// sun + moon in sky
+const sunDisc = new THREE.Mesh(new THREE.CircleGeometry(26, 40), new THREE.MeshBasicMaterial({ color: 0xfffbe8, fog: false }));
+sunDisc.position.copy(SUN_DIR).multiplyScalar(1100); sunDisc.lookAt(0, 0, 0); beach.add(sunDisc);
+const glowTex = radialTex([[0, 'rgba(255,250,225,1)'], [0.12, 'rgba(255,240,200,.85)'], [0.35, 'rgba(255,225,160,.25)'], [1, 'rgba(255,220,150,0)']]);
+const sunGlow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, blending: THREE.AdditiveBlending, depthWrite: false, fog: false, transparent: true }));
+sunGlow.position.copy(sunDisc.position); sunGlow.scale.set(520, 520, 1); beach.add(sunGlow);
+const MOON_DIR = new THREE.Vector3(0.36, 0.40, -0.84).normalize();
+const moonMat = new THREE.MeshBasicMaterial({ color: 0xe9eef6, transparent: true, opacity: 0.55, fog: false });
+const moon = new THREE.Mesh(new THREE.SphereGeometry(19, 24, 16), moonMat);
+moon.position.copy(MOON_DIR).multiplyScalar(1100); beach.add(moon);
+// craters
+for (let i = 0; i < 7; i++) {
+  const c = new THREE.Mesh(new THREE.CircleGeometry(R(2, 4.5), 12), new THREE.MeshBasicMaterial({ color: 0xc5ccd6, transparent: true, opacity: 0.5, fog: false }));
+  const a = rnd() * 6.28, r = R(2, 12);
+  c.position.set(Math.cos(a) * r, Math.sin(a) * r, 19.2); moon.add(c);
+}
+moon.lookAt(0, 0, 0); moon.rotateY(Math.PI); // craters face camera side
+moon.children.forEach(c => { c.position.z = -19.3; c.rotation.y = Math.PI; });
+const moonGlow = new THREE.Sprite(new THREE.SpriteMaterial({ map: radialTex([[0, 'rgba(220,230,255,.6)'], [0.3, 'rgba(200,215,255,.18)'], [1, 'rgba(200,215,255,0)']]), blending: THREE.AdditiveBlending, depthWrite: false, fog: false, transparent: true, opacity: 0 }));
+moonGlow.position.copy(moon.position); moonGlow.scale.set(170, 170, 1); beach.add(moonGlow);
+
+// clouds
+const clouds = new THREE.Group(); beach.add(clouds);
+const cloudMat = new THREE.MeshLambertMaterial({ color: 0xffffff, flatShading: true, emissive: 0x555555 });
+for (let i = 0; i < 9; i++) {
+  const g = new THREE.Group();
+  const n = 3 + Math.floor(rnd() * 3);
+  for (let j = 0; j < n; j++) {
+    const s = R(10, 20);
+    const m = new THREE.Mesh(new THREE.IcosahedronGeometry(s, 0), cloudMat);
+    m.position.set(j * 16 - n * 8 + R(-3, 3), R(-3, 4), R(-4, 4)); m.scale.y = 0.6; g.add(m);
+  }
+  const a = R(-1.3, 1.3);
+  g.position.set(Math.sin(a) * 600, R(110, 230), -Math.cos(a) * 600 - 100);
+  g.lookAt(0, g.position.y, 0);
+  clouds.add(g);
+}
+
+// sand
+const sandGeo = new THREE.PlaneGeometry(700, 240, 140, 48); sandGeo.rotateX(-Math.PI / 2); sandGeo.translate(0, 0, 118);
+{
+  const p = sandGeo.attributes.position; const cols = [];
+  const c1 = new THREE.Color(0xead2a0), c2 = new THREE.Color(0xc9a978);
+  for (let i = 0; i < p.count; i++) {
+    const x = p.getX(i), z = p.getZ(i);
+    let y = (z - 0) * 0.025 + Math.sin(x * 0.11) * 0.12 + Math.cos(z * 0.23 + x * 0.05) * 0.1 + R(-0.06, 0.06);
+    if (z > 60) y += (z - 60) * 0.12;
+    p.setY(i, y);
+    const wet = smooth(5, 0, z);
+    const c = c1.clone().lerp(c2, wet); cols.push(c.r, c.g, c.b);
+  }
+  sandGeo.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
+  sandGeo.computeVertexNormals();
+}
+const sandMat = new THREE.MeshLambertMaterial({ vertexColors: true, flatShading: true });
+const sand = new THREE.Mesh(sandGeo, sandMat); sand.receiveShadow = true; beach.add(sand);
+const sandY = (x, z) => z * 0.025 + Math.sin(x * 0.11) * 0.12 + Math.cos(z * 0.23 + x * 0.05) * 0.1;
+
+// ocean (near, animated)
+const oceanGeo = new THREE.PlaneGeometry(700, 260, 120, 60); oceanGeo.rotateX(-Math.PI / 2); oceanGeo.translate(0, 0, -128);
+const oceanBase = Float32Array.from(oceanGeo.attributes.position.array);
+const oceanMat = new THREE.MeshLambertMaterial({ color: 0x2a86b5, flatShading: true });
+const ocean = new THREE.Mesh(oceanGeo, oceanMat); ocean.receiveShadow = true; beach.add(ocean);
+const farSea = new THREE.Mesh(new THREE.PlaneGeometry(4000, 1600), new THREE.MeshLambertMaterial({ color: 0x1f6f9c }));
+farSea.rotation.x = -Math.PI / 2; farSea.position.set(0, -0.3, -1050); beach.add(farSea);
+function waveY(x, z, t, amp) {
+  const d = -z;
+  return amp * (0.35 * Math.sin(x * 0.08 + t * 0.9 + z * 0.05) + 0.3 * Math.sin(z * 0.21 + t * 1.7) + 0.18 * Math.sin((x + z) * 0.15 - t * 1.2)) * smooth(0, 25, d) - 0.15;
+}
+function updateOcean(t, amp) {
+  const p = oceanGeo.attributes.position;
+  for (let i = 0; i < p.count; i++) {
+    const x = oceanBase[i * 3], z = oceanBase[i * 3 + 2];
+    p.setY(i, waveY(x, z, t, amp));
+  }
+  p.needsUpdate = true; oceanGeo.computeVertexNormals();
+}
+// foam lines (breaking waves)
+const foamMat = new THREE.MeshLambertMaterial({ color: 0xffffff, transparent: true, opacity: 0.9, emissive: 0x666666, flatShading: true });
+const foams = [];
+for (let i = 0; i < 5; i++) {
+  const g = new THREE.BoxGeometry(700, 0.25, 1.4, 70, 1, 1);
+  const pos = g.attributes.position;
+  for (let k = 0; k < pos.count; k++) pos.setZ(k, pos.getZ(k) + Math.sin(pos.getX(k) * 0.07 + i) * 1.2 + Math.sin(pos.getX(k) * 0.23) * 0.4);
+  const f = new THREE.Mesh(g, foamMat.clone()); beach.add(f); foams.push({ m: f, ph: i / 5 });
+}
+function updateFoam(t, on) {
+  foams.forEach(f => {
+    const k = ((t * 0.09 + f.ph) % 1);
+    f.m.position.set(0, 0.05 + 0.2 * (1 - k), lerp(-34, 1.5, k));
+    f.m.scale.z = lerp(1.6, 2.4, k);
+    f.m.material.opacity = on * (k < 0.85 ? smooth(0, 0.25, k) * 0.85 : (1 - k) / 0.15 * 0.85);
+    f.m.visible = on > 0.01;
+  });
+}
+
+// headlands
+function headland(cx, cz, w, d, h, seedOff) {
+  const g = new THREE.Group();
+  const rock = M(0xb98b5c), rock2 = M(0xa4764b), grass = M(0x6b8a45);
+  for (let i = 0; i < 14; i++) {
+    const s = R(0.6, 1);
+    const m = new THREE.Mesh(new THREE.DodecahedronGeometry(1, 0), i % 3 ? rock : rock2);
+    m.scale.set(w * R(0.18, 0.32), h * s, d * R(0.25, 0.4));
+    m.position.set(cx + R(-w / 2, w / 2), h * s * 0.35, cz + R(-d / 2, d / 2));
+    m.rotation.y = R(0, 6); g.add(m);
+    const top = new THREE.Mesh(new THREE.DodecahedronGeometry(1, 0), grass);
+    top.scale.set(m.scale.x * 0.9, h * 0.18, m.scale.z * 0.9);
+    top.position.set(m.position.x, m.position.y + m.scale.y * 0.78, m.position.z); top.rotation.y = m.rotation.y; g.add(top);
+  }
+  return g;
+}
+const north = headland(230, -150, 170, 140, 46); beach.add(north);
+const south = headland(-240, -140, 170, 130, 40); beach.add(south);
+// houses on hills (with night windows)
+const winMats = [];
+const winMat = new THREE.MeshBasicMaterial({ color: 0xffd58a, transparent: true, opacity: 0 });
+const houses = new THREE.Group(); beach.add(houses);
+for (let i = 0; i < 70; i++) {
+  const side = i % 2 ? 1 : -1;
+  const x = side * R(150, 330), z = R(-240, -60) + (side > 0 ? 0 : 10);
+  const y = R(30, 52) * smooth(330, 160, Math.abs(x)) + 8;
+  const w = R(6, 12), hh = R(5, 10), dd = R(6, 10);
+  const b = new THREE.Mesh(new THREE.BoxGeometry(w, hh, dd), M(pick([0xf3eee2, 0xe8e2d4, 0xf6f1e8, 0xd9d1c2, 0xeadfcc])));
+  b.position.set(x, y + hh / 2, z); houses.add(b);
+  const roof = new THREE.Mesh(new THREE.ConeGeometry(Math.max(w, dd) * 0.75, 3, 4), M(pick([0xb5543a, 0xa04a34, 0x7c7f86])));
+  roof.rotation.y = Math.PI / 4; roof.position.set(x, y + hh + 1.5, z); houses.add(roof);
+  for (let k = 0; k < 2; k++) {
+    const wn = new THREE.Mesh(new THREE.PlaneGeometry(1.6, 1.4), winMat);
+    wn.position.set(x + (k - 0.5) * w * 0.45, y + hh * 0.55, z + dd / 2 + 0.05); houses.add(wn);
+  }
+}
+
+// lifeguard tower
+const tower = new THREE.Group(); beach.add(tower);
+{
+  const blue = M(0x2d5fa3), yel = M(0xf2c230), white = M(0xf4f4f0);
+  for (const [dx, dz] of [[-1.3, -1.3], [1.3, -1.3], [-1.3, 1.3], [1.3, 1.3]]) tower.add(mesh(new THREE.CylinderGeometry(0.12, 0.12, 3.4, 6), white, dx, 1.7, dz));
+  tower.add(mesh(new THREE.BoxGeometry(3.4, 2.2, 3.4), blue, 0, 4.5, 0));
+  tower.add(mesh(new THREE.BoxGeometry(3.6, 0.3, 3.8), yel, 0, 5.75, 0));
+  tower.add(mesh(new THREE.BoxGeometry(2.6, 0.9, 0.05), new THREE.MeshBasicMaterial({ color: 0x9fd3f2 }), 0, 4.7, -1.73, false));
+  tower.position.set(-17, sandY(-17, 14), 14);
+}
+// red & yellow flags
+const flags = [];
+function flag(x, z) {
+  const g = new THREE.Group();
+  g.add(mesh(new THREE.CylinderGeometry(0.06, 0.06, 4.2, 6), M(0xdddddd), 0, 2.1, 0));
+  const red = mesh(new THREE.BoxGeometry(1.5, 0.5, 0.04), M(0xd62e2e), 0.78, 3.85, 0);
+  const yel = mesh(new THREE.BoxGeometry(1.5, 0.5, 0.04), M(0xf5cf1c), 0.78, 3.35, 0);
+  g.add(red, yel); g.position.set(x, sandY(x, z), z); beach.add(g); flags.push(g);
+}
+flag(-9, 4); flag(11, 4);
+
+// umbrellas & towels
+const props = new THREE.Group(); beach.add(props);
+const umbCols = [0xe5484d, 0xf2b134, 0x3c8dde, 0xf1f1f1, 0x2fb59a, 0xef6fa8, 0xff8a3c];
+const towelCols = [0xe5484d, 0x3c8dde, 0xf2b134, 0x7a5cd6, 0x2fb59a, 0xffffff, 0xef6fa8];
+const spots = [];
+const KEEP = [[-6, 58], [-3, 52], [-1, 50], [-16, 46], [-13, 41], [14, 34], [-5, 36], [-4, 62], [0, 54], [1.0, 17.5], [5.2, 14.6]];
+const clear = (x, z, r = 3.2) => KEEP.every(([kx, kz]) => Math.hypot(x - kx, z - kz) > r);
+for (let i = 0; i < 60; i++) {
+  const x = R(-55, 55), z = R(8, 50);
+  if (Math.abs(x + 17) < 4 && Math.abs(z - 14) < 4) continue;
+  if (!clear(x, z, 4.5)) continue;
+  spots.push([x, z]);
+  const y = sandY(x, z);
+  if (rnd() < 0.6) {
+    const u = new THREE.Group();
+    u.add(mesh(new THREE.CylinderGeometry(0.05, 0.05, 2.4, 5), M(0xeeeeee), 0, 1.2, 0));
+    const col = pick(umbCols);
+    const c = mesh(new THREE.ConeGeometry(1.7, 0.7, 8, 1, true), M(col, { side: THREE.DoubleSide }), 0, 2.35, 0);
+    u.add(c); u.position.set(x, y, z); u.rotation.z = R(-0.12, 0.12); props.add(u);
+  }
+  const tw = mesh(new THREE.BoxGeometry(1, 0.04, 1.9), M(pick(towelCols)), x + R(-1.2, 1.2), y + 0.03, z + 0.9, false);
+  tw.receiveShadow = true; tw.rotation.y = R(-0.3, 0.3); props.add(tw);
+}
+
+// ---------- people ----------
+const skins = [0xf1c7a5, 0xe0ac87, 0xc68a62, 0x9b6744, 0x6e4a33, 0xf6d3b8];
+const shirts = [0xe5484d, 0x3c8dde, 0xf2b134, 0xffffff, 0x2fb59a, 0x7a5cd6, 0xef6fa8, 0x333a45, 0xff8a3c];
+const shorts = [0x2b4b7c, 0x1e2a36, 0xd94b3d, 0x3b7d4c, 0x6b6b6b, 0xe9c24a, 0x1c6fa8];
+const hairs = [0x2a1d14, 0x5a3a22, 0xd8b56a, 0x111111, 0x8a4b2a];
+const people = [];
+function makePerson(o = {}) {
+  const skin = M(o.skin ?? pick(skins)), shirt = o.shirtMat ?? M(o.shirt ?? pick(shirts)), sh = M(o.shorts ?? pick(shorts));
+  const root = new THREE.Group(); const body = new THREE.Group(); root.add(body);
+  const s = o.scale ?? R(0.92, 1.06);
+  root.scale.setScalar(s);
+  const legL = new THREE.Group(), legR = new THREE.Group(); legL.position.set(-0.13, 0.9, 0); legR.position.set(0.13, 0.9, 0);
+  const legMat = o.pants ? M(o.pants) : skin;
+  legL.add(mesh(new THREE.CylinderGeometry(0.085, 0.07, 0.9, 6), legMat, 0, -0.45, 0));
+  legR.add(mesh(new THREE.CylinderGeometry(0.085, 0.07, 0.9, 6), legMat, 0, -0.45, 0));
+  body.add(legL, legR);
+  body.add(mesh(new THREE.CylinderGeometry(0.2, 0.19, 0.22, 7), sh, 0, 0.98, 0));
+  const torso = mesh(new THREE.CylinderGeometry(o.shirtless ? 0.19 : 0.21, 0.18, 0.58, 7), o.shirtless ? skin : shirt, 0, 1.36, 0);
+  body.add(torso);
+  const armL = new THREE.Group(), armR = new THREE.Group(); armL.position.set(-0.27, 1.6, 0); armR.position.set(0.27, 1.6, 0);
+  const armMat = o.sleeves ? shirt : skin;
+  armL.add(mesh(new THREE.CylinderGeometry(0.06, 0.05, 0.66, 5), armMat, 0, -0.33, 0));
+  armR.add(mesh(new THREE.CylinderGeometry(0.06, 0.05, 0.66, 5), armMat, 0, -0.33, 0));
+  body.add(armL, armR);
+  const head = new THREE.Group(); head.position.set(0, 1.78, 0); body.add(head);
+  head.add(mesh(new THREE.IcosahedronGeometry(0.15, 1), skin, 0, 0.02, 0));
+  if (!o.bald) { const hr = mesh(new THREE.SphereGeometry(0.16, 8, 6, 0, Math.PI * 2, 0, Math.PI / 2), M(o.hair ?? pick(hairs)), 0, 0.04, 0.01); head.add(hr); }
+  // phone (hidden until night)
+  const phone = new THREE.Group(); phone.visible = false;
+  phone.add(mesh(new THREE.BoxGeometry(0.08, 0.15, 0.015), M(0x111111), 0, 0, 0, false));
+  const fl = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true, color: 0xffffff }));
+  fl.scale.set(2.2, 2.2, 1); fl.position.z = -0.03; phone.add(fl);
+  phone.position.set(0, -0.68, -0.1); armR.add(phone);
+  const p = { root, body, legL, legR, armL, armR, head, phone, torso, o };
+  people.push(p); beach.add(root);
+  return p;
+}
+function setPose(p, pose, t) {
+  const { legL, legR, armL, armR, body } = p;
+  if (pose === 'walk') {
+    const w = Math.sin(t * 7 + p.o.ph);
+    legL.rotation.x = w * 0.5; legR.rotation.x = -w * 0.5; armL.rotation.x = -w * 0.45; armR.rotation.x = w * 0.45;
+    body.position.y = Math.abs(Math.cos(t * 7 + p.o.ph)) * 0.04; body.rotation.x = 0;
+  } else if (pose === 'stand') {
+    legL.rotation.x = legR.rotation.x = 0; armL.rotation.x = Math.sin(t * 0.8 + p.o.ph) * 0.05; armR.rotation.x = -armL.rotation.x; body.position.y = 0;
+    armL.rotation.z = -0.08; armR.rotation.z = 0.08;
+  } else if (pose === 'sit') {
+    legL.rotation.x = legR.rotation.x = -1.45; body.position.y = -0.82;
+    armL.rotation.x = armR.rotation.x = 0.35; armL.rotation.z = -0.25; armR.rotation.z = 0.25;
+  } else if (pose === 'lie') {
+    body.rotation.x = -Math.PI / 2; body.position.y = 0.17; body.position.z = 0.9;
+    legL.rotation.x = legR.rotation.x = 0; armL.rotation.x = armR.rotation.x = Math.PI * 0.95;
+  }
+}
+
+// crowd
+const crowd = [];
+for (let i = 0; i < 95; i++) {
+  const p = makePerson({ shirtless: rnd() < 0.35, ph: R(0, 6) });
+  const r = rnd();
+  if (r < 0.42) { p.kind = 'walk'; p.x0 = R(-70, 70); p.z = R(2, 38); p.v = R(1.0, 1.6) * (rnd() < 0.5 ? -1 : 1); }
+  else if (r < 0.62) { p.kind = 'stand'; const s = pick(spots); p.x0 = s[0] + R(-2, 2); p.z = s[1] + R(-1.5, 1.5); if (!clear(p.x0, p.z)) { p.x0 += 6; } }
+  else if (r < 0.86) { p.kind = 'sit'; const s = pick(spots); p.x0 = s[0] + R(-0.5, 0.5); p.z = s[1] + R(0.3, 1.5); }
+  else { p.kind = 'lie'; const s = pick(spots); p.x0 = s[0]; p.z = s[1]; }
+  p.ry = p.kind === 'walk' ? (p.v > 0 ? Math.PI / 2 : -Math.PI / 2) : R(-0.6, 0.6) + Math.PI;
+  p.phoneOn = R(33.2, 35.8); p.hasPhone = rnd() < 0.55;
+  crowd.push(p);
+}
+// people near the water's edge
+for (let i = 0; i < 26; i++) {
+  const p = makePerson({ shirtless: rnd() < 0.5, ph: R(0, 6) });
+  p.kind = 'stand'; p.x0 = R(-45, 45); p.z = R(-1.5, 3); p.ry = Math.PI + R(-0.5, 0.5);
+  p.phoneOn = R(33.2, 35.8); p.hasPhone = rnd() < 0.5; crowd.push(p);
+}
+// swimmers & surfers
+const swimmers = [];
+for (let i = 0; i < 34; i++) {
+  const g = new THREE.Group();
+  const sk = M(pick(skins));
+  g.add(mesh(new THREE.IcosahedronGeometry(0.16, 1), sk, 0, 0.22, 0, false));
+  g.add(mesh(new THREE.SphereGeometry(0.17, 8, 6, 0, Math.PI * 2, 0, Math.PI / 2), M(pick(hairs)), 0, 0.25, 0, false));
+  g.add(mesh(new THREE.CylinderGeometry(0.2, 0.2, 0.3, 6), sk, 0, -0.02, 0, false));
+  const surfer = i < 5;
+  if (surfer) {
+    g.add(mesh(new THREE.BoxGeometry(0.55, 0.08, 2.2), M(pick([0xffffff, 0xf2b134, 0xe5484d, 0x3c8dde])), 0, -0.12, 0, false));
+  }
+  const x = R(-60, 60), z = surfer ? R(-40, -25) : R(-20, -5);
+  beach.add(g); swimmers.push({ g, x, z, ph: R(0, 6), surfer });
+}
+// seagulls
+const gulls = [];
+for (let i = 0; i < 7; i++) {
+  const g = new THREE.Group();
+  const wmat = M(0xf4f4f4, { side: THREE.DoubleSide });
+  const wingGeo = new THREE.BufferGeometry(); wingGeo.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, -0.3, 0, 0, 0.3, 1.1, 0, 0], 3)); wingGeo.computeVertexNormals();
+  const wl = new THREE.Mesh(wingGeo, wmat), wr = new THREE.Mesh(wingGeo, wmat); wr.scale.x = -1;
+  g.add(wl, wr, mesh(new THREE.ConeGeometry(0.15, 0.8, 5), M(0xffffff), 0, 0, 0, false));
+  g.children[2].rotation.x = Math.PI / 2;
+  beach.add(g); gulls.push({ g, wl, wr, cx: R(-30, 30), cz: R(-20, 10), r: R(8, 20), y: R(9, 20), sp: R(0.2, 0.4) * (rnd() < 0.5 ? 1 : -1), ph: R(0, 6) });
+}
+
+// ---------- the hidden guy (yellow bucket hat) ----------
+const GUY = new THREE.Vector3(1.0, 0, 17.5);
+const guy = makePerson({ skin: 0xf1c7a5, shirtMat: new THREE.MeshLambertMaterial({ map: stripeTex('#e23b3b', '#ffffff', 10) }), shorts: 0x1c6fa8, sleeves: true, scale: 1, ph: 0 });
+crowd.splice(crowd.indexOf(guy), 1);
+{
+  const hat = new THREE.Group();
+  hat.add(mesh(new THREE.CylinderGeometry(0.14, 0.17, 0.14, 10), M(0xffd21c), 0, 0.17, 0));
+  hat.add(mesh(new THREE.CylinderGeometry(0.29, 0.29, 0.03, 12), M(0xffd21c), 0, 0.1, 0));
+  guy.head.add(hat);
+  guy.head.add(mesh(new THREE.BoxGeometry(0.24, 0.05, 0.03), M(0x111111), 0, 0.03, -0.15));
+  // ice cream in left hand
+  const ic = new THREE.Group();
+  ic.add(mesh(new THREE.ConeGeometry(0.06, 0.18, 6), M(0xd9a25f), 0, 0, 0)); ic.children[0].rotation.x = Math.PI;
+  ic.add(mesh(new THREE.IcosahedronGeometry(0.075, 0), M(0xf6a5c0), 0, 0.11, 0));
+  ic.position.set(0, -0.62, -0.1); guy.armL.add(ic); guy.icecream = ic;
+  // scarf (only in the freeze)
+  const scarf = mesh(new THREE.TorusGeometry(0.16, 0.06, 5, 10), M(0x2e7d4f), 0, 1.62, 0); scarf.rotation.x = Math.PI / 2; scarf.visible = false; guy.body.add(scarf); guy.scarf = scarf;
+}
+// deck chair
+const chair = new THREE.Group(); beach.add(chair);
+{
+  const wood = M(0x9a6b3e);
+  const cloth = new THREE.MeshLambertMaterial({ map: stripeTex('#2d6fd6', '#ffffff', 8, true), side: THREE.DoubleSide });
+  const seat = mesh(new THREE.PlaneGeometry(0.62, 1.3), cloth, 0, 0.55, 0.05); seat.rotation.x = -Math.PI / 2 + 0.95; chair.add(seat);
+  for (const dx of [-0.33, 0.33]) {
+    const a = mesh(new THREE.BoxGeometry(0.05, 0.05, 1.5), wood, dx, 0.55, 0.05); a.rotation.x = 0.95; chair.add(a);
+    const b = mesh(new THREE.BoxGeometry(0.05, 0.05, 1.1), wood, dx, 0.3, -0.25); b.rotation.x = -0.5; chair.add(b);
+  }
+  chair.position.set(GUY.x, sandY(GUY.x, GUY.z), GUY.z + 0.25);
+  chair.rotation.y = Math.PI - 0.5;
+}
+// esky (cooler) next to him
+beach.add(mesh(new THREE.BoxGeometry(0.6, 0.4, 0.4), M(0xffffff), GUY.x + 0.7, sandY(GUY.x, GUY.z) + 0.2, GUY.z + 0.1));
+beach.children[beach.children.length - 1].add(mesh(new THREE.BoxGeometry(0.62, 0.1, 0.42), M(0x2d6fd6), 0, 0.22, 0));
+
+// frozen-scene extras
+const freezeGrp = new THREE.Group(); freezeGrp.visible = false; beach.add(freezeGrp);
+const iceMat = new THREE.MeshLambertMaterial({ color: 0xcfe0ec, flatShading: true, emissive: 0x1a2530 });
+for (let i = 0; i < 70; i++) {
+  const r = R(1.5, 6);
+  const ice = new THREE.Mesh(new THREE.CylinderGeometry(r, r * 1.05, 0.25, Math.floor(R(5, 8))), iceMat);
+  ice.position.set(R(-120, 120), 0.0, R(-30, 1) - (i % 3) * 3); ice.rotation.y = R(0, 6); ice.receiveShadow = true; freezeGrp.add(ice);
+}
+// bonfire
+const FIRE = new THREE.Vector3(5.2, 0, 14.6);
+const fire = new THREE.Group(); freezeGrp.add(fire);
+for (let i = 0; i < 6; i++) { const l = mesh(new THREE.CylinderGeometry(0.08, 0.08, 1.4, 5), M(0x4a2e1a), 0, 0.12, 0); l.rotation.z = Math.PI / 2; l.rotation.y = i * 1.05; fire.add(l); }
+const flameMat = new THREE.MeshBasicMaterial({ color: 0xffa02e });
+const flames = [];
+for (let i = 0; i < 4; i++) { const f = new THREE.Mesh(new THREE.ConeGeometry(0.28 - i * 0.04, 0.9 - i * 0.12, 6), i % 2 ? flameMat : new THREE.MeshBasicMaterial({ color: 0xffd25a })); f.position.set(R(-0.15, 0.15), 0.5, R(-0.15, 0.15)); fire.add(f); flames.push(f); }
+const fireGlow = new THREE.Sprite(new THREE.SpriteMaterial({ map: radialTex([[0, 'rgba(255,170,70,.9)'], [0.3, 'rgba(255,120,40,.35)'], [1, 'rgba(255,100,30,0)']]), blending: THREE.AdditiveBlending, depthWrite: false, transparent: true }));
+fireGlow.scale.set(6, 6, 1); fireGlow.position.y = 0.8; fire.add(fireGlow);
+fire.position.set(FIRE.x, sandY(FIRE.x, FIRE.z), FIRE.z);
+// huddle around the fire
+const huddle = [];
+const coatCols = [0x34404f, 0x6b2f2f, 0x2e4f3f, 0x54493b, 0x3a3f6b, 0x222222];
+for (let i = 0; i < 7; i++) {
+  const p = makePerson({ shirt: coatCols[i % 6], sleeves: true, pants: 0x2b2f38, ph: R(0, 6), hair: 0x222222 });
+  const a = i / 7 * Math.PI * 2 + 0.4;
+  p.x0 = FIRE.x + Math.cos(a) * 1.9; p.z = FIRE.z + Math.sin(a) * 1.9; p.ry = Math.atan2(-(FIRE.x - p.x0), -(FIRE.z - p.z)) + Math.PI;
+  p.kind = i % 3 === 0 ? 'sit' : 'stand';
+  // beanie
+  p.head.add(mesh(new THREE.SphereGeometry(0.165, 8, 6, 0, Math.PI * 2, 0, Math.PI / 2), M(pick([0xc73b3b, 0x2d6fd6, 0xf2b134, 0xdddddd])), 0, 0.06, 0));
+  p.root.visible = false; huddle.push(p);
+}
+// drifting ice crystals
+const flakeGeo = new THREE.BufferGeometry(); const flakeBase = [];
+for (let i = 0; i < 900; i++) flakeBase.push(R(-40, 40), R(0, 22), R(-10, 45));
+flakeGeo.setAttribute('position', new THREE.Float32BufferAttribute(flakeBase.slice(), 3));
+const flakes = new THREE.Points(flakeGeo, new THREE.PointsMaterial({ color: 0xe8f2ff, size: 3, sizeAttenuation: false, transparent: true, opacity: 0.8, depthWrite: false }));
+freezeGrp.add(flakes);
+
+const camB = new THREE.PerspectiveCamera(58, W / H, 0.1, 4000);
+
+// ---------- beach state per time ----------
+const C = (h) => new THREE.Color(h);
+function setMode(mode, t) {
+  // mode: 'day' | 'night' | 'frozen'
+  const day = mode === 'day', night = mode === 'night', frozen = mode === 'frozen';
+  skyU.top.value.copy(day ? C(0x2f7fcf) : frozen ? C(0x05070d) : C(0x04060c));
+  skyU.hor.value.copy(day ? C(0xcfe8f6) : frozen ? C(0x1c283a) : C(0x17223a));
+  beach.fog.color.copy(day ? C(0xcfe6f5) : frozen ? C(0x182231) : C(0x0e1522));
+  beach.fog.near = day ? 120 : 60; beach.fog.far = day ? 900 : 700;
+  starMat.opacity = day ? 0 : 0.95; starMat2.opacity = day ? 0 : 1;
+  hemi.intensity = day ? 1.5 : frozen ? 1.0 : 0.75;
+  hemi.color.copy(day ? C(0xcfe8ff) : frozen ? C(0x9fb6dd) : C(0x6f88c0)); hemi.groundColor.copy(day ? C(0xd9c08f) : C(0x1c2436));
+  amb.intensity = day ? 0 : 0.25;
+  sunL.intensity = day ? 2.6 : 0;
+  sunDisc.visible = sunGlow.visible = day;
+  sandMat.color.copy(frozen ? C(0xdfeaf6) : night ? C(0x8a98b8) : C(0xffffff));
+  oceanMat.color.copy(day ? C(0x2a86b5) : frozen ? C(0x1c2836) : C(0x13243a));
+  farSea.material.color.copy(day ? C(0x1f6f9c) : frozen ? C(0x141e2a) : C(0x0d1828));
+  cloudMat.color.copy(day ? C(0xffffff) : C(0x1b2232)); cloudMat.emissive.copy(day ? C(0x555555) : C(0x000000));
+  clouds.visible = day;
+  winMat.opacity = day ? 0 : 1;
+  freezeGrp.visible = frozen; props.visible = !frozen;
+  swimmers.forEach(s => s.g.visible = !frozen);
+  gulls.forEach(g => g.g.visible = day);
+  crowd.forEach(p => p.root.visible = !frozen);
+  huddle.forEach(p => p.root.visible = frozen);
+  guy.scarf.visible = frozen;
+  updateFoam(t, frozen ? 0 : night ? 0.35 : 1);
+  updateOcean(t, frozen ? 0.15 : 1);
+  pls.forEach(l => l.intensity = 0);
+}
+function updatePeople(t, opts) {
+  const { stopAt = 1e9, lookUp = 0, phones = false } = opts;
+  crowd.forEach(p => {
+    let x = p.x0, pose = p.kind;
+    if (p.kind === 'walk') {
+      const tt = Math.min(t, stopAt) + (t > stopAt ? clamp(t - stopAt, 0, 0.6) * 0.5 : 0);
+      x = ((p.x0 + p.v * tt + 80) % 160 + 160) % 160 - 80;
+      if (!clear(x, p.z, 2.2)) p.z += 4.5;
+      if (t > stopAt + 0.4) pose = 'stand';
+    }
+    p.root.position.set(x, sandY(x, p.z), p.z);
+    p.root.rotation.y = p.ry;
+    p.body.rotation.set(0, 0, 0); p.body.position.set(0, 0, 0);
+    p.armL.rotation.set(0, 0, 0); p.armR.rotation.set(0, 0, 0);
+    setPose(p, pose, t);
+    p.head.rotation.x = (pose === 'lie') ? 0 : lookUp * 0.55;
+    const on = phones && p.hasPhone && t > p.phoneOn && pose !== 'lie';
+    p.phone.visible = on;
+    if (on) { p.armR.rotation.x = -1.6 - lookUp * 0.5; p.armR.rotation.z = 0; }
+  });
+  // guy
+  guy.root.position.set(GUY.x, sandY(GUY.x, GUY.z) + 0.05, GUY.z);
+  guy.root.rotation.y = Math.PI - 0.5;
+  guy.body.rotation.set(0, 0, 0); guy.body.position.set(0, 0, 0);
+  setPose(guy, 'sit', t);
+  guy.body.rotation.x = -0.55; guy.body.position.y = -0.62; guy.body.position.z = 0.2;
+  guy.legL.rotation.x = guy.legR.rotation.x = -1.0;
+  const lick = Math.max(0, Math.sin(t * 1.3)) ** 6;
+  guy.armL.rotation.x = -1.9 - lick * 0.35; guy.armL.rotation.z = 0.35;
+  guy.armR.rotation.x = 0.2; guy.armR.rotation.z = 0.3;
+  guy.head.rotation.x = 0.25;
+  // swimmers
+  swimmers.forEach(s => {
+    const y = waveY(s.x, s.z, t, 1) + (s.surfer ? 0.12 : 0) + Math.sin(t * 1.4 + s.ph) * 0.05;
+    s.g.position.set(s.x + Math.sin(t * 0.3 + s.ph) * 0.6, y, s.z);
+    s.g.rotation.y = s.ph;
+  });
+  gulls.forEach(g => {
+    const a = t * g.sp + g.ph;
+    g.g.position.set(g.cx + Math.cos(a) * g.r, g.y + Math.sin(t * 0.7 + g.ph) * 0.6, g.cz + Math.sin(a) * g.r);
+    g.g.rotation.y = -a + (g.sp > 0 ? 0 : Math.PI);
+    const f = Math.sin(t * 9 + g.ph) * 0.5; g.wl.rotation.z = f; g.wr.rotation.z = -f;
+  });
+  flags.forEach((f, i) => { f.children[1].rotation.y = Math.sin(t * 3 + i) * 0.25; f.children[2].rotation.y = Math.sin(t * 3 + i + 0.4) * 0.25; });
+}
+
+// ================= SPACE SCENE =================
+const space = new THREE.Scene(); space.background = new THREE.Color(0x020308);
+{
+  const g = new THREE.BufferGeometry(); const p = [];
+  for (let i = 0; i < 3000; i++) { const v = new THREE.Vector3(R(-1, 1), R(-1, 1), R(-1, 1)).normalize().multiplyScalar(R(600, 900)); p.push(v.x, v.y, v.z); }
+  g.setAttribute('position', new THREE.Float32BufferAttribute(p, 3));
+  space.add(new THREE.Points(g, new THREE.PointsMaterial({ color: 0xffffff, size: 2.2, sizeAttenuation: false })));
+}
+const ORB = 46;
+const sSun = new THREE.Mesh(new THREE.IcosahedronGeometry(6, 3), new THREE.MeshBasicMaterial({ color: 0xffe9a8 }));
+space.add(sSun);
+const sGlow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true, color: 0xffd27a }));
+sGlow.scale.set(60, 60, 1); space.add(sGlow);
+const sPoint = new THREE.PointLight(0xfff1d0, 3, 0, 0); space.add(sPoint);
+const sAmb = new THREE.AmbientLight(0x3a4a70, 0.25); space.add(sAmb);
+const sEarth = new THREE.Group(); space.add(sEarth);
+const earthBall = new THREE.Mesh(new THREE.IcosahedronGeometry(2.6, 3), new THREE.MeshLambertMaterial({ color: 0x2f74c9, flatShading: true, emissive: 0x0b2244 }));
+sEarth.add(earthBall);
+for (let i = 0; i < 9; i++) {
+  const c = new THREE.Mesh(new THREE.IcosahedronGeometry(R(0.7, 1.1), 0), new THREE.MeshLambertMaterial({ color: 0x5fae55, flatShading: true, emissive: 0x10300f }));
+  const v = new THREE.Vector3(R(-1, 1), R(-1, 1), R(-1, 1)).normalize().multiplyScalar(2.15); c.position.copy(v); sEarth.add(c);
+}
+const orbitLine = (() => {
+  const pts = []; for (let i = 0; i <= 256; i++) { const a = i / 256 * Math.PI * 2; pts.push(new THREE.Vector3(Math.cos(a) * ORB, 0, Math.sin(a) * ORB)); }
+  const l = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineDashedMaterial({ color: 0x9fb4d8, dashSize: 1.4, gapSize: 1.2, transparent: true, opacity: 0.6 }));
+  l.computeLineDistances(); return l;
+})();
+space.add(orbitLine);
+const shell = new THREE.Mesh(new THREE.RingGeometry(0.97, 1.0, 128), new THREE.MeshBasicMaterial({ color: 0xffe2a0, transparent: true, side: THREE.DoubleSide, blending: THREE.AdditiveBlending, depthWrite: false }));
+shell.rotation.x = -Math.PI / 2; space.add(shell);
+const shellFill = new THREE.Mesh(new THREE.RingGeometry(0.0, 1.0, 128), new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.0, side: THREE.DoubleSide }));
+shellFill.rotation.x = -Math.PI / 2; space.add(shellFill);
+const flashS = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, blending: THREE.AdditiveBlending, depthWrite: false, transparent: true, color: 0xffffff }));
+space.add(flashS);
+const ghost = (() => {
+  const pts = []; for (let i = 0; i <= 64; i++) { const a = i / 64 * Math.PI * 2; pts.push(new THREE.Vector3(Math.cos(a) * 6, Math.sin(a) * 6, 0)); }
+  const l = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineDashedMaterial({ color: 0xffd27a, dashSize: 0.8, gapSize: 0.8, transparent: true, opacity: 0.5 }));
+  l.computeLineDistances(); return l;
+})();
+space.add(ghost);
+const trail = new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]), new THREE.LineDashedMaterial({ color: 0x7fb2ff, dashSize: 0.6, gapSize: 0.5 }));
+space.add(trail);
+const camS = new THREE.PerspectiveCamera(50, W / H, 0.1, 3000);
+const EA = 1.75; // earth angle on orbit when the Sun vanishes
+
+// ================= OVERLAY =================
+const hudEl = document.getElementById('hud'), subEl = document.getElementById('subt'), endEl = document.getElementById('end'), tagEl = document.getElementById('tag');
+const fadeEl = document.getElementById('fade'), flashEl = document.getElementById('flash');
+const fmtClock = (s) => { s = Math.floor(s); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
+function clockAt(t) {
+  if (t < 16) return 0;
+  if (t < 25) { const k = (t - 16) / 9; return 497 * (k * k * (3 - 2 * k) * 0.25 + k * 0.75); }
+  return Math.min(500, 497 + (t - 25));
+}
+function hudBlocks(t) {
+  const B = [];
+  if (t < 5.6) {
+    B.push({ lab: 'Location', val: 'Bondi Beach, Sydney', sub: 'A summer afternoon · 26°C', a: 0, b: 5.6 });
+  } else if (t < 9.6) {
+    B.push({ lab: 'Distance to the Sun', val: '149.6 million km', sub: 'Light takes 8 min 20 s to get here', a: 5.6, b: 9.6 });
+  } else if (t < 16) {
+    B.push({ lab: 'The Sun', val: 'Gone', sub: 'Its last light is still travelling', a: 10.9, b: 16 });
+  } else if (t < 29.7) {
+    const s = clockAt(t);
+    B.push({ lab: 'Time since the Sun vanished', val: fmtClock(s), sub: t < 28 ? 'Nobody can tell yet' : 'The last sunlight has arrived', a: 16, b: 29.7, red: t >= 28 });
+  } else if (t < 33) {
+    B.push({ lab: 'The Moon', val: 'Gone too', sub: 'Moonlight is just reflected sunlight', a: 29.7, b: 33 });
+  } else if (t < 37.5) {
+    const temp = lerp(26, 24.6, smooth(33, 37.5, t));
+    B.push({ lab: 'Air temperature', val: temp.toFixed(1) + '°C', sub: 'And it only goes down from here', a: 33.3, b: 37.5 });
+  } else if (t < 43.5) {
+    const temp = lerp(-6, -18, smooth(37.6, 41, t));
+    B.push({ lab: 'One week later', val: Math.round(temp) + '°C', sub: "Earth's average surface, estimated", a: 37.6, b: 43.5 });
+  } else if (t < 49) {
+    B.push({ lab: "Earth's orbit", val: 'None', sub: 'Flying straight on at 107,000 km/h', a: 43.8, b: 49 });
+  }
+  return B;
+}
+const SUBS = [
+  [0.3, 5.4, 'Just another afternoon at Bondi.'],
+  [6.6, 9.5, 'At 2:00 pm, the Sun vanishes.'],
+  [11.6, 15.9, 'But its last light is still on the way.'],
+  [16.6, 21.0, 'Nobody notices.'],
+  [21.6, 27.8, 'Not yet.'],
+  [28.25, 29.6, '8 minutes, 20 seconds later.'],
+  [29.9, 32.9, '1.3 seconds after that, the Moon goes out too.'],
+  [34.0, 37.4, 'Phones become the only light.'],
+  [38.3, 43.4, 'A week later, Bondi is frozen.'],
+  [44.4, 48.9, 'And Earth drifts off into the dark.'],
+];
+const alpha = (t, a, b, fi = 0.3, fo = 0.3) => Math.min(smooth(a, a + fi, t), 1 - smooth(b - fo, b, t));
+let lastHud = '';
+function updateOverlay(t) {
+  const B = hudBlocks(t);
+  const html = B.map(b => `<div class="blk" style="opacity:${alpha(t, b.a, b.b, 0.35, 0.3).toFixed(3)}"><div class="lab">${b.lab}</div><div class="val${b.red ? ' red' : ''}">${b.val}</div><div class="sub">${b.sub}</div></div>`).join('');
+  if (html !== lastHud) { hudEl.innerHTML = html; lastHud = html; }
+  const s = SUBS.find(s => t >= s[0] && t < s[1]);
+  if (s) { subEl.textContent = s[2]; subEl.style.opacity = alpha(t, s[0], s[1], 0.3, 0.25); } else { subEl.style.opacity = 0; }
+  // end card
+  if (t >= 49.3) {
+    endEl.innerHTML = `<div class="a" style="opacity:${smooth(49.4, 49.9, t)}">This is fiction.</div>
+      <div class="b" style="opacity:${smooth(50.9, 51.5, t)}">But the sunlight on your skin right now left the Sun <span>8 minutes 20 seconds</span> ago.</div>`;
+    tagEl.textContent = '@lost_index'; tagEl.style.opacity = smooth(52, 52.6, t) * 0.85;
+  } else { endEl.innerHTML = ''; tagEl.style.opacity = 0; }
+  // fades between shots
+  let f = 0;
+  f = Math.max(f, 1 - smooth(0, 0.01, t));
+  if (t >= 37.0 && t < 37.9) f = Math.max(f, t < 37.5 ? smooth(37.0, 37.5, t) : 1 - smooth(37.5, 37.9, t));
+  f = Math.max(f, t >= 48.5 && t < 49.4 ? (t < 49 ? smooth(48.5, 49, t) : 1 - smooth(49, 49.4, t)) : 0);
+  f = Math.max(f, smooth(54.3, 55, t));
+  fadeEl.style.opacity = f;
+  document.getElementById('dim').style.opacity = smooth(49.3, 50.2, t);
+  document.getElementById('note').style.opacity = ((t >= 9.6 && t < 16) || (t >= 43.5 && t < 49)) ? 0.7 : 0;
+  // flash when the sun goes
+  flashEl.style.opacity = t >= 10.5 && t < 11.2 ? (1 - smooth(10.5, 11.2, t)) * 0.55 : 0;
+}
+
+// ================= SHOTS =================
+const v3 = (x, y, z) => new THREE.Vector3(x, y, z);
+function beachCam(pos, look, fov = 58) { camB.position.copy(pos); camB.fov = fov; camB.updateProjectionMatrix(); camB.lookAt(look); }
+function renderBeach(t, mode, peopleOpts) {
+  setMode(mode, t);
+  updatePeople(t, peopleOpts);
+  renderer.render(beach, camB);
+}
+window.renderAt = function (t) {
+  moon.visible = true; moonMat.opacity = 0.55; moonMat.color.set(0xe9eef6); moonGlow.material.opacity = 0;
+  moon.children.forEach(c => c.material.opacity = 0.5);
+  sAmb.intensity = 0.25; orbitLine.material.opacity = 0.6;
+  if (t < 5.6) {                       // S1 establishing
+    const k = smooth(0, 5.6, t);
+    beachCam(v3(lerp(-6, -3, k), lerp(3.4, 3.0, k), lerp(58, 52, k)), v3(lerp(0, 1, k), -1, -30));
+    renderBeach(t, 'day', {});
+  } else if (t < 9.6) {                // S2 tilt up to the Sun
+    const k = smooth(5.6, 9.4, t);
+    const look = v3(0, 1, -30).lerp(SUN_DIR.clone().multiplyScalar(120).add(v3(-1, 1.7, 50)), k * 0.8);
+    beachCam(v3(-1, 1.7, 50), look, lerp(58, 52, k));
+    renderBeach(t, 'day', {});
+  } else if (t < 16) {                 // S3 space: the Sun blinks out
+    const k = smooth(9.6, 16, t);
+    const ea = EA - (t - 9.6) * 0.004;
+    sEarth.position.set(Math.cos(ea) * ORB, 0, Math.sin(ea) * ORB);
+    const gone = t >= 10.55;
+    const sc = t < 10.4 ? 1 + Math.sin(t * 3) * 0.01 : t < 10.55 ? 1 + (t - 10.4) * 3 : 0.0001;
+    sSun.scale.setScalar(sc); sGlow.visible = !gone; sGlow.scale.setScalar(60 * sc);
+    sPoint.intensity = 3; // Earth still lit: light already in flight
+    const fl = t >= 10.5 ? Math.max(0, 1 - (t - 10.5) / 0.9) : 0;
+    flashS.visible = fl > 0; flashS.scale.setScalar(20 + (t - 10.5) * 140); flashS.material.opacity = fl;
+    const r = gone ? (t - 10.55) * 4.4 : 0;
+    shell.visible = gone; shell.scale.setScalar(Math.max(0.01, r)); shell.material.opacity = 0.9;
+    shellFill.visible = false; ghost.visible = gone; ghost.material.opacity = 0.35;
+    trail.visible = false; orbitLine.visible = true;
+    const cp = v3(lerp(-6, -2, k), lerp(62, 56, k), lerp(100, 90, k));
+    camS.position.copy(cp); camS.lookAt(v3(-3, 0, 17));
+    ghost.lookAt(camS.position);
+    renderer.render(space, camS);
+  } else if (t < 33) {                 // S4/S5 one continuous shot: the wait, the blackout, the Moon
+    const k = smooth(16, 33, t);
+    beachCam(v3(lerp(-16, -13, k), lerp(2.0, 1.8, k), lerp(46, 41, k)), v3(lerp(9, 10, k), lerp(3, 5, k), -40), 60);
+    const night = t >= 28;
+    renderBeach(t, night ? 'night' : 'day', { stopAt: 28.15, lookUp: smooth(28.4, 29.4, t) });
+    // moon: pale by day, bright for 1.3 s after the blackout, then gone
+    moon.visible = t < 29.3; moonGlow.material.opacity = night && t < 29.3 ? 1 : 0;
+    moonMat.opacity = night ? 1 : 0.55; moonMat.color.set(night ? 0xf6f2e4 : 0xe9eef6);
+    moon.children.forEach(c => c.material.opacity = night ? 0.7 : 0.5);
+    renderer.render(beach, camB);
+  } else if (t < 37.5) {               // S5b phones
+    const k = smooth(33, 37.5, t);
+    beachCam(v3(lerp(15, 13.5, k), 1.6, lerp(35, 33.5, k)), v3(-3, 1.4, 18), 58);
+    moon.visible = false; moonGlow.material.opacity = 0;
+    setMode('night', t); updatePeople(t, { stopAt: 28.15, lookUp: 1, phones: true });
+    // real lights from phones near the camera
+    const lit = crowd.filter(p => p.phone.visible).map(p => ({ p, d: p.root.position.distanceTo(camB.position) })).sort((a, b) => a.d - b.d).slice(0, 6);
+    lit.forEach((o, i) => { const wp = new THREE.Vector3(); o.p.phone.getWorldPosition(wp); pls[i].position.copy(wp); pls[i].intensity = 6; pls[i].color.set(0xeef3ff); });
+    renderer.render(beach, camB);
+  } else if (t < 43.5) {               // S6 frozen
+    const k = smooth(37.5, 43.5, t);
+    beachCam(v3(lerp(-3, -1.5, k), lerp(2.8, 2.4, k), lerp(29, 26.5, k)), v3(3.2, 0.6, 15.5), 56);
+    moon.visible = false; moonGlow.material.opacity = 0;
+    setMode('frozen', t); updatePeople(t, { stopAt: 0 });
+    huddle.forEach(p => { p.root.position.set(p.x0, sandY(p.x0, p.z), p.z); p.root.rotation.y = p.ry; p.body.rotation.set(0, 0, 0); p.body.position.set(0, 0, 0); p.armL.rotation.set(0, 0, 0); p.armR.rotation.set(0, 0, 0); setPose(p, p.kind, t); p.armL.rotation.x = p.armR.rotation.x = -0.9; p.head.rotation.x = 0.2; });
+    guy.icecream.visible = true;
+    const fk = 0.85 + 0.15 * Math.sin(t * 17) * Math.sin(t * 7.3);
+    pls[0].position.set(FIRE.x, sandY(FIRE.x, FIRE.z) + 1.2, FIRE.z); pls[0].color.set(0xff9a40); pls[0].intensity = 26 * fk; pls[0].distance = 20;
+    flames.forEach((f, i) => { f.scale.y = 0.8 + 0.35 * Math.abs(Math.sin(t * 9 + i * 1.7)); });
+    fireGlow.material.opacity = 0.8 * fk;
+    const fp = flakeGeo.attributes.position;
+    for (let i = 0; i < fp.count; i++) {
+      fp.setX(i, flakeBase[i * 3] + Math.sin(t * 0.5 + i) * 0.8 + t * 1.2 % 80 - 0);
+      fp.setY(i, ((flakeBase[i * 3 + 1] - t * 0.6) % 22 + 22) % 22);
+    }
+    fp.needsUpdate = true;
+    renderer.render(beach, camB);
+    pls[0].distance = 14;
+  } else if (t < 49) {                 // S7 Earth drifts off
+    const k = smooth(43.5, 49, t);
+    sSun.scale.setScalar(0.0001); sGlow.visible = false; flashS.visible = false; shell.visible = false;
+    sPoint.intensity = 0; sAmb.intensity = 1.3;
+    ghost.visible = true; ghost.material.opacity = 0.45;
+    const p0 = v3(Math.cos(EA) * ORB, 0, Math.sin(EA) * ORB);
+    const dir = v3(Math.sin(EA), 0, -Math.cos(EA)); // tangent (clockwise orbit)
+    // orbit for the first moment, then straight
+    const d = (t - 43.5) * 3.2;
+    const pos = p0.clone().addScaledVector(dir, d);
+    sEarth.position.copy(pos); sEarth.rotation.y = t * 0.3;
+    trail.visible = true; trail.geometry.setFromPoints([p0, pos]); trail.computeLineDistances();
+    orbitLine.visible = true; orbitLine.material.opacity = 0.35;
+    camS.position.copy(pos.clone().add(v3(lerp(-4, -10, k), lerp(30, 44, k), lerp(46, 62, k))));
+    camS.lookAt(pos.clone().add(v3(lerp(-2, -6, k), 0, lerp(-16, -24, k))));
+    ghost.lookAt(camS.position);
+    renderer.render(space, camS);
+  } else {                             // S8 back to reality
+    const k = smooth(49, 55, t);
+    beachCam(v3(lerp(-4, 0, k), lerp(4.5, 3.8, k), lerp(62, 54, k)), v3(lerp(1, 3, k), 9, -20), 58);
+    moon.visible = true; moonMat.opacity = 0.55; moonMat.color.set(0xe9eef6); moonGlow.material.opacity = 0;
+    renderBeach(t, 'day', {});
+  }
+  updateOverlay(t);
+};
+window.guyScreen = () => { const v = new THREE.Vector3(); guy.head.getWorldPosition(v); v.project(camB); return [(v.x + 1) / 2 * W, (1 - v.y) / 2 * H, v.z]; };
+window.camState = () => ({ p: camB.position.toArray(), m: camB.matrixWorldInverse.elements.slice(), pr: camB.projectionMatrix.elements.slice() });
+window.ready = true;
+</script>
+</body>
+</html>
