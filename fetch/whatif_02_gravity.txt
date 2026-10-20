@@ -8,3 +8,11 @@ episodes/whatif_02_gravity/assets/kf/k6.png https://d8j0ntlcm91z4.cloudfront.net
 episodes/whatif_02_gravity/assets/kf/k7.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141551_40b746bf-b146-4413-9cc0-4b02a42b22b3.png
 episodes/whatif_02_gravity/assets/kf/k8.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141621_a9cb2afb-cafb-4c77-b345-ece5794d63f1.png
 episodes/whatif_02_gravity/assets/kf/k9.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141548_022edc19-a9a1-4ce1-a6ab-dcb81c3f0071.png
+episodes/whatif_02_gravity/assets/clips/c0.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141848_a285f618-07bd-4102-a4dd-c655cc17ba98.mp4
+episodes/whatif_02_gravity/assets/clips/c1.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141926_b61b7f95-e1df-4964-a515-c3cf762cfac9.mp4
+episodes/whatif_02_gravity/assets/clips/c2.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141844_ca3e3395-8a1d-460f-8ff8-5f7b08c00804.mp4
+episodes/whatif_02_gravity/assets/clips/c3.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141926_ba2ce213-d840-4179-a136-6f34fddf48f9.mp4
+episodes/whatif_02_gravity/assets/clips/c4.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141934_2f41b8d4-64ed-47b1-8bf3-3692ae0040c5.mp4
+episodes/whatif_02_gravity/assets/clips/c5.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141934_68f7c047-d04f-4cc2-a0e9-3a4344d45856.mp4
+episodes/whatif_02_gravity/assets/clips/c6.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141947_d00f83fd-798c-4667-ab5b-9d15b3594863.mp4
+episodes/whatif_02_gravity/assets/clips/c7.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_141947_0fca7c2f-76ca-43fc-a059-be7dc9b9545a.mp4
