@@ -45,7 +45,7 @@ for t in (4.8, 5.08, 5.36):
 place(sfx, S['click'], 6.55, 0.45)
 place(sfx, S['outage'], OUT - 0.02, 0.75)
 place(sfx, S['error'], OUT + 0.35, 0.28)
-place(sfx, S['tension'], OUT + 0.4, 0.30, length=25.4 - OUT - 0.4, fi=1.2, fo=1.5)
+place(sfx, S['tension'], OUT + 0.4, 0.22, length=25.4 - OUT - 0.4, fi=1.2, fo=1.5)
 place(sfx, S['click'], 9.2, 0.45)
 place(sfx, S['error'], 9.3, 0.26)
 place(sfx, S['swoosh'], 10.25, 0.32)
