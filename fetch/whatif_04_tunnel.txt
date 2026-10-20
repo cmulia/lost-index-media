@@ -4,3 +4,6 @@ episodes/whatif_04_tunnel/assets/guy.png https://d8j0ntlcm91z4.cloudfront.net/us
 episodes/whatif_04_tunnel/assets/sydney.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_215609_6d3c8bbf-54d8-482c-aa7d-4a2fba605fa1.png
 episodes/whatif_04_tunnel/assets/atlantic.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_215608_8e7a87cb-7b63-4ead-a3ab-11f6bfa1f04b.png
 episodes/whatif_04_tunnel/assets/kola.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_215609_824ee356-ca03-403f-9a7b-8daa86a7538a.png
+episodes/whatif_04_tunnel/assets/sydney.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_215648_c102a084-ca8d-44f7-8975-21776f1b1b29.mp4
+episodes/whatif_04_tunnel/assets/atlantic.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_215648_bc91c39d-0eb3-4281-9a3f-2419db630964.mp4
+episodes/whatif_04_tunnel/assets/kola.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_215648_0ec41fef-8df5-45bb-adca-4679655cd56d.mp4
