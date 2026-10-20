@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IDB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IDX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IDM; src: url(fonts/InterDisplay-Medium.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: transparent; }
+* { box-sizing: border-box; }
+.abs { position: absolute; }
+#pill { left: 50%; top: 150px; transform: translateX(-50%); display: flex; align-items: center; gap: 22px;
+  background: rgba(255,255,255,.96); border-radius: 999px; padding: 18px 34px 18px 26px; box-shadow: 0 8px 24px rgba(0,0,0,.25), 0 0 0 5px #1b1b1b; }
+#pill .lab { font-family: IDX; font-size: 40px; letter-spacing: 3px; color: #1b1b1b; }
+#pill .sw { width: 112px; height: 60px; border-radius: 999px; background: #3cc46a; position: relative; box-shadow: inset 0 0 0 4px #1b1b1b; }
+#pill .knob { position: absolute; top: 8px; width: 44px; height: 44px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px #1b1b1b; }
+#pill .st { font-family: IDX; font-size: 40px; width: 92px; color: #1b1b1b; }
+#title { left: 60px; right: 60px; top: 330px; text-align: center; font-family: IDX; font-size: 92px; line-height: 1.0; color: #fff;
+  -webkit-text-stroke: 10px #1b1b1b; paint-order: stroke fill; text-transform: uppercase; }
+#title .y { color: #ffd21c; }
+#chip { left: 50%; transform: translateX(-50%); top: 760px; font-family: IDB; font-size: 34px; letter-spacing: 3px; color: #1b1b1b; background: #fff;
+  border-radius: 14px; padding: 12px 24px; box-shadow: 0 0 0 5px #1b1b1b; white-space: nowrap; }
+#clock { left: 0; right: 0; top: 270px; text-align: center; }
+#clock .num { font-family: PM; font-size: 230px; line-height: 1; color: #fff; -webkit-text-stroke: 12px #1b1b1b; paint-order: stroke fill; }
+#clock .cap { font-family: IDB; font-size: 30px; letter-spacing: 6px; color: #fff; -webkit-text-stroke: 7px #1b1b1b; paint-order: stroke fill; margin-top: 6px; }
+#clock .slow { display: inline-block; margin-top: 12px; font-family: IDB; font-size: 24px; letter-spacing: 3px; color: #1b1b1b; background: #ffd21c; padding: 6px 14px; border-radius: 8px; box-shadow: 0 0 0 4px #1b1b1b; }
+#meter { right: 46px; top: 640px; width: 150px; height: 560px; }
+#meter .bar { position: absolute; left: 50px; top: 0; width: 50px; height: 470px; background: rgba(255,255,255,.9); border-radius: 26px; box-shadow: 0 0 0 5px #1b1b1b; overflow: hidden; }
+#meter .fill { position: absolute; left: 0; right: 0; bottom: 0; background: #ffd21c; }
+#meter .ticks { position: absolute; left: 0; top: 0; width: 50px; height: 470px; }
+#meter .val { position: absolute; left: -40px; right: -40px; top: 486px; text-align: center; font-family: IDX; font-size: 46px; color: #fff; -webkit-text-stroke: 9px #1b1b1b; paint-order: stroke fill; }
+#meter .lab { position: absolute; left: -70px; right: -70px; top: -64px; text-align: center; font-family: IDB; font-size: 22px; letter-spacing: 3px; line-height: 1.1; color: #fff; -webkit-text-stroke: 6px #1b1b1b; paint-order: stroke fill; }
+#cap { left: 70px; right: 70px; top: 1330px; text-align: center; }
+#cap span { font-family: IDX; font-size: 64px; line-height: 1.32; color: #1b1b1b; background: #ffd21c; padding: 4px 18px; box-decoration-break: clone; -webkit-box-decoration-break: clone;
+  border-radius: 12px; box-shadow: 0 0 0 5px #1b1b1b; }
+#end { left: 70px; right: 70px; top: 300px; text-align: center; }
+#end .a { display: inline-block; font-family: IDX; font-size: 60px; color: #1b1b1b; background: #fff; padding: 8px 26px; border-radius: 14px; box-shadow: 0 0 0 5px #1b1b1b; }
+#end .b { margin-top: 40px; font-family: IDX; font-size: 62px; line-height: 1.12; color: #fff; -webkit-text-stroke: 10px #1b1b1b; paint-order: stroke fill; }
+#end .b .y { color: #ffd21c; }
+#end .c { margin-top: 30px; font-family: IDX; font-size: 52px; line-height: 1.15; color: #fff; -webkit-text-stroke: 9px #1b1b1b; paint-order: stroke fill; }
+#handle { left: 0; right: 0; bottom: 120px; text-align: center; font-family: IDB; font-size: 30px; letter-spacing: 5px; color: #fff; -webkit-text-stroke: 6px #1b1b1b; paint-order: stroke fill; }
+#flash { inset: 0; background: #fff; }
+</style>
+</head>
+<body>
+<div id="flash" class="abs" style="opacity:0"></div>
+<div id="pill" class="abs"><span class="lab">GRAVITY</span><div class="sw"><div class="knob"></div></div><span class="st">ON</span></div>
+<div id="title" class="abs">What if gravity switched <span class="y">off</span> for 10 seconds?</div>
+<div id="chip" class="abs">VENICE, ITALY · 10:42 AM</div>
+<div id="clock" class="abs"><div class="num">10.0</div><div class="cap">SECONDS WITHOUT GRAVITY</div><div class="slow">SHOWN 2× SLOWER</div></div>
+<div id="meter" class="abs"><div class="lab">HEIGHT<br>ABOVE GROUND</div><div class="bar"><div class="fill"></div><svg class="ticks" viewBox="0 0 50 470"></svg></div><div class="val">0 cm</div></div>
+<div id="cap" class="abs"></div>
+<div id="end" class="abs"></div>
+<div id="handle" class="abs">@lost_index</div>
+<script>
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const sm = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+const win = (t, a, b, fi = 0.2, fo = 0.2) => Math.min(sm(a, a + fi, t), 1 - sm(b - fo, b, t));
+const OFF = 6.5, ON = 27.3;           // gravity off / back on (video time)
+const realS = (t) => clamp((t - OFF) / (ON - OFF)) * 10;   // seconds of "real" weightlessness
+{ // meter ticks every 10 cm (0..100 cm)
+  const svg = $('#meter .ticks'); let h = '';
+  for (let c = 10; c < 100; c += 10) { const y = 470 - c / 100 * 470; h += `<line x1="0" x2="${c % 50 ? 14 : 24}" y1="${y}" y2="${y}" stroke="#1b1b1b" stroke-width="4"/>`; }
+  const y85 = 470 - 0.85 * 470; h += `<line x1="0" x2="50" y1="${y85}" y2="${y85}" stroke="#e23b3b" stroke-width="5" stroke-dasharray="6 5"/>`;
+  svg.innerHTML = h;
+}
+const CAPS = [
+  [4.2, 6.4, 'Just a normal morning in Venice.'],
+  [8.15, 10.0, 'Nobody gets flung into space.'],
+  [10.0, 11.5, 'Everything just… drifts up.'],
+  [11.75, 13.8, 'Venice is spinning east at about 1,200 km/h.'],
+  [13.8, 15.7, 'Without gravity, you stop curving with it.'],
+  [16.0, 19.9, 'The canal comes along too.'],
+  [20.15, 23.5, 'Bye bye, gelato.'],
+  [23.75, 27.0, 'Jump, and you just keep going.'],
+  [28.0, 30.9, 'Gravity’s back.'],
+  [31.2, 33.4, 'Everyone drops about 85 cm.'],
+  [33.4, 35.4, 'Venice gets very wet.'],
+];
+function knob(on) { // 1 = on (green, knob right), 0 = off
+  $('#pill .knob').style.left = (8 + on * 52) + 'px';
+  $('#pill .sw').style.background = on > 0.5 ? '#3cc46a' : '#e23b3b';
+  $('#pill .st').textContent = on > 0.5 ? 'ON' : 'OFF';
+}
+window.renderAt = function (t) {
+  // switch: on until OFF, flips over 0.25 s; back on at ON
+  let on = 1;
+  if (t >= OFF - 0.25 && t < ON - 0.2) on = 1 - sm(OFF - 0.25, OFF, t);
+  if (t >= ON - 0.2) on = sm(ON - 0.2, ON, t);
+  knob(on);
+  const shake = (t > OFF && t < OFF + 0.5) || (t > ON && t < ON + 0.5) ? Math.sin(t * 90) * 10 * (1 - ((t > ON ? t - ON : t - OFF) / 0.5)) : 0;
+  const pop = 1 + 0.12 * Math.max(0, 1 - Math.abs(t - OFF) / 0.35) + 0.12 * Math.max(0, 1 - Math.abs(t - ON) / 0.35);
+  $('#pill').style.transform = `translateX(calc(-50% + ${shake}px)) scale(${pop})`;
+  $('#pill').style.opacity = t < 35.4 ? 1 - sm(35.0, 35.4, t) : 0;
+  // title + chip (frame one shows the hook fully)
+  $('#title').style.opacity = 1 - sm(3.6, 4.0, t);
+  $('#chip').style.opacity = 1 - sm(3.6, 4.0, t);
+  // clock
+  const s = realS(t);
+  const clockVis = t >= OFF && t < ON + 1.6 ? Math.min(sm(OFF, OFF + 0.25, t), 1 - sm(ON + 1.2, ON + 1.6, t)) : 0;
+  $('#clock').style.opacity = clockVis;
+  $('#clock .num').textContent = (10 - s).toFixed(1);
+  $('#clock .num').style.color = t >= ON ? '#3cc46a' : (10 - s) <= 3 ? '#ffd21c' : '#fff';
+  // meter: h = 85 cm * (s/10)^2, falls back at ON
+  let h = 85 * (s / 10) ** 2;
+  if (t >= ON) h = 85 * (1 - sm(ON, ON + 0.35, t));
+  $('#meter').style.opacity = t >= OFF + 1.5 && t < 35.4 ? Math.min(sm(OFF + 1.5, OFF + 1.9, t), 1 - sm(35.0, 35.4, t)) : 0;
+  $('#meter .fill').style.height = (h / 100 * 470) + 'px';
+  $('#meter .val').textContent = Math.round(h) + ' cm';
+  // captions
+  const c = CAPS.find((c) => t >= c[0] && t < c[1]);
+  if (c) { $('#cap').innerHTML = `<span>${c[2]}</span>`; $('#cap').style.opacity = win(t, c[0], c[1], 0.15, 0.15);
+    $('#cap').style.transform = `scale(${1 + 0.06 * (1 - sm(c[0], c[0] + 0.18, t))})`; }
+  else $('#cap').style.opacity = 0;
+  // end card on the ISS shot
+  if (t >= 35.8) {
+    $('#end').innerHTML = `<div class="a" style="opacity:${sm(35.9, 36.2, t)}">This is fiction.</div>
+      <div class="b" style="opacity:${sm(37.4, 37.8, t)}">On the ISS, gravity is still about <span class="y">90%</span> as strong as down here.</div>
+      <div class="c" style="opacity:${sm(40.0, 40.4, t)}">Astronauts float because they’re falling around Earth at <span style="color:#ffd21c">28,000 km/h</span>.</div>`;
+  } else $('#end').innerHTML = '';
+  $('#handle').style.opacity = sm(41.5, 42, t) * 0.9;
+  $('#flash').style.opacity = t >= ON && t < ON + 0.25 ? (1 - (t - ON) / 0.25) * 0.5 : 0;
+};
+window.ready = true;
+</script>
+</body>
+</html>
