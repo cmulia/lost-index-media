@@ -8,3 +8,7 @@ episodes/vox_02_bong/assets/storyboards.png https://d8j0ntlcm91z4.cloudfront.net
 episodes/vox_02_bong/assets/hillside.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052838_d683988a-dd0f-4789-9998-8f380e4537c0.png
 episodes/vox_02_bong/assets/stone.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052907_f7afc8f8-a6e2-422b-bfa2-5e2018efe44f.png
 episodes/vox_02_bong/assets/peach.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052909_94608db4-a3b1-4b1c-a0fd-56464555ca56.png
+episodes/vox_02_bong/assets/clips/stairs.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052911_e8530371-7f2d-4468-bb33-32fa83c9ff8f.mp4
+episodes/vox_02_bong/assets/clips/banjiha.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052911_d5ddf3b2-b6de-45a6-a1e2-ad028432d49e.mp4
+episodes/vox_02_bong/assets/clips/house.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_053235_b52d7a60-3f0f-40cd-8d64-a3afcc160682.mp4
+episodes/vox_02_bong/assets/clips/hillside.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_053235_0f586714-8a7e-4c1c-b7ee-960bde4a1bb7.mp4
