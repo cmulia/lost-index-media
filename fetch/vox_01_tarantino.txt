@@ -24,3 +24,5 @@ episodes/vox_01_tarantino/assets/newbev.jpg https://upload.wikimedia.org/wikiped
 episodes/vox_01_tarantino/assets/_pages/newbev.html https://commons.wikimedia.org/wiki/File:Kill_Bill-_the_Whole_Bloody_Affair_screening_at_the_New_Beverly_(5575921543).jpg?action=raw
 episodes/vox_01_tarantino/assets/newbev_alt.jpg https://upload.wikimedia.org/wikipedia/commons/3/3d/Billy_Wilder_films_at_New_Beverly_Cinema.jpg
 episodes/vox_01_tarantino/assets/_pages/newbev_alt.html https://commons.wikimedia.org/wiki/File:Billy_Wilder_films_at_New_Beverly_Cinema.jpg?action=raw
+episodes/vox_01_tarantino/assets/clips/marquee.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_000221_d042848a-c505-44bc-81ce-342f2410959c.mp4
+episodes/vox_01_tarantino/assets/clips/counter.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_000221_1f127dfe-7b39-4d68-b5ae-cebbb2e11d61.mp4
