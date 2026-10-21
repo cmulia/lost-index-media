@@ -1,0 +1,10 @@
+episodes/vox_02_bong/assets/stairs.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052840_5205a5e3-206c-4b06-9a8a-8a4970271078.png
+episodes/vox_02_bong/assets/banjiha.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052840_63bb7289-8eb6-49e1-ac3c-1e39fe80cdd2.png
+episodes/vox_02_bong/assets/house.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052840_b51a693f-f89d-4a44-b9d8-99688bad13ae.png
+episodes/vox_02_bong/assets/tutor.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052840_85776869-f13a-4f22-8828-8a1c055ae13b.png
+episodes/vox_02_bong/assets/stone_raw.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052839_d85efdac-5305-426a-952a-1dc20afb2136.png
+episodes/vox_02_bong/assets/peach_raw.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052839_1cc9584f-25a5-4cd9-aa6d-1a7ef07bf30f.png
+episodes/vox_02_bong/assets/storyboards.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052839_657360b3-50c2-40ff-80e4-0b130343d483.png
+episodes/vox_02_bong/assets/hillside.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052838_d683988a-dd0f-4789-9998-8f380e4537c0.png
+episodes/vox_02_bong/assets/stone.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052907_f7afc8f8-a6e2-422b-bfa2-5e2018efe44f.png
+episodes/vox_02_bong/assets/peach.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261021_052909_94608db4-a3b1-4b1c-a0fd-56464555ca56.png
