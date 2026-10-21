@@ -1,0 +1,10 @@
+episodes/vox_01_tarantino/assets/shelves.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235853_54e9a0aa-e436-4eb3-9cb1-1a7b0e772d1f.png
+episodes/vox_01_tarantino/assets/counter.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235854_013453b3-5e4b-42d7-9fc3-9054c51e12f6.png
+episodes/vox_01_tarantino/assets/vhs_raw.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235853_95dda0b6-d8e6-44ef-b6f2-e3b5459ad3f6.png
+episodes/vox_01_tarantino/assets/booth.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235852_60c34f98-f754-4e94-8f21-fe5d80b4188e.png
+episodes/vox_01_tarantino/assets/marquee.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235851_a6c1912d-d69a-4136-bfb6-3c78a1de683c.png
+episodes/vox_01_tarantino/assets/desk.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235852_63852bd9-4872-4f0f-9a1a-ad265d8719c2.png
+episodes/vox_01_tarantino/assets/seats.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235853_e39f0c0c-0ed8-4bd6-b1bd-fd28d04c6dab.png
+episodes/vox_01_tarantino/assets/reel_raw.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235853_963abe8c-75b2-432b-90f5-af49b0ae93f8.png
+episodes/vox_01_tarantino/assets/vhs.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235925_6e584950-ce5c-42fe-aea9-9e036d0be04e.png
+episodes/vox_01_tarantino/assets/reel.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261020_235926_2403e9c9-5be6-4e7b-ba43-16c233892664.png
