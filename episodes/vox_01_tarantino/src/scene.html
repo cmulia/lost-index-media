@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+:root { --paper: #f3ecdc; --ink: #141414; --pink: #ff5fa2; --cobalt: #2a44e0; --sun: #ffd23f; --teal: #18b7a0; --tomato: #ff4a2e; --navy: #14204a; --lilac: #a98bff; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--paper); }
+.scene { position: absolute; inset: 0; overflow: hidden; }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .08; mix-blend-mode: multiply; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; }
+#hdr span { background: var(--paper); color: var(--ink); padding: 6px 12px; border-radius: 6px; }
+.blk { display: inline-block; padding: 0 .14em; border-radius: .08em; }
+.chip { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 2px; padding: 10px 18px; border-radius: 10px; white-space: nowrap; }
+.card { position: absolute; border-radius: 22px; overflow: hidden; box-shadow: 0 0 0 6px var(--ink), 16px 18px 0 0 var(--ink); background: #fff; }
+.card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.credit { position: absolute; font-family: PR; font-size: 20px; letter-spacing: .5px; color: var(--ink); background: rgba(243,236,220,.92); padding: 4px 10px; border-radius: 6px; white-space: nowrap; }
+.tag { position: absolute; font-family: PM; font-size: 26px; letter-spacing: 2px; color: #fff; background: var(--ink); padding: 8px 14px; border-radius: 8px; white-space: nowrap; }
+.hl { background: linear-gradient(var(--sun), var(--sun)) no-repeat 0 62% / calc(var(--k, 0) * 100%) 62%; padding: 0 .08em; }
+.mask { overflow: hidden; }
+.stamp { position: absolute; font-family: IK; letter-spacing: 2px; border: 9px solid currentColor; border-radius: 16px; padding: 6px 22px; white-space: nowrap; }
+/* captions */
+#cap { left: 50px; right: 50px; top: 1630px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: var(--ink); border-radius: 16px; padding: 14px 24px 16px; box-shadow: 8px 9px 0 0 rgba(20,20,20,.35); }
+#cap .w { font-family: IX; font-size: 50px; line-height: 1.25; color: rgba(255,255,255,.55); padding: 0 6px; border-radius: 8px; }
+#cap .w.on { color: var(--ink); background: var(--sun); }
+#cap .w.done { color: #fff; }
+/* S1 */
+#h1 { left: 56px; right: 40px; top: 170px; }
+#h1 .l { font-family: IK; font-size: 112px; line-height: 1.07; letter-spacing: -3px; color: var(--ink); white-space: nowrap; }
+#h1 .l > span { display: inline-block; }
+/* end */
+#end { background: var(--paper); }
+#end .k { position: absolute; left: 64px; top: 360px; font-family: PM; font-size: 40px; letter-spacing: 4px; color: var(--ink); }
+#end .big { position: absolute; left: 64px; right: 50px; top: 450px; font-family: IK; font-size: 132px; line-height: 1.04; letter-spacing: -4px; color: var(--ink); }
+#end .foot { position: absolute; left: 64px; right: 64px; top: 1240px; font-family: PR; font-size: 26px; line-height: 1.5; color: #4a4a4a; }
+#flash { inset: 0; background: #fff; opacity: 0; pointer-events: none; z-index: 50; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook: on screen from frame one -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/shelves/f001.jpg">
+    <div id="h1" class="a">
+      <div class="mask"><div class="l"><span id="h1a"><span class="blk" style="background:var(--paper)">TARANTINO’S</span></span></div></div>
+      <div class="mask"><div class="l"><span id="h1b"><span class="blk" style="background:var(--pink)">FILM SCHOOL</span></span></div></div>
+      <div class="mask"><div class="l"><span id="h1c"><span class="blk" style="background:var(--paper)">WAS A</span></span></div></div>
+      <div class="mask"><div class="l"><span id="h1d"><span class="blk" style="background:var(--sun)">VIDEO STORE.</span></span></div></div>
+    </div>
+    <div class="card" id="qt1" style="left:540px;top:820px;width:470px;height:600px"><img src="img/qt_2015.jpg" style="object-position:50% 12%"></div>
+    <div class="tag" id="qt1tag" style="left:560px;top:790px;background:var(--cobalt)">QUENTIN TARANTINO</div>
+    <div class="credit" id="qt1cr" style="left:560px;top:1450px">Photo: Gage Skidmore, 2015 · CC BY-SA 3.0</div>
+    <img id="vhs1" class="a" src="img/vhs.png" style="left:40px;top:1000px;width:440px">
+  </div>
+
+  <!-- S2 counter + map -->
+  <div id="s2" class="scene" style="background:var(--paper)">
+    <div class="card" id="cc" style="left:90px;top:200px;width:900px;height:1140px"><img id="ccimg" src="img/counter/f001.jpg"></div>
+    <div class="stamp" id="drop" style="left:150px;top:420px;font-size:64px;color:var(--tomato);background:rgba(243,236,220,.9)">HIGH SCHOOL DROPOUT</div>
+    <div class="a" id="yrs" style="left:120px;top:1060px;background:var(--ink);color:#fff;border-radius:18px;padding:16px 28px;display:flex;align-items:center;gap:28px">
+      <span id="yrn" style="font-family:IK;font-size:120px;line-height:1;color:var(--sun)">5</span>
+      <span style="font-family:IX;font-size:52px;line-height:1.05">YEARS<br>BEHIND THE COUNTER</span>
+    </div>
+    <svg id="map" class="a" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <rect x="60" y="560" width="960" height="980" rx="24" fill="#2a44e0" stroke="#141414" stroke-width="6"/>
+      <path id="land" d="M60 660 L250 640 Q420 700 560 760 Q600 800 610 860 Q630 980 640 1080 Q648 1180 660 1250 Q600 1300 540 1330 Q500 1370 540 1420 Q620 1460 760 1450 L1020 1440 L1020 560 L60 560 Z" fill="#ffd23f" stroke="#141414" stroke-width="6" stroke-linejoin="round"/>
+      <g font-family="PM" font-size="26" letter-spacing="2" fill="#141414">
+        <text x="300" y="610">MALIBU</text>
+        <text x="650" y="800">SANTA MONICA</text>
+        <circle cx="870" cy="700" r="12" fill="#141414"/><text x="760" y="670">DOWNTOWN LA</text>
+        <text x="610" y="1380" font-size="24">PALOS VERDES</text>
+        <text x="160" y="1000" fill="#fff" font-size="30">PACIFIC OCEAN</text>
+        <text x="160" y="1040" fill="#fff" font-size="24">SANTA MONICA BAY</text>
+      </g>
+      <g id="pin" transform="translate(646,1150)">
+        <path d="M0 0 C -40 -50 -46 -80 -46 -100 A 46 46 0 1 1 46 -100 C 46 -80 40 -50 0 0 Z" fill="#ff5fa2" stroke="#141414" stroke-width="6"/>
+        <circle cx="0" cy="-100" r="16" fill="#141414"/>
+      </g>
+      <g id="pinlab"><rect x="690" y="1080" width="320" height="104" rx="12" fill="#141414"/>
+        <text x="708" y="1122" font-family="IX" font-size="32" fill="#fff">VIDEO ARCHIVES</text>
+        <text x="708" y="1162" font-family="PM" font-size="24" fill="#ffd23f">MANHATTAN BEACH</text></g>
+      <text x="80" y="1520" font-family="PR" font-size="22" fill="#fff">schematic map · drawn for this video</text>
+    </svg>
+  </div>
+
+  <!-- S3 talking movies -->
+  <div id="s3" class="scene" style="background:var(--pink)">
+    <div class="a" id="s3k" style="left:64px;top:220px;font-family:PM;font-size:40px;letter-spacing:4px;color:var(--ink)"></div>
+    <div class="a" id="s3h" style="left:64px;top:290px;font-family:IK;font-size:150px;line-height:1;letter-spacing:-5px;color:var(--ink)"><span class="hl" id="s3hl" style="--k:0">TALKING</span><br><span id="s3h2">MOVIES.</span></div>
+    <div id="genres"></div>
+    <img id="vhs3" class="a" src="img/vhs.png" style="left:650px;top:400px;width:330px">
+    <div class="a" id="badge" style="left:140px;top:1090px;width:800px;border-radius:26px;overflow:hidden;box-shadow:0 0 0 6px var(--ink),14px 16px 0 0 var(--ink);background:#fff">
+      <div style="background:var(--tomato);color:#fff;text-align:center;padding:18px 0 12px;font-family:IK;font-size:66px;letter-spacing:2px">HELLO</div>
+      <div style="background:var(--tomato);color:#fff;text-align:center;padding-bottom:16px;font-family:PM;font-size:28px;letter-spacing:4px">MY NAME IS</div>
+      <div style="text-align:center;padding:26px 0 8px;font-family:IK;font-size:96px;letter-spacing:-2px;color:var(--ink)">ROGER AVARY</div>
+      <div style="text-align:center;padding-bottom:22px;font-family:PM;font-size:28px;letter-spacing:3px;color:#555">CO-WORKER · VIDEO ARCHIVES</div>
+    </div>
+  </div>
+
+  <!-- S4 quote -->
+  <div id="s4" class="scene" style="background:var(--cobalt)">
+    <div class="card" id="qt2" style="left:90px;top:200px;width:900px;height:600px"><img src="img/qt_panel.jpg" style="object-position:62% 20%"></div>
+    <div class="credit" id="qt2cr" style="left:110px;top:820px">Photo: Gage Skidmore, 2015 · CC BY-SA 2.0</div>
+    <div class="a" id="qk" style="left:70px;top:900px;font-family:PM;font-size:34px;letter-spacing:4px;color:#fff">HE SAYS:</div>
+    <div class="a" id="quote" style="left:64px;right:60px;top:950px;font-family:SI;font-size:118px;line-height:1.02;color:#fff"></div>
+    <div class="a" id="qsrc" style="left:70px;top:1270px;font-family:PM;font-size:28px;letter-spacing:2px;color:#fff;opacity:.9">— BBC documentary, 1994</div>
+    <div class="stamp" id="hired" style="left:560px;top:1330px;font-size:96px;color:var(--sun);transform:rotate(-8deg)">HIRED.</div>
+  </div>
+
+  <!-- S5 timeline -->
+  <div id="s5" class="scene" style="background:var(--navy)">
+    <img id="s5bg" class="full" src="img/booth/f001.jpg" style="opacity:.55">
+    <div class="a" id="s5k" style="left:64px;top:190px;font-family:PM;font-size:40px;letter-spacing:4px;color:#fff;background:var(--ink);padding:8px 14px;border-radius:8px">THEN CAME…</div>
+    <div class="a" id="tl" style="left:110px;top:300px;width:14px;height:0;background:#fff;border-radius:7px"></div>
+    <div id="tcards"></div>
+  </div>
+
+  <!-- S6 tapes -->
+  <div id="s6" class="scene" style="background:var(--sun)">
+    <div class="card" id="cc6" style="left:120px;top:230px;width:840px;height:1000px"><img src="img/counter.jpg"></div>
+    <div class="a" id="sign" style="left:330px;top:300px;width:420px;transform-origin:50% -60px">
+      <svg width="420" height="250" viewBox="0 0 420 250" style="overflow:visible"><path d="M130 -60 L60 40 M290 -60 L360 40" stroke="#141414" stroke-width="6"/><circle cx="210" cy="-60" r="10" fill="#141414"/>
+      <rect x="10" y="40" width="400" height="190" rx="18" fill="#ff4a2e" stroke="#141414" stroke-width="7"/><text x="210" y="168" text-anchor="middle" font-family="IK" font-size="104" fill="#fff" letter-spacing="2">CLOSED</text></svg>
+    </div>
+    <div id="pile"></div>
+    <div class="a" id="num" style="left:0;right:0;top:250px;text-align:center;font-family:IK;font-size:250px;line-height:1;letter-spacing:-8px;color:var(--ink)"></div>
+    <div class="a" id="numl" style="left:0;right:0;top:520px;text-align:center"><span class="blk" style="font-family:IX;font-size:64px;background:var(--ink);color:#fff;padding:6px 22px">TAPES &amp; DVDs</span><br><span style="display:inline-block;margin-top:18px;font-family:PM;font-size:30px;letter-spacing:2px;color:var(--ink)">his own estimate of the collection</span></div>
+    <div class="a" id="s6k" style="left:64px;top:200px;font-family:PM;font-size:38px;letter-spacing:3px;color:var(--ink)"></div>
+  </div>
+
+  <!-- S7 twist + cinemas -->
+  <div id="s7" class="scene" style="background:var(--pink)">
+    <img id="s7bg" class="full" src="img/marquee/f001.jpg">
+    <div class="a" id="tw" style="left:60px;right:40px;top:560px;font-family:IK;font-size:170px;line-height:.98;letter-spacing:-6px;color:var(--ink)"></div>
+    <div class="a" id="own" style="left:60px;top:190px"><div id="ownk" style="font-family:PM;font-size:38px;letter-spacing:4px;color:#fff;background:var(--ink);display:inline-block;padding:8px 14px;border-radius:8px"></div>
+      <div id="ownb" style="margin-top:16px;font-family:IK;font-size:120px;line-height:1;letter-spacing:-4px"><span class="blk" style="background:var(--sun);color:var(--ink)">2 LA CINEMAS</span></div></div>
+    <div class="card" id="nb" style="left:60px;top:560px;width:560px;height:720px"><img src="img/newbev.jpg" style="object-position:50% 8%"></div>
+    <div class="tag" id="nbt" style="left:80px;top:1300px;background:var(--tomato)">THE NEW BEVERLY</div>
+    <div class="credit" id="nbc" style="left:62px;top:515px">Photo: Doug Kline, 2011 · CC BY 2.0</div>
+    <div class="card" id="vi" style="left:470px;top:700px;width:560px;height:720px"><img src="img/vista.jpg" style="object-position:48% 50%"></div>
+    <div class="tag" id="vit" style="left:490px;top:1440px;background:var(--teal)">THE VISTA</div>
+    <div class="credit" id="vic" style="left:490px;top:1500px">Photo: Steve Peters, 2011 · CC BY 2.0</div>
+  </div>
+
+  <!-- S8 film only -->
+  <div id="s8" class="scene" style="background:var(--ink)">
+    <div class="card" id="fo" style="left:60px;top:200px;width:960px;height:720px"><img src="img/newbev_alt.jpg"></div>
+    <div class="credit" id="foc" style="left:80px;top:940px">New Beverly Cinema · Photo: Sean Dudley, 2022 · public domain</div>
+    <div class="a" id="rk" style="left:64px;top:1020px;font-family:PM;font-size:40px;letter-spacing:4px;color:#fff"></div>
+    <div class="a" id="r1" style="left:60px;top:1075px;font-family:IK;font-size:124px;line-height:1.04;letter-spacing:-4px"><span class="blk" style="background:var(--sun);color:var(--ink)">FILM PRINTS</span><br><span class="blk" style="background:var(--sun);color:var(--ink)">ONLY.</span></div>
+    <div class="a" id="r2" style="left:60px;top:1365px;font-family:IK;font-size:132px;line-height:1;letter-spacing:-4px"><span class="blk" style="background:var(--tomato);color:#fff">NO DIGITAL.</span></div>
+  </div>
+
+  <!-- S9 marquee -->
+  <div id="s9" class="scene" style="background:var(--navy)">
+    <div id="mq" class="a" style="left:0;top:0;width:1080px;height:1920px;transform-origin:563px 1025px">
+      <img class="full" src="img/marquee.jpg">
+      <div class="a" id="board" style="left:230px;top:905px;width:670px;height:250px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px"></div>
+    </div>
+    <img id="vhs9" class="a" src="img/vhs.png" style="left:60px;top:1330px;width:300px">
+    <div class="a" id="arr" style="left:400px;top:1400px;font-family:IK;font-size:140px;color:var(--sun);line-height:1">→</div>
+    <img id="reel9" class="a" src="img/reel.png" style="left:700px;top:1300px;width:320px">
+  </div>
+
+  <!-- S10 end -->
+  <div id="end" class="scene">
+    <div class="k" id="ek"></div>
+    <div class="big"><div class="mask"><div id="e1">He came up</div></div><div class="mask"><div id="e2">on <span class="blk" style="background:var(--pink)">tape.</span></div></div><div class="mask"><div id="e3">Now it’s</div></div><div class="mask"><div id="e4"><span class="blk" style="background:var(--sun)">film only.</span></div></div></div>
+    <div class="foot" id="efoot">Sources: Rolling Stone (2022); New Beverly Cinema; Los Angeles Times; Box Office Pro (2023); BBC, “Hollywood’s Boy Wonder” (1994).<br>Photos via Wikimedia Commons: Gage Skidmore (CC BY-SA), Doug Kline, Steve Peters (CC BY 2.0), Sean Dudley (public domain). Map drawn for this video.<br><br>explained no. 01 · @lost_index</div>
+    <img id="reelE" class="a" src="img/reel.png" style="left:700px;top:880px;width:300px">
+  </div>
+
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 01</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+  <div id="flash" class="a"></div>
+</div>
+<script>
+const CAPS = /*CAPS*/[[["Quentin", 0.2, 0.61], ["Tarantino's", 0.61, 1.32], ["film", 1.32, 1.56], ["school", 1.56, 2.08]], [["was", 2.08, 2.3], ["a", 2.3, 2.35], ["video", 2.35, 2.69], ["store.", 2.69, 3.18]], [["A", 3.73, 3.81], ["high", 3.81, 3.98], ["school", 3.98, 4.25], ["dropout,", 4.25, 4.89]], [["he", 5.11, 5.25], ["spent", 5.25, 5.56], ["five", 5.56, 5.88], ["years", 5.88, 6.2]], [["behind", 6.2, 6.51], ["the", 6.51, 6.57], ["counter", 6.57, 7.03]], [["at", 7.03, 7.13], ["Video", 7.13, 7.51], ["Archives", 7.51, 8.08]], [["in", 8.08, 8.18], ["Manhattan", 8.18, 8.73], ["Beach,", 8.73, 9.03], ["California.", 9.03, 9.82]], [["The", 10.45, 10.54], ["job", 10.54, 10.86], ["was", 10.86, 11.02], ["talking", 11.02, 11.39], ["movies,", 11.39, 11.97]], [["with", 12.22, 12.38], ["customers,", 12.38, 13.06]], [["and", 13.35, 13.65], ["with", 13.65, 13.81], ["a", 13.81, 13.87], ["co-worker", 13.87, 14.46]], [["named", 14.46, 14.77], ["Roger", 14.77, 15.23], ["Avary.", 15.23, 15.61]], [["Though", 16.48, 16.69], ["he", 16.69, 16.83], ["says", 16.83, 17.14], ["he", 17.14, 17.24], ["was", 17.24, 17.4]], [["already", 17.4, 17.83], ["a", 17.83, 17.86], ["movie", 17.86, 18.2], ["expert.", 18.2, 18.81]], [["That's", 19.14, 19.41], ["how", 19.41, 19.57], ["he", 19.57, 19.69], ["got", 19.69, 19.89], ["hired.", 19.89, 20.47]], [["Then", 21.04, 21.3], ["came", 21.3, 21.59], ["Reservoir", 21.59, 22.08], ["Dogs.", 22.08, 22.65]], [["And", 22.96, 23.44], ["Pulp", 23.44, 23.7], ["Fiction:", 23.7, 24.27]], [["the", 24.58, 24.66], ["Palme", 24.66, 25.02], ["d'Or,", 25.02, 25.46]], [["and", 25.73, 25.84], ["a", 25.84, 25.88], ["screenplay", 25.88, 26.51], ["Oscar", 26.51, 26.95]], [["he", 26.95, 27.08], ["shared", 27.08, 27.4], ["with", 27.4, 27.53], ["Avary.", 27.53, 28.0]], [["When", 28.83, 28.96], ["the", 28.96, 29.04], ["store", 29.04, 29.35], ["closed,", 29.35, 29.99]], [["Tarantino", 30.19, 30.81], ["bought", 30.81, 31.01], ["its", 31.01, 31.21], ["tapes.", 31.21, 31.71]], [["He's", 32.36, 32.54], ["put", 32.54, 32.7], ["his", 32.7, 32.84], ["collection", 32.84, 33.35]], [["at", 33.35, 33.44], ["close", 33.44, 33.73], ["to", 33.73, 33.81], ["eight", 33.81, 34.09], ["thousand", 34.09, 34.5]], [["tapes", 34.5, 34.9], ["and", 34.9, 35.05], ["DVDs.", 35.05, 35.79]], [["But", 36.38, 36.52], ["here's", 36.52, 36.77], ["the", 36.77, 36.86], ["twist.", 36.86, 37.45]], [["The", 37.94, 38.05], ["video", 38.05, 38.39], ["store", 38.39, 38.71], ["clerk", 38.71, 39.1]], [["now", 39.1, 39.38], ["owns", 39.38, 39.78], ["two", 39.78, 40.11], ["Los", 40.11, 40.38], ["Angeles", 40.38, 40.84], ["cinemas,", 40.84, 41.44]], [["the", 41.76, 41.85], ["New", 41.85, 42.04], ["Beverly", 42.04, 42.73]], [["and", 42.89, 43.09], ["the", 43.09, 43.17], ["Vista.", 43.17, 43.71]], [["Their", 44.29, 44.48], ["rule?", 44.48, 44.96]], [["Film", 45.36, 45.67], ["prints", 45.67, 46.01], ["only.", 46.01, 46.52]], [["No", 46.9, 47.09], ["digital.", 47.09, 47.62]], [["He", 48.03, 48.13], ["came", 48.13, 48.37], ["up", 48.37, 48.52], ["on", 48.52, 48.71], ["tape.", 48.71, 49.1]], [["Now", 49.5, 49.72], ["he's", 49.72, 49.89], ["keeping", 49.89, 50.23], ["film", 50.23, 50.51], ["running.", 50.51, 50.92]]];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); }, spring: k => 1 - Math.exp(-6*k)*Math.cos(10*k) };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const pop = (el, t, t0, d = .45, from = 0) => { const k = E.back(P(t, t0, t0 + d)); el.style.opacity = t >= t0 ? 1 : 0; return lerp(from, 1, k); };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = s % 255; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 3.6], s2: [3.6, 10.3], s3: [10.3, 16.3], s4: [16.3, 20.9], s5: [20.9, 28.65], s6: [28.65, 36.2], s7: [36.2, 44.1], s8: [44.1, 47.85], s9: [47.85, 51.4], s10: [51.4, 54.5] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const exitUp = (id, t, k, d = .35) => { const x = E.expoIn(P(t, T[k][1] - d, T[k][1])); $(id).style.transform = `translateY(${-x * 1920}px)`; };
+const exitLeft = (id, t, k, d = .35) => { const x = E.expoIn(P(t, T[k][1] - d, T[k][1])); $(id).style.transform = `translateX(${-x * 1080}px)`; };
+
+function S1(t) {
+  frameSeq($('#s1bg'), 'shelves', t, 0);
+  ['#h1a', '#h1b', '#h1c', '#h1d'].forEach((s, i) => {
+    const ex = E.expoIn(P(t, 3.2 + i * .05, 3.6 + i * .05));
+    $(s).style.transform = `translate(${Math.sin(t * 1.3 + i * 1.7) * 5}px, ${-ex * 130}%)`;
+  });
+  const ex = E.expoIn(P(t, 3.15, 3.6));
+  $('#qt1').style.transform = `translateY(${ex * 1400}px) rotate(${4 + Math.sin(t * .9) * 1.2}deg)`;
+  $('#qt1tag').style.transform = `translateY(${ex * 1400}px) rotate(-3deg)`;
+  $('#qt1cr').style.transform = `translateY(${ex * 1400}px)`;
+  $('#vhs1').style.transform = `translate(${-ex * 700}px, ${Math.sin(t * 2) * 16}px) rotate(${-14 + Math.sin(t * 1.4) * 5}deg)`;
+}
+
+function S2(t) {
+  const t0 = T.s2[0];
+  frameSeq($('#ccimg'), 'counter', t, t0);
+  const ci = E.expo(P(t, t0, t0 + .5));
+  const sh = E.io(P(t, 7.0, 7.6)); // card shrinks to the corner for the map
+  $('#cc').style.transformOrigin = '100% 0';
+  $('#cc').style.transform = `translateX(${(1 - ci) * 1100}px) rotate(${lerp(-2, 4, sh)}deg) scale(${lerp(1, .36, sh)})`;
+  const dk = E.back(P(t, 4.25, 4.6));
+  $('#drop').style.opacity = t >= 4.25 && t < 7.0 ? 1 - P(t, 6.8, 7.0) : 0;
+  $('#drop').style.transform = `rotate(-7deg) scale(${lerp(2.2, 1, dk)})`;
+  $('#yrs').style.opacity = t >= 5.5 && t < 7.0 ? 1 - P(t, 6.8, 7.0) : 0;
+  $('#yrs').style.transform = `translateY(${(1 - E.expo(P(t, 5.5, 5.9))) * 120}px)`;
+  $('#yrn').textContent = String(Math.max(1, Math.min(5, 1 + Math.floor((t - 5.5) / .14))));
+  const mk = E.expo(P(t, 7.1, 7.6));
+  $('#map').style.opacity = t >= 7.1 ? 1 : 0;
+  $('#map').style.transform = `translateY(${(1 - mk) * 1400}px)`;
+  const pk = E.back(P(t, 8.18, 8.55));
+  $('#pin').setAttribute('transform', `translate(646,${1150 - (1 - pk) * 200}) scale(${pk})`);
+  $('#pin').style.opacity = t >= 8.18 ? 1 : 0;
+  $('#pinlab').style.opacity = P(t, 8.4, 8.6);
+  $('#pinlab').style.transform = `translateX(${(1 - E.expo(P(t, 8.4, 8.8))) * 300}px)`;
+  exitUp('#s2', t, 's2');
+}
+
+const GEN = [['HORROR', 'var(--sun)', 740, 650, -6], ['KUNG FU', 'var(--teal)', 120, 790, 5], ['NOIR', 'var(--ink)', 540, 800, 4], ['WESTERNS', 'var(--cobalt)', 590, 930, -4], ['GRINDHOUSE', 'var(--tomato)', 60, 925, -3], ['FRENCH NEW WAVE', '#fff', 60, 660, 2]];
+{ let h = ''; GEN.forEach((g, i) => h += `<div class="a gen" id="g${i}" style="left:${g[2]}px;top:${g[3]}px;font-family:IK;font-size:62px;letter-spacing:1px;padding:10px 22px;border-radius:12px;box-shadow:0 0 0 5px var(--ink),8px 9px 0 0 var(--ink);background:${g[1]};color:${g[1] === 'var(--ink)' || g[1] === 'var(--cobalt)' ? '#fff' : 'var(--ink)'}">${g[0]}</div>`); $('#genres').innerHTML = h; }
+function S3(t) {
+  const t0 = T.s3[0];
+  const si = E.expo(P(t, t0, t0 + .45)); $('#s3').style.clipPath = `circle(${si * 2300}px at 540px 960px)`;
+  $('#s3k').textContent = typed('THE JOB:', t, 10.45, 20);
+  const hk = E.expo(P(t, 10.95, 11.35));
+  $('#s3h').style.transform = `translateY(${(1 - hk) * 60}px)`; $('#s3h').style.opacity = P(t, 10.95, 11.05);
+  $('#s3hl').style.setProperty('--k', E.io(P(t, 11.1, 11.7)));
+  GEN.forEach((g, i) => { const t1 = 11.75 + i * .27; const k = E.back(P(t, t1, t1 + .4)); const el = $('#g' + i);
+    const lift = 0;
+    el.style.opacity = t >= t1 ? 1 : 0; el.style.transform = `translateY(${-lift * 330}px) rotate(${g[4] + Math.sin(t * 2 + i) * 2}deg) scale(${k * lerp(1, .8, lift)})`; });
+  const vk = E.spring(P(t, 11.4, 12.4));
+  $('#vhs3').style.opacity = t >= 11.4 ? 1 : 0;
+  $('#vhs3').style.transform = `translate(${(1 - vk) * 500}px, ${Math.sin(t * 2.2) * 14 - 0}px) rotate(${18 + Math.sin(t * 1.6) * 6}deg)`;
+  const bk = E.back(P(t, 14.6, 15.1));
+  $('#badge').style.opacity = t >= 14.6 ? 1 : 0;
+  $('#badge').style.transform = `translateY(${(1 - bk) * 500}px) rotate(${lerp(12, -3, bk)}deg)`;
+  exitLeft('#s3', t, 's3');
+}
+
+const QW = ['“No,', 'I', 'was', 'already', 'a', 'movie', 'expert.”'];
+const QT = [16.85, 17.0, 17.15, 17.4, 17.8, 17.86, 18.2];
+function S4(t) {
+  const t0 = T.s4[0];
+  const si = E.expo(P(t, t0, t0 + .45)); $('#s4').style.transform = `translateX(${(1 - si) * 1080}px)`;
+  const ck = E.back(P(t, t0 + .1, t0 + .6));
+  $('#qt2').style.transform = `rotate(${lerp(6, -2, ck)}deg) scale(${lerp(.6, 1, ck)})`;
+  $('#qk').style.opacity = P(t, 16.6, 16.8);
+  const hk = P(t, 18.2, 18.75);
+  $('#quote').innerHTML = QW.map((w, i) => {
+    const o = t >= QT[i] ? 1 : 0;
+    const inner = (i === 5 || i === 6) ? `<span class="hl" style="--k:${E.io(hk)};color:${hk > .5 ? 'var(--ink)' : '#fff'}">${w}</span>` : w;
+    return `<span style="opacity:${o}">${inner}</span>`; }).join(' ');
+  $('#qsrc').style.opacity = P(t, 18.4, 18.7);
+  const sk = E.back(P(t, 19.75, 20.05));
+  $('#hired').style.opacity = t >= 19.75 ? 1 : 0;
+  $('#hired').style.transform = `rotate(-8deg) scale(${lerp(2.4, 1, sk)})`;
+  $('#flash').style.opacity = t >= 19.82 && t < 20.0 ? (1 - (t - 19.82) / .18) * .35 : 0;
+  exitUp('#s4', t, 's4');
+}
+
+const TC = [
+  [21.55, 'var(--paper)', 'var(--ink)', '1992', 'RESERVOIR DOGS', 'his first feature'],
+  [23.4, 'var(--pink)', 'var(--ink)', '1994', 'PULP FICTION', ''],
+  [24.6, 'var(--sun)', 'var(--ink)', 'CANNES', 'PALME D’OR', 'top prize, 1994'],
+  [26.25, 'var(--teal)', 'var(--ink)', '1995', 'OSCAR', 'best original screenplay'],
+];
+{ let h = ''; TC.forEach((c, i) => h += `<div class="a" id="tc${i}" style="left:160px;top:${300 + i * 250}px;width:860px;height:210px;border-radius:20px;background:${c[1]};color:${c[2]};box-shadow:0 0 0 6px var(--ink),12px 13px 0 0 var(--ink);padding:22px 30px">
+  <div style="font-family:PM;font-size:32px;letter-spacing:4px">${c[3]}</div><div style="font-family:IK;font-size:92px;line-height:1.02;letter-spacing:-3px">${c[4]}</div>
+  <div style="position:absolute;right:26px;top:24px;font-family:PR;font-size:26px">${c[5]}</div></div>
+  <div class="a" id="td${i}" style="left:96px;top:${385 + i * 250}px;width:42px;height:42px;border-radius:50%;background:${c[1]};border:6px solid var(--ink)"></div>`);
+  h += `<div class="a chip" id="share" style="left:520px;top:1265px;background:var(--ink);color:#fff;font-size:30px">shared with Roger Avary</div>`;
+  $('#tcards').innerHTML = h; }
+function S5(t) {
+  const t0 = T.s5[0];
+  frameSeq($('#s5bg'), 'booth', t, t0);
+  const si = E.expo(P(t, t0, t0 + .45)); $('#s5').style.transform = `translateY(${(1 - si) * 1920}px)`;
+  $('#s5k').style.opacity = P(t, 21.0, 21.2);
+  const last = TC.reduce((a, c, i) => t >= c[0] ? i : a, -1);
+  $('#tl').style.height = (last < 0 ? 0 : lerp(0, 250, E.out(P(t, TC[last][0], TC[last][0] + .5))) + Math.max(0, last) * 250 + 60) + 'px';
+  $('#tl').style.opacity = last >= 0 ? 1 : 0;
+  TC.forEach((c, i) => { const k = E.back(P(t, c[0], c[0] + .45)); const el = $('#tc' + i);
+    el.style.opacity = t >= c[0] ? 1 : 0; el.style.transform = `translateX(${(1 - k) * 900}px) rotate(${(i % 2 ? 1 : -1) * 1.2}deg)`;
+    $('#td' + i).style.transform = `scale(${E.back(P(t, c[0] + .1, c[0] + .4))})`; });
+  const sk = E.back(P(t, 27.05, 27.45));
+  $('#share').style.opacity = t >= 27.05 ? 1 : 0; $('#share').style.transform = `rotate(-3deg) scale(${sk})`;
+  $('#flash').style.opacity = t >= 24.6 && t < 24.8 ? (1 - (t - 24.6) / .2) * .3 : 0;
+  exitLeft('#s5', t, 's5');
+}
+
+const PILE = Array.from({ length: 22 }, (_, i) => [60 + hash(i + 1) * 760, 1460 - Math.floor(i / 6) * 120 - hash(i + 40) * 40, (hash(i + 9) - .5) * 70, 30.75 + i * .055 + hash(i + 3) * .1]);
+{ let h = ''; PILE.forEach((p, i) => h += `<img class="a" id="p${i}" src="img/vhs.png" style="left:${p[0]}px;top:${p[1] - 160}px;width:300px">`); $('#pile').innerHTML = h; }
+function S6(t) {
+  const t0 = T.s6[0];
+  const si = E.expo(P(t, t0, t0 + .45)); $('#s6').style.transform = `translateX(${(1 - si) * 1080}px)`;
+  $('#s6k').textContent = typed('WHEN THE STORE CLOSED…', t, 28.85, 34);
+  const ce = E.expoIn(P(t, 30.4, 30.8));
+  $('#cc6').style.transform = `translateY(${ce * -1600}px) rotate(${-2 - ce * 8}deg)`;
+  const sw = t < 29.3 ? 0 : Math.exp(-(t - 29.3) * 2.2) * Math.sin((t - 29.3) * 9) * 22;
+  $('#sign').style.opacity = t >= 29.3 ? 1 : 0;
+  $('#sign').style.transform = `translateY(${(1 - E.out(P(t, 29.3, 29.5))) * -500 - ce * 1600}px) rotate(${sw}deg)`;
+  PILE.forEach((p, i) => { const k = P(t, p[3], p[3] + .45); const y = (1 - k * k) * -1900; const b = k >= 1 ? Math.sin(Math.min(1, (t - p[3] - .45) / .2) * Math.PI) * -18 : 0;
+    const el = $('#p' + i); el.style.opacity = t >= p[3] ? 1 : 0; el.style.transform = `translateY(${y + b}px) rotate(${p[2] * (k < 1 ? 2 - k : 1)}deg)`; });
+  const nk = E.out(P(t, 33.6, 34.5));
+  $('#num').textContent = '≈ ' + fmt(Math.round(8000 * nk / 10) * 10);
+  $('#num').style.opacity = P(t, 33.5, 33.6);
+  $('#num').style.transform = `scale(${E.back(P(t, 33.5, 33.9))})`;
+  $('#numl').style.opacity = P(t, 34.4, 34.6);
+  $('#numl').style.transform = `translateY(${(1 - E.expo(P(t, 34.4, 34.8))) * 60}px)`;
+  $('#s6k').style.opacity = 1 - P(t, 33.3, 33.5);
+  exitUp('#s6', t, 's6');
+}
+
+function S7(t) {
+  const t0 = T.s7[0];
+  // pink twist card first, then the marquee street behind the cinema photos
+  const TW = ['BUT', 'HERE’S', 'THE', 'TWIST.']; const TWT = [36.38, 36.52, 36.77, 36.86];
+  $('#tw').innerHTML = TW.map((w, i) => { const k = E.back(P(t, TWT[i], TWT[i] + .3)); return `<div style="opacity:${t >= TWT[i] ? 1 : 0};transform:scale(${k}) rotate(${(i % 2 ? 2 : -2)}deg);transform-origin:0 50%">${i === 3 ? `<span class="blk" style="background:var(--sun)">${w}</span>` : w}</div>`; }).join('');
+  const wi = E.io(P(t, 37.6, 38.1));
+  $('#s7bg').style.clipPath = `inset(0 0 ${(1 - wi) * 100}% 0)`;
+  if (t >= 37.6) frameSeq($('#s7bg'), 'marquee', t, 37.6);
+  $('#tw').style.transform = `translateY(${-wi * 1500}px)`;
+  $('#ownk').textContent = typed('THE VIDEO STORE CLERK NOW OWNS', t, 38.0, 36);
+  $('#own').style.opacity = t >= 38.0 ? 1 : 0;
+  const ob = E.back(P(t, 39.75, 40.15));
+  $('#ownb').style.opacity = t >= 39.75 ? 1 : 0; $('#ownb').style.transform = `scale(${ob})`; $('#ownb').style.transformOrigin = '0 50%';
+  const nk = E.back(P(t, 41.75, 42.25)), vk = E.back(P(t, 43.05, 43.55));
+  $('#nb').style.opacity = t >= 41.75 ? 1 : 0; $('#nb').style.transform = `translateY(${(1 - nk) * 1300}px) rotate(${-5 + Math.sin(t) * .8}deg)`;
+  ['#nbt', '#nbc'].forEach(s => { $(s).style.opacity = P(t, 42.1, 42.3); });
+  $('#vi').style.opacity = t >= 43.05 ? 1 : 0; $('#vi').style.transform = `translateY(${(1 - vk) * 1300}px) rotate(${4 + Math.sin(t * 1.1) * .8}deg)`;
+  ['#vit', '#vic'].forEach(s => { $(s).style.opacity = P(t, 43.35, 43.55); });
+  $('#nbt').style.transform = 'rotate(-4deg)'; $('#vit').style.transform = 'rotate(3deg)';
+  const ex = E.expoIn(P(t, 43.8, 44.1)); $('#s7').style.transform = `scale(${1 + ex * .25})`; $('#s7').style.opacity = 1 - ex;
+}
+
+function S8(t) {
+  const t0 = T.s8[0];
+  const ck = E.expo(P(t, t0, t0 + .5));
+  $('#fo').style.transform = `scale(${lerp(1.25, 1, ck) + (t - t0) * .012}) rotate(${-1.5}deg)`;
+  $('#fo').style.opacity = ck;
+  $('#rk').textContent = typed('THEIR RULE?', t, 44.3, 26);
+  const k1 = E.back(P(t, 45.3, 45.65)), k2 = E.back(P(t, 46.85, 47.2));
+  $('#r1').style.opacity = t >= 45.3 ? 1 : 0; $('#r1').style.transform = `scale(${k1}) rotate(-2deg)`; $('#r1').style.transformOrigin = '0 50%';
+  $('#r2').style.opacity = t >= 46.85 ? 1 : 0; $('#r2').style.transform = `scale(${k2}) rotate(2deg)`; $('#r2').style.transformOrigin = '0 50%';
+  exitUp('#s8', t, 's8');
+}
+
+const B1 = 'CAME UP ON TAPE', B2 = 'KEEPS FILM RUNNING';
+function boardLine(s, t, t1, col) { return `<div style="font-family:IK;font-size:58px;letter-spacing:4px;color:${col};white-space:pre">${[...s].map((ch, i) => { const k = P(t, t1 + i * .03, t1 + i * .03 + .12); return `<span style="display:inline-block;transform:scaleY(${k});opacity:${k > 0 ? 1 : 0}">${ch}</span>`; }).join('')}</div>`; }
+function S9(t) {
+  const t0 = T.s9[0];
+  const si = E.expo(P(t, t0, t0 + .45)); $('#s9').style.transform = `translateY(${(1 - si) * 1920}px)`;
+  $('#mq').style.transform = `scale(${1.04 + (t - t0) * .02})`;
+  $('#board').innerHTML = boardLine(B1, t, 48.05, 'var(--ink)') + boardLine(B2, t, 49.5, '#e0245e');
+  const vk = E.back(P(t, 48.6, 49.0)), rk = E.back(P(t, 50.1, 50.5));
+  $('#vhs9').style.opacity = t >= 48.6 ? 1 : 0; $('#vhs9').style.transform = `scale(${vk}) rotate(${-12 + Math.sin(t * 2) * 4}deg)`;
+  $('#arr').style.opacity = P(t, 49.4, 49.6); $('#arr').style.transform = `translateX(${Math.sin(t * 5) * 10}px)`;
+  $('#reel9').style.opacity = t >= 50.1 ? 1 : 0; $('#reel9').style.transform = `scale(${rk}) rotate(${(t - 50.1) * 160}deg)`;
+  const ex = E.expoIn(P(t, 51.1, 51.4)); $('#s9').style.opacity = 1 - ex;
+}
+
+function S10(t) {
+  const t0 = T.s10[0];
+  $('#ek').textContent = typed('TAPE OR FILM?', t, t0 + .05, 30);
+  ['#e1', '#e2', '#e3', '#e4'].forEach((s, i) => { const k = E.expo(P(t, t0 + .25 + i * .12, t0 + .75 + i * .12)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, t0 + .9, t0 + 1.2);
+  const rk = E.spring(P(t, t0 + .6, t0 + 1.6));
+  $('#reelE').style.transform = `translateX(${(1 - rk) * 600}px) rotate(${t * 90}deg)`;
+  $('#stage').style.opacity = 1 - P(t, 54.1, 54.5);
+}
+
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s10[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show('#' + (k === 's10' ? 'end' : k), inS(t, k) || (k === 's10' && t >= T.s10[0]));
+  if (inS(t, 's1')) S1(t);
+  if (inS(t, 's2')) S2(t);
+  if (inS(t, 's3')) S3(t);
+  if (inS(t, 's4')) S4(t);
+  if (inS(t, 's5')) S5(t);
+  if (!inS(t, 's4') && !inS(t, 's5')) $('#flash').style.opacity = 0;
+  if (inS(t, 's6')) S6(t);
+  if (inS(t, 's7')) S7(t);
+  if (inS(t, 's8')) S8(t);
+  if (inS(t, 's9')) S9(t);
+  if (t >= T.s10[0]) S10(t); else $('#stage').style.opacity = 1;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
