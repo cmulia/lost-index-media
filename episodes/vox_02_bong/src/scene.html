@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+@font-face { font-family: SR; src: url(fonts/InstrumentSerif-Regular.ttf); }
+:root { --night: #0f1517; --moss: #2c4436; --bone: #efe7d6; --ochre: #e3a83c; --rain: #6f8fa0; --clay: #b6543a; --ink: #141414; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--night); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--night); }
+.scene { position: absolute; inset: 0; overflow: hidden; }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,21,23,.15) 0%, rgba(15,21,23,.0) 35%, rgba(15,21,23,.55) 70%, rgba(15,21,23,.92) 100%); }
+#grain { inset: -60px; opacity: .10; mix-blend-mode: overlay; pointer-events: none; }
+#rainc { inset: 0; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--bone); }
+#hdr span { background: rgba(15,21,23,.7); padding: 6px 12px; border-radius: 6px; }
+.photo { position: absolute; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,.55); background: #000; border: 10px solid var(--bone); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--bone); background: rgba(15,21,23,.78); padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+.tag { position: absolute; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); background: var(--bone); padding: 8px 14px; white-space: nowrap; }
+.kick { position: absolute; font-family: PM; font-size: 30px; letter-spacing: 5px; color: var(--ochre); white-space: nowrap; }
+.serif { font-family: SI; color: var(--bone); line-height: .95; letter-spacing: -1px; }
+.under { background: linear-gradient(var(--ochre), var(--ochre)) no-repeat 0 92% / calc(var(--k, 0) * 100%) 8px; }
+.card { position: absolute; background: var(--bone); color: var(--ink); padding: 26px 32px; box-shadow: 0 24px 50px rgba(0,0,0,.5); }
+.card .l { font-family: PM; font-size: 26px; letter-spacing: 4px; color: #6a6a6a; }
+.card .n { font-family: SR; font-size: 84px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: IS; font-size: 36px; margin-top: 10px; }
+.node { position: absolute; font-family: IB; font-size: 38px; color: var(--ink); background: var(--bone); padding: 12px 22px; white-space: nowrap; }
+.arrowl { position: absolute; font-family: PM; font-size: 22px; letter-spacing: 2px; color: var(--ochre); white-space: nowrap; }
+/* captions */
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: rgba(15,21,23,.88); border: 2px solid rgba(239,231,214,.25); border-radius: 12px; padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(239,231,214,.45); padding: 0 5px; border-radius: 6px; }
+#cap .w.on { color: var(--ink); background: var(--ochre); }
+#cap .w.done { color: var(--bone); }
+#flash { inset: 0; background: #fff; opacity: 0; pointer-events: none; z-index: 50; }
+#dim { inset: 0; background: #000; opacity: 0; pointer-events: none; z-index: 20; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook (fully visible on frame one) -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/stairs/f001.jpg" style="opacity:.55">
+    <div class="photo" id="p1" style="left:90px;top:210px;width:900px;height:1000px"><img src="img/bong_2017.jpg" style="object-position:24% 18%"></div>
+    <div class="tag" id="p1t" style="left:90px;top:170px">BONG JOON HO</div>
+    <div class="credit" id="p1c" style="left:110px;top:1170px">Photo: Dick Thomas Johnson, 2017 · CC BY 2.0</div>
+    <div class="a" id="h1" style="left:70px;right:50px;top:1240px">
+      <div class="serif" id="h1a" style="font-size:96px">Before <span style="font-family:SR">Parasite</span>, he was</div>
+      <div class="serif" id="h1b" style="font-size:200px;color:var(--ochre);margin-top:4px">the tutor.</div>
+    </div>
+  </div>
+
+  <!-- S2 tutoring -->
+  <div id="s2" class="scene">
+    <img id="s2bg" class="full" src="img/tutor.jpg">
+    <div class="shade"></div>
+    <div class="card" id="cA" style="left:70px;top:330px;width:620px"><div class="l">HIS GIRLFRIEND</div><div class="n">English tutor</div><div class="s">already teaching the son</div></div>
+    <svg class="a" id="arrA" style="left:0;top:0" width="1080" height="1920"><path id="arrP" d="M 520 640 C 600 760, 700 760, 740 860" fill="none" stroke="#e3a83c" stroke-width="8" stroke-linecap="round" stroke-dasharray="400" stroke-dashoffset="400"/><path id="arrH" d="M 712 838 L 744 870 L 760 826" fill="none" stroke="#e3a83c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0"/></svg>
+    <div class="arrowl" id="vA" style="left:760px;top:720px;font-size:28px">“VOUCHES”</div>
+    <div class="card" id="cB" style="left:380px;top:900px;width:640px"><div class="l">BONG JOON HO</div><div class="n" id="mathn">math tutor</div><div class="s" id="cBs">“a trustworthy friend”</div></div>
+    <svg class="a" id="xB" style="left:420px;top:960px" width="560" height="140" viewBox="0 0 560 140"><path id="xP" d="M 20 30 C 160 60 330 90 520 120 M 30 120 C 200 90 360 60 530 25" fill="none" stroke="#b6543a" stroke-width="12" stroke-linecap="round" stroke-dasharray="1200" stroke-dashoffset="1200"/></svg>
+    <div class="a serif" id="bad" style="left:80px;top:1260px;font-size:120px">“bad at <span style="color:var(--clay)">math</span>.”</div>
+    <div class="kick" id="badk" style="left:86px;top:1420px;color:var(--bone)">— HE SAYS</div>
+  </div>
+
+  <!-- S3 the con -->
+  <div id="s3" class="scene" style="background:var(--moss)">
+    <img class="full" src="img/storyboards.jpg" style="opacity:.16;filter:grayscale(1)">
+    <div class="kick" id="s3k" style="left:70px;top:230px"></div>
+    <div class="a serif" id="s3h" style="left:66px;top:280px;font-size:190px">the con.</div>
+    <div class="kick" style="left:70px;top:620px;color:var(--bone)" id="rl">REAL LIFE</div>
+    <div id="chainA"></div>
+    <div class="kick" style="left:70px;top:900px;color:var(--bone)" id="fl">THE FILM</div>
+    <div id="chainB"></div>
+    <div class="credit" id="s3c" style="left:70px;top:1560px">schematic · drawn for this video</div>
+  </div>
+
+  <!-- S4 peeping + S5 the set (house clip behind a keyhole that opens) -->
+  <div id="s4" class="scene" style="background:#07090a">
+    <div id="khole" class="a" style="inset:0">
+      <img id="hsbg" class="full" src="img/house/f001.jpg">
+    </div>
+    <div class="a serif" id="peep" style="left:70px;right:60px;top:1250px;font-size:104px;text-align:center">peeping into<br>strangers’ lives.</div>
+    <svg id="blue" class="a" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <g fill="none" stroke="#efe7d6" stroke-width="5" stroke-dasharray="18 12">
+        <rect id="b1" x="90" y="760" width="900" height="420"/>
+        <path id="b2" d="M 120 610 A 600 600 0 0 1 960 610"/>
+      </g>
+      <g font-family="PM" font-size="26" letter-spacing="2" fill="#efe7d6">
+        <text id="bt1" x="110" y="745">GROUND FLOOR + GARDEN · OUTDOOR LOT</text>
+        <text id="bt2" x="400" y="585">SUN PATH</text>
+      </g>
+      <g id="bsets"><rect x="90" y="1240" width="420" height="120" fill="#0f1517" stroke="#e3a83c" stroke-width="5"/><text x="115" y="1312" font-family="PM" font-size="26" fill="#e3a83c">BASEMENT · SEPARATE SET</text>
+        <rect x="570" y="1240" width="420" height="120" fill="#0f1517" stroke="#e3a83c" stroke-width="5"/><text x="600" y="1312" font-family="PM" font-size="26" fill="#e3a83c">BUNKER · SEPARATE SET</text></g>
+    </svg>
+    <div class="a" id="notreal" style="left:50px;top:200px;background:rgba(15,21,23,.82);padding:10px 30px 26px"><div class="serif" style="font-size:150px">Not a real</div><div class="serif" style="font-size:150px">house.</div></div>
+    <div class="a" id="aset" style="left:70px;top:1390px"><span class="serif" style="font-size:150px;color:var(--ochre)">A set.</span></div>
+    <div class="credit" id="setc" style="left:70px;top:1570px">built by production designer Lee Ha-jun · schematic</div>
+  </div>
+
+  <!-- S6 Palme + Golden Globes -->
+  <div id="s6" class="scene" style="background:var(--night)">
+    <div class="photo" id="cast" style="left:60px;top:240px;width:960px;height:640px"><img src="img/cast_2019.jpg" style="object-position:50% 70%"></div>
+    <div class="credit" id="castc" style="left:80px;top:900px">Bong and cast, Seoul, Apr 2019 · Photo: Kinocine · CC BY-SA 4.0</div>
+    <div class="a" id="palme" style="left:70px;top:990px"><div class="kick" style="position:static">CANNES · MAY 2019</div><div class="serif" style="font-size:150px;margin-top:10px">Palme d’Or.</div><div class="serif" id="first" style="font-size:80px;color:var(--ochre);margin-top:14px">a first for Korea</div></div>
+    <div class="a" id="gg" style="left:0;top:0;width:1080px;height:1920px">
+      <div class="kick" style="left:70px;top:240px">GOLDEN GLOBES · JAN 2020</div>
+      <div class="a serif" style="left:66px;top:300px;font-size:120px">“Once you overcome<br>the one-inch tall<br>barrier of subtitles…”</div>
+      <div class="a" id="subbar" style="left:90px;top:900px;width:900px;height:300px;background:#000;border:6px solid var(--bone)">
+        <img src="img/house/f060.jpg" style="width:100%;height:100%;object-fit:cover;opacity:.6">
+        <div class="a" id="subt" style="left:0;right:0;bottom:22px;text-align:center;font-family:IS;font-size:40px;color:#fff;text-shadow:0 2px 6px #000">…you will be introduced to so many more amazing films.</div>
+      </div>
+      <svg class="a" id="ruler" style="left:1000px;top:1100px" width="70" height="110"><path d="M 20 10 L 60 10 M 20 100 L 60 100 M 40 10 L 40 100" stroke="#e3a83c" stroke-width="6"/></svg>
+      <div class="kick" id="inch" style="left:830px;top:1225px">1 INCH</div>
+      <div class="credit" style="left:90px;top:1225px">Bong’s words, via interpreter Sharon Choi</div>
+    </div>
+  </div>
+
+  <!-- S7 Oscars -->
+  <div id="s7" class="scene" style="background:var(--bone)">
+    <div class="photo" id="p7" style="left:730px;top:840px;width:290px;height:370px;border-color:var(--ink)"><img src="img/bong_2025.jpg" style="object-position:50% 25%"></div>
+    <div class="credit" id="p7c" style="left:620px;top:1235px;background:var(--ink)">Photo: Kevin Paul, 2025 · CC BY 4.0</div>
+    <div class="a" style="left:70px;top:230px;font-family:PM;font-size:28px;letter-spacing:4px;color:#555">92ND ACADEMY AWARDS<br>9 FEB 2020</div>
+    <div class="a" id="four" style="left:62px;top:330px;font-family:SI;font-size:230px;line-height:.9;color:var(--ink)">four<br>Oscars.</div>
+    <div id="checks" class="a" style="left:70px;top:860px"></div>
+    <div class="a" id="notEn" style="left:70px;top:1420px;font-family:SI;font-size:84px;color:var(--ink)"><span class="under" id="notEnU" style="--k:0">the first ever not in English.</span></div>
+  </div>
+
+  <!-- S8 the film's flood: a water tank -->
+  <div id="s8" class="scene">
+    <img id="s8bg" class="full" src="img/stairs/f001.jpg">
+    <div class="shade"></div>
+    <svg class="a" id="tank" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920"><rect id="tankR" x="60" y="300" width="960" height="1220" fill="none" stroke="#efe7d6" stroke-width="6" stroke-dasharray="22 14"/><text x="80" y="285" font-family="PM" font-size="26" fill="#efe7d6" letter-spacing="2">WATER TANK · THE STREET IS A SET</text></svg>
+    <div class="a serif" id="s8a" style="left:70px;top:1180px;font-size:110px">The film’s flood?</div>
+    <div class="a serif" id="s8b" style="left:70px;top:1300px;font-size:110px;color:var(--ochre)">a giant water tank.</div>
+    <div class="credit" id="s8c" style="left:70px;top:1440px">schematic · per the cast and crew</div>
+  </div>
+
+  <!-- S9 the real flood -->
+  <div id="s9" class="scene">
+    <div class="photo" id="fl" style="left:60px;top:240px;width:960px;height:720px"><img src="img/flood_2022.jpg"></div>
+    <div class="credit" id="flc" style="left:80px;top:980px">Han River, Seoul, 10 Aug 2022 · Photo: YaMaDa · CC BY-SA 4.0</div>
+    <div class="a serif" id="s9a" style="left:70px;top:1080px;font-size:120px">Three years later,</div>
+    <div class="a serif" id="s9b" style="left:70px;top:1210px;font-size:120px;color:var(--rain)">a real flood.</div>
+    <div id="bj" class="a" style="inset:0">
+      <img id="bjbg" class="full" src="img/banjiha/f001.jpg">
+      <div id="water" class="a" style="left:0;right:0;bottom:0;height:0;background:linear-gradient(180deg, rgba(111,143,160,.75), rgba(30,50,62,.92));border-top:6px solid rgba(239,231,214,.7)"></div>
+      <div class="tag" id="bjt" style="left:70px;top:200px;background:var(--rain);color:#fff">8 AUG 2022 · SILLIM-DONG, SEOUL</div>
+      <div class="a serif" id="died" style="left:0;right:0;top:820px;text-align:center;font-size:170px;text-shadow:0 4px 30px rgba(0,0,0,.8)">Three died.</div>
+    </div>
+  </div>
+
+  <!-- S10 half underground -->
+  <div id="s10" class="scene" style="background:#0a0e10">
+    <div class="a" style="left:0;top:0;width:1080px;height:1000px;overflow:hidden"><img id="hlbg" class="full" src="img/hillside/f001.jpg" style="height:1920px;top:-560px"></div>
+    <div class="a" style="left:0;top:1000px;width:1080px;height:6px;background:var(--ochre)"></div>
+    <div class="kick" style="left:70px;top:1020px" id="sl">STREET LEVEL</div>
+    <svg id="win" class="a" style="left:0;top:880px" width="1080" height="1040"></svg>
+    <div class="kick" id="vow" style="left:70px;top:220px;color:var(--bone);background:rgba(15,21,23,.75);padding:6px 12px"></div>
+    <div class="a" id="cnt" style="left:60px;right:60px;top:1160px;text-align:center;background:rgba(10,14,16,.88);padding:20px 10px 26px;border-top:4px solid var(--ochre)"><div class="serif" id="cntn" style="font-size:210px;color:var(--ochre)">≈ 200,000</div>
+      <div style="font-family:IS;font-size:44px;color:var(--bone);margin-top:6px" id="cntl">households still live half underground</div>
+      <div style="font-family:PR;font-size:22px;color:#9aa;margin-top:12px">Seoul, recent estimates · Seoul Institute / Asia Economy</div></div>
+  </div>
+
+  <!-- S11 end -->
+  <div id="end" class="scene" style="background:var(--night)">
+    <div class="kick" id="ek" style="left:70px;top:330px"></div>
+    <div class="a" style="left:66px;right:50px;top:400px">
+      <div class="mask" style="overflow:hidden"><div class="serif" id="e1" style="font-size:150px">The basements</div></div>
+      <div class="mask" style="overflow:hidden"><div class="serif" id="e2" style="font-size:150px">in <span style="font-family:SR">Parasite</span></div></div>
+      <div class="mask" style="overflow:hidden"><div class="serif" id="e3" style="font-size:150px;color:var(--ochre)">are real.</div></div>
+    </div>
+    <img id="stoneE" class="a" src="img/stone.png" style="left:700px;top:900px;width:280px">
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1290px;font-family:PR;font-size:24px;line-height:1.5;color:#a9a497">Sources: The Hollywood Reporter (2019, 2020); Time Out; Dezeen (2020); Festival de Cannes; 92nd Academy Awards; Korea JoongAng Daily, Korea Times, CNN, Al Jazeera (Aug 2022); Asia Economy (2025); Seoul Institute.<br>Photos via Wikimedia Commons: Dick Thomas Johnson, Kevin Paul, Kinocine, YaMaDa (CC BY / BY-SA). Diagrams drawn for this video.<br><br>explained no. 02 · @lost_index</div>
+  </div>
+
+  <canvas id="rainc" class="a" width="1080" height="1920"></canvas>
+  <div id="dim" class="a"></div>
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 02</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+  <div id="flash" class="a"></div>
+</div>
+<script>
+const CAPS = /*CAPS*/[[["Before", 0.2, 0.59], ["Parasite,", 0.59, 1.32]], [["Bong", 1.6, 1.95], ["Joon", 1.95, 2.21], ["Ho", 2.21, 2.56], ["was", 2.56, 2.76], ["a", 2.76, 2.79], ["rich", 2.79, 3.07], ["family's", 3.07, 3.5], ["tutor.", 3.5, 3.99]], [["His", 4.56, 4.72], ["girlfriend", 4.72, 5.29], ["taught", 5.29, 5.5], ["their", 5.5, 5.64], ["son", 5.64, 5.91], ["English,", 5.91, 6.53]], [["and", 6.78, 6.97], ["vouched", 6.97, 7.36], ["for", 7.36, 7.49], ["him", 7.49, 7.78]], [["as", 7.78, 8.03], ["the", 8.03, 8.12], ["math", 8.12, 8.46], ["tutor.", 8.46, 8.92]], [["He", 9.41, 9.53], ["says", 9.53, 9.78], ["he", 9.78, 9.89], ["was", 9.89, 10.04], ["bad", 10.04, 10.27], ["at", 10.27, 10.36], ["math.", 10.36, 10.83]], [["That's", 11.14, 11.46], ["how", 11.46, 11.6], ["the", 11.6, 11.69], ["con", 11.69, 12.04], ["in", 12.04, 12.16], ["Parasite", 12.16, 12.71], ["begins:", 12.71, 13.31]], [["a", 13.67, 13.74], ["friend", 13.74, 14.15], ["vouches", 14.15, 14.6], ["for", 14.6, 14.72], ["you.", 14.72, 15.06]], [["He", 15.49, 15.65], ["says", 15.65, 15.99], ["it", 15.99, 16.1], ["felt", 16.1, 16.3], ["like", 16.3, 16.5]], [["peeping", 16.5, 16.93], ["into", 16.93, 17.13], ["strangers'", 17.13, 17.65], ["lives.", 17.65, 18.24]], [["That", 18.65, 18.86], ["glass", 18.86, 19.16], ["mansion?", 19.16, 19.7]], [["Not", 20.13, 20.33], ["a", 20.33, 20.36], ["real", 20.36, 20.6], ["house.", 20.6, 21.05]], [["A", 21.42, 21.5], ["set,", 21.5, 22.02], ["built", 22.25, 22.55], ["from", 22.55, 22.71], ["scratch.", 22.71, 23.34]], [["Parasite", 23.77, 24.38], ["won", 24.38, 24.6], ["the", 24.6, 24.69], ["Palme", 24.69, 25.09], ["d'Or,", 25.09, 25.59]], [["a", 25.87, 25.95], ["first", 25.95, 26.36], ["for", 26.36, 26.48], ["Korea.", 26.48, 27.03]], [["At", 27.56, 27.71], ["the", 27.71, 27.79], ["Golden", 27.79, 28.15], ["Globes,", 28.15, 28.62]], [["he", 28.62, 28.83], ["urged", 28.83, 29.17], ["us", 29.17, 29.34], ["to", 29.34, 29.44], ["overcome", 29.44, 30.06]], [["the", 30.06, 30.15], ["one-inch", 30.15, 30.68], ["tall", 30.68, 30.96], ["barrier", 30.96, 31.47], ["of", 31.47, 31.55], ["subtitles.", 31.55, 32.36]], [["Then", 32.88, 33.32], ["four", 33.32, 33.7], ["Oscars,", 33.7, 34.42]], [["including", 34.64, 35.19], ["Best", 35.19, 35.49], ["Picture,", 35.49, 36.03]], [["the", 36.35, 36.44], ["first", 36.44, 36.79], ["ever", 36.79, 37.09], ["not", 37.09, 37.38], ["in", 37.38, 37.47], ["English.", 37.47, 38.06]], [["The", 38.57, 38.68], ["film's", 38.68, 39.07], ["flood?", 39.07, 39.48]], [["Shot", 39.93, 40.33], ["in", 40.33, 40.44], ["a", 40.44, 40.5], ["giant", 40.5, 40.97], ["water", 40.97, 41.3], ["tank.", 41.3, 41.74]], [["Three", 42.21, 42.44], ["years", 42.44, 42.71], ["later,", 42.71, 43.22]], [["a", 43.22, 43.31], ["real", 43.31, 43.68], ["flood", 43.68, 44.1], ["trapped", 44.1, 44.44], ["a", 44.44, 44.49], ["family", 44.49, 44.95]], [["in", 44.95, 45.07], ["a", 45.07, 45.12], ["Seoul", 45.12, 45.53], ["semi-basement.", 45.53, 46.5]], [["Three", 46.97, 47.2], ["died.", 47.2, 47.67]], [["Seoul", 48.2, 48.57], ["vowed", 48.57, 48.88], ["to", 48.88, 48.97], ["phase", 48.97, 49.27], ["these", 49.27, 49.49], ["homes", 49.49, 49.8], ["out.", 49.8, 50.18]], [["About", 50.66, 51.01], ["two", 51.01, 51.26], ["hundred", 51.26, 51.6], ["thousand", 51.6, 51.98], ["households", 51.98, 52.56]], [["still", 52.56, 52.81], ["live", 52.81, 53.02], ["half", 53.02, 53.31], ["underground.", 53.31, 54.04]]];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = s % 255; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+const RC = $('#rainc').getContext('2d');
+function rain(t, amt) { RC.clearRect(0, 0, 1080, 1920); if (amt <= 0) return; RC.strokeStyle = `rgba(220,230,235,${.22 * amt})`; RC.lineWidth = 2; RC.beginPath();
+  for (let i = 0; i < 160; i++) { const x0 = hash(i) * 1180 - 50, sp = 2600 + hash(i + 7) * 1400, y = ((hash(i + 3) * 2200 + t * sp) % 2200) - 140, len = 50 + hash(i + 9) * 60;
+    RC.moveTo(x0 - (y * .08), y); RC.lineTo(x0 - ((y + len) * .08), y + len); } RC.stroke(); }
+
+const T = { s1: [0, 4.35], s2: [4.35, 10.95], s3: [10.95, 15.3], s4: [15.3, 23.55], s6: [23.55, 32.7], s7: [32.7, 38.4], s8: [38.4, 42.0], s9: [42.0, 48.0], s10: [48.0, 54.6], s11: [54.6, 57.5] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  frameSeq($('#s1bg'), 'stairs', t, 0);
+  $('#p1').style.transform = `scale(${1 + t * .01}) rotate(-1deg)`;
+  $('#h1').style.transform = `translateY(${Math.sin(t * 1.1) * 3}px)`;
+  const ex = E.expoIn(P(t, 3.95, 4.35)); $('#s1').style.opacity = 1 - ex;
+}
+
+function S2(t) {
+  xfade('#s2', t, 's2');
+  $('#s2bg').style.transform = `scale(${1.08 - (t - T.s2[0]) * .008}) translateY(${(t - T.s2[0]) * -4}px)`;
+  fadeUp($('#cA'), t, 4.6, .55, 60); $('#cA').style.transform += ' rotate(-2deg)';
+  $('#arrP').setAttribute('stroke-dashoffset', 400 * (1 - E.io(P(t, 6.85, 7.4))));
+  $('#arrH').setAttribute('opacity', t > 7.35 ? 1 : 0);
+  $('#vA').style.opacity = P(t, 7.0, 7.3);
+  fadeUp($('#cB'), t, 7.9, .55, 60); $('#cB').style.transform += ' rotate(1.5deg)';
+  $('#cBs').style.opacity = P(t, 8.4, 8.7);
+  $('#xP').setAttribute('stroke-dashoffset', 1200 * (1 - E.io(P(t, 10.05, 10.5))));
+  fadeUp($('#bad'), t, 9.85, .5, 50); fadeUp($('#badk'), t, 9.5, .4, 20);
+}
+
+const CA = [['GIRLFRIEND', 95, 690, 13.65], ['BONG', 560, 690, 13.95]];
+const CB = [['FRIEND', 70, 980, 13.7], ['SON', 330, 1100, 13.9], ['DAUGHTER', 70, 1220, 14.1], ['FATHER', 420, 1340, 14.3], ['MOTHER', 70, 1460, 14.5]];
+{ let h = ''; CA.forEach((c, i) => h += `<div class="node" id="na${i}" style="left:${c[1]}px;top:${c[2]}px">${c[0]}</div>`);
+  h += `<div class="arrowl" id="aa0" style="left:340px;top:706px">— vouches →</div>`; $('#chainA').innerHTML = h;
+  h = ''; CB.forEach((c, i) => { h += `<div class="node" id="nb${i}" style="left:${c[1]}px;top:${c[2]}px;${i ? 'background:var(--ochre)' : ''}">${c[0]}</div>`;
+    if (i < CB.length - 1) h += `<div class="arrowl" id="ab${i}" style="left:${Math.max(c[1], CB[i + 1][1]) + 280}px;top:${c[2] + 76}px">↳ vouches</div>`; }); $('#chainB').innerHTML = h; }
+function S3(t) {
+  xfade('#s3', t, 's3', .25);
+  $('#s3k').textContent = typed('THAT’S HOW IT BEGINS:', t, 11.1, 30);
+  const hk = E.expo(P(t, 11.55, 12.05)); $('#s3h').style.opacity = hk; $('#s3h').style.transform = `translateX(${(1 - hk) * -80}px)`;
+  $('#rl').style.opacity = P(t, 12.6, 12.8); $('#fl').style.opacity = P(t, 13.4, 13.6);
+  CA.forEach((c, i) => { const el = $('#na' + i); const k = E.back(P(t, c[3] - .9, c[3] - .55)); el.style.opacity = t >= c[3] - .9 ? 1 : 0; el.style.transform = `scale(${k})`; });
+  $('#aa0').style.opacity = P(t, 13.0, 13.2);
+  CB.forEach((c, i) => { const el = $('#nb' + i); const k = E.back(P(t, c[3], c[3] + .3)); el.style.opacity = t >= c[3] ? 1 : 0; el.style.transform = `scale(${k}) rotate(${(i % 2 ? 1.5 : -1.5)}deg)`;
+    if (i < CB.length - 1) $('#ab' + i).style.opacity = P(t, c[3] + .15, c[3] + .3); });
+  $('#s3c').style.opacity = P(t, 13.8, 14.0);
+}
+
+function keyholeMask(r, open) { // r scales the keyhole; open 0..1 morphs to full frame
+  const cx = 540, cy = 760;
+  if (open >= 1) return 'none';
+  const R = 140 * r, w1 = 70 * r, w2 = 150 * r, h = 360 * r;
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='1920'><circle cx='${cx}' cy='${cy}' r='${R + open * 2400}' fill='white'/><path d='M ${cx - w1} ${cy + R * .5} L ${cx - w2} ${cy + R * .5 + h} L ${cx + w2} ${cy + R * .5 + h} L ${cx + w1} ${cy + R * .5} Z' fill='white'/></svg>`;
+  return `url("data:image/svg+xml;utf8,${encodeURIComponent(svg)}")`;
+}
+function S4(t) {
+  xfade('#s4', t, 's4', .25);
+  frameSeq($('#hsbg'), 'house', t, T.s4[0]);
+  const r = lerp(1, 1.35, E.io(P(t, 15.3, 18.4))), open = E.expoIn(P(t, 18.45, 19.1));
+  const m = keyholeMask(r, open); $('#khole').style.webkitMaskImage = m; $('#khole').style.maskImage = m;
+  $('#khole').style.webkitMaskSize = '1080px 1920px';
+  $('#peep').style.opacity = Math.min(P(t, 16.3, 16.6), 1 - P(t, 18.3, 18.55));
+  $('#peep').style.transform = `translateY(${(1 - E.out(P(t, 16.3, 16.8))) * 40}px)`;
+  const ok = E.expo(P(t, 19.95, 20.35)); $('#notreal').style.opacity = t >= 19.95 ? 1 : 0; $('#notreal').style.transform = `translateX(${(1 - ok) * -120}px)`;
+  $('#notreal').style.opacity = t >= 19.95 ? 1 - P(t, 21.2, 21.4) * .0 : 0;
+  const bl = E.io(P(t, 21.4, 22.4));
+  $('#blue').style.opacity = t >= 21.4 ? 1 : 0;
+  $('#b1').setAttribute('stroke-dashoffset', 0); $('#b1').style.clipPath = `inset(0 ${(1 - bl) * 100}% 0 0)`;
+  $('#b2').style.opacity = P(t, 22.0, 22.4); $('#bt1').style.opacity = P(t, 21.7, 21.9); $('#bt2').style.opacity = P(t, 22.1, 22.3);
+  $('#bsets').style.opacity = P(t, 22.5, 22.8);
+  const ak = E.back(P(t, 21.35, 21.75)); $('#aset').style.opacity = t >= 21.35 ? 1 : 0; $('#aset').style.transform = `scale(${ak})`; $('#aset').style.transformOrigin = '0 50%';
+  $('#setc').style.opacity = P(t, 22.3, 22.5);
+}
+
+function S6(t) {
+  xfade('#s6', t, 's6', .25);
+  const ck = E.expo(P(t, 23.6, 24.2)); $('#cast').style.opacity = ck; $('#cast').style.transform = `scale(${lerp(1.08, 1, ck)}) rotate(-1deg)`; $('#castc').style.opacity = ck;
+  fadeUp($('#palme'), t, 24.6, .5, 60); $('#first').style.opacity = P(t, 25.9, 26.2);
+  const gx = E.io(P(t, 27.3, 27.75));
+  ['#cast', '#castc', '#palme'].forEach(s => { $(s).style.opacity = parseFloat($(s).style.opacity) * (1 - gx); });
+  $('#gg').style.opacity = gx; $('#gg').style.transform = `translateY(${(1 - gx) * 80}px)`;
+  const sk = E.expo(P(t, 30.0, 30.6));
+  $('#subbar').style.transform = `scale(${lerp(1, 1.0, sk)})`;
+  $('#ruler').style.opacity = P(t, 30.1, 30.3); $('#ruler').style.transform = `scaleY(${E.back(P(t, 30.1, 30.5))})`;
+  $('#inch').style.opacity = P(t, 30.4, 30.6);
+  $('#flash').style.opacity = t >= 24.6 && t < 24.85 ? (1 - (t - 24.6) / .25) * .35 : 0;
+}
+
+const CK = ['Best Picture', 'Director', 'Original Screenplay', 'International Feature'];
+{ $('#checks').innerHTML = CK.map((c, i) => `<div id="ck${i}" style="font-family:PM;font-size:44px;color:var(--ink);margin-bottom:22px">✓ <span id="ckt${i}" style="font-family:IS;font-size:58px">${c}</span></div>`).join(''); }
+function S7(t) {
+  xfade('#s7', t, 's7', .25);
+  fadeUp($('#four'), t, 33.2, .5, 50);
+  $('#p7').style.opacity = P(t, 32.9, 33.3); $('#p7').style.transform = `rotate(${2 + Math.sin(t) * .5}deg)`; $('#p7c').style.opacity = P(t, 33.1, 33.4);
+  CK.forEach((c, i) => { const t1 = 33.85 + i * .22; const el = $('#ck' + i); el.style.opacity = P(t, t1, t1 + .15); el.style.transform = `translateX(${(1 - E.expo(P(t, t1, t1 + .4))) * -60}px)`; });
+  const hk = E.io(P(t, 35.1, 35.6)); $('#ckt0').style.background = `linear-gradient(var(--ochre), var(--ochre)) no-repeat 0 85% / ${hk * 100}% 40%`;
+  fadeUp($('#notEn'), t, 36.3, .4, 30); $('#notEnU').style.setProperty('--k', E.io(P(t, 37.0, 37.8)));
+}
+
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  frameSeq($('#s8bg'), 'stairs', t, T.s8[0]);
+  fadeUp($('#s8a'), t, 38.5, .45, 40);
+  fadeUp($('#s8b'), t, 39.85, .45, 40);
+  const k = E.io(P(t, 40.0, 41.0)); $('#tankR').setAttribute('stroke-dasharray', `22 14`); $('#tank').style.opacity = k; $('#tank').style.transform = `scale(${lerp(1.1, 1, k)})`;
+  $('#s8c').style.opacity = P(t, 40.6, 40.9);
+}
+
+function S9(t) {
+  $('#s9').style.opacity = P(t, 42.0, 42.35);
+  const fk = E.expo(P(t, 42.05, 42.6)); $('#fl').style.opacity = fk; $('#fl').style.transform = `scale(${lerp(1.06, 1, fk) + (t - 42) * .01})`; $('#flc').style.opacity = fk;
+  fadeUp($('#s9a'), t, 42.15, .45, 40); fadeUp($('#s9b'), t, 43.55, .45, 40);
+  const bk = P(t, 44.0, 44.5); $('#bj').style.opacity = bk;
+  if (t >= 43.9) frameSeq($('#bjbg'), 'banjiha', t, 43.9);
+  $('#water').style.height = (E.io(P(t, 44.3, 46.6)) * 1350) + 'px';
+  $('#bjt').style.opacity = P(t, 44.4, 44.7);
+  $('#died').style.opacity = P(t, 46.9, 47.3);
+  $('#bjbg').style.filter = `brightness(${1 - .55 * P(t, 46.7, 47.2)})`; $('#water').style.opacity = 1 - .4 * P(t, 46.7, 47.2);
+}
+
+{ let h = ''; for (let r = 0; r < 4; r++) for (let c = 0; c < 6; c++) { const x = 40 + c * 172 + (r % 2) * 60, y = 110 + r * 230; if (x > 980) continue;
+  h += `<g class="wn" data-i="${r * 6 + c}"><rect x="${x}" y="${y - 40}" width="130" height="80" fill="#e3a83c" opacity=".9"/><rect x="${x}" y="${y - 40}" width="130" height="80" fill="none" stroke="#141414" stroke-width="5"/><line x1="${x + 65}" y1="${y - 40}" x2="${x + 65}" y2="${y + 40}" stroke="#141414" stroke-width="4"/></g>`; }
+  $('#win').innerHTML = `<rect x="0" y="126" width="1080" height="920" fill="#1d1712"/>` + h; }
+function S10(t) {
+  xfade('#s10', t, 's10', .3);
+  frameSeq($('#hlbg'), 'hillside', t, T.s10[0]);
+  $('#vow').textContent = typed('SEOUL VOWED TO PHASE THEM OUT.', t, 48.2, 30);
+  document.querySelectorAll('.wn').forEach(g => { const i = +g.dataset.i; const t1 = 49.0 + hash(i) * 1.6; g.style.opacity = t >= t1 ? 1 : 0; });
+  $('#win').querySelector('rect').setAttribute('opacity', 1);
+  const nk = E.out(P(t, 50.9, 51.9));
+  $('#cntn').textContent = '≈ ' + fmt(Math.round(200000 * nk / 1000) * 1000);
+  $('#cnt').style.opacity = P(t, 50.8, 51.0);
+  $('#cntl').style.opacity = P(t, 52.4, 52.7);
+}
+
+function S11(t) {
+  $('#end').style.opacity = P(t, 54.6, 55.0);
+  $('#ek').textContent = typed('SUBTITLES OR DUBBED?', t, 54.8, 30);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 55.0 + i * .15, 55.5 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 55.6, 56.0);
+  const sk = E.out(P(t, 55.4, 56.2)); $('#stoneE').style.opacity = sk; $('#stoneE').style.transform = `translateY(${(1 - sk) * 80}px)`;
+  $('#stage').style.opacity = 1 - P(t, 57.1, 57.5);
+}
+
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s6: '#s6', s7: '#s7', s8: '#s8', s9: '#s9', s10: '#s10', s11: '#end' };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  if (inS(t, 's1')) S1(t);
+  if (inS(t, 's2')) S2(t);
+  if (inS(t, 's3')) S3(t);
+  if (inS(t, 's4')) S4(t);
+  if (inS(t, 's6')) S6(t); else $('#flash').style.opacity = 0;
+  if (inS(t, 's7')) S7(t);
+  if (inS(t, 's8')) S8(t);
+  if (inS(t, 's9')) S9(t); else $('#dim').style.opacity = 0;
+  if (inS(t, 's10')) S10(t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  rain(t, inS(t, 's1') ? .8 : inS(t, 's8') ? 1 : inS(t, 's9') ? .6 * (1 - P(t, 46.6, 47.2)) : inS(t, 's10') ? .3 : 0);
+  $('#hdr').style.opacity = inS(t, 's7') ? 0 : 1;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
