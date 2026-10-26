@@ -1,0 +1,80 @@
+{
+ "episode": "vox_05_hitchcock",
+ "video_seconds": 57,
+ "music": {
+  "prompt": "Dry, wry cool-jazz noir instrumental at about ninety-five beats per minute: pizzicato strings and a walking upright bass, brushed snare, a muted trumpet line that enters after the first phrase and keeps things sly rather than tense. It stays understated and dry throughout, thins out over the last fifteen seconds and drops to near silence at the very end with a single soft bass note.",
+  "duration_seconds": 58
+ },
+ "sfx": [
+  {
+   "file": "stamp",
+   "prompt": "a heavy rubber stamp slamming once onto paper on a wooden desk, dry office room",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "pen",
+   "prompt": "a fountain pen scratching a short signature on paper, close and dry",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "paper",
+   "prompt": "a single sheet of paper slid across a desk and set down, quiet",
+   "duration_seconds": 1.2
+  },
+  {
+   "file": "coins",
+   "prompt": "a small pile of coins dropped onto a wooden table, one clink then settling",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "register",
+   "prompt": "a vintage mechanical cash register key press and bell ding",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "camera",
+   "prompt": "a 1960s 35 millimetre studio film camera motor running steadily, mechanical whirr, close",
+   "duration_seconds": 4
+  },
+  {
+   "file": "shower",
+   "prompt": "a shower running onto tiles in a small bathroom, steady water",
+   "duration_seconds": 5
+  },
+  {
+   "file": "syrup",
+   "prompt": "thick syrup glugging out of a tin onto a tiled floor, wet slow glops",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "rope",
+   "prompt": "a brass velvet-rope clasp clicking onto a stanchion, metallic click, cinema lobby echo",
+   "duration_seconds": 1.2
+  },
+  {
+   "file": "tick",
+   "prompt": "a single soft wristwatch tick, very close, dry",
+   "duration_seconds": 0.6
+  },
+  {
+   "file": "counter",
+   "prompt": "a mechanical number counter wheels spinning rapidly and stopping, dry clicks",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "applause",
+   "prompt": "polite formal awards-ceremony applause in a large hall, medium distance",
+   "duration_seconds": 4
+  },
+  {
+   "file": "mic",
+   "prompt": "a microphone being tapped twice with a short feedback squeal in a large hall",
+   "duration_seconds": 2
+  },
+  {
+   "file": "swoosh",
+   "prompt": "a short soft paper whoosh transition, dry",
+   "duration_seconds": 0.8
+  }
+ ]
+}

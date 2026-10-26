@@ -1,0 +1,75 @@
+{
+ "episode": "vox_06_nolan",
+ "video_seconds": 57,
+ "music": {
+  "prompt": "Minimal and precise instrumental at about ninety beats per minute: a ticking metronome or soft woodblock as the only percussion, a low sustained cello drone, and a single repeating piano note that slowly gains a quiet string layer, tension building but never resolving. In the last ten seconds the strings fall away and only the piano note and the tick remain, fading to near silence.",
+  "duration_seconds": 58
+ },
+ "sfx": [
+  {
+   "file": "cans",
+   "prompt": "two metal film cans set down and clanking together on a table, dry close",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "tear",
+   "prompt": "a sheet of paper torn cleanly in half, close",
+   "duration_seconds": 1.2
+  },
+  {
+   "file": "wind",
+   "prompt": "a spring-wound 16 millimetre cine camera being wound up with a crank then running with a clockwork whirr",
+   "duration_seconds": 4
+  },
+  {
+   "file": "clap",
+   "prompt": "a wooden film clapperboard snapping shut once, dry room",
+   "duration_seconds": 0.8
+  },
+  {
+   "file": "pencil",
+   "prompt": "a pencil ticking quick small check marks on paper, several ticks",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "jet",
+   "prompt": "a distant jet engine idling then a slow heavy crunch of metal against corrugated steel, dust falling",
+   "duration_seconds": 5
+  },
+  {
+   "file": "desert",
+   "prompt": "low desert wind at dawn with a faint electrical hum from a steel tower",
+   "duration_seconds": 5
+  },
+  {
+   "file": "metronome",
+   "prompt": "a mechanical metronome ticking steadily at ninety beats per minute, close, dry",
+   "duration_seconds": 5
+  },
+  {
+   "file": "projector",
+   "prompt": "a 16 millimetre film projector running with film flutter, close",
+   "duration_seconds": 4
+  },
+  {
+   "file": "rotary",
+   "prompt": "a rotary telephone dial being turned once and returning with a ratchet",
+   "duration_seconds": 2
+  },
+  {
+   "file": "flip",
+   "prompt": "a small flip phone snapping shut, plastic click",
+   "duration_seconds": 0.8
+  },
+  {
+   "file": "applause",
+   "prompt": "a big awards-ceremony audience applauding and cheering in a large theatre",
+   "duration_seconds": 4
+  },
+  {
+   "file": "swoosh",
+   "prompt": "a short soft airy whoosh transition",
+   "duration_seconds": 0.8
+  }
+ ]
+}
