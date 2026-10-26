@@ -1,0 +1,80 @@
+{
+ "episode": "vox_04_spielberg",
+ "video_seconds": 57.8,
+ "music": {
+  "prompt": "Dry, sparse, slightly wry 1970s instrumental at about ninety beats per minute: upright bass, brushed drum kit, a warm Rhodes electric piano and a little clean surf-twang guitar, with long rests and plenty of air. It stays understated, dips to almost nothing around the two-thirds mark, then ends on two low held bass notes.",
+  "duration_seconds": 59
+ },
+ "sfx": [
+  {
+   "file": "waves",
+   "prompt": "gentle ocean waves lapping against a wooden hull, seagulls distant, calm sea",
+   "duration_seconds": 5
+  },
+  {
+   "file": "hydraulic",
+   "prompt": "a large pneumatic machine hissing and straining then clunking to a stop, mechanical failure, outdoors",
+   "duration_seconds": 3
+  },
+  {
+   "file": "sputter",
+   "prompt": "a motor sputtering, grinding and dying with a wet electrical crackle",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "splash",
+   "prompt": "a heavy splash of something large dropping into seawater",
+   "duration_seconds": 2
+  },
+  {
+   "file": "pages",
+   "prompt": "calendar pages flipping rapidly, paper riffling",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "register",
+   "prompt": "a vintage cash register drawer opening with a bell ding",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "barrel",
+   "prompt": "a hollow metal barrel bobbing and knocking on water, muffled clonks",
+   "duration_seconds": 3
+  },
+  {
+   "file": "underwater",
+   "prompt": "underwater ambience, muffled bubbles and deep pressure hum, slow",
+   "duration_seconds": 5
+  },
+  {
+   "file": "piano",
+   "prompt": "two low piano notes played slowly one after another, close, with sustain",
+   "duration_seconds": 3
+  },
+  {
+   "file": "crowd",
+   "prompt": "a cinema crowd murmuring excitedly in a lobby, ticket tearing",
+   "duration_seconds": 4
+  },
+  {
+   "file": "counter",
+   "prompt": "a mechanical number counter wheels spinning rapidly and clicking to a stop",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "creak",
+   "prompt": "old tarpaulin flapping in wind over rusted metal, creaking, desolate outdoor lot",
+   "duration_seconds": 5
+  },
+  {
+   "file": "museum",
+   "prompt": "a quiet museum atrium ambience with soft footsteps, an escalator hum and distant voices",
+   "duration_seconds": 5
+  },
+  {
+   "file": "swoosh",
+   "prompt": "a short soft airy whoosh transition",
+   "duration_seconds": 0.8
+  }
+ ]
+}

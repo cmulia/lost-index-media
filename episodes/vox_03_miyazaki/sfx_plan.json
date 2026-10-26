@@ -1,0 +1,85 @@
+{
+ "episode": "vox_03_miyazaki",
+ "video_seconds": 57.8,
+ "music": {
+  "prompt": "Slow, airy instrumental at about seventy beats per minute: solo piano with a light string pad and an occasional music-box or celesta figure, a hint of pizzicato for the wry moments, no drums until a soft brushed pulse enters under the last fifteen seconds, then it settles to a single held piano chord at the end.",
+  "duration_seconds": 59
+ },
+ "sfx": [
+  {
+   "file": "sheathe",
+   "prompt": "a katana being drawn from a wooden scabbard then slid back in, metal on wood",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "sword_set",
+   "prompt": "a sheathed sword set down firmly on a wooden table, heavy thud",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "scissors",
+   "prompt": "a single snip of large scissors, close",
+   "duration_seconds": 0.8
+  },
+  {
+   "file": "film_run",
+   "prompt": "a film reel spinning on a flatbed editing table, celluloid running through rollers",
+   "duration_seconds": 4
+  },
+  {
+   "file": "vhs",
+   "prompt": "a VHS cassette pushed into a video recorder, mechanism clunking and whirring",
+   "duration_seconds": 2
+  },
+  {
+   "file": "office",
+   "prompt": "a quiet high-rise office ambience with air conditioning and distant traffic, glass walls",
+   "duration_seconds": 5
+  },
+  {
+   "file": "chair",
+   "prompt": "a leather office chair creaking and rolling on a conference room floor",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "stamp",
+   "prompt": "a wooden stamp pressed onto paper on a desk, single thump",
+   "duration_seconds": 1.2
+  },
+  {
+   "file": "laugh_room",
+   "prompt": "a small press room ambience with a few camera shutters clicking",
+   "duration_seconds": 3
+  },
+  {
+   "file": "projector",
+   "prompt": "a 35 millimetre cinema projector running steadily, close",
+   "duration_seconds": 4
+  },
+  {
+   "file": "coins",
+   "prompt": "a few coins dropped into a small ceramic dish, light clinks",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "applause",
+   "prompt": "a large theatre audience applauding at an awards ceremony",
+   "duration_seconds": 4
+  },
+  {
+   "file": "wind_chime",
+   "prompt": "a soft wind chime and a light breeze through trees, peaceful garden",
+   "duration_seconds": 4
+  },
+  {
+   "file": "page",
+   "prompt": "a single sheet of drawing paper turned over on a wooden desk",
+   "duration_seconds": 1.2
+  },
+  {
+   "file": "swoosh",
+   "prompt": "a short soft paper whoosh transition",
+   "duration_seconds": 0.8
+  }
+ ]
+}

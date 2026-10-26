@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+@font-face { font-family: SR; src: url(fonts/InstrumentSerif-Regular.ttf); }
+:root { --navy: #0b1f3a; --navy2: #112a4c; --line: #cfe6ff; --cyan: #8fc7ff; --amber: #f2a93b; --paper: #f1ecdf; --ink: #10233f; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--navy); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--navy); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--navy); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#gridc { inset: 0; opacity: .18; pointer-events: none; z-index: 1; }
+#grain { inset: -60px; opacity: .08; mix-blend-mode: screen; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--line); }
+#hdr span { background: rgba(11,31,58,.8); padding: 6px 12px; border: 2px solid var(--line); }
+.photo { position: absolute; overflow: hidden; background: #000; border: 6px solid var(--line); box-shadow: 0 0 0 10px var(--navy), 0 0 0 12px var(--cyan); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--navy); background: var(--line); padding: 4px 10px; white-space: nowrap; }
+.tag { position: absolute; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--navy); background: var(--amber); padding: 8px 14px; white-space: nowrap; }
+.kick { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 5px; color: var(--cyan); white-space: nowrap; }
+.serif { font-family: SI; color: var(--line); line-height: .95; letter-spacing: -1px; }
+.card { position: absolute; background: var(--paper); color: var(--ink); padding: 24px 30px; border: 3px solid var(--ink); box-shadow: 12px 12px 0 0 rgba(0,0,0,.35); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: #5c6b82; }
+.card .n { font-family: SR; font-size: 72px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: IS; font-size: 32px; margin-top: 10px; }
+.ck { font-family: PM; font-size: 36px; color: var(--line); margin-bottom: 16px; }
+.ck b { font-family: SI; font-size: 56px; font-weight: normal; }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: rgba(11,31,58,.92); border: 3px solid var(--line); padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(207,230,255,.45); padding: 0 5px; }
+#cap .w.on { color: var(--navy); background: var(--amber); }
+#cap .w.done { color: var(--line); }
+#flash { inset: 0; background: #fff; opacity: 0; pointer-events: none; z-index: 50; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div id="s1" class="scene">
+    <img class="full" src="img/cans.png" style="opacity:.35">
+    <div class="photo" id="p1" style="left:110px;top:220px;width:620px;height:820px"><img src="img/nolan_2013.jpg" style="object-position:50% 15%"></div>
+    <div class="tag" id="p1t" style="left:110px;top:170px">CHRISTOPHER NOLAN · 2013</div>
+    <div class="credit" id="p1c" style="left:124px;top:1050px">Photo: Richard Goldschmidt · CC BY 3.0</div>
+    <img id="cansS" class="a" src="img/cans_cut.png" style="left:640px;top:560px;width:430px;transform:rotate(8deg)">
+    <div class="a" id="h1" style="left:70px;right:50px;top:1140px">
+      <div class="serif" style="font-size:88px">His first film cost about</div>
+      <div class="serif" style="font-size:168px;color:var(--amber);margin-top:4px">six thousand<br>dollars.</div>
+    </div>
+  </div>
+
+  <!-- S2 pay slip -->
+  <div id="s2" class="scene">
+    <img id="s2bg" class="full" src="img/payslip.png">
+    <div class="kick" id="s2k" style="left:70px;top:190px"></div>
+    <div class="tag" id="rentT" style="left:90px;top:1120px;font-size:34px;padding:12px 20px">RENT</div>
+    <div class="tag" id="stockT" style="left:600px;top:1120px;font-size:34px;padding:12px 20px;background:var(--line)">FILM STOCK</div>
+    <div class="a serif" id="s2h" style="left:70px;top:1230px;font-size:104px;background:rgba(11,31,58,.85);padding:8px 24px 16px;display:inline-block">half and half.<br><span style="font-size:60px;color:var(--cyan)">— he says</span></div>
+  </div>
+
+  <!-- S3 Saturdays -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/bolex/f001.jpg">
+    <div class="a" id="cal" style="left:70px;top:190px;width:940px;background:rgba(11,31,58,.86);border:3px solid var(--line);padding:22px 24px"></div>
+    <div class="a" id="chk" style="left:70px;top:1130px;background:rgba(11,31,58,.78);padding:18px 24px 4px"></div>
+    <div class="credit" id="s3c" style="left:70px;top:1560px">schematic · drawn for this video · 16 mm Bolex-type camera, illustrated</div>
+  </div>
+
+  <!-- S4 first takes + Emma Thomas -->
+  <div id="s4" class="scene">
+    <img class="full" src="img/clapper.png" style="opacity:.25">
+    <img id="clapS" class="a" src="img/clapper_cut.png" style="left:140px;top:220px;width:800px;transform-origin:10% 50%">
+    <div class="tag" id="take1" style="left:150px;top:860px;font-size:60px;padding:14px 30px">TAKE 1</div>
+    <div class="a serif" id="s4h" style="left:70px;top:1020px;font-size:110px">mostly<br><span style="color:var(--amber)">first takes.</span></div>
+    <div class="a" id="ucl" style="inset:0;background:var(--navy)">
+      <div class="photo" id="pU" style="left:70px;top:200px;width:940px;height:900px"><img src="img/ucl_portico.jpg" style="object-position:50% 50%"></div>
+      <div class="credit" id="pUc" style="left:84px;top:1110px">UCL, Wilkins Building · Photo: Karlunun · CC BY-SA 4.0</div>
+      <div class="kick" id="uclk" style="left:70px;top:1190px"></div>
+      <div class="a serif" id="uclh" style="left:70px;top:1250px;font-size:104px">producer Emma Thomas.<br><span style="color:var(--amber)">first week at university.</span></div>
+    </div>
+  </div>
+
+  <!-- S5 no CGI, Tenet -->
+  <div id="s5" class="scene">
+    <img id="s5bg" class="full" src="img/jet/f001.jpg">
+    <div class="a" id="noCG" style="inset:0;background:var(--navy)">
+      <div class="photo" id="p5" style="left:300px;top:230px;width:480px;height:640px"><img src="img/nolan_2026.jpg" style="object-position:50% 20%"></div>
+      <div class="credit" id="p5c" style="left:300px;top:880px">Nolan, 2026 · Photo: Philip Romano · CC BY-SA 4.0</div>
+      <div class="kick" id="s5k" style="left:70px;top:960px"></div>
+      <div class="a serif" id="s5h" style="left:70px;top:1020px;font-size:120px">known for avoiding<br><span style="color:var(--amber)">computer graphics.</span></div>
+    </div>
+    <div class="tag" id="tenT" style="left:70px;top:190px">TENET · 2020 · A REAL 747</div>
+    <div class="photo" id="pV" style="left:640px;top:260px;width:380px;height:300px"><img src="img/victorville.jpg" style="object-position:50% 50%"></div>
+    <div class="credit" id="pVc" style="left:560px;top:570px">Victorville boneyard · Bobak Ha'Eri · CC BY 3.0</div>
+    <div class="card" id="q747" style="left:70px;top:1100px;width:940px"><div class="l">HE SAID</div><div class="n" style="font-family:SI">“more efficient than a model.”</div><div class="s" style="color:#5c6b82">Total Film, 2020</div></div>
+  </div>
+
+  <!-- S6 Trinity -->
+  <div id="s6" class="scene">
+    <img id="s6bg" class="full" src="img/tower/f001.jpg">
+    <div class="tag" id="trT" style="left:70px;top:190px">OPPENHEIMER · 2023 · THE TRINITY TEST</div>
+    <div class="a serif" id="s6h" style="left:70px;top:1100px;font-size:120px;background:rgba(11,31,58,.8);padding:8px 24px 16px;display:inline-block">no computer<br>graphics<br><span style="color:var(--amber)">at all.</span></div>
+    <div class="credit" id="s6c" style="left:70px;top:1560px">illustration · drawn for this video</div>
+  </div>
+
+  <!-- S7 seven Oscars -->
+  <div id="s7" class="scene" style="background:var(--paper)">
+    <div class="kick" style="left:70px;top:190px;color:#5c6b82" id="s7k">96TH ACADEMY AWARDS · MARCH 2024</div>
+    <div class="a" id="seven" style="left:60px;top:250px;font-family:SI;font-size:420px;line-height:.85;color:var(--ink)">0</div>
+    <div class="a" id="sevl" style="left:520px;top:330px;font-family:SI;font-size:120px;line-height:.95;color:var(--ink)">Oscars.</div>
+    <div class="a" id="laur" style="left:70px;top:700px;width:940px"></div>
+    <div class="card" id="bp" style="left:70px;top:1180px;width:940px;background:var(--navy);color:var(--line);border-color:var(--line)"><div class="l" style="color:var(--cyan)">BEST PICTURE</div><div class="n" style="font-family:SI">accepted by Emma Thomas.</div></div>
+  </div>
+
+  <!-- S8 no email -->
+  <div id="s8" class="scene">
+    <img id="s8bg" class="full" src="img/desk.png">
+    <div class="a" id="s8box" style="left:60px;right:60px;top:1040px;background:rgba(11,31,58,.86);border:3px solid var(--line);padding:30px 34px">
+      <div class="serif" id="s8a" style="font-size:96px">has never used<br><span style="color:var(--amber)">email.</span></div>
+      <div class="serif" id="s8b" style="font-size:72px;margin-top:18px;color:var(--cyan)">no smartphone either.</div>
+      <div id="s8c" style="font-family:PM;font-size:26px;letter-spacing:4px;color:var(--line);margin-top:22px"></div>
+    </div>
+    <div class="credit" id="s8cr" style="left:70px;top:1560px">The Hollywood Reporter (2014, 2023) · 60 Minutes (2026)</div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene">
+    <div class="kick" id="ek" style="left:70px;top:330px"></div>
+    <div class="a" style="left:66px;right:50px;top:400px">
+      <div style="overflow:hidden"><div class="serif" id="e1" style="font-size:140px">Real plane</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e2" style="font-size:140px">or computer</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e3" style="font-size:140px;color:var(--amber)">graphics?</div></div>
+    </div>
+    <div class="photo" id="pe" style="left:640px;top:900px;width:370px;height:280px"><img src="img/imax_camera.jpg"></div>
+    <div class="credit" style="left:560px;top:1190px" id="pec">IMAX camera · Atlant · CC BY 2.5</div>
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1290px;font-family:PR;font-size:24px;line-height:1.5;color:#9fb6d1">Sources: Guerilla Film Makers Handbook interview (via Chris Jones, 2010); SCMP; Variety (2024); The Criterion Collection; Total Film / GamesRadar (2020, 2022); NPR (2024); The Hollywood Reporter (2014, 2023); 60 Minutes via Complex (2026); CinemaBlend (2026).<br>Photos via Wikimedia Commons: Richard Goldschmidt (CC BY), Philip Romano (CC BY-SA), Karlunun (CC BY-SA), Bobak Ha'Eri (CC BY), Atlant (CC BY). Illustrations and diagrams drawn for this video.<br><br>explained no. 06 · @lost_index</div>
+  </div>
+
+  <canvas id="gridc" class="a" width="1080" height="1920"></canvas>
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 06</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+  <div id="flash" class="a"></div>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = s % 255; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+{ const g = $('#gridc').getContext('2d'); g.strokeStyle = '#cfe6ff'; g.lineWidth = 1; g.beginPath();
+  for (let x = 0; x <= 1080; x += 60) { g.moveTo(x, 0); g.lineTo(x, 1920); } for (let y = 0; y <= 1920; y += 60) { g.moveTo(0, y); g.lineTo(1080, y); } g.stroke(); }
+
+const T = { s1: [0, 4.2], s2: [4.2, 10.2], s3: [10.2, 19.4], s4: [19.4, 26.0], s5: [26.0, 36.3], s6: [36.3, 41.3], s7: [41.3, 45.7], s8: [45.7, 54.0], s11: [54.0, 57.0] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  $('#p1').style.transform = `scale(${1 + t * .01}) rotate(-1deg)`;
+  $('#cansS').style.transform = `rotate(${8 + Math.sin(t * 1.3) * 2}deg) translateY(${Math.sin(t * .9) * 6}px)`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 3.9, 4.2));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .25);
+  $('#s2bg').style.transform = `scale(${1.06 - (t - T.s2[0]) * .006})`;
+  $('#s2k').textContent = typed('1998 · A DAY JOB', t, 4.4, 30);
+  const rk = E.back(P(t, 7.0, 7.4)); $('#rentT').style.opacity = t >= 7.0 ? 1 : 0; $('#rentT').style.transform = `scale(${rk}) rotate(-4deg)`;
+  const sk = E.back(P(t, 8.6, 9.0)); $('#stockT').style.opacity = t >= 8.6 ? 1 : 0; $('#stockT').style.transform = `scale(${sk}) rotate(3deg)`;
+  fadeUp($('#s2h'), t, 8.4, .45, 40);
+}
+const MON = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+const SATS = []; // 14 Saturdays spread across the year: (month, week)
+[[0, 1], [0, 3], [1, 2], [2, 1], [2, 4], [3, 2], [4, 3], [5, 1], [6, 2], [7, 4], [8, 1], [9, 3], [10, 2], [11, 1]].forEach(s => SATS.push(s));
+{ let h = `<div style="font-family:PM;font-size:24px;letter-spacing:4px;color:#8fc7ff;margin-bottom:14px">ONE YEAR · FOURTEEN SATURDAYS</div><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">`;
+  for (let m = 0; m < 12; m++) { h += `<div style="border:2px solid #cfe6ff;padding:8px 10px"><div style="font-family:PM;font-size:20px;color:#cfe6ff;letter-spacing:3px">${MON[m]}</div><div style="display:flex;gap:6px;margin-top:8px">`;
+    for (let w = 0; w < 5; w++) h += `<div class="sat" data-m="${m}" data-w="${w}" style="width:34px;height:34px;border:2px solid rgba(207,230,255,.5)"></div>`; h += '</div></div>'; }
+  h += '</div>'; $('#cal').innerHTML = h; }
+const CK3 = [['Black and white.', 14.85], ['Sixteen millimetre.', 16.0], ['He held the camera himself.', 17.65]];
+{ $('#chk').innerHTML = CK3.map((c, i) => `<div class="ck" id="ck${i}">✓ <b>${c[0]}</b></div>`).join(''); }
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  frameSeq($('#s3bg'), 'bolex', t, T.s3[0]);
+  fadeUp($('#cal'), t, 10.4, .5, 40);
+  document.querySelectorAll('.sat').forEach(d => { const m = +d.dataset.m, w = +d.dataset.w; const i = SATS.findIndex(s => s[0] === m && s[1] === w); const on = i >= 0 && t >= 12.2 + i * .16; d.style.background = on ? '#f2a93b' : 'transparent'; });
+  CK3.forEach((c, i) => { const el = $('#ck' + i); el.style.opacity = P(t, c[1], c[1] + .2); el.style.transform = `translateX(${(1 - E.expo(P(t, c[1], c[1] + .4))) * -60}px)`; });
+  $('#s3c').style.opacity = P(t, 10.8, 11.1);
+}
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  const ck = E.back(P(t, 19.5, 19.9)); $('#clapS').style.transform = `rotate(${(1 - ck) * -25 - 4}deg)`; $('#clapS').style.opacity = 1;
+  const tk = E.back(P(t, 20.0, 20.35)); $('#take1').style.opacity = t >= 20.0 ? 1 : 0; $('#take1').style.transform = `scale(${tk}) rotate(-3deg)`;
+  fadeUp($('#s4h'), t, 20.4, .5, 40);
+  const uk = E.io(P(t, 21.3, 21.7)); $('#ucl').style.opacity = uk; $('#ucl').style.transform = `translateY(${(1 - uk) * 60}px)`;
+  $('#pU').style.transform = `scale(${1 + (t - 21.3) * .008})`;
+  $('#uclk').textContent = typed('UNIVERSITY COLLEGE LONDON', t, 21.6, 30);
+  fadeUp($('#uclh'), t, 23.3, .5, 40);
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  if (t >= 29.8) frameSeq($('#s5bg'), 'jet', t, 29.8);
+  const nk = 1 - E.io(P(t, 29.8, 30.2)); $('#noCG').style.opacity = nk;
+  $('#p5').style.transform = `scale(${1 + (t - 26) * .008}) rotate(-1deg)`;
+  $('#s5k').textContent = typed('TWENTY YEARS ON', t, 26.1, 30);
+  fadeUp($('#s5h'), t, 27.3, .5, 40);
+  const tk = E.back(P(t, 30.1, 30.5)); $('#tenT').style.opacity = t >= 30.1 ? 1 : 0; $('#tenT').style.transform = `scale(${tk})`; $('#tenT').style.transformOrigin = '0 50%';
+  $('#pV').style.opacity = P(t, 31.5, 31.9); $('#pV').style.transform = 'rotate(2deg)'; $('#pVc').style.opacity = P(t, 31.7, 32.0);
+  fadeUp($('#q747'), t, 34.1, .5, 50);
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .3);
+  frameSeq($('#s6bg'), 'tower', t, T.s6[0]);
+  const tk = E.back(P(t, 36.5, 36.9)); $('#trT').style.opacity = t >= 36.5 ? 1 : 0; $('#trT').style.transform = `scale(${tk})`; $('#trT').style.transformOrigin = '0 50%';
+  fadeUp($('#s6h'), t, 39.3, .5, 40); $('#s6c').style.opacity = P(t, 37.6, 37.9);
+  $('#flash').style.opacity = t >= 37.5 && t < 37.9 ? (1 - (t - 37.5) / .4) * .5 : 0;
+}
+const LAUR = ['Picture', 'Director', 'Actor', 'Supporting Actor', 'Cinematography', 'Editing', 'Score'];
+{ $('#laur').innerHTML = LAUR.map((l, i) => `<span class="lr" id="lr${i}" style="display:inline-block;margin:0 14px 14px 0;padding:10px 18px;border:3px solid #10233f;font-family:PM;font-size:28px;letter-spacing:2px;color:#10233f;opacity:0">${l}</span>`).join(''); }
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  $('#s7k').style.opacity = P(t, 41.4, 41.7);
+  const n = Math.round(7 * E.out(P(t, 41.6, 42.9))); $('#seven').textContent = n; $('#seven').style.opacity = P(t, 41.5, 41.8); $('#sevl').style.opacity = P(t, 42.0, 42.3);
+  LAUR.forEach((l, i) => { const t1 = 41.7 + i * .18; const el = $('#lr' + i); el.style.opacity = P(t, t1, t1 + .15); el.style.transform = `translateY(${(1 - E.expo(P(t, t1, t1 + .4))) * 30}px)`; });
+  fadeUp($('#bp'), t, 43.4, .5, 50);
+}
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  $('#s8bg').style.transform = `scale(${1.08 - (t - T.s8[0]) * .006})`;
+  fadeUp($('#s8box'), t, 46.0, .5, 40);
+  $('#s8a').style.opacity = P(t, 47.9, 48.2);
+  $('#s8b').style.opacity = P(t, 49.9, 50.2);
+  $('#s8c').textContent = typed('TIME TO THINK · HE SAYS', t, 51.5, 30);
+  $('#s8cr').style.opacity = P(t, 48.5, 48.8);
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 54.0, 54.4);
+  $('#ek').textContent = typed('REAL PLANE OR COMPUTER GRAPHICS?', t, 54.2, 32);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 54.4 + i * .15, 54.9 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 55.0, 55.4); $('#pe').style.opacity = P(t, 54.8, 55.2); $('#pe').style.transform = 'rotate(3deg)'; $('#pec').style.opacity = P(t, 55.0, 55.3);
+  $('#stage').style.opacity = 1 - P(t, 56.6, 57.0);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s8: '#s8', s11: '#end' };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  if (inS(t, 's1')) S1(t); if (inS(t, 's2')) S2(t); if (inS(t, 's3')) S3(t); if (inS(t, 's4')) S4(t); if (inS(t, 's5')) S5(t);
+  if (inS(t, 's6')) S6(t); else $('#flash').style.opacity = 0;
+  if (inS(t, 's7')) S7(t); if (inS(t, 's8')) S8(t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  $('#gridc').style.opacity = inS(t, 's7') ? 0 : .18;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>

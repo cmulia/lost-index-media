@@ -1,0 +1,27 @@
+episodes/vox_03_miyazaki/assets/miyazaki_venice_2008.jpg https://upload.wikimedia.org/wikipedia/commons/e/ef/Hayao_Miyazaki.jpg
+episodes/vox_03_miyazaki/assets/_pages/miyazaki_venice_2008.html https://commons.wikimedia.org/wiki/File:Hayao_Miyazaki.jpg?action=raw
+episodes/vox_03_miyazaki/assets/miyazaki_comiccon_2009.jpg https://upload.wikimedia.org/wikipedia/commons/f/ff/HayaoMiyazakiCCJuly09.jpg
+episodes/vox_03_miyazaki/assets/_pages/miyazaki_comiccon_2009.html https://commons.wikimedia.org/wiki/File:HayaoMiyazakiCCJuly09.jpg?action=raw
+episodes/vox_03_miyazaki/assets/miyazaki_gaslamp_2009.jpg https://upload.wikimedia.org/wikipedia/commons/5/51/Hayao_Miyazaki%2C_San_Diego_2009.jpg
+episodes/vox_03_miyazaki/assets/_pages/miyazaki_gaslamp_2009.html https://commons.wikimedia.org/wiki/File:Hayao_Miyazaki,_San_Diego_2009.jpg?action=raw
+episodes/vox_03_miyazaki/assets/ghibli_museum_2024.jpg https://upload.wikimedia.org/wikipedia/commons/4/44/Ghibli_Museum%2C_Mitaka%2C_Tokyo%2C_20240823_1131_5545.jpg
+episodes/vox_03_miyazaki/assets/_pages/ghibli_museum_2024.html https://commons.wikimedia.org/wiki/File:Ghibli_Museum,_Mitaka,_Tokyo,_20240823_1131_5545.jpg?action=raw
+episodes/vox_03_miyazaki/assets/studio_ghibli_koganei.jpg https://upload.wikimedia.org/wikipedia/commons/4/4f/Studio_Ghibli_studio_1.jpg
+episodes/vox_03_miyazaki/assets/_pages/studio_ghibli_koganei.html https://commons.wikimedia.org/wiki/File:Studio_Ghibli_studio_1.jpg?action=raw
+episodes/vox_03_miyazaki/assets/katana_tnm.jpg https://upload.wikimedia.org/wikipedia/commons/6/62/Katana_Masamune.jpg
+episodes/vox_03_miyazaki/assets/_pages/katana_tnm.html https://commons.wikimedia.org/wiki/File:Katana_Masamune.jpg?action=raw
+# Higgsfield illustrations, loops and takes (committed directly; listed for provenance)
+episodes/vox_03_miyazaki/assets/katana.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134259_e38f2874-40b0-4b45-ab89-05d95a24c907.png
+episodes/vox_03_miyazaki/assets/filmstrip.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134300_5b860701-4420-4d71-967d-821c015674c6.png
+episodes/vox_03_miyazaki/assets/boardroom.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134259_0d529429-7bc1-4f83-a18b-a74aa2eafdfe.png
+episodes/vox_03_miyazaki/assets/vhs.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134259_f86b8c02-61e2-4513-b75e-d72f0e299117.png
+episodes/vox_03_miyazaki/assets/storyboards.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134301_1c34beb7-a27d-4f33-b131-198cc80eddbe.png
+episodes/vox_03_miyazaki/assets/cinema.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134300_6a311adb-6013-48ae-aafb-2563e39b4b5a.png
+episodes/vox_03_miyazaki/assets/seat.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134300_08a5e140-be6b-4950-89d6-4aa8b56d0591.png
+episodes/vox_03_miyazaki/assets/desk.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134301_d8188172-569f-4f66-840d-70a00e6aa3a7.png
+episodes/vox_03_miyazaki/assets/katana_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134653_77263cdb-1f51-412c-b7ca-09ef92c0f8d6.png
+episodes/vox_03_miyazaki/assets/vhs_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134659_193a1de0-80ea-4e8f-9b51-eb5b533b592a.png
+episodes/vox_03_miyazaki/audio/takes/quinn.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134714_4a4514b0-8948-4f5d-bea3-7310c279e59b.mp3
+episodes/vox_03_miyazaki/audio/takes/vesper.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134713_a0b7740e-25e5-48f3-a55c-7d27240f51d8.mp3
+episodes/vox_03_miyazaki/audio/takes/quinn2.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135301_e5a8ae03-7cf6-4ade-af4a-c409d701ca81.mp3
+episodes/vox_03_miyazaki/audio/takes/quinn3.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135302_a6998ce9-9e6d-4ce4-bf25-29b8fa789d1d.mp3
