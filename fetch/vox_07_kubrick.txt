@@ -1,0 +1,27 @@
+episodes/vox_07_kubrick/assets/kubrick_1949.jpg https://upload.wikimedia.org/wikipedia/commons/3/39/Stanley_Kubrick_%281949_portrait_by_Phillip_Harrington%29.jpg
+episodes/vox_07_kubrick/assets/_pages/kubrick_1949.html https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington).jpg?action=raw
+episodes/vox_07_kubrick/assets/kubrick_1963_strangelove_set.jpg https://upload.wikimedia.org/wikipedia/commons/c/cd/Kubrick_on_the_set_of_Dr._Strangelove_%281963_publicity_photo%2C_SLK.124.32%29.jpg
+episodes/vox_07_kubrick/assets/_pages/kubrick_1963_strangelove_set.html https://commons.wikimedia.org/wiki/File:Kubrick_on_the_set_of_Dr._Strangelove_(1963_publicity_photo,_SLK.124.32).jpg?action=raw
+episodes/vox_07_kubrick/assets/zeiss_planar_07_lens.jpg https://upload.wikimedia.org/wikipedia/commons/d/d3/Zeiss_Planar_50mm_F0.7_lens.jpg
+episodes/vox_07_kubrick/assets/_pages/zeiss_planar_07_lens.html https://commons.wikimedia.org/wiki/File:Zeiss_Planar_50mm_F0.7_lens.jpg?action=raw
+episodes/vox_07_kubrick/assets/zeiss_planar_07_on_camera.jpg https://upload.wikimedia.org/wikipedia/commons/a/a3/Zeiss_Planar_50mm_F0.7_lens_attached_to_camera..jpg
+episodes/vox_07_kubrick/assets/_pages/zeiss_planar_07_on_camera.html https://commons.wikimedia.org/wiki/File:Zeiss_Planar_50mm_F0.7_lens_attached_to_camera..jpg?action=raw
+episodes/vox_07_kubrick/assets/mitchell_bnc_lacma.jpg https://upload.wikimedia.org/wikipedia/commons/8/81/Stanley_Kubrick_The_Exhibition_-_LACMA_-_Mitchell_BNC_Camera_%288998529347%29.jpg
+episodes/vox_07_kubrick/assets/_pages/mitchell_bnc_lacma.html https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_The_Exhibition_-_LACMA_-_Mitchell_BNC_Camera_(8998529347).jpg?action=raw
+episodes/vox_07_kubrick/assets/childwickbury_manor.jpg https://upload.wikimedia.org/wikipedia/commons/5/51/Childwickbury_Manor_2020-07-20.jpg
+episodes/vox_07_kubrick/assets/_pages/childwickbury_manor.html https://commons.wikimedia.org/wiki/File:Childwickbury_Manor_2020-07-20.jpg?action=raw
+# Higgsfield illustrations, loops and takes (committed directly; listed for provenance)
+episodes/vox_07_kubrick/assets/candle.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135330_4671f651-6ca5-46cd-bd6c-f86fedcaa3e9.png
+episodes/vox_07_kubrick/assets/lens.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135329_ab5da5a2-f885-4ed2-83ee-6b1b04ba9c3d.png
+episodes/vox_07_kubrick/assets/crosssection.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135330_abb32f32-2b5d-492d-8c05-3b6443170f7f.png
+episodes/vox_07_kubrick/assets/camera.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135329_f9ec79ee-6f31-4f2b-913d-0521d6bd0505.png
+episodes/vox_07_kubrick/assets/chandelier.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135329_4532fe58-83e4-4919-a411-29ee85e47e5f.png
+episodes/vox_07_kubrick/assets/monitor.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135328_185de518-66ca-4a50-842e-79456067e92e.png
+episodes/vox_07_kubrick/assets/moon.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135330_1f13eafe-09b0-40b6-b972-9ffe9dedd8cc.png
+episodes/vox_07_kubrick/assets/ledger.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135332_a721c142-ad25-4cc9-86f3-0c144cb26081.png
+episodes/vox_07_kubrick/assets/clips/candle.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140643_8e54456c-a78a-4ff2-bb39-cf0dbef085a0.mp4
+episodes/vox_07_kubrick/assets/clips/chandelier.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140642_6b4393e8-2439-4250-8102-6fa2037f0e74.mp4
+episodes/vox_07_kubrick/assets/candle_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140648_0243a83f-c71e-4925-9bdc-1d6a502b428c.png
+episodes/vox_07_kubrick/assets/lens_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140654_7e46d004-1f37-4f3a-907d-fa6551fdfd9c.png
+episodes/vox_07_kubrick/audio/takes/quinn.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140708_1bfdd0ba-1491-460c-8cfc-48e221cb1363.mp3
+episodes/vox_07_kubrick/audio/takes/quinn2.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140708_63a6a964-e5eb-4aad-b5e8-d8a662911e16.mp3

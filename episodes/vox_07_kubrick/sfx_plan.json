@@ -1,0 +1,80 @@
+{
+ "episode": "vox_07_kubrick",
+ "video_seconds": 57,
+ "music": {
+  "prompt": "Slow, spacious minimal instrumental at about seventy beats per minute: a soft felt piano playing sparse notes, a warm analog synth pad underneath and a faint tape hiss, calm and candlelit in feeling, building very gently; under the final fifteen seconds it narrows to a single held note that fades.",
+  "duration_seconds": 58
+ },
+ "sfx": [
+  {
+   "file": "candle",
+   "prompt": "a match striking and a candle wick catching, then a soft steady flame crackle",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "room",
+   "prompt": "a large eighteenth-century stone room at night, quiet candle crackle and a faint clock tick",
+   "duration_seconds": 5
+  },
+  {
+   "file": "film_can",
+   "prompt": "a metal film can lid opening and film rattling, close",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "lens_click",
+   "prompt": "a heavy camera lens aperture ring clicking through stops, precise metallic clicks",
+   "duration_seconds": 2
+  },
+  {
+   "file": "rocket",
+   "prompt": "a distant rocket launch rumble heard from far away, low and slow",
+   "duration_seconds": 4
+  },
+  {
+   "file": "lens_set",
+   "prompt": "a heavy glass lens set down on a wooden workbench with a solid thud",
+   "duration_seconds": 1.2
+  },
+  {
+   "file": "saw",
+   "prompt": "a small metal hacksaw cutting through an aluminium camera housing in a workshop, then a file rasp",
+   "duration_seconds": 4
+  },
+  {
+   "file": "camera_run",
+   "prompt": "a 1970s Mitchell-type studio film camera running with a heavy mechanical purr",
+   "duration_seconds": 4
+  },
+  {
+   "file": "video_hum",
+   "prompt": "an old black-and-white video monitor switching on with a high whine and static hum",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "applause",
+   "prompt": "polite awards-ceremony applause in a large hall",
+   "duration_seconds": 4
+  },
+  {
+   "file": "coins",
+   "prompt": "a few coins dropped onto a wooden desk and a ledger page turning",
+   "duration_seconds": 2
+  },
+  {
+   "file": "wind_night",
+   "prompt": "soft night wind over an open field, very quiet, with distant crickets",
+   "duration_seconds": 5
+  },
+  {
+   "file": "blow",
+   "prompt": "a candle being blown out with a soft puff of breath and a faint hiss",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "swoosh",
+   "prompt": "a short soft paper whoosh transition",
+   "duration_seconds": 0.8
+  }
+ ]
+}
