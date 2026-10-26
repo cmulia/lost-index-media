@@ -25,3 +25,5 @@ episodes/vox_07_kubrick/assets/candle_cut.png https://d8j0ntlcm91z4.cloudfront.n
 episodes/vox_07_kubrick/assets/lens_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140654_7e46d004-1f37-4f3a-907d-fa6551fdfd9c.png
 episodes/vox_07_kubrick/audio/takes/quinn.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140708_1bfdd0ba-1491-460c-8cfc-48e221cb1363.mp3
 episodes/vox_07_kubrick/audio/takes/quinn2.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_140708_63a6a964-e5eb-4aad-b5e8-d8a662911e16.mp3
+episodes/vox_07_kubrick/assets/clips/moon.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_144018_d863bce5-e266-47c7-a016-a6814dffb130.mp4
+episodes/vox_07_kubrick/assets/clips/lens.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_144017_ff1cfac9-7e00-4fc0-b079-a703b255b32e.mp4

@@ -1,0 +1,173 @@
+{
+ "flow_id": "yBLHutwVRmF8Dgt3as4B",
+ "flow_url": "https://elevenlabs.io/app/flows/yBLHutwVRmF8Dgt3as4B",
+ "sfx": {
+  "sheathe": {
+   "node_id": "LILF7Gt5M78bMZTyCKYq",
+   "session_id": "Hj7tlBIn01Vyzl7R9F71",
+   "generation_id": "Nyq1PQQVGa1apkJYj2wX",
+   "file": "audio/sfx/sheathe.mp3",
+   "requested": 2.5,
+   "duration": 2.508,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/Hj7tlBIn01Vyzl7R9F71/Nyq1PQQVGa1apkJYj2wX/content.mp3",
+   "prompt": "a katana being drawn from a wooden scabbard then slid back in, metal on wood"
+  },
+  "sword_set": {
+   "node_id": "fmzlJXrTyVx9i8a8f6A6",
+   "session_id": "dzTT0R66eW6lQSMUBef7",
+   "generation_id": "ZsPMR3Cq2fBWNx3loMOw",
+   "file": "audio/sfx/sword_set.mp3",
+   "requested": 1.5,
+   "duration": 1.515,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/dzTT0R66eW6lQSMUBef7/ZsPMR3Cq2fBWNx3loMOw/content.mp3",
+   "prompt": "a sheathed sword set down firmly on a wooden table, heavy thud"
+  },
+  "scissors": {
+   "node_id": "UIy98tEk2dniJtXVSyDo",
+   "session_id": "PKN54MxdbOm9hUlUunQi",
+   "generation_id": "WHYl2hI6HJYjyxvqvPki",
+   "file": "audio/sfx/scissors.mp3",
+   "requested": 0.8,
+   "duration": 0.836,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/PKN54MxdbOm9hUlUunQi/WHYl2hI6HJYjyxvqvPki/content.mp3",
+   "prompt": "a single snip of large scissors, close"
+  },
+  "film_run": {
+   "node_id": "k9jXm6cEfJiVf8G5dCT3",
+   "session_id": "Ixt7qv411RXzEPdaX42b",
+   "generation_id": "KmvO1KjS3c2O3BJNHWkF",
+   "file": "audio/sfx/film_run.mp3",
+   "requested": 4,
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/Ixt7qv411RXzEPdaX42b/KmvO1KjS3c2O3BJNHWkF/content.mp3",
+   "prompt": "a film reel spinning on a flatbed editing table, celluloid running through rollers"
+  },
+  "vhs": {
+   "node_id": "o3kYQMvp1H7WweM4vfuR",
+   "session_id": "N60uP0MC6YM3Jgru1OQM",
+   "generation_id": "1vhEyEj89QWL1IkmEChf",
+   "file": "audio/sfx/vhs.mp3",
+   "requested": 2,
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/N60uP0MC6YM3Jgru1OQM/1vhEyEj89QWL1IkmEChf/content.mp3",
+   "prompt": "a VHS cassette pushed into a video recorder, mechanism clunking and whirring"
+  },
+  "office": {
+   "node_id": "CmscByM4tEe9gpUlyduZ",
+   "session_id": "5L2GUM3qPqb9LmjfQbki",
+   "generation_id": "l4pVpXHtn5W8GqrlpSkC",
+   "file": "audio/sfx/office.mp3",
+   "requested": 5,
+   "duration": 5.042,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/5L2GUM3qPqb9LmjfQbki/l4pVpXHtn5W8GqrlpSkC/content.mp3",
+   "prompt": "a quiet high-rise office ambience with air conditioning and distant traffic, glass walls"
+  },
+  "chair": {
+   "node_id": "UR11slOlm1IpYfIZ38U0",
+   "session_id": "XjRrZXQ1FJyKpCqUG6K8",
+   "generation_id": "oaByXnaXMimTGWl5Wy3p",
+   "file": "audio/sfx/chair.mp3",
+   "requested": 1.5,
+   "duration": 1.515,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/XjRrZXQ1FJyKpCqUG6K8/oaByXnaXMimTGWl5Wy3p/content.mp3",
+   "prompt": "a leather office chair creaking and rolling on a conference room floor"
+  },
+  "stamp": {
+   "node_id": "TuS05rTl8CHWVHaeArYt",
+   "session_id": "35JtWhYCK0ls0R7FjgsT",
+   "generation_id": "v8KUceYBsiV2ansnBYiZ",
+   "file": "audio/sfx/stamp.mp3",
+   "requested": 1.2,
+   "duration": 1.228,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/35JtWhYCK0ls0R7FjgsT/v8KUceYBsiV2ansnBYiZ/content.mp3",
+   "prompt": "a wooden stamp pressed onto paper on a desk, single thump"
+  },
+  "laugh_room": {
+   "node_id": "FzrmZohndQhGESrFI49V",
+   "session_id": "CS2sTiAdT2QIxiLJf5m6",
+   "generation_id": "8hLEozzPx3cVDhvGKDmP",
+   "file": "audio/sfx/laugh_room.mp3",
+   "requested": 3,
+   "duration": 3.03,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/CS2sTiAdT2QIxiLJf5m6/8hLEozzPx3cVDhvGKDmP/content.mp3",
+   "prompt": "a small press room ambience with a few camera shutters clicking"
+  },
+  "projector": {
+   "node_id": "MiJfj8OcztfbqtWlZ3MH",
+   "session_id": "e88UKRtabMm65X8OV1F3",
+   "generation_id": "XEGeLJVL1dtUhHcnzzJD",
+   "file": "audio/sfx/projector.mp3",
+   "requested": 4,
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/e88UKRtabMm65X8OV1F3/XEGeLJVL1dtUhHcnzzJD/content.mp3",
+   "prompt": "a 35 millimetre cinema projector running steadily, close"
+  },
+  "coins": {
+   "node_id": "PSSnSasq4o5CiNFQRYo5",
+   "session_id": "E9gKyexNlzwMEw4UEZNO",
+   "generation_id": "GR4y2uqgZCwP7tcJO2xS",
+   "file": "audio/sfx/coins.mp3",
+   "requested": 1.5,
+   "duration": 1.515,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/E9gKyexNlzwMEw4UEZNO/GR4y2uqgZCwP7tcJO2xS/content.mp3",
+   "prompt": "a few coins dropped into a small ceramic dish, light clinks"
+  },
+  "applause": {
+   "node_id": "FPESbOkVuCEoOEw9BKzG",
+   "session_id": "cVrHXlaJP83XKjyeCBah",
+   "generation_id": "PBlfS5Ln77HfhML61Dlc",
+   "file": "audio/sfx/applause.mp3",
+   "requested": 4,
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/cVrHXlaJP83XKjyeCBah/PBlfS5Ln77HfhML61Dlc/content.mp3",
+   "prompt": "a large theatre audience applauding at an awards ceremony"
+  },
+  "wind_chime": {
+   "node_id": "cRSuoGwFrSARAE2NbQUR",
+   "session_id": "ebCFeQ8ZRKRMwfL8IMg4",
+   "generation_id": "CeAjBdhSKDibzDEoUqRh",
+   "file": "audio/sfx/wind_chime.mp3",
+   "requested": 4,
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/ebCFeQ8ZRKRMwfL8IMg4/CeAjBdhSKDibzDEoUqRh/content.mp3",
+   "prompt": "a soft wind chime and a light breeze through trees, peaceful garden"
+  },
+  "page": {
+   "node_id": "FlbZJtYKK84rLkXJ0SN3",
+   "session_id": "RdXiznO4jW0GlZVAwxrb",
+   "generation_id": "mfMFXhBVsgchw3VydHtR",
+   "file": "audio/sfx/page.mp3",
+   "requested": 1.2,
+   "duration": 1.228,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/RdXiznO4jW0GlZVAwxrb/mfMFXhBVsgchw3VydHtR/content.mp3",
+   "prompt": "a single sheet of drawing paper turned over on a wooden desk"
+  },
+  "swoosh": {
+   "node_id": "vtxfLxg7xkpuI8mDNGrB",
+   "session_id": "ETiA0Ly7ssm07YEkJFdx",
+   "generation_id": "BLIADQnF6gmDSxE8vj2C",
+   "file": "audio/sfx/swoosh.mp3",
+   "requested": 0.8,
+   "duration": 0.836,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/ETiA0Ly7ssm07YEkJFdx/BLIADQnF6gmDSxE8vj2C/content.mp3",
+   "prompt": "a short soft paper whoosh transition"
+  }
+ },
+ "music": {
+  "node_id": "FtXXQz3nADt8HVuyBlNm",
+  "session_id": "JD3Ns2S4f0UFyXTR92QG",
+  "generation_id": "rNM5BvsNve6HUi50o5Yg",
+  "model_id": "eleven_music_v2_5",
+  "status": "completed",
+  "requested": 59,
+  "prompt": "Slow, airy instrumental at about seventy beats per minute: solo piano with a light string pad and an occasional music-box or celesta figure, a hint of pizzicato for the wry moments, no drums until a soft brushed pulse enters under the last fifteen seconds, then it settles to a single held piano chord at the end.",
+  "takes": {
+   "music_take1.mp3": 59.04
+  },
+  "chosen": "music_take1.mp3",
+  "file": "audio/music.mp3",
+  "duration": 59.04,
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/JD3Ns2S4f0UFyXTR92QG/rNM5BvsNve6HUi50o5Yg/content.mp3"
+ },
+ "note": "urls are the unsigned object paths; the signed download links expire 2 h after generation"
+}

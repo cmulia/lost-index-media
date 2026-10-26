@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+@font-face { font-family: SR; src: url(fonts/InstrumentSerif-Regular.ttf); }
+:root { --sand: #efe6d3; --sea: #6aa8a4; --deep: #1f3a4a; --red: #d9453a; --yellow: #f2c230; --ink: #1d2b33; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--sand); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--sand); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--sand); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .14; mix-blend-mode: multiply; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--sand); }
+#hdr span { background: rgba(31,58,74,.85); padding: 6px 12px; }
+.photo { position: absolute; overflow: hidden; background: #000; border: 10px solid #fff; box-shadow: 0 18px 40px rgba(31,58,74,.35); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(.25) saturate(.8) contrast(1.05); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--sand); background: var(--deep); padding: 4px 10px; white-space: nowrap; }
+.tag { position: absolute; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); background: var(--yellow); padding: 8px 14px; white-space: nowrap; }
+.kick { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 5px; color: var(--red); white-space: nowrap; }
+.serif { font-family: SI; color: var(--ink); line-height: .95; letter-spacing: -1px; }
+.card { position: absolute; background: #fff; color: var(--ink); padding: 24px 30px; border: 3px solid var(--deep); box-shadow: 10px 10px 0 0 rgba(31,58,74,.25); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: #667; }
+.card .n { font-family: SR; font-size: 72px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: IS; font-size: 32px; margin-top: 10px; }
+.chart { position: absolute; font-family: PM; font-size: 22px; letter-spacing: 2px; color: var(--deep); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: rgba(31,58,74,.94); border-radius: 10px; padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(239,230,211,.45); padding: 0 5px; border-radius: 6px; }
+#cap .w.on { color: var(--ink); background: var(--yellow); }
+#cap .w.done { color: var(--sand); }
+#water { inset: 0; background: linear-gradient(180deg, rgba(31,58,74,.0), rgba(31,58,74,.55)); opacity: 0; pointer-events: none; z-index: 20; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/skeleton/f001.jpg">
+    <div class="a" id="h1" style="left:60px;right:50px;top:1150px;background:rgba(239,230,211,.9);padding:14px 26px 24px">
+      <div class="serif" style="font-size:88px"><span style="font-family:SR">Jaws</span> is scary because</div>
+      <div class="serif" style="font-size:150px;color:var(--red);margin-top:4px">its shark kept<br>breaking.</div>
+    </div>
+  </div>
+
+  <!-- S2 1974, Martha's Vineyard -->
+  <div id="s2" class="scene">
+    <svg class="a" id="chart" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <g stroke="#6aa8a4" stroke-width="2" fill="none" opacity=".6"><path d="M 0 1400 C 200 1300, 300 1500, 500 1420 S 900 1380, 1080 1450"/><path d="M 0 1500 C 200 1400, 300 1600, 500 1520 S 900 1480, 1080 1550"/><path d="M 0 1300 C 200 1200, 300 1400, 500 1320 S 900 1280, 1080 1350"/></g>
+      <g font-family="PM" font-size="22" fill="#6aa8a4" opacity=".8"><text x="120" y="1380">12</text><text x="420" y="1460">18</text><text x="760" y="1420">24</text><text x="300" y="1560">9</text><text x="880" y="1580">31</text></g>
+      <g id="compass" stroke="#1f3a4a" fill="none" stroke-width="4"><circle cx="900" cy="1500" r="70"/><path d="M 900 1430 L 915 1500 L 900 1570 L 885 1500 Z" fill="#d9453a" stroke="none"/></g>
+    </svg>
+    <div class="photo" id="pA" style="left:70px;top:230px;width:940px;height:620px"><img src="img/edgartown_harbor_aerial.jpg" style="object-position:50% 50%"></div>
+    <div class="credit" id="pAc" style="left:84px;top:860px">Edgartown Harbor, Martha's Vineyard · Don Ramey Logan · CC BY-SA 4.0</div>
+    <div class="tag" id="mvT" style="left:70px;top:190px">MARTHA'S VINEYARD · 1974</div>
+    <div class="photo" id="pS" style="left:600px;top:930px;width:400px;height:480px"><img src="img/spielberg_1993_hero.jpg" style="object-position:50% 20%"></div>
+    <div class="credit" id="pSc" style="left:560px;top:1420px">Spielberg, 1993 · GianAngelo Pistoia · CC BY-SA 3.0</div>
+    <div class="a serif" id="s2h" style="left:70px;top:960px;font-size:110px">age<br><span style="color:var(--red);font-size:220px">27.</span></div>
+  </div>
+
+  <!-- S3 three sharks, Bruce -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/skeleton/f001.jpg">
+    <div class="card" id="bruce" style="left:70px;top:220px;width:620px"><div class="l">MECHANICAL SHARKS</div><div class="n">three.</div><div class="s" id="bruceS">all nicknamed <b>Bruce</b><br>— after his lawyer</div></div>
+    <div class="a" id="salt" style="left:70px;top:1130px;background:rgba(31,58,74,.88);padding:14px 26px 22px;display:inline-block">
+      <div class="serif" style="font-size:96px;color:var(--sand)">in salt water,</div>
+      <div class="serif" style="font-size:120px;color:var(--yellow)">they rarely worked.</div>
+    </div>
+    <img id="valveS" class="a" src="img/valve.png" style="left:660px;top:600px;width:360px;height:360px;object-fit:cover;border:10px solid #fff;box-shadow:0 18px 40px rgba(31,58,74,.35)">
+  </div>
+
+  <!-- S4 55 → 159 days, budget doubled -->
+  <div id="s4" class="scene">
+    <div class="kick" style="left:70px;top:190px" id="s4k">THE SHOOT · DAYS</div>
+    <div class="a" id="bars" style="left:70px;top:260px;width:940px"></div>
+    <div class="a serif" id="d159" style="left:70px;top:720px;font-size:230px;color:var(--red)">159</div>
+    <div class="kick" id="plan" style="left:70px;top:960px;color:var(--deep)">PLANNED: 55</div>
+    <div class="kick" style="left:70px;top:1080px" id="s4b">THE BUDGET</div>
+    <div class="a" id="bud" style="left:70px;top:1130px;width:940px;height:120px;position:absolute">
+      <div id="bud1" style="position:absolute;left:0;top:0;height:50px;width:300px;background:var(--deep)"></div>
+      <div id="bud2" style="position:absolute;left:0;top:66px;height:50px;width:0;background:var(--red)"></div>
+      <div class="chart" id="budl" style="left:320px;top:72px">MORE THAN DOUBLED</div>
+    </div>
+    <div class="credit" id="s4c" style="left:70px;top:1300px">schematic · drawn for this video · Guinness World Records; CBS News</div>
+  </div>
+
+  <!-- S5 hide the shark -->
+  <div id="s5" class="scene">
+    <img id="s5bg" class="full" src="img/barrels/f001.jpg">
+    <div class="a serif" id="s5h" style="left:60px;top:200px;font-size:120px;background:rgba(239,230,211,.9);padding:10px 24px 18px;display:inline-block">suggest the shark<br><span style="color:var(--red)">instead.</span></div>
+    <div class="tag" id="bT" style="left:70px;top:1160px;font-size:34px;padding:12px 20px">YELLOW BARRELS</div>
+    <div class="tag" id="uT" style="left:70px;top:1240px;font-size:34px;padding:12px 20px;background:var(--deep);color:var(--sand)">UNDERWATER SHOTS</div>
+    <img id="piano" class="a" src="img/piano.png" style="left:560px;top:880px;width:460px;height:620px;object-fit:cover;border:10px solid #fff;box-shadow:0 18px 40px rgba(31,58,74,.35)">
+    <div class="tag" id="nT" style="left:580px;top:1500px;font-size:30px;padding:10px 18px;background:#fff">TWO LOW NOTES</div>
+  </div>
+
+  <!-- S6 opening -->
+  <div id="s6" class="scene">
+    <img id="s6bg" class="full" src="img/marquee/f001.jpg">
+    <div class="tag" id="jT" style="left:70px;top:190px">OPENED 20 JUNE 1975</div>
+    <div class="a" id="cnt" style="left:60px;right:60px;top:1060px;background:rgba(239,230,211,.94);padding:24px 30px 28px;border-top:12px solid var(--red)">
+      <div style="font-family:PM;font-size:24px;letter-spacing:4px;color:#667">FIRST FILM TO PASS · IN AMERICA</div>
+      <div class="serif" id="cntn" style="font-size:150px;line-height:1">$0</div>
+    </div>
+  </div>
+
+  <!-- S7 good fortune, nightmares -->
+  <div id="s7" class="scene">
+    <div class="photo" id="p7" style="left:70px;top:200px;width:620px;height:820px"><img src="img/spielberg_2023.jpg" style="object-position:50% 20%"></div>
+    <div class="credit" id="p7c" style="left:84px;top:1030px">Spielberg, Berlinale 2023 · Martin Kraft · CC BY-SA 4.0</div>
+    <div class="card" id="q1" style="left:420px;top:560px;width:600px"><div class="l">HE NOW CALLS IT</div><div class="n" style="font-family:SI;font-size:66px">“just good fortune”</div><div class="s" style="color:#667">BBC, 2022</div></div>
+    <div class="a serif" id="s7h" style="left:70px;top:1120px;font-size:110px">and nightmares,<br><span style="color:var(--red)">for years.</span></div>
+    <div class="credit" id="s7c" style="left:70px;top:1380px">he says · NPR, 2025</div>
+  </div>
+
+  <!-- S8 dumped on a back lot -->
+  <div id="s8" class="scene" style="background:#c9bfa9">
+    <img id="s8bg" class="full" src="img/skeleton.png" style="filter:grayscale(.8) sepia(.4) contrast(.9) brightness(.85)">
+    <div class="tag" id="blT" style="left:70px;top:190px;background:var(--deep);color:var(--sand)">UNIVERSAL BACK LOT</div>
+    <div class="a" id="xs" style="left:0;top:0;width:1080px;height:1920px"></div>
+    <div class="a serif" id="s8h" style="left:60px;top:1150px;font-size:130px;background:rgba(239,230,211,.9);padding:10px 24px 18px;display:inline-block">and rotted<br><span style="color:var(--red)">away.</span></div>
+  </div>
+
+  <!-- S9 museum -->
+  <div id="s9" class="scene">
+    <img id="s9bg" class="full" src="img/museum.png">
+    <div class="tag" id="amT" style="left:70px;top:190px">ACADEMY MUSEUM · LOS ANGELES</div>
+    <div class="photo" id="pR" style="left:620px;top:260px;width:390px;height:300px"><img src="img/bruce_replica_universal_hollywood.jpg" style="object-position:50% 50%"></div>
+    <div class="credit" id="pRc" style="left:480px;top:570px">tour replica, Universal Hollywood · TaurusEmerald · CC BY-SA 4.0</div>
+    <div class="a serif" id="s9a" style="left:60px;top:1020px;font-size:96px;background:rgba(239,230,211,.9);padding:10px 24px 18px;display:inline-block">a fourth,<br>from the same mould.</div>
+    <div class="a serif" id="s9b" style="left:60px;top:1250px;font-size:120px;background:rgba(31,58,74,.9);color:var(--sand);padding:10px 24px 18px;display:inline-block">it was never<br><span style="color:var(--yellow)">in the film.</span></div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene">
+    <div class="kick" id="ek" style="left:70px;top:330px"></div>
+    <div class="a" style="left:66px;right:50px;top:400px">
+      <div style="overflow:hidden"><div class="serif" id="e1" style="font-size:140px">Show the</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e2" style="font-size:140px">monster,</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e3" style="font-size:140px;color:var(--red)">or hide it?</div></div>
+    </div>
+    <div class="photo" id="pe" style="left:640px;top:900px;width:370px;height:280px"><img src="img/menemsha_harbor.jpg"></div>
+    <div class="credit" style="left:560px;top:1190px" id="pec">Menemsha, Martha's Vineyard · Elkman · CC BY-SA 2.5</div>
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1290px;font-family:PR;font-size:24px;line-height:1.5;color:#556">Sources: Associated Press (2020); NPR (2019, 2025); Guinness World Records (2015); History.com; CBS News Sunday Morning (2025); The Hollywood Reporter (2022, 2025); ABC7 (2025); The Daily Beast / The Sunday Times (2024); Laurent Bouzereau, Spielberg: The First Ten Years.<br>Photos via Wikimedia Commons: GianAngelo Pistoia, Martin Kraft, Don Ramey Logan, Elkman, TaurusEmerald (CC BY-SA). Illustrations and diagrams drawn for this video.<br><br>explained no. 04 · @lost_index</div>
+  </div>
+
+  <div id="water" class="a"></div>
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 04</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = 170 + s % 85; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 3.1], s2: [3.1, 9.3], s3: [9.3, 17.0], s4: [17.0, 22.6], s5: [22.6, 30.0], s6: [30.0, 36.6], s7: [36.6, 43.0], s8: [43.0, 46.3], s9: [46.3, 54.9], s11: [54.9, 57.8] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  frameSeq($('#s1bg'), 'skeleton', t, 0);
+  $('#h1').style.transform = `translateY(${Math.sin(t * 1.1) * 3}px)`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 2.8, 3.1));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .25);
+  $('#chart').style.transform = `translateY(${(t - 3.1) * -6}px)`;
+  const ak = E.expo(P(t, 3.2, 3.8)); $('#pA').style.opacity = ak; $('#pA').style.transform = `scale(${lerp(1.06, 1, ak)}) rotate(-1deg)`; $('#pAc').style.opacity = ak;
+  const mk = E.back(P(t, 3.4, 3.8)); $('#mvT').style.opacity = t >= 3.4 ? 1 : 0; $('#mvT').style.transform = `scale(${mk})`; $('#mvT').style.transformOrigin = '0 50%';
+  $('#pS').style.opacity = P(t, 5.0, 5.4); $('#pS').style.transform = 'rotate(2deg)'; $('#pSc').style.opacity = P(t, 5.2, 5.5);
+  fadeUp($('#s2h'), t, 5.1, .5, 50);
+}
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  frameSeq($('#s3bg'), 'skeleton', t, T.s3[0]);
+  fadeUp($('#bruce'), t, 9.5, .5, 50); $('#bruce').style.transform += ' rotate(-1.5deg)'; $('#bruceS').style.opacity = P(t, 11.9, 12.2);
+  const vk = E.out(P(t, 15.0, 15.5)); $('#valveS').style.opacity = vk; $('#valveS').style.transform = `rotate(${3 + Math.sin(t) * 1}deg) translateY(${(1 - vk) * 40}px)`;
+  fadeUp($('#salt'), t, 14.9, .5, 50);
+}
+{ let h = ''; for (let i = 0; i < 159; i++) h += `<div class="day" data-i="${i}" style="display:inline-block;width:40px;height:40px;margin:3px;background:${i < 55 ? '#1f3a4a' : '#d9453a'};opacity:0"></div>`; $('#bars').innerHTML = h; }
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  $('#s4k').style.opacity = P(t, 17.1, 17.4);
+  document.querySelectorAll('.day').forEach(d => { const i = +d.dataset.i; const t1 = i < 55 ? 17.4 + i * .014 : 18.5 + (i - 55) * .019; d.style.opacity = t >= t1 ? 1 : 0; });
+  const nk = E.out(P(t, 18.5, 20.5)); $('#d159').textContent = Math.round(lerp(55, 159, nk)); $('#d159').style.opacity = P(t, 17.4, 17.7); $('#d159').style.color = nk > 0 ? '#d9453a' : '#1f3a4a';
+  $('#plan').style.opacity = P(t, 18.3, 18.6);
+  $('#s4b').style.opacity = P(t, 21.0, 21.3); $('#bud').style.opacity = P(t, 21.0, 21.3);
+  $('#bud2').style.width = (E.io(P(t, 21.3, 22.2)) * 640) + 'px'; $('#budl').style.left = (Math.max(320, E.io(P(t, 21.3, 22.2)) * 640 + 20)) + 'px'; $('#budl').style.opacity = P(t, 21.9, 22.2);
+  $('#s4c').style.opacity = P(t, 17.8, 18.1);
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  frameSeq($('#s5bg'), 'barrels', t, T.s5[0]);
+  fadeUp($('#s5h'), t, 22.8, .5, 40);
+  const bk = E.back(P(t, 25.2, 25.6)); $('#bT').style.opacity = t >= 25.2 ? 1 : 0; $('#bT').style.transform = `scale(${bk}) rotate(-3deg)`;
+  const uk = E.back(P(t, 26.4, 26.8)); $('#uT').style.opacity = t >= 26.4 ? 1 : 0; $('#uT').style.transform = `scale(${uk}) rotate(2deg)`;
+  $('#water').style.opacity = inS(t, 's5') ? E.io(P(t, 26.4, 27.2)) * (1 - P(t, 29.6, 30.0)) : 0;
+  const pk = E.out(P(t, 27.8, 28.4)); $('#piano').style.opacity = pk; $('#piano').style.transform = `rotate(2deg) translateY(${(1 - pk) * 60}px)`;
+  $('#nT').style.opacity = P(t, 28.6, 28.9);
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .3);
+  frameSeq($('#s6bg'), 'marquee', t, T.s6[0]);
+  const jk = E.back(P(t, 30.2, 30.6)); $('#jT').style.opacity = t >= 30.2 ? 1 : 0; $('#jT').style.transform = `scale(${jk})`; $('#jT').style.transformOrigin = '0 50%';
+  fadeUp($('#cnt'), t, 33.0, .45, 40);
+  const ck = E.out(P(t, 34.2, 36.2)); $('#cntn').textContent = '$' + fmt(Math.round(100000000 * ck / 1000000) * 1000000);
+}
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  const pk = E.expo(P(t, 36.7, 37.3)); $('#p7').style.opacity = pk; $('#p7').style.transform = `scale(${lerp(1.06, 1, pk)}) rotate(-1deg)`; $('#p7c').style.opacity = pk;
+  fadeUp($('#q1'), t, 38.5, .5, 50); $('#q1').style.transform += ' rotate(1.5deg)';
+  fadeUp($('#s7h'), t, 41.0, .5, 40); $('#s7c').style.opacity = P(t, 42.0, 42.3);
+}
+{ let h = ''; [[200, 500], [480, 900], [120, 1300]].forEach((p, i) => { h += `<svg class="xx" id="xx${i}" style="position:absolute;left:${p[0]}px;top:${p[1]}px" width="300" height="300" viewBox="0 0 300 300"><path d="M 30 30 L 270 270 M 270 30 L 30 270" stroke="#d9453a" stroke-width="22" stroke-linecap="round" stroke-dasharray="700" stroke-dashoffset="700"/></svg>`; }); $('#xs').innerHTML = h; }
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  $('#s8bg').style.transform = `scale(${1.08 - (t - T.s8[0]) * .01})`;
+  const bk = E.back(P(t, 43.2, 43.6)); $('#blT').style.opacity = t >= 43.2 ? 1 : 0; $('#blT').style.transform = `scale(${bk})`; $('#blT').style.transformOrigin = '0 50%';
+  for (let i = 0; i < 3; i++) $('#xx' + i).querySelector('path').setAttribute('stroke-dashoffset', 700 * (1 - E.io(P(t, 44.0 + i * .3, 44.4 + i * .3))));
+  fadeUp($('#s8h'), t, 45.0, .45, 40);
+}
+function S9(t) {
+  xfade('#s9', t, 's9', .3);
+  $('#s9bg').style.transform = `scale(${1 + (t - T.s9[0]) * .006})`;
+  const ak = E.back(P(t, 46.5, 46.9)); $('#amT').style.opacity = t >= 48.3 ? 1 : 0; $('#amT').style.transform = `scale(${E.back(P(t, 48.3, 48.7))})`; $('#amT').style.transformOrigin = '0 50%';
+  fadeUp($('#s9a'), t, 46.6, .5, 40);
+  $('#pR').style.opacity = P(t, 50.6, 51.0); $('#pR').style.transform = 'rotate(2deg)'; $('#pRc').style.opacity = P(t, 50.8, 51.1);
+  fadeUp($('#s9b'), t, 53.1, .45, 40);
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 54.9, 55.3);
+  $('#ek').textContent = typed('SHOW THE MONSTER, OR HIDE IT?', t, 55.1, 32);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 55.3 + i * .15, 55.8 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 55.9, 56.3); $('#pe').style.opacity = P(t, 55.7, 56.1); $('#pe').style.transform = 'rotate(3deg)'; $('#pec').style.opacity = P(t, 55.9, 56.2);
+  $('#stage').style.opacity = 1 - P(t, 57.4, 57.8);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s8: '#s8', s9: '#s9', s11: '#end' };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  if (inS(t, 's1')) S1(t); if (inS(t, 's2')) S2(t); if (inS(t, 's3')) S3(t); if (inS(t, 's4')) S4(t);
+  if (inS(t, 's5')) S5(t); else $('#water').style.opacity = 0;
+  if (inS(t, 's6')) S6(t); if (inS(t, 's7')) S7(t); if (inS(t, 's8')) S8(t); if (inS(t, 's9')) S9(t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>

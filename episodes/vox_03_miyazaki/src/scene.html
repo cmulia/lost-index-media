@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+@font-face { font-family: SR; src: url(fonts/InstrumentSerif-Regular.ttf); }
+:root { --cream: #f4ecd9; --moss: #4f6b4a; --slate: #4a6478; --ochre: #c89a3c; --lacquer: #b4302a; --ink: #2b2a26; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--cream); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--cream); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--cream); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .16; mix-blend-mode: multiply; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--ink); }
+#hdr span { background: rgba(244,236,217,.88); padding: 6px 12px; border-bottom: 3px solid var(--moss); }
+.photo { position: absolute; overflow: hidden; background: #000; border: 10px solid #fff; box-shadow: 0 16px 36px rgba(43,42,38,.3); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.85); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--cream); background: var(--ink); padding: 4px 10px; white-space: nowrap; }
+.tag { position: absolute; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--cream); background: var(--moss); padding: 8px 14px; white-space: nowrap; }
+.kick { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 5px; color: var(--lacquer); white-space: nowrap; }
+.serif { font-family: SI; color: var(--ink); line-height: .95; letter-spacing: -1px; }
+.card { position: absolute; background: #fff; color: var(--ink); padding: 24px 30px; border: 2px solid var(--ink); box-shadow: 8px 8px 0 0 rgba(79,107,74,.35); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: #7a7a72; }
+.card .n { font-family: SR; font-size: 72px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: IS; font-size: 32px; margin-top: 10px; }
+.pencil { font-family: PR; font-size: 24px; letter-spacing: 2px; color: var(--slate); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: rgba(43,42,38,.92); border-radius: 8px; padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(244,236,217,.45); padding: 0 5px; border-radius: 6px; }
+#cap .w.on { color: #fff; background: var(--lacquer); }
+#cap .w.done { color: var(--cream); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook: katana -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/katana.png">
+    <div class="tag" id="noT" style="left:590px;top:560px;background:var(--lacquer);font-size:40px;padding:14px 22px;font-family:IK;letter-spacing:4px;transform:rotate(8deg)">NO CUTS</div>
+    <div class="a" id="h1" style="left:60px;right:50px;top:1130px;background:rgba(244,236,217,.9);padding:14px 26px 24px">
+      <div class="serif" style="font-size:84px">Studio Ghibli once gave</div>
+      <div class="serif" style="font-size:84px">Harvey Weinstein</div>
+      <div class="serif" style="font-size:150px;color:var(--lacquer);margin-top:4px">a samurai sword.</div>
+    </div>
+  </div>
+
+  <!-- S2 1999, 135 → 90 -->
+  <div id="s2" class="scene">
+    <img id="s2bg" class="full" src="img/filmstrip.png">
+    <div class="tag" id="mT" style="left:70px;top:190px">MIRAMAX · PRINCESS MONONOKE · 1999</div>
+    <div class="a" id="strip" style="left:70px;top:1080px;width:940px;background:rgba(255,255,255,.92);border:2px solid var(--ink);padding:24px 26px 28px">
+      <div class="pencil">RUNNING TIME · MINUTES</div>
+      <div style="position:relative;height:70px;margin-top:16px;background:#e9e3d2">
+        <div id="full135" style="position:absolute;left:0;top:0;height:70px;width:100%;background:var(--moss)"></div>
+        <div id="cut90" style="position:absolute;left:0;top:0;height:70px;width:0;background:var(--lacquer);opacity:.0"></div>
+        <div id="scis" style="position:absolute;top:-30px;left:0;width:4px;height:130px;background:var(--lacquer);opacity:0"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-top:12px"><span class="pencil" id="l90" style="opacity:0;color:var(--lacquer)">90 · WHAT WEINSTEIN WANTED</span><span class="pencil">135 · THE FILM</span></div>
+    </div>
+    <div class="a serif" id="s2h" style="left:70px;top:1330px;font-size:110px;background:rgba(244,236,217,.9);padding:8px 24px 16px;display:inline-block">forty-five minutes<br><span style="color:var(--lacquer)">shorter.</span></div>
+  </div>
+
+  <!-- S3 burned before: Nausicaa -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/vhs.png">
+    <div class="tag" id="nT" style="left:70px;top:190px">NAUSICAÄ · US RELEASE</div>
+    <div class="card" id="warr" style="left:70px;top:1080px;width:700px"><div class="l">CUT BY</div><div class="n" id="warrn" style="color:var(--lacquer)">≈ 20 min</div><div class="s">and retitled</div></div>
+    <div class="credit" id="s3c" style="left:70px;top:1480px">SlashFilm, 2022</div>
+  </div>
+
+  <!-- S4 the boardroom -->
+  <div id="s4" class="scene">
+    <img id="s4bg" class="full" src="img/boardroom/f001.jpg">
+    <div class="tag" id="sT" style="left:70px;top:190px">PRODUCER TOSHIO SUZUKI</div>
+    <img id="katS" class="a" src="img/katana_cut.png" style="left:480px;top:700px;width:560px;transform-origin:50% 100%">
+    <div class="a serif" id="s4a" style="left:60px;top:1130px;font-size:96px;background:rgba(244,236,217,.92);padding:8px 24px 16px;display:inline-block">a blunt replica,<br><span style="font-size:64px;color:var(--slate)">a colleague remembers.</span></div>
+    <div class="a" id="shout" style="left:60px;right:60px;top:330px;background:var(--lacquer);color:var(--cream);padding:22px 30px 26px;transform-origin:0 0">
+      <div style="font-family:PM;font-size:24px;letter-spacing:4px;opacity:.85">SHOUTED, PER STEVE ALPERT'S MEMOIR</div>
+      <div style="font-family:IK;font-size:92px;line-height:1.02;margin-top:8px">MONONOKE HIME,<br>NO CUT.</div>
+    </div>
+  </div>
+
+  <!-- S5 Miyazaki laughs -->
+  <div id="s5" class="scene">
+    <div class="photo" id="pM" style="left:70px;top:200px;width:940px;height:760px"><img src="img/miyazaki_venice_2008.jpg" style="object-position:50% 25%"></div>
+    <div class="credit" id="pMc" style="left:84px;top:970px">Hayao Miyazaki, Venice 2008 · Thomas Schulz · CC BY-SA 2.0</div>
+    <div class="kick" id="s5k" style="left:70px;top:1040px"></div>
+    <div class="card" id="q1" style="left:70px;top:1100px;width:940px"><div class="l">THE GUARDIAN · 2005</div><div class="n" style="font-family:SI;font-size:78px">“Actually, my producer did that.”</div></div>
+    <div class="card" id="q2" style="left:70px;top:1100px;width:940px;background:var(--moss);color:var(--cream);border-color:var(--moss)"><div class="l" style="color:#d7e2cf">THEN, SMILING</div><div class="n" style="font-family:SI;font-size:110px">“I defeated him.”</div></div>
+  </div>
+
+  <!-- S6 uncut, $2M -->
+  <div id="s6" class="scene">
+    <img id="s6bg" class="full" src="img/cinema/f001.jpg">
+    <div class="a" id="marq" style="left:150px;top:270px;width:780px;background:#fff;border:8px solid var(--ink);padding:26px 20px;text-align:center;transform-origin:50% 0">
+      <div style="font-family:PM;font-size:24px;letter-spacing:5px;color:#7a7a72">NOW SHOWING</div>
+      <div style="font-family:IK;font-size:66px;line-height:1.05;margin-top:10px;color:var(--ink)">PRINCESS MONONOKE<br><span style="color:var(--lacquer)">135 MIN · UNCUT</span></div>
+    </div>
+    <div class="a" id="cnt" style="left:60px;right:60px;top:1080px;background:rgba(244,236,217,.94);padding:22px 30px 26px;border-top:10px solid var(--moss)">
+      <div style="font-family:PM;font-size:24px;letter-spacing:4px;color:#7a7a72">US BOX OFFICE · 1999 RUN · ABOUT</div>
+      <div class="serif" id="cntn" style="font-size:150px;line-height:1">$0</div>
+      <div style="font-family:PR;font-size:22px;color:#7a7a72;margin-top:6px">Variety, via Nausicaa.net · later re-releases excluded</div>
+    </div>
+  </div>
+
+  <!-- S7 Oscar, stayed home -->
+  <div id="s7" class="scene">
+    <img id="s7bg" class="full" src="img/seat/f001.jpg">
+    <div class="tag" id="oT" style="left:70px;top:190px">SPIRITED AWAY · ACADEMY AWARD · MARCH 2003</div>
+    <div class="a" id="home" style="inset:0">
+      <img class="full" src="img/desk/f001.jpg" id="s7bg2">
+      <div class="photo" id="pG" style="left:620px;top:260px;width:390px;height:290px"><img src="img/ghibli_museum_2024.jpg"></div>
+      <div class="credit" id="pGc" style="left:520px;top:560px">Ghibli Museum, Mitaka · Jakub Hałun · CC BY 4.0</div>
+      <div class="a serif" id="s7h" style="left:60px;top:1080px;font-size:120px;background:rgba(244,236,217,.9);padding:10px 24px 18px;display:inline-block">Miyazaki<br><span style="color:var(--lacquer)">stayed home.</span></div>
+      <div class="credit" id="s7c" style="left:70px;top:1400px">he said · Los Angeles Times, 2009</div>
+    </div>
+    <div class="a serif" id="s7a" style="left:60px;top:1080px;font-size:110px;background:rgba(244,236,217,.9);padding:10px 24px 18px;display:inline-block">four years later,<br><span style="color:var(--ochre)">an Oscar.</span></div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene">
+    <div class="kick" id="ek" style="left:70px;top:330px"></div>
+    <div class="a" style="left:66px;right:50px;top:400px">
+      <div style="overflow:hidden"><div class="serif" id="e1" style="font-size:150px">Sword</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e2" style="font-size:150px">or</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e3" style="font-size:150px;color:var(--lacquer)">lawyers?</div></div>
+    </div>
+    <div class="photo" id="pe" style="left:640px;top:900px;width:370px;height:280px"><img src="img/studio_ghibli_koganei.jpg"></div>
+    <div class="credit" style="left:560px;top:1190px" id="pec">Studio Ghibli, Koganei · Akonnchiroll · CC BY-SA 4.0</div>
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1290px;font-family:PR;font-size:24px;line-height:1.5;color:#5b5a52">Sources: The Guardian (2005); Cartoon Brew (2005, 2020); Kotaku; SlashFilm (2022); The Playlist (2020); Steve Alpert, Sharing a House with the Never-Ending Man (2020); Variety via Nausicaa.net; Animation World Network (2003); Los Angeles Times (2009).<br>Photos via Wikimedia Commons: Thomas Schulz (CC BY-SA), Natasha Baucas (CC BY), Jakub Hałun (CC BY), Akonnchiroll (CC BY-SA). Illustrations and diagrams drawn for this video.<br><br>explained no. 03 · @lost_index</div>
+  </div>
+
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 03</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = 170 + s % 85; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 4.0], s2: [4.0, 13.9], s3: [13.9, 19.0], s4: [19.0, 30.5], s5: [30.5, 41.2], s6: [41.2, 45.9], s7: [45.9, 54.9], s11: [54.9, 57.8] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  $('#s1bg').style.transform = `scale(${1 + t * .008})`;
+  $('#noT').style.transform = `rotate(${8 + Math.sin(t * 1.5) * 1.5}deg)`;
+  $('#h1').style.transform = `translateY(${Math.sin(t * 1.1) * 3}px)`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 3.7, 4.0));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .25);
+  $('#s2bg').style.transform = `scale(${1.06 - (t - T.s2[0]) * .004})`;
+  const mk = E.back(P(t, 4.2, 4.6)); $('#mT').style.opacity = t >= 4.2 ? 1 : 0; $('#mT').style.transform = `scale(${mk})`; $('#mT').style.transformOrigin = '0 50%';
+  fadeUp($('#strip'), t, 9.5, .5, 40);
+  const ck = E.io(P(t, 10.9, 12.6)); $('#cut90').style.opacity = ck > 0 ? 1 : 0; $('#cut90').style.width = (ck * (90 / 135) * 100) + '%';
+  $('#scis').style.opacity = P(t, 12.5, 12.8); $('#scis').style.left = ((90 / 135) * 100) + '%';
+  $('#l90').style.opacity = P(t, 12.7, 13.0);
+  fadeUp($('#s2h'), t, 12.9, .4, 30);
+}
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  $('#s3bg').style.transform = `scale(${1.05 - (t - T.s3[0]) * .006})`;
+  const nk = E.back(P(t, 16.1, 16.5)); $('#nT').style.opacity = t >= 16.1 ? 1 : 0; $('#nT').style.transform = `scale(${nk})`; $('#nT').style.transformOrigin = '0 50%';
+  fadeUp($('#warr'), t, 17.7, .5, 50); $('#warr').style.transform += ' rotate(-1.5deg)';
+  $('#s3c').style.opacity = P(t, 18.2, 18.5);
+}
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  frameSeq($('#s4bg'), 'boardroom', t, T.s4[0]);
+  const sk = E.back(P(t, 19.1, 19.5)); $('#sT').style.opacity = t >= 19.1 ? 1 : 0; $('#sT').style.transform = `scale(${sk})`; $('#sT').style.transformOrigin = '0 50%';
+  const kk = E.back(P(t, 20.9, 21.5)); $('#katS').style.opacity = t >= 20.9 ? 1 : 0; $('#katS').style.transform = `scale(${kk}) rotate(-12deg)`;
+  fadeUp($('#s4a'), t, 22.5, .5, 40);
+  const shk = E.back(P(t, 27.4, 27.8)); $('#shout').style.opacity = t >= 27.4 ? 1 : 0; $('#shout').style.transform = `scale(${shk}) rotate(-2deg)`;
+  $('#s4a').style.opacity = parseFloat($('#s4a').style.opacity || 0) * (1 - P(t, 27.4, 27.7));
+  $('#katS').style.transform = `scale(${kk}) rotate(${-12 + (t >= 27.4 ? Math.sin((t - 27.4) * 18) * 3 * Math.max(0, 1 - (t - 27.4)) : 0)}deg)`;
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  const pk = E.expo(P(t, 30.6, 31.2)); $('#pM').style.opacity = pk; $('#pM').style.transform = `scale(${lerp(1.06, 1, pk) + (t - 30.5) * .004}) rotate(-1deg)`; $('#pMc').style.opacity = pk;
+  $('#s5k').textContent = typed('ASKED IN 2005, HE LAUGHED', t, 33.9, 30);
+  fadeUp($('#q1'), t, 36.5, .5, 50); $('#q1').style.opacity = parseFloat($('#q1').style.opacity) * (1 - P(t, 39.9, 40.2));
+  const q2 = E.back(P(t, 40.0, 40.4)); $('#q2').style.opacity = t >= 40.0 ? 1 : 0; $('#q2').style.transform = `scale(${q2}) rotate(1.5deg)`;
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .3);
+  frameSeq($('#s6bg'), 'cinema', t, T.s6[0]);
+  const mk = E.back(P(t, 41.4, 41.9)); $('#marq').style.opacity = t >= 41.4 ? 1 : 0; $('#marq').style.transform = `scale(${mk}) rotate(-1deg)`;
+  fadeUp($('#cnt'), t, 43.9, .45, 40);
+  const ck = E.out(P(t, 44.3, 45.6)); $('#cntn').textContent = '$' + fmt(Math.round(2400000 * ck / 100000) * 100000);
+}
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  frameSeq($('#s7bg'), 'seat', t, T.s7[0]);
+  const ok = E.back(P(t, 46.1, 46.5)); $('#oT').style.opacity = t >= 46.1 ? 1 : 0; $('#oT').style.transform = `scale(${ok})`; $('#oT').style.transformOrigin = '0 50%';
+  fadeUp($('#s7a'), t, 46.2, .5, 40); $('#s7a').style.opacity = parseFloat($('#s7a').style.opacity) * (1 - P(t, 49.3, 49.7));
+  const hk = E.io(P(t, 49.4, 49.9)); $('#home').style.opacity = hk;
+  if (t >= 49.3) frameSeq($('#s7bg2'), 'desk', t, 49.3);
+  $('#pG').style.opacity = P(t, 50.5, 50.9); $('#pG').style.transform = 'rotate(2deg)'; $('#pGc').style.opacity = P(t, 50.7, 51.0);
+  fadeUp($('#s7h'), t, 49.5, .5, 40); $('#s7c').style.opacity = P(t, 51.3, 51.6);
+  $('#oT').style.opacity = t >= 46.1 ? 1 - hk : 0;
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 54.9, 55.3);
+  $('#ek').textContent = typed('SWORD OR LAWYERS?', t, 55.1, 30);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 55.3 + i * .15, 55.8 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 55.9, 56.3); $('#pe').style.opacity = P(t, 55.7, 56.1); $('#pe').style.transform = 'rotate(3deg)'; $('#pec').style.opacity = P(t, 55.9, 56.2);
+  $('#stage').style.opacity = 1 - P(t, 57.4, 57.8);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s11: '#end' };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  if (inS(t, 's1')) S1(t); if (inS(t, 's2')) S2(t); if (inS(t, 's3')) S3(t); if (inS(t, 's4')) S4(t);
+  if (inS(t, 's5')) S5(t); if (inS(t, 's6')) S6(t); if (inS(t, 's7')) S7(t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+{
+ "flow_id": "PdDZrDvxnMf40bnTTV7S",
+ "sfx": {
+  "candle": {
+   "node_id": "tcFoQcTGRNxEA5oX4tm5",
+   "generation_id": "EH1Gd4aG7pfoCmQVMxj6",
+   "duration": 2.508,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/bBkUIuVsRabllJ9kqxYc/EH1Gd4aG7pfoCmQVMxj6/content.mp3",
+   "path": "audio/sfx/candle.mp3"
+  },
+  "room": {
+   "node_id": "qDhrjGvPeeUdr9NGWtgL",
+   "generation_id": "rsBvCkO2WnsbQPWWWuUe",
+   "duration": 5.042,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/Ag8WyB81fxXFJinOEaab/rsBvCkO2WnsbQPWWWuUe/content.mp3",
+   "path": "audio/sfx/room.mp3"
+  },
+  "film_can": {
+   "node_id": "mFDAK9e4W4FASRYH38L8",
+   "generation_id": "0YtTi7pf7ZRPXDygx3LH",
+   "duration": 1.515,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/SCwK7o314vka3I67Rjmc/0YtTi7pf7ZRPXDygx3LH/content.mp3",
+   "path": "audio/sfx/film_can.mp3"
+  },
+  "lens_click": {
+   "node_id": "6e4f2mXaBBnRriHyBSkV",
+   "generation_id": "DofxsHl7Dn0vDaDRvcGt",
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/XjF8k51mVJDZc3lUxOqC/DofxsHl7Dn0vDaDRvcGt/content.mp3",
+   "path": "audio/sfx/lens_click.mp3"
+  },
+  "rocket": {
+   "node_id": "M8RS5gW0q0P80B9HHLMs",
+   "generation_id": "SdEBwnhPJph3BTIEhJ8d",
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/3oFUSh1cReJJsfRyL4aY/SdEBwnhPJph3BTIEhJ8d/content.mp3",
+   "path": "audio/sfx/rocket.mp3"
+  },
+  "lens_set": {
+   "node_id": "cOpQrWWTryUaALVVtnRk",
+   "generation_id": "NAUly68CltD8EhHabNMI",
+   "duration": 1.228,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/dZjrWfG3bluu3oQXejBW/NAUly68CltD8EhHabNMI/content.mp3",
+   "path": "audio/sfx/lens_set.mp3"
+  },
+  "saw": {
+   "node_id": "vjlWsGjiX3Bd3NtLd0CJ",
+   "generation_id": "JMhNNXf97oZun9bLdwCb",
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/FabX8fpNAQeDB2qhNXU0/JMhNNXf97oZun9bLdwCb/content.mp3",
+   "path": "audio/sfx/saw.mp3"
+  },
+  "camera_run": {
+   "node_id": "VGB6YLyjgZWaGXnRLqFU",
+   "generation_id": "AM1LQs5GJDmEUsvpaCkB",
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/vkBdKZVNZz8x99cqZu6J/AM1LQs5GJDmEUsvpaCkB/content.mp3",
+   "path": "audio/sfx/camera_run.mp3"
+  },
+  "video_hum": {
+   "node_id": "PC4rmFYj0sj517dFFBAb",
+   "generation_id": "3JunSs28LOFShKrzYETR",
+   "duration": 2.508,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/5CJNP5LEUl4lt0BjTiEs/3JunSs28LOFShKrzYETR/content.mp3",
+   "path": "audio/sfx/video_hum.mp3"
+  },
+  "applause": {
+   "node_id": "hoJUIO0xdn9Sw5m8E6hH",
+   "generation_id": "I0lThbtMXWEgtKIDcpxy",
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/Tqq5zxHawOic13FGhdxj/I0lThbtMXWEgtKIDcpxy/content.mp3",
+   "path": "audio/sfx/applause.mp3"
+  },
+  "coins": {
+   "node_id": "MXhCNiqrwKdo7ye9JhM1",
+   "generation_id": "AFwZFUgz53XHAwLwBE0c",
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/wJHqcwkrAVV4WjmMcKXE/AFwZFUgz53XHAwLwBE0c/content.mp3",
+   "path": "audio/sfx/coins.mp3"
+  },
+  "wind_night": {
+   "node_id": "cKWlILQaxCTakuZ3iXza",
+   "generation_id": "DTvUgZehMSGVvrMlDz6e",
+   "duration": 5.042,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/58edzRqegUfSAK7drdXN/DTvUgZehMSGVvrMlDz6e/content.mp3",
+   "path": "audio/sfx/wind_night.mp3"
+  },
+  "blow": {
+   "node_id": "ZtACBLZ3fss7qkywU0eW",
+   "generation_id": "JHzmOjjH40a9f6QgkMt2",
+   "duration": 1.515,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/jchEOZndc8FY1JvfzEWH/JHzmOjjH40a9f6QgkMt2/content.mp3",
+   "path": "audio/sfx/blow.mp3"
+  },
+  "swoosh": {
+   "node_id": "EP8NA76MDFiFQvkQQ4Lz",
+   "generation_id": "qEe4JssiCgZqWXGaGsFN",
+   "duration": 0.836,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/FvH75JSMbjDV9RGom25x/qEe4JssiCgZqWXGaGsFN/content.mp3",
+   "path": "audio/sfx/swoosh.mp3"
+  }
+ },
+ "music": {
+  "node_id": "2MKTWx3a1fFrKhRaWLQ8",
+  "generation_id": "DARJRbFoiLX0ETszxRAj",
+  "target_seconds": 58,
+  "takes": {
+   "music_take1.mp3": 58.032
+  },
+  "chosen": "music_take1.mp3",
+  "duration": 58.032,
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/qDYpkimrB4dR09nuC7St/DARJRbFoiLX0ETszxRAj/content.mp3",
+  "path": "audio/music.mp3"
+ }
+}

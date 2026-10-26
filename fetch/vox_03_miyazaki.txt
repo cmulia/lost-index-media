@@ -25,3 +25,7 @@ episodes/vox_03_miyazaki/audio/takes/quinn.mp3 https://d8j0ntlcm91z4.cloudfront.
 episodes/vox_03_miyazaki/audio/takes/vesper.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_134713_a0b7740e-25e5-48f3-a55c-7d27240f51d8.mp3
 episodes/vox_03_miyazaki/audio/takes/quinn2.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135301_e5a8ae03-7cf6-4ade-af4a-c409d701ca81.mp3
 episodes/vox_03_miyazaki/audio/takes/quinn3.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_135302_a6998ce9-9e6d-4ce4-bf25-29b8fa789d1d.mp3
+episodes/vox_03_miyazaki/assets/clips/boardroom.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_141001_d8e36e1a-037c-4861-bd06-debd9ac4d1a6.mp4
+episodes/vox_03_miyazaki/assets/clips/cinema.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_141001_0d5f8f58-61d7-46d0-aa5f-1c91bc6c2135.mp4
+episodes/vox_03_miyazaki/assets/clips/desk.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_143450_50aede1b-87ec-4640-89c8-765f8d7cf0cc.mp4
+episodes/vox_03_miyazaki/assets/clips/seat.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261026_143450_1635dc60-6b71-404f-9a7f-16e5db56c998.mp4

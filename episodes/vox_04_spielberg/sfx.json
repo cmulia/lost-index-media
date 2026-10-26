@@ -1,0 +1,162 @@
+{
+ "flow_id": "AoxuIhQwFAAN4N9xBbGt",
+ "flow_url": "https://elevenlabs.io/app/flows/AoxuIhQwFAAN4N9xBbGt",
+ "sfx": {
+  "waves": {
+   "node_id": "MeUUVKhIWboZsCrkJG5U",
+   "session_id": "QEhykQj5vUtwr1Q820YO",
+   "generation_id": "Ee1RSM72hGPZ88084da1",
+   "file": "audio/sfx/waves.mp3",
+   "requested": 5,
+   "duration": 5.042,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/QEhykQj5vUtwr1Q820YO/Ee1RSM72hGPZ88084da1/content.mp3",
+   "prompt": "gentle ocean waves lapping against a wooden hull, seagulls distant, calm sea"
+  },
+  "hydraulic": {
+   "node_id": "tTDloy3O1pnoHnPWw1bq",
+   "session_id": "jN28pMuKWDwAqq0eOvLH",
+   "generation_id": "JjgOVAnHbQJRBrY6zCID",
+   "file": "audio/sfx/hydraulic.mp3",
+   "requested": 3,
+   "duration": 3.03,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/jN28pMuKWDwAqq0eOvLH/JjgOVAnHbQJRBrY6zCID/content.mp3",
+   "prompt": "a large pneumatic machine hissing and straining then clunking to a stop, mechanical failure, outdoors"
+  },
+  "sputter": {
+   "node_id": "Lsry5ouyjzdNFT41zjVt",
+   "session_id": "k2Yb4Z2vdXXruLcKxun8",
+   "generation_id": "D6GLxCVpOJwTWlq4vu8O",
+   "file": "audio/sfx/sputter.mp3",
+   "requested": 2.5,
+   "duration": 2.508,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/k2Yb4Z2vdXXruLcKxun8/D6GLxCVpOJwTWlq4vu8O/content.mp3",
+   "prompt": "a motor sputtering, grinding and dying with a wet electrical crackle"
+  },
+  "splash": {
+   "node_id": "aSdsW0CyQkmqyi6FQsvH",
+   "session_id": "sISYHY9zi8B06qNaY0fD",
+   "generation_id": "TKOiSfgt0DukS9C4pFlu",
+   "file": "audio/sfx/splash.mp3",
+   "requested": 2,
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/sISYHY9zi8B06qNaY0fD/TKOiSfgt0DukS9C4pFlu/content.mp3",
+   "prompt": "a heavy splash of something large dropping into seawater"
+  },
+  "pages": {
+   "node_id": "ITpRaJLxlK0SZOhXu8rx",
+   "session_id": "lDHaZf6DMgLawJ3wOlXN",
+   "generation_id": "zyaC9X0U4sBRA7bs7bVe",
+   "file": "audio/sfx/pages.mp3",
+   "requested": 2.5,
+   "duration": 2.508,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/lDHaZf6DMgLawJ3wOlXN/zyaC9X0U4sBRA7bs7bVe/content.mp3",
+   "prompt": "calendar pages flipping rapidly, paper riffling"
+  },
+  "register": {
+   "node_id": "wcJ3dAIjlQg85eOFb7bK",
+   "session_id": "BJan9sufGi3mvut8T2JC",
+   "generation_id": "sCjlHY4FsdKB9e8rtX7Z",
+   "file": "audio/sfx/register.mp3",
+   "requested": 1.5,
+   "duration": 1.515,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/BJan9sufGi3mvut8T2JC/sCjlHY4FsdKB9e8rtX7Z/content.mp3",
+   "prompt": "a vintage cash register drawer opening with a bell ding"
+  },
+  "barrel": {
+   "node_id": "T04rakTlCsMJVRE058ub",
+   "session_id": "Brzj6KKpQdKvT03S0Wh8",
+   "generation_id": "km0rhvIIwCXgrrA9m1TH",
+   "file": "audio/sfx/barrel.mp3",
+   "requested": 3,
+   "duration": 3.03,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/Brzj6KKpQdKvT03S0Wh8/km0rhvIIwCXgrrA9m1TH/content.mp3",
+   "prompt": "a hollow metal barrel bobbing and knocking on water, muffled clonks"
+  },
+  "underwater": {
+   "node_id": "jakCug4f2gSCVfPu96J0",
+   "session_id": "HDySRJLlC3l5Cv847aC4",
+   "generation_id": "NPtfF7gKAB6Hl9aPfJLl",
+   "file": "audio/sfx/underwater.mp3",
+   "requested": 5,
+   "duration": 5.042,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/HDySRJLlC3l5Cv847aC4/NPtfF7gKAB6Hl9aPfJLl/content.mp3",
+   "prompt": "underwater ambience, muffled bubbles and deep pressure hum, slow"
+  },
+  "piano": {
+   "node_id": "CcRFDwstIa5TVvYSidCX",
+   "session_id": "6pUUGqTtpdSSxq48xHdg",
+   "generation_id": "scND8hTGUAnbATb6MYvN",
+   "file": "audio/sfx/piano.mp3",
+   "requested": 3,
+   "duration": 3.03,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/6pUUGqTtpdSSxq48xHdg/scND8hTGUAnbATb6MYvN/content.mp3",
+   "prompt": "two low piano notes played slowly one after another, close, with sustain"
+  },
+  "crowd": {
+   "node_id": "jSkuISn9CK3A9NacH3AJ",
+   "session_id": "F6Jq5sYOj6lKtn5BxNtY",
+   "generation_id": "PQ6A65rlRgg4s3IiHTGk",
+   "file": "audio/sfx/crowd.mp3",
+   "requested": 4,
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/F6Jq5sYOj6lKtn5BxNtY/PQ6A65rlRgg4s3IiHTGk/content.mp3",
+   "prompt": "a cinema crowd murmuring excitedly in a lobby, ticket tearing"
+  },
+  "counter": {
+   "node_id": "mVpWo319pA3pifQSj4Be",
+   "session_id": "Y6zUjAJextdYx32Ko6t2",
+   "generation_id": "gcIOMHdTmwBOBxO90hA0",
+   "file": "audio/sfx/counter.mp3",
+   "requested": 2.5,
+   "duration": 2.508,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/Y6zUjAJextdYx32Ko6t2/gcIOMHdTmwBOBxO90hA0/content.mp3",
+   "prompt": "a mechanical number counter wheels spinning rapidly and clicking to a stop"
+  },
+  "creak": {
+   "node_id": "JhKzgDW1LLmZwt6SGByG",
+   "session_id": "xYayMWU0hg91UjMKb3zY",
+   "generation_id": "ugHfXKJQyu0zIa3jUA4C",
+   "file": "audio/sfx/creak.mp3",
+   "requested": 5,
+   "duration": 5.042,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/xYayMWU0hg91UjMKb3zY/ugHfXKJQyu0zIa3jUA4C/content.mp3",
+   "prompt": "old tarpaulin flapping in wind over rusted metal, creaking, desolate outdoor lot"
+  },
+  "museum": {
+   "node_id": "Y7ik1yO9FSJjwoui3UIW",
+   "session_id": "1BJggi34dWxGUtnPPEZE",
+   "generation_id": "H5NMSewkGifxviPquZTG",
+   "file": "audio/sfx/museum.mp3",
+   "requested": 5,
+   "duration": 5.042,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/1BJggi34dWxGUtnPPEZE/H5NMSewkGifxviPquZTG/content.mp3",
+   "prompt": "a quiet museum atrium ambience with soft footsteps, an escalator hum and distant voices"
+  },
+  "swoosh": {
+   "node_id": "2YcS0I6T7LknxWDuHyZc",
+   "session_id": "ucNr2BWxmBx0QPFZZXyq",
+   "generation_id": "KFYvJCadSpbiZyhtZ6qq",
+   "file": "audio/sfx/swoosh.mp3",
+   "requested": 0.8,
+   "duration": 0.836,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/ucNr2BWxmBx0QPFZZXyq/KFYvJCadSpbiZyhtZ6qq/content.mp3",
+   "prompt": "a short soft airy whoosh transition"
+  }
+ },
+ "music": {
+  "node_id": "eeK8cyNwFGWbAJyEsAB4",
+  "session_id": "oiQsfieg53K7rBs09sUL",
+  "generation_id": "8378wWUth7F6TxjcRCaw",
+  "model_id": "eleven_music_v2_5",
+  "requested": 59,
+  "takes": {
+   "music_take1.mp3": 59.04
+  },
+  "chosen": "music_take1.mp3",
+  "file": "audio/music.mp3",
+  "duration": 59.04,
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/oiQsfieg53K7rBs09sUL/8378wWUth7F6TxjcRCaw/content.mp3",
+  "prompt": "Dry, sparse, slightly wry 1970s instrumental at about ninety beats per minute: upright bass, brushed drum kit, a warm Rhodes electric piano and a little clean surf-twang guitar, with long rests and plenty of air. It stays understated, dips to almost nothing around the two-thirds mark, then ends on two low held bass notes."
+ },
+ "note": "urls are the unsigned object paths; the signed download links expire 2 h after generation"
+}

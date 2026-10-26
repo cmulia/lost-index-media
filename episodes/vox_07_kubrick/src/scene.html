@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IB; src: url(fonts/InterDisplay-Bold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+@font-face { font-family: SR; src: url(fonts/InstrumentSerif-Regular.ttf); }
+:root { --parch: #efe3c8; --umber: #4a3522; --amber: #e39b3a; --ink: #2e2117; --night: #15100b; --rule: #8c7556; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--parch); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--parch); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--parch); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .18; mix-blend-mode: multiply; pointer-events: none; }
+#vig { inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(46,33,23,.35) 100%); pointer-events: none; opacity: 0; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--ink); }
+#hdr span { background: rgba(239,227,200,.85); padding: 6px 12px; border: 2px solid var(--rule); }
+.photo { position: absolute; overflow: hidden; background: #000; border: 8px solid var(--parch); outline: 3px solid var(--umber); box-shadow: 0 16px 36px rgba(46,33,23,.35); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(.35) contrast(1.05); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--parch); background: var(--umber); padding: 4px 10px; white-space: nowrap; }
+.tag { position: absolute; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--parch); background: var(--umber); padding: 8px 14px; white-space: nowrap; }
+.kick { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 5px; color: var(--amber); white-space: nowrap; }
+.serif { font-family: SI; color: var(--ink); line-height: .95; letter-spacing: -1px; }
+.card { position: absolute; background: #fbf5e6; color: var(--ink); padding: 24px 30px; border: 2px solid var(--umber); box-shadow: 8px 8px 0 0 rgba(74,53,34,.25); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: #7d6a52; }
+.card .n { font-family: SR; font-size: 72px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: IS; font-size: 32px; margin-top: 10px; }
+.eng { font-family: PR; font-size: 22px; letter-spacing: 2px; color: var(--umber); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: rgba(46,33,23,.93); border: 2px solid var(--amber); padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(239,227,200,.45); padding: 0 5px; }
+#cap .w.on { color: var(--ink); background: var(--amber); }
+#cap .w.done { color: var(--parch); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/candle/f001.jpg">
+    <div class="photo" id="p1" style="left:60px;top:700px;width:400px;height:330px"><img src="img/kubrick_1949.jpg" style="object-position:40% 30%"></div>
+    <div class="credit" id="p1c" style="left:74px;top:1040px">Kubrick, 1949 · Phillip Harrington / LOOK, Library of Congress · PD</div>
+    <div class="a" id="h1" style="left:60px;right:50px;top:1120px;background:rgba(239,227,200,.9);padding:14px 26px 24px">
+      <div class="serif" style="font-size:84px">Kubrick's candlelit film</div>
+      <div class="serif" style="font-size:84px">used lenses</div>
+      <div class="serif" style="font-size:136px;color:var(--amber);margin-top:4px">built for the moon.</div>
+    </div>
+  </div>
+
+  <!-- S2 candlelight alone -->
+  <div id="s2" class="scene">
+    <img id="s2bg" class="full" src="img/chandelier/f001.jpg">
+    <div class="tag" id="blT" style="left:70px;top:190px">BARRY LYNDON · 1975</div>
+    <div class="photo" id="p2" style="left:600px;top:1000px;width:410px;height:290px"><img src="img/kubrick_1963_strangelove_set.jpg" style="object-position:50% 40%"></div>
+    <div class="credit" id="p2c" style="left:480px;top:1298px">Kubrick on set, 1963 · publicity photo · PD (not renewed)</div>
+    <div class="a serif" id="s2h" style="left:60px;top:1130px;font-size:104px;background:rgba(239,227,200,.9);padding:10px 24px 18px;display:inline-block">by candlelight<br><span style="color:var(--amber)">alone.</span></div>
+    <div class="credit" id="s2c" style="left:70px;top:1400px">no fill light · American Cinematographer, 1976</div>
+  </div>
+
+  <!-- S3 film stock, fastest lens -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/lens/f001.jpg" style="opacity:.0">
+    <div class="kick" style="left:70px;top:190px;color:var(--umber)" id="s3k">HOW MUCH LIGHT · SCHEMATIC</div>
+    <div class="a" id="ladder" style="left:70px;top:250px;width:940px"></div>
+    <img id="lensS" class="a" src="img/lens_cut.png" style="left:480px;top:560px;width:580px">
+    <div class="a serif" id="s3h" style="left:60px;top:1150px;font-size:110px;background:rgba(239,227,200,.9);padding:10px 24px 18px;display:inline-block">the fastest<br><span style="color:var(--amber)">lens made.</span></div>
+    <div class="credit" id="s3c" style="left:70px;top:1560px">drawn for this video · f/0.7 · Zeiss Planar 50 mm</div>
+  </div>
+
+  <!-- S4 ten lenses -->
+  <div id="s4" class="scene">
+    <div class="tag" id="zT" style="left:70px;top:190px">ZEISS PLANAR 50 MM f/0.7 · TEN MADE</div>
+    <div class="a" id="ten" style="left:70px;top:270px;width:940px"></div>
+    <div class="photo" id="pZ" style="left:70px;top:900px;width:940px;height:560px"><img src="img/zeiss_planar_07_lens.jpg" style="object-position:50% 50%"></div>
+    <div class="credit" id="pZc" style="left:84px;top:1470px">one of Kubrick's three · Stanley Kubrick exhibition · Gbentinck · CC BY-SA 4.0</div>
+    <div class="kick" id="six" style="left:70px;top:720px;color:var(--umber)">SIX → NASA</div>
+    <div class="kick" id="three" style="left:560px;top:720px">THREE → KUBRICK</div>
+  </div>
+
+  <!-- S5 one problem -->
+  <div id="s5" class="scene">
+    <img id="s5bg" class="full" src="img/crosssection.png">
+    <div class="tag" id="prT" style="left:70px;top:190px;background:var(--amber);color:var(--ink)">ONE PROBLEM</div>
+    <div class="a serif" id="s5a" style="left:60px;top:1100px;font-size:96px;background:rgba(239,227,200,.9);padding:10px 24px 18px;display:inline-block">millimetres<br>from the film.</div>
+    <div class="a" id="bnc" style="inset:0;background:var(--parch)">
+      <img class="full" src="img/camera.png" style="opacity:.9">
+      <svg class="a" id="sawS" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920"><path id="sawP" d="M 420 520 L 760 540" fill="none" stroke="#e39b3a" stroke-width="14" stroke-linecap="round" stroke-dasharray="20 14" stroke-dashoffset="0"/></svg>
+      <div class="photo" id="pB" style="left:620px;top:860px;width:390px;height:560px"><img src="img/mitchell_bnc_lacma.jpg" style="object-position:50% 40%"></div>
+      <div class="credit" id="pBc" style="left:520px;top:1430px">Kubrick's Mitchell BNC · LACMA · Matthew J. Cotter · CC BY-SA 2.0</div>
+      <div class="a serif" id="s5b" style="left:60px;top:1150px;font-size:104px;background:rgba(239,227,200,.9);padding:10px 24px 18px;display:inline-block">cut apart<br><span style="color:var(--amber)">until it did.</span></div>
+      <div class="tag" id="zsT" style="left:70px;top:190px">ZEISS SAID IT WOULD NOT FIT A MOVIE CAMERA</div>
+    </div>
+  </div>
+
+  <!-- S6 three wicks, video camera -->
+  <div id="s6" class="scene">
+    <img id="s6bg" class="full" src="img/candle/f001.jpg">
+    <div class="tag" id="wkT" style="left:70px;top:190px">THREE WICKS PER CANDLE</div>
+    <div class="a" id="mon" style="inset:0;background:var(--parch)">
+      <img class="full" src="img/monitor.png">
+      <div class="tag" id="mT" style="left:70px;top:190px">A VIDEO CAMERA, SIDE-ON · FOCUS GRID</div>
+      <div class="a serif" id="s6h" style="left:60px;top:1150px;font-size:110px;background:rgba(239,227,200,.9);padding:10px 24px 18px;display:inline-block">focus so thin,<br><span style="color:var(--amber)">watched from the side.</span></div>
+      <div class="credit" id="s6c" style="left:70px;top:1560px">American Cinematographer, 1976 · illustration drawn for this video</div>
+    </div>
+  </div>
+
+  <!-- S7 four Oscars, lost money -->
+  <div id="s7" class="scene">
+    <img id="s7bg" class="full" src="img/ledger.png">
+    <div class="a" id="laur" style="left:70px;top:200px;width:940px"></div>
+    <div class="a serif" id="s7h" style="left:60px;top:1120px;font-size:104px;background:rgba(239,227,200,.92);padding:10px 24px 18px;display:inline-block">four Oscars.<br><span style="color:var(--amber)">and a loss in America.</span></div>
+    <div class="credit" id="s7c" style="left:70px;top:1400px">48th Academy Awards · The Numbers; New Statesman, 2025</div>
+  </div>
+
+  <!-- S8 twelfth -->
+  <div id="s8" class="scene">
+    <div class="photo" id="pC" style="left:70px;top:200px;width:940px;height:620px"><img src="img/childwickbury_manor.jpg"></div>
+    <div class="credit" id="pCc" style="left:84px;top:830px">Childwickbury Manor, Kubrick's home from 1978 · Colin · CC BY-SA 4.0</div>
+    <div class="card" id="poll" style="left:70px;top:920px;width:940px"><div class="l">SIGHT &amp; SOUND · DIRECTORS' POLL · 2022</div><div class="n" id="polln" style="font-size:150px;color:var(--amber)">no. 12</div><div class="s">greatest film ever made, per directors</div></div>
+  </div>
+
+  <!-- S9 the moon -->
+  <div id="s9" class="scene">
+    <img id="s9bg" class="full" src="img/moon/f001.jpg">
+    <div class="a serif" id="s9a" style="left:60px;top:1120px;font-size:120px;background:rgba(239,227,200,.9);padding:10px 24px 18px;display:inline-block">and the<br><span style="color:var(--amber)">moon lenses?</span></div>
+    <div class="card" id="zq" style="left:70px;top:230px;width:940px"><div class="l">ZEISS · 2022</div><div class="n" style="font-family:SI;font-size:66px">“there is no evidence” they ever photographed the moon.</div></div>
+    <div class="a" id="cand" style="inset:0">
+      <img id="candbg" class="full" src="img/candle/f001.jpg">
+      <div class="a serif" id="s9b" style="left:60px;top:1120px;font-size:120px;background:rgba(239,227,200,.9);padding:10px 24px 18px;display:inline-block">their famous pictures<br><span style="color:var(--amber)">are of candles.</span></div>
+    </div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene">
+    <div class="kick" id="ek" style="left:70px;top:330px"></div>
+    <div class="a" style="left:66px;right:50px;top:400px">
+      <div style="overflow:hidden"><div class="serif" id="e1" style="font-size:140px">Candlelight</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e2" style="font-size:140px">or studio</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e3" style="font-size:140px;color:var(--amber)">lights?</div></div>
+    </div>
+    <div class="photo" id="pe" style="left:640px;top:900px;width:370px;height:280px"><img src="img/zeiss_planar_07_on_camera.jpg"></div>
+    <div class="credit" style="left:560px;top:1190px" id="pec">the f/0.7 on the camera · Gbentinck · CC BY-SA 4.0</div>
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1290px;font-family:PR;font-size:24px;line-height:1.5;color:#5e4c38">Sources: American Cinematographer (1976); ZEISS press release (2022); Academy Awards database (1976); The Spectator (2025); New Statesman (2025); RogerEbert.com (2009); PetaPixel (2021); The Numbers.<br>Photos via Wikimedia Commons / Library of Congress: Phillip A. Harrington (PD), Columbia publicity 1963 (PD), Gbentinck (CC BY-SA), Matthew J. Cotter (CC BY-SA), Colin (CC BY-SA). Illustrations and diagrams drawn for this video.<br><br>explained no. 07 · @lost_index</div>
+  </div>
+
+  <div id="vig" class="a"></div>
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 07</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = 170 + s % 85; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 4.0], s2: [4.0, 10.4], s3: [10.4, 15.5], s4: [15.5, 21.8], s5: [21.8, 31.3], s6: [31.3, 37.8], s7: [37.8, 42.1], s8: [42.1, 45.9], s9: [45.9, 54.1], s11: [54.1, 57.0] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  frameSeq($('#s1bg'), 'candle', t, 0);
+  $('#p1').style.transform = `scale(${1 + t * .008}) rotate(-2deg)`;
+  $('#h1').style.transform = `translateY(${Math.sin(t * 1.1) * 3}px)`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 3.7, 4.0));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .3);
+  frameSeq($('#s2bg'), 'chandelier', t, T.s2[0]);
+  const bk = E.back(P(t, 4.2, 4.6)); $('#blT').style.opacity = t >= 4.2 ? 1 : 0; $('#blT').style.transform = `scale(${bk})`; $('#blT').style.transformOrigin = '0 50%';
+  $('#p2').style.opacity = P(t, 5.9, 6.3); $('#p2').style.transform = 'rotate(2deg)'; $('#p2c').style.opacity = P(t, 6.1, 6.4);
+  fadeUp($('#s2h'), t, 8.7, .5, 40); $('#s2c').style.opacity = P(t, 9.4, 9.7);
+  $('#p2').style.opacity = parseFloat($('#p2').style.opacity) * (1 - P(t, 8.6, 8.9)); $('#p2c').style.opacity = parseFloat($('#p2c').style.opacity) * (1 - P(t, 8.6, 8.9));
+}
+const LAD = [['DAYLIGHT', 100], ['STUDIO LAMPS', 55], ['A LIT ROOM', 22], ['CANDLES', 5]];
+{ $('#ladder').innerHTML = LAD.map((l, i) => `<div style="margin-bottom:18px"><div class="eng">${l[0]}</div><div style="height:40px;background:rgba(74,53,34,.12);margin-top:6px"><div class="lb" id="lb${i}" style="height:40px;width:0;background:${i === 3 ? '#e39b3a' : '#4a3522'}"></div></div></div>`).join(''); }
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  $('#s3k').style.opacity = P(t, 10.5, 10.8);
+  LAD.forEach((l, i) => { $('#lb' + i).style.width = (E.io(P(t, 10.8 + i * .25, 11.4 + i * .25)) * l[1]) + '%'; });
+  const lk = E.back(P(t, 13.0, 13.6)); $('#lensS').style.opacity = t >= 13.0 ? 1 : 0; $('#lensS').style.transform = `scale(${lk}) rotate(-6deg)`;
+  fadeUp($('#s3h'), t, 13.1, .5, 40); $('#s3c').style.opacity = P(t, 13.6, 13.9);
+}
+{ let h = ''; for (let i = 0; i < 10; i++) h += `<div class="lz" id="lz${i}" style="display:inline-block;width:150px;height:150px;margin:0 16px 20px 0;border:5px solid #4a3522;border-radius:50%;background:${i < 6 ? '#4a3522' : i < 9 ? '#e39b3a' : 'transparent'};opacity:0;position:relative"><div style="position:absolute;inset:34px;border-radius:50%;border:4px solid rgba(239,227,200,.6)"></div></div>`; $('#ten').innerHTML = h; }
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  const zk = E.back(P(t, 15.6, 16.0)); $('#zT').style.opacity = t >= 15.6 ? 1 : 0; $('#zT').style.transform = `scale(${zk})`; $('#zT').style.transformOrigin = '0 50%';
+  for (let i = 0; i < 10; i++) { const el = $('#lz' + i); const t1 = 16.0 + i * .12; const k = E.back(P(t, t1, t1 + .25)); el.style.opacity = t >= t1 ? 1 : 0; el.style.transform = `scale(${k})`; }
+  $('#six').style.opacity = P(t, 18.7, 19.0); $('#three').style.opacity = P(t, 20.4, 20.7);
+  $('#pZ').style.opacity = P(t, 17.6, 18.0); $('#pZ').style.transform = 'rotate(-1deg)'; $('#pZc').style.opacity = P(t, 17.8, 18.1);
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  $('#s5bg').style.transform = `scale(${1.04 - (t - T.s5[0]) * .004})`;
+  const pk = E.back(P(t, 22.0, 22.4)); $('#prT').style.opacity = t >= 22.0 ? 1 : 0; $('#prT').style.transform = `scale(${pk})`; $('#prT').style.transformOrigin = '0 50%';
+  fadeUp($('#s5a'), t, 24.2, .5, 40);
+  const bk = E.io(P(t, 26.0, 26.5)); $('#bnc').style.opacity = bk;
+  const zk = E.back(P(t, 26.2, 26.6)); $('#zsT').style.opacity = t >= 26.2 ? 1 : 0; $('#zsT').style.transform = `scale(${zk})`; $('#zsT').style.transformOrigin = '0 50%';
+  $('#pB').style.opacity = P(t, 26.4, 26.8); $('#pB').style.transform = 'rotate(2deg)'; $('#pBc').style.opacity = P(t, 26.6, 26.9);
+  $('#sawP').setAttribute('stroke-dashoffset', -((t - 28.9) * 220)); $('#sawS').style.opacity = t >= 28.9 ? 1 : 0;
+  fadeUp($('#s5b'), t, 30.2, .45, 40);
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .3);
+  frameSeq($('#s6bg'), 'candle', t, T.s6[0]);
+  const wk = E.back(P(t, 31.5, 31.9)); $('#wkT').style.opacity = t >= 31.5 ? 1 : 0; $('#wkT').style.transform = `scale(${wk})`; $('#wkT').style.transformOrigin = '0 50%';
+  const mk = E.io(P(t, 33.5, 34.0)); $('#mon').style.opacity = mk;
+  const mt = E.back(P(t, 35.0, 35.4)); $('#mT').style.opacity = t >= 35.0 ? 1 : 0; $('#mT').style.transform = `scale(${mt})`; $('#mT').style.transformOrigin = '0 50%';
+  fadeUp($('#s6h'), t, 35.1, .5, 40); $('#s6c').style.opacity = P(t, 36.7, 37.0);
+}
+const LAUR = ['Cinematography', 'Art Direction', 'Costume Design', 'Scoring Adaptation'];
+{ $('#laur').innerHTML = LAUR.map((l, i) => `<div class="lr" id="lr${i}" style="display:flex;align-items:center;gap:20px;background:#fbf5e6;border:2px solid #4a3522;padding:14px 24px;margin-bottom:14px;opacity:0"><span style="font-family:IK;font-size:40px;color:#e39b3a">✦</span><span style="font-family:SR;font-size:56px;line-height:1;color:#2e2117">${l}</span><span style="margin-left:auto;font-family:PM;font-size:22px;letter-spacing:3px;color:#7d6a52">1976</span></div>`).join(''); }
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  $('#s7bg').style.transform = `scale(${1.05 - (t - T.s7[0]) * .006})`;
+  LAUR.forEach((l, i) => { const t1 = 38.4 + i * .22; const el = $('#lr' + i); el.style.opacity = P(t, t1, t1 + .15); el.style.transform = `translateX(${(1 - E.expo(P(t, t1, t1 + .4))) * -60}px)`; });
+  fadeUp($('#s7h'), t, 40.1, .5, 40); $('#s7c').style.opacity = P(t, 40.6, 40.9);
+}
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  const ck = E.expo(P(t, 42.2, 42.8)); $('#pC').style.opacity = ck; $('#pC').style.transform = `scale(${lerp(1.06, 1, ck) + (t - 42.1) * .005}) rotate(-1deg)`; $('#pCc').style.opacity = ck;
+  fadeUp($('#poll'), t, 43.4, .5, 50);
+  const n = Math.round(lerp(60, 12, E.out(P(t, 43.6, 45.0)))); $('#polln').textContent = 'no. ' + n;
+}
+function S9(t) {
+  xfade('#s9', t, 's9', .3);
+  frameSeq($('#s9bg'), 'moon', t, T.s9[0]);
+  fadeUp($('#s9a'), t, 46.1, .5, 40);
+  fadeUp($('#zq'), t, 47.8, .5, 50);
+  const ck = E.io(P(t, 51.4, 51.9)); $('#cand').style.opacity = ck;
+  if (t >= 51.3) frameSeq($('#candbg'), 'candle', t, 51.3);
+  fadeUp($('#s9b'), t, 51.6, .5, 40);
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 54.1, 54.5);
+  $('#ek').textContent = typed('CANDLELIGHT OR STUDIO LIGHTS?', t, 54.3, 32);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 54.5 + i * .15, 55.0 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 55.1, 55.5); $('#pe').style.opacity = P(t, 54.9, 55.3); $('#pe').style.transform = 'rotate(3deg)'; $('#pec').style.opacity = P(t, 55.1, 55.4);
+  $('#stage').style.opacity = 1 - P(t, 56.6, 57.0);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s8: '#s8', s9: '#s9', s11: '#end' };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  if (inS(t, 's1')) S1(t); if (inS(t, 's2')) S2(t); if (inS(t, 's3')) S3(t); if (inS(t, 's4')) S4(t); if (inS(t, 's5')) S5(t);
+  if (inS(t, 's6')) S6(t); if (inS(t, 's7')) S7(t); if (inS(t, 's8')) S8(t); if (inS(t, 's9')) S9(t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  $('#vig').style.opacity = (inS(t, 's1') || inS(t, 's2') || inS(t, 's6') || inS(t, 's9')) ? .8 : 0;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
