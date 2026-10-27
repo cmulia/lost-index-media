@@ -1,0 +1,60 @@
+{
+ "episode": "vox_08_carpenter",
+ "video_seconds": 56,
+ "music": {
+  "prompt": "Tense minimalist analog synthesizer instrumental at about ninety beats per minute, original and not any known film theme: a low pulsing sequenced bass, a sparse high detuned piano motif repeating in an odd meter, and a cold synth pad underneath. It starts quiet, slowly builds tension, swells near the end, then drops to a single low drone that fades.",
+  "duration_seconds": 57
+ },
+ "sfx": [
+  {
+   "file": "mask_stretch",
+   "prompt": "a thin rubber latex mask being stretched and pulled, soft creaking squeaks, close",
+   "duration_seconds": 2
+  },
+  {
+   "file": "shop_bell",
+   "prompt": "an old shop door opening with a small brass bell jingling",
+   "duration_seconds": 2
+  },
+  {
+   "file": "register",
+   "prompt": "a vintage mechanical cash register keys and a bright bell ding",
+   "duration_seconds": 1.5
+  },
+  {
+   "file": "scissors",
+   "prompt": "sharp scissors snipping through thin rubber, three quick cuts",
+   "duration_seconds": 2
+  },
+  {
+   "file": "spray",
+   "prompt": "a spray paint can rattling then a long spray hiss",
+   "duration_seconds": 3
+  },
+  {
+   "file": "leaves",
+   "prompt": "a big armful of dry autumn leaves dumped onto a lawn and rustling",
+   "duration_seconds": 3
+  },
+  {
+   "file": "projector",
+   "prompt": "a 1970s film projector starting up and whirring steadily",
+   "duration_seconds": 4
+  },
+  {
+   "file": "coins",
+   "prompt": "a cascade of coins pouring onto a table",
+   "duration_seconds": 2.5
+  },
+  {
+   "file": "plaster",
+   "prompt": "wet plaster being smoothed and pressed by hand, quiet and close",
+   "duration_seconds": 3
+  },
+  {
+   "file": "wind_night",
+   "prompt": "autumn night wind through bare trees with dry leaves skittering on pavement, eerie and quiet",
+   "duration_seconds": 6
+  }
+ ]
+}

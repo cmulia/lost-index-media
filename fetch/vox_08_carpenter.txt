@@ -1,0 +1,19 @@
+episodes/vox_08_carpenter/assets/carpenter_2001.jpg https://upload.wikimedia.org/wikipedia/commons/1/11/JohnCarpenter01.jpg
+episodes/vox_08_carpenter/assets/_pages/carpenter_2001.html https://commons.wikimedia.org/wiki/File:JohnCarpenter01.jpg?action=raw
+episodes/vox_08_carpenter/assets/carpenter_2012.jpg https://upload.wikimedia.org/wikipedia/commons/2/27/Portrait_of_John_Carpenter.jpg
+episodes/vox_08_carpenter/assets/_pages/carpenter_2012.html https://commons.wikimedia.org/wiki/File:Portrait_of_John_Carpenter.jpg?action=raw
+episodes/vox_08_carpenter/assets/south_pasadena_mission.jpg https://upload.wikimedia.org/wikipedia/commons/3/3f/South_Pasadena_Historic_District%2C_Mission_and_Meridian.jpg
+episodes/vox_08_carpenter/assets/_pages/south_pasadena_mission.html https://commons.wikimedia.org/wiki/File:South_Pasadena_Historic_District,_Mission_and_Meridian.jpg?action=raw
+# Higgsfield illustrations, loops and takes (committed directly; listed for provenance)
+episodes/vox_08_carpenter/assets/mask.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204628_bf2eb257-ce13-4f11-8b3a-5bac636ba4fb.png
+episodes/vox_08_carpenter/assets/shelf.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204551_ea055bd8-a3bf-4fba-8bc3-b46f2293dc22.png
+episodes/vox_08_carpenter/assets/spray.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204552_c065133e-5190-46f3-b798-2c9994f61568.png
+episodes/vox_08_carpenter/assets/street.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204552_9b59186c-43d3-495f-8559-026344b371aa.png
+episodes/vox_08_carpenter/assets/cast.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204551_3a7081c9-7bce-4223-b107-f13269f902fe.png
+episodes/vox_08_carpenter/assets/porch.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204629_bb369291-c9a6-48c8-bf42-905ea944e2fe.png
+episodes/vox_08_carpenter/assets/mask_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204759_6f29e2ca-24bb-4e07-9b8d-77369101b14a.png
+episodes/vox_08_carpenter/assets/clips/street.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204640_e04cc838-d68e-4543-915a-5e5adbb7f557.mp4
+episodes/vox_08_carpenter/audio/takes/quinn.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204607_75404b66-b1a6-432b-9852-898569f4acbf.mp3
+episodes/vox_08_carpenter/audio/takes/vesper.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204607_fe9ba77c-c73e-41c8-a317-8d9c220a2558.mp3
+episodes/vox_08_carpenter/assets/clips/cast.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204640_19fcc38d-c5ee-40c6-b153-39d9998f68be.mp4
+episodes/vox_08_carpenter/assets/clips/porch.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261027_204802_a67c1eac-06d3-4f25-805a-13b56d0eec1a.mp4

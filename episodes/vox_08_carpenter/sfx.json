@@ -1,0 +1,60 @@
+{
+ "flow_id": "tpYnkTumw9yyIk8XOziQ",
+ "sfx": {
+  "mask_stretch": {
+   "node_id": "SkmP7aGI8u7m4F1whJcE",
+   "duration": 2.038,
+   "url": "sfx/mask_stretch.mp3"
+  },
+  "shop_bell": {
+   "node_id": "iJq3NwYGELg4suTwhrZ9",
+   "duration": 2.038,
+   "url": "sfx/shop_bell.mp3"
+  },
+  "register": {
+   "node_id": "nAkypxreHu26JLn4JLty",
+   "duration": 1.515,
+   "url": "sfx/register.mp3"
+  },
+  "scissors": {
+   "node_id": "nQNYKokn3FqN0im7QKGZ",
+   "duration": 2.038,
+   "url": "sfx/scissors.mp3"
+  },
+  "spray": {
+   "node_id": "x8IpFzdeKkf759bP7LME",
+   "duration": 3.03,
+   "url": "sfx/spray.mp3"
+  },
+  "leaves": {
+   "node_id": "tE8vBURLjiXS1RufEIBa",
+   "duration": 3.03,
+   "url": "sfx/leaves.mp3"
+  },
+  "projector": {
+   "node_id": "wXHll2LSYQ0sPUzsvfAt",
+   "duration": 4.049,
+   "url": "sfx/projector.mp3"
+  },
+  "coins": {
+   "node_id": "YYW9oAQStLAaE1nfYe1X",
+   "duration": 2.508,
+   "url": "sfx/coins.mp3"
+  },
+  "plaster": {
+   "node_id": "86Sc9JxiuuOEFOMSqpzO",
+   "duration": 3.03,
+   "url": "sfx/plaster.mp3"
+  },
+  "wind_night": {
+   "node_id": "3MgzBoWXnkgPFXfbzziV",
+   "duration": 6.034,
+   "url": "sfx/wind_night.mp3"
+  }
+ },
+ "music": {
+  "node_id": "ve9LF0zPgC99OysZO254",
+  "duration": 57.024,
+  "file": "music.mp3"
+ }
+}
