@@ -8,3 +8,14 @@ episodes/vox_09_melies/assets/montparnasse_1895.jpg https://upload.wikimedia.org
 episodes/vox_09_melies/assets/_pages/montparnasse_1895.html https://commons.wikimedia.org/wiki/File:Train_wreck_at_Montparnasse_1895.jpg?action=raw
 episodes/vox_09_melies/assets/plaque.jpg https://upload.wikimedia.org/wikipedia/commons/c/c6/Panneau_Georges_M%C3%A9lies-29_boulevard_Saint-Martin.jpg
 episodes/vox_09_melies/assets/_pages/plaque.html https://commons.wikimedia.org/wiki/File:Panneau_Georges_M%C3%A9lies-29_boulevard_Saint-Martin.jpg?action=raw
+# Higgsfield results (downloaded directly; listed for provenance)
+episodes/vox_09_melies/assets/heel.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210026_1c626d10-9e42-4f35-8e20-d6ab6689d4b1.png
+episodes/vox_09_melies/assets/moon.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210026_69d87b73-e81d-4c9f-a4dc-883ae792b18e.png
+episodes/vox_09_melies/assets/bonfire.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210027_648084d9-3da3-4a1c-9235-4139c2f1beb7.png
+episodes/vox_09_melies/assets/kiosk.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210026_6a80b97f-95db-42f3-9748-06eb7223ca87.png
+episodes/vox_09_melies/assets/shed.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210027_9c4cb904-4844-4277-b554-68593cc34ef1.png
+episodes/vox_09_melies/assets/boot.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210026_6b67cec5-b97b-48ea-93e2-6d87a7b93122.png
+episodes/vox_09_melies/assets/boot_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210139_36f9eeab-0bd4-4225-aa43-3910774236e2.png
+episodes/vox_09_melies/assets/clips/bonfire.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210142_33dc0840-efbd-4a24-b275-f653825b1292.mp4
+episodes/vox_09_melies/assets/clips/kiosk.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210142_97db7c98-d885-4f00-8c08-8a80c57aa024.mp4
+episodes/vox_09_melies/assets/clips/moon.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261028_210144_e8cf348d-2ce9-4b82-b49e-a109ac0623a5.mp4

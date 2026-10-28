@@ -13,7 +13,7 @@ Times (Sydney, +11:00): until 1 Nov YouTube/Instagram 10:00, TikTok 12:00; from 
 - [x] 06 Nolan · Sun 1 Nov
 - [x] 07 Kubrick · Mon 2 Nov
 - [x] 08 John Carpenter · Tue 3 Nov · Halloween's Michael Myers mask was a cheap Captain Kirk mask painted white; twist: what it became
-- [ ] 09 Georges Méliès · Wed 4 Nov · his film prints were melted down (reportedly into boot heels) in WWI; he ended up selling toys at Montparnasse station before being rediscovered
+- [x] 09 Georges Méliès · Wed 4 Nov · his film prints were melted down (reportedly into boot heels) in WWI; he ended up selling toys at Montparnasse station before being rediscovered
 - [ ] 10 George Lucas · Thu 5 Nov · took sequel + merchandising rights instead of a bigger directing fee on Star Wars; twist: sold Lucasfilm to Disney (2012)
 - [ ] 11 Akira Kurosawa · Fri 6 Nov · A Fistful of Dollars copied Yojimbo; Kurosawa sued and (reportedly) earned more from it than from Yojimbo
 - [ ] 12 Kathryn Bigelow · Sat 7 Nov · first woman to win Best Director (2010), beating her ex-husband James Cameron's Avatar with a far cheaper film

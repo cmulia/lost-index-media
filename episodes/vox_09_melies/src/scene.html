@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+@font-face { font-family: SR; src: url(fonts/InstrumentSerif-Regular.ttf); }
+:root { --ink: #140f0b; --teal: #1d4b4c; --tl: #6fa5a8; --orange: #df4a2c; --gold: #d2a64b; --bone: #f2e7cd; --dim: #b9aa8a; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--ink); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--ink); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .14; mix-blend-mode: screen; pointer-events: none; }
+#vig { inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,.55) 100%); pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--bone); }
+#hdr span { background: rgba(12,16,19,.82); padding: 6px 12px; border: 2px solid var(--orange); }
+.photo { position: absolute; overflow: hidden; background: #000; border: 8px solid var(--bone); outline: 3px solid var(--gold); box-shadow: 0 16px 40px rgba(0,0,0,.6); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.05) saturate(.8); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--bone); background: rgba(29,75,76,.95); padding: 4px 10px; white-space: nowrap; }
+.tag { position: absolute; font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); background: var(--orange); padding: 8px 14px; white-space: nowrap; }
+.kick { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 5px; color: var(--orange); white-space: nowrap; }
+.serif { font-family: SI; color: var(--bone); line-height: .95; letter-spacing: -1px; }
+.hl { position: absolute; left: 60px; background: rgba(12,16,19,.86); padding: 10px 24px 18px; display: inline-block; border-left: 8px solid var(--orange); }
+.card { position: absolute; background: var(--bone); color: var(--ink); padding: 24px 30px; border: 3px solid var(--ink); box-shadow: 10px 10px 0 0 var(--orange); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: #5a6b6a; }
+.card .n { font-family: SR; font-size: 120px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: IS; font-size: 30px; margin-top: 10px; }
+.eng { font-family: PR; font-size: 24px; letter-spacing: 2px; color: var(--bone); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: rgba(12,16,19,.93); border: 2px solid var(--orange); padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(239,230,210,.4); padding: 0 5px; }
+#cap .w.on { color: var(--ink); background: var(--orange); }
+#cap .w.done { color: var(--bone); }
+.chk { font-family: PM; font-size: 40px; color: var(--bone); background: rgba(12,16,19,.86); padding: 10px 18px; margin-bottom: 14px; display: inline-block; border-left: 6px solid var(--orange); }
+.chk b { color: var(--orange); font-weight: normal; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/heel.png">
+    <div class="photo" id="p1" style="left:640px;top:170px;width:380px;height:500px;transform:rotate(3deg)"><img src="img/melies_1900.jpg" style="object-position:50% 20%"></div>
+    <div class="credit" id="p1c" style="left:560px;top:690px">Georges Méliès, c. 1900 · public domain</div>
+    <div class="hl" id="h1" style="top:1110px;right:50px">
+      <div class="serif" style="font-size:100px">His lost films may have</div>
+      <div class="serif" style="font-size:128px;color:var(--orange);margin-top:6px">become boot heels.</div>
+    </div>
+  </div>
+
+  <!-- S2 who -->
+  <div id="s2" class="scene">
+    <img id="s2bg" class="full" src="img/moon.png" style="opacity:.3">
+    <div class="tag" id="wT" style="left:70px;top:190px">GEORGES MÉLIÈS · 1861–1938</div>
+    <div class="photo" id="p2" style="left:70px;top:290px;width:600px;height:760px"><img src="img/melies_1895.png" style="object-position:50% 25%"></div>
+    <div class="credit" id="p2c" style="left:84px;top:1060px">Méliès, 1895 · public domain · via Wikimedia Commons</div>
+    <div class="hl serif" id="s2h" style="top:1170px;font-size:100px">one of the first to film<br><span style="color:var(--orange)">made-up stories.</span></div>
+  </div>
+
+  <!-- S3 moon -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/moon/f001.jpg">
+    <div class="tag" id="mT" style="left:70px;top:190px">A TRIP TO THE MOON · 1902</div>
+    <div class="credit" id="s3c" style="left:70px;top:262px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S4 war, boot heels -->
+  <div id="s4" class="scene">
+    <img id="s4bg" class="full" src="img/heel.png">
+    <div class="a" id="s4dim" style="inset:0;background:rgba(20,15,11,.55)"></div>
+    <div class="tag" id="wwT" style="left:70px;top:190px">THE FIRST WORLD WAR · 1914–1918</div>
+    <div class="card" id="sg" style="left:70px;top:330px;width:700px;transform:rotate(-2deg)"><div class="l">THE STORY GOES · 1917</div><div class="n" style="font-family:SI;font-size:96px">the army melted<br>his reels</div></div>
+    <svg class="a" id="arrow" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <g id="reelg" transform="translate(250,980)"><circle r="120" fill="none" stroke="#f2e7cd" stroke-width="8"/><circle r="22" fill="#f2e7cd"/>
+        <circle cx="0" cy="-66" r="26" fill="none" stroke="#f2e7cd" stroke-width="6"/><circle cx="57" cy="33" r="26" fill="none" stroke="#f2e7cd" stroke-width="6"/><circle cx="-57" cy="33" r="26" fill="none" stroke="#f2e7cd" stroke-width="6"/></g>
+      <path id="arr" d="M400 980 L640 980" stroke="#df4a2c" stroke-width="10" fill="none" stroke-dasharray="240" stroke-dashoffset="240"/>
+      <path id="arrh" d="M620 950 L670 980 L620 1010" stroke="#df4a2c" stroke-width="10" fill="none" opacity="0"/>
+      <g id="heelg" opacity="0"><path d="M730 880 L930 880 L910 1080 L750 1080 Z" fill="#d2a64b" stroke="#f2e7cd" stroke-width="6"/>
+        <line x1="738" y1="930" x2="922" y2="930" stroke="#140f0b" stroke-width="5"/><line x1="742" y1="980" x2="918" y2="980" stroke="#140f0b" stroke-width="5"/><line x1="746" y1="1030" x2="914" y2="1030" stroke="#140f0b" stroke-width="5"/></g>
+    </svg>
+    <div class="a eng" id="rl" style="left:130px;top:1130px;width:240px;text-align:center">FILM REELS</div>
+    <div class="a eng" id="hlb" style="left:700px;top:1100px;width:260px;text-align:center">BOOT HEELS</div>
+    <div class="credit" id="s4c" style="left:70px;top:1240px">schematic · drawn for this video · story per The New European (2020), unconfirmed</div>
+  </div>
+
+  <!-- S5 1923 -->
+  <div id="s5" class="scene">
+    <img id="s5bg" class="full" src="img/bonfire/f001.jpg">
+    <div class="tag" id="pT" style="left:70px;top:190px">1923</div>
+    <div class="card" id="pa" style="left:70px;top:300px;width:760px"><div class="l">THE PATHÉ COMPANY</div><div class="n" style="font-size:80px">took his property</div></div>
+    <div class="hl serif" id="s5h" style="top:1200px;font-size:100px">he destroyed<br><span style="color:var(--orange)">what was left.</span></div>
+    <div class="credit" id="s5c" style="left:70px;top:1490px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S6 Montparnasse -->
+  <div id="s6" class="scene">
+    <img id="s6bg" class="full" src="img/kiosk/f001.jpg">
+    <div class="tag" id="mpT" style="left:70px;top:190px">GARE MONTPARNASSE, PARIS</div>
+    <div class="photo" id="p6" style="left:470px;top:290px;width:540px;height:420px"><img src="img/montparnasse_1895.jpg" style="object-position:50% 40%"></div>
+    <div class="credit" id="p6c" style="left:120px;top:720px">the station in 1895, after a famous crash · Levy & fils · public domain</div>
+    <div class="hl serif" id="s6h" style="top:1200px;font-size:100px">a small toy<br><span style="color:var(--orange)">and sweets stand.</span></div>
+  </div>
+
+  <!-- S7 dairy shed -->
+  <div id="s7" class="scene">
+    <img id="s7bg" class="full" src="img/shed.png">
+    <div class="tag" id="nT" style="left:70px;top:190px">1929 · NORMANDY</div>
+    <div class="card" id="mc" style="left:70px;top:300px;width:700px"><div class="l">GIVEN OLD REELS</div><div class="n" style="font-size:110px">Mauclaire</div></div>
+    <div class="hl serif" id="s7h" style="top:1200px;font-size:100px">found in a<br><span style="color:var(--orange)">dairy shed.</span></div>
+    <div class="credit" id="s7c" style="left:70px;top:1490px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S8 gala -->
+  <div id="s8" class="scene">
+    <img id="s8bg" class="full" src="img/moon.png" style="opacity:.3">
+    <div class="tag" id="gT" style="left:70px;top:190px">PARIS · DECEMBER 1929</div>
+    <div class="photo" id="p8" style="left:240px;top:290px;width:600px;height:820px;background:#efe6d2"><img src="img/gala_1929.jpg" style="object-position:50% 0%;filter:none"></div>
+    <div class="credit" id="p8c" style="left:200px;top:1120px">Gala Méliès advert, Le Figaro, 16 Dec 1929 · public domain</div>
+    <div class="hl serif" id="s8h" style="top:1220px;font-size:110px">Paris threw<br><span style="color:var(--orange)">him a gala.</span></div>
+  </div>
+
+  <!-- S9 survivors -->
+  <div id="s9" class="scene" style="background:var(--teal)">
+    <div class="kick" id="s9k" style="left:70px;top:190px;color:var(--bone)">FILMS THAT SURVIVE · SCHEMATIC</div>
+    <svg class="a" id="reels" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+    <div class="a serif" id="s9n" style="left:70px;top:1150px;font-size:220px;color:var(--orange)">200+</div>
+    <div class="a eng" id="s9l" style="left:80px;top:1390px">OF HIS FILMS SURVIVE TODAY</div>
+    <div class="credit" id="s9c" style="left:70px;top:250px;background:var(--ink)">drawn for this video · figure: The New European, 2020</div>
+  </div>
+
+  <!-- S10 twist -->
+  <div id="s10" class="scene">
+    <img id="s10bg" class="full" src="img/boot.png" style="opacity:.28;filter:blur(6px)">
+    <img id="s10b" class="a" src="img/boot_cut.png" style="left:190px;top:200px;width:700px">
+    <div class="tag" id="bT" style="left:70px;top:190px">THE MÉLIÈS FAMILY TRADE</div>
+    <div class="hl serif" id="s10a" style="top:1110px;font-size:110px">luxury<br><span style="color:var(--gold)">boots.</span></div>
+    <div class="a serif" id="s10c" style="left:60px;top:1400px;font-size:76px;color:var(--bone);background:rgba(20,15,11,.88);padding:6px 24px 14px">the films outlasted the boots.</div>
+    <div class="credit" id="s10d" style="left:560px;top:1060px">illustration drawn for this video</div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene">
+    <div class="kick" id="ek" style="left:70px;top:300px"></div>
+    <div class="a" style="left:66px;right:50px;top:370px">
+      <div style="overflow:hidden"><div class="serif" id="e1" style="font-size:150px">Save the reels</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e2" style="font-size:150px">or the</div></div>
+      <div style="overflow:hidden"><div class="serif" id="e3" style="font-size:150px;color:var(--orange)">studio?</div></div>
+    </div>
+    <div class="photo" id="pe" style="left:600px;top:880px;width:410px;height:420px"><img src="img/plaque.jpg" style="object-position:50% 40%"></div>
+    <div class="credit" style="left:330px;top:1310px" id="pec">Boulevard Saint-Martin panel · William Jexpire · CC BY-SA 4.0</div>
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1390px;font-family:PR;font-size:24px;line-height:1.5;color:var(--dim)">Sources: The New European (Charlie Connelly, 2020); Encyclopaedia Britannica; In Libris; Victorian Cinema; Parisian Fields (2012); University of Michigan Press.<br>Photos via Wikimedia Commons: Méliès portraits, Levy & fils, Le Figaro 1929 (public domain); William Jexpire (CC BY-SA 4.0). Illustrations and diagrams drawn for this video.<br><br>explained no. 09 · @lost_index</div>
+  </div>
+
+  <div id="vig" class="a"></div>
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 09</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+const fmt = n => Math.round(n).toLocaleString('en-US');
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+const pop = (el, t, t0) => { const k = E.back(P(t, t0, t0 + .4)); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `scale(${k})`; el.style.transformOrigin = '0 50%'; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = s % 90; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 4.4], s2: [4.4, 8.55], s3: [8.55, 12.7], s4: [12.7, 23.5], s5: [23.5, 30.0], s6: [30.0, 34.65], s7: [34.65, 41.5], s8: [41.5, 45.7], s9: [45.7, 49.1], s10: [49.1, 55.5], s11: [55.5, 58.0] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+{ const s = $('#reels'); let h = '';
+  for (let i = 0; i < 24; i++) { const x = 150 + (i % 6) * 156, y = 420 + Math.floor(i / 6) * 160;
+    h += `<g class="rl" transform="translate(${x},${y})" opacity="0"><circle r="62" fill="none" stroke="#f2e7cd" stroke-width="6"/><circle r="12" fill="#f2e7cd"/><circle cy="-34" r="14" fill="none" stroke="#f2e7cd" stroke-width="4"/><circle cx="29" cy="17" r="14" fill="none" stroke="#f2e7cd" stroke-width="4"/><circle cx="-29" cy="17" r="14" fill="none" stroke="#f2e7cd" stroke-width="4"/></g>`; }
+  s.innerHTML = h; }
+
+function S1(t) {
+  $('#s1bg').style.transform = `scale(${1.04 + t * .01})`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 4.1, 4.4));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .3);
+  $('#s2bg').style.transform = `scale(${1.05 + (t - T.s2[0]) * .006})`;
+  pop($('#wT'), t, 4.5);
+  $('#p2').style.opacity = P(t, 4.6, 5.0); $('#p2').style.transform = `rotate(-2deg) scale(${1 + (t - 4.4) * .006})`; $('#p2c').style.opacity = P(t, 4.8, 5.1);
+  fadeUp($('#s2h'), t, 6.5, .5, 40);
+}
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  frameSeq($('#s3bg'), 'moon', t, T.s3[0]);
+  pop($('#mT'), t, 8.7); $('#s3c').style.opacity = P(t, 8.9, 9.2);
+}
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  $('#s4bg').style.transform = `scale(${1.12 - (t - T.s4[0]) * .008})`;
+  pop($('#wwT'), t, 12.85);
+  fadeUp($('#sg'), t, 15.3, .45, 50);
+  const r = P(t, 17.9, 18.4); $('#reelg').style.opacity = r; $('#rl').style.opacity = r;
+  $('#reelg').setAttribute('transform', `translate(250,980) rotate(${(t - 17.9) * 40})`);
+  $('#arr').setAttribute('stroke-dashoffset', 240 * (1 - E.io(P(t, 20.7, 21.4)))); $('#arrh').setAttribute('opacity', P(t, 21.3, 21.45));
+  const h = P(t, 21.4, 21.8); $('#heelg').setAttribute('opacity', h); $('#hlb').style.opacity = h;
+  $('#s4c').style.opacity = P(t, 18.2, 18.5);
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  frameSeq($('#s5bg'), 'bonfire', t, T.s5[0]);
+  pop($('#pT'), t, 23.6);
+  fadeUp($('#pa'), t, 25.0, .45, 50);
+  fadeUp($('#s5h'), t, 27.7, .5, 40); $('#s5c').style.opacity = P(t, 23.8, 24.1);
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .3);
+  frameSeq($('#s6bg'), 'kiosk', t, T.s6[0]);
+  pop($('#mpT'), t, 30.1);
+  $('#p6').style.opacity = P(t, 30.3, 30.7); $('#p6').style.transform = 'rotate(2deg)'; $('#p6c').style.opacity = P(t, 30.5, 30.8);
+  fadeUp($('#s6h'), t, 30.6, .5, 40);
+}
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  $('#s7bg').style.transform = `scale(${1.02 + (t - T.s7[0]) * .006})`;
+  pop($('#nT'), t, 34.8);
+  fadeUp($('#mc'), t, 36.2, .45, 50);
+  fadeUp($('#s7h'), t, 39.1, .5, 40); $('#s7c').style.opacity = P(t, 35.0, 35.3);
+}
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  pop($('#gT'), t, 41.6);
+  $('#p8').style.opacity = P(t, 41.7, 42.1); $('#p8').style.transform = `rotate(-1.5deg) scale(${1 + (t - 41.5) * .006})`; $('#p8c').style.opacity = P(t, 41.9, 42.2);
+  fadeUp($('#s8h'), t, 43.1, .5, 40);
+}
+function S9(t) {
+  xfade('#s9', t, 's9', .25);
+  $('#s9k').style.opacity = P(t, 45.8, 46.1); $('#s9c').style.opacity = P(t, 45.9, 46.2);
+  document.querySelectorAll('.rl').forEach((g, i) => g.setAttribute('opacity', P(t, 45.9 + i * .07, 46.1 + i * .07)));
+  const k = E.out(P(t, 46.0, 47.8)); $('#s9n').textContent = Math.round(200 * k) + (k >= 1 ? '+' : '');
+  $('#s9n').style.opacity = P(t, 45.9, 46.1); $('#s9l').style.opacity = P(t, 47.7, 48.0);
+}
+function S10(t) {
+  xfade('#s10', t, 's10', .3);
+  $('#s10b').style.transform = `translateY(${Math.sin(t * 1.2) * 6}px) scale(${1 + (t - 49.1) * .008})`;
+  pop($('#bT'), t, 49.2); $('#s10d').style.opacity = P(t, 49.4, 49.7);
+  fadeUp($('#s10a'), t, 50.4, .5, 40);
+  fadeUp($('#s10c'), t, 52.8, .6, 30);
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 55.5, 55.9);
+  $('#ek').textContent = typed('WHAT WOULD YOU HAVE SAVED?', t, 55.6, 32);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 55.8 + i * .15, 56.3 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 56.2, 56.6); $('#pe').style.opacity = P(t, 56.1, 56.5); $('#pe').style.transform = 'rotate(3deg)'; $('#pec').style.opacity = P(t, 56.3, 56.6);
+  $('#stage').style.opacity = 1 - P(t, 57.6, 58.0);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s8: '#s8', s9: '#s9', s10: '#s10', s11: '#end' };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  if (inS(t, 's1')) S1(t); if (inS(t, 's2')) S2(t); if (inS(t, 's3')) S3(t); if (inS(t, 's4')) S4(t); if (inS(t, 's5')) S5(t);
+  if (inS(t, 's6')) S6(t); if (inS(t, 's7')) S7(t); if (inS(t, 's8')) S8(t); if (inS(t, 's9')) S9(t); if (inS(t, 's10')) S10(t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  $('#vig').style.opacity = inS(t, 's9') || t >= T.s11[0] ? 0 : .9;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
