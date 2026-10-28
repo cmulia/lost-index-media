@@ -1,0 +1,72 @@
+{
+ "flow_id": "FHNOkK9d2EGTKAPf4pLa",
+ "sfx": {
+  "projector": {
+   "node_id": "q3sN6vr1novHE6tOWIlw",
+   "generation_id": "YH0thvS77YrMViEQ5EjM",
+   "duration": 3.030204,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "rocket": {
+   "node_id": "AlOkowNZ3vtvHWIIcJ3u",
+   "generation_id": "1R86nnWoSjy1AjTj7wMj",
+   "duration": 2.037551,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "marching": {
+   "node_id": "9ED8gAuovPaWhVy9WlMM",
+   "generation_id": "56LxZKgiiQ1QFlZ66QZQ",
+   "duration": 3.030204,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "melt": {
+   "node_id": "dW3hpyZS3tPtfOTc3NyS",
+   "generation_id": "LaYMsbd8ZtD8XmxspCIS",
+   "duration": 3.030204,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "fire": {
+   "node_id": "xOC9WHqnXAf85WhNTDPM",
+   "generation_id": "co588qZBcXGMHjmDBOut",
+   "duration": 3.030204,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "station": {
+   "node_id": "OhCw5xQj25KDMI3LcSbX",
+   "generation_id": "XnTi45Zpka5vSQ1ZGr0Y",
+   "duration": 4.04898,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "toy": {
+   "node_id": "hOmwClcd58AeoliYkK8i",
+   "generation_id": "WysZpBhhLABMv8fkzP6V",
+   "duration": 2.037551,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "barn_door": {
+   "node_id": "7h5GcSdC8ndDGUgPmTnv",
+   "generation_id": "34MT9a2HqXM6uADhpWAY",
+   "duration": 3.030204,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "applause": {
+   "node_id": "d60t3gbnVgz99cHtzjDe",
+   "generation_id": "C8ZLwdI0seTUhJocstoU",
+   "duration": 3.030204,
+   "url": "(signed URL expired; see generation_id)"
+  },
+  "music_box": {
+   "node_id": "clQVn69aK0wAYjxjvHE2",
+   "generation_id": "f2BkiIDRCl92bUxmFTtt",
+   "duration": 2.507755,
+   "url": "(signed URL expired; see generation_id)"
+  }
+ },
+ "music": {
+  "node_id": "XbttBIe6jx3Hxu7h0NLz",
+  "generation_id": "iPHxZYE7w53vxVs6Pzl7",
+  "duration": 58.032,
+  "file": "audio/music.mp3",
+  "url": "(signed URL expired; see generation_id)"
+ }
+}

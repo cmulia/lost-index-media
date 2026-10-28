@@ -1,0 +1,20 @@
+{
+ "episode": "vox_09_melies",
+ "video_seconds": 57,
+ "music": {
+  "prompt": "Whimsical early-cinema parlour instrumental at about one hundred beats per minute, original and not any known theme: a slightly out-of-tune upright piano playing a playful waltz, a music-box celesta and soft pizzicato strings. It turns melancholy and sparse in the middle, then warms and gently swells near the end before a final music-box note rings out.",
+  "duration_seconds": 58
+ },
+ "sfx": [
+  {"file": "projector", "prompt": "an antique hand-cranked film projector clattering and whirring, close", "duration_seconds": 3},
+  {"file": "rocket", "prompt": "a cartoonish whoosh of a small rocket followed by a soft squelchy thud", "duration_seconds": 2},
+  {"file": "marching", "prompt": "distant soldiers' boots marching on cobblestones, World War One era", "duration_seconds": 3},
+  {"file": "melt", "prompt": "film reels dropped into a metal vat, a bubbling hiss of something melting", "duration_seconds": 3},
+  {"file": "fire", "prompt": "a small bonfire crackling as papers and celluloid catch fire", "duration_seconds": 3},
+  {"file": "station", "prompt": "a 1920s Paris railway station ambience, distant steam train hiss, a conductor's whistle", "duration_seconds": 4},
+  {"file": "toy", "prompt": "a tin wind-up toy being wound with a key then clicking and whirring", "duration_seconds": 2},
+  {"file": "barn_door", "prompt": "an old wooden barn door creaking open, a dusty metal film tin being lifted", "duration_seconds": 3},
+  {"file": "applause", "prompt": "a warm theatre audience applauding, 1920s gala, rising then settling", "duration_seconds": 3},
+  {"file": "music_box", "prompt": "a small music box lid opening with a few delicate tinkling notes", "duration_seconds": 2.5}
+ ]
+}
