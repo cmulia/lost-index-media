@@ -1,0 +1,20 @@
+{
+ "episode": "vox_10_lucas",
+ "video_seconds": 57,
+ "music": {
+  "prompt": "Dry 1970s library-music funk groove at about one hundred beats per minute, original and not any known theme: warm electric piano, muted fingered bass, brushed drums and a bright toy-piano glint. It stays light and curious, drops to a sparse bass-and-piano pulse in the middle, then a warm string line swells near the end before a final soft electric-piano chord.",
+  "duration_seconds": 58
+ },
+ "sfx": [
+  {"file": "typewriter", "prompt": "a 1970s manual typewriter typing a short burst then the carriage return bell ding", "duration_seconds": 3},
+  {"file": "pen_sign", "prompt": "a fountain pen signing a paper contract on a wooden desk, close and crisp", "duration_seconds": 2},
+  {"file": "stamp", "prompt": "two heavy rubber stamps thumping down on paper, one after another", "duration_seconds": 2},
+  {"file": "blister", "prompt": "plastic toy blister packs rattling on metal pegboard hooks", "duration_seconds": 2},
+  {"file": "jingle", "prompt": "soft sleigh bells and a distant department store Christmas crowd murmur", "duration_seconds": 3},
+  {"file": "empty_box", "prompt": "an empty cardboard box being shaken, hollow, then the lid flipping open", "duration_seconds": 2},
+  {"file": "register", "prompt": "a vintage mechanical cash register ringing, the drawer sliding open with a bell", "duration_seconds": 2},
+  {"file": "coins", "prompt": "a cascade of coins pouring onto a pile, rich and satisfying", "duration_seconds": 3},
+  {"file": "vault", "prompt": "a heavy steel bank vault door unlocking with a deep clunk and slowly swinging open", "duration_seconds": 3},
+  {"file": "film_reel", "prompt": "a metal film can lid being lifted and a film reel softly spinning", "duration_seconds": 2.5}
+ ]
+}

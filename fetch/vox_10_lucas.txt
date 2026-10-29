@@ -1,0 +1,22 @@
+episodes/vox_10_lucas/assets/lucas_2024.jpg https://upload.wikimedia.org/wikipedia/commons/b/b2/George_Lucas_2024.jpg
+episodes/vox_10_lucas/assets/_pages/lucas_2024.html https://commons.wikimedia.org/wiki/File:George_Lucas_2024.jpg?action=raw
+episodes/vox_10_lucas/assets/lucas_2025.jpg https://upload.wikimedia.org/wikipedia/commons/c/c5/George_Lucas_by_Gage_Skidmore.jpg
+episodes/vox_10_lucas/assets/_pages/lucas_2025.html https://commons.wikimedia.org/wiki/File:George_Lucas_by_Gage_Skidmore.jpg?action=raw
+episodes/vox_10_lucas/assets/lucas_2009.jpg https://upload.wikimedia.org/wikipedia/commons/a/a0/George_Lucas_cropped_2009.jpg
+episodes/vox_10_lucas/assets/_pages/lucas_2009.html https://commons.wikimedia.org/wiki/File:George_Lucas_cropped_2009.jpg?action=raw
+episodes/vox_10_lucas/assets/lucas_2015.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Secretary_Kerry_Chats_With_2015_Kennedy_Center_Honors_Recipient_George_Lucas_%2823244763499%29.jpg/1600px-Secretary_Kerry_Chats_With_2015_Kennedy_Center_Honors_Recipient_George_Lucas_%2823244763499%29.jpg
+episodes/vox_10_lucas/assets/_pages/lucas_2015.html https://commons.wikimedia.org/wiki/File:Secretary_Kerry_Chats_With_2015_Kennedy_Center_Honors_Recipient_George_Lucas_(23244763499).jpg?action=raw
+episodes/vox_10_lucas/assets/skywalker_ranch.jpg https://upload.wikimedia.org/wikipedia/commons/0/00/Skywalker_Ranch_Ewok_Lake.jpg
+episodes/vox_10_lucas/assets/_pages/skywalker_ranch.html https://commons.wikimedia.org/wiki/File:Skywalker_Ranch_Ewok_Lake.jpg?action=raw
+episodes/vox_10_lucas/assets/letterman_dac.jpg https://upload.wikimedia.org/wikipedia/commons/f/f4/Letterman_Digital_Arts_Center%2C_Building_B.jpg
+episodes/vox_10_lucas/assets/_pages/letterman_dac.html https://commons.wikimedia.org/wiki/File:Letterman_Digital_Arts_Center,_Building_B.jpg?action=raw
+# Higgsfield results (downloaded directly; listed for provenance)
+episodes/vox_10_lucas/assets/register.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205036_f07825c2-837f-46f3-889d-30b009be25b7.png
+episodes/vox_10_lucas/assets/tower.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205035_f093d7e9-3847-4640-bf13-459599f00397.png
+episodes/vox_10_lucas/assets/pegboard.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205036_d2fe0c6c-20da-4ce0-bb55-c4e38e082a2d.png
+episodes/vox_10_lucas/assets/emptybox.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205035_2daf255d-139e-491f-965e-0cba971e3bec.png
+episodes/vox_10_lucas/assets/contract.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205035_0e501cf3-844b-4b8d-b31b-63c3b69757b8.png
+episodes/vox_10_lucas/audio/takes/vesper.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205039_1c59be7e-29a5-4548-b0c3-990ddfae65a8.mp3
+episodes/vox_10_lucas/audio/takes/quinn.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205038_bc43b0d2-8679-4783-96d2-ab17b3a53222.mp3
+episodes/vox_10_lucas/assets/vault.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205036_a13004da-5276-4955-985e-6e21a4b6d88d.png
+episodes/vox_10_lucas/assets/register_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205322_e7f82419-be6f-4b24-987e-7487bafd7171.png
