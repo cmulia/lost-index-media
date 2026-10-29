@@ -20,3 +20,6 @@ episodes/vox_10_lucas/audio/takes/vesper.mp3 https://d8j0ntlcm91z4.cloudfront.ne
 episodes/vox_10_lucas/audio/takes/quinn.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205038_bc43b0d2-8679-4783-96d2-ab17b3a53222.mp3
 episodes/vox_10_lucas/assets/vault.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205036_a13004da-5276-4955-985e-6e21a4b6d88d.png
 episodes/vox_10_lucas/assets/register_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205322_e7f82419-be6f-4b24-987e-7487bafd7171.png
+episodes/vox_10_lucas/assets/clips/vault.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205325_3c3a1d35-1b1d-4ae7-8b8e-d605de30fb78.mp4
+episodes/vox_10_lucas/assets/clips/emptybox.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205325_03c4c171-3339-4f7c-ba90-77fbcc4049f3.mp4
+episodes/vox_10_lucas/assets/clips/tower.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261029_205327_b872f8ca-bfda-467a-8095-d10d16891fd9.mp4

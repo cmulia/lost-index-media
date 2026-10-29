@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+:root { --ink: #1b1712; --cream: #f6efdf; --mustard: #e8b923; --tang: #f06a28; --teal: #1f6f73; --red: #d83a2a; --dim: #6d6352; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--cream); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--cream); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--cream); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .08; mix-blend-mode: multiply; pointer-events: none; }
+#dots { inset: 0; pointer-events: none; opacity: .10; background-image: radial-gradient(circle, #1b1712 1.2px, transparent 1.6px); background-size: 7px 7px; mix-blend-mode: multiply; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--ink); }
+#hdr span { background: var(--cream); padding: 6px 12px; border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--tang); }
+.photo { position: absolute; background: #fff; padding: 18px 18px 18px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.04) saturate(1.05); }
+.photo::before, .photo::after { content: ''; position: absolute; width: 150px; height: 44px; background: rgba(246,230,170,.82); top: -18px; }
+.photo::before { left: -30px; transform: rotate(-28deg); }
+.photo::after { right: -30px; transform: rotate(28deg); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--ink); background: rgba(246,239,223,.95); padding: 4px 10px; white-space: nowrap; border: 1.5px solid var(--ink); }
+.tag { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 3px; color: var(--ink); background: var(--mustard); padding: 10px 18px 10px 48px; white-space: nowrap; border: 3px solid var(--ink); border-radius: 0 10px 10px 0; }
+.tag::before { content: ''; position: absolute; left: 14px; top: 50%; width: 16px; height: 16px; margin-top: -8px; border-radius: 50%; background: var(--cream); border: 3px solid var(--ink); }
+.hl { position: absolute; left: 60px; background: var(--cream); padding: 14px 28px 20px; display: inline-block; border: 4px solid var(--ink); box-shadow: 12px 12px 0 var(--tang); }
+.big { font-family: IK; color: var(--ink); line-height: .95; letter-spacing: -2px; }
+.card { position: absolute; background: var(--cream); color: var(--ink); padding: 24px 30px; border: 4px solid var(--ink); box-shadow: 12px 12px 0 0 var(--teal); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: var(--dim); }
+.card .n { font-family: IK; font-size: 120px; line-height: 1; margin-top: 8px; letter-spacing: -2px; }
+.card .s { font-family: IS; font-size: 34px; margin-top: 10px; }
+.stamp { position: absolute; font-family: IK; font-size: 84px; letter-spacing: 4px; color: var(--red); border: 9px solid var(--red); padding: 4px 26px; background: rgba(246,239,223,.55); mix-blend-mode: multiply; }
+.eng { font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: var(--ink); border: 3px solid var(--mustard); padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(246,239,223,.4); padding: 0 5px; }
+#cap .w.on { color: var(--ink); background: var(--mustard); }
+#cap .w.done { color: var(--cream); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/contract.png">
+    <div class="photo" id="p1" style="left:520px;top:180px;width:500px;height:640px;transform:rotate(3deg)"><img src="img/lucas_2024.jpg" style="object-position:50% 25%"></div>
+    <div class="credit" id="p1c" style="left:300px;top:850px">George Lucas, Cannes 2024 · Kevin Payravi · CC BY-SA 4.0</div>
+    <div class="hl" id="h1" style="top:1060px">
+      <div class="big" style="font-size:104px">George Lucas</div>
+      <div class="big" style="font-size:104px">turned down</div>
+      <div class="big" style="font-size:150px;color:var(--tang)">a raise.</div>
+    </div>
+  </div>
+
+  <!-- S2 fee -->
+  <div id="s2" class="scene">
+    <img id="s2bg" class="full" src="img/contract.png" style="opacity:.45">
+    <div class="tag" id="sT" style="left:70px;top:190px">STAR WARS · 1977</div>
+    <div class="photo" id="p2" style="left:650px;top:300px;width:370px;height:500px"><img src="img/lucas_2009.jpg" style="object-position:50% 25%"></div>
+    <div class="credit" id="p2c" style="left:460px;top:830px">Lucas, Venice 2009 · nicolas genin · CC BY-SA 2.0</div>
+    <div class="card" id="fee" style="left:70px;top:320px;width:540px;transform:rotate(-2deg)"><div class="l">REPORTEDLY PAID</div><div class="n" id="feeN" style="font-size:112px">$150,000</div><div class="s">to write and direct</div></div>
+    <div class="hl" id="s2h" style="top:1150px"><div class="big" style="font-size:96px">urged to ask</div><div class="big" style="font-size:96px;color:var(--tang)">for more.</div></div>
+  </div>
+
+  <!-- S3 rights -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/pegboard.png" style="opacity:.35">
+    <div class="tag" id="rT" style="left:70px;top:190px">INSTEAD, HE ASKED FOX FOR…</div>
+    <div class="photo" id="p3" style="left:90px;top:300px;width:560px;height:700px;transform:rotate(-2deg)"><img src="img/lucas_2025.jpg" style="object-position:50% 25%"></div>
+    <div class="credit" id="p3c" style="left:90px;top:1030px">Lucas, 2025 · Gage Skidmore · CC BY-SA 3.0</div>
+    <div class="stamp" id="st1" style="left:420px;top:1110px">SEQUELS</div>
+    <div class="stamp" id="st2" style="left:150px;top:1300px">MERCHANDISE</div>
+  </div>
+
+  <!-- S4 Fox -->
+  <div id="s4" class="scene">
+    <img id="s4bg" class="full" src="img/pegboard.png">
+    <div class="tag" id="fT" style="left:70px;top:190px">THE STORY GOES</div>
+    <div class="hl" id="s4h" style="top:1080px"><div class="big" style="font-size:92px">Fox thought it had</div><div class="big" style="font-size:118px;color:var(--tang)">the better deal.</div></div>
+    <div class="credit" id="s4c" style="left:70px;top:1480px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S5 Christmas 1977 -->
+  <div id="s5" class="scene">
+    <img id="s5bg" class="full" src="img/emptybox/f001.jpg">
+    <div class="tag" id="cT" style="left:70px;top:190px">CHRISTMAS 1977</div>
+    <div class="card" id="nr" style="left:70px;top:300px;width:620px;transform:rotate(-2deg)"><div class="l">THE TOYS WERE</div><div class="n" style="font-size:104px">not ready.</div></div>
+    <div class="hl" id="s5h" style="top:1150px"><div class="big" style="font-size:96px">an empty box</div><div class="big" style="font-size:80px;color:var(--tang)">with a certificate.</div></div>
+    <div class="credit" id="s5c" style="left:70px;top:1490px">illustration drawn for this video · "Early Bird" package per The Strong museum</div>
+  </div>
+
+  <!-- S6 shoppers -->
+  <div id="s6" class="scene" style="background:var(--tang)">
+    <img id="s6b" class="a" src="img/register_cut.png" style="left:90px;top:240px;width:900px">
+    <div class="hl" id="s6h" style="top:1200px"><div class="big" style="font-size:104px">Shoppers</div><div class="big" style="font-size:104px;color:var(--tang)">bought it anyway.</div></div>
+    <div class="credit" id="s6c" style="left:70px;top:190px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S7 Fortune 1999 -->
+  <div id="s7" class="scene" style="background:var(--cream)">
+    <img id="s7bg" class="full" src="img/tower/f001.jpg" style="opacity:.22">
+    <div class="tag" id="fo" style="left:70px;top:190px">FORTUNE · 1999</div>
+    <svg class="a" id="bars" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <line x1="120" y1="1250" x2="960" y2="1250" stroke="#1b1712" stroke-width="6"/>
+      <rect id="b1" x="190" y="1250" width="280" height="0" fill="#1f6f73" stroke="#1b1712" stroke-width="5"/>
+      <rect id="b2" x="600" y="1250" width="280" height="0" fill="#f06a28" stroke="#1b1712" stroke-width="5"/>
+    </svg>
+    <div class="a eng" id="l1" style="left:190px;top:1275px;width:280px;text-align:center">THE FILMS</div>
+    <div class="a eng" id="l2" style="left:560px;top:1275px;width:360px;text-align:center">MERCHANDISE</div>
+    <div class="a big" id="x2" style="left:620px;top:420px;font-size:150px;color:var(--tang)">×2</div>
+    <div class="credit" id="s7c" style="left:70px;top:1340px">schematic · drawn for this video · ratio as reported by Fortune, 1999</div>
+  </div>
+
+  <!-- S8 kept 35 years, sold to Disney -->
+  <div id="s8" class="scene">
+    <img id="s8bg" class="full" src="img/vault.png" style="opacity:.25">
+    <div class="photo" id="p8" style="left:80px;top:300px;width:920px;height:560px;transform:rotate(-1.5deg)"><img src="img/skywalker_ranch.jpg" style="object-position:50% 50%"></div>
+    <div class="credit" id="p8c" style="left:80px;top:890px">Skywalker Ranch, Lucas's California base · Mike McCune · CC BY 2.0</div>
+    <div class="photo" id="p8b" style="left:80px;top:300px;width:920px;height:560px;transform:rotate(1.5deg)"><img src="img/letterman_dac.jpg" style="object-position:50% 50%"></div>
+    <div class="credit" id="p8bc" style="left:80px;top:890px">Lucasfilm, San Francisco · Frank Schulenburg · CC BY-SA 4.0</div>
+    <div class="tag" id="yT" style="left:70px;top:190px">KEPT FOR 35 YEARS</div>
+    <div class="card" id="yr" style="left:70px;top:990px;width:560px"><div class="l">RIGHTS HELD</div><div class="n" id="yrN">1977</div></div>
+    <div class="card" id="dz" style="left:300px;top:1180px;width:700px;transform:rotate(2deg);box-shadow:12px 12px 0 var(--tang)"><div class="l">2012 · SOLD HIS COMPANY TO DISNEY</div><div class="n" style="font-size:110px">≈ $4 billion</div></div>
+  </div>
+
+  <!-- S9 reason + twist -->
+  <div id="s9" class="scene">
+    <img id="s9bg" class="full" src="img/vault/f001.jpg">
+    <div class="photo" id="p9" style="left:600px;top:200px;width:400px;height:500px;transform:rotate(3deg)"><img src="img/lucas_2015_crop.jpg" style="object-position:50% 20%"></div>
+    <div class="credit" id="p9c" style="left:330px;top:730px">Lucas, Washington 2015 · U.S. State Dept · public domain</div>
+    <div class="hl" id="s9a" style="top:820px"><div class="big" style="font-size:66px">“Star Wars could live</div><div class="big" style="font-size:66px">beyond me.” — Lucas, 2012</div></div>
+    <div class="hl" id="s9b" style="top:1080px;box-shadow:12px 12px 0 var(--teal)"><div class="big" style="font-size:96px">A raise is paid once.</div></div>
+    <div class="hl" id="s9c" style="top:1290px"><div class="big" style="font-size:96px">A story</div><div class="big" style="font-size:118px;color:var(--tang)">keeps paying.</div></div>
+    <div class="credit" id="s9d" style="left:70px;top:1560px">illustration drawn for this video</div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene" style="background:var(--mustard)">
+    <div class="a eng" id="ek" style="left:70px;top:300px;font-size:30px"></div>
+    <div class="a" style="left:66px;right:50px;top:370px">
+      <div style="overflow:hidden"><div class="big" id="e1" style="font-size:180px">The raise</div></div>
+      <div style="overflow:hidden"><div class="big" id="e2" style="font-size:180px">or the</div></div>
+      <div style="overflow:hidden"><div class="big" id="e3" style="font-size:180px;color:var(--cream);-webkit-text-stroke:5px var(--ink)">rights?</div></div>
+    </div>
+    <img id="ecut" class="a" src="img/register_cut.png" style="left:700px;top:790px;width:300px">
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1360px;font-family:PR;font-size:24px;line-height:1.5;color:var(--ink)">Sources: Brian Jay Jones, George Lucas: A Life (2016); Fortune (1999); The Strong National Museum of Play; NPR (2012).<br>Photos via Wikimedia Commons: Kevin Payravi (CC BY-SA 4.0); nicolas genin (CC BY-SA 2.0); Gage Skidmore (CC BY-SA 3.0); Mike McCune (CC BY 2.0); Frank Schulenburg (CC BY-SA 4.0); U.S. Department of State (public domain). Illustrations and diagrams drawn for this video.<br><br>explained no. 10 · @lost_index</div>
+  </div>
+
+  <div id="dots" class="a"></div>
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 10</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+const pop = (el, t, t0) => { const k = E.back(P(t, t0, t0 + .4)); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `scale(${k})`; el.style.transformOrigin = '0 50%'; };
+const stamp = (el, t, t0, r) => { const k = P(t, t0, t0 + .18); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `rotate(${r}deg) scale(${2.2 - 1.2 * E.out(k)})`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 9;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = 160 + s % 95; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 3.3], s2: [3.3, 10.15], s3: [10.15, 17.05], s4: [17.05, 20.75], s5: [20.75, 28.35], s6: [28.35, 30.35], s7: [30.35, 36.75], s8: [36.75, 44.55], s9: [44.55, 53.2], s11: [53.2, 56.0] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  $('#s1bg').style.transform = `scale(${1.04 + t * .01})`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 3.05, 3.3));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .3);
+  pop($('#sT'), t, 3.4);
+  $('#p2').style.opacity = P(t, 3.5, 3.9); $('#p2').style.transform = `rotate(3deg) scale(${1 + (t - 3.3) * .005})`; $('#p2c').style.opacity = P(t, 3.7, 4.0);
+  fadeUp($('#fee'), t, 4.0, .45, 50);
+  const k = E.out(P(t, 4.6, 6.4)); $('#feeN').textContent = '$' + (Math.round(150 * k)) + ',000';
+  fadeUp($('#s2h'), t, 8.0, .5, 40);
+}
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  pop($('#rT'), t, 10.25);
+  $('#p3').style.opacity = P(t, 10.3, 10.7); $('#p3c').style.opacity = P(t, 10.5, 10.8);
+  stamp($('#st1'), t, 14.3, -6); stamp($('#st2'), t, 16.2, 4);
+}
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  $('#s4bg').style.transform = `scale(${1.03 + (t - T.s4[0]) * .01})`;
+  pop($('#fT'), t, 17.15); $('#s4c').style.opacity = P(t, 17.3, 17.6);
+  fadeUp($('#s4h'), t, 18.9, .5, 40);
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  frameSeq($('#s5bg'), 'emptybox', t, T.s5[0]);
+  pop($('#cT'), t, 20.9); $('#s5c').style.opacity = P(t, 21.0, 21.3);
+  fadeUp($('#nr'), t, 23.3, .45, 50);
+  fadeUp($('#s5h'), t, 26.3, .5, 40);
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .25);
+  const k = E.back(P(t, 28.4, 28.8)); $('#s6b').style.transform = `scale(${.6 + .4 * k}) rotate(${Math.sin(t * 3) * 1.2}deg)`;
+  fadeUp($('#s6h'), t, 28.6, .4, 40); $('#s6c').style.opacity = P(t, 28.6, 28.9);
+}
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  frameSeq($('#s7bg'), 'tower', t, T.s7[0]);
+  pop($('#fo'), t, 30.45);
+  const h1 = 300 * E.out(P(t, 31.0, 31.8)), h2 = 600 * E.out(P(t, 33.4, 34.8));
+  $('#b1').setAttribute('y', 1250 - h1); $('#b1').setAttribute('height', h1);
+  $('#b2').setAttribute('y', 1250 - h2); $('#b2').setAttribute('height', h2);
+  $('#l1').style.opacity = P(t, 31.0, 31.3); $('#l2').style.opacity = P(t, 33.4, 33.7);
+  pop($('#x2'), t, 34.6); $('#s7c').style.opacity = P(t, 31.2, 31.5);
+}
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  pop($('#yT'), t, 36.85);
+  $('#p8').style.opacity = P(t, 36.9, 37.3) * (1 - P(t, 40.6, 40.9)); $('#p8c').style.opacity = $('#p8').style.opacity;
+  $('#p8b').style.opacity = P(t, 40.6, 40.9); $('#p8bc').style.opacity = P(t, 40.7, 41.0);
+  fadeUp($('#yr'), t, 37.2, .4, 40);
+  $('#yrN').textContent = Math.round(1977 + 35 * E.io(P(t, 37.6, 39.6)));
+  fadeUp($('#dz'), t, 41.7, .45, 50);
+}
+function S9(t) {
+  xfade('#s9', t, 's9', .3);
+  frameSeq($('#s9bg'), 'vault', t, T.s9[0]);
+  $('#p9').style.opacity = P(t, 44.7, 45.1); $('#p9c').style.opacity = P(t, 44.9, 45.2); $('#s9d').style.opacity = P(t, 44.9, 45.2);
+  fadeUp($('#s9a'), t, 46.1, .5, 30);
+  fadeUp($('#s9b'), t, 48.45, .45, 40);
+  fadeUp($('#s9c'), t, 50.2, .5, 40);
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 53.2, 53.6);
+  $('#ek').textContent = typed('WHICH WOULD YOU HAVE TAKEN?', t, 53.3, 32);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 53.5 + i * .15, 54.0 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 53.9, 54.3);
+  const k = E.back(P(t, 53.8, 54.3)); $('#ecut').style.opacity = t >= 53.8 ? 1 : 0; $('#ecut').style.transform = `scale(${k}) rotate(6deg)`;
+  $('#stage').style.opacity = 1 - P(t, 55.6, 56.0);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s8: '#s8', s9: '#s9', s11: '#end' };
+const FN = { s1: S1, s2: S2, s3: S3, s4: S4, s5: S5, s6: S6, s7: S7, s8: S8, s9: S9 };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  for (const k of Object.keys(FN)) if (inS(t, k)) FN[k](t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
