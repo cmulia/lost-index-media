@@ -1,0 +1,62 @@
+{
+ "flow_id": "JvDbjUxTdDurd9LBErDg",
+ "sfx": {
+  "wind": {
+   "node_id": "HSC8b8XJkKP7Lyp9GmpS",
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/hPQajl0Yiq1vW0BYIJ7d/GcGrpyYejO0fCjUe8Taf/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "sword": {
+   "node_id": "EWTB6rQLI40nqjDODUZL",
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/B8PQtwi5PZSKKScL8jLs/vBsdD5fu1aBNOqSBEGcu/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "spurs": {
+   "node_id": "oHqrBciggnwaHvssDrgT",
+   "duration": 3.03,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/e0Jscx9AhMSdDWviyVXs/9Fo5EBBU1XDqqQA0mqkk/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "gavel": {
+   "node_id": "D4gUiFXXuqVL9k2yUit7",
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/leTUk1oomUjtj99CW4p3/CYoo145b4gMdpZd75RgR/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "brush": {
+   "node_id": "sVOzMqaqbBJBrcJeo2l5",
+   "duration": 3.03,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/RkzxsZi6hoZGr1s8Bj48/pZpk7Z43cZG95HyGegE2/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "stamp": {
+   "node_id": "VXMT0DXiGegNa6IRh508",
+   "duration": 1.045,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/MVW5p3cJF15qyZ3oEq8O/uQx9JW9FlLcFqmBQsVkL/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "coins": {
+   "node_id": "jspqInI016Zyedw3wTD6",
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/Rd2meDFi6K3IKYolxzbk/m3twZ9NLBo5eAndQXDEj/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "projector": {
+   "node_id": "i1mImewzrWby4jLmjnDm",
+   "duration": 4.049,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/RDqsEzIf4CMI5bYi7vSS/wnnxhvNDcCztjzLbwAbP/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "pages": {
+   "node_id": "VbiIGzzsTXuYU2eOy1dB",
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/9V1a49wLHxfeO1473cwe/waJPKYtRpXwbRKnU1wzF/content.mp3 (signed query omitted; expired after 2h)"
+  },
+  "whoosh": {
+   "node_id": "jgePyKicbE1Nzkq0s0n0",
+   "duration": 2.038,
+   "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/6EEJdbzsrkmZFdHPPhtr/gE13TAyQLx3L9ACCtGoa/content.mp3 (signed query omitted; expired after 2h)"
+  }
+ },
+ "music": {
+  "node_id": "HGOhT10cYgy7GDGZoGR6",
+  "file": "audio/music.mp3",
+  "takes": 1,
+  "duration": 59.04,
+  "url": "https://storage.googleapis.com/xi-backend/database/workspace/84447f17c2de40399898299b10d109df/content_generation/BlrBiyiiNszp5n6V1fkf/NeK8osIn06lNZFXvg4Pi/content.mp3 (signed query omitted)"
+ }
+}

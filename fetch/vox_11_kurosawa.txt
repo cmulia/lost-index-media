@@ -2,3 +2,15 @@ episodes/vox_11_kurosawa/assets/_pages/cat_Akira_Kurosawa.json https://commons.w
 episodes/vox_11_kurosawa/assets/_pages/cat_Dashiell_Hammett.json https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=categorymembers&gcmtype=file&gcmlimit=60&prop=imageinfo&iiprop=url|size&iiurlwidth=1600&iiextmetadatafilter=LicenseShortName|Artist|DateTimeOriginal|ImageDescription&iiprop=url|size|extmetadata&gcmtitle=Category:Dashiell_Hammett
 episodes/vox_11_kurosawa/assets/_pages/cat_Toho_Studios.json https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=categorymembers&gcmtype=file&gcmlimit=60&prop=imageinfo&iiprop=url|size&iiurlwidth=1600&iiextmetadatafilter=LicenseShortName|Artist|DateTimeOriginal|ImageDescription&iiprop=url|size|extmetadata&gcmtitle=Category:Toho_Studios
 episodes/vox_11_kurosawa/assets/_pages/cat_Tabernas_Desert.json https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=categorymembers&gcmtype=file&gcmlimit=60&prop=imageinfo&iiprop=url|size&iiurlwidth=1600&iiextmetadatafilter=LicenseShortName|Artist|DateTimeOriginal|ImageDescription&iiprop=url|size|extmetadata&gcmtitle=Category:Tabernas_Desert
+episodes/vox_11_kurosawa/assets/kur_set.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Akirakurosawa-onthesetof7samurai-1953-page88_%28cropped%29.jpg?width=1600
+episodes/vox_11_kurosawa/assets/_pages/kur_set.html https://commons.wikimedia.org/wiki/File:Akirakurosawa-onthesetof7samurai-1953-page88_%28cropped%29.jpg?action=raw
+episodes/vox_11_kurosawa/assets/kur_1961.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Kinema-Junpo-1961-October-late-1.jpg?width=1600
+episodes/vox_11_kurosawa/assets/_pages/kur_1961.html https://commons.wikimedia.org/wiki/File:Kinema-Junpo-1961-October-late-1.jpg?action=raw
+episodes/vox_11_kurosawa/assets/kur_1960.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Kinema-Junpo-1960-December-Special-1_%28cropped%29.jpg?width=1600
+episodes/vox_11_kurosawa/assets/_pages/kur_1960.html https://commons.wikimedia.org/wiki/File:Kinema-Junpo-1960-December-Special-1_%28cropped%29.jpg?action=raw
+episodes/vox_11_kurosawa/assets/toho.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Toho_Studios_Entrance%2C_2026.jpg?width=1600
+episodes/vox_11_kurosawa/assets/_pages/toho.html https://commons.wikimedia.org/wiki/File:Toho_Studios_Entrance%2C_2026.jpg?action=raw
+episodes/vox_11_kurosawa/assets/toho2.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Toho_studios_2022_spring.jpg?width=1600
+episodes/vox_11_kurosawa/assets/_pages/toho2.html https://commons.wikimedia.org/wiki/File:Toho_studios_2022_spring.jpg?action=raw
+episodes/vox_11_kurosawa/assets/hammett.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Dashiell_Hammett_%22Thin_Man%22_portrait.jpg?width=1600
+episodes/vox_11_kurosawa/assets/_pages/hammett.html https://commons.wikimedia.org/wiki/File:Dashiell_Hammett_%22Thin_Man%22_portrait.jpg?action=raw

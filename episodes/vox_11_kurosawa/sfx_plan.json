@@ -1,0 +1,20 @@
+{
+ "episode": "vox_11_kurosawa",
+ "video_seconds": 58,
+ "music": {
+  "prompt": "Sparse, original instrumental blending a lonely spaghetti-western mood with Japanese folk colour at about seventy beats per minute: twangy baritone guitar, breathy shakuhachi, soft taiko and a dry wood block, not any known theme. It opens tense and empty like a dusty street at noon, settles into a quiet plucked shamisen-and-guitar pulse in the middle, then builds gently with low taiko and a held shakuhachi note before ending on one soft guitar harmonic.",
+  "duration_seconds": 59
+ },
+ "sfx": [
+  {"file": "wind", "prompt": "dry desert wind gusting through an empty street, dust and grit, distant creaking wooden sign", "duration_seconds": 4},
+  {"file": "sword", "prompt": "a katana slowly drawn from a wooden scabbard, crisp metallic ring", "duration_seconds": 2},
+  {"file": "spurs", "prompt": "cowboy boots with jingling spurs walking slowly on wooden boardwalk planks", "duration_seconds": 3},
+  {"file": "gavel", "prompt": "a single wooden judge's gavel strike in a quiet courtroom with short reverb", "duration_seconds": 2},
+  {"file": "brush", "prompt": "a calligraphy brush stroking across rice paper, soft and close, then paper being folded", "duration_seconds": 3},
+  {"file": "stamp", "prompt": "a heavy stone seal stamp pressed firmly onto paper, one solid thump", "duration_seconds": 1},
+  {"file": "coins", "prompt": "old metal coins clinking and settling onto a brass scale pan", "duration_seconds": 2},
+  {"file": "projector", "prompt": "a vintage film projector starting up and running, rhythmic clatter of the reel", "duration_seconds": 4},
+  {"file": "pages", "prompt": "flipping through the pages of an old paperback book quickly, then it snaps shut", "duration_seconds": 2},
+  {"file": "whoosh", "prompt": "a soft airy whoosh transition with a faint wooden clack at the end", "duration_seconds": 2}
+ ]
+}
