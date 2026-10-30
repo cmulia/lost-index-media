@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+:root { --ink: #16130f; --washi: #efe6d2; --red: #c8361f; --sepia: #a87b4f; --grey: #6f685c; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--washi); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--washi); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--washi); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .07; mix-blend-mode: multiply; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--ink); }
+#hdr span { background: var(--washi); padding: 6px 12px; border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--red); }
+.photo { position: absolute; background: #fbf7ec; padding: 16px; box-shadow: 0 16px 36px rgba(0,0,0,.32); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.06) sepia(.18); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--ink); background: rgba(239,230,210,.95); padding: 4px 10px; white-space: nowrap; border: 1.5px solid var(--ink); }
+.tag { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 3px; color: var(--washi); background: var(--ink); padding: 10px 18px 10px 50px; white-space: nowrap; border-left: 14px solid var(--red); }
+.hl { position: absolute; left: 60px; background: var(--washi); padding: 12px 30px 22px; display: inline-block; border-top: 6px solid var(--ink); border-bottom: 6px solid var(--ink); box-shadow: 0 14px 30px rgba(0,0,0,.18); }
+.big { font-family: SI; color: var(--ink); line-height: .98; letter-spacing: -1px; }
+.red { color: var(--red); }
+.card { position: absolute; background: var(--washi); color: var(--ink); padding: 22px 30px; border: 4px solid var(--ink); box-shadow: 12px 12px 0 0 var(--red); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: var(--grey); }
+.card .n { font-family: SI; font-size: 104px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: PR; font-size: 26px; margin-top: 10px; }
+.seal { position: absolute; font-family: IK; font-size: 92px; letter-spacing: 6px; color: var(--red); border: 10px solid var(--red); padding: 2px 24px; background: rgba(239,230,210,.5); mix-blend-mode: multiply; border-radius: 6px; }
+.eng { font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: var(--ink); border-bottom: 6px solid var(--red); padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(239,230,210,.4); padding: 0 5px; }
+#cap .w.on { color: var(--washi); background: var(--red); }
+#cap .w.done { color: var(--washi); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/street/f001.jpg">
+    <div class="photo" id="p1" style="left:560px;top:170px;width:460px;height:600px;transform:rotate(3deg)"><img src="img/kur_set.jpg" style="object-position:50% 20%"></div>
+    <div class="credit" id="p1c" style="left:420px;top:800px">Kurosawa on set, 1953 · Eiga no Tomo · public domain</div>
+    <div class="hl" id="h1" style="top:1000px">
+      <div class="big" style="font-size:112px">A rip-off of</div>
+      <div class="big" style="font-size:112px">Kurosawa's film</div>
+      <div class="big red" style="font-size:150px">paid him.</div>
+    </div>
+  </div>
+
+  <!-- S2 Yojimbo 1961 -->
+  <div id="s2" class="scene">
+    <img id="s2bg" class="full" src="img/street.png" style="opacity:.35">
+    <div class="tag" id="yT" style="left:70px;top:190px">YOJIMBO · 1961</div>
+    <div class="photo" id="p2" style="left:70px;top:520px;width:620px;height:520px;transform:rotate(-2deg)"><img src="img/kur_1961.jpg" style="object-position:60% 30%"></div>
+    <div class="credit" id="p2c" style="left:70px;top:1062px;font-size:18px">Mifune &amp; Kurosawa with Mifune's Venice prize for Yojimbo, 1961 · Kinema Junpo · PD</div>
+    <svg class="a" id="gangs" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <g id="gA"><rect x="70" y="1130" width="300" height="200" fill="#16130f"/><text x="220" y="1245" text-anchor="middle" font-family="PM" font-size="34" fill="#efe6d2" letter-spacing="3">GANG A</text></g>
+      <g id="gB"><rect x="710" y="1130" width="300" height="200" fill="#16130f"/><text x="860" y="1245" text-anchor="middle" font-family="PM" font-size="34" fill="#efe6d2" letter-spacing="3">GANG B</text></g>
+      <g id="ron"><circle cx="540" cy="1230" r="62" fill="#c8361f"/><text x="540" y="1242" text-anchor="middle" font-family="PM" font-size="26" fill="#efe6d2">RŌNIN</text></g>
+      <path id="arA" d="M470 1230 L390 1230" stroke="#c8361f" stroke-width="8" marker-end="url(#ah)"/>
+      <path id="arB" d="M610 1230 L690 1230" stroke="#c8361f" stroke-width="8" marker-end="url(#ah)"/>
+      <defs><marker id="ah" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#c8361f"/></marker></defs>
+    </svg>
+    <div class="credit" id="s2c" style="left:70px;top:1360px">schematic · drawn for this video</div>
+    <div class="card" id="nm" style="left:560px;top:290px;width:460px;transform:rotate(2deg)"><div class="l">THE HERO</div><div class="n" style="font-size:84px">a nameless samurai</div></div>
+  </div>
+
+  <!-- S3 Fistful 1964 -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/split/f001.jpg">
+    <div class="tag" id="fT" style="left:70px;top:190px">A FISTFUL OF DOLLARS · 1964</div>
+    <div class="card" id="leo" style="left:70px;top:300px;width:600px;transform:rotate(-2deg)"><div class="l">DIRECTED BY</div><div class="n" style="font-size:96px">Sergio Leone</div><div class="s">Italy · three years later</div></div>
+    <div class="hl" id="s3h" style="top:1150px"><div class="big" style="font-size:118px">Same story.</div><div class="big red" style="font-size:118px">With cowboys.</div></div>
+    <div class="credit" id="s3c" style="left:70px;top:1500px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S4 Toho sued -->
+  <div id="s4" class="scene">
+    <img id="s4bg" class="full" src="img/street.png" style="opacity:.25">
+    <div class="photo" id="p4" style="left:70px;top:280px;width:940px;height:620px;transform:rotate(-1.5deg)"><img src="img/toho2.jpg" style="object-position:50% 50%;filter:contrast(1.04)"></div>
+    <div class="credit" id="p4c" style="left:70px;top:925px">Toho Studios, Tokyo · Kirin7739 · CC BY-SA 4.0</div>
+    <div class="card" id="rt" style="left:70px;top:1030px;width:700px"><div class="l">THE REMAKE RIGHTS</div><div class="n" style="font-size:96px">never bought.</div></div>
+    <div class="seal" id="sued" style="left:600px;top:1270px">SUED</div>
+  </div>
+
+  <!-- S5 letter -->
+  <div id="s5" class="scene">
+    <img id="s5bg" class="full" src="img/letter.png">
+    <div class="tag" id="lT" style="left:70px;top:190px">KUROSAWA TO LEONE · REPORTEDLY</div>
+    <div class="photo" id="p5" style="left:640px;top:290px;width:380px;height:480px;transform:rotate(3deg)"><img src="img/kur_1960.jpg" style="object-position:50% 25%"></div>
+    <div class="credit" id="p5c" style="left:500px;top:795px">Kurosawa · Kinema Junpo · public domain</div>
+    <div class="hl" id="s5a" style="top:960px"><div class="big" style="font-size:100px">a very good movie…</div></div>
+    <div class="hl" id="s5b" style="top:1160px"><div class="big" style="font-size:100px">but it was</div><div class="big red" style="font-size:130px">his movie.</div></div>
+    <div class="credit" id="s5c" style="left:70px;top:1500px">paraphrase, as reported by film historians · illustration drawn for this video</div>
+  </div>
+
+  <!-- S6 settled -->
+  <div id="s6" class="scene" style="background:var(--ink)">
+    <img id="s6b" class="a" src="img/scale_cut.png" style="left:160px;top:250px;width:760px">
+    <div class="tag" id="sT" style="left:70px;top:190px;background:var(--red);border-left-color:var(--washi)">SETTLED OUT OF COURT</div>
+    <div class="card" id="us" style="left:70px;top:1140px;width:700px;transform:rotate(-1.5deg)"><div class="l">BEFORE THE US RELEASE</div><div class="n">1967</div></div>
+    <div class="credit" id="s6c" style="left:70px;top:1480px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S7 share -->
+  <div id="s7" class="scene">
+    <img id="s7bg" class="full" src="img/scale.png" style="opacity:.2">
+    <div class="tag" id="shT" style="left:70px;top:190px">REPORTS SAY</div>
+    <div class="card" id="sh" style="left:70px;top:290px;width:760px;transform:rotate(-1.5deg)"><div class="l">KUROSAWA'S SIDE GOT</div><div class="n" style="font-size:88px">a share of worldwide takings</div></div>
+    <svg class="a" id="bars" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <line x1="120" y1="1330" x2="960" y2="1330" stroke="#16130f" stroke-width="6"/>
+      <rect id="b1" x="190" y="1330" width="280" height="0" fill="#a87b4f" stroke="#16130f" stroke-width="5"/>
+      <rect id="b2" x="600" y="1330" width="280" height="0" fill="#c8361f" stroke="#16130f" stroke-width="5"/>
+    </svg>
+    <div class="a eng" id="bl1" style="left:150px;top:1355px;width:360px;text-align:center">YOJIMBO</div>
+    <div class="a eng" id="bl2" style="left:560px;top:1355px;width:360px;text-align:center">THE SETTLEMENT</div>
+    <div class="a big" id="q" style="left:640px;top:700px;font-size:120px;color:var(--red)">more?</div>
+    <div class="credit" id="s7c" style="left:70px;top:1420px">schematic · not to scale · "the story goes" — figures unconfirmed</div>
+  </div>
+
+  <!-- S8 Hammett -->
+  <div id="s8" class="scene">
+    <img id="s8bg" class="full" src="img/pulps.png">
+    <div class="tag" id="hT" style="left:70px;top:190px">BUT YOJIMBO HAD BORROWED TOO</div>
+    <div class="photo" id="p8" style="left:620px;top:290px;width:400px;height:620px;transform:rotate(3deg)"><img src="img/hammett.jpg" style="object-position:50% 15%"></div>
+    <div class="credit" id="p8c" style="left:430px;top:935px">Dashiell Hammett, 1934 · Knopf publicity · public domain</div>
+    <div class="card" id="gk" style="left:70px;top:1060px;width:760px;transform:rotate(-1.5deg)"><div class="l">KUROSAWA REPORTEDLY NAMED</div><div class="n" style="font-size:100px">The Glass Key</div><div class="s">Dashiell Hammett · as a source</div></div>
+    <div class="credit" id="s8c" style="left:70px;top:1480px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S9 copy of a copy -->
+  <div id="s9" class="scene">
+    <img id="s9bg" class="full" src="img/screens/f001.jpg">
+    <div class="card" id="rh" style="left:70px;top:290px;width:620px;transform:rotate(-2deg)"><div class="l">CRITICS ALSO HEAR</div><div class="n" style="font-size:96px">Red Harvest</div><div class="s">Hammett's novel, 1929</div></div>
+    <div class="hl" id="s9h" style="top:1130px"><div class="big" style="font-size:110px">a copy</div><div class="big" style="font-size:110px">of a copy</div><div class="big red" style="font-size:110px">of a copy.</div></div>
+    <div class="credit" id="s9c" style="left:70px;top:1540px">illustration drawn for this video</div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene" style="background:var(--washi)">
+    <div class="a eng" id="ek" style="left:70px;top:300px;font-size:30px"></div>
+    <div class="a" style="left:66px;right:50px;top:370px">
+      <div style="overflow:hidden"><div class="big" id="e1" style="font-size:200px">Samurai</div></div>
+      <div style="overflow:hidden"><div class="big" id="e2" style="font-size:200px">or</div></div>
+      <div style="overflow:hidden"><div class="big red" id="e3" style="font-size:200px">cowboy?</div></div>
+    </div>
+    <img id="ecut" class="a" src="img/scale_cut.png" style="left:700px;top:700px;width:300px">
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1330px;font-family:PR;font-size:24px;line-height:1.5;color:var(--ink)">Sources: The Film Foundation; /Film; Flavorwire (2015, citing Stephen Prince); Paste; CrimeReads; akirakurosawa.info.<br>Photos via Wikimedia Commons: Eiga no Tomo (1953) and Kinema Junpo (public domain); Kirin7739 (CC BY-SA 4.0); Knopf publicity photo (public domain). Illustrations and diagrams drawn for this video.<br><br>explained no. 11 · @lost_index</div>
+  </div>
+
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 11</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+const fadeUpR = (el, t, t0, r, d = .45, dy = 50) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px) rotate(${r}deg)`; };
+const pop = (el, t, t0) => { const k = E.back(P(t, t0, t0 + .4)); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `scale(${k})`; el.style.transformOrigin = '0 50%'; };
+const stamp = (el, t, t0, r) => { const k = P(t, t0, t0 + .18); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `rotate(${r}deg) scale(${2.2 - 1.2 * E.out(k)})`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 11;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = 160 + s % 95; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 4.0], s2: [4.0, 11.85], s3: [11.85, 19.35], s4: [19.35, 24.6], s5: [24.6, 31.05], s6: [31.05, 34.9], s7: [34.9, 41.6], s8: [41.6, 49.1], s9: [49.1, 54.75], s11: [54.75, 58.0] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  frameSeq($('#s1bg'), 'street', t, 0);
+  $('#s1bg').style.transform = `scale(${1.04 + t * .01})`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 3.75, 4.0));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .3);
+  pop($('#yT'), t, 4.1);
+  $('#p2').style.opacity = P(t, 4.2, 4.6); $('#p2c').style.opacity = P(t, 4.4, 4.7);
+  fadeUpR($('#nm'), t, 7.85, 2);
+  $('#gA').style.opacity = P(t, 9.4, 9.7); $('#gB').style.opacity = P(t, 9.6, 9.9); $('#ron').style.opacity = P(t, 8.0, 8.3);
+  const k = E.out(P(t, 10.5, 11.0)); $('#arA').style.opacity = k; $('#arB').style.opacity = k;
+  $('#s2c').style.opacity = P(t, 9.4, 9.7);
+}
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  frameSeq($('#s3bg'), 'split', t, T.s3[0]);
+  pop($('#fT'), t, 11.95);
+  fadeUpR($('#leo'), t, 12.85, -2);
+  fadeUp($('#s3h'), t, 17.0, .5, 40); $('#s3c').style.opacity = P(t, 12.0, 12.3);
+}
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  $('#p4').style.opacity = P(t, 19.45, 19.85); $('#p4c').style.opacity = P(t, 19.6, 19.9);
+  $('#p4').style.transform = `rotate(-1.5deg) scale(${1 + (t - T.s4[0]) * .006})`;
+  fadeUp($('#rt'), t, 19.7, .45, 40);
+  stamp($('#sued'), t, 23.4, -8);
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  $('#s5bg').style.transform = `scale(${1.03 + (t - T.s5[0]) * .008})`;
+  pop($('#lT'), t, 24.7);
+  $('#p5').style.opacity = P(t, 24.8, 25.2); $('#p5c').style.opacity = P(t, 25.0, 25.3); $('#s5c').style.opacity = P(t, 25.0, 25.3);
+  fadeUp($('#s5a'), t, 27.6, .5, 40);
+  fadeUp($('#s5b'), t, 29.5, .5, 40);
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .25);
+  const k = E.back(P(t, 31.1, 31.6)); $('#s6b').style.transform = `scale(${.6 + .4 * k}) rotate(${Math.sin(t * 1.6) * 2.5}deg)`;
+  pop($('#sT'), t, 31.2); $('#s6c').style.opacity = P(t, 31.3, 31.6);
+  fadeUpR($('#us'), t, 33.2, -1.5);
+}
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  pop($('#shT'), t, 35.0);
+  fadeUpR($('#sh'), t, 36.5, -1.5);
+  const h1 = 260 * E.out(P(t, 38.8, 39.6)), h2 = 480 * E.out(P(t, 40.2, 41.2));
+  $('#b1').setAttribute('y', 1330 - h1); $('#b1').setAttribute('height', h1);
+  $('#b2').setAttribute('y', 1330 - h2); $('#b2').setAttribute('height', h2);
+  $('#bl1').style.opacity = P(t, 38.8, 39.1); $('#bl2').style.opacity = P(t, 40.2, 40.5);
+  pop($('#q'), t, 40.6); $('#s7c').style.opacity = P(t, 38.9, 39.2);
+}
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  $('#s8bg').style.transform = `scale(${1.03 + (t - T.s8[0]) * .008})`;
+  pop($('#hT'), t, 41.7); $('#s8c').style.opacity = P(t, 41.8, 42.1);
+  $('#p8').style.opacity = P(t, 44.3, 44.7); $('#p8c').style.opacity = P(t, 44.5, 44.8);
+  fadeUpR($('#gk'), t, 46.0, -1.5);
+}
+function S9(t) {
+  xfade('#s9', t, 's9', .3);
+  frameSeq($('#s9bg'), 'screens', t, T.s9[0]);
+  fadeUpR($('#rh'), t, 50.1, -2); $('#s9c').style.opacity = P(t, 49.3, 49.6);
+  fadeUp($('#s9h'), t, 52.4, .5, 40);
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 54.75, 55.15);
+  $('#ek').textContent = typed('WHICH VERSION WINS?', t, 54.85, 32);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 55.0 + i * .15, 55.5 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 55.4, 55.8);
+  const k = E.back(P(t, 55.3, 55.8)); $('#ecut').style.opacity = t >= 55.3 ? 1 : 0; $('#ecut').style.transform = `scale(${k}) rotate(6deg)`;
+  $('#stage').style.opacity = 1 - P(t, 57.6, 58.0);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s8: '#s8', s9: '#s9', s11: '#end' };
+const FN = { s1: S1, s2: S2, s3: S3, s4: S4, s5: S5, s6: S6, s7: S7, s8: S8, s9: S9 };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  for (const k of Object.keys(FN)) if (inS(t, k)) FN[k](t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
