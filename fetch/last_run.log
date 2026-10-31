@@ -2,12 +2,4 @@ FAIL 404 episodes/015_wyckoff/assets/habs_1934.jpg https://commons.wikimedia.org
 FAIL 404 episodes/015_wyckoff/assets/_pages/habs_1934.html https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-1.tif?action=raw
 FAIL 404 episodes/015_wyckoff/assets/habs_1934_b_spare.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Peter_Wyckoff_House%2C_5902_Canarsie_Lane%2C_Brooklyn%2C_Kings_County%2C_NY_HABS_NY%2C24-BROK%2C32-2.tif?width=1600
 FAIL 404 episodes/015_wyckoff/assets/_pages/habs_1934_b_spare.html https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-2.tif?action=raw
-ok   episodes/vox_12_bigelow/assets/bigelow_carpet.jpg
-ok   episodes/vox_12_bigelow/assets/_pages/bigelow_carpet.html
-ok   episodes/vox_12_bigelow/assets/shankbone.jpg
-ok   episodes/vox_12_bigelow/assets/_pages/shankbone.html
-ok   episodes/vox_12_bigelow/assets/bigelow2025.jpg
-ok   episodes/vox_12_bigelow/assets/_pages/bigelow2025.html
-ok   episodes/vox_12_bigelow/assets/dolby.jpg
-ok   episodes/vox_12_bigelow/assets/_pages/dolby.html
-ok=8 fail=4
+ok=0 fail=4
