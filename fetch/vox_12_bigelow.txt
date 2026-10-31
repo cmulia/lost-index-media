@@ -1,0 +1,8 @@
+episodes/vox_12_bigelow/assets/bigelow_carpet.jpg https://commons.wikimedia.org/wiki/Special:FilePath/82nd_Academy_Awards%2C_Kathryn_Bigelow_-_army_mil-66453-2010-03-09-180354.jpg?width=1600
+episodes/vox_12_bigelow/assets/_pages/bigelow_carpet.html https://commons.wikimedia.org/wiki/File:82nd_Academy_Awards%2C_Kathryn_Bigelow_-_army_mil-66453-2010-03-09-180354.jpg?action=raw
+episodes/vox_12_bigelow/assets/shankbone.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Kathryn_Bigelow_by_David_Shankbone.jpg?width=1600
+episodes/vox_12_bigelow/assets/_pages/shankbone.html https://commons.wikimedia.org/wiki/File:Kathryn_Bigelow_by_David_Shankbone.jpg?action=raw
+episodes/vox_12_bigelow/assets/bigelow2025.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Kathryn_Bigelow_2025.jpg?width=1600
+episodes/vox_12_bigelow/assets/_pages/bigelow2025.html https://commons.wikimedia.org/wiki/File:Kathryn_Bigelow_2025.jpg?action=raw
+episodes/vox_12_bigelow/assets/dolby.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Dolby_Theatre_v2.jpg?width=1600
+episodes/vox_12_bigelow/assets/_pages/dolby.html https://commons.wikimedia.org/wiki/File:Dolby_Theatre_v2.jpg?action=raw

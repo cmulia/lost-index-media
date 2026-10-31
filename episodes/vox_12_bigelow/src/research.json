@@ -1,0 +1,187 @@
+{
+  "slug": "bigelow",
+  "episode_no": "12",
+  "subject": "Kathryn Bigelow",
+  "hook": "She beat her ex-husband's blockbuster for Best Director.",
+  "twist": "The ex-husband she beat for Best Director says he was the first on his feet applauding her.",
+  "mood": "Desert-dust military field-notebook: sun-bleached ochre, khaki, faded olive and rust-red stamp ink on grainy graph paper, with pencil sketches, coffee rings, taped tickets and typed field-report labels. Music: sparse, tense desert-blues underscore, slow 70 bpm, dry guitar twang, low frame drum and ticking pulse, resolving to a single warm sustained chord at the twist.",
+  "narration": "She beat her ex-husband's blockbuster for Best Director. March seventh, twenty ten. Kathryn Bigelow had made The Hurt Locker, a war film about a bomb disposal team in Iraq. It cost about fifteen million dollars. Avatar, from her former husband James Cameron, had already earned over two billion. Barbra Streisand opened the envelope. \"Well, the time has come,\" she said. Bigelow became the first woman ever to win Best Director. Her film also won Best Picture, though it had made only around fifteen million dollars at the American box office. Avatar took three awards: art direction, cinematography and visual effects. Cameron was sitting right behind her. He later told the New York Times he was \"the first one on my feet applauding.\" The man she beat, by his own account, stood up first.",
+  "beats": [
+    {
+      "i": 0,
+      "text": "She beat her ex-husband's blockbuster for Best Director.",
+      "visual": "Beat 0 hero: Bigelow photo (Army.mil red carpet 2010), big headline [bigelow_carpet]",
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "March seventh, twenty ten. Kathryn Bigelow had made The Hurt Locker, a war film about a bomb disposal team in Iraq.",
+      "visual": "Field-notebook page, sketched bomb disposal suit and date stamp [props]",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "It cost about fifteen million dollars. Avatar, from her former husband James Cameron, had already earned over two billion.",
+      "visual": "Two ink-stamped ledger columns, small stack of cash vs huge stack [props]",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Barbra Streisand opened the envelope. \"Well, the time has come,\" she said.",
+      "visual": "Dolby (Kodak) Theatre photo, envelope illustration [dolby]",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "Bigelow became the first woman ever to win Best Director.",
+      "visual": "Photo Bigelow 2010 Time gala, tally marks on notebook page [shankbone]",
+      "sources": [
+        "S1",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "Her film also won Best Picture, though it had made only around fifteen million dollars at the American box office.",
+      "visual": "Dusty ticket stub and small coin pile [props]",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "Avatar took three awards: art direction, cinematography and visual effects.",
+      "visual": "Blueprint-like field sketch of a blue alien jungle lantern, ochre ink [props]",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "Cameron was sitting right behind her.",
+      "visual": "Illustrated empty theatre seat row, ochre [props]",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "He later told the New York Times he was \"the first one on my feet applauding.\"",
+      "visual": "Folding chair knocked back; photo Bigelow 2025 as closing tone [bigelow2025]",
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "i": 9,
+      "text": "The man she beat, by his own account, stood up first.",
+      "visual": "Single standing-ovation silhouette-free empty seat lit, end card [props]",
+      "sources": [
+        "S4"
+      ]
+    }
+  ],
+  "fun_facts": [
+    "The Hurt Locker cost about fifteen million dollars; Avatar had already earned more than two billion worldwide (Backstage 2010).",
+    "Avatar still won three awards that night: art direction, cinematography and visual effects (NBC/AP)."
+  ],
+  "sources": {
+    "S1": {
+      "name": "NBC News / AP, 'Hurt Locker' wins best picture, director, 2010",
+      "url": "https://www.nbcnews.com/news/amp/wbna35752337"
+    },
+    "S2": {
+      "name": "Roger Ebert, No pain for Hurt Locker Bigelow, 2010",
+      "url": "https://www.rogerebert.com/festivals-and-awards/no-pain-for-hurt-locker-bigelow"
+    },
+    "S3": {
+      "name": "Backstage, How 'Avatar' Lost Best Picture, 2010 (Hurt Locker budget $15M, $14.7M domestic at publication; Avatar $2.6B worldwide)",
+      "url": "https://www.backstage.com/magazine/article/avatar-lost-best-picture-64314/"
+    },
+    "S4": {
+      "name": "Fox News, Cameron quoting his New York Times interview: 'I was the first one on my feet applauding'",
+      "url": "https://www.foxnews.com/entertainment/director-james-cameron-finally-addresses-amy-poehlers-ignorant-joke-about-his-marriage.amp"
+    },
+    "S5": {
+      "name": "TheWrap, Cameron vs. Bigelow: Battle of the Exes, 2010",
+      "url": "https://thewrap.com/cameron-vs-bigelow-battle-exes-11826"
+    },
+    "S6": {
+      "name": "History.com, This Day in History, March 7: Kathryn Bigelow becomes the first female director to win an Oscar",
+      "url": "https://www.history.com/this-day-in-history/kathryn-bigelow-becomes-the-first-female-director-to-win-an-oscar"
+    },
+    "S7": {
+      "name": "MPR News / AP, Bigelow pioneers Oscars with 'Hurt Locker' win, 2010",
+      "url": "https://www.mprnews.org/story/2010/03/07/oscars"
+    }
+  },
+  "images": [
+    {
+      "key": "bigelow_carpet",
+      "file_page": "https://commons.wikimedia.org/wiki/File:82nd_Academy_Awards,_Kathryn_Bigelow_-_army_mil-66453-2010-03-09-180354.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/82nd_Academy_Awards,_Kathryn_Bigelow_-_army_mil-66453-2010-03-09-180354.jpg",
+      "author": "Sgt. Michael Connors, 302nd Mobile Public Affairs Detachment (US Army)",
+      "date": "2010-03-07",
+      "licence": "PD-USGov-Military-Army",
+      "shows": "Bigelow arriving at the 82nd Academy Awards",
+      "use": "hero photo (beat 0)"
+    },
+    {
+      "key": "shankbone",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Kathryn_Bigelow_by_David_Shankbone.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Kathryn_Bigelow_by_David_Shankbone.jpg",
+      "author": "David Shankbone",
+      "date": "2010-05-04",
+      "licence": "cc-by-2.0",
+      "shows": "Bigelow at the Time 100 Gala 2010",
+      "use": "director photo, 2010"
+    },
+    {
+      "key": "bigelow2025",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Kathryn_Bigelow_2025.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kathryn_Bigelow_2025.jpg",
+      "author": "ManoSolo13241324",
+      "date": "2025-10-02",
+      "licence": "cc-zero",
+      "shows": "Bigelow at the Cinematheque francaise",
+      "use": "director photo, recent era"
+    },
+    {
+      "key": "dolby",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Dolby_Theatre_v2.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Dolby_Theatre_v2.jpg",
+      "author": "Adam Fagen (original); Jullit31 (crop, derivative)",
+      "date": "2015-02-05",
+      "licence": "cc-by-sa-2.0",
+      "shows": "Dolby Theatre, formerly Kodak Theatre, Hollywood",
+      "use": "place (the 2010 ceremony was held at the Kodak Theatre)"
+    }
+  ],
+  "props_to_illustrate": [
+    "a weathered khaki field notebook open on sand, with a taped ticket stub",
+    "a bomb disposal helmet and visor on a dusty crate",
+    "an ochre ledger page with two columns of stamped numbers, one tiny, one huge",
+    "a gold-edged envelope on a velvet-red theatre seat, sketch style",
+    "a row of empty red theatre seats, pencil and ochre wash",
+    "a folding chair tipped back on desert gravel",
+    "a pair of tally-mark sheets, pencil on graph paper",
+    "a small blue glowing jungle lantern drawn on graph paper"
+  ],
+  "captions": {
+    "tiktok_caption": "In 2010 Kathryn Bigelow beat her ex-husband's record-breaking blockbuster to win Best Director. 🎬 He says he stood up first.\n\nPractical grit or giant spectacle? 👇\n\nexplained no. 12\n\n#kathrynbigelow #hurtlocker #oscars #filmhistory #explained",
+    "instagram_caption": "She beat her ex-husband's blockbuster for Best Director. 🎬\n\nMarch 2010. Kathryn Bigelow's The Hurt Locker, a war film about a bomb disposal team, cost about fifteen million dollars. Avatar, from her former husband James Cameron, had already earned over two billion.\n\nBarbra Streisand opened the envelope: \"Well, the time has come.\" Bigelow became the first woman in the Academy's eighty-two years to win Best Director, and her film took Best Picture too, with only around fifteen million dollars at the American box office.\n\nThe twist: Cameron was sitting right behind her. He later told the New York Times he was \"the first one on my feet applauding.\"\n\nPractical grit or giant spectacle? 👇\n\nexplained no. 12\n\n—\nSources: NBC News/AP (2010); Backstage (2010); Fox News quoting the New York Times (Cameron interview); Roger Ebert (2010).\nImages via Wikimedia Commons: Sgt. Michael Connors, US Army (public domain); David Shankbone (CC BY 2.0); ManoSolo13241324 (CC0); Adam Fagen / Jullit31 (CC BY-SA 2.0).\nIllustrations and diagrams drawn for this video.\n\n#kathrynbigelow #hurtlocker #oscars #filmhistory #womeninfilm #jamescameron #avatar #explained",
+    "youtube_title": "How Kathryn Bigelow beat Avatar at the Oscars (2010) #shorts",
+    "either_or_question": "Practical grit or giant spectacle?"
+  }
+}
