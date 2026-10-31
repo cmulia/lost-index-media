@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+:root { --ink: #2a2116; --washi: #ecdcb8; --red: #b2472a; --sepia: #9a7a3e; --grey: #6d6450; --khaki: #7c7550; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--washi); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--washi); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--washi); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .07; mix-blend-mode: multiply; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--ink); }
+#hdr span { background: var(--washi); padding: 6px 12px; border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--khaki); }
+.photo { position: absolute; background: #f6ecd2; padding: 16px; box-shadow: 0 16px 36px rgba(0,0,0,.32); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(.35) saturate(.8) contrast(1.04); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--ink); background: rgba(239,230,210,.95); padding: 4px 10px; white-space: nowrap; border: 1.5px solid var(--ink); }
+.tag { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 3px; color: var(--washi); background: var(--ink); padding: 10px 18px 10px 50px; white-space: nowrap; border-left: 14px solid var(--red); }
+.hl { position: absolute; left: 60px; background: var(--washi); padding: 12px 30px 22px; display: inline-block; border-top: 6px solid var(--ink); border-bottom: 6px solid var(--ink); box-shadow: 0 14px 30px rgba(0,0,0,.18); }
+.big { font-family: SI; color: var(--ink); line-height: .98; letter-spacing: -1px; }
+.red { color: var(--red); }
+.card { position: absolute; background: var(--washi); color: var(--ink); padding: 22px 30px; border: 4px solid var(--ink); box-shadow: 12px 12px 0 0 var(--red); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: var(--grey); }
+.card .n { font-family: SI; font-size: 104px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: PR; font-size: 26px; margin-top: 10px; }
+.seal { position: absolute; font-family: IK; font-size: 92px; letter-spacing: 6px; color: var(--red); border: 10px solid var(--red); padding: 2px 24px; background: rgba(239,230,210,.5); mix-blend-mode: multiply; border-radius: 6px; }
+.eng { font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: var(--ink); border-bottom: 6px solid var(--red); padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(239,230,210,.4); padding: 0 5px; }
+#cap .w.on { color: var(--washi); background: var(--red); }
+#cap .w.done { color: var(--washi); }
+</style>
+<style>
+.chk { font-family: PM; font-size: 46px; letter-spacing: 2px; color: var(--washi); }
+.chk b { color: var(--red); font-family: IX; margin-right: 18px; }
+.grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(124,117,80,.18) 2px, transparent 2px), linear-gradient(90deg, rgba(124,117,80,.18) 2px, transparent 2px); background-size: 54px 54px; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- S1 hook -->
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/notebook/f001.jpg">
+    <div class="photo" id="p1" style="left:540px;top:170px;width:480px;height:660px;transform:rotate(3deg)"><img src="img/bigelow_carpet.jpg" style="object-position:40% 18%"></div>
+    <div class="credit" id="p1c" style="left:70px;top:858px;font-size:18px">Kathryn Bigelow at the Oscars, 7 March 2010 · Sgt. Michael Connors, US Army · public domain</div>
+    <div class="hl" id="h1" style="top:960px">
+      <div class="big" style="font-size:118px">She beat</div>
+      <div class="big" style="font-size:118px">her ex-husband's</div>
+      <div class="big red" style="font-size:150px">blockbuster.</div>
+    </div>
+  </div>
+
+  <!-- S2 Hurt Locker -->
+  <div id="s2" class="scene">
+    <div class="grid"></div>
+    <div class="tag" id="dT" style="left:70px;top:190px">82ND ACADEMY AWARDS</div>
+    <div class="seal" id="date" style="left:70px;top:300px;font-size:84px">7 MAR 2010</div>
+    <img id="helm" class="a" src="img/helmet_cut.png" style="left:330px;top:470px;width:700px">
+    <div class="card" id="hl2" style="left:70px;top:1150px;width:760px;transform:rotate(-1.5deg)"><div class="l">KATHRYN BIGELOW'S</div><div class="n" style="font-size:100px">The Hurt Locker</div><div class="s">a bomb disposal team in Iraq</div></div>
+    <div class="credit" id="s2c" style="left:70px;top:1530px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S3 money -->
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/ledger.png">
+    <div class="card" id="c3a" style="left:70px;top:300px;width:560px;transform:rotate(-2deg)"><div class="l">THE HURT LOCKER · COST</div><div class="n">≈ $15M</div></div>
+    <div class="card" id="c3b" style="left:300px;top:1040px;width:720px;transform:rotate(1.5deg)"><div class="l">AVATAR · ALREADY EARNED</div><div class="n">$2 billion+</div><div class="s">James Cameron · her former husband</div></div>
+    <div class="credit" id="s3c" style="left:70px;top:1500px">illustration drawn for this video · figures: Backstage, 2010</div>
+  </div>
+
+  <!-- S4 envelope -->
+  <div id="s4" class="scene">
+    <img id="s4bg" class="full" src="img/envelope.png">
+    <div class="tag" id="eT" style="left:70px;top:190px">PRESENTER · BARBRA STREISAND</div>
+    <div class="photo" id="p4" style="left:70px;top:300px;width:940px;height:620px;transform:rotate(-1.5deg)"><img src="img/dolby.jpg" style="object-position:55% 40%"></div>
+    <div class="credit" id="p4c" style="left:70px;top:945px;font-size:18px">Kodak Theatre, renamed Dolby in 2012 · photo 2015 · Adam Fagen / Jullit31 · CC BY-SA 2.0</div>
+    <div class="hl" id="s4h" style="top:1080px"><div class="big" style="font-size:106px">“Well, the time</div><div class="big red" style="font-size:130px">has come.”</div></div>
+    <div class="credit" id="s4c" style="left:70px;top:1500px">illustration drawn for this video</div>
+  </div>
+
+  <!-- S5 first woman -->
+  <div id="s5" class="scene">
+    <div class="grid"></div>
+    <div class="photo" id="p5" style="left:200px;top:190px;width:680px;height:850px;transform:rotate(-2deg)"><img src="img/shankbone.jpg" style="object-position:50% 25%"></div>
+    <div class="credit" id="p5c" style="left:200px;top:1060px">Kathryn Bigelow, May 2010 · David Shankbone · CC BY 2.0</div>
+    <div class="card" id="c5" style="left:70px;top:1150px;width:720px;transform:rotate(-1deg)"><div class="l">BEST DIRECTOR</div><div class="n" style="font-size:92px">the first woman</div><div class="s">ever to win it</div></div>
+    <div class="seal" id="s5s" style="left:650px;top:170px;font-size:76px">FIRST</div>
+  </div>
+
+  <!-- S6 best picture -->
+  <div id="s6" class="scene" style="background:var(--ink)">
+    <div class="tag" id="bpT" style="left:70px;top:190px;background:var(--red);border-left-color:var(--washi)">THE SAME NIGHT</div>
+    <div class="seal" id="bp" style="left:70px;top:330px;font-size:96px;background:transparent;mix-blend-mode:normal">BEST PICTURE</div>
+    <div class="card" id="c6" style="left:70px;top:900px;width:820px;transform:rotate(-1.5deg)"><div class="l">US BOX OFFICE AT THE TIME</div><div class="n">≈ $15 million</div><div class="s">about what it cost to make</div></div>
+    <div class="credit" id="s6c" style="left:70px;top:1340px;background:var(--washi)">source: Backstage, 2010</div>
+  </div>
+
+  <!-- S7 Avatar's three -->
+  <div id="s7" class="scene" style="background:var(--ink)">
+    <img class="full" src="img/ledger.png" style="opacity:.16">
+    <div class="tag" id="aT" style="left:70px;top:190px">AVATAR TOOK THREE</div>
+    <div class="a chk" id="k1" style="left:90px;top:420px"><b>✓</b>ART DIRECTION</div>
+    <div class="a chk" id="k2" style="left:90px;top:540px"><b>✓</b>CINEMATOGRAPHY</div>
+    <div class="a chk" id="k3" style="left:90px;top:660px"><b>✓</b>VISUAL EFFECTS</div>
+    <div class="card" id="c7" style="left:70px;top:900px;width:760px;transform:rotate(1deg)"><div class="l">THE HURT LOCKER TOOK</div><div class="n" style="font-size:96px">director &amp; picture</div></div>
+  </div>
+
+  <!-- S8 behind her -->
+  <div id="s8" class="scene">
+    <img id="s8bg" class="full" src="img/seats/f001.jpg">
+    <div class="tag" id="cT" style="left:70px;top:190px">JAMES CAMERON · SITTING RIGHT BEHIND HER</div>
+    <div class="hl" id="s8h" style="top:900px"><div class="big" style="font-size:96px">“the first one</div><div class="big" style="font-size:96px">on my feet</div><div class="big red" style="font-size:124px">applauding.”</div></div>
+    <div class="credit" id="s8c" style="left:70px;top:1420px">Cameron, later, to The New York Times · illustration drawn for this video</div>
+  </div>
+
+  <!-- S9 twist -->
+  <div id="s9" class="scene">
+    <img id="s9bg" class="full" src="img/chair/f001.jpg">
+    <div class="photo" id="p9" style="left:640px;top:200px;width:380px;height:500px;transform:rotate(3deg)"><img src="img/bigelow2025.jpg" style="object-position:50% 20%"></div>
+    <div class="credit" id="p9c" style="left:470px;top:725px">Kathryn Bigelow, 2025 · ManoSolo13241324 · CC0</div>
+    <div class="hl" id="s9h" style="top:980px"><div class="big" style="font-size:110px">The man she beat</div><div class="big red" style="font-size:134px">stood up first.</div></div>
+    <div class="credit" id="s9c" style="left:70px;top:1390px">by his own account · illustration drawn for this video</div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="scene" style="background:var(--washi)">
+    <div class="grid"></div>
+    <div class="a eng" id="ek" style="left:70px;top:300px;font-size:30px"></div>
+    <div class="a" style="left:66px;right:50px;top:370px">
+      <div style="overflow:hidden"><div class="big" id="e1" style="font-size:190px">Grit</div></div>
+      <div style="overflow:hidden"><div class="big" id="e2" style="font-size:190px">or</div></div>
+      <div style="overflow:hidden"><div class="big red" id="e3" style="font-size:190px">spectacle?</div></div>
+    </div>
+    <img id="ecut" class="a" src="img/helmet_cut.png" style="left:750px;top:400px;width:300px">
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1330px;font-family:PR;font-size:24px;line-height:1.5;color:var(--ink)">Sources: NBC News/AP (2010); Backstage (2010); TheWrap (2010); History.com; Fox News, quoting Cameron's New York Times interview.<br>Photos via Wikimedia Commons: Sgt. Michael Connors, US Army (public domain); David Shankbone (CC BY 2.0); Adam Fagen / Jullit31 (CC BY-SA 2.0); ManoSolo13241324 (CC0). Illustrations drawn for this video.<br><br>explained no. 12 · @lost_index</div>
+  </div>
+
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 12</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+const fadeUpR = (el, t, t0, r, d = .45, dy = 50) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px) rotate(${r}deg)`; };
+const pop = (el, t, t0) => { const k = E.back(P(t, t0, t0 + .4)); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `scale(${k})`; el.style.transformOrigin = '0 50%'; };
+const stamp = (el, t, t0, r) => { const k = P(t, t0, t0 + .18); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `rotate(${r}deg) scale(${2.2 - 1.2 * E.out(k)})`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 11;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = 160 + s % 95; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1: [0, 3.65], s2: [3.65, 11.45], s3: [11.45, 19.8], s4: [19.8, 25.75], s5: [25.75, 29.55], s6: [29.55, 36.45], s7: [36.45, 42.35], s8: [42.35, 49.65], s9: [49.65, 53.4], s11: [53.4, 56.0] };
+const inS = (t, k) => t >= T[k][0] && t < T[k][1];
+const xfade = (id, t, k, d = .3) => { $(id).style.opacity = Math.min(P(t, T[k][0], T[k][0] + d), 1 - P(t, T[k][1] - d * .5, T[k][1])); };
+
+function S1(t) {
+  frameSeq($('#s1bg'), 'notebook', t, 0);
+  $('#s1bg').style.transform = `scale(${1.04 + t * .01})`;
+  $('#s1').style.opacity = 1 - E.expoIn(P(t, 3.4, 3.65));
+}
+function S2(t) {
+  xfade('#s2', t, 's2', .3);
+  pop($('#dT'), t, 3.75); stamp($('#date'), t, 3.9, -4);
+  const k = E.back(P(t, 4.5, 5.1)); $('#helm').style.opacity = t >= 4.5 ? 1 : 0; $('#helm').style.transform = `scale(${.7 + .3 * k}) rotate(${Math.sin(t * 1.3) * 1.5}deg)`;
+  fadeUpR($('#hl2'), t, 7.2, -1.5); $('#s2c').style.opacity = P(t, 4.7, 5.0);
+}
+function S3(t) {
+  xfade('#s3', t, 's3', .3);
+  $('#s3bg').style.transform = `scale(${1.03 + (t - T.s3[0]) * .006})`;
+  fadeUpR($('#c3a'), t, 12.15, -2); fadeUpR($('#c3b'), t, 14.0, 1.5);
+  $('#c3b').querySelector('.n').style.opacity = P(t, 18.1, 18.4);
+  $('#s3c').style.opacity = P(t, 11.6, 11.9);
+}
+function S4(t) {
+  xfade('#s4', t, 's4', .3);
+  $('#s4bg').style.transform = `scale(${1.03 + (t - T.s4[0]) * .008})`;
+  pop($('#eT'), t, 19.9);
+  $('#p4').style.opacity = P(t, 20.0, 20.4); $('#p4c').style.opacity = P(t, 20.2, 20.5); $('#s4c').style.opacity = P(t, 20.2, 20.5);
+  fadeUp($('#s4h'), t, 22.6, .5, 40);
+}
+function S5(t) {
+  xfade('#s5', t, 's5', .3);
+  $('#p5').style.opacity = P(t, 25.8, 26.2); $('#p5c').style.opacity = P(t, 26.0, 26.3);
+  $('#p5').style.transform = `rotate(-2deg) scale(${1 + (t - T.s5[0]) * .008})`;
+  fadeUpR($('#c5'), t, 26.6, -1); stamp($('#s5s'), t, 27.65, 8);
+}
+function S6(t) {
+  xfade('#s6', t, 's6', .3);
+  pop($('#bpT'), t, 29.65); stamp($('#bp'), t, 30.75, -3);
+  fadeUpR($('#c6'), t, 32.8, -1.5); $('#s6c').style.opacity = P(t, 32.9, 33.2);
+}
+function S7(t) {
+  xfade('#s7', t, 's7', .3);
+  pop($('#aT'), t, 36.55);
+  fadeUp($('#k1'), t, 38.55, .35, 30); fadeUp($('#k2'), t, 39.5, .35, 30); fadeUp($('#k3'), t, 40.9, .35, 30);
+  fadeUpR($('#c7'), t, 41.4, 1);
+}
+function S8(t) {
+  xfade('#s8', t, 's8', .3);
+  frameSeq($('#s8bg'), 'seats', t, T.s8[0]);
+  pop($('#cT'), t, 42.45);
+  fadeUp($('#s8h'), t, 46.1, .5, 40); $('#s8c').style.opacity = P(t, 46.2, 46.5);
+}
+function S9(t) {
+  xfade('#s9', t, 's9', .3);
+  frameSeq($('#s9bg'), 'chair', t, T.s9[0]);
+  $('#p9').style.opacity = P(t, 49.75, 50.15); $('#p9c').style.opacity = P(t, 49.9, 50.2);
+  fadeUp($('#s9h'), t, 49.85, .5, 40); $('#s9c').style.opacity = P(t, 50.8, 51.1);
+  $('#s9h').children[1].style.opacity = P(t, 52.0, 52.3);
+}
+function S11(t) {
+  $('#end').style.opacity = P(t, 53.4, 53.8);
+  $('#ek').textContent = typed('WHICH WINS YOUR TICKET?', t, 53.5, 32);
+  ['#e1', '#e2', '#e3'].forEach((s, i) => { const k = E.expo(P(t, 53.65 + i * .15, 54.15 + i * .15)); $(s).style.transform = `translateY(${(1 - k) * 110}%)`; });
+  $('#efoot').style.opacity = P(t, 54.0, 54.4);
+  const k = E.back(P(t, 54.0, 54.5)); $('#ecut').style.opacity = t >= 54.0 ? 1 : 0; $('#ecut').style.transform = `scale(${k}) rotate(6deg)`;
+  $('#stage').style.opacity = 1 - P(t, 55.6, 56.0);
+}
+function capAt(t) {
+  const c = CAPS.find((c, i) => t >= c[0][1] - .05 && (i + 1 >= CAPS.length ? t < c[c.length - 1][2] + .6 : t < CAPS[i + 1][0][1] - .05));
+  if (!c || t >= T.s11[0]) { $('#cap').style.opacity = 0; return; }
+  $('#cap').style.opacity = 1;
+  $('#cap').innerHTML = `<div class="box">${c.map(w => `<span class="w ${t >= w[1] && t < w[2] + .05 ? 'on' : t >= w[1] ? 'done' : ''}">${w[0]}</span>`).join(' ')}</div>`;
+}
+const IDS = { s1: '#s1', s2: '#s2', s3: '#s3', s4: '#s4', s5: '#s5', s6: '#s6', s7: '#s7', s8: '#s8', s9: '#s9', s11: '#end' };
+const FN = { s1: S1, s2: S2, s3: S3, s4: S4, s5: S5, s6: S6, s7: S7, s8: S8, s9: S9 };
+window.renderAt = function (t) {
+  for (const k of Object.keys(T)) show(IDS[k], inS(t, k) || (k === 's11' && t >= T.s11[0]));
+  for (const k of Object.keys(FN)) if (inS(t, k)) FN[k](t);
+  if (t >= T.s11[0]) S11(t); else $('#stage').style.opacity = 1;
+  capAt(t);
+  const f = Math.floor(t * 24); $('#grain').style.transform = `translate(${-hash(f) * 50}px, ${-hash(f + 3) * 50}px)`;
+  const ps = PEND.splice(0); return Promise.all(ps).then(() => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0))));
+};
+Promise.all([...document.images].map(i => i.decode().catch(() => {}))).then(() => { window.ready = true; });
+</script>
+</body>
+</html>

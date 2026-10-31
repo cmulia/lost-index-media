@@ -16,7 +16,7 @@ Times (Sydney, +11:00): until 1 Nov YouTube/Instagram 10:00, TikTok 12:00; from 
 - [x] 09 Georges Méliès · Wed 4 Nov · his film prints were melted down (reportedly into boot heels) in WWI; he ended up selling toys at Montparnasse station before being rediscovered
 - [x] 10 George Lucas · Thu 5 Nov · took sequel + merchandising rights instead of a bigger directing fee on Star Wars; twist: sold Lucasfilm to Disney (2012)
 - [x] 11 Akira Kurosawa · Fri 6 Nov · A Fistful of Dollars copied Yojimbo; Kurosawa sued and (reportedly) earned more from it than from Yojimbo
-- [ ] 12 Kathryn Bigelow · Sat 7 Nov · first woman to win Best Director (2010), beating her ex-husband James Cameron's Avatar with a far cheaper film
+- [x] 12 Kathryn Bigelow · Sat 7 Nov · first woman to win Best Director (2010), beating her ex-husband James Cameron's Avatar with a far cheaper film
 - [ ] 13 Charlie Chaplin · Sun 8 Nov · his coffin was stolen from a Swiss cemetery in 1978 and held for ransom; twist: found in a cornfield, reburied under concrete
 - [ ] 14 James Cameron · Mon 9 Nov · sold The Terminator script for one dollar on condition he directed it
 - [ ] 15 Satyajit Ray · Tue 10 Nov · funded Pather Panchali partly by pawning his wife's jewellery; twist: honorary Oscar accepted from a hospital bed in 1992
