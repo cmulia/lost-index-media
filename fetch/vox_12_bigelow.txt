@@ -6,3 +6,16 @@ episodes/vox_12_bigelow/assets/bigelow2025.jpg https://commons.wikimedia.org/wik
 episodes/vox_12_bigelow/assets/_pages/bigelow2025.html https://commons.wikimedia.org/wiki/File:Kathryn_Bigelow_2025.jpg?action=raw
 episodes/vox_12_bigelow/assets/dolby.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Dolby_Theatre_v2.jpg?width=1600
 episodes/vox_12_bigelow/assets/_pages/dolby.html https://commons.wikimedia.org/wiki/File:Dolby_Theatre_v2.jpg?action=raw
+# Higgsfield results, downloaded directly (provenance only)
+# episodes/vox_12_bigelow/assets/notebook.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205149_270d344e-40d7-4281-beae-8143236a023b.png
+# episodes/vox_12_bigelow/assets/helmet.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205147_4fb2f879-130d-4838-ab40-ad806c5042ce.png
+# episodes/vox_12_bigelow/assets/ledger.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205148_5d6068d9-01c1-481d-a99b-faedbabe7b81.png
+# episodes/vox_12_bigelow/assets/envelope.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205147_f581042d-0396-49a6-9b5a-ba43bf9f6658.png
+# episodes/vox_12_bigelow/assets/seats.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205148_2b776f0f-f2c1-4996-9b6b-6cfff7f68b0c.png
+# episodes/vox_12_bigelow/assets/chair.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205147_7ea6351c-16e2-4b5b-8204-c6977c2030b9.png
+# episodes/vox_12_bigelow/audio/take1.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205203_1d6dbdc3-0bcb-46b4-a271-959454fe4eec.mp3
+# episodes/vox_12_bigelow/audio/take2.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205203_f7ae8a44-54b7-4f1a-b64b-958edacfe548.mp3
+# episodes/vox_12_bigelow/assets/clips/chair.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205313_fd69fd8d-71f4-4b03-b9ec-ceb3dbd7fa5a.mp4
+# episodes/vox_12_bigelow/assets/clips/seats.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205312_e15fc07f-1fa1-4b72-ace8-f7cd984ecbc3.mp4
+# episodes/vox_12_bigelow/assets/clips/notebook.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205314_a7aeceb5-fce6-4d12-8998-34cdbbd9bcb8.mp4
+# episodes/vox_12_bigelow/assets/helmet_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261031_205310_fdfa3ec1-9842-46da-88f2-4c4a4dda849d.png

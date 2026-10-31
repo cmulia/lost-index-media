@@ -1,0 +1,20 @@
+{
+ "episode": "vox_12_bigelow",
+ "video_seconds": 56,
+ "music": {
+  "prompt": "Sparse, original instrumental desert-blues underscore at about seventy beats per minute: dry fingerpicked baritone guitar, soft brushed snare, low bowed cello drone and a faint harmonium, not any known theme. It opens hot and still like midday heat, settles into a patient plucked groove, rises with warm strings and a gentle swell of brass around the two-thirds mark, then resolves on a single quiet guitar harmonic.",
+  "duration_seconds": 57
+ },
+ "sfx": [
+  {"file": "wind", "prompt": "hot dry desert wind gusting softly over sand and gravel, fine grit hissing, distant emptiness", "duration_seconds": 4},
+  {"file": "stamp", "prompt": "a rubber date stamp pressed firmly onto a paper notebook page, one solid thump", "duration_seconds": 1},
+  {"file": "visor", "prompt": "slow muffled breathing inside a heavy protective helmet, faint radio static crackle", "duration_seconds": 4},
+  {"file": "coins", "prompt": "a few coins dropped on a wooden desk, then a long heavy cascade of many coins pouring", "duration_seconds": 3},
+  {"file": "envelope", "prompt": "a stiff paper envelope torn open close to the microphone, crisp card slid out", "duration_seconds": 2},
+  {"file": "hush", "prompt": "a large theatre audience murmuring then falling silent in anticipation", "duration_seconds": 3},
+  {"file": "applause", "prompt": "a large auditorium audience bursting into applause and cheering, swelling then fading", "duration_seconds": 5},
+  {"file": "boom", "prompt": "a single deep soft cinematic low boom with a long warm tail", "duration_seconds": 3},
+  {"file": "seat", "prompt": "a folding theatre seat springing up with a soft wooden thud as someone stands", "duration_seconds": 1},
+  {"file": "whoosh", "prompt": "a soft airy whoosh transition with a faint paper flutter at the end", "duration_seconds": 2}
+ ]
+}
