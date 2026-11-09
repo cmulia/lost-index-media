@@ -1,0 +1,14 @@
+{"episode":"vox_13_chaplin","video_seconds":55,
+"music":{"prompt":"Sparse original instrumental, gently ironic slow waltz at about seventy beats per minute: pizzicato strings, muted felt piano, a soft clarinet and faint music-box tones, not any known theme. It opens hushed and playful like a silent-film accompaniment at dusk, grows a little tense with low strings around the middle, then thins back to a single muted piano note at the end.","duration_seconds":56},
+"sfx":[
+{"file":"wind","prompt":"cold night wind in an empty Swiss hillside cemetery, soft distant gust through bare trees, very quiet","duration_seconds":4},
+{"file":"shovel","prompt":"a metal shovel digging into wet soil, two slow scrapes, quiet night","duration_seconds":3},
+{"file":"phone_ring","prompt":"an old 1970s rotary telephone ringing twice with a mechanical bell, then silence","duration_seconds":3},
+{"file":"dial","prompt":"a rotary telephone dial turning and clicking back, one digit, close","duration_seconds":2},
+{"file":"booth_door","prompt":"a heavy glass phone booth folding door creaking shut with a soft thud","duration_seconds":2},
+{"file":"wrench","prompt":"a heavy steel wrench set down on a metal toolbox, single clank","duration_seconds":1},
+{"file":"corn","prompt":"dry cornstalks rustling in wind in a field at dusk, leaves brushing","duration_seconds":4},
+{"file":"concrete","prompt":"wet concrete being poured and slapped with a trowel, thick and heavy, short","duration_seconds":3},
+{"file":"thud","prompt":"a heavy stone slab settling into place, deep soft thud with a little low rumble","duration_seconds":2},
+{"file":"tick","prompt":"a single soft clock tick followed by a quiet room tone, minimal","duration_seconds":2}
+]}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: IK; src: url(fonts/InterDisplay-Black.otf); }
+@font-face { font-family: IX; src: url(fonts/InterDisplay-ExtraBold.otf); }
+@font-face { font-family: IS; src: url(fonts/InterDisplay-SemiBold.otf); }
+@font-face { font-family: PM; src: url(fonts/IBMPlexMono-Medium.ttf); }
+@font-face { font-family: PR; src: url(fonts/IBMPlexMono-Regular.ttf); }
+@font-face { font-family: SI; src: url(fonts/InstrumentSerif-Italic.ttf); }
+:root { --ink: #1f2a36; --washi: #e9dcc2; --red: #b5502e; --sepia: #9a7a3e; --grey: #6d6450; --khaki: #55677a; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--washi); }
+* { box-sizing: border-box; }
+.a { position: absolute; }
+#stage { position: absolute; inset: 0; overflow: hidden; background: var(--washi); }
+.scene { position: absolute; inset: 0; overflow: hidden; background: var(--washi); }
+.full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+#grain { inset: -60px; opacity: .07; mix-blend-mode: multiply; pointer-events: none; }
+#hdr { left: 56px; right: 56px; top: 64px; display: flex; justify-content: space-between; font-family: PM; font-size: 26px; letter-spacing: 3px; z-index: 40; color: var(--ink); }
+#hdr span { background: var(--washi); padding: 6px 12px; border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--khaki); }
+.photo { position: absolute; background: #f6ecd2; padding: 16px; box-shadow: 0 16px 36px rgba(0,0,0,.32); }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(.35) saturate(.8) contrast(1.04); }
+.credit { position: absolute; font-family: PR; font-size: 20px; color: var(--ink); background: rgba(239,230,210,.95); padding: 4px 10px; white-space: nowrap; border: 1.5px solid var(--ink); }
+.tag { position: absolute; font-family: PM; font-size: 28px; letter-spacing: 3px; color: var(--washi); background: var(--ink); padding: 10px 18px 10px 50px; white-space: nowrap; border-left: 14px solid var(--red); }
+.hl { position: absolute; left: 60px; background: var(--washi); padding: 12px 30px 22px; display: inline-block; border-top: 6px solid var(--ink); border-bottom: 6px solid var(--ink); box-shadow: 0 14px 30px rgba(0,0,0,.18); }
+.big { font-family: SI; color: var(--ink); line-height: .98; letter-spacing: -1px; }
+.red { color: var(--red); }
+.card { position: absolute; background: var(--washi); color: var(--ink); padding: 22px 30px; border: 4px solid var(--ink); box-shadow: 12px 12px 0 0 var(--red); }
+.card .l { font-family: PM; font-size: 24px; letter-spacing: 4px; color: var(--grey); }
+.card .n { font-family: SI; font-size: 104px; line-height: 1; margin-top: 8px; }
+.card .s { font-family: PR; font-size: 26px; margin-top: 10px; }
+.seal { position: absolute; font-family: IK; font-size: 92px; letter-spacing: 6px; color: var(--red); border: 10px solid var(--red); padding: 2px 24px; background: rgba(239,230,210,.5); mix-blend-mode: multiply; border-radius: 6px; }
+.eng { font-family: PM; font-size: 26px; letter-spacing: 3px; color: var(--ink); }
+#cap { left: 50px; right: 50px; top: 1650px; text-align: center; z-index: 30; }
+#cap .box { display: inline-block; background: var(--ink); border-bottom: 6px solid var(--red); padding: 12px 22px 14px; }
+#cap .w { font-family: IX; font-size: 48px; line-height: 1.25; color: rgba(239,230,210,.4); padding: 0 5px; }
+#cap .w.on { color: var(--washi); background: var(--red); }
+#cap .w.done { color: var(--washi); }
+</style>
+<style>
+.chk { font-family: PM; font-size: 46px; letter-spacing: 2px; color: var(--washi); }
+.chk b { color: var(--red); font-family: IX; margin-right: 18px; }
+.grid { position: absolute; inset: 0; opacity:.5; background-image: linear-gradient(rgba(124,117,80,.18) 2px, transparent 2px), linear-gradient(90deg, rgba(124,117,80,.18) 2px, transparent 2px); background-size: 54px 54px; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="s1" class="scene">
+    <img id="s1bg" class="full" src="img/openplot/f001.jpg">
+    <div class="photo" id="p1" style="left:600px;top:180px;width:420px;height:560px;transform:rotate(3deg)"><img src="img/portrait.jpg" style="object-position:50% 12%"></div>
+    <div class="credit" id="p1c" style="left:360px;top:758px;font-size:18px">Charlie Chaplin, c. 1920 · unknown photographer · public domain</div>
+    <div class="hl" id="h1" style="top:840px">
+      <div class="big" style="font-size:112px">Charlie Chaplin's</div>
+      <div class="big red" style="font-size:148px">coffin was stolen</div>
+      <div class="big" style="font-size:112px">two months after burial.</div>
+    </div>
+    <div class="credit" id="s1c" style="left:70px;top:1530px">illustration drawn for this video</div>
+  </div>
+  <div id="s2" class="scene">
+    <div class="grid"></div>
+    <div class="tag" id="dT" style="left:70px;top:190px">CORSIER-SUR-VEVEY, SWITZERLAND</div>
+    <div class="seal" id="date" style="left:70px;top:300px;font-size:84px">25 DEC 1977</div>
+    <div class="photo" id="p2" style="left:70px;top:480px;width:940px;height:600px;transform:rotate(-1.5deg)"><img src="img/world.jpg" style="object-position:50% 45%"></div>
+    <div class="credit" id="p2c" style="left:70px;top:1100px;font-size:18px">Manoir de Ban, Chaplin's home in Corsier · Llez · CC BY-SA 3.0</div>
+    <div class="photo" id="p2b" style="left:640px;top:1140px;width:340px;height:430px;transform:rotate(3deg)"><img src="img/statue.jpg" style="object-position:50% 30%"></div>
+    <div class="credit" id="p2d" style="left:520px;top:1590px;font-size:18px">Chaplin statue, Vevey · Ygrek · CC BY-SA 2.5</div>
+    <div class="card" id="c2" style="left:70px;top:1200px;width:520px;transform:rotate(-1deg)"><div class="l">CHRISTMAS DAY</div><div class="n" style="font-size:78px">he died at 88</div></div>
+  </div>
+  <div id="s3" class="scene">
+    <img id="s3bg" class="full" src="img/openplot/f001.jpg">
+    <div class="tag" id="eT" style="left:70px;top:190px">TWO MEN · ONE COFFIN</div>
+    <div class="seal" id="date3" style="left:70px;top:300px;font-size:84px;background:var(--washi);mix-blend-mode:normal">2 MAR 1978</div>
+    <div class="hl" id="s3h" style="top:1080px"><div class="big" style="font-size:112px">taken</div><div class="big red" style="font-size:148px">from the grave.</div></div>
+    <div class="credit" id="s3c" style="left:70px;top:1530px">illustration drawn for this video</div>
+  </div>
+  <div id="s4" class="scene">
+    <img id="s4bg" class="full" src="img/phone.png">
+    <div class="tag" id="rT" style="left:70px;top:190px">WEEKS LATER · A CALLER</div>
+    <div class="card" id="c4" style="left:300px;top:1040px;width:720px;transform:rotate(1.5deg)"><div class="l">RANSOM DEMANDED</div><div class="n">≈ 600,000</div><div class="s">accounts differ: dollars or Swiss francs</div></div>
+    <div class="credit" id="s4c" style="left:70px;top:1530px">illustration drawn for this video · HISTORY, History Today</div>
+  </div>
+  <div id="s5" class="scene">
+    <img id="s5bg" class="full" src="img/booths/f001.jpg">
+    <div class="tag" id="oT" style="left:70px;top:190px">HIS WIDOW, OONA, REFUSED</div>
+    <div class="card" id="c5" style="left:70px;top:1100px;width:800px;transform:rotate(-1.5deg)"><div class="l">POLICE WATCHED</div><div class="n" style="font-size:96px">200 phone booths</div></div>
+    <div class="credit" id="s5c" style="left:70px;top:1530px">illustration drawn for this video</div>
+  </div>
+  <div id="s6" class="scene" style="background:var(--ink)">
+    <div class="tag" id="mT" style="left:70px;top:190px;background:var(--red);border-left-color:var(--washi)">MAY 1978 · ARRESTED</div>
+    <img id="tool" class="a" src="img/toolbox_cut.png" style="left:130px;top:360px;width:820px">
+    <div class="card" id="c6" style="left:70px;top:1180px;width:880px;transform:rotate(-1deg)"><div class="l">TWO REFUGEE MECHANICS</div><div class="n" style="font-size:78px">one Polish, one Bulgarian</div></div>
+    <div class="credit" id="s6c" style="left:70px;top:1530px;background:var(--washi)">illustration drawn for this video</div>
+  </div>
+  <div id="s7" class="scene">
+    <img id="s7bg" class="full" src="img/corn/f001.jpg">
+    <div class="tag" id="cT" style="left:70px;top:190px">NEAR LAKE GENEVA</div>
+    <div class="hl" id="s7h" style="top:1040px"><div class="big" style="font-size:108px">buried in</div><div class="big red" style="font-size:150px">a cornfield.</div></div>
+    <div class="credit" id="s7c" style="left:70px;top:1530px">illustration drawn for this video</div>
+  </div>
+  <div id="s8" class="scene">
+    <img id="s8bg" class="full" src="img/slab.png">
+    <div class="hl" id="s8h" style="top:190px"><div class="big" style="font-size:108px">reburied under</div><div class="big red" style="font-size:150px">concrete.</div></div>
+    <div class="card" id="c8" style="left:300px;top:1180px;width:700px;transform:rotate(1.5deg)"><div class="l">THE LEADER'S SENTENCE</div><div class="n">4½ years</div></div>
+    <div class="credit" id="s8c" style="left:70px;top:1530px">illustration drawn for this video</div>
+  </div>
+  <div id="s9" class="scene" style="background:var(--ink)">
+    <div class="photo" id="p9" style="left:70px;top:210px;width:940px;height:720px;transform:rotate(-1.5deg)"><img src="img/grave2.jpg" style="object-position:50% 50%"></div>
+    <div class="credit" id="p9c" style="left:70px;top:950px;font-size:18px">Charles and Oona Chaplin's grave, Corsier-sur-Vevey · Philoum · CC BY-SA 3.0</div>
+    <div class="hl" id="s9h" style="top:1040px"><div class="big" style="font-size:112px">The ransom was</div><div class="big red" style="font-size:140px">never paid.</div></div>
+  </div>
+  <div id="s10" class="scene" style="background:var(--washi)">
+    <div class="grid"></div>
+    <div class="a eng" id="qk" style="left:70px;top:300px;font-size:30px">THE QUESTION</div>
+    <div class="a" style="left:66px;right:50px;top:400px">
+      <div class="big" style="font-size:160px">Would you</div>
+      <div class="big" style="font-size:160px">have paid</div>
+      <div class="big red" style="font-size:160px">the ransom?</div>
+    </div>
+    <div class="photo" id="p10" style="left:300px;top:980px;width:440px;height:560px;transform:rotate(-2deg)"><img src="img/portrait.jpg" style="object-position:50% 12%"></div>
+    <div class="credit" id="p10c" style="left:120px;top:1560px;font-size:18px">Charlie Chaplin, c. 1920 · unknown photographer · public domain</div>
+  </div>
+  <div id="end" class="scene" style="background:var(--ink)">
+    <div class="a" style="left:66px;right:50px;top:560px">
+      <div class="big" id="e1" style="font-size:170px;color:var(--washi)">Follow for</div>
+      <div class="big" id="e2" style="font-size:170px;color:var(--washi)">the next</div>
+      <div class="big" id="e3" style="font-size:170px;color:#d9764f">explained</div>
+    </div>
+    <div class="a" id="efoot" style="left:70px;right:70px;top:1300px;font-family:PR;font-size:24px;line-height:1.5;color:var(--washi)">Sources: HISTORY; History Today; Snopes (citing the Washington Post, 1978). Photos: Wikimedia Commons (credited on screen). Illustrations drawn for this video.</div>
+  </div>
+  <div id="cap" class="a"></div>
+  <div id="hdr" class="a"><span>EXPLAINED NO. 13</span><span>@LOST_INDEX</span></div>
+  <canvas id="grain" class="a" width="1200" height="2040"></canvas>
+</div>
+<script>
+const CAPS = /*CAPS*/[];
+const $ = (s) => document.querySelector(s);
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const P = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: k => 1 - Math.pow(1 - k, 3), io: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2, expo: k => k === 1 ? 1 : 1 - Math.pow(2, -10*k), expoIn: k => k === 0 ? 0 : Math.pow(2, 10*k - 10),
+  back: k => { const c = 1.70158, c3 = c + 1; return 1 + c3*Math.pow(k-1,3) + c*Math.pow(k-1,2); } };
+const hash = n => { const x = Math.sin(n*127.1+311.7)*43758.5453; return x - Math.floor(x); };
+function typed(s, t, t0, cps = 26) { const n = Math.floor(clamp((t - t0)*cps, 0, s.length)); return s.slice(0, n) + (t >= t0 && n < s.length ? '▍' : ''); }
+function show(id, on) { $(id).style.display = on ? '' : 'none'; }
+const PEND = [];
+function frameSeq(img, name, t, t0) { const f = 1 + Math.floor(((t - t0) * 24) % 240); const ff = f <= 120 ? f : 241 - f; const src = `img/${name}/f${String(Math.max(1, Math.min(121, ff))).padStart(3, '0')}.jpg`; if (!img.src.endsWith(src)) { img.src = src; PEND.push(img.decode().catch(() => {})); } }
+const fadeUp = (el, t, t0, d = .5, dy = 40) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px)`; };
+const fadeUpR = (el, t, t0, r, d = .45, dy = 50) => { const k = E.out(P(t, t0, t0 + d)); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dy}px) rotate(${r}deg)`; };
+const pop = (el, t, t0) => { const k = E.back(P(t, t0, t0 + .4)); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `scale(${k})`; el.style.transformOrigin = '0 50%'; };
+const stamp = (el, t, t0, r) => { const k = P(t, t0, t0 + .18); el.style.opacity = t >= t0 ? 1 : 0; el.style.transform = `rotate(${r}deg) scale(${2.2 - 1.2 * E.out(k)})`; };
+{ const c = $('#grain'), g = c.getContext('2d'), im = g.createImageData(c.width, c.height); let s = 11;
+  for (let i = 0; i < im.data.length; i += 4) { s = (s*16807) % 2147483647; const v = 160 + s % 95; im.data[i] = im.data[i+1] = im.data[i+2] = v; im.data[i+3] = 255; } g.putImageData(im, 0, 0); }
+
+const T = { s1:[0,3.9], s2:[3.9,9.95], s3:[9.95,15.45], s4:[15.45,21.4], s5:[21.4,27.45], s6:[27.45,32.7], s7:[32.7,37.15], s8:[37.15,42.15], s9:[42.15,46.95], s10:[46.95,49.0], s11:[49.0,51.0] };
+const inS=(t,k)=>t>=T[k][0]&&t<T[k][1];
+const xfade=(id,t,k,d=.3)=>{$(id).style.opacity=Math.min(P(t,T[k][0],T[k][0]+d),1-P(t,T[k][1]-d*.5,T[k][1]));};
+function S1(t){frameSeq($('#s1bg'),'openplot',t,0);$('#s1bg').style.transform=`scale(${1.04+t*.01})`;$('#s1').style.opacity=1-E.expoIn(P(t,3.65,3.9));}
+function S2(t){xfade('#s2',t,'s2');pop($('#dT'),t,4.0);stamp($('#date'),t,4.2,-4);$('#p2').style.opacity=P(t,4.3,4.7);$('#p2c').style.opacity=P(t,4.5,4.8);fadeUpR($('#c2'),t,5.0,-1);$('#p2b').style.opacity=P(t,7.0,7.4);$('#p2d').style.opacity=P(t,7.2,7.5);}
+function S3(t){xfade('#s3',t,'s3');frameSeq($('#s3bg'),'openplot',t,T.s3[0]);pop($('#eT'),t,10.1);stamp($('#date3'),t,10.3,-4);fadeUp($('#s3h'),t,12.9,.5,40);$('#s3c').style.opacity=P(t,10.2,10.5);}
+function S4(t){xfade('#s4',t,'s4');$('#s4bg').style.transform=`scale(${1.03+(t-T.s4[0])*.008})`;pop($('#rT'),t,15.6);fadeUpR($('#c4'),t,18.7,1.5);$('#s4c').style.opacity=P(t,15.7,16.0);}
+function S5(t){xfade('#s5',t,'s5');frameSeq($('#s5bg'),'booths',t,T.s5[0]);pop($('#oT'),t,21.7);fadeUpR($('#c5'),t,25.2,-1.5);$('#s5c').style.opacity=P(t,21.6,21.9);}
+function S6(t){xfade('#s6',t,'s6');pop($('#mT'),t,27.6);const k=E.back(P(t,27.8,28.4));$('#tool').style.opacity=t>=27.8?1:0;$('#tool').style.transform=`scale(${.7+.3*k}) rotate(${Math.sin(t*1.3)*1.5}deg)`;fadeUpR($('#c6'),t,29.5,-1);$('#s6c').style.opacity=P(t,27.9,28.2);}
+function S7(t){xfade('#s7',t,'s7');frameSeq($('#s7bg'),'corn',t,T.s7[0]);pop($('#cT'),t,33.0);fadeUp($('#s7h'),t,34.7,.5,40);$('#s7c').style.opacity=P(t,32.9,33.2);}
+function S8(t){xfade('#s8',t,'s8');$('#s8bg').style.transform=`scale(${1.03+(t-T.s8[0])*.008})`;fadeUp($('#s8h'),t,37.5,.5,40);fadeUpR($('#c8'),t,40.0,1.5);$('#s8c').style.opacity=P(t,37.4,37.7);}
+function S9(t){xfade('#s9',t,'s9');$('#p9').style.opacity=P(t,42.25,42.65);$('#p9c').style.opacity=P(t,42.4,42.7);fadeUp($('#s9h'),t,42.5,.5,40);$('#s9h').children[1].style.opacity=P(t,43.3,43.6);}
+function S10(t){xfade('#s10',t,'s10',.25);}
+function S11(t){$('#end').style.opacity=P(t,49.0,49.25);['#e1','#e2','#e3'].forEach((s,i)=>{const k=E.expo(P(t,49.05+i*.08,49.45+i*.08));$(s).style.transform=`translateY(${(1-k)*40}px)`;$(s).style.opacity=k;});$('#efoot').style.opacity=P(t,49.3,49.6);$('#stage').style.opacity=1-P(t,50.7,51.0);}
+function capAt(t){const c=CAPS.find((c,i)=>t>=c[0][1]-.05&&(i+1>=CAPS.length?t<c[c.length-1][2]+.6:t<CAPS[i+1][0][1]-.05));if(!c||t>=T.s10[0]){$('#cap').style.opacity=0;return;}$('#cap').style.opacity=1;$('#cap').innerHTML=`<div class="box">${c.map(w=>`<span class="w ${t>=w[1]&&t<w[2]+.05?'on':t>=w[1]?'done':''}">${w[0]}</span>`).join(' ')}</div>`;}
+const IDS={s1:'#s1',s2:'#s2',s3:'#s3',s4:'#s4',s5:'#s5',s6:'#s6',s7:'#s7',s8:'#s8',s9:'#s9',s10:'#s10',s11:'#end'};
+const FN={s1:S1,s2:S2,s3:S3,s4:S4,s5:S5,s6:S6,s7:S7,s8:S8,s9:S9,s10:S10};
+window.renderAt=function(t){for(const k of Object.keys(T))show(IDS[k],inS(t,k)||(k==='s11'&&t>=T.s11[0]));for(const k of Object.keys(FN))if(inS(t,k))FN[k](t);if(t>=T.s11[0])S11(t);else $('#stage').style.opacity=1;capAt(t);const f=Math.floor(t*24);$('#grain').style.transform=`translate(${-hash(f)*50}px, ${-hash(f+3)*50}px)`;const ps=PEND.splice(0);return Promise.all(ps).then(()=>new Promise(r=>requestAnimationFrame(()=>setTimeout(r,0))));};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>{window.ready=true;});
+</script>
+</body>
+</html>

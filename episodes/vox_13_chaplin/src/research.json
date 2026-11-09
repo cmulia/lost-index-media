@@ -1,0 +1,192 @@
+{
+  "slug": "chaplin",
+  "episode_no": "13",
+  "subject": "Charlie Chaplin",
+  "hook": "Charlie Chaplin's coffin was stolen two months after burial.",
+  "twist": "The ransom was never paid; the only lasting change was that his grave was rebuilt under concrete.",
+  "mood": "Muted sepia and slate-blue night palette, soft cut-paper/gouache illustration with grain, Swiss alpine dusk and cornfield textures. Score: sparse pizzicato strings and muted piano, slow 70 bpm, a gently ironic waltz that thins to a single note at the end.",
+  "narration": "Charlie Chaplin's coffin was stolen two months after burial. He died on Christmas Day, nineteen seventy-seven, and was buried in Corsier-sur-Vevey. On the second of March, nineteen seventy-eight, two men took the coffin from the grave. Weeks later, a caller demanded a ransom. Reports put it near six hundred thousand. His widow, Oona, refused to pay. Police tapped her phone and watched two hundred phone booths. In May, they arrested two refugee mechanics, one Polish, one Bulgarian. They led police to the coffin, buried in a cornfield near Lake Geneva. The family reburied him under concrete. The leader got four and a half years. The ransom was never paid. The only thing the crime changed was his grave. Would you have paid the ransom?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "Charlie Chaplin's coffin was stolen two months after burial.",
+      "visual": "His grave at Corsier-sur-Vevey cemetery, Switzerland (photo)",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "He died on Christmas Day, nineteen seventy-seven, and was buried in Corsier-sur-Vevey.",
+      "visual": "Manoir de Ban / Vevey statue photo",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "On the second of March, nineteen seventy-eight, two men took the coffin from the grave.",
+      "visual": "Illustrated empty cemetery plot, shovel, lantern (prop 1)",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Weeks later, a caller demanded a ransom. Reports put it near six hundred thousand.",
+      "visual": "Illustrated telephone receiver and envelope (prop 2)",
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "His widow, Oona, refused to pay. Police tapped her phone and watched two hundred phone booths.",
+      "visual": "Illustrated row of phone booths (prop 3)",
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "In May, they arrested two refugee mechanics, one Polish, one Bulgarian.",
+      "visual": "Illustrated toolbox and wrench (prop 4)",
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "They led police to the coffin, buried in a cornfield near Lake Geneva.",
+      "visual": "Illustrated cornfield at dusk, lake in distance (prop 5)",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "The family reburied him under concrete. The leader got four and a half years.",
+      "visual": "Illustrated concrete slab, steel rebar, sealed vault (prop 6) / grave photo",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "The ransom was never paid. The only thing the crime changed was his grave.",
+      "visual": "Grave photo",
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "i": 9,
+      "text": "Would you have paid the ransom?",
+      "visual": "Chaplin portrait fading to grave",
+      "sources": []
+    }
+  ],
+  "fun_facts": [
+    "Wardas said he got the idea from a similar crime in an Italian newspaper (HISTORY).",
+    "Police traced the calls by watching about 200 Lausanne phone booths (HISTORY; Snopes citing Washington Post)."
+  ],
+  "sources": {
+    "S1": {
+      "name": "HISTORY, 'Grave robbers steal Charlie Chaplin's body'",
+      "url": "https://www.history.com/this-day-in-history/march-2/grave-robbers-steal-charlie-chaplins-body"
+    },
+    "S2": {
+      "name": "History Today, 'Charlie Chaplin's Coffin Stolen'",
+      "url": "https://www.historytoday.com/archive/charlie-chaplin%E2%80%99s-coffin-stolen"
+    },
+    "S3": {
+      "name": "Snopes, 'Rest in Piece' (citing Washington Post, May 1978)",
+      "url": "https://www.snopes.com/movies/actors/chaplin.asp"
+    }
+  },
+  "images": [
+    {
+      "key": "grave",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Charles_Chaplin_Grave_in_Corsier-sur-Vevey.jpg",
+      "direct_url": null,
+      "author": null,
+      "date": null,
+      "licence": "UNVERIFIED",
+      "shows": "grave",
+      "use": "place/hero"
+    },
+    {
+      "key": "grave2",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Charles_Chaplin_and_Oona_Chaplin_Grave_in_Corsier-sur-Vevey.JPG",
+      "direct_url": null,
+      "author": null,
+      "date": null,
+      "licence": "UNVERIFIED",
+      "shows": "grave",
+      "use": "place/hero"
+    },
+    {
+      "key": "statue",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Chaplin_Vevey_23.12.2006.jpg",
+      "direct_url": null,
+      "author": null,
+      "date": null,
+      "licence": "UNVERIFIED",
+      "shows": "statue, Vevey",
+      "use": "place/hero"
+    },
+    {
+      "key": "world",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Chaplin%E2%80%99s_World_-_Corsier-sur-Vevey_01.jpg",
+      "direct_url": null,
+      "author": null,
+      "date": null,
+      "licence": "UNVERIFIED",
+      "shows": "Chaplin's World / Manoir de Ban",
+      "use": "place/hero"
+    },
+    {
+      "key": "portrait",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Chaplin_signed_c1920.jpg",
+      "direct_url": null,
+      "author": null,
+      "date": null,
+      "licence": "UNVERIFIED",
+      "shows": "hero portrait c.1920",
+      "use": "place/hero"
+    }
+  ],
+  "props_to_illustrate": [
+    "an empty open grave plot with a spade and a hurricane lantern at night, no people",
+    "a black rotary telephone receiver beside a plain envelope, no logos",
+    "a row of old Swiss-style glass phone booths at dusk, no people, no signs",
+    "a mechanic's open toolbox with a wrench and a worn rag, no people",
+    "a cornfield at dusk with a shallow dug patch and lake in the distance",
+    "a sealed concrete burial slab with steel rebar and a trowel"
+  ],
+  "captions": {
+    "tiktok_caption": "Charlie Chaplin's coffin was stolen two months after burial. 🎩 Thieves wanted a ransom. His widow refused, and police tracked the calls to a phone booth.\n\nexplained no. 13\n\n#charliechaplin #truestory #history #switzerland #truecrime",
+    "instagram_caption": "Charlie Chaplin's coffin was stolen two months after burial. 🎩\n\nCharlie Chaplin died on Christmas Day 1977 and was buried at Corsier-sur-Vevey, Switzerland. On 2 March 1978 his coffin was taken from the grave.\n\nA caller demanded a ransom, reported as about 600,000 (accounts differ on dollars or Swiss francs). His widow Oona refused to pay. Police tapped the phone and watched 200 phone booths.\n\nIn May they arrested two refugee mechanics, one Polish, one Bulgarian. The coffin was found buried in a cornfield near Lake Geneva. The family reburied him under concrete. The leader got four and a half years.\n\nThe ransom was never paid. The only thing the crime changed was his grave.\n\nexplained no. 13\n—\nSources: HISTORY, 'Grave robbers steal Charlie Chaplin's body'; History Today, 'Charlie Chaplin's Coffin Stolen'; Snopes, 'Rest in Piece' (citing the Washington Post, 1978)\nImages via Wikimedia Commons: TO FILL after licence check\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#charliechaplin #chaplin #truestory #historyfacts #switzerland #truecrime #silentfilm",
+    "youtube_title": "Who stole Charlie Chaplin's coffin? Switzerland, 1978 #shorts",
+    "either_or_question": "Would you have paid the ransom?"
+  },
+  "dropped_unverified": [
+    "Slavic-accented caller, ransom falling to $250,000 (single source, Washington Post via Snopes)",
+    "Currency conflict: HISTORY says $600,000, History Today says 600,000 Swiss francs; script says 'police said about six hundred thousand dollars'",
+    "Cornfield distance: HISTORY says ~1 mile from home, Washington Post says near Villeneuve ~10 miles; narration says only 'near Lake Geneva'",
+    "Oona quote ('ridiculous' vs 'My husband is in heaven and in my heart') differs between sources; dropped",
+    "Exact 'dug up' dropped; sources say removed",
+    "Sentence figures from one source (HISTORY); hedge in video if desired",
+    "Image licences NOT confirmed: Commons/Wikipedia blocked (429 / permission denied)"
+  ]
+}
