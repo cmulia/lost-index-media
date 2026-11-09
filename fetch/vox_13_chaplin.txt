@@ -1,0 +1,16 @@
+episodes/vox_13_chaplin/assets/grave.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Charles_Chaplin_Grave_in_Corsier-sur-Vevey.jpg?width=1600
+episodes/vox_13_chaplin/assets/_pages/grave.html https://commons.wikimedia.org/wiki/File:Charles_Chaplin_Grave_in_Corsier-sur-Vevey.jpg?action=raw
+episodes/vox_13_chaplin/assets/grave2.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Charles_Chaplin_and_Oona_Chaplin_Grave_in_Corsier-sur-Vevey.JPG?width=1600
+episodes/vox_13_chaplin/assets/_pages/grave2.html https://commons.wikimedia.org/wiki/File:Charles_Chaplin_and_Oona_Chaplin_Grave_in_Corsier-sur-Vevey.JPG?action=raw
+episodes/vox_13_chaplin/assets/statue.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Chaplin_Vevey_23.12.2006.jpg?width=1600
+episodes/vox_13_chaplin/assets/_pages/statue.html https://commons.wikimedia.org/wiki/File:Chaplin_Vevey_23.12.2006.jpg?action=raw
+episodes/vox_13_chaplin/assets/world.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Chaplin%E2%80%99s_World_-_Corsier-sur-Vevey_01.jpg?width=1600
+episodes/vox_13_chaplin/assets/_pages/world.html https://commons.wikimedia.org/wiki/File:Chaplin%E2%80%99s_World_-_Corsier-sur-Vevey_01.jpg?action=raw
+episodes/vox_13_chaplin/assets/portrait.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Chaplin_signed_c1920.jpg?width=1600
+episodes/vox_13_chaplin/assets/_pages/portrait.html https://commons.wikimedia.org/wiki/File:Chaplin_signed_c1920.jpg?action=raw
+episodes/vox_13_chaplin/assets/portrait2.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Charlie_Chaplin_portrait.jpg?width=1600
+episodes/vox_13_chaplin/assets/_pages/portrait2.html https://commons.wikimedia.org/wiki/File:Charlie_Chaplin_portrait.jpg?action=raw
+episodes/vox_13_chaplin/assets/_pages/search_graves.json https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=15&format=json&srsearch=Chaplin+grave+Corsier
+episodes/vox_13_chaplin/assets/_pages/search_statues.json https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=15&format=json&srsearch=Chaplin+statue+Vevey
+episodes/vox_13_chaplin/assets/_pages/search_portraits.json https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=15&format=json&srsearch=Charlie+Chaplin+portrait+1920
+episodes/vox_13_chaplin/assets/_pages/search_manoir.json https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=15&format=json&srsearch=Manoir+de+Ban+Corsier
