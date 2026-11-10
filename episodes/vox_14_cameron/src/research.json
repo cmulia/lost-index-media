@@ -1,0 +1,175 @@
+{
+  "slug": "cameron",
+  "episode_no": "14",
+  "subject": "James Cameron",
+  "hook": "Would you sell your best idea for one dollar?",
+  "twist": "The dollar he accepted bought him the director's chair; decades on he says he regrets selling the rights, yet the sale is why he made the film.",
+  "mood": "Warm sodium-lit night palette: amber streetlamp, deep teal shadow, chrome highlights on cream paper, with a pencil-sketch hotel-stationery texture and halftone grain. Music: slow, tense analog synth pulse around 90 bpm with a low drone and metallic percussion, resolving to a single warm pad on the last line.",
+  "narration": "Would you sell your best idea for one dollar? James Cameron did. He says it began in nineteen eighty-one, with a fever in a cheap Rome hotel. He dreamed of a chrome skeleton climbing out of a fire. He sketched it on hotel stationery, then wrote the script. As he tells it, he sold it to producer Gale Anne Hurd for one dollar, on one condition: he would direct. The budget was about six point four million dollars, and the shoot was rushed. The Terminator reached cinemas in nineteen eighty-four. A franchise followed. Years later, Cameron said he wished he had not sold the rights. But the dollar bought him the one thing he wanted: the chair. Would you have sold it too, or kept the rights?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "Would you sell your best idea for one dollar?",
+      "visual": "Hero Cameron photo (2010) with big headline",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "James Cameron did. He says it began in nineteen eighty-one, with a fever in a cheap Rome hotel.",
+      "visual": "Rome Termini woodcut plate",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "He dreamed of a chrome skeleton climbing out of a fire.",
+      "visual": "Illustration: chrome endoskeleton rising from flames",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "He sketched it on hotel stationery, then wrote the script.",
+      "visual": "Illustration: pencil sketch on hotel notepaper; typewriter",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "As he tells it, he sold it to producer Gale Anne Hurd for one dollar, on one condition: he would direct.",
+      "visual": "Illustration: one-dollar bill beside a folding director's chair; Cameron 2000 photo",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "The budget was about six point four million dollars, and the shoot was rushed.",
+      "visual": "Illustration: film camera on a dark street under a streetlamp",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "The Terminator reached cinemas in nineteen eighty-four. A franchise followed.",
+      "visual": "Endoskeleton replica photo",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "Years later, Cameron said he wished he had not sold the rights.",
+      "visual": "Illustration: dollar bill, Cameron 2010 photo",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "But the dollar bought him the one thing he wanted: the chair.",
+      "visual": "Illustration: lone director's chair under a spotlight",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 9,
+      "text": "Would you have sold it too, or kept the rights?",
+      "visual": "End card: chair vs. dollar bill",
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "fun_facts": [
+    "Cameron says the idea came in a fever dream in a cheap pensione in Rome in 1981: a chrome skeleton emerging from a fire (BFI interview).",
+    "Cameron says most night street scenes were shot with available light (BFI interview)."
+  ],
+  "sources": {
+    "S1": {
+      "name": "Business Insider, James Cameron sold the rights to 'Terminator' back in the '80s for $1 (citing a 2009 Toronto Sun interview), 2015",
+      "url": "https://www.businessinsider.in/James-Cameron-sold-the-rights-to-Terminator-back-in-the-80s-for-1-and-its-one-of-his-biggest-regrets/articleshow/47902797.cms"
+    },
+    "S2": {
+      "name": "BFI, The Terminator came to me in a dream: a new interview with James Cameron",
+      "url": "https://www.bfi.org.uk/interviews/terminator-james-cameron"
+    },
+    "S3": {
+      "name": "BFI interview (budget 6.4 million dollars, rushed shoot, franchise)",
+      "url": "https://www.bfi.org.uk/interviews/terminator-james-cameron"
+    }
+  },
+  "images": [
+    {
+      "key": "cameron_2010",
+      "file_page": "https://commons.wikimedia.org/wiki/File:James_Cameron_2010.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/James_Cameron_2010.jpg",
+      "author": "Steve Jurvetson",
+      "date": "2010-02-13",
+      "licence": "cc-by-2.0",
+      "shows": "James Cameron speaking at TED 2010",
+      "use": "hero photo"
+    },
+    {
+      "key": "cameron_2000",
+      "file_page": "https://commons.wikimedia.org/wiki/File:JAMES_CAMERON_2000.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/JAMES_CAMERON_2000.jpg",
+      "author": "John Mathew Smith & www.celebrity-photos.com",
+      "date": "2000 (Washington, D.C.)",
+      "licence": "cc-by-sa-2.0",
+      "shows": "James Cameron, Washington D.C., 2000",
+      "use": "second era photo"
+    },
+    {
+      "key": "endoskeleton",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Terminator.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Terminator.jpg",
+      "author": "Daniel Oberhaus",
+      "date": "2017-08-06",
+      "licence": "cc-by-2.0",
+      "shows": "T-800 endoskeleton replica",
+      "use": "object"
+    },
+    {
+      "key": "rome_termini",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Roma_facciata_della_Stazione_centrale.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Roma_facciata_della_Stazione_centrale.jpg",
+      "author": "Giuseppe Barberis",
+      "date": "1894",
+      "licence": "PD-old-70-1923",
+      "shows": "Woodcut of Rome's central station (Termini) facade, 1894",
+      "use": "place (Rome; not the 1981 hotel)"
+    }
+  ],
+  "props_to_illustrate": [
+    "a chrome robot skeleton rising out of flames",
+    "pencil sketch of a skeleton on hotel notepaper",
+    "a one-dollar bill beside a folding director's chair",
+    "a lone empty director's chair under a spotlight",
+    "a vintage film camera on a night street under a streetlamp",
+    "a typewriter with script pages",
+    "a narrow Roman hotel room with a lamp and rumpled bed"
+  ],
+  "captions": {
+    "tiktok_caption": "He sold his best idea for a dollar. And that was the smart part. 🎬\n\nexplained no. 14\n\n#jamescameron #terminator #filmhistory #movietrivia #behindthescenes",
+    "instagram_caption": "James Cameron sold The Terminator for one dollar. 🎬\n\nHe says the idea arrived in 1981, in a fever dream in a cheap Rome hotel: a chrome skeleton climbing out of a fire. He sketched it the moment he woke.\n\nHe turned it into a script, then sold it to producer Gale Anne Hurd for one dollar, on one condition: he would direct. The budget was about 6.4 million dollars and the shoot was rushed.\n\nYears later he said he wished he had not sold the rights. But the dollar bought him the chair.\n\nexplained no. 14\n—\nSources: Business Insider, 2015 (citing Toronto Sun, 2009); BFI, interview with James Cameron.\nImages via Wikimedia Commons: James Cameron 2010 by Steve Jurvetson (CC BY 2.0); James Cameron 2000 by John Mathew Smith (CC BY-SA 2.0); T-800 endoskeleton replica by Daniel Oberhaus (CC BY 2.0); Rome Termini woodcut by Giuseppe Barberis, 1894 (public domain).\nIllustrations and diagrams drawn for this video.\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#jamescameron #terminator #filmhistory #movietrivia #behindthescenes #cinema #filmmaking #1980s",
+    "youtube_title": "Why James Cameron sold The Terminator for $1 (1984) #shorts",
+    "either_or_question": "Would you have sold it too, or kept the rights?"
+  },
+  "first_comment": "I'd take the chair. Money comes back; the chance to direct your own idea doesn't.",
+  "dropped_unverified": [
+    "Box-office figures (not stated per override).",
+    "Cameron regaining rights in 2019/2020 and Hurd/Skydance termination dispute: sources conflicting, outcome not confirmed.",
+    "Cameron spending about 40k of his own fee on reshoots: single-source summary, not verified.",
+    "Hurd/Cameron later relationship: no reliable source found.",
+    "Dollar sale and directing condition rests on a 2009 Toronto Sun interview via Business Insider; hedged as sold-on-condition, single-sourced.",
+    "Cameron's prior record / Piranha II firing: not verified."
+  ]
+}

@@ -1,0 +1,14 @@
+{"episode":"vox_14_cameron","video_seconds":48,
+"music":{"prompt":"Original instrumental, tense 1980s analog synth score at about ninety beats per minute: a low pulsing bass synth ostinato, cold metallic percussion hits and a dark drone, not any known theme. It opens sparse and feverish, builds steady momentum through the middle with a driving pulse, then drops away to a single warm sustained synth pad at the end.","duration_seconds":49},
+"sfx":[
+{"file":"coin","prompt":"a single coin flipped and caught in a hand, bright metallic ring, close and dry","duration_seconds":2},
+{"file":"fever","prompt":"low feverish heartbeat with a faint ringing in the ears, muffled and dreamlike","duration_seconds":4},
+{"file":"fire","prompt":"a fire whooshing up and crackling, then a heavy metallic servo whir rising","duration_seconds":4},
+{"file":"pencil","prompt":"pencil scratching quickly on paper, close, a few strokes","duration_seconds":3},
+{"file":"typewriter","prompt":"a manual typewriter typing a fast line then the carriage return bell ding","duration_seconds":3},
+{"file":"pen_sign","prompt":"a pen signing a contract on paper on a wooden desk, then the pen set down","duration_seconds":2},
+{"file":"clapper","prompt":"a film slate clapperboard clap on a quiet night street, short reverb","duration_seconds":1.5},
+{"file":"projector","prompt":"a 35mm film projector starting up and running, mechanical clatter","duration_seconds":4},
+{"file":"cash_register","prompt":"an old mechanical cash register drawer opening with a bell, vintage","duration_seconds":2},
+{"file":"chair","prompt":"a wooden folding director's chair being opened and set down on a stage floor, creak and soft knock, echo","duration_seconds":2}
+]}

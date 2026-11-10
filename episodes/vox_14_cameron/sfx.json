@@ -1,0 +1,49 @@
+{
+ "flow_id": "jzIBigACWQwa36sh2A36",
+ "sfx": {
+  "coin": {
+   "node_id": "nmARtXi5biB0FlP1ZJwd",
+   "duration": 2.04
+  },
+  "fever": {
+   "node_id": "SbKu3tWeg2n5y6K7mY8f",
+   "duration": 4.05
+  },
+  "fire": {
+   "node_id": "1Uvvi1hPGS73Nrad4Xj1",
+   "duration": 4.05
+  },
+  "pencil": {
+   "node_id": "LkmSJuT2YrdKfw0Q7srZ",
+   "duration": 3.03
+  },
+  "typewriter": {
+   "node_id": "AkEFkxjBAu8pjWfTHD0I",
+   "duration": 3.03
+  },
+  "pen_sign": {
+   "node_id": "HegWldgaVjOVHCdQZ8sJ",
+   "duration": 2.04
+  },
+  "clapper": {
+   "node_id": "5z1P9yttFwSOzamRiNxl",
+   "duration": 1.52
+  },
+  "projector": {
+   "node_id": "nG0SqsXnfgTgX10exBVc",
+   "duration": 4.05
+  },
+  "cash_register": {
+   "node_id": "ikcjS2S8wyUW5w3wWnKM",
+   "duration": 2.04
+  },
+  "chair": {
+   "node_id": "oAO7wNbRsmfGvCuxAILh",
+   "duration": 2.04
+  }
+ },
+ "music": {
+  "node_id": "2MvKuHgtUEKcckZpUEdD",
+  "duration": 49.03
+ }
+}

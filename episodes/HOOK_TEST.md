@@ -5,3 +5,4 @@ A = twist as the first spoken line. B = question with stakes. C = name the objec
 | # | Episode | Style | Post date |
 |---|---|---|---|
 | 1 | explained no. 13 Charlie Chaplin | A | 15 Nov 2026 |
+| 2 | explained no. 14 James Cameron | B | 16 Nov 2026 |
