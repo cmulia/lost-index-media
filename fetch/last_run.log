@@ -4,18 +4,16 @@ FAIL 404 episodes/015_wyckoff/assets/habs_1934_b_spare.jpg https://commons.wikim
 FAIL 404 episodes/015_wyckoff/assets/_pages/habs_1934_b_spare.html https://commons.wikimedia.org/wiki/File:Peter_Wyckoff_House,_5902_Canarsie_Lane,_Brooklyn,_Kings_County,_NY_HABS_NY,24-BROK,32-2.tif?action=raw
 ok   episodes/vox_13_chaplin/assets/grave.jpg
 ok   episodes/vox_13_chaplin/assets/_pages/grave.html
-ok   episodes/vox_13_chaplin/assets/grave2.jpg
-ok   episodes/vox_13_chaplin/assets/_pages/grave2.html
-ok   episodes/vox_13_chaplin/assets/statue.jpg
-ok   episodes/vox_13_chaplin/assets/_pages/statue.html
-ok   episodes/vox_13_chaplin/assets/world.jpg
-ok   episodes/vox_13_chaplin/assets/_pages/world.html
-ok   episodes/vox_13_chaplin/assets/portrait.jpg
-ok   episodes/vox_13_chaplin/assets/_pages/portrait.html
-ok   episodes/vox_13_chaplin/assets/portrait2.jpg
-ok   episodes/vox_13_chaplin/assets/_pages/portrait2.html
 ok   episodes/vox_13_chaplin/assets/_pages/search_graves.json
 ok   episodes/vox_13_chaplin/assets/_pages/search_statues.json
 ok   episodes/vox_13_chaplin/assets/_pages/search_portraits.json
 ok   episodes/vox_13_chaplin/assets/_pages/search_manoir.json
-ok=16 fail=4
+ok   episodes/vox_14_cameron/assets/cameron_2010.jpg
+ok   episodes/vox_14_cameron/assets/_pages/cameron_2010.html
+ok   episodes/vox_14_cameron/assets/cameron_2000.jpg
+ok   episodes/vox_14_cameron/assets/_pages/cameron_2000.html
+ok   episodes/vox_14_cameron/assets/endoskeleton.jpg
+ok   episodes/vox_14_cameron/assets/_pages/endoskeleton.html
+ok   episodes/vox_14_cameron/assets/rome_termini.jpg
+ok   episodes/vox_14_cameron/assets/_pages/rome_termini.html
+ok=14 fail=4
