@@ -1,0 +1,8 @@
+episodes/vox_14_cameron/assets/cameron_2010.jpg https://commons.wikimedia.org/wiki/Special:FilePath/James_Cameron_2010.jpg?width=1600
+episodes/vox_14_cameron/assets/_pages/cameron_2010.html https://commons.wikimedia.org/wiki/File:James_Cameron_2010.jpg?action=raw
+episodes/vox_14_cameron/assets/cameron_2000.jpg https://commons.wikimedia.org/wiki/Special:FilePath/JAMES_CAMERON_2000.jpg?width=1600
+episodes/vox_14_cameron/assets/_pages/cameron_2000.html https://commons.wikimedia.org/wiki/File:JAMES_CAMERON_2000.jpg?action=raw
+episodes/vox_14_cameron/assets/endoskeleton.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Terminator.jpg?width=1600
+episodes/vox_14_cameron/assets/_pages/endoskeleton.html https://commons.wikimedia.org/wiki/File:Terminator.jpg?action=raw
+episodes/vox_14_cameron/assets/rome_termini.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Roma_facciata_della_Stazione_centrale.jpg?width=1600
+episodes/vox_14_cameron/assets/_pages/rome_termini.html https://commons.wikimedia.org/wiki/File:Roma_facciata_della_Stazione_centrale.jpg?action=raw
