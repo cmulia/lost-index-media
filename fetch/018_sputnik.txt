@@ -1,0 +1,12 @@
+episodes/018_sputnik/assets/sputnik_replica.jpg https://upload.wikimedia.org/wikipedia/commons/b/be/Sputnik_asm.jpg
+episodes/018_sputnik/assets/_pages/sputnik_replica.html https://commons.wikimedia.org/wiki/File:Sputnik_asm.jpg?action=raw
+episodes/018_sputnik/assets/sputnik_schema.jpg https://upload.wikimedia.org/wikipedia/commons/b/b6/Sputnik1_schema.jpg
+episodes/018_sputnik/assets/_pages/sputnik_schema.html https://commons.wikimedia.org/wiki/File:Sputnik1_schema.jpg?action=raw
+episodes/018_sputnik/assets/sx100_receiver.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hallicrafters_co_SX-100.jpg/1600px-Hallicrafters_co_SX-100.jpg
+episodes/018_sputnik/assets/_pages/sx100_receiver.html https://commons.wikimedia.org/wiki/File:Hallicrafters_co_SX-100.jpg?action=raw
+episodes/018_sputnik/assets/anefo_watchers.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Russische_kunstmaan_passeert_Nederlanders%2C_mensen_in_pyama_staan_te_kijken%2C_Bestanddeelnr_909-0359.jpg/1600px-Russische_kunstmaan_passeert_Nederlanders%2C_mensen_in_pyama_staan_te_kijken%2C_Bestanddeelnr_909-0359.jpg
+episodes/018_sputnik/assets/_pages/anefo_watchers.html https://commons.wikimedia.org/wiki/File:Russische_kunstmaan_passeert_Nederlanders,_mensen_in_pyama_staan_te_kijken,_Bestanddeelnr_909-0359.jpg?action=raw
+episodes/018_sputnik/assets/naca_final.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Final_Meeting_of_NACA_-_GPN-2002-000023.jpg/1600px-Final_Meeting_of_NACA_-_GPN-2002-000023.jpg
+episodes/018_sputnik/assets/_pages/naca_final.html https://commons.wikimedia.org/wiki/File:Final_Meeting_of_NACA_-_GPN-2002-000023.jpg?action=raw
+episodes/018_sputnik/assets/explorer1.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Explorer_I_launched_Jan._31%2C_1958_%28116-KSC-68P-17%29.jpg/1600px-Explorer_I_launched_Jan._31%2C_1958_%28116-KSC-68P-17%29.jpg
+episodes/018_sputnik/assets/_pages/explorer1.html https://commons.wikimedia.org/wiki/File:Explorer_I_launched_Jan._31,_1958_(116-KSC-68P-17).jpg?action=raw

@@ -1,0 +1,271 @@
+{
+ "file_no": "018",
+ "slug": "sputnik",
+ "title": "Sputnik's Beep (1957)",
+ "series_label": "file no. 018",
+ "voice_direction": "Daniel or Mark Vale: steady, dry, unhurried. Matter-of-fact on the hook (slightly wry on 'shouldn't have frightened anyone'), a beat of quiet on 'the signal stopped', last line almost under the breath as a genuine question.",
+ "narration": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone. Sputnik one was barely two feet wide when the Soviet Union launched it on the fourth of October, nineteen fifty-seven. Its only job was to beep, on two shortwave frequencies that any amateur radio operator could tune in. Most people who looked up at a bright light in the sky were probably seeing its rocket stage, not the ball. The beeps were not empty, either. Their length changed if the inside got too hot or too cold. After about three weeks, the batteries died, and the signal stopped. But the fear outlasted the signal. Within months, Washington had created ARPA, and then NASA. A beeping ball had started a race. Would you have been afraid?",
+ "beats": [
+  {
+   "text": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone. ",
+   "caption": "this shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone.",
+   "big": "just a radio.",
+   "visual": {
+    "type": "photo",
+    "asset": "sputnik_replica"
+   },
+   "label": "sputnik 1 · replica",
+   "sublabel": "nasa · nssdc",
+   "date_label": null,
+   "date": null,
+   "sfx": "faint shortwave static fading in, one soft electronic beep",
+   "dark": true
+  },
+  {
+   "text": "Sputnik one was barely two feet wide when the Soviet Union launched it on the fourth of October, nineteen fifty-seven. ",
+   "caption": "sputnik 1 was barely 2 feet wide when the soviet union launched it on 4 october 1957.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "sputnik_schema"
+   },
+   "label": "sputnik 1 · exploded view",
+   "sublabel": "deep silence · cc by-sa 3.0",
+   "date_label": "launched",
+   "date": "4 oct 1957",
+   "sfx": "distant rocket roar swelling then cutting off",
+   "dark": false
+  },
+  {
+   "text": "Its only job was to beep, on two shortwave frequencies that any amateur radio operator could tune in. ",
+   "caption": "its only job was to beep, on two shortwave frequencies that any amateur radio operator could tune in.",
+   "big": "20 and 40 mhz.",
+   "visual": {
+    "type": "photo",
+    "asset": "sx100_receiver"
+   },
+   "label": "a 1950s shortwave receiver",
+   "sublabel": "rabax63 · cc by-sa 4.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "shortwave dial tuning through static, then a steady beep-beep",
+   "dark": false
+  },
+  {
+   "text": "Most people who looked up at a bright light in the sky were probably seeing its rocket stage, not the ball. ",
+   "caption": "most people who looked up at a bright light in the sky were probably seeing its rocket stage, not the ball.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "anefo_watchers"
+   },
+   "label": "people watching the sky · netherlands",
+   "sublabel": "harry pot · anefo · cc0",
+   "date_label": "photographed",
+   "date": "16 oct 1957",
+   "sfx": "quiet crowd murmur outdoors at night, a distant dog bark",
+   "dark": true
+  },
+  {
+   "text": "The beeps were not empty, either. Their length changed if the inside got too hot or too cold. ",
+   "caption": "the beeps were not empty, either. their length changed if the inside got too hot or too cold.",
+   "big": "a thermometer.",
+   "visual": {
+    "type": "diagram",
+    "name": "pulse",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "beep length as a signal",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "clean radio beeps, one stretching longer",
+   "dark": true
+  },
+  {
+   "text": "After about three weeks, the batteries died, and the signal stopped. ",
+   "caption": "after about three weeks, the batteries died, and the signal stopped.",
+   "big": "silence.",
+   "visual": {
+    "type": "diagram",
+    "name": "timeline",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "sputnik 1 · timeline",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "signal ended",
+   "date": "26 oct 1957",
+   "sfx": "beeps slowing, thinning to static, then dead air",
+   "dark": true
+  },
+  {
+   "text": "But the fear outlasted the signal. Within months, Washington had created ARPA, and then NASA. ",
+   "caption": "but the fear outlasted the signal. within months, washington had created arpa, and then nasa.",
+   "big": "arpa. nasa.",
+   "visual": {
+    "type": "photo",
+    "asset": "naca_final"
+   },
+   "label": "final meeting of naca",
+   "sublabel": "nasa",
+   "date_label": "photographed",
+   "date": "21 aug 1958",
+   "sfx": "teletype clatter and a gavel tap in a quiet room",
+   "dark": false
+  },
+  {
+   "text": "A beeping ball had started a race. ",
+   "caption": "a beeping ball had started a race.",
+   "big": "a race.",
+   "visual": {
+    "type": "photo",
+    "asset": "explorer1"
+   },
+   "label": "explorer 1 launch",
+   "sublabel": "nasa / kennedy space center",
+   "date_label": "launched",
+   "date": "31 jan 1958",
+   "sfx": "rocket ignition rumble, a countdown voice faint under static",
+   "dark": true
+  },
+  {
+   "text": "Would you have been afraid?",
+   "caption": "would you have been afraid?",
+   "big": "would you have been afraid?",
+   "visual": {
+    "type": "photo",
+    "asset": "sputnik_replica"
+   },
+   "label": "sputnik 1 · replica",
+   "sublabel": "nasa · nssdc",
+   "date_label": null,
+   "date": null,
+   "sfx": "single soft beep fading into hiss",
+   "dark": true
+  }
+ ],
+ "music_mood": "Sparse cold-war tension: low analog drone, a single thin sine-like pulse about 60 bpm, faint shortwave hiss. Rises slightly at the rocket and the race, drops to near silence at 'the signal stopped', then thins to one sustained low note under the final question.",
+ "assets": [
+  {
+   "key": "sputnik_replica",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Sputnik_asm.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sputnik_asm.jpg",
+   "author": "NSSDC, NASA",
+   "date": "2004",
+   "license": "Public domain (PD-USGov-NASA)",
+   "shows": "Replica of Sputnik 1 at the National Air and Space Museum, polished sphere with four antennas. 1094x896.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "sputnik_schema",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Sputnik1_schema.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sputnik1_schema.jpg",
+   "author": "Deep silence",
+   "date": "3 Jan 2009",
+   "license": "CC BY-SA 3.0",
+   "shows": "Annotated exploded view of Sputnik 1. Only 619x613: use on a panel, not full-bleed.",
+   "changes": "placed on panel, slow push"
+  },
+  {
+   "key": "sx100_receiver",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hallicrafters_co_SX-100.jpg/1600px-Hallicrafters_co_SX-100.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hallicrafters_co_SX-100.jpg",
+   "author": "Rabax63",
+   "date": "5 Sep 2018",
+   "license": "CC BY-SA 4.0",
+   "shows": "Hallicrafters SX-100 shortwave receiver, the station on which Heinz Kaminski in Bochum received Sputnik 1 signals; Haus der Geschichte, Bonn. Original 6000x4000.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "anefo_watchers",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Russische_kunstmaan_passeert_Nederlanders%2C_mensen_in_pyama_staan_te_kijken%2C_Bestanddeelnr_909-0359.jpg/1600px-Russische_kunstmaan_passeert_Nederlanders%2C_mensen_in_pyama_staan_te_kijken%2C_Bestanddeelnr_909-0359.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Russische_kunstmaan_passeert_Nederlanders,_mensen_in_pyama_staan_te_kijken,_Bestanddeelnr_909-0359.jpg",
+   "author": "Harry Pot / Anefo (Nationaal Archief)",
+   "date": "16 Oct 1957",
+   "license": "CC0",
+   "shows": "Dutch people in pyjamas watching a Soviet satellite pass overhead, 16 Oct 1957 (archive caption). Original 2670x3480; vertical.",
+   "changes": "slow push; do NOT claim they saw the ball (archive caption just says satellite)"
+  },
+  {
+   "key": "naca_final",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Final_Meeting_of_NACA_-_GPN-2002-000023.jpg/1600px-Final_Meeting_of_NACA_-_GPN-2002-000023.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Final_Meeting_of_NACA_-_GPN-2002-000023.jpg",
+   "author": "NASA",
+   "date": "21 Aug 1958",
+   "license": "Public domain (NASA)",
+   "shows": "Final meeting of the National Advisory Committee for Aeronautics, 21 Aug 1958, before it became NASA. Original 2806x1884.",
+   "changes": "cropped to 9:16, slow pan"
+  },
+  {
+   "key": "explorer1",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Explorer_I_launched_Jan._31%2C_1958_%28116-KSC-68P-17%29.jpg/1600px-Explorer_I_launched_Jan._31%2C_1958_%28116-KSC-68P-17%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Explorer_I_launched_Jan._31,_1958_(116-KSC-68P-17).jpg",
+   "author": "NASA Kennedy Space Center",
+   "date": "31 Jan 1958",
+   "license": "Public domain (NASA)",
+   "shows": "Jupiter-C/Juno I launching Explorer 1, first US satellite. Original 2344x3000, vertical.",
+   "changes": "slow push"
+  }
+ ],
+ "tiktok_caption": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone. 🛰️\n\nIts beeps told listeners when it got too hot or too cold, and after three weeks they stopped.\n\nfile no. 018 · Images: NASA, Anefo/Nationaal Archief (CC0), Rabax63 & Deep silence (CC BY-SA) via Wikimedia Commons\n#sputnik #spacehistory #spacerace #radio #history",
+ "instagram_caption": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone.\n\nSputnik 1 launched on 4 October 1957. It was a polished sphere about 58 cm wide, and its main payload was a radio sending beeps on 20 and 40 MHz that amateur radio operators could pick up.\n\nMany people who looked up at a bright light in the sky were probably seeing the rocket's core stage, which was far brighter than the ball itself.\n\nThe beeps carried a little data too: their length changed if the temperature inside went out of range. On 26 October, after about three weeks, the batteries ran out and the signal stopped.\n\nBy then the alarm was in Washington. ARPA followed in February 1958 and NASA in July. One 1957 analyst found little sign of panic among the public.\n\nfile no. 018\n\n—\nSources: NASA NSSDC, NASA History, Launius (NASA, 2005), Zak (RussianSpaceWeb), ARRL.\nImages: NASA / NSSDC (Sputnik replica, Explorer 1, NACA meeting; public domain), Deep silence (CC BY-SA 3.0), Rabax63 (CC BY-SA 4.0), Harry Pot / Anefo, Nationaal Archief (CC0), via Wikimedia Commons.\nDiagrams drawn for this video.\n\n#sputnik #spacehistory #spacerace #shortwave #radiohistory #coldwar #history",
+ "youtube_title": "Sputnik's beep: the sound that started the space race (1957)",
+ "first_comment": "More curious than afraid. I'd have been on the roof with a radio, trying to catch it.",
+ "facts": [
+  {
+   "claim": "Sputnik 1 launched 4 Oct 1957; transmitters on 20.005 and 40.002 MHz, 0.3 s pulses alternating between the two",
+   "source": "Wikipedia 'Sputnik 1' citing Zak/RussianSpaceWeb and RGANTD document; NASA NSSDC",
+   "url": "https://en.wikipedia.org/wiki/Sputnik_1"
+  },
+  {
+   "claim": "Sphere about 58 cm (23 in) wide = 'barely two feet'. (58 cm figure from NSSDC/Wikipedia; not re-fetched here)",
+   "source": "NASA NSSDC Master Catalog 1957-001B",
+   "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1957-001B"
+  },
+  {
+   "claim": "Amateur radio operators could receive the signals (ARRL 'Sputnik and Amateur Radio'); Kaminski received them in Bochum on a Hallicrafters-type station on display in Bonn",
+   "source": "Wikipedia 'Sputnik 1'; Commons file description",
+   "url": "https://en.wikipedia.org/wiki/Sputnik_1"
+  },
+  {
+   "claim": "Most watchers saw the 26 m R-7 core stage (first magnitude), while the polished ball was ~6th magnitude, barely visible",
+   "source": "Wikipedia 'Sputnik 1' citing Brzezinski, Lafleur 2004, Bessonov 2007 Moscow News (hedged 'probably')",
+   "url": "https://en.wikipedia.org/wiki/Sputnik_1"
+  },
+  {
+   "claim": "Pulse duration changed if internal temperature went above 50 C or below 0 C (and on pressure loss below 130 kPa); fan thermal switches 20-36 C",
+   "source": "Wikipedia 'Sputnik 1' citing Zak/RussianSpaceWeb, space-ru.com, ARRL",
+   "url": "https://en.wikipedia.org/wiki/Sputnik_1"
+  },
+  {
+   "claim": "Transmitter batteries ran out 26 Oct 1957 (22 days; planned ~2 weeks); orbit decayed 4 Jan 1958 after 1,440 orbits",
+   "source": "Wikipedia 'Sputnik 1' citing AP/Argus-Leader 26 Oct 1957 and NASA NSSDC",
+   "url": "https://en.wikipedia.org/wiki/Sputnik_1"
+  },
+  {
+   "claim": "ARPA authorised Feb 1958 (later DARPA); National Aeronautics and Space Act signed 29 Jul 1958 creating NASA; analyst Samuel Lubell found no evidence of public panic, so fear was largely elite",
+   "source": "Wikipedia 'Sputnik crisis' citing Launius (NASA 2005); NASA History",
+   "url": "https://en.wikipedia.org/wiki/Sputnik_crisis"
+  },
+  {
+   "claim": "NACA's final meeting 21 Aug 1958 (Commons/NASA image description)",
+   "source": "Commons GPN-2002-000023",
+   "url": "https://commons.wikimedia.org/wiki/File:Final_Meeting_of_NACA_-_GPN-2002-000023.jpg"
+  },
+  {
+   "claim": "Explorer 1 launched 31 Jan 1958",
+   "source": "NASA KSC image 116-KSC-68P-17",
+   "url": "https://commons.wikimedia.org/wiki/File:Explorer_I_launched_Jan._31,_1958_(116-KSC-68P-17).jpg"
+  }
+ ],
+ "end_card_text": "follow for the next file",
+ "audio_recording": {
+  "found": false,
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Sputnik_beep.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sputnik_beep.ogg",
+  "license": "Public domain (PD-USGov-NASA; source NASA SoundCloud 'sputnik-beep')",
+  "notes": "Candidate only, authenticity NOT confirmed. Commons has a sibling file 'Possible PDM signal labeled as Sputnik by NASA.ogg' whose note says NASA NSSDC's 'Sputnik' sound is NOT the Sputnik-1 signal. Could not confirm Sputnik_beep.ogg is the authentic signal (NASA pages were blocked for fetch). Recommend synthesising a labelled recreation (0.3 s tone pairs alternating, ~3 Hz, shortwave static) and captioning it 'recreation'."
+ }
+}
