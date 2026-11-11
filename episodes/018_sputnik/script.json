@@ -9,13 +9,13 @@
   {
    "text": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone. ",
    "caption": "this shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone.",
-   "big": "just a radio.",
+   "big": "nothing but a radio. it shouldn't have frightened anyone.",
    "visual": {
     "type": "photo",
     "asset": "sputnik_replica"
    },
    "label": "sputnik 1 · replica",
-   "sublabel": "nasa · nssdc",
+   "sublabel": "nasa · beep recreated",
    "date_label": null,
    "date": null,
    "sfx": "faint shortwave static fading in, one soft electronic beep",
@@ -210,7 +210,7 @@
   }
  ],
  "tiktok_caption": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone. 🛰️\n\nIts beeps told listeners when it got too hot or too cold, and after three weeks they stopped.\n\nfile no. 018 · Images: NASA, Anefo/Nationaal Archief (CC0), Rabax63 & Deep silence (CC BY-SA) via Wikimedia Commons\n#sputnik #spacehistory #spacerace #radio #history",
- "instagram_caption": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone.\n\nSputnik 1 launched on 4 October 1957. It was a polished sphere about 58 cm wide, and its main payload was a radio sending beeps on 20 and 40 MHz that amateur radio operators could pick up.\n\nMany people who looked up at a bright light in the sky were probably seeing the rocket's core stage, which was far brighter than the ball itself.\n\nThe beeps carried a little data too: their length changed if the temperature inside went out of range. On 26 October, after about three weeks, the batteries ran out and the signal stopped.\n\nBy then the alarm was in Washington. ARPA followed in February 1958 and NASA in July. One 1957 analyst found little sign of panic among the public.\n\nfile no. 018\n\n—\nSources: NASA NSSDC, NASA History, Launius (NASA, 2005), Zak (RussianSpaceWeb), ARRL.\nImages: NASA / NSSDC (Sputnik replica, Explorer 1, NACA meeting; public domain), Deep silence (CC BY-SA 3.0), Rabax63 (CC BY-SA 4.0), Harry Pot / Anefo, Nationaal Archief (CC0), via Wikimedia Commons.\nDiagrams drawn for this video.\n\n#sputnik #spacehistory #spacerace #shortwave #radiohistory #coldwar #history",
+ "instagram_caption": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone.\n\nSputnik 1 launched on 4 October 1957. It was a polished sphere about 58 cm wide, and its main payload was a radio sending beeps on 20 and 40 MHz that amateur radio operators could pick up.\n\nMany people who looked up at a bright light in the sky were probably seeing the rocket's core stage, which was far brighter than the ball itself.\n\nThe beeps carried a little data too: their length changed if the temperature inside went out of range. On 26 October, after about three weeks, the batteries ran out and the signal stopped.\n\nBy then the alarm was in Washington. ARPA followed in February 1958 and NASA in July. One 1957 analyst found little sign of panic among the public.\n\nfile no. 018\n\n—\nSources: NASA NSSDC Master Catalog (1957-001B); Wikipedia, 'Sputnik 1' and 'Sputnik crisis' (citing Zak/RussianSpaceWeb, Launius/NASA 2005, ARRL, AP 1957).\nImages: NASA / NSSDC (Sputnik replica, Explorer 1, NACA meeting; public domain), Deep silence (CC BY-SA 3.0), Rabax63 (CC BY-SA 4.0), Harry Pot / Anefo, Nationaal Archief (CC0), via Wikimedia Commons.\nDiagrams drawn for this video. The beep heard here is a recreation of the signal pattern, made for this video.\n\n#sputnik #spacehistory #spacerace #shortwave #radiohistory #coldwar #history",
  "youtube_title": "Sputnik's beep: the sound that started the space race (1957)",
  "first_comment": "More curious than afraid. I'd have been on the roof with a radio, trying to catch it.",
  "facts": [
@@ -267,5 +267,6 @@
   "page": "https://commons.wikimedia.org/wiki/File:Sputnik_beep.ogg",
   "license": "Public domain (PD-USGov-NASA; source NASA SoundCloud 'sputnik-beep')",
   "notes": "Candidate only, authenticity NOT confirmed. Commons has a sibling file 'Possible PDM signal labeled as Sputnik by NASA.ogg' whose note says NASA NSSDC's 'Sputnik' sound is NOT the Sputnik-1 signal. Could not confirm Sputnik_beep.ogg is the authentic signal (NASA pages were blocked for fetch). Recommend synthesising a labelled recreation (0.3 s tone pairs alternating, ~3 Hz, shortwave static) and captioning it 'recreation'."
- }
+ },
+ "youtube_caption": "This shiny ball held almost nothing but a radio, and it shouldn't have frightened anyone.\n\nSputnik 1 launched on 4 October 1957. It was a polished sphere about 58 cm wide, and its main payload was a radio sending beeps on 20 and 40 MHz that amateur radio operators could pick up.\n\nMany people who looked up at a bright light in the sky were probably seeing the rocket's core stage, which was far brighter than the ball itself.\n\nThe beeps carried a little data too: their length changed if the temperature inside went out of range. On 26 October, after about three weeks, the batteries ran out and the signal stopped.\n\nBy then the alarm was in Washington. ARPA followed in February 1958 and NASA in July. One 1957 analyst found little sign of panic among the public.\n\nfile no. 018\n\n—\nSources: NASA NSSDC Master Catalog (1957-001B); Wikipedia, 'Sputnik 1' and 'Sputnik crisis' (citing Zak/RussianSpaceWeb, Launius/NASA 2005, ARRL, AP 1957).\nImages: NASA / NSSDC (Sputnik replica, Explorer 1, NACA meeting; public domain), Deep silence (CC BY-SA 3.0), Rabax63 (CC BY-SA 4.0), Harry Pot / Anefo, Nationaal Archief (CC0), via Wikimedia Commons.\nDiagrams drawn for this video. The beep heard here is a recreation of the signal pattern, made for this video.\n\n#shorts #sputnik #spacehistory #spacerace #shortwave #radiohistory #coldwar #history"
 }

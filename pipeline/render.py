@@ -115,10 +115,13 @@ def render_video(ep, script, timing, mix_path, workers=4):
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     t0 = time.time()
     with Pool(workers, initializer=_init, initargs=(ep,)) as pool:
-        for i, fb in enumerate(pool.imap(_frame, times, chunksize=8)):
-            ff.stdin.write(fb)
-            if i % 300 == 0:
-                print(f"  frame {i}/{nframes}  {time.time() - t0:.0f}s", flush=True)
+        # bounded batches: an unbounded imap queues raw frames (6 MB each) faster than x264 drains them -> OOM
+        batch = 96
+        for b0 in range(0, nframes, batch):
+            for j, fb in enumerate(pool.imap(_frame, times[b0:b0 + batch], chunksize=4)):
+                ff.stdin.write(fb)
+                if (b0 + j) % 300 == 0:
+                    print(f"  frame {b0 + j}/{nframes}  {time.time() - t0:.0f}s", flush=True)
     ff.stdin.close()
     ff.wait()
     return out

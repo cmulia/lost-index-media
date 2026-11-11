@@ -1,0 +1,100 @@
+[
+ {
+  "beat": 0,
+  "file": "audio/sfx/beep_steady.mp3",
+  "offset": 0.0,
+  "gain": 0.34,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 0,
+  "file": "audio/sfx/b00.mp3",
+  "offset": 0.0,
+  "gain": 0.3,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 1,
+  "file": "audio/sfx/b01.mp3",
+  "offset": 0.0,
+  "gain": 0.3,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 2,
+  "file": "audio/sfx/b02.mp3",
+  "offset": 0.0,
+  "gain": 0.3,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 2,
+  "file": "audio/sfx/beep_steady.mp3",
+  "offset": 1.6,
+  "gain": 0.32,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 3,
+  "file": "audio/sfx/b03.mp3",
+  "offset": 0.0,
+  "gain": 0.28,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 3,
+  "file": "audio/sfx/b03b.mp3",
+  "offset": 2.4,
+  "gain": 0.22,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 4,
+  "file": "audio/sfx/beep_long.mp3",
+  "offset": 0.0,
+  "gain": 0.36,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 4,
+  "file": "audio/sfx/b04.mp3",
+  "offset": 2.2,
+  "gain": 0.28,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 5,
+  "file": "audio/sfx/beep_fade.mp3",
+  "offset": 0.0,
+  "gain": 0.38,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 5,
+  "file": "audio/sfx/b05.mp3",
+  "offset": 0.5,
+  "gain": 0.28,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 6,
+  "file": "audio/sfx/b06.mp3",
+  "offset": 0.0,
+  "gain": 0.3,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 7,
+  "file": "audio/sfx/b07.mp3",
+  "offset": 0.0,
+  "gain": 0.4,
+  "fade_out": 0.6
+ },
+ {
+  "beat": 8,
+  "file": "audio/sfx/b08.mp3",
+  "offset": 0.0,
+  "gain": 0.3,
+  "fade_out": 0.6
+ }
+]

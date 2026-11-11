@@ -7,5 +7,5 @@ Verify each story; swap if the sourcing is weak. Tick with the real post date an
 - [ ] The first SMS, "Merry Christmas" (1992)
 - [ ] Scott Fahlman's :-) (1982)
 - [ ] "Me at the zoo", the first YouTube video (2005)
-- [ ] Sputnik's beep (1957)
+- [x] Sputnik's beep (1957) · file no. 018 · posts Tue 17 Nov 2026 (made 11 Nov 2026)
 - [ ] The first photograph of a person (Boulevard du Temple, 1838)

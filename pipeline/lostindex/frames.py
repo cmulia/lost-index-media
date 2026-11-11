@@ -446,6 +446,10 @@ def render_end_card(tl, t):
     fm = S.font("mono", 34)
     h = "@lost_index"
     d.text((x + tw - fm.getlength(h) - 6, 990), h, font=fm, fill=rgba(pal["grey"], ease((lt - 0.4) / 0.6)))
+    follow = tl.script.get("end_card_text")
+    if follow:
+        ff = S.font("mono", 44)
+        d.text(((S.W - ff.getlength(follow)) / 2, 1120), follow, font=ff, fill=rgba(pal["ink"], ease((lt - 0.2) / 0.5)))
     draw_header(d, pal, tl.label, 1.0)
     frame.alpha_composite(ov)
     return frame.convert("RGB")

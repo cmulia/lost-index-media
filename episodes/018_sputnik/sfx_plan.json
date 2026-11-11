@@ -1,0 +1,80 @@
+{
+ "episode": "018_sputnik",
+ "video_seconds": 55,
+ "music": {
+  "prompt": "Sparse cold-war tension score: low analog synth drone, a thin sine pulse around 60 bpm, faint tape hiss and soft felt piano. Rises slightly in the middle, drops to near silence for a few seconds, then thins to one sustained low note at the end.",
+  "duration_seconds": 56
+ },
+ "sfx": [
+  {
+   "beat": 0,
+   "file": "b00",
+   "prompt": "faint shortwave radio static fading in, soft hiss, quiet",
+   "duration_seconds": 4,
+   "gain": 0.3
+  },
+  {
+   "beat": 1,
+   "file": "b01",
+   "prompt": "distant rocket launch roar swelling then cutting off, night, far away",
+   "duration_seconds": 5,
+   "gain": 0.3
+  },
+  {
+   "beat": 2,
+   "file": "b02",
+   "prompt": "vintage shortwave receiver dial tuning through static and whistles, then settling",
+   "duration_seconds": 4,
+   "gain": 0.3
+  },
+  {
+   "beat": 3,
+   "file": "b03",
+   "prompt": "quiet crowd murmur outdoors at night, people in a street, a distant dog bark",
+   "duration_seconds": 5,
+   "gain": 0.3
+  },
+  {
+   "beat": 3,
+   "file": "b03b",
+   "prompt": "old teletype machine clattering, news bulletin urgency, room tone",
+   "duration_seconds": 4,
+   "gain": 0.3
+  },
+  {
+   "beat": 4,
+   "file": "b04",
+   "prompt": "soft analog thermostat click and a faint electrical hum",
+   "duration_seconds": 2,
+   "gain": 0.3
+  },
+  {
+   "beat": 5,
+   "file": "b05",
+   "prompt": "radio static slowly thinning to near silence, dead air",
+   "duration_seconds": 5,
+   "gain": 0.3
+  },
+  {
+   "beat": 6,
+   "file": "b06",
+   "prompt": "1950s office: teletype clatter, a typewriter, papers shuffled, a gavel tap",
+   "duration_seconds": 5,
+   "gain": 0.3
+  },
+  {
+   "beat": 7,
+   "file": "b07",
+   "prompt": "deep rocket ignition rumble building, 1950s launch pad, no voices",
+   "duration_seconds": 5,
+   "gain": 0.3
+  },
+  {
+   "beat": 8,
+   "file": "b08",
+   "prompt": "long soft shortwave hiss fading out to silence",
+   "duration_seconds": 5,
+   "gain": 0.3
+  }
+ ]
+}

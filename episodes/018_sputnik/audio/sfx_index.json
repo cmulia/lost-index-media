@@ -1,0 +1,49 @@
+{
+ "flow_id": "cOUblIrA7RZYzC8uNrQ8",
+ "sfx": {
+  "b00": {
+   "node_id": "zDboh895nA6tsxFpn3jy",
+   "duration": 4.04898
+  },
+  "b01": {
+   "node_id": "gMBs1leoUZ6FmH9svRqD",
+   "duration": 5.041633
+  },
+  "b02": {
+   "node_id": "LdGyJAsiKibjk6gDtM9W",
+   "duration": 4.04898
+  },
+  "b03": {
+   "node_id": "4zr7k7kjJ1HixcxHyjCX",
+   "duration": 5.041633
+  },
+  "b03b": {
+   "node_id": "sopxpYy7fQceidO5xGrW",
+   "duration": 4.04898
+  },
+  "b04": {
+   "node_id": "kUvLc9yOgXcz0f8cwYEo",
+   "duration": 2.037551
+  },
+  "b05": {
+   "node_id": "TZ6L0ydhJSpqokahOLKD",
+   "duration": 5.041633
+  },
+  "b06": {
+   "node_id": "qJyTlobamJNi94bkJKlS",
+   "duration": 5.041633
+  },
+  "b07": {
+   "node_id": "jvesQLqpsZ1Z70zPpbhj",
+   "duration": 5.041633
+  },
+  "b08": {
+   "node_id": "IJl4UxtcchplSs3NEqcB",
+   "duration": 5.041633
+  }
+ },
+ "music": {
+  "node_id": "6K9cZm7CKL3yM3e3jP4R",
+  "duration": 56.04
+ }
+}
