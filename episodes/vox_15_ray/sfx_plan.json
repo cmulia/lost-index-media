@@ -1,0 +1,14 @@
+{"episode":"vox_15_ray","video_seconds":54,
+"music":{"prompt":"Original instrumental, slow Bengali-inspired chamber piece at about seventy beats per minute: a soft tanpura drone, gentle tabla, a solo sitar melody answered by bansuri flute, not any known theme. It opens sparse and patient like monsoon rain, gathers warmth and hope through the middle, swells tenderly near the end, then settles on a single sustained sitar note over the drone.","duration_seconds":55},
+"sfx":[
+{"file":"jewellery","prompt":"a small wooden jewellery box lid closing, then gold bangles clinking softly into a cloth pouch, close and intimate","duration_seconds":2.5},
+{"file":"coins","prompt":"a handful of old coins counted onto a wooden table one by one, quiet room","duration_seconds":3},
+{"file":"rain","prompt":"heavy monsoon rain on a tin roof and leaves in a village courtyard, distant thunder","duration_seconds":5},
+{"file":"camera_stop","prompt":"a vintage hand-cranked film camera running, then slowing down and clicking to a stop","duration_seconds":3},
+{"file":"stamp","prompt":"an official rubber stamp pressed firmly onto paper on a wooden desk, then a page turned","duration_seconds":2},
+{"file":"projector","prompt":"a 35mm film projector starting up and running, mechanical clatter, warm room","duration_seconds":4},
+{"file":"applause","prompt":"a large theatre audience breaking into warm applause, distant hall reverb, then fading","duration_seconds":4},
+{"file":"monitor","prompt":"a quiet hospital room, a soft steady heart monitor beep and a ceiling fan turning, rain outside the window","duration_seconds":4},
+{"file":"lamp","prompt":"a small oil lamp flame flickering and guttering out with a soft puff, silence after","duration_seconds":2.5},
+{"file":"page","prompt":"a single sheet of handmade paper lifted and laid down gently, soft rustle","duration_seconds":1.5}
+]}

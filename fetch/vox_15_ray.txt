@@ -1,0 +1,8 @@
+episodes/vox_15_ray/assets/ray_ny.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Satyajit_Ray_in_New_York.jpg?width=1600
+episodes/vox_15_ray/assets/_pages/ray_ny.html https://commons.wikimedia.org/wiki/File:Satyajit_Ray_in_New_York.jpg?action=raw
+episodes/vox_15_ray/assets/ray_ny_crop.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Satyajit_Ray_in_New_York_(cropped).jpg?width=1600
+episodes/vox_15_ray/assets/_pages/ray_ny_crop.html https://commons.wikimedia.org/wiki/File:Satyajit_Ray_in_New_York_(cropped).jpg?action=raw
+episodes/vox_15_ray/assets/writers_building.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Facade_of_Writers_Building_-_Central_Kolkata.jpg?width=1600
+episodes/vox_15_ray/assets/_pages/writers_building.html https://commons.wikimedia.org/wiki/File:Facade_of_Writers_Building_-_Central_Kolkata.jpg?action=raw
+episodes/vox_15_ray/assets/belle_vue_clinic.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Belle_Vue_Clinic_-_Kolkata_2011-10-16_160468.JPG?width=1600
+episodes/vox_15_ray/assets/_pages/belle_vue_clinic.html https://commons.wikimedia.org/wiki/File:Belle_Vue_Clinic_-_Kolkata_2011-10-16_160468.JPG?action=raw

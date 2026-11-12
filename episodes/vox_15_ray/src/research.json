@@ -1,0 +1,200 @@
+{
+  "slug": "ray",
+  "episode_no": "15",
+  "subject": "Satyajit Ray",
+  "hook": "Satyajit Ray pawned his wife's jewellery to keep filming.",
+  "twist": "He risked everything to start his first film; at the end, the Academy's crew came to his Calcutta hospital bed to film his honorary Oscar speech, and he died 24 days later.",
+  "mood": "Hand-printed Bengali woodblock meets monsoon watercolour: indigo, turmeric yellow, marigold orange and rain-grey washes on handmade rag paper, visible ink bleed and carved-line texture. Music: slow Bengali-inspired chamber piece, solo sitar and bansuri over soft tabla and tanpura drone, around 70 bpm, swelling gently at the hospital beat and ending on a single sustained note.",
+  "narration": "Satyajit Ray pawned his wife's jewellery to keep filming. In nineteen fifty-two he began his first film, Pather Panchali. He had already borrowed against his insurance policy. By nineteen fifty-three, the money had run out. Shooting stopped for almost a year. Then the West Bengal government agreed to fund the film. The film was released in nineteen fifty-five. In nineteen ninety-two, the Academy honoured him for his rare mastery of the art of motion pictures. He was too ill to travel. Audrey Hepburn introduced him, and a crew filmed his thanks from a hospital bed in Calcutta. Twenty-four days later, he was gone. He once risked everything to begin. At the end, Hollywood came to him. Risk everything for art, or play safe?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "Satyajit Ray pawned his wife's jewellery to keep filming.",
+      "visual": "Beat 0 hero: photo ray_ny with big headline; wooden jewellery box illustration",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "In nineteen fifty-two he began his first film, Pather Panchali. He had already borrowed against his insurance policy.",
+      "visual": "Illustration: insurance policy paper and a bundle of coins on a table, monsoon watercolour",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "By nineteen fifty-three, the money had run out. Shooting stopped for almost a year.",
+      "visual": "Illustration: a silent film camera under a cloth in a rain-soaked village courtyard",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Then the West Bengal government agreed to fund the film.",
+      "visual": "Photo: writers_building; illustration of a stack of ledgers",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "The film was released in nineteen fifty-five.",
+      "visual": "Photo: ravi_shankar_1955 (Ray at music recording); illustration of film reels",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "In nineteen ninety-two, the Academy honoured him for his rare mastery of the art of motion pictures.",
+      "visual": "Illustration: empty velvet chair in a theatre, spotlight (no statuette)",
+      "sources": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "He was too ill to travel. Audrey Hepburn introduced him, and a crew filmed his thanks from a hospital bed in Calcutta.",
+      "visual": "Photo: belle_vue_clinic; illustration of a hospital bed by a window with a camera tripod",
+      "sources": [
+        "S4",
+        "S5",
+        "S6"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "Twenty-four days later, he was gone.",
+      "visual": "Illustration: a single oil lamp flickering over a calendar page",
+      "sources": [
+        "S6",
+        "S4"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "He once risked everything to begin. At the end, Hollywood came to him.",
+      "visual": "Photo: ray_ny_crop slow zoom; woodblock-print marigolds",
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "i": 9,
+      "text": "Risk everything for art, or play safe?",
+      "visual": "Question card on handmade paper, two marigolds",
+      "sources": []
+    }
+  ],
+  "fun_facts": [
+    "Pather Panchali's shooting stopped for almost a year after funds ran out in 1953 (satyajitray.org).",
+    "The Academy citation praised his 'rare mastery of the art of motion pictures' (Statesman, Open)."
+  ],
+  "sources": {
+    "S1": {
+      "name": "satyajitray.org (official Ray site), Making of Pather Panchali",
+      "url": "https://satyajitray.org/making-of-pather-panchali/"
+    },
+    "S2": {
+      "name": "The Week, The story behind the making of Pather Panchali, 2022 (says he pawned his wife's gold)",
+      "url": "https://www.theweek.in/theweek/cover/2022/05/15/the-story-behind-the-making-of-pather-panchali.html"
+    },
+    "S3": {
+      "name": "The Week, 2022 (released 1955)",
+      "url": "https://www.theweek.in/theweek/cover/2022/05/15/the-story-behind-the-making-of-pather-panchali.html"
+    },
+    "S4": {
+      "name": "The Statesman, When Satyajit Ray accepted his historic honorary Oscar from a hospital bed in Calcutta in 1992 (30 Mar 1992 ceremony, Hepburn, death 23 Apr 1992)",
+      "url": "https://www.thestatesman.com/entertainment/when-satyajit-ray-accepted-his-historic-honorary-oscar-from-a-hospital-bed-in-calcutta-in-1992-1503545074.html"
+    },
+    "S5": {
+      "name": "Open magazine, Satyajit Ray Received His Oscar From a Hospital Bed (Belle Vue Clinic; Academy crew filmed acceptance)",
+      "url": "https://openthemagazine.com/entertainment/satyajit-ray-received-his-oscar-from-a-hospital-bed-the-remarkable-academy-awards-moment"
+    },
+    "S6": {
+      "name": "Gulf News, April 23 1992: Indian filmmaker Satyajit Ray dies",
+      "url": "https://gulfnews.com/today-history/april-23-1992-indian-filmmaker-satyajit-ray-dies-1.2015500"
+    }
+  },
+  "images": [
+    {
+      "key": "ray_ny",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Satyajit_Ray_in_New_York.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Satyajit_Ray_in_New_York.jpg",
+      "author": "Dinu Alam Newyork",
+      "date": "1981-10-12",
+      "licence": "cc-by-sa-4.0 (via {{self|cc-by-sa-4.0}})",
+      "shows": "Satyajit Ray in New York, 1981 (cropped version also exists)",
+      "use": "hero photo; crop face from uncropped original"
+    },
+    {
+      "key": "ray_ny_crop",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Satyajit_Ray_in_New_York_(cropped).jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Satyajit_Ray_in_New_York_(cropped).jpg",
+      "author": "Dinu Alam Newyork",
+      "date": "1981-10-12",
+      "licence": "cc-by-sa-4.0 (via {{self|cc-by-sa-4.0}})",
+      "shows": "Cropped portrait, Ray 1981",
+      "use": "closing portrait"
+    },
+    {
+      "key": "ravi_shankar_1955",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Satyajit_Ray_with_Ravi_Sankar_recording_for_Pather_Panchali_cropped_Ray.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Satyajit_Ray_with_Ravi_Sankar_recording_for_Pather_Panchali_cropped_Ray.jpg",
+      "author": "unknown (scan from Sandip Ray's book)",
+      "date": "1955-02-01",
+      "licence": "PD-India (weaker: unknown author; use only if render pipeline accepts)",
+      "shows": "Ray at the Pather Panchali music recording, 1955",
+      "use": "period photo of Ray"
+    },
+    {
+      "key": "writers_building",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Facade_of_Writers_Building_-_Central_Kolkata.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Facade_of_Writers_Building_-_Central_Kolkata.jpg",
+      "author": "Adam Jones",
+      "date": "2014-02-02",
+      "licence": "cc-by-sa-2.0",
+      "shows": "Writers' Building, Kolkata, seat of West Bengal government",
+      "use": "place"
+    },
+    {
+      "key": "belle_vue_clinic",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Belle_Vue_Clinic_-_Kolkata_2011-10-16_160468.JPG",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Belle_Vue_Clinic_-_Kolkata_2011-10-16_160468.JPG",
+      "author": "Biswarup Ganguly",
+      "date": "2011-10-16",
+      "licence": "cc-by-3.0 (dual GFDL; {{self|GFDL|cc-by-3.0}})",
+      "shows": "Belle Vue Clinic, Kolkata, where Ray was treated in 1992",
+      "use": "place"
+    }
+  ],
+  "props_to_illustrate": [
+    "a carved wooden jewellery box, lid open and empty, on a rain-streaked windowsill",
+    "a folded insurance policy paper and a small pile of coins on a table",
+    "a vintage hand-cranked film camera under a cloth in a rain-soaked village courtyard",
+    "a stack of old accounting ledgers tied with string",
+    "an empty velvet theatre chair lit by one spotlight",
+    "a hospital bed by a window with a film camera on a tripod, monsoon outside",
+    "a single oil lamp flickering beside a torn calendar page",
+    "two marigolds on handmade paper"
+  ],
+  "captions": {
+    "tiktok_caption": "Satyajit Ray pawned his wife's jewellery to keep filming. 🎞️\n\nexplained no. 15\n\n#satyajitray #cinema #filmhistory #patherpanchali #explained",
+    "instagram_caption": "Satyajit Ray pawned his wife's jewellery to keep filming. 🎞️\n\nIn 1952 Ray began shooting his first film, Pather Panchali. He had already borrowed against his insurance policy, and from friends and relatives.\n\nBy 1953 the money had run out and shooting stopped for almost a year. Then the chief minister of West Bengal was approached, and the state government agreed to fund the film, paying in instalments.\n\nThe film was released in 1955, and Ray kept making films for decades.\n\nIn 1992 the Academy gave him an honorary award for his \"rare mastery of the art of motion pictures\". Too ill to travel, he thanked them on film from a hospital bed in Calcutta. He died 24 days after the ceremony.\n\nexplained no. 15\n—\nSources: satyajitray.org, \"Making of Pather Panchali\"; The Week, 2022; The Statesman, 2022; Open magazine; Gulf News, 2015.\nImages via Wikimedia Commons: Dinu Alam Newyork (CC BY-SA 4.0); Adam Jones (CC BY-SA 2.0); Biswarup Ganguly (CC BY 3.0).\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#satyajitray #cinema #filmhistory #patherpanchali #indiancinema #oscars #filmmaker #explained",
+    "youtube_title": "Satyajit Ray pawned jewellery to finish Pather Panchali (1955) #shorts",
+    "either_or_question": "Risk everything for art, or play safe?"
+  },
+  "answer": "I'd risk it, but only once. Ray's gamble worked because he kept finishing things; most pawned jewellery just stays pawned.",
+  "dropped_unverified": [
+    "Selling his record collection: not found in fetched sources (The Week says he sold books); dropped.",
+    "Pawned jewellery exact amounts/timing: only 'pawned to keep shooting a few days more' (satyajitray.org); amounts dropped.",
+    "Venue of 1992 ceremony: Statesman says Dolby Theatre (anachronistic); omitted.",
+    "'Giant of cinema' Hepburn quote: only one source; omitted."
+  ]
+}
