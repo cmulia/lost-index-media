@@ -7,3 +7,4 @@ A = twist as the first spoken line. B = question with stakes. C = name the objec
 | 1 | explained no. 13 Charlie Chaplin | A | 15 Nov 2026 |
 | 2 | explained no. 14 James Cameron | B | 16 Nov 2026 |
 | 3 | file no. 018 Sputnik's beep | C | 17 Nov 2026 |
+| 4 | explained no. 15 Satyajit Ray | A | 18 Nov 2026 |

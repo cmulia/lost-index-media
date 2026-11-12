@@ -19,7 +19,7 @@ Times (Sydney, +11:00): until 1 Nov YouTube/Instagram 10:00, TikTok 12:00; from 
 - [x] 12 Kathryn Bigelow · Sat 7 Nov · first woman to win Best Director (2010), beating her ex-husband James Cameron's Avatar with a far cheaper film
 - [x] 13 Charlie Chaplin · Sun 15 Nov (actual) · his coffin was stolen from a Swiss cemetery in 1978 and held for ransom; twist: found in a cornfield, reburied under concrete
 - [x] 14 James Cameron · Mon 16 Nov (actual) · sold The Terminator script for one dollar on condition he directed it
-- [ ] 15 Satyajit Ray · Tue 10 Nov · funded Pather Panchali partly by pawning his wife's jewellery; twist: honorary Oscar accepted from a hospital bed in 1992
+- [x] 15 Satyajit Ray · Wed 18 Nov (actual) · funded Pather Panchali partly by pawning his wife's jewellery; twist: honorary Oscar accepted from a hospital bed in 1992
 - [ ] 16 Tim Burton · Wed 11 Nov · Disney let him go after the short Frankenweenie was judged too dark; twist: Disney later paid him to remake it as a feature (2012)
 - [ ] 17 Orson Welles · Thu 12 Nov · the War of the Worlds "mass panic" (1938) was largely a newspaper exaggeration
 - [ ] 18 Francis Ford Coppola · Fri 13 Nov · bet his own money on Apocalypse Now; decades later self-funded Megalopolis (≈ $120M) from his wine business

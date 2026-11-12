@@ -1,0 +1,11 @@
+# Higgsfield generations (provenance)
+episodes/vox_15_ray/assets/jewellery.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205028_3f291ba1-6fcd-4cee-b12f-175612959e8f.png
+episodes/vox_15_ray/assets/coins.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205027_c8e5860a-66b0-414d-b75a-875ee70b41f1.png
+episodes/vox_15_ray/assets/rain_camera.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205029_835686a9-dc50-4a8b-b804-da2806d8f397.png
+episodes/vox_15_ray/assets/theatre_chair.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205027_ea11d781-5215-4f52-a96a-8560a9764fda.png
+episodes/vox_15_ray/assets/hospital.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205026_e8704730-d67e-4e8c-8eff-535d67d4e5a5.png
+episodes/vox_15_ray/assets/lamp.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205026_3df7e68c-cc0c-4ef9-b91f-5e61a41bce8c.png
+episodes/vox_15_ray/assets/jewellery_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205120_076f74e6-0e66-42b6-97d4-6f06109627cb.png (background removed from jewellery.png)
+episodes/vox_15_ray/assets/clips/hospital.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205124_1c0d8d16-f72f-4191-aa31-2240f2a8227d.mp4
+episodes/vox_15_ray/assets/clips/rain_camera.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205122_2290e4c1-31a6-4c1c-b701-ed56e8163381.mp4
+episodes/vox_15_ray/assets/clips/lamp.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261112_205126_a8b3a0f3-6a6d-49c6-9129-676b3df8c058.mp4
