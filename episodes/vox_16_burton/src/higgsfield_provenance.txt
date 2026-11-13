@@ -1,0 +1,11 @@
+episodes/vox_16_burton/assets/clay_dog.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151646_8295d4a6-adaa-49d9-bbdb-a53703b14164.png job=8295d4a6-adaa-49d9-bbdb-a53703b14164
+episodes/vox_16_burton/assets/film_can.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151645_f88afd77-408a-40a0-93df-b964473ce873.png job=f88afd77-408a-40a0-93df-b964473ce873
+episodes/vox_16_burton/assets/scissors.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151645_ffa9e96d-2032-4d6f-b3ed-caca680997f6.png job=ffa9e96d-2032-4d6f-b3ed-caca680997f6
+episodes/vox_16_burton/assets/kite.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151644_9044925d-2fc9-498e-a784-61bf7fb3ed25.png job=9044925d-2fc9-498e-a784-61bf7fb3ed25
+episodes/vox_16_burton/assets/vault.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151646_3c3a510e-7abf-4499-aee5-70ff25d36cd0.png job=3c3a510e-7abf-4499-aee5-70ff25d36cd0
+episodes/vox_16_burton/assets/house.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151805_14e8e39b-ba3a-424c-875c-e3a3b56ae836.png job=14e8e39b-ba3a-424c-875c-e3a3b56ae836
+episodes/vox_16_burton/audio/take1.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152012_50cba079-9766-401d-b223-42edc895a935.mp3 job=50cba079-9766-401d-b223-42edc895a935
+episodes/vox_16_burton/assets/clay_dog_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152245_ab4ed757-8cb1-4b0f-bce3-130279074113.png (background removed from clay_dog.png)
+episodes/vox_16_burton/assets/clips/house.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152316_07419f3a-108f-4d36-98ff-2819ff7d4bf9.mp4
+episodes/vox_16_burton/assets/clips/kite.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152318_dbbdded9-5215-4ef9-8d32-9d9dbb8b3344.mp4
+episodes/vox_16_burton/assets/clips/vault.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152316_1551d7cd-7e3d-4947-b529-67eea911a47e.mp4

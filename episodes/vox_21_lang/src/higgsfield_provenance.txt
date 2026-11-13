@@ -1,0 +1,11 @@
+episodes/vox_21_lang/audio/take1.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152011_0afb40bb-753a-451d-b773-3f10e7a3c5a2.mp3 job=0afb40bb-753a-451d-b773-3f10e7a3c5a2
+episodes/vox_21_lang/assets/reel.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152057_12e73710-ac77-43f0-8d2f-3458d6331776.png job=12e73710-ac77-43f0-8d2f-3458d6331776
+episodes/vox_21_lang/assets/cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152057_5e596971-1f5d-4726-8e34-8996758bc14b.png job=5e596971-1f5d-4726-8e34-8996758bc14b
+episodes/vox_21_lang/assets/cans.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152211_dc528b10-bb77-4075-9b02-589c127399e2.png job=dc528b10-bb77-4075-9b02-589c127399e2
+episodes/vox_21_lang/assets/trunk.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152209_1692f10a-6d05-49be-8018-7fd3f545f426.png job=1692f10a-6d05-49be-8018-7fd3f545f426
+episodes/vox_21_lang/assets/frame.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152209_14a342ac-9b7b-4c1c-ace2-6297227723a8.png job=14a342ac-9b7b-4c1c-ace2-6297227723a8
+episodes/vox_21_lang/assets/door.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152210_8b15f5c6-fd2a-407f-87b8-d8057f346846.png job=8b15f5c6-fd2a-407f-87b8-d8057f346846
+episodes/vox_21_lang/assets/reel_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152252_22a35eca-ccab-420a-8d54-7e881fd7c6c2.png (background removed from reel.png)
+episodes/vox_21_lang/assets/clips/door.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152403_3b10dd10-e1da-4568-a4b5-faf79cb55570.mp4
+episodes/vox_21_lang/assets/clips/frame.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152403_fe887a1b-f7e0-424e-9773-7239744c0479.mp4
+episodes/vox_21_lang/assets/clips/trunk.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152403_67697e14-99f4-4e84-a62c-eab630312441.mp4

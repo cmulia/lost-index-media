@@ -1,0 +1,11 @@
+episodes/vox_20_scott/audio/take1.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152012_b6074600-3583-420d-8b92-3aeda0335ea7.mp3 job=b6074600-3583-420d-8b92-3aeda0335ea7
+episodes/vox_20_scott/assets/hammer.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152056_16f91373-8df4-4e9a-a987-846914d91f52.png job=16f91373-8df4-4e9a-a987-846914d91f52
+episodes/vox_20_scott/assets/screen.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152059_20d4f0da-f0b0-4d2c-876f-2edf4c4ea057.png job=20d4f0da-f0b0-4d2c-876f-2edf4c4ea057
+episodes/vox_20_scott/assets/boardroom.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152056_079a0e7b-37d5-4c52-8fb8-92cb8b32e794.png job=079a0e7b-37d5-4c52-8fb8-92cb8b32e794
+episodes/vox_20_scott/assets/clipboard.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152059_4f7dc92c-544a-4bc5-b428-d4d7d98ab5c3.png job=4f7dc92c-544a-4bc5-b428-d4d7d98ab5c3
+episodes/vox_20_scott/assets/tv.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152057_fe4b7540-1498-4df4-a116-12fba373086b.png job=fe4b7540-1498-4df4-a116-12fba373086b
+episodes/vox_20_scott/assets/stadium.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152057_be84122e-7c4a-48ca-bce7-754dc58bf2ca.png job=be84122e-7c4a-48ca-bce7-754dc58bf2ca
+episodes/vox_20_scott/assets/hammer_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152251_ee5a64c7-242f-4376-9b35-24ffde818ee3.png (background removed from hammer.png)
+episodes/vox_20_scott/assets/clips/screen.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152343_6944cb55-4fd8-492b-825b-7b06b53f21cc.mp4
+episodes/vox_20_scott/assets/clips/tv.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152343_e965ab05-4e3f-47e9-b8f7-b043280b7813.mp4
+episodes/vox_20_scott/assets/clips/stadium.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152343_b7e9183c-30b0-474a-9681-3b0f5b703c19.mp4

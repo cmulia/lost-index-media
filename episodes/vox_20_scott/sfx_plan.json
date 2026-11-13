@@ -1,0 +1,14 @@
+{"episode":"vox_20_scott","video_seconds":51.6,
+"music":{"prompt":"Original instrumental, cold 1980s dystopian synth score at about eighty beats per minute: a slow brooding analog synth pulse, low sustained drones and a sparse metallic arpeggio, not any known theme. It stays tense and restrained, builds slowly through the middle, then lifts to a bright metallic hit and a hopeful synth chord near the end before fading out.","duration_seconds":53},
+"sfx":[
+{"file":"projector","prompt":"a film projector starting up in a quiet boardroom, soft mechanical clatter and a low electrical hum","duration_seconds":3},
+{"file":"murmur","prompt":"a group of executives murmuring in disapproval around a table, leather chairs creaking, a cough, muted room","duration_seconds":3},
+{"file":"clap","prompt":"a film clapperboard snapping shut on a cold film set, short echo in a large studio","duration_seconds":2},
+{"file":"boots","prompt":"many heavy boots marching in unison on a concrete floor, slow and hollow, echoing in a vast hall","duration_seconds":4},
+{"file":"stamp","prompt":"a rubber stamp thumped firmly on paper, then a telephone handset set down on a desk","duration_seconds":2.5},
+{"file":"cash","prompt":"a thick stack of banknotes shuffled and split into two piles on a wooden desk, quiet office","duration_seconds":2.5},
+{"file":"crt","prompt":"an old 1980s CRT television switching on with a thump, a rising electronic whine and a burst of static, then a low hum","duration_seconds":2.5},
+{"file":"crowd","prompt":"a huge stadium crowd cheering and roaring, muffled as if heard from a television in another room","duration_seconds":5},
+{"file":"hammer","prompt":"a heavy hammer whooshing through the air then smashing a large glass screen, glass shattering and falling, short echo","duration_seconds":3},
+{"file":"boom","prompt":"a single deep cinematic bass boom with a metallic shimmer ringing out and fading","duration_seconds":3}
+]}

@@ -1,0 +1,11 @@
+episodes/vox_18_coppola/assets/house_reel.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151804_918b2cf8-07f9-49d4-a538-8495d83e2aa0.png job=918b2cf8-07f9-49d4-a538-8495d83e2aa0
+episodes/vox_18_coppola/assets/note.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151805_24cd5853-c492-4d13-ac42-a3f88c847dab.png job=24cd5853-c492-4d13-ac42-a3f88c847dab
+episodes/vox_18_coppola/assets/typhoon.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151804_d40e3195-8855-4988-9261-3fcb336d44a8.png job=d40e3195-8855-4988-9261-3fcb336d44a8
+episodes/vox_18_coppola/assets/fan.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151806_f4d0f309-b6c0-402d-90f8-fff063160933.png job=f4d0f309-b6c0-402d-90f8-fff063160933
+episodes/vox_18_coppola/assets/bottle.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151923_93f1afdd-557a-40ae-ba71-6114e17fc477.png job=93f1afdd-557a-40ae-ba71-6114e17fc477
+episodes/vox_18_coppola/assets/vines.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151922_20733b00-5362-4b0f-94a8-4f42fba32a07.png job=20733b00-5362-4b0f-94a8-4f42fba32a07
+episodes/vox_18_coppola/audio/take1.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152012_17cfeab2-b5b5-47af-9be2-346e624cb77d.mp3 job=17cfeab2-b5b5-47af-9be2-346e624cb77d
+episodes/vox_18_coppola/assets/bottle_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152248_ab1c456d-c268-4acb-a8bc-6790bd771426.png (background removed from bottle.png)
+episodes/vox_18_coppola/assets/clips/typhoon.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152323_4d17dae9-f2de-4d63-b822-54cbd2ff6968.mp4
+episodes/vox_18_coppola/assets/clips/fan.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152323_d3d3383d-20db-4269-9c7b-fd018a21f833.mp4
+episodes/vox_18_coppola/assets/clips/vines.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152322_13217c6c-ea38-45cb-aca2-f4c6d7cd8f04.mp4

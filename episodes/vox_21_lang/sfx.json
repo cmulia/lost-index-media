@@ -1,0 +1,60 @@
+{
+ "flow_id": "HiJlYu4VL5TzVxLaDTg7",
+ "sfx": {
+  "reel": {
+   "node_id": "a7nQaxwd0B5aPdsbisMK",
+   "generation_id": "900TCpZB2Jej3R76L3kM",
+   "duration": 3.03
+  },
+  "premiere": {
+   "node_id": "UZDKBMFO9qKWPOAedo0i",
+   "generation_id": "EZeHkRE7RWzDUvZl1RFF",
+   "duration": 3.53
+  },
+  "scissors": {
+   "node_id": "1NXJDcHQMnKhvXVDCa3q",
+   "generation_id": "HYjTjnvWQ4Pyp2uObuCs",
+   "duration": 2.51
+  },
+  "strip": {
+   "node_id": "r9cIpX3iqZ7H9u4gLJBb",
+   "generation_id": "ttR6d3VBmLtgjj2YVynP",
+   "duration": 3.03
+  },
+  "cans": {
+   "node_id": "whSMUvSbxVglvLwqW6uq",
+   "generation_id": "Rius8mV7m8T4hoYtLyBs",
+   "duration": 3.53
+  },
+  "ship": {
+   "node_id": "dwGeLwHyaxohIcfNGjN4",
+   "generation_id": "Ft4rhG32dgPhS2QXle2a",
+   "duration": 4.52
+  },
+  "scratch": {
+   "node_id": "RGZyBdzd2NNn7tkFq9Kv",
+   "generation_id": "dxexr8FtKjTe4YgvkfbU",
+   "duration": 4.52
+  },
+  "applause": {
+   "node_id": "IiWvYBTkTnwUCQ67EBCO",
+   "generation_id": "UBTLwDu5aQCMNFyWpCXq",
+   "duration": 4.05
+  },
+  "door": {
+   "node_id": "B7jAGisuGvjyajDJEFqI",
+   "generation_id": "z62ahmgLDO7Ty1BYHN8f",
+   "duration": 4.05
+  },
+  "lamp": {
+   "node_id": "sKlgeILdU2InSRm7QikQ",
+   "generation_id": "mE2uVlZEoGsC0PSsUviH",
+   "duration": 2.51
+  }
+ },
+ "music": {
+  "node_id": "byCV1uQhez70D6X2M9KK",
+  "generation_id": "fYh9yjvwOMHlv1jiXR9z",
+  "duration": 52.03
+ }
+}

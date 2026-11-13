@@ -1,0 +1,14 @@
+{"episode":"vox_16_burton","video_seconds":50.2,
+"music":{"prompt":"Original instrumental, sparse and eerie-sweet: a music box and celesta play a slow waltz at about seventy beats per minute over a low cello drone, with a faint theremin wobble in the background. It stays hushed and patient through the middle, then warms gently with a little more cello near the end and settles on a single soft celesta note.","duration_seconds":51},
+"sfx":[
+{"file":"whimper","prompt":"a small puppy giving a soft sad whimper, then a gentle tail thumping twice on a wooden floor, quiet room","duration_seconds":2.5},
+{"file":"thunder","prompt":"distant rolling thunder on a stormy night with light wind and a faint crackle of lightning, suburban garden","duration_seconds":5},
+{"file":"spark","prompt":"a sharp electric lightning zap and crackle with a short low hum, like a laboratory spark, then silence","duration_seconds":2.5},
+{"file":"stamp","prompt":"a heavy rubber stamp pressed firmly onto paper on a wooden desk, one thunk, a faint paper rustle","duration_seconds":1.5},
+{"file":"scissors","prompt":"a pair of metal scissors snipping through film strip twice, crisp close snips, quiet room","duration_seconds":1.5},
+{"file":"door","prompt":"a heavy studio office door closing with a dull echoing thud in a quiet hallway, footsteps walking away","duration_seconds":3},
+{"file":"bell","prompt":"a bicycle bell ringing twice, bright and cheerful, outdoors with a little tyre rolling sound","duration_seconds":2},
+{"file":"clay","prompt":"soft rhythmic stop-motion clay sounds: tiny squishes, felt rustles and wooden clicks, like a miniature puppet being moved frame by frame","duration_seconds":3.5},
+{"file":"projector","prompt":"a 35mm film projector starting up and running in a dark room, warm mechanical clatter","duration_seconds":4},
+{"file":"chime","prompt":"a small music box playing three gentle notes and a soft celesta chime, then a quiet ring out","duration_seconds":2.5}
+]}

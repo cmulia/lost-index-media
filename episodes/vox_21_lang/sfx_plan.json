@@ -1,0 +1,14 @@
+{"episode":"vox_21_lang","video_seconds":50.4,
+"music":{"prompt":"Original instrumental silent-cinema thriller score at about eighty beats per minute: a low pulsing synth bass, a lone muted piano and bowed strings, with a faint film-projector flutter. It opens tense and spare like German Expressionist shadow, builds slow dread through the middle, then eases into a warmer, resolved piano-and-strings theme for the final reveal.","duration_seconds":52},
+"sfx":[
+{"file":"reel","prompt":"a film reel spinning on a rewind bench, ratcheting clicks and a soft metallic whir, old projector room","duration_seconds":3},
+{"file":"premiere","prompt":"a grand 1920s cinema auditorium, audience murmuring and settling into seats, a single piano note, dark hall reverb","duration_seconds":3.5},
+{"file":"scissors","prompt":"large metal scissors snipping through celluloid film strip, two sharp cuts, then pieces falling on a wooden table","duration_seconds":2.5},
+{"file":"strip","prompt":"a long film strip racing through a rewind bench and stopping abruptly with a click, quiet room","duration_seconds":3},
+{"file":"cans","prompt":"heavy metal film cans sliding on a dusty archive shelf, one lid prised open with a tin scrape, echoing room","duration_seconds":3.5},
+{"file":"ship","prompt":"a distant steamship horn over harbour waves, a wooden trunk creaking and a latch clicking shut, seagulls","duration_seconds":4.5},
+{"file":"scratch","prompt":"a damaged old film playing in a projector, crackle, dust pops and a rhythmic flutter, scratchy and warm","duration_seconds":4.5},
+{"file":"applause","prompt":"a large cinema audience breaking into warm applause with a few cheers, big hall reverb, fading out","duration_seconds":4},
+{"file":"door","prompt":"a heavy archive door creaking slowly open, footsteps on a stone floor echoing, a faint projector hum behind","duration_seconds":4},
+{"file":"lamp","prompt":"a projector lamp switching off with a low thunk, the reel winding down to silence","duration_seconds":2.5}
+]}

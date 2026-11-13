@@ -1,0 +1,49 @@
+{
+ "flow_id": "WsL3GXcFQi1y3oXYtky7",
+ "sfx": {
+  "projector": {
+   "node_id": "AJwHOskh3KFefoCXo8UA",
+   "duration": 3.03
+  },
+  "murmur": {
+   "node_id": "eppiXzNKDTC3A99gsgKZ",
+   "duration": 3.03
+  },
+  "clap": {
+   "node_id": "4QV3JUMlOxYiVop9r2KK",
+   "duration": 2.04
+  },
+  "boots": {
+   "node_id": "qremXcHLVElSGlA4zD78",
+   "duration": 4.05
+  },
+  "stamp": {
+   "node_id": "7vpvF4myYqVmYfd0mLjd",
+   "duration": 2.51
+  },
+  "cash": {
+   "node_id": "umUAC7STmNhS24SiLFcG",
+   "duration": 2.51
+  },
+  "crt": {
+   "node_id": "87LV4Dn0xQVdPNFgyBSB",
+   "duration": 2.51
+  },
+  "crowd": {
+   "node_id": "9ZLIFnZLwQ5eYGYxMDl0",
+   "duration": 5.04
+  },
+  "hammer": {
+   "node_id": "5CblVKaXWE07CCQiiBum",
+   "duration": 3.03
+  },
+  "boom": {
+   "node_id": "SO9Nsx0GUV9R0j7JlBi9",
+   "duration": 3.03
+  }
+ },
+ "music": {
+  "node_id": "s8wMjxpSSonbrXywMJfE",
+  "duration": 53.04
+ }
+}

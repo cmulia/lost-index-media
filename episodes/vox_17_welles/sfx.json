@@ -1,0 +1,49 @@
+{
+ "flow_id": "DKVidkBs9o0Urvxc5L0G",
+ "sfx": {
+  "tuning": {
+   "node_id": "moM78B2H4vRv1CRU1agu",
+   "duration": 3.030204
+  },
+  "chime": {
+   "node_id": "GQYfV7WXK1w7oaKb1LPn",
+   "duration": 2.507755
+  },
+  "cylinder": {
+   "node_id": "iOQreC8yPzbcU48nsZi3",
+   "duration": 4.04898
+  },
+  "papers": {
+   "node_id": "61IiKd2UKOBJXdtng5tR",
+   "duration": 2.507755
+  },
+  "dial": {
+   "node_id": "sNEYBSnlOuenOLlAn7Fs",
+   "duration": 4.04898
+  },
+  "pencil": {
+   "node_id": "K2srNQ9HiyVqQtP75gjX",
+   "duration": 2.037551
+  },
+  "laughter": {
+   "node_id": "DUGkCFGr3d4gyubylJHQ",
+   "duration": 3.030204
+  },
+  "register": {
+   "node_id": "sra3JNAA4GFCP15MjUYX",
+   "duration": 2.507755
+  },
+  "night": {
+   "node_id": "1et7IxFE139UdCpp6yWC",
+   "duration": 4.04898
+  },
+  "projector": {
+   "node_id": "Ie5dGwZ4rnApHB4qG7xF",
+   "duration": 3.526531
+  }
+ },
+ "music": {
+  "node_id": "cRqc5nTB1xHpyM2bnyu9",
+  "duration": 61.032
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "flow_id": "0NwVpq8NBpI0vwwG011A",
+ "sfx": {
+  "dice": {
+   "node_id": "SC5bJajSzreDfG4cOya6",
+   "duration": 2.507755
+  },
+  "jungle": {
+   "node_id": "TyxHS0DUdHyfXtV7V0Eg",
+   "duration": 4.04898
+  },
+  "typhoon": {
+   "node_id": "PoNr2E7NjACsXkNcHvER",
+   "duration": 5.041633
+  },
+  "key": {
+   "node_id": "w5lGWvDOr1dJjDBHHjha",
+   "duration": 2.507755
+  },
+  "fan": {
+   "node_id": "HMqA2y1TSo1fIBcmzzb9",
+   "duration": 2.037551
+  },
+  "applause": {
+   "node_id": "igwbIanzneX2Oalh8Dpv",
+   "duration": 4.04898
+  },
+  "cash": {
+   "node_id": "5XIKJSWw8Dh5mEWUprIu",
+   "duration": 3.030204
+  },
+  "cork": {
+   "node_id": "OHoyjJ2zrAxEcrUEmwn7",
+   "duration": 3.030204
+  },
+  "vineyard": {
+   "node_id": "AUd8vdsH5LQq9ooK2vwE",
+   "duration": 5.041633
+  },
+  "projector": {
+   "node_id": "ybG5c0woejKi5rIgJ8n2",
+   "duration": 3.030204
+  }
+ },
+ "music": {
+  "node_id": "fpYYj0qBce1omqDXkOuN",
+  "duration": 51.024
+ }
+}

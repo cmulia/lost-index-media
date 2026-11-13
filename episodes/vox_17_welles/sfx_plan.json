@@ -1,0 +1,14 @@
+{"episode":"vox_17_welles","video_seconds":60,
+"music":{"prompt":"Original instrumental 1930s slow-swing dance-band piece at about eighty-four beats per minute: muted trumpet and clarinet trading a wry melody over brushed drums, upright bass and soft piano, with a faint radio-static bed. It opens sparse and mysterious, loosens into a confident swing through the middle, then ends on a warm, unresolved held chord.","duration_seconds":61},
+"sfx":[
+{"file":"tuning","prompt":"an old valve radio being tuned, dial turning through whistling static and faint dance music, then settling","duration_seconds":3},
+{"file":"chime","prompt":"a 1930s radio network three-note chime, then a short burst of crackling static, no speech","duration_seconds":2.5},
+{"file":"cylinder","prompt":"an eerie alien metal cylinder slowly unscrewing, rusty creak, hissing steam and a low unearthly hum, no voices","duration_seconds":4},
+{"file":"papers","prompt":"a bundle of fresh newspapers thumped onto a pavement, string snapped, paper rustling and flipping","duration_seconds":2.5},
+{"file":"dial","prompt":"a rotary telephone dial spinning and clicking back, then a ringing tone, quiet office","duration_seconds":4},
+{"file":"pencil","prompt":"a pencil making quick tally marks on paper, scratching, close and dry","duration_seconds":2},
+{"file":"laughter","prompt":"a 1930s radio studio audience laughing and applauding, slightly muffled as if heard through an old speaker","duration_seconds":3},
+{"file":"register","prompt":"an old mechanical cash register ringing up a sale, bell and drawer opening, coins clinking","duration_seconds":2.5},
+{"file":"night","prompt":"quiet small-town night, crickets, a distant dog bark and a faint breeze, calm","duration_seconds":4},
+{"file":"projector","prompt":"a film projector starting up with a clattering whirr, a clapperboard clack, then a soft orchestral swell fading","duration_seconds":3.5}
+]}

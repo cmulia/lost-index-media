@@ -1,0 +1,39 @@
+{
+ "flow_id": "MNeXGPmYzcimKJK3utHa",
+ "sfx": {
+  "whimper": {
+   "duration": 2.507755
+  },
+  "thunder": {
+   "duration": 5.041633
+  },
+  "spark": {
+   "duration": 2.507755
+  },
+  "stamp": {
+   "duration": 1.515102
+  },
+  "scissors": {
+   "duration": 1.515102
+  },
+  "door": {
+   "duration": 3.030204
+  },
+  "bell": {
+   "duration": 2.037551
+  },
+  "clay": {
+   "duration": 3.526531
+  },
+  "projector": {
+   "duration": 4.04898
+  },
+  "chime": {
+   "duration": 2.507755
+  }
+ },
+ "music": {
+  "node_id": "d316EczOvtCqYRuv55Fe",
+  "duration": 51.024
+ }
+}

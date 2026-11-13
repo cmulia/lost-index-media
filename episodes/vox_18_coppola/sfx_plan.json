@@ -1,0 +1,14 @@
+{"episode":"vox_18_coppola","video_seconds":49.5,
+"music":{"prompt":"Original instrumental, slow sultry cinematic groove at about eighty beats per minute: warm Rhodes electric piano, upright bass, brushed drums, soft marimba and a distant pedal-steel drone, not any known theme. It opens sparse and humid, settles into the groove through the middle, then builds into a swelling string pad at the quiet twist and resolves on a held Rhodes chord.","duration_seconds":51},
+"sfx":[
+{"file":"dice","prompt":"dice tumbling across a wooden table, then a metal film reel rolling and wobbling to a stop","duration_seconds":2.5,"t":0.3,"gain":0.38},
+{"file":"jungle","prompt":"humid tropical jungle ambience with cicadas and birds, a distant helicopter thudding closer","duration_seconds":4,"t":6.3,"gain":0.30},
+{"file":"typhoon","prompt":"howling typhoon wind and driving rain, palm fronds thrashing, wooden set walls cracking","duration_seconds":5,"t":12.9,"gain":0.40},
+{"file":"key","prompt":"a heavy brass key dropped on a wooden table beside rustling paper, a pen scratching a signature","duration_seconds":2.5,"t":16.2,"gain":0.38},
+{"file":"fan","prompt":"a slow ceiling fan whirring with a low helicopter-like thump, dark humid room","duration_seconds":2,"t":21.2,"gain":0.30},
+{"file":"applause","prompt":"a large cinema audience bursting into warm applause with a few cheers, hall reverb, fading out","duration_seconds":4,"t":23.4,"gain":0.30},
+{"file":"cash","prompt":"bundles of banknotes riffled and dropped onto a table, then a cash register bell ding","duration_seconds":3,"t":28.4,"gain":0.36},
+{"file":"cork","prompt":"a wine cork popping from a bottle, then wine glugging into a glass","duration_seconds":3,"t":33.1,"gain":0.40},
+{"file":"vineyard","prompt":"quiet vineyard at dusk, crickets and a light breeze through vine leaves, a distant bird","duration_seconds":5,"t":35.5,"gain":0.30},
+{"file":"projector","prompt":"a 35mm film projector clicking on and running, soft mechanical clatter, warm room","duration_seconds":3,"t":40.5,"gain":0.34}
+]}

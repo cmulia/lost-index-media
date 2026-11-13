@@ -105,7 +105,15 @@
       "url": "https://en.wikipedia.org/wiki/1984_(advertisement)"
     }
   },
-  "images": [],
+  "images": [
+    {
+      "key": "scott_skidmore",
+      "file": "https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg",
+      "author": "Gage Skidmore",
+      "licence": "cc-by-sa-3.0 (template confirmed in assets/_pages)",
+      "description": "Ridley Scott, WonderCon, Anaheim, 17 March 2012"
+    }
+  ],
   "images_note": "Commons hosts were unreachable (url_not_found) from this environment, so no licence could be confirmed. Need to search Commons for Ridley Scott portraits (e.g. Category:Ridley Scott) and confirm via ?action=raw; place photos (Shepperton etc.) likewise. No ad stills or logos.",
   "props_to_illustrate": [
     "a sledgehammer with a warm glint on a grey floor",

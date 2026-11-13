@@ -1,0 +1,39 @@
+{
+ "flow_id": "757UK8NA8SHKbV1yufaD",
+ "sfx": {
+  "lid": {
+   "node_id": "3WwOdQ5AVhzxchrEgWO8"
+  },
+  "build": {
+   "node_id": "hIbdrHmhf6aPoOuWuvKp"
+  },
+  "sparkle": {
+   "node_id": "tqwOrGyR8pFDgAoYWnJA"
+  },
+  "stir": {
+   "node_id": "qINluxllgzqiEBzZ9Y79"
+  },
+  "pour": {
+   "node_id": "Ym4joSj92KbQFOhMbXxy"
+  },
+  "empty_tin": {
+   "node_id": "KI1SiMPIWUhCly6bGErT"
+  },
+  "press": {
+   "node_id": "UEQzfL8ydHExkrgSNMnZ"
+  },
+  "spray": {
+   "node_id": "b0xC8cHgRlw4rgnPuMU7"
+  },
+  "globe": {
+   "node_id": "yynqJkxClc8vzQiRNgpB"
+  },
+  "ding": {
+   "node_id": "GAs9euUy9iJwaCEbfO5H"
+  }
+ },
+ "music": {
+  "node_id": "cc2JzPkL7TTLbj8BRncO",
+  "duration": 52.03
+ }
+}

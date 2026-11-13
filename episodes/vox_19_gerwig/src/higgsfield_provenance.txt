@@ -1,0 +1,11 @@
+episodes/vox_19_gerwig/assets/can.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151923_75938b00-0cdc-47c8-928c-973509eae23c.png job=75938b00-0cdc-47c8-928c-973509eae23c
+episodes/vox_19_gerwig/assets/shelf.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151922_377bd6bf-8466-48ea-8af4-8b18f2922293.png job=377bd6bf-8466-48ea-8af4-8b18f2922293
+episodes/vox_19_gerwig/assets/jar.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151923_3a8ea002-b28c-4842-ab1b-c93d7eb4a65a.png job=3a8ea002-b28c-4842-ab1b-c93d7eb4a65a
+episodes/vox_19_gerwig/assets/facade.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151922_0d6b30de-a142-4075-bb65-6d9046fe60b6.png job=0d6b30de-a142-4075-bb65-6d9046fe60b6
+episodes/vox_19_gerwig/assets/hangar.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151923_eb8437bc-b75e-4a15-bd9b-525d91334e02.png job=eb8437bc-b75e-4a15-bd9b-525d91334e02
+episodes/vox_19_gerwig/assets/globe.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151923_21d63de1-0a0a-44dc-a5f7-8ae826033f32.png job=21d63de1-0a0a-44dc-a5f7-8ae826033f32
+episodes/vox_19_gerwig/audio/take1.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152011_ae0506f2-8126-41ce-8790-7c75ea0ae2a8.mp3 job=ae0506f2-8126-41ce-8790-7c75ea0ae2a8
+episodes/vox_19_gerwig/assets/can_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152250_8e7a075a-bccc-418a-8484-00685eb8cd29.png (background removed from can.png)
+episodes/vox_19_gerwig/assets/clips/facade.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152341_e3536855-d52f-4b79-93c6-9f5f19d07eba.mp4
+episodes/vox_19_gerwig/assets/clips/hangar.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152341_64600303-c77f-442c-be8e-0ebbe6cc5e5f.mp4
+episodes/vox_19_gerwig/assets/clips/globe.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152342_4ee572f0-f6fc-473d-a819-37a67cef5d56.mp4

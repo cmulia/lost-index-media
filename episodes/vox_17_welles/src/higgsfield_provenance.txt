@@ -1,0 +1,11 @@
+episodes/vox_17_welles/assets/radio.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151644_1207a000-21da-452a-ab47-c6d563d0bde2.png job=1207a000-21da-452a-ab47-c6d563d0bde2
+episodes/vox_17_welles/assets/gate.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151646_ab5c7649-1a0f-4b7a-afff-a711ccf21927.png job=ab5c7649-1a0f-4b7a-afff-a711ccf21927
+episodes/vox_17_welles/assets/tower.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151645_9894bead-0a27-4617-9b26-3c9a1eb6252c.png job=9894bead-0a27-4617-9b26-3c9a1eb6252c
+episodes/vox_17_welles/assets/mic.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151805_4a9e0204-7e3d-4a94-b2ee-db83878bbfae.png job=4a9e0204-7e3d-4a94-b2ee-db83878bbfae
+episodes/vox_17_welles/assets/papers.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151804_79f7e5fb-5a12-4519-a57e-d5c634cdb869.png job=79f7e5fb-5a12-4519-a57e-d5c634cdb869
+episodes/vox_17_welles/assets/phone.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_151808_cf258f77-c0b4-46b8-a76a-a72c5e1fcb21.png job=cf258f77-c0b4-46b8-a76a-a72c5e1fcb21
+episodes/vox_17_welles/audio/take1.mp3 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152012_f54a3e7f-2c79-48a0-a994-c879babc3656.mp3 job=f54a3e7f-2c79-48a0-a994-c879babc3656
+episodes/vox_17_welles/assets/radio_cut.png https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152247_c0e5b829-ba37-4c9e-94b8-f5e43830062c.png (background removed from radio.png)
+episodes/vox_17_welles/assets/clips/mic.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152320_5a5e94dd-d4ea-4135-82f8-c248ef7f5e3b.mp4
+episodes/vox_17_welles/assets/clips/papers.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152320_6befaadf-7f09-46f8-b71b-d0bfc3958b1a.mp4
+episodes/vox_17_welles/assets/clips/tower.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3JwEwWOjdpFw80FgcjAvo3v7fsX/hf_20261113_152320_7267cb30-f745-412b-98ff-5980b0be0f32.mp4
