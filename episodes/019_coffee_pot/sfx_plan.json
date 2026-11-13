@@ -1,0 +1,66 @@
+{
+ "episode": "019_coffee_pot",
+ "video_seconds": 54,
+ "sfx": [
+  {
+   "beat": 0,
+   "file": "b00",
+   "prompt": "quiet office hum, a coffee maker gurgling and dripping",
+   "gain": 0.3
+  },
+  {
+   "beat": 1,
+   "file": "b01",
+   "prompt": "a camera shutter click, soft room tone",
+   "gain": 0.4
+  },
+  {
+   "beat": 2,
+   "file": "b02",
+   "prompt": "footsteps climbing stairs, then a hollow clink of an empty pot",
+   "gain": 0.4
+  },
+  {
+   "beat": 3,
+   "file": "b03",
+   "prompt": "a low electronic whir and a quiet modem-like chirp",
+   "gain": 0.3
+  },
+  {
+   "beat": 4,
+   "file": "b04",
+   "prompt": "short bursts of digital static, a single soft key click",
+   "gain": 0.3
+  },
+  {
+   "beat": 5,
+   "file": "b05",
+   "prompt": "a soft dial-up handshake rising into a calm tone",
+   "gain": 0.3
+  },
+  {
+   "beat": 6,
+   "file": "b06",
+   "prompt": "a power switch clunk, a computer fan spinning down to silence",
+   "gain": 0.4
+  },
+  {
+   "beat": 7,
+   "file": "b07",
+   "prompt": "an auction gavel tap and a faint cash-register ding",
+   "gain": 0.4
+  },
+  {
+   "beat": 8,
+   "file": "b08",
+   "prompt": "a single coffee-machine gurgle, then quiet",
+   "gain": 0.35
+  },
+  {
+   "beat": 9,
+   "file": "b09",
+   "prompt": "a faint footstep on a stair, then a soft click",
+   "gain": 0.3
+  }
+ ]
+}

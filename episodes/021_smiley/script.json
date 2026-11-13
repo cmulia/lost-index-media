@@ -180,7 +180,8 @@
    "date": "2007",
    "license": "Public domain (PD-author, permission ticket 2007092010002627; personality-rights template applies)",
    "shows": "Portrait of Scott E. Fahlman, 2007. Check orientation/size after fetch.",
-   "changes": "cropped to 9:16, slow push"
+   "changes": "cropped to 9:16, slow push; shown only as a respectful portrait with credit (personality-rights template noted)",
+   "file": "assets/fahlman_2007.jpg"
   },
   {
    "key": "cmu_campus",
@@ -190,7 +191,8 @@
    "date": "25 Aug 2015",
    "license": "CC BY-SA 4.0",
    "shows": "Buildings on the Carnegie Mellon main campus, Pittsburgh (Doherty and Wean halls, per file name). Taken 2015, so label as 'campus today'.",
-   "changes": "cropped to 9:16, slow pan"
+   "changes": "cropped to 9:16, slow pan; photographed 2015, labelled 'campus today'",
+   "file": "assets/cmu_campus.jpg"
   },
   {
    "key": "vt100",
@@ -200,7 +202,8 @@
    "date": "30 Aug 2013",
    "license": "CC BY 2.0",
    "shows": "DEC VT100 terminal at the Living Computer Museum. A typical 1980s terminal; NOT claimed to be one CMU used.",
-   "changes": "cropped to 9:16, slow push"
+   "changes": "cropped to 9:16, slow push; labelled 'not CMU's own' (generic 1980s terminal)",
+   "file": "assets/vt100.jpg"
   }
  ],
  "tiktok_caption": "The smiley was invented because a joke backfired. 🙂\n\nfile no. 021\n\n#smiley #emoticon #internethistory #computerhistory #carnegiemellon",
@@ -241,5 +244,13 @@
   }
  ],
  "end_card_text": "follow for the next file",
- "youtube_caption": "The smiley was invented because a joke backfired. 🙂\n\nIn September 1982, a Carnegie Mellon online bulletin board lit up over a warning that an elevator was contaminated with mercury. It was a joke, and some readers missed that.\n\nOn 19 September, computer scientist Scott Fahlman proposed marking jokes with a colon, a hyphen and a bracket, to be read sideways: :-) . He also suggested :-( for posts that were not jokes.\n\nThe original post was later lost. In 2002, CMU staff recovered it from old backup tapes (retrieved 10 September 2002).\n\nfile no. 021\n\n—\nSources: Scott Fahlman, 'Smiley Lore :-)' and 'Original Bboard Thread' (Carnegie Mellon University, cs.cmu.edu/~sef); Wikipedia, 'Scott Fahlman'.\nImages via Wikimedia Commons: Scott Fahlman portrait (2007, by Mrs. Fahlman, public domain); Carnegie Mellon campus (Dllu, CC BY-SA 4.0); DEC VT100 terminal (Jason Scott, CC BY 2.0).\nDiagrams drawn for this video.\n\n#shorts #smiley #emoticon #internethistory #carnegiemellon #computerhistory #usenet #tech"
+ "youtube_caption": "The smiley was invented because a joke backfired. 🙂\n\nIn September 1982, a Carnegie Mellon online bulletin board lit up over a warning that an elevator was contaminated with mercury. It was a joke, and some readers missed that.\n\nOn 19 September, computer scientist Scott Fahlman proposed marking jokes with a colon, a hyphen and a bracket, to be read sideways: :-) . He also suggested :-( for posts that were not jokes.\n\nThe original post was later lost. In 2002, CMU staff recovered it from old backup tapes (retrieved 10 September 2002).\n\nfile no. 021\n\n—\nSources: Scott Fahlman, 'Smiley Lore :-)' and 'Original Bboard Thread' (Carnegie Mellon University, cs.cmu.edu/~sef); Wikipedia, 'Scott Fahlman'.\nImages via Wikimedia Commons: Scott Fahlman portrait (2007, by Mrs. Fahlman, public domain); Carnegie Mellon campus (Dllu, CC BY-SA 4.0); DEC VT100 terminal (Jason Scott, CC BY 2.0).\nDiagrams drawn for this video.\n\n#shorts #smiley #emoticon #internethistory #carnegiemellon #computerhistory #usenet #tech",
+ "audio_recording": {
+  "voice": "Kurt",
+  "voice_id": "42MPlPHxazRyNGWpSUyy",
+  "model": "eleven_v4",
+  "take": 2,
+  "narration_flow_id": "7Wp5mv38HLWoq8RNeCT3",
+  "sfx_flow_id": "oYyDyO8CMotNympFnPsG"
+ }
 }

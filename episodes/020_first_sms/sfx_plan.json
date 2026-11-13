@@ -1,0 +1,59 @@
+{
+ "episode": "020_first_sms",
+ "sfx": [
+  {
+   "beat": 0,
+   "file": "b00",
+   "prompt": "soft office keyboard clicks and a tiny digital chirp, quiet",
+   "gain": 0.3
+  },
+  {
+   "beat": 1,
+   "file": "b01",
+   "prompt": "distant office murmur with a low PC fan hum",
+   "gain": 0.28
+  },
+  {
+   "beat": 2,
+   "file": "b02",
+   "prompt": "slow keystrokes then one soft enter key",
+   "gain": 0.4
+  },
+  {
+   "beat": 3,
+   "file": "b03",
+   "prompt": "faint radio data bursts, then a phone alert tone, party chatter",
+   "gain": 0.35
+  },
+  {
+   "beat": 4,
+   "file": "b04",
+   "prompt": "brick phone set down on a table with a thud",
+   "gain": 0.45
+  },
+  {
+   "beat": 5,
+   "file": "b05",
+   "prompt": "a single phone alert tone, then silence",
+   "gain": 0.35
+  },
+  {
+   "beat": 6,
+   "file": "b06",
+   "prompt": "old ringing telephone, short muffled hello",
+   "gain": 0.4
+  },
+  {
+   "beat": 7,
+   "file": "b07",
+   "prompt": "gavel tap in hushed auction room, light applause",
+   "gain": 0.35
+  },
+  {
+   "beat": 8,
+   "file": "b08",
+   "prompt": "single soft phone alert tone fading to silence",
+   "gain": 0.3
+  }
+ ]
+}

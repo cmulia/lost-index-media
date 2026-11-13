@@ -14,7 +14,7 @@
     "type": "photo",
     "asset": "krups_maker"
    },
-   "label": "a krups coffee maker · stand-in photo",
+   "label": "stand-in photo · not the real pot",
    "sublabel": "tiia monto · cc by-sa 4.0",
    "date_label": null,
    "date": null,
@@ -29,7 +29,7 @@
     "type": "photo",
     "asset": "cl_building"
    },
-   "label": "the computer laboratory · cambridge",
+   "label": "lab building · photo from 2005",
    "sublabel": "bob tubbs · public domain",
    "date_label": "filmed",
    "date": "1991",
@@ -75,11 +75,13 @@
    "caption": "the picture was greyscale, only 128 pixels square.",
    "big": "128 × 128.",
    "visual": {
-    "type": "photo",
-    "asset": "archimedes"
+    "type": "diagram",
+    "name": "webcam",
+    "panel": "dark",
+    "height": 760
    },
-   "label": "an acorn archimedes",
-   "sublabel": "paulvernon1974 · cc0",
+   "label": "what the webcam showed",
+   "sublabel": "schematic · drawn for this video",
    "date_label": null,
    "date": null,
    "sfx": "short bursts of digital static, a single soft key click",
@@ -110,7 +112,7 @@
     "type": "photo",
     "asset": "cl_building"
    },
-   "label": "the computer laboratory · cambridge",
+   "label": "lab building · photo from 2005",
    "sublabel": "bob tubbs · public domain",
    "date_label": "switched off",
    "date": "22 aug 2001",
@@ -142,7 +144,7 @@
     "type": "photo",
     "asset": "krups_maker"
    },
-   "label": "a krups coffee maker · stand-in photo",
+   "label": "stand-in photo · not the real pot",
    "sublabel": "tiia monto · cc by-sa 4.0",
    "date_label": null,
    "date": null,
@@ -157,7 +159,7 @@
     "type": "photo",
     "asset": "cl_building"
    },
-   "label": "the computer laboratory · cambridge",
+   "label": "lab building · photo from 2005",
    "sublabel": "bob tubbs · public domain",
    "date_label": null,
    "date": null,
@@ -175,7 +177,7 @@
    "date": "1 May 2019",
    "license": "CC BY-SA 4.0",
    "shows": "A small Krups coffee maker at a flea market. Stand-in only: NOT the Trojan Room machine.",
-   "changes": "cropped to 9:16, slow push; label as stand-in"
+   "changes": "cropped to 9:16, slow push; labelled on screen as stand-in, not the original pot"
   },
   {
    "key": "cl_building",
@@ -184,22 +186,12 @@
    "author": "Bob Tubbs",
    "date": "Apr 2005",
    "license": "Public domain (PD-self)",
-   "shows": "The University of Cambridge Computer Laboratory, photographed 2005. Not the 1991 building (lab moved to the William Gates Building in 2001); caption must not claim the pot stood here.",
-   "changes": "cropped to 9:16, slow push"
-  },
-  {
-   "key": "archimedes",
-   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/AcornArchimedes-Wiki.jpg?width=1600",
-   "page": "https://commons.wikimedia.org/wiki/File:AcornArchimedes-Wiki.jpg",
-   "author": "PaulVernon1974",
-   "date": "11 Mar 2013",
-   "license": "CC0",
-   "shows": "Acorn Archimedes A410/1 with monitor and mouse; the pot's frame grabber was in an Acorn Archimedes.",
+   "shows": "The University of Cambridge Computer Laboratory, photographed 2005. Not the 1991 building (lab moved to the William Gates Building in 2001); caption must not claim the pot stood here. On screen labelled 'photo from 2005'.",
    "changes": "cropped to 9:16, slow push"
   }
  ],
- "tiktok_caption": "This coffee pot should never have been watched by the world. ☕\n\nfile no. 019\n\n#webcam #internethistory #cambridge #coffee #history",
- "instagram_caption": "This coffee pot should never have been watched by the world. ☕\n\nIn 1991, computer scientists at Cambridge pointed a camera at a coffee pot in the Computer Laboratory. Coffee club members on other floors kept climbing the stairs to find it empty.\n\nThe camera fed a frame grabber in an Acorn Archimedes, and a program put a small greyscale image of the pot on their screens. It updated about three times a minute.\n\nIn November 1993 the picture went onto the web. The camera was switched off on 22 August 2001.\n\nThat month a Krups coffee machine from the pot's later years sold on eBay for £3,350 to Spiegel Online. It was not the original pot. The photo of a coffee maker here is a stand-in.\n\nfile no. 019\n\n—\nSources: Quentin Stafford-Fraser, 'The Trojan Room Coffee Pot' (Cambridge Computer Laboratory, 1995); Wikipedia, 'Trojan Room coffee pot'; The Register, 'Trojan Room coffee pot sells' (13 Aug 2001); Communications of the ACM 44(7), 2001.\nImages via Wikimedia Commons: Tiia Monto (CC BY-SA 4.0), Bob Tubbs (public domain), PaulVernon1974 (CC0).\nDiagrams drawn for this video.\n\n#trojanroom #webcam #internethistory #cambridge #computinghistory #coffee #history #shorts",
+ "tiktok_caption": "This coffee pot should never have been watched by the world. ☕\n\nThe first webcam pointed at a coffee pot in Cambridge, 1991. The coffee maker shown is a stand-in, not the original pot.\n\nfile no. 019 · Images: Tiia Monto (CC BY-SA 4.0), Bob Tubbs (public domain) via Wikimedia Commons\n#webcam #internethistory #cambridge #coffee #history",
+ "instagram_caption": "This coffee pot should never have been watched by the world. ☕\n\nIn 1991, computer scientists at Cambridge pointed a camera at a coffee pot in the Computer Laboratory. Coffee club members on other floors kept climbing the stairs to find it empty.\n\nThe camera fed a frame grabber in an Acorn Archimedes, and a program put a small greyscale image of the pot on their screens. It updated about three times a minute.\n\nIn November 1993 the picture went onto the web. The camera was switched off on 22 August 2001.\n\nThat month a Krups coffee machine from the pot's later years sold on eBay for £3,350 to Spiegel Online. It was not the original pot. The coffee maker shown is a stand-in, and the lab photo is from 2005.\n\nfile no. 019\n\n—\nSources: Quentin Stafford-Fraser, 'The Trojan Room Coffee Pot' (Cambridge Computer Laboratory, 1995); Wikipedia, 'Trojan Room coffee pot'; The Register, 'Trojan Room coffee pot sells' (13 Aug 2001); Communications of the ACM 44(7), 2001.\nImages via Wikimedia Commons: Tiia Monto (CC BY-SA 4.0, stand-in coffee maker, not the original pot), Bob Tubbs (public domain, lab building photographed in 2005).\nDiagrams drawn for this video (the webcam view is a schematic, not a real screenshot).\n\n#trojanroom #webcam #internethistory #cambridge #computinghistory #coffee #history #shorts",
  "youtube_title": "The Trojan Room coffee pot, the first webcam (1991) #shorts",
  "question": "Genius, or just avoiding the stairs?",
  "answer": "Genius. Solving a tiny annoyance with a camera and a cable is how half the internet started.",
@@ -234,8 +226,13 @@
    "claim": "Narration says 'that month' for the sale: article dated 13 Aug 2001, auction in Aug 2001; exact end date not checked",
    "source": "The Register",
    "url": "https://www.theregister.com/2001/08/13/trojan_room_coffee_pot_sells/"
+  },
+  {
+   "claim": "Licences: krups_maker CC BY-SA 4.0 ({{self|cc-by-sa-4.0}}), cl_building PD-self, both confirmed in assets/_pages; real webcam screenshots are GFDL-only so a schematic is drawn instead",
+   "source": "Commons wikitext",
+   "url": "https://commons.wikimedia.org/wiki/File:Coffee_maker_Krups.jpg"
   }
  ],
  "end_card_text": "follow for the next file",
- "youtube_caption": "This coffee pot should never have been watched by the world. ☕\n\nIn 1991, computer scientists at Cambridge pointed a camera at a coffee pot in the Computer Laboratory. Coffee club members on other floors kept climbing the stairs to find it empty.\n\nThe camera fed a frame grabber in an Acorn Archimedes, and a program put a small greyscale image of the pot on their screens. It updated about three times a minute.\n\nIn November 1993 the picture went onto the web. The camera was switched off on 22 August 2001.\n\nThat month a Krups coffee machine from the pot's later years sold on eBay for £3,350 to Spiegel Online. It was not the original pot. The photo of a coffee maker here is a stand-in.\n\nfile no. 019\n\n—\nSources: Quentin Stafford-Fraser, 'The Trojan Room Coffee Pot' (Cambridge Computer Laboratory, 1995); Wikipedia, 'Trojan Room coffee pot'; The Register, 'Trojan Room coffee pot sells' (13 Aug 2001); Communications of the ACM 44(7), 2001.\nImages via Wikimedia Commons: Tiia Monto (CC BY-SA 4.0), Bob Tubbs (public domain), PaulVernon1974 (CC0).\nDiagrams drawn for this video.\n\n#shorts #webcam #internethistory #cambridge #computinghistory #coffee #history"
+ "youtube_caption": "This coffee pot should never have been watched by the world. ☕\n\nIn 1991, computer scientists at Cambridge pointed a camera at a coffee pot in the Computer Laboratory. Coffee club members on other floors kept climbing the stairs to find it empty.\n\nThe camera fed a frame grabber in an Acorn Archimedes, and a program put a small greyscale image of the pot on their screens. It updated about three times a minute.\n\nIn November 1993 the picture went onto the web. The camera was switched off on 22 August 2001.\n\nThat month a Krups coffee machine from the pot's later years sold on eBay for £3,350 to Spiegel Online. It was not the original pot. The coffee maker shown is a stand-in, and the lab photo is from 2005.\n\nfile no. 019\n\n—\nSources: Quentin Stafford-Fraser, 'The Trojan Room Coffee Pot' (Cambridge Computer Laboratory, 1995); Wikipedia, 'Trojan Room coffee pot'; The Register, 'Trojan Room coffee pot sells' (13 Aug 2001); Communications of the ACM 44(7), 2001.\nImages via Wikimedia Commons: Tiia Monto (CC BY-SA 4.0, stand-in coffee maker, not the original pot), Bob Tubbs (public domain, lab building photographed in 2005).\nDiagrams drawn for this video (the webcam view is a schematic, not a real screenshot).\n\n#shorts #webcam #internethistory #cambridge #computinghistory #coffee #history"
 }

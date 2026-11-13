@@ -20,9 +20,9 @@ Times (Sydney, +11:00): until 1 Nov YouTube/Instagram 10:00, TikTok 12:00; from 
 - [x] 13 Charlie Chaplin · Sun 15 Nov (actual) · his coffin was stolen from a Swiss cemetery in 1978 and held for ransom; twist: found in a cornfield, reburied under concrete
 - [x] 14 James Cameron · Mon 16 Nov (actual) · sold The Terminator script for one dollar on condition he directed it
 - [x] 15 Satyajit Ray · Wed 18 Nov (actual) · funded Pather Panchali partly by pawning his wife's jewellery; twist: honorary Oscar accepted from a hospital bed in 1992
-- [ ] 16 Tim Burton · Wed 11 Nov · Disney let him go after the short Frankenweenie was judged too dark; twist: Disney later paid him to remake it as a feature (2012)
-- [ ] 17 Orson Welles · Thu 12 Nov · the War of the Worlds "mass panic" (1938) was largely a newspaper exaggeration
-- [ ] 18 Francis Ford Coppola · Fri 13 Nov · bet his own money on Apocalypse Now; decades later self-funded Megalopolis (≈ $120M) from his wine business
-- [ ] 19 Greta Gerwig · Sat 14 Nov · Barbie's sets reportedly helped cause a shortage of a fluorescent pink paint (Rosco)
-- [ ] 20 Ridley Scott · Sun 15 Nov · Apple's "1984" ad nearly didn't air (the board disliked it); it aired nationally once
-- [ ] 21 Fritz Lang · Mon 16 Nov · Metropolis was cut after its 1927 premiere; a near-complete print turned up in Buenos Aires in 2008
+- [x] 16 Tim Burton · Thu 19 Nov (actual) · Disney let him go after the short Frankenweenie was judged too dark; twist: Disney later paid him to remake it as a feature (2012)
+- [x] 17 Orson Welles · Sat 21 Nov (actual) · the War of the Worlds "mass panic" (1938) was largely a newspaper exaggeration
+- [x] 18 Francis Ford Coppola · Sun 22 Nov (actual) · bet his own money on Apocalypse Now; decades later self-funded Megalopolis (≈ $120M) from his wine business
+- [x] 19 Greta Gerwig · Mon 23 Nov (actual) · Barbie's sets reportedly helped cause a shortage of a fluorescent pink paint (Rosco)
+- [x] 20 Ridley Scott · Wed 25 Nov (actual) · Apple's "1984" ad nearly didn't air (the board disliked it); it aired nationally once
+- [x] 21 Fritz Lang · Thu 26 Nov (actual) · Metropolis was cut after its 1927 premiere; a near-complete print turned up in Buenos Aires in 2008

@@ -1,0 +1,65 @@
+{
+ "episode": "021_smiley",
+ "sfx": [
+  {
+   "beat": 0,
+   "file": "b00",
+   "prompt": "soft typewriter key click, then a quiet two-note chime",
+   "gain": 0.3
+  },
+  {
+   "beat": 1,
+   "file": "b01",
+   "prompt": "hum of a building, a lift bell dinging",
+   "gain": 0.3
+  },
+  {
+   "beat": 2,
+   "file": "b02",
+   "prompt": "elevator cable creak, a soft clink of liquid droplets, then a record-scratch pause",
+   "gain": 0.34
+  },
+  {
+   "beat": 3,
+   "file": "b03",
+   "prompt": "old CRT hum, keyboard typing a line, enter key",
+   "gain": 0.3
+  },
+  {
+   "beat": 4,
+   "file": "b04",
+   "prompt": "three quick typed keys, a gentle whoosh as the face rotates, a soft happy chime",
+   "gain": 0.34
+  },
+  {
+   "beat": 5,
+   "file": "b05",
+   "prompt": "bright chime for the smile, then a low dull note for the frown",
+   "gain": 0.34
+  },
+  {
+   "beat": 6,
+   "file": "b06",
+   "prompt": "fast keyboard clatter fading to silence, a hollow tape-reel whir winding down",
+   "gain": 0.3
+  },
+  {
+   "beat": 7,
+   "file": "b07",
+   "prompt": "magnetic tape reel spinning up, drive whirring, rhythmic seeking chatter",
+   "gain": 0.34
+  },
+  {
+   "beat": 8,
+   "file": "b08",
+   "prompt": "single soft chime fading into room tone",
+   "gain": 0.3
+  },
+  {
+   "beat": 9,
+   "file": "b09",
+   "prompt": "two light typing clicks, a final soft chime",
+   "gain": 0.3
+  }
+ ]
+}

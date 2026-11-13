@@ -3,7 +3,7 @@
  "slug": "first_sms",
  "title": "The First SMS (1992)",
  "series_label": "file no. 020",
- "voice_direction": "Kurt or Daniel: dry, warm, matter-of-fact. Land 'no reply.' flat and quiet, a half-smile on 'Merry Christmas', a beat of silence before 'The party phoned him instead.', final question light and genuine.",
+ "voice_direction": "Alice: clear, warm, matter-of-fact. Land 'no reply.' flat and quiet, a half-smile on 'Merry Christmas', a beat of silence before 'The party phoned him instead.', final question light and genuine.",
  "narration": "The first text message got no reply. It was sent on the third of December, nineteen ninety-two, by a test engineer named Neil Papworth. He typed just two words on an office computer: Merry Christmas. They travelled across Vodafone's network to a brand-new phone called the Orbitel nine-oh-one, held by Richard Jarvis at a Christmas party. That handset weighed over two kilograms, and handsets could not send texts yet. Papworth says nobody texted back. The party phoned him instead. Nearly thirty years later, an NFT of a replica of that message sold at auction in Paris for about one hundred thousand euros, with the money going to the UN refugee agency. Text or call: which do you reach for first?",
  "beats": [
   {
@@ -12,10 +12,14 @@
    "big": "no reply.",
    "visual": {
     "type": "photo",
-    "asset": "hagenuk_mt2000"
+    "asset": "hagenuk_mt2000",
+    "focus": [
+     0.5,
+     0.1
+    ]
    },
-   "label": "an early gsm handset",
-   "sublabel": "hagenuk mt-2000 · kraftux · cc by-sa 3.0",
+   "label": "stand-in photo",
+   "sublabel": "not the 901 · kraftux · cc by-sa 3.0",
    "date_label": null,
    "date": null,
    "sfx": "soft office keyboard clicks, a tiny digital chirp",
@@ -63,8 +67,8 @@
     "type": "photo",
     "asset": "nokia_1011"
    },
-   "label": "a gsm handset of 1992–94 (nokia 1011)",
-   "sublabel": "jkbw · cc by 3.0",
+   "label": "stand-in · nokia 1011",
+   "sublabel": "not the orbitel 901 · jkbw · cc by 3.0",
    "date_label": "handset launched",
    "date": "may 1992",
    "sfx": "faint radio data bursts, then a single phone alert tone, party chatter under it",
@@ -78,8 +82,8 @@
     "type": "photo",
     "asset": "hagenuk_variants"
    },
-   "label": "early gsm handsets · same era",
-   "sublabel": "fra.iesus · cc by-sa 4.0",
+   "label": "same-era stand-ins",
+   "sublabel": "hagenuk mt-2000 · fra.iesus · cc by-sa 4.0",
    "date_label": null,
    "date": null,
    "sfx": "a heavy phone being set down on a table with a thud",
@@ -110,8 +114,8 @@
     "type": "photo",
     "asset": "sms_feature_phone"
    },
-   "label": "texting, later · a feature phone",
-   "sublabel": "miss puzzle · cc by-sa 4.0",
+   "label": "a later feature phone",
+   "sublabel": "not 1992 · miss puzzle · cc by-sa 4.0",
    "date_label": null,
    "date": null,
    "sfx": "an old ringing phone, a short muffled hello",
@@ -140,10 +144,14 @@
    "big": "text or call?",
    "visual": {
     "type": "photo",
-    "asset": "hagenuk_mt2000"
+    "asset": "hagenuk_mt2000",
+    "focus": [
+     0.5,
+     0.1
+    ]
    },
-   "label": "an early gsm handset",
-   "sublabel": "hagenuk mt-2000 · kraftux · cc by-sa 3.0",
+   "label": "stand-in photo",
+   "sublabel": "not the 901 · kraftux · cc by-sa 3.0",
    "date_label": null,
    "date": null,
    "sfx": "single soft phone alert tone fading to silence",
@@ -191,7 +199,8 @@
    "date": "1 Mar 2019",
    "license": "CC BY-SA 4.0",
    "shows": "Screen of a feature phone composing an SMS (a later phone, early 2000s style; label as 'later').",
-   "changes": "cropped to 9:16, slow push"
+   "changes": "cropped to 9:16, slow push",
+   "file": "sms_feature_phone.png"
   }
  ],
  "tiktok_caption": "The first text message got no reply. 📱\n\nfile no. 020\n\n#firsttext #sms #techhistory #mobilephones #vodafone",
@@ -227,5 +236,12 @@
    "url": "https://www.techradar.com/news/nft-of-worlds-first-text-message-sells-for-euro100000-at-auction"
   }
  ],
- "end_card_text": "follow for the next file"
+ "end_card_text": "follow for the next file",
+ "audio_recording": {
+  "found": false,
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Sputnik_beep.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sputnik_beep.ogg",
+  "license": "Public domain (PD-USGov-NASA; source NASA SoundCloud 'sputnik-beep')",
+  "notes": "Candidate only, authenticity NOT confirmed. Commons has a sibling file 'Possible PDM signal labeled as Sputnik by NASA.ogg' whose note says NASA NSSDC's 'Sputnik' sound is NOT the Sputnik-1 signal. Could not confirm Sputnik_beep.ogg is the authentic signal (NASA pages were blocked for fetch). Recommend synthesising a labelled recreation (0.3 s tone pairs alternating, ~3 Hz, shortwave static) and captioning it 'recreation'."
+ }
 }
