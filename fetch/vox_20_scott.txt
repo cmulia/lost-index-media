@@ -1,0 +1,8 @@
+episodes/vox_20_scott/assets/scott_skidmore.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Ridley_Scott_by_Gage_Skidmore.jpg?width=1600
+episodes/vox_20_scott/assets/_pages/scott_skidmore.html https://commons.wikimedia.org/wiki/File:Ridley_Scott_by_Gage_Skidmore.jpg?action=raw
+episodes/vox_20_scott/assets/scott_nasa.jpg https://commons.wikimedia.org/wiki/Special:FilePath/NASA_Journey_to_Mars_and_%E2%80%98The_Martian%E2%80%99_%28201508180030HQ%29.jpg?width=1600
+episodes/vox_20_scott/assets/_pages/scott_nasa.html https://commons.wikimedia.org/wiki/File:NASA_Journey_to_Mars_and_%E2%80%98The_Martian%E2%80%99_%28201508180030HQ%29.jpg?action=raw
+episodes/vox_20_scott/assets/scott_2015.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Ridley_Scott_2015.jpg?width=1600
+episodes/vox_20_scott/assets/_pages/scott_2015.html https://commons.wikimedia.org/wiki/File:Ridley_Scott_2015.jpg?action=raw
+episodes/vox_20_scott/assets/superdome.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Tampa_Stadium.jpg?width=1600
+episodes/vox_20_scott/assets/_pages/superdome.html https://commons.wikimedia.org/wiki/File:Tampa_Stadium.jpg?action=raw

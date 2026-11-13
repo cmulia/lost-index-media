@@ -1,0 +1,231 @@
+{
+ "file_no": "020",
+ "slug": "first_sms",
+ "title": "The First SMS (1992)",
+ "series_label": "file no. 020",
+ "voice_direction": "Kurt or Daniel: dry, warm, matter-of-fact. Land 'no reply.' flat and quiet, a half-smile on 'Merry Christmas', a beat of silence before 'The party phoned him instead.', final question light and genuine.",
+ "narration": "The first text message got no reply. It was sent on the third of December, nineteen ninety-two, by a test engineer named Neil Papworth. He typed just two words on an office computer: Merry Christmas. They travelled across Vodafone's network to a brand-new phone called the Orbitel nine-oh-one, held by Richard Jarvis at a Christmas party. That handset weighed over two kilograms, and handsets could not send texts yet. Papworth says nobody texted back. The party phoned him instead. Nearly thirty years later, an NFT of a replica of that message sold at auction in Paris for about one hundred thousand euros, with the money going to the UN refugee agency. Text or call: which do you reach for first?",
+ "beats": [
+  {
+   "text": "The first text message got no reply. ",
+   "caption": "the first text message got no reply.",
+   "big": "no reply.",
+   "visual": {
+    "type": "photo",
+    "asset": "hagenuk_mt2000"
+   },
+   "label": "an early gsm handset",
+   "sublabel": "hagenuk mt-2000 · kraftux · cc by-sa 3.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "soft office keyboard clicks, a tiny digital chirp",
+   "dark": true
+  },
+  {
+   "text": "It was sent on the third of December, nineteen ninety-two, by a test engineer named Neil Papworth. ",
+   "caption": "it was sent on 3 december 1992 by a test engineer named neil papworth.",
+   "big": null,
+   "visual": {
+    "type": "diagram",
+    "name": "route",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "vodafone network · uk",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "sent",
+   "date": "3 dec 1992",
+   "sfx": "distant office murmur, a PC fan hum",
+   "dark": true
+  },
+  {
+   "text": "He typed just two words on an office computer: Merry Christmas. ",
+   "caption": "he typed just two words on an office computer: merry christmas.",
+   "big": "merry christmas.",
+   "visual": {
+    "type": "diagram",
+    "name": "composer",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "the first sms · recreated",
+   "sublabel": "illustration · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "slow typewriter-style keystrokes on a computer keyboard, one soft enter key",
+   "dark": true
+  },
+  {
+   "text": "They travelled across Vodafone's network to a brand-new phone called the Orbitel nine-oh-one, held by Richard Jarvis at a Christmas party. ",
+   "caption": "it travelled across vodafone's network to a new phone, the orbitel 901, held by richard jarvis at a christmas party.",
+   "big": "orbitel 901.",
+   "visual": {
+    "type": "photo",
+    "asset": "nokia_1011"
+   },
+   "label": "a gsm handset of 1992–94 (nokia 1011)",
+   "sublabel": "jkbw · cc by 3.0",
+   "date_label": "handset launched",
+   "date": "may 1992",
+   "sfx": "faint radio data bursts, then a single phone alert tone, party chatter under it",
+   "dark": false
+  },
+  {
+   "text": "That handset weighed over two kilograms, and handsets could not send texts yet. ",
+   "caption": "that handset weighed over 2 kg, and handsets could not send texts yet.",
+   "big": "2.1 kg.",
+   "visual": {
+    "type": "photo",
+    "asset": "hagenuk_variants"
+   },
+   "label": "early gsm handsets · same era",
+   "sublabel": "fra.iesus · cc by-sa 4.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "a heavy phone being set down on a table with a thud",
+   "dark": false
+  },
+  {
+   "text": "Papworth says nobody texted back. ",
+   "caption": "papworth says nobody texted back.",
+   "big": "no way to text back.",
+   "visual": {
+    "type": "diagram",
+    "name": "oneway",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "one-way street · 1992",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "a single phone alert tone, then silence",
+   "dark": true
+  },
+  {
+   "text": "The party phoned him instead. ",
+   "caption": "the party phoned him instead.",
+   "big": "they phoned.",
+   "visual": {
+    "type": "photo",
+    "asset": "sms_feature_phone"
+   },
+   "label": "texting, later · a feature phone",
+   "sublabel": "miss puzzle · cc by-sa 4.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "an old ringing phone, a short muffled hello",
+   "dark": false
+  },
+  {
+   "text": "Nearly thirty years later, an NFT of a replica of that message sold at auction in Paris for about one hundred thousand euros, with the money going to the UN refugee agency. ",
+   "caption": "nearly 30 years later, an nft of a replica of that message sold at auction in paris for about €100,000, for the un refugee agency.",
+   "big": "€100,000.",
+   "visual": {
+    "type": "diagram",
+    "name": "nft",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "nft auction · paris",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "auction",
+   "date": "dec 2021",
+   "sfx": "a gavel tap in a hushed auction room, light applause",
+   "dark": true
+  },
+  {
+   "text": "Text or call: which do you reach for first?",
+   "caption": "text or call: which do you reach for first?",
+   "big": "text or call?",
+   "visual": {
+    "type": "photo",
+    "asset": "hagenuk_mt2000"
+   },
+   "label": "an early gsm handset",
+   "sublabel": "hagenuk mt-2000 · kraftux · cc by-sa 3.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "single soft phone alert tone fading to silence",
+   "dark": true
+  }
+ ],
+ "question": "Text or call: which do you reach for first?",
+ "music_mood": "Warm, sparse 1990s office synth: soft pad, one gentle pulse, tiny digital chirps. Lifts slightly on 'Merry Christmas', drops to near silence on 'nobody texted back', ends on a single held note under the question.",
+ "assets": [
+  {
+   "key": "hagenuk_mt2000",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagenuk_mt-2000.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:Hagenuk_mt-2000.jpg",
+   "author": "Kraftux",
+   "date": "19 Feb 2012",
+   "license": "CC BY-SA 3.0",
+   "shows": "Hagenuk MT-2000, an early GSM phone (Cetelco variant). Stand-in for the era; NOT an Orbitel 901.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "nokia_1011",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nokia_1011.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:Nokia_1011.jpg",
+   "author": "Jkbw",
+   "date": "23 May 2010",
+   "license": "CC BY 3.0 (also GFDL)",
+   "shows": "Nokia 1011, an early mass-produced GSM handset (1992-94). Stand-in; NOT an Orbitel 901.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "hagenuk_variants",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagenuk_MT-2000_variants.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:Hagenuk_MT-2000_variants.jpg",
+   "author": "fra.iesus",
+   "date": "24 Jan 2019",
+   "license": "CC BY-SA 4.0",
+   "shows": "Two Hagenuk MT-2000 early GSM phones. Stand-in for the era.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "sms_feature_phone",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SMS_composition_on_feature_phone.png?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:SMS_composition_on_feature_phone.png",
+   "author": "Miss Puzzle",
+   "date": "1 Mar 2019",
+   "license": "CC BY-SA 4.0",
+   "shows": "Screen of a feature phone composing an SMS (a later phone, early 2000s style; label as 'later').",
+   "changes": "cropped to 9:16, slow push"
+  }
+ ],
+ "tiktok_caption": "The first text message got no reply. 📱\n\nfile no. 020\n\n#firsttext #sms #techhistory #mobilephones #vodafone",
+ "instagram_caption": "The first text message got no reply. 📱\n\nOn 3 December 1992, test engineer Neil Papworth sent \"Merry Christmas\" from a computer to Richard Jarvis's Orbitel 901 handset on Vodafone's network.\n\nHandsets could not send texts yet, so there was no way to text back. Papworth says people phoned him from the party instead.\n\nIn December 2021 an NFT of a replica of the message sold at auction in Paris for about 100,000 euros, with the proceeds going to the UN refugee agency.\n\nfile no. 020\n\n—\nSources: BBC News (Zoe Kleinman, 'Merry Christmas: 30 years of the text message'); CBC As It Happens interview with Neil Papworth (2017); Mobile Phone Museum, Orbitel 901; Wikipedia, 'SMS'; Aguttes auction notice and TechRadar, 21-22 Dec 2021.\nImages via Wikimedia Commons: Kraftux (CC BY-SA 3.0), Jkbw (CC BY 3.0), fra.iesus (CC BY-SA 4.0), Miss Puzzle (CC BY-SA 4.0). The phones shown are of the same era, not the Orbitel 901 itself.\nDiagrams drawn for this video.\n\n#firsttext #sms #techhistory #vodafone #mobilephones #history #nft",
+ "youtube_title": "The first text message ever sent: Merry Christmas (1992) #shorts",
+ "youtube_caption": "The first text message got no reply. 📱\n\nOn 3 December 1992, test engineer Neil Papworth sent \"Merry Christmas\" from a computer to Richard Jarvis's Orbitel 901 handset on Vodafone's network.\n\nHandsets could not send texts yet, so there was no way to text back. Papworth says people phoned him from the party instead.\n\nIn December 2021 an NFT of a replica of the message sold at auction in Paris for about 100,000 euros, with the proceeds going to the UN refugee agency.\n\nfile no. 020\n\n—\nSources: BBC News (Zoe Kleinman, 'Merry Christmas: 30 years of the text message'); CBC As It Happens interview with Neil Papworth (2017); Mobile Phone Museum, Orbitel 901; Wikipedia, 'SMS'; Aguttes auction notice and TechRadar, 21-22 Dec 2021.\nImages via Wikimedia Commons: Kraftux (CC BY-SA 3.0), Jkbw (CC BY 3.0), fra.iesus (CC BY-SA 4.0), Miss Puzzle (CC BY-SA 4.0). The phones shown are of the same era, not the Orbitel 901 itself.\nDiagrams drawn for this video.\n\n#shorts #firsttext #sms #techhistory #vodafone #mobilephones #history #nft",
+ "answer": "I'd text first, but I still call when it matters. A voice is hard to beat.",
+ "first_comment": "I'd text first, but I still call when it matters. A voice is hard to beat.",
+ "facts": [
+  {
+   "claim": "Neil Papworth, a Sema Group test engineer, sent 'Merry Christmas' on 3 Dec 1992 over Vodafone's UK GSM network to Richard Jarvis's Orbitel 901",
+   "source": "Wikipedia 'SMS' citing BBC News (Kleinman 2022); Mobile Phone Museum",
+   "url": "https://en.wikipedia.org/wiki/SMS"
+  },
+  {
+   "claim": "Sent from a PC/office computer, not a phone",
+   "source": "Wikipedia 'SMS'; CBC As It Happens",
+   "url": "https://www.cbc.ca/radio/asithappens/as-it-happens-monday-edition-1.4431677/it-didn-t-feel-momentous-at-all-says-developer-who-sent-world-s-1st-text-message-25-years-ago-1.4431688"
+  },
+  {
+   "claim": "Orbitel 901 weighed 2.1 kg (2100 g); announced/launched May 1992; Jarvis at a Christmas party; mobilephonemuseum places Jarvis at Vodata, a Vodafone subsidiary (so 'at Vodafone' is loose; narration says only 'Vodafone's network')",
+   "source": "Mobile Phone Museum; RNZ/BBC",
+   "url": "https://mobilephonemuseum.com/phone-detail/orbitel-901"
+  },
+  {
+   "claim": "Papworth got no reply; phones could not send as well as receive texts for about another year; people phoned him from the party. Hedged as 'Papworth says'. Not verified that the Orbitel 901 specifically lacked sending, so narration says 'handsets could not send texts yet' (Wikipedia: most early handsets could not)",
+   "source": "CBC As It Happens interview; Wikipedia 'SMS'",
+   "url": "https://www.cbc.ca/radio/asithappens/as-it-happens-monday-edition-1.4431677/it-didn-t-feel-momentous-at-all-says-developer-who-sent-world-s-1st-text-message-25-years-ago-1.4431688"
+  },
+  {
+   "claim": "Aguttes in Paris auctioned an NFT of a replica of the message in Dec 2021; sold for about EUR 100,000 (some outlets say EUR 107,000 incl. fees), proceeds to UNHCR. NFT is of a replica, not the original (no original stored)",
+   "source": "TechRadar 22 Dec 2021; Aguttes; fundraising.co.uk",
+   "url": "https://www.techradar.com/news/nft-of-worlds-first-text-message-sells-for-euro100000-at-auction"
+  }
+ ],
+ "end_card_text": "follow for the next file"
+}

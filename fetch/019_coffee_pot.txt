@@ -1,0 +1,6 @@
+episodes/019_coffee_pot/assets/krups_maker.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_maker_Krups.jpg?width=1600
+episodes/019_coffee_pot/assets/_pages/krups_maker.html https://commons.wikimedia.org/wiki/File:Coffee_maker_Krups.jpg?action=raw
+episodes/019_coffee_pot/assets/cl_building.jpg https://commons.wikimedia.org/wiki/Special:FilePath/University_of_cambridge_computer_laboratory.jpg?width=1600
+episodes/019_coffee_pot/assets/_pages/cl_building.html https://commons.wikimedia.org/wiki/File:University_of_cambridge_computer_laboratory.jpg?action=raw
+episodes/019_coffee_pot/assets/archimedes.jpg https://commons.wikimedia.org/wiki/Special:FilePath/AcornArchimedes-Wiki.jpg?width=1600
+episodes/019_coffee_pot/assets/_pages/archimedes.html https://commons.wikimedia.org/wiki/File:AcornArchimedes-Wiki.jpg?action=raw

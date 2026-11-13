@@ -1,0 +1,6 @@
+episodes/vox_18_coppola/assets/coppola_gotfryd.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Ford_Coppola%2C_Director_%2805%29.jpg?width=1600
+episodes/vox_18_coppola/assets/_pages/coppola_gotfryd.html https://commons.wikimedia.org/wiki/File:Francis_Ford_Coppola%2C_Director_%2805%29.jpg?action=raw
+episodes/vox_18_coppola/assets/coppola_2011.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Ford_Coppola_2011_CC.jpg?width=1600
+episodes/vox_18_coppola/assets/_pages/coppola_2011.html https://commons.wikimedia.org/wiki/File:Francis_Ford_Coppola_2011_CC.jpg?action=raw
+episodes/vox_18_coppola/assets/coppola_cropped.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Ford_Coppola_%2833906700778%29_%28cropped%29.jpg?width=1600
+episodes/vox_18_coppola/assets/_pages/coppola_cropped.html https://commons.wikimedia.org/wiki/File:Francis_Ford_Coppola_%2833906700778%29_%28cropped%29.jpg?action=raw

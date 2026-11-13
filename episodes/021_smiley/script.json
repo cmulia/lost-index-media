@@ -1,0 +1,245 @@
+{
+ "file_no": "021",
+ "slug": "smiley",
+ "title": "The Smiley :-) (1982)",
+ "series_label": "file no. 021",
+ "voice_direction": "Kurt or Jade: dry, warm, lightly amused. Matter-of-fact on the hook, a small smile in 'Read it sideways', a beat of quiet on 'lost', final question light and genuinely curious.",
+ "narration": "The smiley was invented because a joke backfired. In September nineteen eighty-two, someone on a Carnegie Mellon message board posted a mercury warning about an elevator. It was a joke, and some readers missed that. So on the nineteenth, a computer scientist named Scott Fahlman proposed a fix, in a short, casual note. A colon, a hyphen, and a bracket. Read it sideways, he wrote. That meant a joke. He suggested the frown for posts that were not. It caught on fast. But the original post was lost. In two thousand two, staff dug it out of old backup tapes, after hunting for a drive that could still read them. Even a smile can get lost. Smiley with a nose, or without?",
+ "question": "Smiley with a nose, or without?",
+ "beats": [
+  {
+   "text": "The smiley was invented because a joke backfired. ",
+   "caption": "the smiley was invented because a joke backfired.",
+   "big": "a joke backfired.",
+   "visual": {
+    "type": "photo",
+    "asset": "fahlman_2007"
+   },
+   "label": "scott fahlman",
+   "sublabel": "photo by mrs. fahlman · public domain",
+   "date_label": "photographed",
+   "date": "2007",
+   "sfx": "soft typewriter key click, then a quiet two-note chime",
+   "dark": true
+  },
+  {
+   "text": "In September nineteen eighty-two, someone on a Carnegie Mellon message board posted a mercury warning about an elevator. ",
+   "caption": "in september 1982, someone on a carnegie mellon message board posted a mercury warning about an elevator.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "cmu_campus"
+   },
+   "label": "carnegie mellon campus today",
+   "sublabel": "dllu · cc by-sa 4.0",
+   "date_label": "warning posted",
+   "date": "16 sep 1982",
+   "sfx": "hum of a building, a lift bell dinging",
+   "dark": false
+  },
+  {
+   "text": "It was a joke, and some readers missed that. ",
+   "caption": "it was a joke, and some readers missed that.",
+   "big": "it was a joke.",
+   "visual": {
+    "type": "diagram",
+    "name": "elevator",
+    "panel": "light",
+    "height": 760
+   },
+   "label": "the mercury warning",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "elevator cable creak, a soft clink of liquid droplets, then a record-scratch pause",
+   "dark": false
+  },
+  {
+   "text": "So on the nineteenth, a computer scientist named Scott Fahlman proposed a fix, in a short, casual note. ",
+   "caption": "so on the 19th, a computer scientist named scott fahlman proposed a fix, in a short, casual note.",
+   "big": null,
+   "visual": {
+    "type": "photo",
+    "asset": "vt100"
+   },
+   "label": "a dec vt100 terminal",
+   "sublabel": "jason scott · cc by 2.0 · not cmu's own",
+   "date_label": "posted",
+   "date": "19 sep 1982",
+   "sfx": "old CRT hum, keyboard typing a line, enter key",
+   "dark": true
+  },
+  {
+   "text": "A colon, a hyphen, and a bracket. Read it sideways, he wrote. ",
+   "caption": "a colon, a hyphen, and a bracket. read it sideways, he wrote.",
+   "big": ":-)",
+   "visual": {
+    "type": "diagram",
+    "name": "sideways",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "read it sideways",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "three quick typed keys, a gentle whoosh as the face rotates, a soft happy chime",
+   "dark": true
+  },
+  {
+   "text": "That meant a joke. He suggested the frown for posts that were not. ",
+   "caption": "that meant a joke. he suggested the frown for posts that were not.",
+   "big": ":-(",
+   "visual": {
+    "type": "diagram",
+    "name": "markers",
+    "panel": "light",
+    "height": 760
+   },
+   "label": "two markers",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "bright chime for the smile, then a low dull note for the frown",
+   "dark": false
+  },
+  {
+   "text": "It caught on fast. But the original post was lost. ",
+   "caption": "it caught on fast. but the original post was lost.",
+   "big": "lost.",
+   "visual": {
+    "type": "diagram",
+    "name": "timeline",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "the post · timeline",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "lost until",
+   "date": "2002",
+   "sfx": "fast keyboard clatter fading to silence, a hollow tape-reel whir winding down",
+   "dark": true
+  },
+  {
+   "text": "In two thousand two, staff dug it out of old backup tapes, after hunting for a drive that could still read them. ",
+   "caption": "in 2002, staff dug it out of old backup tapes, after hunting for a drive that could still read them.",
+   "big": "backup tapes.",
+   "visual": {
+    "type": "diagram",
+    "name": "tapes",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "restored from backup",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "recovered",
+   "date": "10 sep 2002",
+   "sfx": "magnetic tape reel spinning up, drive whirring, rhythmic seeking chatter",
+   "dark": true
+  },
+  {
+   "text": "Even a smile can get lost. ",
+   "caption": "even a smile can get lost.",
+   "big": "even a smile can get lost.",
+   "visual": {
+    "type": "photo",
+    "asset": "cmu_campus"
+   },
+   "label": "carnegie mellon campus today",
+   "sublabel": "dllu · cc by-sa 4.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "single soft chime fading into room tone",
+   "dark": false
+  },
+  {
+   "text": "Smiley with a nose, or without? ",
+   "caption": "smiley with a nose, or without?",
+   "big": "nose, or no nose?",
+   "visual": {
+    "type": "diagram",
+    "name": "sideways",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": ":-) or :)",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "two light typing clicks, a final soft chime",
+   "dark": true
+  }
+ ],
+ "music_mood": "Warm, sparse, slightly wry: soft electric piano and a muted glockenspiel over a gentle 90 bpm pulse, faint tape hiss. Lifts a little on the sideways face, thins to near silence at 'lost', returns warm and light under the final question.",
+ "assets": [
+  {
+   "key": "fahlman_2007",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SEF2007a.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:SEF2007a.jpg",
+   "author": "Mrs. Fahlman (wife of Scott E. Fahlman)",
+   "date": "2007",
+   "license": "Public domain (PD-author, permission ticket 2007092010002627; personality-rights template applies)",
+   "shows": "Portrait of Scott E. Fahlman, 2007. Check orientation/size after fetch.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "cmu_campus",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CMU_Doherty_and_Wean.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:CMU_Doherty_and_Wean.jpg",
+   "author": "Dllu",
+   "date": "25 Aug 2015",
+   "license": "CC BY-SA 4.0",
+   "shows": "Buildings on the Carnegie Mellon main campus, Pittsburgh (Doherty and Wean halls, per file name). Taken 2015, so label as 'campus today'.",
+   "changes": "cropped to 9:16, slow pan"
+  },
+  {
+   "key": "vt100",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/DEC_VT100_terminal.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:DEC_VT100_terminal.jpg",
+   "author": "Jason Scott",
+   "date": "30 Aug 2013",
+   "license": "CC BY 2.0",
+   "shows": "DEC VT100 terminal at the Living Computer Museum. A typical 1980s terminal; NOT claimed to be one CMU used.",
+   "changes": "cropped to 9:16, slow push"
+  }
+ ],
+ "tiktok_caption": "The smiley was invented because a joke backfired. 🙂\n\nfile no. 021\n\n#smiley #emoticon #internethistory #computerhistory #carnegiemellon",
+ "instagram_caption": "The smiley was invented because a joke backfired. 🙂\n\nIn September 1982, a Carnegie Mellon online bulletin board lit up over a warning that an elevator was contaminated with mercury. It was a joke, and some readers missed that.\n\nOn 19 September, computer scientist Scott Fahlman proposed marking jokes with a colon, a hyphen and a bracket, to be read sideways: :-) . He also suggested :-( for posts that were not jokes.\n\nThe original post was later lost. In 2002, CMU staff recovered it from old backup tapes (retrieved 10 September 2002).\n\nfile no. 021\n\n—\nSources: Scott Fahlman, 'Smiley Lore :-)' and 'Original Bboard Thread' (Carnegie Mellon University, cs.cmu.edu/~sef); Wikipedia, 'Scott Fahlman'.\nImages via Wikimedia Commons: Scott Fahlman portrait (2007, by Mrs. Fahlman, public domain); Carnegie Mellon campus (Dllu, CC BY-SA 4.0); DEC VT100 terminal (Jason Scott, CC BY 2.0).\nDiagrams drawn for this video.\n\n#smiley #emoticon #internethistory #carnegiemellon #computerhistory #usenet #tech",
+ "youtube_title": "Who invented the smiley :-) ? Scott Fahlman, 1982 #shorts",
+ "first_comment": "Nose, every time. :-) feels more finished to me, though I admit :) is faster.",
+ "answer": "Nose, every time. :-) feels more finished to me, though I admit :) is faster.",
+ "facts": [
+  {
+   "claim": "Fahlman's post proposing :-) as a joke marker (and :-( for non-jokes, 'Read it sideways') dated 19 Sep 1982, 11:44, subject ':-)'",
+   "source": "CMU, Original Bboard Thread (Orig-Smiley)",
+   "url": "https://www.cs.cmu.edu/~sef/Orig-Smiley.htm"
+  },
+  {
+   "claim": "Mercury/elevator thread 16-17 Sep 1982: Howard Gayle's 'WARNING!' (16 Sep 17:21) about a mercury-contaminated elevator; Rudy Nedved (16 Sep 21:34) said it was a joke; Fahlman's own mock-alarming 'Elevators (*)' post 17 Sep. 'Some readers missed it' is inferred from the follow-ups; stay hedged",
+   "source": "CMU, Original Bboard Thread",
+   "url": "https://www.cs.cmu.edu/~sef/Orig-Smiley.htm"
+  },
+  {
+   "claim": "Original thread recovered by Jeff Baird from the Spice VAX October 1982 backup tape on 10 Sep 2002 (effort started Feb 2002 by Mike Jones; staff hunted for a tape drive that could read the media)",
+   "source": "CMU, Original Bboard Thread; Fahlman 'Smiley Lore' page (Digital Coelacanth Project)",
+   "url": "https://www.cs.cmu.edu/~sef/sefSmiley.htm"
+  },
+  {
+   "claim": "Fahlman is 'credited with' the first smiley emoticon; earlier typographic smile ideas existed (1967 Reader's Digest, Nabokov 1969), so do NOT say 'first ever'",
+   "source": "Wikipedia, Scott Fahlman",
+   "url": "https://en.wikipedia.org/wiki/Scott_Fahlman"
+  },
+  {
+   "claim": "'It caught on fast' is general and unverified in detail here; dropped any specific spread dates",
+   "source": "not verified; Fahlman page says it spread",
+   "url": "https://www.cs.cmu.edu/~sef/sefSmiley.htm"
+  },
+  {
+   "claim": "Licences confirmed via ?action=raw: SEF2007a.jpg PD-author; CMU_Doherty_and_Wean.jpg {{self|cc-by-sa-4.0}}; DEC_VT100_terminal.jpg {{cc-by-2.0}}",
+   "source": "Commons wikitext",
+   "url": "https://commons.wikimedia.org/wiki/File:SEF2007a.jpg"
+  }
+ ],
+ "end_card_text": "follow for the next file",
+ "youtube_caption": "The smiley was invented because a joke backfired. 🙂\n\nIn September 1982, a Carnegie Mellon online bulletin board lit up over a warning that an elevator was contaminated with mercury. It was a joke, and some readers missed that.\n\nOn 19 September, computer scientist Scott Fahlman proposed marking jokes with a colon, a hyphen and a bracket, to be read sideways: :-) . He also suggested :-( for posts that were not jokes.\n\nThe original post was later lost. In 2002, CMU staff recovered it from old backup tapes (retrieved 10 September 2002).\n\nfile no. 021\n\n—\nSources: Scott Fahlman, 'Smiley Lore :-)' and 'Original Bboard Thread' (Carnegie Mellon University, cs.cmu.edu/~sef); Wikipedia, 'Scott Fahlman'.\nImages via Wikimedia Commons: Scott Fahlman portrait (2007, by Mrs. Fahlman, public domain); Carnegie Mellon campus (Dllu, CC BY-SA 4.0); DEC VT100 terminal (Jason Scott, CC BY 2.0).\nDiagrams drawn for this video.\n\n#shorts #smiley #emoticon #internethistory #carnegiemellon #computerhistory #usenet #tech"
+}

@@ -1,0 +1,10 @@
+episodes/vox_16_burton/assets/burton_skidmore.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Burton_by_Gage_Skidmore.jpg?width=1600
+episodes/vox_16_burton/assets/_pages/burton_skidmore.html https://commons.wikimedia.org/wiki/File:Tim_Burton_by_Gage_Skidmore.jpg?action=raw
+episodes/vox_16_burton/assets/burton_flickr.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Burton_%287587109150%29.jpg?width=1600
+episodes/vox_16_burton/assets/_pages/burton_flickr.html https://commons.wikimedia.org/wiki/File:Tim_Burton_%287587109150%29.jpg?action=raw
+episodes/vox_16_burton/assets/burton_frankenweenie_2012.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Burton_Frankenweenie_2012.jpg?width=1600
+episodes/vox_16_burton/assets/_pages/burton_frankenweenie_2012.html https://commons.wikimedia.org/wiki/File:Tim_Burton_Frankenweenie_2012.jpg?action=raw
+episodes/vox_16_burton/assets/disney_burbank.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Disney_studios_burbank_team_disney_building_buena_vista.jpg?width=1600
+episodes/vox_16_burton/assets/_pages/disney_burbank.html https://commons.wikimedia.org/wiki/File:Disney_studios_burbank_team_disney_building_buena_vista.jpg?action=raw
+episodes/vox_16_burton/assets/disney_aerial.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_photo_of_the_Team_Disney_building.jpg?width=1600
+episodes/vox_16_burton/assets/_pages/disney_aerial.html https://commons.wikimedia.org/wiki/File:Aerial_photo_of_the_Team_Disney_building.jpg?action=raw

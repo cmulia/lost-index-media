@@ -1,0 +1,6 @@
+episodes/021_smiley/assets/fahlman_2007.jpg https://commons.wikimedia.org/wiki/Special:FilePath/SEF2007a.jpg?width=1600
+episodes/021_smiley/assets/_pages/fahlman_2007.html https://commons.wikimedia.org/wiki/File:SEF2007a.jpg?action=raw
+episodes/021_smiley/assets/cmu_campus.jpg https://commons.wikimedia.org/wiki/Special:FilePath/CMU_Doherty_and_Wean.jpg?width=1600
+episodes/021_smiley/assets/_pages/cmu_campus.html https://commons.wikimedia.org/wiki/File:CMU_Doherty_and_Wean.jpg?action=raw
+episodes/021_smiley/assets/vt100.jpg https://commons.wikimedia.org/wiki/Special:FilePath/DEC_VT100_terminal.jpg?width=1600
+episodes/021_smiley/assets/_pages/vt100.html https://commons.wikimedia.org/wiki/File:DEC_VT100_terminal.jpg?action=raw

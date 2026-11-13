@@ -1,0 +1,156 @@
+{
+  "slug": "coppola",
+  "episode_no": "18",
+  "subject": "Francis Ford Coppola",
+  "hook": "Who bets their own house on a movie?",
+  "twist": "The vineyard he sold a piece of to fund Megalopolis was first bought with Godfather profits: a film paid for the vines, and the vines paid for a film.",
+  "mood": "Humid jungle-green and tangerine screenprint mixed with vintage wine-label engraving: cross-hatched vine leaves, banderoles and oval cartouches over misregistered two-colour jungle foliage and a hot tangerine sun. Music: slow, sultry cinematic groove around 80 bpm, with warm Rhodes, upright bass, brushed drums, a distant pedal-steel drone and soft marimba, building to a swelling string pad at the twist.",
+  "narration": "Who bets their own house on a movie? Francis Ford Coppola did. In nineteen seventy-six, he took his crew to the Philippines to shoot Apocalypse Now. It was meant to cost twelve million dollars. A typhoon hit, and the shoot ran over a year. Newsweek reported he had put up all his own assets as guarantees on the loans. The film won the top prize at Cannes. The bet paid off. Decades later, he did it again. Megalopolis reportedly cost one hundred twenty million dollars, and he funded it himself. He sold part of his wine business to raise it. Here is the quiet part. That wine business began with Godfather profits. A film paid for the vines, and the vines paid for a film. Bold gamble or reckless folly?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "Who bets their own house on a movie?",
+      "visual": "Big on-screen headline over tangerine-and-jungle-green screenprint of a small house balanced on a film reel",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "Francis Ford Coppola did. In nineteen seventy-six, he took his crew to the Philippines to shoot Apocalypse Now.",
+      "visual": "hero photo of Coppola (Commons, PD) over a green jungle screenprint backdrop",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "It was meant to cost twelve million dollars. A typhoon hit, and the shoot ran over a year.",
+      "visual": "illustrated collapsed jungle set, palm trees bent by wind; budget figure as typewriter label",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Newsweek reported he had put up all his own assets as guarantees on the loans.",
+      "visual": "illustrated promissory note and house key on a wooden table, wine-label engraving border",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "The film won the top prize at Cannes. The bet paid off.",
+      "visual": "illustrated golden palm branch frond in engraved wine-label style, no statuette",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "Decades later, he did it again. Megalopolis reportedly cost one hundred twenty million dollars, and he funded it himself.",
+      "visual": "tangerine screenprint of a futuristic city model on a drafting table",
+      "sources": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "He sold part of his wine business to raise it.",
+      "visual": "illustrated wine bottle with engraved label being traded across a table, tangerine accent",
+      "sources": [
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "Here is the quiet part. That wine business began with Godfather profits. A film paid for the vines, and the vines paid for a film.",
+      "visual": "vineyard rows engraving that morphs into film strip; photo of winery estate if verified",
+      "sources": [
+        "S6"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "Bold gamble or reckless folly?",
+      "visual": "big question text over tangerine and green vineyard-label engraving",
+      "sources": []
+    }
+  ],
+  "fun_facts": [
+    "Apocalypse Now's principal photography lasted 238 days, from March 1976 to May 1977, against a planned four months (Wikipedia citing Cowie).",
+    "At Cannes in 1979 Coppola said: 'We had access to too much money, too much equipment, and little by little we went insane.' (Wikipedia citing Cowie 1990)",
+    "Megalopolis grossed roughly 14 million dollars worldwide (Wikipedia); Coppola first conceived the idea around 1977 while finishing Apocalypse Now."
+  ],
+  "sources": {
+    "S1": {
+      "name": "Wikipedia, Apocalypse Now (production section, citing Cowie 1990, Biskind 1998, Variety)",
+      "url": "https://en.wikipedia.org/wiki/Apocalypse_Now"
+    },
+    "S2": {
+      "name": "Newsweek, 'Watching the Apocalypse' (Maureen Orth), 13 June 1977",
+      "url": "https://maureenorth.com/1977/06/on-the-set-of-apocalypse-now/"
+    },
+    "S3": {
+      "name": "Variety, Zack Sharf, 'Francis Ford Coppola to Spend His Own $120 Million on New Film', 18 Feb 2022",
+      "url": "https://variety.com/2022/film/news/francis-ford-coppola-funding-120-million-dollars-megalopolis-1235184765/"
+    },
+    "S4": {
+      "name": "Associated Press, Jake Coyle, Cannes, 17 May 2024",
+      "url": "https://www.news4jax.com/entertainment/2024/05/17/in-cannes-francis-ford-coppola-talks-trump-self-financing-megalopolis-and-why-he-has-no-regrets/"
+    },
+    "S5": {
+      "name": "North Bay Business Journal, Coppola selling Sonoma County wineries to Delicato (2021); Wall Street Journal reporting cited on Wikipedia",
+      "url": "https://www.northbaybusinessjournal.com/article/industrynews/francis-ford-coppola-plans-to-sell-sonoma-county-wineries-to-delicato-famil/"
+    },
+    "S6": {
+      "name": "CNN Money, 'A toast, to Coppola', 1997",
+      "url": "https://money.cnn.com/1997/07/02/busunu/coppola_pkg/"
+    },
+    "S7": {
+      "name": "The Hollywood Reporter, Thomas Doherty, 'For Coppola's Go-for-Broke Movies, All Roads Lead to Cannes', 22 Apr 2024",
+      "url": "https://uk.news.yahoo.com/francis-ford-coppola-broke-movies-132336054.html"
+    }
+  },
+  "images": [
+    {
+      "key": "coppola_gotfryd",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Francis_Ford_Coppola,_Director_(05).jpg",
+      "direct_url": "UNVERIFIED - not retrievable from this environment; resolve via Special:FilePath/Francis_Ford_Coppola,_Director_(05).jpg",
+      "author": "Bernard Gotfryd (Library of Congress collection, loc.gov/item/2020730229)",
+      "date": "unknown (1970s-80s; not listed on mirror page)",
+      "licence": "Public domain label seen on a Commons mirror; exact template NOT confirmed (Commons raw wikitext unreachable)",
+      "shows": "Francis Ford Coppola, director, portrait",
+      "use": "hero photo"
+    }
+  ],
+  "props_to_illustrate": [
+    "a small clapboard house balanced on a film reel, jungle-green and tangerine screenprint",
+    "a typewritten promissory note with a brass house key on a wooden table",
+    "a jungle film set with collapsed bamboo huts and bent palm trees after a typhoon",
+    "a ceiling fan turning over a humid dark room with a lone film camera",
+    "a wine bottle with an engraved vintage label showing a film reel instead of a chateau",
+    "rows of grapevines at dusk with a tangerine sun, wine-label engraving style",
+    "a futuristic miniature city model on a drafting table",
+    "a drafting-table stack of banknotes tied with film leader"
+  ],
+  "captions": {
+    "tiktok_caption": "Who bets their own house on a movie? 🎬\n\nexplained no. 18\n\n#francisfordcoppola #apocalypsenow #megalopolis #filmhistory #movietrivia",
+    "instagram_caption": "Who bets their own house on a movie? 🎬\n\nFrancis Ford Coppola did. Making Apocalypse Now in the Philippines (1976-77), he reportedly put up his own assets as guarantees on the loans, while a typhoon and a year-long shoot pushed costs far past the original twelve million dollars.\n\nThe film won the top prize at Cannes in 1979, so the bet paid off.\n\nDecades later he did it again. Megalopolis reportedly cost about 120 million dollars, and he funded it himself after selling part of his wine business.\n\nThe quiet part: that wine business started with Godfather profits, which helped buy part of Inglenook in Napa Valley. A film paid for the vines, and the vines paid for a film.\n\nexplained no. 18\n\n—\nSources: Newsweek (1977); Variety (2022); Associated Press (2024); The Hollywood Reporter (2024); CNN Money (1997); North Bay Business Journal (2021).\nImages via Wikimedia Commons: Bernard Gotfryd, Library of Congress collection (public domain; licence to be confirmed before use).\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#francisfordcoppola #apocalypsenow #megalopolis #filmhistory #movietrivia #filmmaking #winetok #explained",
+    "youtube_title": "Coppola bet his own fortune on Apocalypse Now, twice #shorts",
+    "either_or_question": "Bold gamble or reckless folly?"
+  },
+  "question": "Bold gamble or reckless folly?",
+  "answer": "Bold gamble. I love that he backed his own vision, though I'd probably keep the house.",
+  "dropped_unverified": [
+    "Exact 'house' collateral: Newsweek says 'all his own assets'; Wikipedia cites NYT 1981/Biskind for house and car, not fetched, so narration says assets.",
+    "Claim that Megalopolis wine money came from Godfather-bought vines: dropped as a direct causal claim; kept only that the wine business began with Godfather profits (CNN) and part was sold (Variety/AP).",
+    "Apocalypse gross of 150 million (Eleanor Coppola estimate, single source) and 'twice' bankruptcy talk.",
+    "Megalopolis exact budget: reported 120-136 million, hedged as 'reportedly'.",
+    "Drinks Business and Hollywood Reporter pages failed to load; WSJ Delicato deal figures ($650M, $200M loan) known only via Wikipedia, not used."
+  ]
+}

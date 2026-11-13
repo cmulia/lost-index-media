@@ -1,0 +1,178 @@
+{
+  "slug": "welles",
+  "episode_no": "17",
+  "subject": "Orson Welles",
+  "hook": "The War of the Worlds panic mostly didn't happen.",
+  "twist": "The 'mass panic' was largely a newspaper exaggeration, yet the uproar made Welles famous enough to win the RKO deal that led to Citizen Kane.",
+  "mood": "1930s Art Deco radio-age airbrush: chrome, teal and cream, sunburst dials, streamlined speaker grilles, soft airbrushed gradients. Music: slow-swing 1930s dance-band feel at about 84 bpm, muted trumpet, clarinet, brushed drums and upright bass, with a faint radio-static bed.",
+  "narration": "The War of the Worlds panic mostly didn't happen. On October thirtieth, nineteen thirty-eight, Orson Welles, aged twenty-three, aired a Martian invasion as fake news bulletins. Next morning, newspapers described a nation in terror. But that night, a telephone survey called five thousand households. Only two percent said they were hearing Welles. A rival comedy show was far more popular. So why the headlines? Radio was taking newspapers' advertising money, and papers had reason to call it unreliable. Some listeners were frightened. Historians say far fewer than reported. Still, the uproar carried his name to Hollywood. In nineteen thirty-nine, RKO gave him almost total creative control. His first finished film there was Citizen Kane. Maybe the newspapers' best invention was Orson Welles. Was it panic, or publicity?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "The War of the Worlds panic mostly didn't happen.",
+      "visual": "Art Deco radio dial with headline in chrome type; photo of Welles (radio scare 1938)",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "On October thirtieth, nineteen thirty-eight, Orson Welles, aged twenty-three, aired a Martian invasion as fake news bulletins.",
+      "visual": "Welles photo 1937; teal microphone illustration",
+      "sources": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "Next morning, newspapers described a nation in terror.",
+      "visual": "Stacked front pages illustration (no real mastheads)",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "But that night, a telephone survey called five thousand households. Only two percent said they were hearing Welles.",
+      "visual": "Phone dial and tally marks, cream and teal",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "A rival comedy show was far more popular.",
+      "visual": "Deco radio set with two dials, one glowing brighter",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "So why the headlines? Radio was taking newspapers' advertising money, and papers had reason to call it unreliable.",
+      "visual": "Chrome scales: newspaper vs radio set",
+      "sources": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "Some listeners were frightened. Historians say far fewer than reported.",
+      "visual": "Small lit window beside a vast dark skyline",
+      "sources": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "Still, the uproar carried his name to Hollywood. In nineteen thirty-nine, RKO gave him almost total creative control.",
+      "visual": "Deco film studio gate illustration; Grover's Mill monument photo",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "His first finished film there was Citizen Kane. Maybe the newspapers' best invention was Orson Welles.",
+      "visual": "Chrome film reel and microphone, teal glow",
+      "sources": [
+        "S3",
+        "S5"
+      ]
+    },
+    {
+      "i": 9,
+      "text": "Was it panic, or publicity?",
+      "visual": "End card question over radio dial",
+      "sources": []
+    }
+  ],
+  "fun_facts": [
+    "Hooper's phone survey asked 5,000 households what they were listening to; only 2% named Welles's play (Slate 2013).",
+    "One listener sued CBS for $50,000 over 'nervous shock'; the suit was quickly dismissed (Slate 2013)."
+  ],
+  "sources": {
+    "S1": {
+      "name": "Slate, 'Orson Welles' War of the Worlds panic myth' (Pooley & Socolow), 2013",
+      "url": "https://www.slate.com/articles/arts/history/2013/10/orson_welles_war_of_the_worlds_panic_myth_the_infamous_radio_broadcast_did.single.html"
+    },
+    "S2": {
+      "name": "Poynter, 'Threatened by radio, newspapers exaggerated War of the Worlds panic', 2013",
+      "url": "https://www.poynter.org/reporting-editing/2013/threatened-by-radio-newspapers-exaggerated-war-of-the-worlds-panic/"
+    },
+    "S3": {
+      "name": "Encyclopaedia Britannica, Orson Welles",
+      "url": "https://www.britannica.com/biography/Orson-Welles"
+    },
+    "S4": {
+      "name": "Snopes, War of the Worlds",
+      "url": "https://www.snopes.com/war-of-the-worlds/"
+    },
+    "S5": {
+      "name": "AFI Catalog, Citizen Kane (1941)",
+      "url": "https://catalog.afi.com/Film/27624-CITIZEN-KANE"
+    }
+  },
+  "images": [
+    {
+      "key": "radio_scare",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Welles-Radio-Scare-1938.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Welles-Radio-Scare-1938.jpg/1000px-Welles-Radio-Scare-1938.jpg",
+      "author": "The Evening Journal, Washington, Iowa (no credit)",
+      "date": "1938 (photo from 1937)",
+      "licence": "PD (published US 1929-1977 without notice; mirror-confirmed, template name and exact upload path NOT confirmed)",
+      "shows": "Welles photo as printed after the broadcast",
+      "use": "hero photo"
+    },
+    {
+      "key": "welles_1937",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Orson_Welles_1937.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Orson_Welles_1937.jpg/1000px-Orson_Welles_1937.jpg",
+      "author": "Carl Van Vechten (Library of Congress LC-USZ62-119765)",
+      "date": "1 March 1937",
+      "licence": "PD (LoC, no known restrictions; mirror-confirmed, template name and exact upload path NOT confirmed)",
+      "shows": "Young Welles portrait",
+      "use": "hero photo"
+    },
+    {
+      "key": "grovers_mill",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Landingsite_statue.JPG",
+      "direct_url": "",
+      "author": "unverified",
+      "date": "unverified",
+      "licence": "UNVERIFIED - check File page wikitext",
+      "shows": "Martian landing site monument, Grover's Mill NJ",
+      "use": "place; drop if licence not CC BY/BY-SA/PD"
+    }
+  ],
+  "props_to_illustrate": [
+    "a chrome Art Deco tabletop radio with glowing teal dial",
+    "a vintage ribbon microphone on a stand",
+    "a stack of folded newspapers with blank headline bars",
+    "a rotary telephone with a tally sheet",
+    "a streamlined movie-studio gate at dusk",
+    "a film reel and clapperboard in chrome",
+    "a small lit window in a dark skyline",
+    "a flying-saucer silhouette over a New Jersey water tower"
+  ],
+  "captions": {
+    "tiktok_caption": "The War of the Worlds panic mostly didn't happen. 📻\n\nexplained no. 17\n\n#orsonwelles #waroftheworlds #radiohistory #filmhistory #1938",
+    "instagram_caption": "The War of the Worlds panic mostly didn't happen. 📻\n\nOn October 30, 1938, Orson Welles aired a Martian invasion as fake news bulletins. Next morning, newspapers described a nation in terror.\n\nBut a phone survey that night found only 2% of households listening to Welles. A rival comedy show was far more popular.\n\nHistorians argue newspapers, losing ad money to radio, had reason to paint it as unreliable. Some listeners were frightened, but far fewer than the story says.\n\nThe uproar still carried his name to Hollywood: in 1939 RKO gave him near-total creative control, and Citizen Kane followed.\n\nexplained no. 17\n—\nSources: Slate (Pooley & Socolow), 2013; Poynter, 2013; Encyclopaedia Britannica; AFI Catalog.\nImages via Wikimedia Commons: The Evening Journal, Washington, Iowa (public domain); Carl Van Vechten / Library of Congress (public domain).\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#orsonwelles #waroftheworlds #radiohistory #filmhistory #oldtimeradio #mediamyths #citizenkane #explained",
+    "youtube_title": "The War of the Worlds panic (1938) mostly didn't happen #shorts",
+    "either_or_question": "Was it panic, or publicity?"
+  },
+  "question": "Was it panic, or publicity?",
+  "answer": "Publicity, I think. A few people were scared, but the headlines did most of the panicking.",
+  "dropped_unverified": [
+    "Number of fleeing/panicked listeners (no reliable count)",
+    "Claim the 12,500-article figure (disputed by authors)",
+    "Welles's on-air apology (not verified)",
+    "Exact RKO deal causation: hedged to 'carried his name to Hollywood'",
+    "Number of in-broadcast disclaimers (not checked)"
+  ]
+}

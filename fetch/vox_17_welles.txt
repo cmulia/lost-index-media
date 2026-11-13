@@ -1,0 +1,6 @@
+episodes/vox_17_welles/assets/radio_scare.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Welles-Radio-Scare-1938.jpg?width=1600
+episodes/vox_17_welles/assets/_pages/radio_scare.html https://commons.wikimedia.org/wiki/File:Welles-Radio-Scare-1938.jpg?action=raw
+episodes/vox_17_welles/assets/welles_1937.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Orson_Welles_1937.jpg?width=1600
+episodes/vox_17_welles/assets/_pages/welles_1937.html https://commons.wikimedia.org/wiki/File:Orson_Welles_1937.jpg?action=raw
+episodes/vox_17_welles/assets/grovers_mill.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Landingsite_statue.JPG?width=1600
+episodes/vox_17_welles/assets/_pages/grovers_mill.html https://commons.wikimedia.org/wiki/File:Landingsite_statue.JPG?action=raw

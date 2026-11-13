@@ -1,0 +1,189 @@
+{
+  "slug": "burton",
+  "episode_no": "16",
+  "subject": "Tim Burton",
+  "hook": "Why did Disney let Tim Burton go over a dog?",
+  "twist": "The short Disney judged too dark for kids became a Disney-released stop-motion feature in 2012, still black and white, still PG.",
+  "mood": "Black ink crosshatch storybook with lavender-grey washes and stop-motion clay texture (thumbprints, felt, miniature sets), cream paper margins. Music: sparse music-box and celesta over low cello drone, slow 70 bpm waltz, with a faint theremin wobble; warms slightly at the 2012 beat.",
+  "narration": "Why did Disney let Tim Burton go over a dog? In nineteen eighty-four, Burton made a black-and-white short called Frankenweenie, about a boy who revives his dead dog. It got a PG rating. That reportedly ended Disney's plan to pair it with Pinocchio. Burton says the ratings board told him: \"There's nothing you can cut. It's just the tone.\" Disney shelved the short, and Burton left, though he calls it a parting of ways. Paul Reubens had seen the short. Burton soon directed Pee-wee's Big Adventure. In twenty twelve, Disney released his feature-length stop-motion remake. Still black and white. Still PG. The film too dark for Disney became a Disney film. Too dark for kids, or just right?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "Why did Disney let Tim Burton go over a dog?",
+      "visual": "Big headline text on cream, ink-drawn lavender-grey storybook dog silhouette with stitched scar",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "In nineteen eighty-four, Burton made a black-and-white short called Frankenweenie, about a boy who revives his dead dog.",
+      "visual": "Illustrated black-and-white suburban house with lightning-lit windmill/shed (prop)",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "It got a PG rating. That reportedly ended Disney's plan to pair it with Pinocchio.",
+      "visual": "Illustrated film-can and ticket stub with PG stamp",
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Burton says the ratings board told him: \"There's nothing you can cut. It's just the tone.\"",
+      "visual": "Crosshatch scissors over a reel of film",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "Disney shelved the short, and Burton left, though he calls it a parting of ways.",
+      "visual": "Photo of Disney Burbank building, lavender wash",
+      "sources": [
+        "S4",
+        "S1"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "Paul Reubens had seen the short. Burton soon directed Pee-wee's Big Adventure.",
+      "visual": "Illustrated bow tie and red bicycle (prop, no person)",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "In twenty twelve, Disney released his feature-length stop-motion remake. Still black and white. Still PG.",
+      "visual": "Clay puppet dog on a miniature set with lightning rod (illustrated prop)",
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "The film too dark for Disney became a Disney film.",
+      "visual": "Photo of Burton, ink-hatched; end text",
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "Too dark for kids, or just right?",
+      "visual": "Question card",
+      "sources": []
+    }
+  ],
+  "fun_facts": [
+    "Paul Reubens and the Pee-wee producers had seen Vincent and Frankenweenie before hiring Burton for Pee-wee's Big Adventure (1985).",
+    "The 1984 short got only a small UK release in 1985 with Baby: Secret of the Lost Legend and reached home video in 1992."
+  ],
+  "sources": {
+    "S1": {
+      "name": "Film Stories, Frankenweenie: the short film that got Tim Burton fired (incl. Burton quotes on PG rating; Reubens; 1985 UK release; remake)",
+      "url": "https://filmstories.co.uk/features/frankenweenie-the-short-film-that-got-tim-burton-fired/"
+    },
+    "S2": {
+      "name": "Cinefantastique, Michael Mayo, 'Frankenweenie', Feb 1985 (cited by Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Frankenweenie_(1984_film)"
+    },
+    "S3": {
+      "name": "Film Stories, Frankenweenie and the test screening that almost derailed Tim Burton's career",
+      "url": "https://filmstories.co.uk/features/frankenweenie-and-the-test-screening-that-almost-derailed-tim-burtons-career/"
+    },
+    "S4": {
+      "name": "Yahoo Movies, Tim Burton: How Disney fired me, Oct 2012 (Burton: 'parting of ways') as summarised by Screen Rant",
+      "url": "https://screenrant.com/tim-burton-disney-fired-frankenweenie-reason-why/"
+    },
+    "S5": {
+      "name": "Cartoon Brew, Factsheet for Tim Burton's Frankenweenie (Walt Disney Studios Motion Pictures, 2012: stop-motion, black and white, 5 Oct 2012)",
+      "url": "https://www.cartoonbrew.com/biz/factsheet-for-tim-burtons-frankenweenie-from-walt-disney-studios-motion-pictures-36797.html"
+    }
+  },
+  "images": [
+    {
+      "key": "burton_skidmore",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tim_Burton_by_Gage_Skidmore.jpg",
+      "direct_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Burton_by_Gage_Skidmore.jpg",
+      "author": "Gage Skidmore (believed)",
+      "date": "unverified",
+      "licence": "UNVERIFIED (Skidmore files usually cc-by-sa-3.0/2.0; commons unreachable, confirm via ?action=raw)",
+      "shows": "Tim Burton at a convention panel",
+      "use": "hero photo"
+    },
+    {
+      "key": "burton_flickr",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tim_Burton_(7587109150).jpg",
+      "direct_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Burton_(7587109150).jpg",
+      "author": "unverified",
+      "date": "unverified",
+      "licence": "UNVERIFIED",
+      "shows": "Tim Burton portrait",
+      "use": "second photo"
+    },
+    {
+      "key": "burton_frankenweenie_2012",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tim_Burton_Frankenweenie_2012.jpg",
+      "direct_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Burton_Frankenweenie_2012.jpg",
+      "author": "unverified",
+      "date": "2012 (title)",
+      "licence": "UNVERIFIED",
+      "shows": "Burton at Frankenweenie 2012 event",
+      "use": "2012 beat"
+    },
+    {
+      "key": "disney_burbank",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Disney_studios_burbank_team_disney_building_buena_vista.jpg",
+      "direct_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Disney_studios_burbank_team_disney_building_buena_vista.jpg",
+      "author": "unverified",
+      "date": "unverified",
+      "licence": "UNVERIFIED",
+      "shows": "Team Disney building, Disney Burbank lot",
+      "use": "place"
+    },
+    {
+      "key": "disney_aerial",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Aerial_photo_of_the_Team_Disney_building.jpg",
+      "direct_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_photo_of_the_Team_Disney_building.jpg",
+      "author": "unverified",
+      "date": "unverified",
+      "licence": "UNVERIFIED",
+      "shows": "Aerial of Team Disney building",
+      "use": "place (backup)"
+    }
+  ],
+  "props_to_illustrate": [
+    "a black-and-white suburban house at night with a lightning-lit shed",
+    "a small stitched clay dog puppet on a miniature set",
+    "a film can with a PG stamp and ticket stub",
+    "scissors over a strip of film, crosshatch",
+    "a red bicycle and a small bow tie on a hook",
+    "a miniature lightning rod and kite on a toy rooftop",
+    "a dog collar and bone on a grave-shaped hill of clay",
+    "a shelf of dusty film cans in a vault"
+  ],
+  "captions": {
+    "tiktok_caption": "Why did Disney let Tim Burton go over a dog? 🐶\n\nexplained no. 16\n\n#timburton #frankenweenie #disney #filmhistory #stopmotion",
+    "instagram_caption": "Why did Disney let Tim Burton go over a dog? 🐶\n\nIn 1984 Burton, a young Disney animator, made Frankenweenie: a black-and-white short about a boy who revives his dead pet.\n\nIt was rated PG, which reportedly scrapped the plan to show it with Pinocchio. Burton says the ratings board told him, \"There's nothing you can cut. It's just the tone.\"\n\nDisney shelved it and Burton moved on, though he describes it as a parting of ways. Paul Reubens had seen the short, and Burton went on to direct Pee-wee's Big Adventure.\n\nIn 2012 Disney released his feature-length stop-motion remake, still black and white, still PG.\n\nexplained no. 16\n—\nSources: Film Stories (Frankenweenie: the short film that got Tim Burton fired); Cinefantastique (Feb 1985); Yahoo Movies (2012, Burton interview); Cartoon Brew (2012 factsheet).\nImages via Wikimedia Commons: [fill after licence check: photographer + licence].\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#timburton #frankenweenie #disney #filmhistory #stopmotion #movies #directors #explained",
+    "youtube_title": "Why Disney let Tim Burton go over Frankenweenie (1984) #shorts",
+    "either_or_question": "Too dark for kids, or just right?"
+  },
+  "question": "Too dark for kids, or just right?",
+  "answer": "Just right for me: a little spooky, very sweet, and kids can handle a gentle scare.",
+  "dropped_unverified": [
+    "Exact short runtime and $1 million budget (single Wikipedia/Cinefantastique cite, not confirmed)",
+    "'Disney paid him' to remake: only know Disney produced/released it; funding terms not sourced",
+    "Claim Burton was 'fired for wasting resources': Burton himself calls it amicable; hedged",
+    "Dick Cook / Disney executive quotes: not found",
+    "All image licences: Commons unreachable here, must be confirmed via ?action=raw"
+  ]
+}

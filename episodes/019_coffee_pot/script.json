@@ -1,0 +1,241 @@
+{
+ "file_no": "019",
+ "slug": "coffee_pot",
+ "title": "The Trojan Room Coffee Pot (1991)",
+ "series_label": "file no. 019",
+ "voice_direction": "Dry, amused, unhurried; matter-of-fact on the hook, a small smile on 'a pot they would never taste', brisk on the sale, last question almost deadpan.",
+ "narration": "This coffee pot should never have been watched by the world. In nineteen ninety-one, computer scientists at Cambridge pointed a camera at one. People on other floors kept climbing the stairs to find it empty. So a cable and a frame grabber put the pot on their screens. The picture was greyscale, only one hundred twenty-eight pixels square. In November nineteen ninety-three, it went onto the web, and anyone with a browser could check a pot they would never taste. The camera was switched off on the twenty-second of August, two thousand one. That month, a Krups machine from its later years sold on eBay for three thousand three hundred fifty pounds. The buyer was Spiegel Online. It was not the original pot. Genius, or just avoiding the stairs?",
+ "beats": [
+  {
+   "text": "This coffee pot should never have been watched by the world. ",
+   "caption": "this coffee pot should never have been watched by the world.",
+   "big": "a coffee pot. watched by the world.",
+   "visual": {
+    "type": "photo",
+    "asset": "krups_maker"
+   },
+   "label": "a krups coffee maker · stand-in photo",
+   "sublabel": "tiia monto · cc by-sa 4.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "quiet office hum, a coffee maker gurgling and dripping",
+   "dark": false
+  },
+  {
+   "text": "In nineteen ninety-one, computer scientists at Cambridge pointed a camera at one. ",
+   "caption": "in 1991, computer scientists at cambridge pointed a camera at one.",
+   "big": "a camera. a coffee pot.",
+   "visual": {
+    "type": "photo",
+    "asset": "cl_building"
+   },
+   "label": "the computer laboratory · cambridge",
+   "sublabel": "bob tubbs · public domain",
+   "date_label": "filmed",
+   "date": "1991",
+   "sfx": "a camera shutter click, soft room tone",
+   "dark": false
+  },
+  {
+   "text": "People on other floors kept climbing the stairs to find it empty. ",
+   "caption": "people on other floors kept climbing the stairs to find it empty.",
+   "big": "an empty pot.",
+   "visual": {
+    "type": "diagram",
+    "name": "stairs",
+    "panel": "light",
+    "height": 760
+   },
+   "label": "the problem",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "footsteps climbing stairs, then a hollow clink of an empty pot",
+   "dark": false
+  },
+  {
+   "text": "So a cable and a frame grabber put the pot on their screens. ",
+   "caption": "so a cable and a frame grabber put the pot on their screens.",
+   "big": "the pot, on screen.",
+   "visual": {
+    "type": "diagram",
+    "name": "pipeline",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "camera to desktop",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": null,
+   "date": null,
+   "sfx": "a low electronic whir and a quiet modem-like chirp",
+   "dark": true
+  },
+  {
+   "text": "The picture was greyscale, only one hundred twenty-eight pixels square. ",
+   "caption": "the picture was greyscale, only 128 pixels square.",
+   "big": "128 × 128.",
+   "visual": {
+    "type": "photo",
+    "asset": "archimedes"
+   },
+   "label": "an acorn archimedes",
+   "sublabel": "paulvernon1974 · cc0",
+   "date_label": null,
+   "date": null,
+   "sfx": "short bursts of digital static, a single soft key click",
+   "dark": true
+  },
+  {
+   "text": "In November nineteen ninety-three, it went onto the web, and anyone with a browser could check a pot they would never taste. ",
+   "caption": "in november 1993, it went onto the web, and anyone with a browser could check a pot they would never taste.",
+   "big": "on the web.",
+   "visual": {
+    "type": "diagram",
+    "name": "timeline",
+    "panel": "dark",
+    "height": 760
+   },
+   "label": "trojan room coffee pot · timeline",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "went online",
+   "date": "nov 1993",
+   "sfx": "a soft dial-up handshake rising into a calm tone",
+   "dark": true
+  },
+  {
+   "text": "The camera was switched off on the twenty-second of August, two thousand one. ",
+   "caption": "the camera was switched off on 22 august 2001.",
+   "big": "switched off.",
+   "visual": {
+    "type": "photo",
+    "asset": "cl_building"
+   },
+   "label": "the computer laboratory · cambridge",
+   "sublabel": "bob tubbs · public domain",
+   "date_label": "switched off",
+   "date": "22 aug 2001",
+   "sfx": "a power switch clunk, a computer fan spinning down to silence",
+   "dark": true
+  },
+  {
+   "text": "That month, a Krups machine from its later years sold on eBay for three thousand three hundred fifty pounds. ",
+   "caption": "that month, a krups machine from its later years sold on ebay for £3,350.",
+   "big": "£3,350.",
+   "visual": {
+    "type": "diagram",
+    "name": "price",
+    "panel": "light",
+    "height": 760
+   },
+   "label": "the auction",
+   "sublabel": "schematic · drawn for this video",
+   "date_label": "sold",
+   "date": "aug 2001",
+   "sfx": "an auction gavel tap and a faint cash-register ding",
+   "dark": false
+  },
+  {
+   "text": "The buyer was Spiegel Online. It was not the original pot. ",
+   "caption": "the buyer was spiegel online. it was not the original pot.",
+   "big": "not the original.",
+   "visual": {
+    "type": "photo",
+    "asset": "krups_maker"
+   },
+   "label": "a krups coffee maker · stand-in photo",
+   "sublabel": "tiia monto · cc by-sa 4.0",
+   "date_label": null,
+   "date": null,
+   "sfx": "a single coffee-machine gurgle, then quiet",
+   "dark": false
+  },
+  {
+   "text": "Genius, or just avoiding the stairs?",
+   "caption": "genius, or just avoiding the stairs?",
+   "big": "genius, or just avoiding the stairs?",
+   "visual": {
+    "type": "photo",
+    "asset": "cl_building"
+   },
+   "label": "the computer laboratory · cambridge",
+   "sublabel": "bob tubbs · public domain",
+   "date_label": null,
+   "date": null,
+   "sfx": "a faint footstep on a stair, then a soft click",
+   "dark": true
+  }
+ ],
+ "music_mood": "Light, wry early-nineties minimal electronic: soft analog arpeggio ~100 bpm, warm pad, faint modem-like blips. Gently rising as it goes on the web, thinning at the switch-off, a small playful sting at the sale, settling to one warm note under the final question.",
+ "assets": [
+  {
+   "key": "krups_maker",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_maker_Krups.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:Coffee_maker_Krups.jpg",
+   "author": "Tiia Monto",
+   "date": "1 May 2019",
+   "license": "CC BY-SA 4.0",
+   "shows": "A small Krups coffee maker at a flea market. Stand-in only: NOT the Trojan Room machine.",
+   "changes": "cropped to 9:16, slow push; label as stand-in"
+  },
+  {
+   "key": "cl_building",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/University_of_cambridge_computer_laboratory.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:University_of_cambridge_computer_laboratory.jpg",
+   "author": "Bob Tubbs",
+   "date": "Apr 2005",
+   "license": "Public domain (PD-self)",
+   "shows": "The University of Cambridge Computer Laboratory, photographed 2005. Not the 1991 building (lab moved to the William Gates Building in 2001); caption must not claim the pot stood here.",
+   "changes": "cropped to 9:16, slow push"
+  },
+  {
+   "key": "archimedes",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/AcornArchimedes-Wiki.jpg?width=1600",
+   "page": "https://commons.wikimedia.org/wiki/File:AcornArchimedes-Wiki.jpg",
+   "author": "PaulVernon1974",
+   "date": "11 Mar 2013",
+   "license": "CC0",
+   "shows": "Acorn Archimedes A410/1 with monitor and mouse; the pot's frame grabber was in an Acorn Archimedes.",
+   "changes": "cropped to 9:16, slow push"
+  }
+ ],
+ "tiktok_caption": "This coffee pot should never have been watched by the world. ☕\n\nfile no. 019\n\n#webcam #internethistory #cambridge #coffee #history",
+ "instagram_caption": "This coffee pot should never have been watched by the world. ☕\n\nIn 1991, computer scientists at Cambridge pointed a camera at a coffee pot in the Computer Laboratory. Coffee club members on other floors kept climbing the stairs to find it empty.\n\nThe camera fed a frame grabber in an Acorn Archimedes, and a program put a small greyscale image of the pot on their screens. It updated about three times a minute.\n\nIn November 1993 the picture went onto the web. The camera was switched off on 22 August 2001.\n\nThat month a Krups coffee machine from the pot's later years sold on eBay for £3,350 to Spiegel Online. It was not the original pot. The photo of a coffee maker here is a stand-in.\n\nfile no. 019\n\n—\nSources: Quentin Stafford-Fraser, 'The Trojan Room Coffee Pot' (Cambridge Computer Laboratory, 1995); Wikipedia, 'Trojan Room coffee pot'; The Register, 'Trojan Room coffee pot sells' (13 Aug 2001); Communications of the ACM 44(7), 2001.\nImages via Wikimedia Commons: Tiia Monto (CC BY-SA 4.0), Bob Tubbs (public domain), PaulVernon1974 (CC0).\nDiagrams drawn for this video.\n\n#trojanroom #webcam #internethistory #cambridge #computinghistory #coffee #history #shorts",
+ "youtube_title": "The Trojan Room coffee pot, the first webcam (1991) #shorts",
+ "question": "Genius, or just avoiding the stairs?",
+ "answer": "Genius. Solving a tiny annoyance with a camera and a cable is how half the internet started.",
+ "first_comment": "Genius. Solving a tiny annoyance with a camera and a cable is how half the internet started.",
+ "facts": [
+  {
+   "claim": "Built 1991 at the Cambridge Computer Laboratory by Quentin Stafford-Fraser and Paul Jardetzky; 128x128 greyscale camera, capture card in an Acorn Archimedes",
+   "source": "Wikipedia 'Trojan Room coffee pot' citing Stafford-Fraser",
+   "url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
+  },
+  {
+   "claim": "Reason: coffee club members on other floors climbed several flights of stairs, often wasted if the pot was already emptied; image updated ~3 times a minute, greyscale",
+   "source": "Stafford-Fraser, The Trojan Room Coffee Pot (1995)",
+   "url": "https://www.cl.cam.ac.uk/coffee/qsf/coffee.html"
+  },
+  {
+   "claim": "Put on the web Nov 1993 by Daniel Gordon and Martyn Johnson",
+   "source": "Wikipedia citing Gordon & Johnson, cl.cam.ac.uk/coffee/coffee.html",
+   "url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
+  },
+  {
+   "claim": "Camera switched off 09:54 UTC 22 Aug 2001 after the lab moved to the William Gates Building",
+   "source": "Wikipedia citing Stafford-Fraser, CACM 44(7) 2001",
+   "url": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
+  },
+  {
+   "claim": "Krups ProAroma sold on eBay for £3,350 to Spiegel Online; not the original pot, but the longest-serving, on the web Oct 1997 to Mar 2001; article 13 Aug 2001",
+   "source": "The Register",
+   "url": "https://www.theregister.com/2001/08/13/trojan_room_coffee_pot_sells/"
+  },
+  {
+   "claim": "Narration says 'that month' for the sale: article dated 13 Aug 2001, auction in Aug 2001; exact end date not checked",
+   "source": "The Register",
+   "url": "https://www.theregister.com/2001/08/13/trojan_room_coffee_pot_sells/"
+  }
+ ],
+ "end_card_text": "follow for the next file",
+ "youtube_caption": "This coffee pot should never have been watched by the world. ☕\n\nIn 1991, computer scientists at Cambridge pointed a camera at a coffee pot in the Computer Laboratory. Coffee club members on other floors kept climbing the stairs to find it empty.\n\nThe camera fed a frame grabber in an Acorn Archimedes, and a program put a small greyscale image of the pot on their screens. It updated about three times a minute.\n\nIn November 1993 the picture went onto the web. The camera was switched off on 22 August 2001.\n\nThat month a Krups coffee machine from the pot's later years sold on eBay for £3,350 to Spiegel Online. It was not the original pot. The photo of a coffee maker here is a stand-in.\n\nfile no. 019\n\n—\nSources: Quentin Stafford-Fraser, 'The Trojan Room Coffee Pot' (Cambridge Computer Laboratory, 1995); Wikipedia, 'Trojan Room coffee pot'; The Register, 'Trojan Room coffee pot sells' (13 Aug 2001); Communications of the ACM 44(7), 2001.\nImages via Wikimedia Commons: Tiia Monto (CC BY-SA 4.0), Bob Tubbs (public domain), PaulVernon1974 (CC0).\nDiagrams drawn for this video.\n\n#shorts #webcam #internethistory #cambridge #computinghistory #coffee #history"
+}

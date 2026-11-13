@@ -1,0 +1,4 @@
+episodes/vox_19_gerwig/assets/gerwig_premiere.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Greta_Gerwig%2C_No_Strings_Attached_Premiere.jpg?width=1600
+episodes/vox_19_gerwig/assets/_pages/gerwig_premiere.html https://commons.wikimedia.org/wiki/File:Greta_Gerwig%2C_No_Strings_Attached_Premiere.jpg?action=raw
+episodes/vox_19_gerwig/assets/gerwig_berlinale.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Greta_Gerwig_Berlinale_2018.jpg?width=1600
+episodes/vox_19_gerwig/assets/_pages/gerwig_berlinale.html https://commons.wikimedia.org/wiki/File:Greta_Gerwig_Berlinale_2018.jpg?action=raw

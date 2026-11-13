@@ -1,0 +1,160 @@
+{
+  "slug": "gerwig",
+  "episode_no": "19",
+  "subject": "Greta Gerwig",
+  "hook": "This pink paint supposedly ran out because of one movie.",
+  "twist": "The shortage was real but local to one supplier; the 'world ran out of pink' line was an offhand remark Greenwood later walked back.",
+  "mood": "Glossy pastel 1960s toy-catalogue gouache in bubblegum pink and mint on cream card, soft flat shapes, gentle halftone grain. Music: bright light-pop with pizzicato strings, celesta and soft marimba, about 108 bpm, playful and tongue-in-cheek.",
+  "narration": "This pink paint supposedly ran out because of one movie. In twenty twenty-two, designers built Barbieland in England for Greta Gerwig. She wanted the pinks very bright, and everything almost too much. Designer Sarah Greenwood needed a fluorescent pink from Rosco, a scenic paint supplier. Greenwood says they asked for two hundred liters of pure pigment. Rosco, already short after pandemic delays, told the Los Angeles Times the production cleaned them out. Greenwood told Architectural Digest the world ran out of pink. Headlines ran with it. Later, she called it an offhand remark. Pink paint turned up in backyard workshops. The shortage was real. It just belonged to one company, not the planet. Too much pink, or just enough?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "This pink paint supposedly ran out because of one movie.",
+      "visual": "Hero: a single open can of fluorescent pink paint on mint ground, gouache catalogue style; big headline",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "In twenty twenty-two, designers built Barbieland in England for Greta Gerwig.",
+      "visual": "photo gerwig_berlinale (licensed Commons) + illustrated pastel studio backlot",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "She wanted the pinks very bright, and everything almost too much.",
+      "visual": "pink-and-mint miniature toy-catalogue house facade (generic, no trademarked design)",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Designer Sarah Greenwood needed a fluorescent pink from Rosco, a scenic paint supplier.",
+      "visual": "paint tins and brush on a pastel workbench",
+      "sources": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "Greenwood says they asked for two hundred liters of pure pigment.",
+      "visual": "giant pigment jar beside a tiny measuring jug",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "Rosco, already short after pandemic delays, told the Los Angeles Times the production cleaned them out.",
+      "visual": "empty shelf of paint tins, one pink tin left",
+      "sources": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "Greenwood told Architectural Digest the world ran out of pink. Headlines ran with it.",
+      "visual": "stack of pastel newspapers, headline blocks (no real mastheads)",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "Later, she called it an offhand remark. Pink paint turned up in backyard workshops.",
+      "visual": "small workshop shelf stacked with pink tins, mint wall",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "The shortage was real. It just belonged to one company, not the planet.",
+      "visual": "globe in mint with a single pink dot over a studio; end on Gerwig photo",
+      "sources": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "i": 9,
+      "text": "Too much pink, or just enough?",
+      "visual": "pink-to-mint gradient end plate",
+      "sources": []
+    }
+  ],
+  "fun_facts": [
+    "Gerwig's stated goal, per NPR's report of Architectural Digest, was 'authentic artificiality'.",
+    "Rosco's own marketing chief confirmed to the Los Angeles Times that the production cleaned them out of that paint."
+  ],
+  "sources": {
+    "S1": {
+      "name": "NPR, Did the 'Barbie' movie really cause a run on pink paint?, 2023",
+      "url": "https://www.npr.org/2023/06/05/1180133265/barbie-movie-pink-paint-shortage"
+    },
+    "S2": {
+      "name": "Variety, Barbie movie Dreamhouse pink paint shortage (quoting Architectural Digest and Los Angeles Times), 2023",
+      "url": "https://variety.com/2023/film/news/barbie-movie-dreamhouse-pink-paint-shortage-1235632222"
+    },
+    "S3": {
+      "name": "Yahoo News, 'Barbie' designer and decorator set the record straight, Nov 2023",
+      "url": "https://ca.news.yahoo.com/barbie-set-movie-pink-paint-shortage-real-life-doll-house-192426938.html"
+    },
+    "S4": {
+      "name": "Los Angeles Times, Rosco comment (Lauren Proud), 2023, as reported by NPR and Variety",
+      "url": "https://www.npr.org/2023/06/05/1180133265/barbie-movie-pink-paint-shortage"
+    }
+  },
+  "images": [
+    {
+      "key": "gerwig_premiere",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Greta_Gerwig,_No_Strings_Attached_Premiere.jpg",
+      "direct_url": "UNVERIFIED: not obtained; resolve via Special:FilePath/Greta_Gerwig,_No_Strings_Attached_Premiere.jpg",
+      "author": "Gordon Vasquez of RealTVfilms",
+      "date": "2011-01-11",
+      "licence": "cc-by-sa-2.0 (seen via mirror page, raw wikitext not reachable; re-confirm)",
+      "shows": "Gerwig at a 2011 premiere",
+      "use": "hero photo (public event photo)"
+    },
+    {
+      "key": "gerwig_berlinale",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Greta_Gerwig_Berlinale_2018.jpg",
+      "direct_url": "UNVERIFIED",
+      "author": "unconfirmed (Martin Kraft likely)",
+      "date": "2018",
+      "licence": "UNCONFIRMED, check wikitext before use",
+      "shows": "Gerwig at Berlinale 2018",
+      "use": "second photo; drop if licence not confirmed"
+    }
+  ],
+  "props_to_illustrate": [
+    "an open can of fluorescent pink paint with a brush on a mint tabletop",
+    "rows of paint tins on a shelf with one pink tin left",
+    "a giant pigment jar beside a small measuring jug",
+    "a generic pastel pink-and-mint miniature house facade, no logos",
+    "a stack of pastel newspapers with abstract headline blocks",
+    "a studio backlot hangar with pink flats, no people",
+    "a mint globe with a single pink dot"
+  ],
+  "captions": {
+    "tiktok_caption": "Did one movie really use up the world's pink paint? 🎀\n\nexplained no. 19\n\n#barbie #gretagerwig #filmtok #moviefacts #productiondesign",
+    "instagram_caption": "Did one movie really use up the world's pink paint? 🎀\n\nBuilding Barbieland in 2022, production designer Sarah Greenwood needed a fluorescent pink from the scenic paint maker Rosco. Her team says they asked for two hundred liters of pure pigment.\n\nRosco, still recovering from pandemic delays and a Texas freeze, said the production cleaned them out. Greenwood told Architectural Digest that the world ran out of pink.\n\nLater she called that an offhand remark and said the world never ran out. The shortage was real, but it belonged to one company.\n\nexplained no. 19\n—\nSources: NPR, 2023; Variety, 2023; Los Angeles Times, 2023; Yahoo News, 2023.\nImages via Wikimedia Commons: Gordon Vasquez of RealTVfilms (CC BY-SA 2.0).\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#barbie #gretagerwig #filmfacts #productiondesign #pinkpaint #moviebehindthescenes #explained",
+    "youtube_title": "Did Barbie (2023) cause a pink paint shortage? #shorts",
+    "either_or_question": "Too much pink, or just enough?"
+  },
+  "answer": "Just enough, honestly. Almost too much was the whole point, and the paint story is a fun bit of exaggeration.",
+  "dropped_unverified": [
+    "A global/international shortage (Greenwood walked it back)",
+    "Any specific paint product name or volumes beyond Greenwood's 200 liters claim, kept hedged",
+    "Dreamhouse details",
+    "Berlinale photo licence unconfirmed; Commons raw wikitext unreachable, no place/object photos verified"
+  ]
+}

@@ -1,0 +1,6 @@
+episodes/vox_21_lang/assets/lang_harbou_1924.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Fritz_Lang_und_Thea_von_Harbou%2C_1923_od._1924_crop.jpg?width=1600
+episodes/vox_21_lang/assets/_pages/lang_harbou_1924.html https://commons.wikimedia.org/wiki/File:Fritz_Lang_und_Thea_von_Harbou%2C_1923_od._1924_crop.jpg?action=raw
+episodes/vox_21_lang/assets/lang_portrait.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Fritz_Lang.jpg?width=1600
+episodes/vox_21_lang/assets/_pages/lang_portrait.html https://commons.wikimedia.org/wiki/File:Fritz_Lang.jpg?action=raw
+episodes/vox_21_lang/assets/babelsberg.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Filmstudio_Babelsberg.jpg?width=1600
+episodes/vox_21_lang/assets/_pages/babelsberg.html https://commons.wikimedia.org/wiki/File:Filmstudio_Babelsberg.jpg?action=raw

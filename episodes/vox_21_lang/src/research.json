@@ -1,0 +1,152 @@
+{
+  "slug": "lang",
+  "episode_no": "21",
+  "subject": "Fritz Lang",
+  "hook": "This scratched little film reel holds footage everyone thought was gone.",
+  "twist": "The missing Metropolis footage was never hidden: the Buenos Aires museum had been on a distribution list since the 1920s, and it took someone repeatedly asking for the archive to be checked.",
+  "mood": "German Expressionist linocut in black, silver and ochre: hard diagonals, stark shadow shapes, grainy ink texture, scratched-film overlays. Music: tense but spare cinematic electronica-meets-silent-cinema score, about 80 bpm, low pulsing synth bass, a lone muted piano and bowed strings, a faint film-projector flutter, easing into a warmer resolve for the twist.",
+  "narration": "This scratched little film reel holds footage everyone thought was gone. In nineteen twenty-seven, Fritz Lang premiered Metropolis at about two and a half hours. Soon it was trimmed, and the cuts vanished. Even careful restorations were still missing about a quarter of the film. In two thousand eight, a Buenos Aires curator pulled out reels until she found a scene nobody knew. The story goes that a collector carried a print to Argentina in nineteen twenty-eight. More than twenty minutes came back, badly scratched. In twenty ten, a restoration premiered in Berlin, nearly whole again. It was never hidden. The museum had been on a distribution list since the nineteen twenties. Someone just had to ask. Keep scratched footage, or hide the damage?",
+  "beats": [
+    {
+      "i": 0,
+      "text": "This scratched little film reel holds footage everyone thought was gone.",
+      "visual": "A scratched 16mm film reel on a rewind bench, black, silver and ochre linocut; hook headline on screen",
+      "sources": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "i": 1,
+      "text": "In nineteen twenty-seven, Fritz Lang premiered Metropolis at about two and a half hours.",
+      "visual": "Photo: Lang with Thea von Harbou, Berlin 1924 (hero photo, crop to Lang), linocut framing",
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "i": 2,
+      "text": "Soon it was trimmed, and the cuts vanished.",
+      "visual": "Illustrated scissors over a strip of film, cut frames falling",
+      "sources": [
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Even careful restorations were still missing about a quarter of the film.",
+      "visual": "Diagram-style illustrated film strip with a quarter shaded out",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "i": 4,
+      "text": "In two thousand eight, a Buenos Aires curator pulled out reels until she found a scene nobody knew.",
+      "visual": "Illustrated archive shelf of reel cans, one pulled out and held to a lamp",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "i": 5,
+      "text": "The story goes that a collector carried a print to Argentina in nineteen twenty-eight.",
+      "visual": "Illustrated steamship trunk with a film can, Berlin to Buenos Aires route map",
+      "sources": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "i": 6,
+      "text": "More than twenty minutes came back, badly scratched.",
+      "visual": "Illustrated scratched film frame, ochre light through scratches",
+      "sources": [
+        "S3",
+        "S1"
+      ]
+    },
+    {
+      "i": 7,
+      "text": "In twenty ten, a restoration premiered in Berlin, nearly whole again.",
+      "visual": "Illustrated cinema marquee silhouette with a 'Berlin 2010' ticket; optional place photo",
+      "sources": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "i": 8,
+      "text": "It was never hidden. The museum had been on a distribution list since the nineteen twenties. Someone just had to ask.",
+      "visual": "Illustrated empty projector beam falling on a closed archive door that opens",
+      "sources": [
+        "S3",
+        "S2"
+      ]
+    },
+    {
+      "i": 9,
+      "text": "Keep scratched footage, or hide the damage?",
+      "visual": "Split illustrated frame: scratched strip vs clean strip",
+      "sources": []
+    }
+  ],
+  "fun_facts": [
+    "The Buenos Aires copy was a 16mm duplicate 'defaced by a blizzard of scratches' (Film Comment), and the restorers kept the damaged shots rather than dropping them.",
+    "The original premiere cut ran about 153 minutes; the 2010 restoration runs 148 minutes."
+  ],
+  "sources": {
+    "S1": {
+      "name": "Film Comment, 'A Tale of Two Cities: Metropolis Restored', Chris Fujiwara, May-June 2010",
+      "url": "https://www.filmcomment.com/article/a-tale-of-two-cities-metropolis-restored"
+    },
+    "S2": {
+      "name": "Associated Press via CBS News, 'Original Metropolis Found After 80 Years', 4 July 2008",
+      "url": "https://www.cbsnews.com/news/original-metropolis-found-after-80-years/"
+    },
+    "S3": {
+      "name": "NPR, interview transcript on the Buenos Aires Metropolis discovery, 2008",
+      "url": "https://www.npr.org/transcripts/92728652"
+    },
+    "S4": {
+      "name": "Wikipedia, Metropolis (1927 film), restoration section (citing Bruce Bennett, 'The Complete Metropolis' film notes, Kino, 2010) - starting point, runtime figures",
+      "url": "https://en.wikipedia.org/wiki/Metropolis_(1927_film)"
+    }
+  },
+  "images": [
+    {
+      "key": "lang_harbou_1924",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Fritz_Lang_und_Thea_von_Harbou,_1923_od._1924_crop.jpg",
+      "direct_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fritz_Lang_und_Thea_von_Harbou,_1923_od._1924_crop.jpg",
+      "author": "Waldemar Titzenthaler (1869-1937)",
+      "date": "1924",
+      "licence": "PD (author died 1937; published before 1929) - template name NOT confirmed: Commons raw wikitext unreachable from this environment, only a mirror page; confirm via the fetch workflow _pages/*.html before use",
+      "shows": "Fritz Lang with Thea von Harbou in their Berlin apartment; crop of Lang",
+      "use": "hero photo of the director (beat 1)"
+    }
+  ],
+  "props_to_illustrate": [
+    "a scratched 16mm film reel on a rewind bench",
+    "scissors cutting a strip of film",
+    "a shelf of dusty film cans with one pulled out",
+    "a steamship trunk holding a film can",
+    "a film frame covered in scratches lit from behind",
+    "a cinema marquee silhouette with a ticket stub",
+    "an archive door opening onto a projector beam",
+    "a split film strip, scratched versus clean"
+  ],
+  "captions": {
+    "tiktok_caption": "A scratched little reel held footage everyone thought was gone. 🎞️\n\nexplained no. 21\n\n#fritzlang #metropolis #silentfilm #filmhistory #lostfilm #explained",
+    "instagram_caption": "A scratched little reel held footage everyone thought was gone. 🎞️\n\nFritz Lang premiered Metropolis in 1927 at about two and a half hours. Soon it was trimmed, and for decades the cut scenes could not be seen. Even careful restorations were missing about a quarter of the film.\n\nIn 2008 a curator at the Museo del Cine in Buenos Aires pulled out old reels until she found a scene nobody knew. The story goes that a collector carried a print to Argentina in 1928. More than twenty minutes came back, badly scratched.\n\nA restored version premiered in Berlin in 2010. The restorers kept the scratched shots rather than dropping them.\n\nThe twist: it was never hidden. The museum had been on a distribution list since the 1920s. Someone just had to ask.\n\nexplained no. 21\n—\nSources: Film Comment (2010); Associated Press via CBS News (2008); NPR (2008); Kino 'The Complete Metropolis' film notes (2010).\nImages via Wikimedia Commons: Waldemar Titzenthaler, public domain (1924).\nAI narration, sound effects and music. Illustrations generated for this video.\n\n#fritzlang #metropolis #silentfilm #filmhistory #lostfilm #cinemahistory #weimarcinema #explained",
+    "youtube_title": "The lost Metropolis footage found in Buenos Aires (2008) #shorts",
+    "either_or_question": "Keep scratched footage, or hide the damage?"
+  },
+  "answer": "Keep it. The scratches show the film really survived, and I'd rather see honest damage than a smooth fake.",
+  "dropped_unverified": [
+    "Exact route/owner chain (private collector, art foundation, museum) and 1960s-70s 16mm dupe origin: sources conflict (AP says collector took print in 1928) so hedged",
+    "'Twenty-five minutes' exact figure: NPR says more than twenty, Wikipedia says about 25; used 'more than twenty'",
+    "Aspect-ratio details of the Argentine print: not sourced",
+    "Other Commons images (Babelsberg, Museo del Cine building): file names/licences could not be confirmed here"
+  ]
+}

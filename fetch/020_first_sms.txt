@@ -1,0 +1,8 @@
+episodes/020_first_sms/assets/hagenuk_mt2000.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Hagenuk_mt-2000.jpg?width=1600
+episodes/020_first_sms/assets/_pages/hagenuk_mt2000.html https://commons.wikimedia.org/wiki/File:Hagenuk_mt-2000.jpg?action=raw
+episodes/020_first_sms/assets/nokia_1011.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Nokia_1011.jpg?width=1600
+episodes/020_first_sms/assets/_pages/nokia_1011.html https://commons.wikimedia.org/wiki/File:Nokia_1011.jpg?action=raw
+episodes/020_first_sms/assets/hagenuk_variants.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Hagenuk_MT-2000_variants.jpg?width=1600
+episodes/020_first_sms/assets/_pages/hagenuk_variants.html https://commons.wikimedia.org/wiki/File:Hagenuk_MT-2000_variants.jpg?action=raw
+episodes/020_first_sms/assets/sms_feature_phone.jpg https://commons.wikimedia.org/wiki/Special:FilePath/SMS_composition_on_feature_phone.png?width=1600
+episodes/020_first_sms/assets/_pages/sms_feature_phone.html https://commons.wikimedia.org/wiki/File:SMS_composition_on_feature_phone.png?action=raw
